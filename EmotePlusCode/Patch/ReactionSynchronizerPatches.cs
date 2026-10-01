@@ -1,31 +1,61 @@
 using EmotePlus.EmotePlusCode.Reaction;
+using EmotePlus.EmotePlusCode.Ui;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Multiplayer.Game;
+using MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput;
 using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Nodes.Cards;
+using MegaCrit.Sts2.Core.Nodes.GodotExtensions;
 using MegaCrit.Sts2.Core.Nodes.Reaction;
 using MegaCrit.Sts2.Core.Nodes.Screens.Map;
 
 namespace EmotePlus.EmotePlusCode.Patch;
 
-// Vanilla sends a ReactionMessage with a viewport-normalized position. While the local player has the map open
-// we send a MapEmoteMessage with a map-space position instead, and handle it on the receiving side.
-// All other cases still go through the vanilla message untouched.
-internal static class MapEmoteHandler
+// Vanilla sends a ReactionMessage with a viewport-normalized position. Inside a run we send a ContextEmoteMessage
+// instead (the sender's UI path + a position in that node's coordinate system) and display it with EmoteTracker.
+// Outside a run (lobbies) the vanilla message is left alone.
+internal static class ContextEmoteHandler
 {
-    public static void Handle(MapEmoteMessage message, ulong senderId)
+    public static void Handle(ContextEmoteMessage message, ulong senderId)
     {
         var container = NGame.Instance?.ReactionContainer;
-        EmoteLog.Info($"received MapEmoteMessage from {senderId}: type={message.type} net={message.netPosition} " +
-                      EmoteLog.DescribeViewer());
-        if (container == null)
+        EmoteLog.Info($"received from {senderId}: type={message.type} sender={UiPath.Describe(message.path ?? [])}");
+        if (container == null || message.path == null)
         {
-            EmoteLog.Info("NGame.Instance.ReactionContainer is null, dropping");
             return;
         }
 
-        MapEmoteTracker.Spawn(container, message.type, message.netPosition);
+        EmoteTracker.Spawn(container, message.type, message.path, message.position);
+    }
+}
+
+// The local player's own emote goes through the same tracker as everybody else's (as an emote whose sender is the
+// local player), so that it behaves the same way: e.g. on the scrolling map it sticks to the map instead of to the
+// screen. Vanilla's DoLocalReaction would draw it at the screen position and then send it; we do both ourselves.
+[HarmonyPatch(typeof(NReactionContainer), nameof(NReactionContainer.DoLocalReaction))]
+public static class DoLocalReactionPatch
+{
+    private static readonly System.Func<Texture2D, ReactionType> TextureToType =
+        AccessTools.MethodDelegate<System.Func<Texture2D, ReactionType>>(AccessTools.Method(typeof(NReaction), "TextureToType"));
+
+    private static readonly AccessTools.FieldRef<NReactionContainer, ReactionSynchronizer?> Synchronizer =
+        AccessTools.FieldRefAccess<NReactionContainer, ReactionSynchronizer?>("_synchronizer");
+
+    [HarmonyPrefix]
+    public static bool Prefix(NReactionContainer __instance, Texture2D tex, Vector2 position)
+    {
+        var path = UiTree.LocalPath(position);
+        if (path.Length == 0)
+        {
+            return true; // not in a run: vanilla
+        }
+
+        var type = TextureToType(tex);
+        EmoteTracker.Spawn(__instance, type, path, EmoteCoordinates.FromScreen(path, position, __instance));
+        Synchronizer(__instance)?.SendLocalReaction(type, position);
+        return false;
     }
 }
 
@@ -35,19 +65,18 @@ public static class SendLocalReactionPatch
     [HarmonyPrefix]
     public static bool Prefix(ReactionSynchronizer __instance, ReactionType type, Vector2 mouseScreenPos)
     {
-        if (ViewerContext.Current != UiContext.Map || NMapScreen.Instance == null)
+        var path = UiTree.LocalPath(mouseScreenPos);
+        var container = NGame.Instance?.ReactionContainer;
+        if (path.Length == 0 || container == null)
         {
-            EmoteLog.Info($"send vanilla ReactionMessage type={type} screenPos={mouseScreenPos} {EmoteLog.DescribeViewer()}");
+            EmoteLog.Info($"send vanilla ReactionMessage type={type} (not in a run)");
             return true;
         }
 
-        var netPosition = NMapScreen.Instance.GetNetPositionFromScreenPosition(mouseScreenPos);
-        EmoteLog.Info($"send MapEmoteMessage type={type} screenPos={mouseScreenPos} net={netPosition} {EmoteLog.DescribeViewer()}");
-        __instance.NetService.SendMessage(new MapEmoteMessage
-        {
-            type = type,
-            netPosition = netPosition,
-        });
+        // The position is in the coordinate system of the last node of the path (see ContextEmoteMessage).
+        var position = EmoteCoordinates.FromScreen(path, mouseScreenPos, container);
+        EmoteLog.Info($"send type={type} sender={UiPath.Describe(path)} screenPos={mouseScreenPos} pos={position}");
+        __instance.NetService.SendMessage(new ContextEmoteMessage { type = type, path = path, position = position });
         return false;
     }
 }
@@ -59,7 +88,7 @@ public static class ReactionSynchronizerCtorPatch
     [HarmonyPostfix]
     public static void Postfix(ReactionSynchronizer __instance)
     {
-        __instance.NetService.RegisterMessageHandler<MapEmoteMessage>(MapEmoteHandler.Handle);
+        __instance.NetService.RegisterMessageHandler<ContextEmoteMessage>(ContextEmoteHandler.Handle);
     }
 }
 
@@ -69,38 +98,41 @@ public static class ReactionSynchronizerDisposePatch
     [HarmonyPrefix]
     public static void Prefix(ReactionSynchronizer __instance)
     {
-        __instance.NetService.UnregisterMessageHandler<MapEmoteMessage>(MapEmoteHandler.Handle);
+        __instance.NetService.UnregisterMessageHandler<ContextEmoteMessage>(ContextEmoteHandler.Handle);
     }
 }
 
-// Remote emotes that arrive through the vanilla ReactionMessage were sent from the base scene (Room), at a
-// screen position. A viewer who is in a child screen of the Room (map, player detail) sees them as a child of the
-// Room, i.e. under that screen: see RoomLayerEmote. Every other viewer keeps the vanilla display.
-[HarmonyPatch(typeof(NReactionContainer), nameof(NReactionContainer.DoRemoteReaction))]
-public static class DoRemoteReactionPatch
+// NCardGrid._Process scrolls the card library (and the other card grids): same reasoning as for the map below.
+[HarmonyPatch(typeof(NCardGrid), nameof(NCardGrid._Process))]
+public static class CardGridProcessPatch
 {
-    [HarmonyPrefix]
-    public static bool Prefix(NReactionContainer __instance, ReactionType type, Vector2 position)
+    [HarmonyPostfix]
+    public static void Postfix()
     {
-        var context = ViewerContext.Current;
-        EmoteLog.Info($"vanilla DoRemoteReaction type={type} controlSpacePos={position} {EmoteLog.DescribeViewer()}");
-        if (context is not (UiContext.Map or UiContext.PlayerDetail))
-        {
-            return true;
-        }
+        EmoteTracker.UpdateAll();
+    }
+}
 
-        return !RoomLayerEmote.TrySpawn(__instance, type, position);
+// NScrollableContainer._Process scrolls most other screens (settings, collections, the Enchantment Compendium...).
+[HarmonyPatch(typeof(NScrollableContainer), nameof(NScrollableContainer._Process))]
+public static class ScrollableContainerProcessPatch
+{
+    [HarmonyPostfix]
+    public static void Postfix()
+    {
+        EmoteTracker.UpdateAll();
     }
 }
 
 // NMapScreen._Process moves the map (scroll). Updating the emotes right after it uses the same frame's scroll
-// position; SceneTree.ProcessFrame alone runs before it and would lag one frame behind.
+// position; SceneTree.ProcessFrame (which EmoteTracker also uses, for when the map is closed and NMapScreen does
+// not process at all) runs before it and would lag one frame behind.
 [HarmonyPatch(typeof(NMapScreen), nameof(NMapScreen._Process))]
 public static class MapScreenProcessPatch
 {
     [HarmonyPostfix]
     public static void Postfix()
     {
-        MapEmoteTracker.UpdateAll();
+        EmoteTracker.UpdateAll();
     }
 }
