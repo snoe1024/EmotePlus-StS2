@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Godot;
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes;
@@ -108,6 +109,9 @@ public static class UiTree
     private static readonly AccessTools.FieldRef<NInspectCardScreen, int> InspectIndex =
         AccessTools.FieldRefAccess<NInspectCardScreen, int>("_index");
 
+    private static readonly AccessTools.FieldRef<NCardsViewScreen, NCardGrid> DeckGrid =
+        AccessTools.FieldRefAccess<NCardsViewScreen, NCardGrid>("_grid");
+
     private static readonly AccessTools.FieldRef<NBestiary, NBestiaryEntry?> BestiarySelected =
         AccessTools.FieldRefAccess<NBestiary, NBestiaryEntry?>("_selectedEntry");
 
@@ -139,6 +143,88 @@ public static class UiTree
     private static readonly UiNodeId Base = new(UiNodeKind.Base);
     private static readonly UiNodeId Pause = new(UiNodeKind.PauseMenu);
     private static readonly UiNodeId Compendium = new(UiNodeKind.Compendium);
+
+    /// <summary>
+    /// The path an emote made at <paramref name="mousePosition"/> is SENT with: the local player's path
+    /// (<see cref="LocalPath(Vector2)"/>), except that the local player's own deck screen is disguised as their
+    /// player detail screen. A viewer's deck is their own, so a deck screen is meaningless to everyone else; the
+    /// screen that shows this player's deck to others is the player detail screen. The card the emote refers to
+    /// (the enlarged one, or else the one under the emote) selects the matching card of that screen; with no card
+    /// it is the detail screen itself. The position stays a screen position.
+    /// </summary>
+    public static UiNodeId[] SenderPath(Vector2 mousePosition)
+    {
+        var path = LocalPath(mousePosition);
+        if (path.Length != 2 || path[1].Kind != UiNodeKind.DeckView || LocalContext.NetId is not { } me)
+        {
+            return path;
+        }
+
+        return PlayerDetailPath(me, ViewedCard() ?? (IsOnHeader(mousePosition) ? null : CardUnder(mousePosition)));
+    }
+
+    private static UiNodeId[] PlayerDetailPath(ulong netId, CardModel? card)
+    {
+        var detail = new UiNodeId(UiNodeKind.PlayerDetail, netId);
+        return card == null
+            ? new[] { Base, detail }
+            : new[] { Base, detail, new UiNodeId(UiNodeKind.PlayerDetailCard, 0, DetailCardKey(card)) };
+    }
+
+    /// <summary>The screens that show the header bar (top bar): the base scene, the map and the deck screen.</summary>
+    public static bool ShowsHeader(IReadOnlyList<UiNodeId> path)
+    {
+        return path.Count == 1 ||
+               (path.Count == 2 && path[1].Kind is UiNodeKind.Map or UiNodeKind.DeckView);
+    }
+
+    /// <summary>True if <paramref name="position"/> is on the header bar. Only meaningful where it is shown.</summary>
+    public static bool IsOnHeader(Vector2 position)
+    {
+        var topBar = NRun.Instance?.GlobalUi.TopBar;
+        var bg = topBar?.GetNodeOrNull<Control>("BgImage");
+        if (topBar == null || bg == null || !topBar.IsVisibleInTree())
+        {
+            return false;
+        }
+
+        return position.Y <= (bg.GetGlobalTransformWithCanvas() * new Vector2(0f, bg.Size.Y)).Y;
+    }
+
+    /// <summary>
+    /// Identifies a card the way the player detail screen groups its deck (id, upgrade level, enchantment), so the
+    /// same card is found on every client.
+    /// </summary>
+    public static string DetailCardKey(CardModel card)
+    {
+        return $"{card.Id}|{card.CurrentUpgradeLevel}|{card.Enchantment?.Id}:{card.Enchantment?.Amount}";
+    }
+
+    private static bool HitboxContains(Control hitbox, Vector2 point)
+    {
+        return new Rect2(Vector2.Zero, hitbox.Size).HasPoint(hitbox.GetGlobalTransformWithCanvas().AffineInverse() * point);
+    }
+
+    // The card of the deck screen's grid under the given position, if any (the topmost one).
+    private static CardModel? CardUnder(Vector2 position)
+    {
+        if (NCapstoneContainer.Instance?.CurrentCapstoneScreen is not NDeckViewScreen deck)
+        {
+            return null;
+        }
+
+        // A grid card holder is a zero-size Control placed at the card's CENTER (and scaled): the card's area is its
+        // Hitbox child. Only cards inside the grid's own area count (the rest is scrolled out from under the header).
+        var grid = DeckGrid(deck);
+        if (!grid.GetGlobalRect().HasPoint(position))
+        {
+            return null;
+        }
+
+        return grid.CurrentlyDisplayedCardHolders
+            .LastOrDefault(h => GodotObject.IsInstanceValid(h) && h.IsVisibleInTree() && HitboxContains(h.Hitbox, position))
+            ?.CardModel;
+    }
 
     /// <summary>
     /// The local player's path for an emote made at <paramref name="mousePosition"/>: like <see cref="LocalPath()"/>,
@@ -188,8 +274,7 @@ public static class UiTree
         {
             return capstone.CurrentCapstoneScreen switch
             {
-                NMultiplayerPlayerExpandedState detail =>
-                    new[] { Base, new UiNodeId(UiNodeKind.PlayerDetail, DetailPlayer(detail).NetId) },
+                NMultiplayerPlayerExpandedState detail => PlayerDetailPath(DetailPlayer(detail).NetId, ViewedCard()),
                 NDeckViewScreen => new[] { Base, new UiNodeId(UiNodeKind.DeckView) },
                 NCapstoneSubmenuStack stack => SubmenuPath(stack.Stack.Peek()),
                 _ => new[] { Base, new UiNodeId(UiNodeKind.OtherCapstone) },
@@ -305,8 +390,10 @@ public static class UiTree
         return NoPool;
     }
 
+    private static string? ViewedCardKey() => ViewedCard()?.Id.ToString();
+
     /// <summary>The card shown enlarged on the card inspect screen, if it is open.</summary>
-    private static string? ViewedCardKey()
+    private static CardModel? ViewedCard()
     {
         var inspect = NGame.Instance?.InspectCardScreen;
         if (inspect == null || !GodotObject.IsInstanceValid(inspect) || !inspect.Visible)
@@ -316,12 +403,17 @@ public static class UiTree
 
         var cards = InspectCards(inspect);
         var index = InspectIndex(inspect);
-        return cards != null && index >= 0 && index < cards.Count ? cards[index].Id.ToString() : null;
+        return cards != null && index >= 0 && index < cards.Count ? cards[index] : null;
     }
 
     /// <summary>The scrolling content/viewport of a node's screen, or null if the node does not scroll.</summary>
     public static ScrollSpace? GetScrollSpace(UiNodeId node)
     {
+        if (node.Kind == UiNodeKind.DeckView)
+        {
+            return NCapstoneContainer.Instance?.CurrentCapstoneScreen is NDeckViewScreen deck ? ScrollOfGrid(DeckGrid(deck)) : null;
+        }
+
         if (node.Kind == UiNodeKind.EnchantmentCompendium)
         {
             return ScrollOf(EnchantmentOverlay(Submenu<NCompendiumSubmenu>())?.GetNodeOrNull<NScrollableContainer>("ScreenContents"));
@@ -348,7 +440,11 @@ public static class UiTree
             return null;
         }
 
-        var grid = Submenu<NCardLibrary>()?.GetNodeOrNull<NCardGrid>("%CardGrid");
+        return ScrollOfGrid(Submenu<NCardLibrary>()?.GetNodeOrNull<NCardGrid>("%CardGrid"));
+    }
+
+    private static ScrollSpace? ScrollOfGrid(NCardGrid? grid)
+    {
         if (grid == null || !GodotObject.IsInstanceValid(grid))
         {
             return null;
@@ -387,6 +483,7 @@ public static class UiTree
             UiNodeKind.CardLibraryPool when child.Kind == UiNodeKind.CardDetail => CardHolderOrPoolButton(parent, child),
             UiNodeKind.RelicCollection when child.Kind == UiNodeKind.RelicDetail => RelicEntryButton(parent, child),
             UiNodeKind.Bestiary when child.Kind == UiNodeKind.BestiaryMonster => BestiaryEntryButton(child),
+            UiNodeKind.PlayerDetail when child.Kind == UiNodeKind.PlayerDetailCard => DetailCardButton(parent, child),
             UiNodeKind.Compendium => child.Kind switch
             {
                 // Big near-square buttons with a centered picture: the emote goes at the top-left corner.
@@ -425,7 +522,7 @@ public static class UiTree
         var holder = grid?.CurrentlyDisplayedCardHolders.FirstOrDefault(h => h.CardModel?.Id.ToString() == detail.Key);
         if (holder != null && GodotObject.IsInstanceValid(holder))
         {
-            return new ButtonTarget(holder, ButtonAnchor.TopRightCorner, scroll!.Value.Bounds);
+            return new ButtonTarget(holder.Hitbox, ButtonAnchor.TopRightCorner, scroll!.Value.Bounds);
         }
 
         return PoolButton(pool);
@@ -453,6 +550,39 @@ public static class UiTree
 
         return new ButtonTarget(entry, ButtonAnchor.LeftOutside,
             GetScrollSpace(new UiNodeId(UiNodeKind.BestiaryList))?.VerticalBounds);
+    }
+
+    // The card of the player detail screen that matches (see DetailCardKey): where the emote shows which card it
+    // was about.
+    private static ButtonTarget? DetailCardButton(UiNodeId player, UiNodeId card)
+    {
+        if (FindSceneNode(player) is not NMultiplayerPlayerExpandedState detail || DetailPlayer(detail).NetId != player.Arg)
+        {
+            return null;
+        }
+
+        var entry = FindDescendant<NDeckHistoryEntry>(detail, e => DetailCardKey(e.Card) == card.Key);
+        // A wide text button (card name and count): the emote goes at its left end.
+        return entry == null ? null : new ButtonTarget(entry, ButtonAnchor.LeftEdge);
+    }
+
+    private static T? FindDescendant<T>(Node node, Func<T, bool> match) where T : Node
+    {
+        foreach (var child in node.GetChildren())
+        {
+            if (child is T candidate && match(candidate))
+            {
+                return candidate;
+            }
+
+            var found = FindDescendant(child, match);
+            if (found != null)
+            {
+                return found;
+            }
+        }
+
+        return null;
     }
 
     private static Control? FindRelicEntry(Node? node, string? key)
@@ -512,7 +642,10 @@ public static class UiTree
                 .FirstOrDefault(widget => widget.Player.NetId == child.Arg),
             _ => null,
         };
-        return control == null ? null : new ButtonTarget(control, ButtonAnchor.Center);
+        // The player widgets are wide and show the (possibly long) player name in the middle: the emote goes at the
+        // left end, over the character icon. The top bar buttons are small icons: centered.
+        var anchor = child.Kind == UiNodeKind.PlayerDetail ? ButtonAnchor.LeftEdge : ButtonAnchor.Center;
+        return control == null ? null : new ButtonTarget(control, anchor);
     }
 
     /// <summary>True if the node is part of the player list (the widgets that open the player detail screens).</summary>

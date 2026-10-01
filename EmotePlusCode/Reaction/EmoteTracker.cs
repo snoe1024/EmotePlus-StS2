@@ -86,6 +86,7 @@ public static class EmoteTracker
         public required ReactionType Type;
         public required UiNodeId[] SenderPath;
         public required Vector2 Position;
+        public required bool InHeader;
         public required ulong SpawnedMs;
         public readonly List<Layer> Layers = new();
         public LayerSpec? Active;
@@ -94,7 +95,8 @@ public static class EmoteTracker
     private static readonly List<Entry> Entries = new();
     private static SceneTree? _subscribedTree;
 
-    public static void Spawn(NReactionContainer container, ReactionType type, UiNodeId[] senderPath, Vector2 position)
+    public static void Spawn(NReactionContainer container, ReactionType type, UiNodeId[] senderPath, Vector2 position,
+        bool inHeader)
     {
         if (!GodotObject.IsInstanceValid(container) || !container.IsInsideTree())
         {
@@ -107,6 +109,7 @@ public static class EmoteTracker
             Type = type,
             SenderPath = senderPath,
             Position = position,
+            InHeader = inHeader,
             SpawnedMs = Time.GetTicksMsec(),
         };
         Entries.Add(entry);
@@ -292,6 +295,13 @@ public static class EmoteTracker
 
     private static Placement? Resolve(Entry entry, UiNodeId[] viewer)
     {
+        // Made on the header bar, and the viewer sees the header too: right there on the screen, above the header.
+        if (entry.InHeader && UiTree.ShowsHeader(viewer))
+        {
+            return new Placement(new LayerSpec(LayerKind.Top),
+                NetCursorHelper.GetControlSpacePosition(entry.Position, entry.Container), Mode.Drift);
+        }
+
         var sender = entry.SenderPath;
         var common = UiPath.CommonLength(sender, viewer);
         if (common == 0)
@@ -362,10 +372,10 @@ public static class EmoteTracker
             return null;
         }
 
-        // The base scene's buttons (top bar, player list) are drawn above the map, so a viewer on the map must see
-        // the emote at the button's own depth. Under a capstone they are hidden anyway: the Room layer, which the
-        // capstone covers, is right.
-        var layer = ancestor.Kind == UiNodeKind.Base && viewer[^1].Kind == UiNodeKind.Map
+        // The base scene's buttons (top bar, player list) stay on top of the map and of the deck screen, so a viewer
+        // on either must see the emote at the button's own depth. Under other capstones they are hidden anyway:
+        // the Room layer, which the capstone covers, is right.
+        var layer = ancestor.Kind == UiNodeKind.Base && viewer.Length == 2 && UiTree.ShowsHeader(viewer)
             ? new LayerSpec(UiTree.IsInPlayerList(button.Value.Control) ? LayerKind.PlayerList : LayerKind.Top)
             : SceneLayerOf(ancestor);
         return PinAt(layer, button.Value);

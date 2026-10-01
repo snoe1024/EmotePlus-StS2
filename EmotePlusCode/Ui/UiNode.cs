@@ -8,7 +8,10 @@ namespace EmotePlus.EmotePlusCode.Ui;
 //   Base                          the room (overlays such as rewards are part of it)
 //     Map
 //     PlayerDetail(netId)         NMultiplayerPlayerExpandedState, one node per inspected player
-//     DeckView
+//       PlayerDetailCard(key)     a card of that player's deck, enlarged from the detail screen
+//     DeckView                    the local player's own deck: never sent. Emotes made there are disguised as
+//                                 emotes on the local player's PlayerDetail (see UiTree.SenderPath): a viewer's
+//                                 deck is their own, so it is the player detail screen that shows that deck
 //     PauseMenu
 //       Settings
 //       Compendium
@@ -50,10 +53,12 @@ public enum UiNodeKind : byte
     RelicDetail,
     BestiaryMonster,
     BestiaryList,
+    PlayerDetailCard,
 }
 
 /// <param name="Arg">PlayerDetail: the inspected player's net id. CardLibraryPool: the pool index.</param>
-/// <param name="Key">CardDetail / RelicDetail / BestiaryMonster: the card's / relic's / monster entry's id.</param>
+/// <param name="Key">CardDetail / RelicDetail / BestiaryMonster / PlayerDetailCard: identifies the card / relic /
+/// monster entry.</param>
 public readonly record struct UiNodeId(UiNodeKind Kind, ulong Arg = 0, string? Key = null)
 {
     public override string ToString() => Key != null ? $"{Kind}({Key})" : Arg == 0 ? Kind.ToString() : $"{Kind}({Arg})";
@@ -96,6 +101,7 @@ public static class UiPath
                 case UiNodeKind.CardDetail:
                 case UiNodeKind.RelicDetail:
                 case UiNodeKind.BestiaryMonster:
+                case UiNodeKind.PlayerDetailCard:
                     writer.WriteString(node.Key ?? "");
                     break;
             }
@@ -112,7 +118,8 @@ public static class UiPath
             {
                 UiNodeKind.PlayerDetail => new UiNodeId(kind, reader.ReadULong()),
                 UiNodeKind.CardLibraryPool => new UiNodeId(kind, reader.ReadByte()),
-                UiNodeKind.CardDetail or UiNodeKind.RelicDetail or UiNodeKind.BestiaryMonster =>
+                UiNodeKind.CardDetail or UiNodeKind.RelicDetail or UiNodeKind.BestiaryMonster
+                    or UiNodeKind.PlayerDetailCard =>
                     new UiNodeId(kind, 0, reader.ReadString()),
                 _ => new UiNodeId(kind),
             };

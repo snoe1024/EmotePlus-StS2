@@ -19,6 +19,18 @@ public static class EmoteCoordinates
     // Wide enough for scroll-content coordinates (a few thousand px / 1000); still sub-pixel precise at 16 bits.
     public static readonly QuantizeParams Quantize = new(-30f, 30f, 16);
 
+    /// <summary>
+    /// The position to put in an emote for a screen position: in the last node's coordinate system, or a plain
+    /// normalized screen position if the emote was made on the header bar.
+    /// </summary>
+    public static Vector2 PositionFor(IReadOnlyList<UiNodeId> path, Vector2 screenPosition, NReactionContainer container,
+        bool inHeader)
+    {
+        return inHeader
+            ? NetCursorHelper.GetNormalizedPosition(screenPosition, container)
+            : FromScreen(path, screenPosition, container);
+    }
+
     /// <summary>Converts a screen position into the coordinate system of the last node of the path.</summary>
     public static Vector2 FromScreen(IReadOnlyList<UiNodeId> path, Vector2 screenPosition, NReactionContainer container)
     {

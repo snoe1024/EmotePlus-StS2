@@ -27,7 +27,7 @@ internal static class ContextEmoteHandler
             return;
         }
 
-        EmoteTracker.Spawn(container, message.type, message.path, message.position);
+        EmoteTracker.Spawn(container, message.type, message.path, message.position, message.inHeader);
     }
 }
 
@@ -53,7 +53,8 @@ public static class DoLocalReactionPatch
         }
 
         var type = TextureToType(tex);
-        EmoteTracker.Spawn(__instance, type, path, EmoteCoordinates.FromScreen(path, position, __instance));
+        var inHeader = UiTree.ShowsHeader(path) && UiTree.IsOnHeader(position);
+        EmoteTracker.Spawn(__instance, type, path, EmoteCoordinates.PositionFor(path, position, __instance, inHeader), inHeader);
         Synchronizer(__instance)?.SendLocalReaction(type, position);
         return false;
     }
@@ -65,7 +66,7 @@ public static class SendLocalReactionPatch
     [HarmonyPrefix]
     public static bool Prefix(ReactionSynchronizer __instance, ReactionType type, Vector2 mouseScreenPos)
     {
-        var path = UiTree.LocalPath(mouseScreenPos);
+        var path = UiTree.SenderPath(mouseScreenPos);
         var container = NGame.Instance?.ReactionContainer;
         if (path.Length == 0 || container == null)
         {
@@ -73,10 +74,15 @@ public static class SendLocalReactionPatch
             return true;
         }
 
-        // The position is in the coordinate system of the last node of the path (see ContextEmoteMessage).
-        var position = EmoteCoordinates.FromScreen(path, mouseScreenPos, container);
-        EmoteLog.Info($"send type={type} sender={UiPath.Describe(path)} screenPos={mouseScreenPos} pos={position}");
-        __instance.NetService.SendMessage(new ContextEmoteMessage { type = type, path = path, position = position });
+        // The position is in the coordinate system of the last node of the path (see ContextEmoteMessage), unless
+        // the emote was made on the header bar (then it is a screen position).
+        var inHeader = UiTree.ShowsHeader(UiTree.LocalPath(mouseScreenPos)) && UiTree.IsOnHeader(mouseScreenPos);
+        var position = EmoteCoordinates.PositionFor(path, mouseScreenPos, container, inHeader);
+        EmoteLog.Info($"send type={type} sender={UiPath.Describe(path)} screenPos={mouseScreenPos} pos={position} inHeader={inHeader}");
+        __instance.NetService.SendMessage(new ContextEmoteMessage
+        {
+            type = type, path = path, position = position, inHeader = inHeader,
+        });
         return false;
     }
 }

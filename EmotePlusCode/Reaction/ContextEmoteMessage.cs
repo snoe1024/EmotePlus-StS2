@@ -13,6 +13,9 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 //
 // path     where the sender was in the UI tree (UiTree.LocalPath)
 // position in the coordinate system of the LAST node of path (see EmoteCoordinates)
+// inHeader the sender made the emote on the header bar (only possible on a screen that shows it, see
+//          UiTree.ShowsHeader). Then position is a normalized SCREEN position instead: viewers who also see the
+//          header show the emote right there, everybody else resolves it from the path as usual.
 internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
 {
     public ReactionType type;
@@ -20,6 +23,8 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
     public UiNodeId[]? path;
 
     public Vector2 position;
+
+    public bool inHeader;
 
     public bool ShouldBroadcast => true;
 
@@ -34,6 +39,7 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
         writer.WriteEnum(type);
         UiPath.Write(writer, path);
         writer.WriteVector2(position, EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
+        writer.WriteBool(inHeader);
     }
 
     public void Deserialize(PacketReader reader)
@@ -41,5 +47,6 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
         type = reader.ReadEnum<ReactionType>();
         path = UiPath.Read(reader);
         position = reader.ReadVector2(EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
+        inHeader = reader.ReadBool();
     }
 }
