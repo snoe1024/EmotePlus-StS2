@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "Emote+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "Emote Display Time",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "How long every emote stays on screen. Only affects what you see.",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}s",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Reverse Page Click Direction",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "While the emote wheel is open, left click goes to the previous page and right click to the next one. Turn this on to swap them."
+}

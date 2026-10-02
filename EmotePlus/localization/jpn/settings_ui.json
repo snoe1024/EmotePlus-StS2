@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "エモート+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "エモートの表示時間",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "すべてのエモートが画面に表示される時間です。\n自分の画面だけに影響します。",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}秒",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "クリックによるページ送りの方向を逆にする",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "エモートホイールを開いている間、左クリックで前のページ、右クリックで次のページに移動します。\nオンにすると逆になります。"
+}

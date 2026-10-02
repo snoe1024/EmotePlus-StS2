@@ -692,7 +692,7 @@ public static class UiTree
     /// </summary>
     public static CharacterModel? LobbyCharacter(ulong netId)
     {
-        var players = Submenu<NCharacterSelectScreen>()?.Lobby?.Players;
+        var players = MenuScreen<NCharacterSelectScreen>()?.Lobby?.Players;
         var character = players?.Find(p => p.id == netId).character;
         if (character != null)
         {
@@ -700,10 +700,23 @@ public static class UiTree
         }
 
         // The lobby for continuing a saved run: every player's character is fixed by the save.
-        var load = Submenu<NMultiplayerLoadGameScreen>() is { } screen ? LoadLobby(screen) : null;
-        load ??= Submenu<NCustomRunLoadScreen>() is { } custom ? CustomLoadLobby(custom) : null;
+        var load = MenuScreen<NMultiplayerLoadGameScreen>() is { } screen ? LoadLobby(screen) : null;
+        load ??= MenuScreen<NCustomRunLoadScreen>() is { } custom ? CustomLoadLobby(custom) : null;
         var saved = load?.Run.Players.FirstOrDefault(p => p.NetId == netId);
         return saved == null ? null : ModelDb.GetById<CharacterModel>(saved.CharacterId);
+    }
+
+    // Lobbies are screens of the MAIN MENU's submenu stack (not of the run's capstone stack, which Submenu<T>
+    // reads). Only looks at screens that already exist: asking the stack for a type would create it.
+    private static T? MenuScreen<T>() where T : NSubmenu
+    {
+        var stack = NGame.Instance?.MainMenu?.SubmenuStack;
+        if (stack == null || !GodotObject.IsInstanceValid(stack))
+        {
+            return null;
+        }
+
+        return stack.GetChildren().OfType<T>().FirstOrDefault();
     }
 
     private static readonly AccessTools.FieldRef<NMultiplayerLoadGameScreen, LoadRunLobby> LoadLobby =

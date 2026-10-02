@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
+using EmotePlus.EmotePlusCode.Config;
 using EmotePlus.EmotePlusCode.Ui;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.Nodes.Reaction;
@@ -46,7 +48,8 @@ public static class EmoteTracker
 {
     // The map is clamped like every other scrolling view (see ScrollSpace.ClampInset).
     private const float ClampMargin = ScrollSpace.ClampInset;
-    private const ulong MaxLifeMs = 2000;
+    // An entry outlives its emote's animation by a margin (the displayed time is configurable).
+    private static ulong MaxLifeMs => (ulong)(EmotePlusConfig.EmoteDisplayTime * 1000f) + 900;
     private const ulong LateLayerMs = 500;
 
     private enum LayerKind
@@ -296,14 +299,21 @@ public static class EmoteTracker
         EmoteLog.Info($"created layer {spec} under {parent.Name}");
     }
 
+    /// <summary>The outline of an emote whose sender has no character color (the original game's black, see-through).</summary>
+    public static readonly Color NeutralOutline = new(0f, 0f, 0f, 0.5f);
+
     // The outline is tinted with the color the sender's character draws on the map with (white silhouette x color).
     // A character without one (the base value is black) falls back to its name color.
-    public static Color OutlineColorOf(ulong netId)
+    private static Color OutlineColorOf(ulong netId)
     {
-        var character = RunManager.Instance.DebugOnlyGetState()?.GetPlayer(netId)?.Character;
+        return OutlineColorOf(RunManager.Instance.DebugOnlyGetState()?.GetPlayer(netId)?.Character);
+    }
+
+    public static Color OutlineColorOf(CharacterModel? character)
+    {
         if (character == null)
         {
-            return Colors.Black;
+            return NeutralOutline;
         }
 
         return character.MapDrawingColor == Colors.Black ? character.NameColor : character.MapDrawingColor;

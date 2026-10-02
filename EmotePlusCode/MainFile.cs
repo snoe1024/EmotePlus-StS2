@@ -1,4 +1,6 @@
 using System.Reflection;
+using BaseLib.Config;
+using EmotePlus.EmotePlusCode.Config;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
@@ -15,8 +17,14 @@ public partial class MainFile : Node
     public static MegaCrit.Sts2.Core.Logging.Logger Logger { get; } =
         new(ModId, MegaCrit.Sts2.Core.Logging.LogType.Generic);
 
+    public static EmotePlusConfig Config { get; private set; } = null!;
+
     public static void Initialize()
     {
+        Config = new EmotePlusConfig();
+        Config.Load();
+        ModConfigRegistry.Register(ModId, Config);
+
         var assembly = Assembly.GetExecutingAssembly();
 
         //If you want to use scripts defined in your mod for Godot scenes, uncomment the following line.
