@@ -13,6 +13,7 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 //
 // path     where the sender was in the UI tree (UiTree.LocalPath)
 // position in the coordinate system of the LAST node of path (see EmoteCoordinates)
+// drift    where the emote drifts to while it appears (see EmoteDrift)
 // inHeader the sender made the emote on the header bar (only possible on a screen that shows it, see
 //          UiTree.ShowsHeader). Then position is a normalized SCREEN position instead: viewers who also see the
 //          header show the emote right there, everybody else resolves it from the path as usual.
@@ -25,6 +26,8 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
     public Vector2 position;
 
     public bool inHeader;
+
+    public EmoteDrift drift;
 
     public bool ShouldBroadcast => true;
 
@@ -40,6 +43,8 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
         UiPath.Write(writer, path);
         writer.WriteVector2(position, EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
         writer.WriteBool(inHeader);
+        writer.WriteByte(drift.Angle);
+        writer.WriteByte(drift.Distance);
     }
 
     public void Deserialize(PacketReader reader)
@@ -48,5 +53,6 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
         path = UiPath.Read(reader);
         position = reader.ReadVector2(EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
         inHeader = reader.ReadBool();
+        drift = new EmoteDrift(reader.ReadByte(), reader.ReadByte());
     }
 }

@@ -5,6 +5,18 @@
   "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "所有表情在屏幕上显示的时间。\n仅影响你自己的画面。",
   "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}秒",
 
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.title": "地图上表情的显示时长",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "打开地图时发出的表情在屏幕上显示的时间。仅影响你自己的画面。",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}秒",
+
   "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "反转点击翻页方向",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "打开表情轮盘时，左键点击翻到上一页，右键点击翻到下一页。\n开启后方向相反。"
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "打开表情轮盘时，左键点击翻到上一页，右键点击翻到下一页。\n开启后方向相反。",
+
+  "EMOTEPLUS-EMOTE_VISIBILITY.title": "轮盘中显示的表情",
+
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "点击表情即可切换其在你轮盘中的显示或隐藏（空位会被补齐）。\n其他玩家的表情始终显示。如果隐藏了所有表情，则会显示全部表情。",
+
+  "EMOTEPLUS-SHOW_ALL_EMOTES.title": "全部显示",
+
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "全部隐藏"
 }

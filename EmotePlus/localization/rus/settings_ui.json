@@ -5,6 +5,18 @@
   "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "Как долго все эмоции остаются на экране.\nВлияет только на ваш экран.",
   "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} с",
 
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.title": "Время показа эмоций на карте",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "Как долго остаются на экране эмоции, отправленные при открытой карте. Влияет только на ваш экран.",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} с",
+
   "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Поменять направление листания страниц щелчком",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Пока открыто колесо эмоций, щелчок левой кнопкой открывает предыдущую страницу, правой — следующую.\nЕсли включить, направление меняется на обратное."
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Пока открыто колесо эмоций, щелчок левой кнопкой открывает предыдущую страницу, правой — следующую.\nЕсли включить, направление меняется на обратное.",
+
+  "EMOTEPLUS-EMOTE_VISIBILITY.title": "Эмоции в колесе",
+
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Щёлкните по эмоции, чтобы показать или скрыть её в вашем колесе (пропуски закрываются).\nЭмоции других игроков показываются всегда. Если скрыть все эмоции, будут показаны все.",
+
+  "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Показать все",
+
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Скрыть все"
 }

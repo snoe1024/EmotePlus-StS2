@@ -13,6 +13,12 @@ public sealed class EmotePlusConfig : SimpleModConfig
     public static float EmoteDisplayTime { get; set; } = 1.1f;
 
     /// <summary>
+    /// The same for emotes made while the map is open: they point at a place, so they stay longer.
+    /// </summary>
+    [ConfigSlider(0.5, 10.0, 0.1, Format = "{0:0.0}sec")]
+    public static float MapEmoteDisplayTime { get; set; } = 4.5f;
+
+    /// <summary>
     /// While the emote wheel is open, the left click goes to the previous page and the right click to the next one;
     /// with this on, the other way round.
     /// </summary>

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using EmotePlus.EmotePlusCode.Config;
+using EmotePlus.EmotePlusCode.Patch;
 using EmotePlus.EmotePlusCode.Ui;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
@@ -35,7 +36,15 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 //   PlayerList  child of NGlobalUi right after the player list (the widgets that open the player detail screens):
 //               the same depth as those widgets, i.e. above the map and capstones
 //   Scene       child of that screen's own node (hidden/covered exactly like the screen)
-// A layer needed later than LateLayerMs after the spawn is not created (its animation would restart).
+// A layer needed later (the viewer moves to where the emote belongs while it is still on screen) is created then,
+// and its animation is advanced by the time that has passed (see ReactionAnimPatch), so it continues instead of
+// starting over; an emote whose animation is over is not created anywhere.
+//
+// "Substitute position display": an emote pinned on a button because its sender is somewhere the viewer is not.
+// Such emotes can cover small buttons, so
+//   - when several of them are pinned on the same button, only the newest is shown (the others stay alive, hidden,
+//     so that they are still there when the viewer goes to that screen);
+//   - while the mouse is near a shown one, its outline turns fully transparent and its icon half transparent.
 //
 // The emote's own drift: NReaction.DoAnim tweens the emote node's `position` by 40-60px in a random direction.
 // The emote sits inside a holder Control and every frame the holder is moved so that the emote's *final* center
@@ -49,8 +58,26 @@ public static class EmoteTracker
     // The map is clamped like every other scrolling view (see ScrollSpace.ClampInset).
     private const float ClampMargin = ScrollSpace.ClampInset;
     // An entry outlives its emote's animation by a margin (the displayed time is configurable).
-    private static ulong MaxLifeMs => (ulong)(EmotePlusConfig.EmoteDisplayTime * 1000f) + 900;
-    private const ulong LateLayerMs = 500;
+    private const ulong LifeMarginMs = 900;
+
+    /// <summary>
+    /// How long an emote made at <paramref name="senderPath"/> stays on screen: emotes made on the map have their own
+    /// (longer) time, since they point at a place.
+    /// </summary>
+    public static float DisplaySecondsOf(IReadOnlyList<UiNodeId> senderPath)
+    {
+        return senderPath.Count > 0 && senderPath[^1].Kind == UiNodeKind.Map
+            ? EmotePlusConfig.MapEmoteDisplayTime
+            : EmotePlusConfig.EmoteDisplayTime;
+    }
+    // How long an emote is on screen (the layers of an older entry would show nothing).
+    private static ulong DisplayMs(Entry entry) => (ulong)(DisplaySecondsOf(entry.SenderPath) * 1000f);
+
+    // The mouse is "near" a substitute-position emote within this distance of its center in each axis (the emote
+    // is 80x80, so this is a little more than its size).
+    private const float NearDistance = 56f;
+    private const float NearIconAlpha = 0.5f;
+    private const double FadeSeconds = 0.12;
 
     private enum LayerKind
     {
@@ -73,7 +100,9 @@ public static class EmoteTracker
     }
 
     // Bounds: if set, the emote's final center is clamped into this global rect.
-    private readonly record struct Placement(LayerSpec Layer, Vector2 Target, Mode Mode, Rect2? Bounds = null);
+    // Element: the button an emote is pinned on (substitute position display), if any.
+    private readonly record struct Placement(LayerSpec Layer, Vector2 Target, Mode Mode, Rect2? Bounds = null,
+        Control? Element = null);
 
     private sealed class Layer
     {
@@ -81,7 +110,12 @@ public static class EmoteTracker
         public required Control Holder;
         public required NReaction Emote;
         public required Vector2 BasePosition;
+        public required TextureRect Icon;
+        public required Color OutlineColor;
         public bool Started;
+        public bool Faded; // the mouse is near: fading to / faded
+        public float FadeAmount; // 0 = normal, 1 = outline gone and icon half transparent
+        public Tween? FadeTween;
     }
 
     private sealed class Entry
@@ -92,6 +126,7 @@ public static class EmoteTracker
         public required UiNodeId[] SenderPath;
         public required Vector2 Position;
         public required bool InHeader;
+        public required EmoteDrift Drift;
         public required ulong SpawnedMs;
         public readonly List<Layer> Layers = new();
         public LayerSpec? Active;
@@ -101,7 +136,7 @@ public static class EmoteTracker
     private static SceneTree? _subscribedTree;
 
     public static void Spawn(NReactionContainer container, EmoteType type, ulong senderNetId, UiNodeId[] senderPath, Vector2 position,
-        bool inHeader)
+        bool inHeader, EmoteDrift drift)
     {
         if (!GodotObject.IsInstanceValid(container) || !container.IsInsideTree())
         {
@@ -116,12 +151,13 @@ public static class EmoteTracker
             SenderPath = senderPath,
             Position = position,
             InHeader = inHeader,
+            Drift = drift,
             SpawnedMs = Time.GetTicksMsec(),
         };
         Entries.Add(entry);
         var viewer = UiTree.LocalPath();
         EmoteLog.Info($"spawn type={type} sender={UiPath.Describe(senderPath)} viewer={UiPath.Describe(viewer)} pos={position}");
-        Update(entry, viewer, entry.SpawnedMs);
+        UpdateEntries(viewer, entry.SpawnedMs);
         Subscribe(container.GetTree());
     }
 
@@ -163,15 +199,20 @@ public static class EmoteTracker
             for (var i = Entries.Count - 1; i >= 0; i--)
             {
                 var entry = Entries[i];
-                if (!GodotObject.IsInstanceValid(entry.Container) || now - entry.SpawnedMs > MaxLifeMs)
+                if (!GodotObject.IsInstanceValid(entry.Container) || now - entry.SpawnedMs > DisplayMs(entry) + LifeMarginMs)
                 {
-                    // Layers free themselves when their emote's animation ends (or with their parent).
-                    Entries.RemoveAt(i);
-                    continue;
-                }
+                    // Layers free themselves when their emote's animation ends (or with their parent); one that
+                    // never got to start (never shown) would stay hidden forever, so free those here.
+                    foreach (var layer in entry.Layers.Where(l => !l.Started && GodotObject.IsInstanceValid(l.Holder)))
+                    {
+                        layer.Holder.QueueFree();
+                    }
 
-                Update(entry, viewer, now);
+                    Entries.RemoveAt(i);
+                }
             }
+
+            UpdateEntries(viewer, now);
         }
 
         if (Entries.Count == 0)
@@ -180,9 +221,31 @@ public static class EmoteTracker
         }
     }
 
-    private static void Update(Entry entry, UiNodeId[] viewer, ulong now)
+    private static void UpdateEntries(UiNodeId[] viewer, ulong now)
     {
-        var placement = Resolve(entry, viewer);
+        var placements = Entries.Select(entry => Resolve(entry, viewer)).ToList();
+
+        // Per button, the newest emote that is still on screen (the entries are in the order of their spawn).
+        var newest = new Dictionary<Control, Entry>();
+        for (var i = 0; i < Entries.Count; i++)
+        {
+            if (placements[i]?.Element is { } element && GodotObject.IsInstanceValid(element) &&
+                now - Entries[i].SpawnedMs <= DisplayMs(Entries[i]))
+            {
+                newest[element] = Entries[i];
+            }
+        }
+
+        for (var i = 0; i < Entries.Count; i++)
+        {
+            var element = placements[i]?.Element;
+            var suppressed = element != null && newest.TryGetValue(element, out var top) && top != Entries[i];
+            Update(Entries[i], placements[i], suppressed, viewer, now);
+        }
+    }
+
+    private static void Update(Entry entry, Placement? placement, bool suppressed, UiNodeId[] viewer, ulong now)
+    {
         var spec = placement?.Layer;
         if (spec != entry.Active)
         {
@@ -194,18 +257,22 @@ public static class EmoteTracker
 
         entry.Layers.RemoveAll(l => !GodotObject.IsInstanceValid(l.Holder) || !GodotObject.IsInstanceValid(l.Emote));
         if (placement.HasValue && !entry.Layers.Exists(l => l.Spec == placement.Value.Layer) &&
-            now - entry.SpawnedMs <= LateLayerMs)
+            now - entry.SpawnedMs + 50 < DisplayMs(entry))
         {
             CreateLayer(entry, placement.Value.Layer);
         }
 
         foreach (var layer in entry.Layers)
         {
-            var shown = placement.HasValue && layer.Spec == placement.Value.Layer;
+            var shown = placement.HasValue && !suppressed && layer.Spec == placement.Value.Layer;
             layer.Holder.Visible = shown;
             if (shown)
             {
                 PositionLayer(entry, layer, placement!.Value);
+            }
+            else
+            {
+                SetFaded(layer, false, animate: false);
             }
         }
     }
@@ -224,11 +291,62 @@ public static class EmoteTracker
 
         // emote center = holder origin + emote.Position + pivot (the scene's pivot is the 80x80 emote's center)
         layer.Holder.GlobalPosition = center - layer.Emote.Position - layer.Emote.PivotOffset;
+
+        // Only a shown emote on a substitute position reacts to the mouse (the others are not in the way).
+        var near = false;
+        if (placement.Element != null)
+        {
+            var mouse = layer.Emote.GetGlobalMousePosition();
+            near = Mathf.Abs(mouse.X - center.X) <= NearDistance && Mathf.Abs(mouse.Y - center.Y) <= NearDistance;
+        }
+
+        SetFaded(layer, near, animate: true);
         if (!layer.Started)
         {
             layer.Started = true;
+            // A layer made after the spawn joins its animation where it is by now.
+            layer.Emote.SetMeta(ReactionAnimPatch.DriftMeta, entry.Drift.Offset);
+            layer.Emote.SetMeta(ReactionAnimPatch.DisplaySecondsMeta, DisplaySecondsOf(entry.SenderPath));
+            layer.Emote.SetMeta(ReactionAnimPatch.ElapsedMeta, (Time.GetTicksMsec() - entry.SpawnedMs) / 1000.0);
             layer.Emote.BeginAnim();
         }
+    }
+
+    // Near the mouse: no outline, and the icon half transparent (the fade of the emote itself is its own alpha).
+    // The change is tweened; a new request kills the running tween and continues from where it was.
+    private static void SetFaded(Layer layer, bool faded, bool animate)
+    {
+        if (layer.Faded == faded)
+        {
+            return;
+        }
+
+        layer.Faded = faded;
+        layer.FadeTween?.Kill();
+        layer.FadeTween = null;
+        var target = faded ? 1f : 0f;
+        if (!animate)
+        {
+            ApplyFade(layer, target);
+            return;
+        }
+
+        var tween = layer.Emote.CreateTween();
+        tween.TweenMethod(Callable.From<float>(amount => ApplyFade(layer, amount)), layer.FadeAmount, target, FadeSeconds);
+        layer.FadeTween = tween;
+    }
+
+    private static void ApplyFade(Layer layer, float amount)
+    {
+        if (!GodotObject.IsInstanceValid(layer.Emote) || !GodotObject.IsInstanceValid(layer.Icon))
+        {
+            return;
+        }
+
+        layer.FadeAmount = amount;
+        var outline = layer.OutlineColor;
+        layer.Emote.SelfModulate = new Color(outline, outline.A * (1f - amount));
+        layer.Icon.Modulate = new Color(1f, 1f, 1f, Mathf.Lerp(1f, NearIconAlpha, amount));
     }
 
     private static void CreateLayer(Entry entry, LayerSpec spec)
@@ -295,7 +413,11 @@ public static class EmoteTracker
                 holder.QueueFreeSafely();
             }
         };
-        entry.Layers.Add(new Layer { Spec = spec, Holder = holder, Emote = emote, BasePosition = emote.Position });
+        entry.Layers.Add(new Layer
+        {
+            Spec = spec, Holder = holder, Emote = emote, BasePosition = emote.Position,
+            Icon = emote.GetChild<TextureRect>(0), OutlineColor = entry.OutlineColor,
+        });
         EmoteLog.Info($"created layer {spec} under {parent.Name}");
     }
 
@@ -448,7 +570,7 @@ public static class EmoteTracker
 
     private static Placement PinAt(LayerSpec layer, ButtonTarget button)
     {
-        return new Placement(layer, button.Point(), Mode.Pin, button.Bounds);
+        return new Placement(layer, button.Point(), Mode.Pin, button.Bounds, button.Control);
     }
 
     private static LayerSpec SceneLayerOf(UiNodeId node)

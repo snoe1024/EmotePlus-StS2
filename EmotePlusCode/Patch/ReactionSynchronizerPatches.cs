@@ -32,11 +32,12 @@ internal static class ContextEmoteHandler
         if (message.path.Length == 0)
         {
             LobbyEmote.Show(container, message.type, senderId,
-                NetCursorHelper.GetControlSpacePosition(message.position, container));
+                NetCursorHelper.GetControlSpacePosition(message.position, container), message.drift);
             return;
         }
 
-        EmoteTracker.Spawn(container, message.type, senderId, message.path, message.position, message.inHeader);
+        EmoteTracker.Spawn(container, message.type, senderId, message.path, message.position, message.inHeader,
+            message.drift);
     }
 }
 
@@ -58,7 +59,7 @@ public static class SendLocalReactionPatch
             // Not in a run (a lobby): just the screen position.
             __instance.NetService.SendMessage(new ContextEmoteMessage
             {
-                type = EmoteImages.FromVanilla(type), path = [],
+                type = EmoteImages.FromVanilla(type), path = [], drift = LocalEmote.TakeDrift(),
                 position = NetCursorHelper.GetNormalizedPosition(mouseScreenPos, container),
             });
             return false;
@@ -72,6 +73,7 @@ public static class SendLocalReactionPatch
         __instance.NetService.SendMessage(new ContextEmoteMessage
         {
             type = EmoteImages.FromVanilla(type), path = path, position = position, inHeader = inHeader,
+            drift = LocalEmote.TakeDrift(),
         });
         return false;
     }

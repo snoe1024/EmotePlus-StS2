@@ -9,10 +9,11 @@
   "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "While the emote wheel is open, left click goes to the previous page and right click to the next one.\nTurn this on to swap them.",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "Emotes on the Wheel",
-
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Click an emote to hide or show it on your wheel (the wheel closes the gaps). Other players' emotes are always shown. If every emote is hidden, all are shown.",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Click an emote to hide or show it on your wheel (the wheel closes the gaps).\nOther players' emotes are always shown. If every emote is hidden, all are shown.",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Show All",
-
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Hide All"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Hide All",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.title": "Map Emote Display Time",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "How long emotes made while the map is open stay on screen. They point at a place, so they stay longer by default. Only affects what you see.",
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}s"
 }

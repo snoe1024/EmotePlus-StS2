@@ -1,3 +1,4 @@
+using EmotePlus.EmotePlusCode.Patch;
 using EmotePlus.EmotePlusCode.Ui;
 using Godot;
 using HarmonyLib;
@@ -15,6 +16,16 @@ public static class LocalEmote
     private static readonly AccessTools.FieldRef<NReactionContainer, ReactionSynchronizer?> Synchronizer =
         AccessTools.FieldRefAccess<NReactionContainer, ReactionSynchronizer?>("_synchronizer");
 
+    private static EmoteDrift? _pendingDrift;
+
+    /// <summary>The drift of the emote being sent (made by <see cref="Do"/>).</summary>
+    public static EmoteDrift TakeDrift()
+    {
+        var drift = _pendingDrift ?? EmoteDrift.Random();
+        _pendingDrift = null;
+        return drift;
+    }
+
     /// <summary>
     /// Shows the emote for the local player and sends it. The local player's own emote goes through the same
     /// tracker as everybody else's (as an emote whose sender is the local player), so that it behaves the same way:
@@ -22,18 +33,21 @@ public static class LocalEmote
     /// </summary>
     public static void Do(NReactionContainer container, EmoteType type, Vector2 screenPosition)
     {
+        // Decided here, for the emote shown here and the one sent (SendLocalReactionPatch takes it from _pendingDrift).
+        var drift = EmoteDrift.Random();
+        _pendingDrift = drift;
         var path = UiTree.LocalPath(screenPosition);
         // LocalContext.NetId is only set while a run is going: in a lobby, ask the connection.
         var me = Synchronizer(container)?.NetService.NetId ?? LocalContext.NetId ?? 0UL;
         if (path.Length == 0)
         {
-            LobbyEmote.Show(container, type, me, screenPosition);
+            LobbyEmote.Show(container, type, me, screenPosition, drift);
         }
         else
         {
             var inHeader = UiTree.ShowsHeader(path) && UiTree.IsOnHeader(screenPosition);
             EmoteTracker.Spawn(container, type, me, path,
-                EmoteCoordinates.PositionFor(path, screenPosition, container, inHeader), inHeader);
+                EmoteCoordinates.PositionFor(path, screenPosition, container, inHeader), inHeader, drift);
         }
 
         // The synchronizer's parameter is the vanilla enum, but SendLocalReactionPatch takes over and only reads
@@ -48,10 +62,12 @@ public static class LocalEmote
 /// </summary>
 public static class LobbyEmote
 {
-    public static void Show(NReactionContainer container, EmoteType type, ulong senderId, Vector2 position)
+    public static void Show(NReactionContainer container, EmoteType type, ulong senderId, Vector2 position,
+        EmoteDrift drift)
     {
         var character = UiTree.LobbyCharacter(senderId);
         var emote = EmoteTracker.CreateEmote(type, EmoteTracker.OutlineColorOf(character));
+        emote.SetMeta(ReactionAnimPatch.DriftMeta, drift.Offset);
         container.AddChildSafely(emote);
         emote.GlobalPosition = position - emote.Size / 2f;
         emote.BeginAnim();
