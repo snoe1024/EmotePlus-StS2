@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "表情+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "表情顯示時長",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "所有表情在螢幕上顯示的時間。\n僅影響你自己的畫面。",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} 秒",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "反轉點擊翻頁方向",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "開啟表情輪盤時，左鍵點擊翻到上一頁，右鍵點擊翻到下一頁。\n開啟後方向相反。"
+}

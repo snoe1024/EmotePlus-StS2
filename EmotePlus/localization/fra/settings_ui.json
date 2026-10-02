@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "Émote+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "Durée d'affichage des émotes",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "Durée pendant laquelle toutes les émotes restent à l'écran.\nN'affecte que votre propre écran.",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} s",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Inverser le sens de changement de page au clic",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Tant que la roue d'émotes est ouverte, le clic gauche affiche la page précédente et le clic droit la page suivante.\nActivé, c'est l'inverse."
+}

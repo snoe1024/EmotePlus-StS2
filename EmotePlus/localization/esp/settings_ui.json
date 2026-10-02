@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "Emote+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "Duración de los emotes en pantalla",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "Tiempo que todos los emotes permanecen en pantalla.\nSolo afecta a tu propia pantalla.",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} s",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Invertir el sentido de cambio de página con clic",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Mientras la rueda de emotes está abierta, el clic izquierdo va a la página anterior y el clic derecho a la siguiente.\nActívalo para invertirlo."
+}

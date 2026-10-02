@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "Эмоции+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "Время показа эмоций",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "Как долго все эмоции остаются на экране.\nВлияет только на ваш экран.",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} с",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Поменять направление листания страниц щелчком",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Пока открыто колесо эмоций, щелчок левой кнопкой открывает предыдущую страницу, правой — следующую.\nЕсли включить, направление меняется на обратное."
+}

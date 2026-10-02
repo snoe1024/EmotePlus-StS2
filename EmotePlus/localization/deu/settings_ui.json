@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "Emote+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "Anzeigedauer der Emotes",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "Wie lange alle Emotes auf dem Bildschirm bleiben.\nBetrifft nur deinen eigenen Bildschirm.",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} s",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Klickrichtung beim Blättern umkehren",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Solange das Emote-Rad geöffnet ist, wechselst du mit Linksklick zur vorherigen und mit Rechtsklick zur nächsten Seite.\nWenn aktiviert, ist es umgekehrt."
+}

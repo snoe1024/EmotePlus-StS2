@@ -1,3 +1,4 @@
+using EmotePlus.EmotePlusCode.Config;
 using EmotePlus.EmotePlusCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
@@ -86,6 +87,57 @@ public static class EmoteImages
     /// <summary>The slots of the wheel, page after page (<see cref="EmoteType.None"/> = empty slot).</summary>
     public static readonly IReadOnlyList<EmoteType> WheelSlots =
         WheelLayout.Concat(Names.Keys.Except(WheelLayout)).ToList();
+
+    /// <summary>Every emote with its image name, in the order of <see cref="WheelSlots"/>.</summary>
+    public static IEnumerable<(EmoteType Type, string Name)> AllEmotes =>
+        WheelSlots.Where(t => t != EmoteType.None).Select(t => (t, NameOf(t)));
+
+    // The emotes the player hid (EmotePlusConfig.HiddenEmotes), parsed again whenever the text changes.
+    private static string _hiddenText = "";
+    private static HashSet<string> _hidden = [];
+
+    private static HashSet<string> Hidden
+    {
+        get
+        {
+            var text = EmotePlusConfig.HiddenEmotes ?? "";
+            if (text != _hiddenText)
+            {
+                _hiddenText = text;
+                _hidden = text.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToHashSet();
+            }
+
+            return _hidden;
+        }
+    }
+
+    public static bool IsHidden(string name) => Hidden.Contains(name);
+
+    public static void SetHidden(string name, bool hidden)
+    {
+        var set = new HashSet<string>(Hidden);
+        if (hidden ? !set.Add(name) : !set.Remove(name))
+        {
+            return;
+        }
+
+        EmotePlusConfig.HiddenEmotes = string.Join(",", set.Order());
+    }
+
+    /// <summary>
+    /// <see cref="WheelSlots"/> without the emotes the player hid, so the wheel closes the gaps. Empty slots
+    /// (<see cref="EmoteType.None"/>) stay. If every emote is hidden, nothing is hidden.
+    /// </summary>
+    public static IReadOnlyList<EmoteType> VisibleSlots()
+    {
+        var hidden = Hidden;
+        if (hidden.Count == 0 || AllEmotes.All(e => hidden.Contains(e.Name)))
+        {
+            return WheelSlots;
+        }
+
+        return WheelSlots.Where(t => t == EmoteType.None || !hidden.Contains(NameOf(t))).ToList();
+    }
 
     private static readonly Dictionary<string, Texture2D> Cache = new();
 

@@ -70,7 +70,10 @@ public static class ReactionWheelInputPatch
     private static int _page;
     private static bool _closing;
 
-    private static int PageCount => (EmoteImages.WheelSlots.Count + SlotCount - 1) / SlotCount;
+    // The emotes on the wheel (the options may hide some): read again each time the wheel opens.
+    private static IReadOnlyList<EmoteType> _layout = EmoteImages.WheelSlots;
+
+    private static int PageCount => (_layout.Count + SlotCount - 1) / SlotCount;
 
     [HarmonyPrefix]
     public static bool Prefix(NReactionWheel __instance, InputEvent inputEvent)
@@ -183,14 +186,14 @@ public static class ReactionWheelInputPatch
         {
             var index = _page * SlotCount + i;
             var wedge = _wedges[i];
-            if (index >= EmoteImages.WheelSlots.Count || EmoteImages.WheelSlots[index] == EmoteType.None)
+            if (index >= _layout.Count || _layout[index] == EmoteType.None)
             {
                 Slots[i] = null;
                 wedge.Visible = false;
                 continue;
             }
 
-            var type = EmoteImages.WheelSlots[index];
+            var type = _layout[index];
             var name = EmoteImages.NameOf(type);
             Slots[i] = type;
             wedge.Visible = true;
@@ -243,6 +246,8 @@ public static class ReactionWheelInputPatch
         SelectedRef(wheel)?.OnDeselected();
         SelectedRef(wheel) = null;
 
+        _layout = EmoteImages.VisibleSlots();
+        _page = Math.Min(_page, Math.Max(0, PageCount - 1));
         ShowPage();
         CenterRef(wheel) = wheel.GetViewport().GetMousePosition();
         marker.Position = (wheel.Size - marker.Size) * 0.5f;

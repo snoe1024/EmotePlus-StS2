@@ -1,0 +1,10 @@
+{
+  "EMOTEPLUS.mod_title": "이모티콘+",
+
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.title": "이모티콘 표시 시간",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "모든 이모티콘이 화면에 표시되는 시간입니다.\n자신의 화면에만 영향을 줍니다.",
+  "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}초",
+
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "클릭 페이지 넘김 방향 반대로",
+  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "이모티콘 휠이 열려 있는 동안 좌클릭은 이전 페이지, 우클릭은 다음 페이지로 이동합니다.\n켜면 반대로 동작합니다."
+}
