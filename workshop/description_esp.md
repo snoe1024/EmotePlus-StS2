@@ -8,24 +8,22 @@ Este mod rodea cada emote con el color del personaje que lo usa y lo muestra [b]
 Además, añade páginas para que puedas elegir entre muchos más emotes.
 
 [b]Se distingue por el color[/b]
-El contorno del emote toma el color del personaje del jugador que lo usó. De un vistazo sabes de quién es.
+El contorno del emote toma el color del personaje del jugador que lo usó.
 
 [b]Se muestra donde corresponde según la pantalla[/b]
 Los emotes no se colocan por coordenadas de pantalla, sino en la posición exacta de la pantalla que ese jugador tiene abierta.
 [list]
-[*] Mapa: se muestra en su posición en el mapa y se mantiene fijo al desplazarte. Si queda fuera de la pantalla, se acerca al borde.
-[*] Cuando el otro jugador tiene abierta otra pantalla: se muestra en la posición del botón que lleva a esa pantalla (botón del mapa, lista de jugadores, botones del Compendio, etc.).
-[*] Pantallas con desplazamiento como la Colección de cartas, el Relicario, el Pocionero, el Bestiario y el Mazo: se muestra en su posición dentro de la lista. Si queda fuera de la pantalla, se acerca al borde.
-[*] Un emote enviado desde tu propia pantalla de Mazo se muestra a los demás jugadores sobre la carta en tu «pantalla de detalles del jugador».
-[*] Un emote enviado en la barra superior se muestra en la misma posición a todos los jugadores que ven esa barra.
+[*]Pantallas con desplazamiento como el mapa: se muestra en su posición en el mapa y se mantiene fijo al desplazarte.
+[*]Cuando el otro jugador tiene abierta otra pantalla: se muestra en la posición del botón que lleva a esa pantalla.
+[*]Detalles de una carta, por ejemplo en la Colección de cartas: se muestra de modo que puedas seguir, paso a paso, qué botones se pulsaron hasta llegar a esa carta.
 [/list]
 
 [b]Rueda de emotes con páginas[/b]
 Al haber tantos emotes, los ocho huecos de la rueda se quedaban cortos, así que ahora la rueda tiene páginas.
 [list]
-[*] Mientras la rueda está abierta, el clic izquierdo va a la página anterior y el clic derecho a la siguiente.
-[*] En el centro de la rueda se muestra la página actual, por ejemplo «1/3».
-[*] Si sueltas la tecla casi sin mover el ratón, no se envía ningún emote. Así no envías uno por error cuando solo quieres cambiar de página.
+[*]Mientras la rueda está abierta, el clic izquierdo va a la página anterior y el clic derecho a la siguiente.
+[*]En el centro de la rueda se muestra la página actual, por ejemplo «1/3».
+[*]Si sueltas la tecla casi sin mover el ratón, no se envía ningún emote. Así no envías uno por error cuando solo quieres cambiar de página.
 [/list]
 
 [b]Elige tus emotes[/b]
@@ -41,6 +39,10 @@ BaseLib (se instala automáticamente como dependencia del Workshop).
 [b]Idiomas[/b]
 El desarrollador es japonés, así que aparte del japonés todo está traducido automáticamente. Las correcciones son muy bienvenidas.
 
+[b]Haz el multijugador aún más divertido[/b]
+¡Echa también un vistazo a mis otros mods para multijugador!
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3804845182]Apodo[/url]
+
 [b]Comentarios[/b]
-Las peticiones de nuevos emotes se recogen en el hilo de la sección «Discusiones» de esta página.
+Las peticiones de nuevos emotes se recogen en el hilo de este mod.
 Los informes de errores y las correcciones de traducción son bienvenidos en los comentarios.
