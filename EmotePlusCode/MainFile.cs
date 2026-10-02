@@ -10,6 +10,7 @@ namespace EmotePlus.EmotePlusCode;
 public partial class MainFile : Node
 {
     public const string ModId = "EmotePlus"; //At the moment, this is used only for the Logger and harmony names.
+    public const string ResPath = $"res://{ModId}";
 
     public static MegaCrit.Sts2.Core.Logging.Logger Logger { get; } =
         new(ModId, MegaCrit.Sts2.Core.Logging.LogType.Generic);

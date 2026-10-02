@@ -18,7 +18,7 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 //          header show the emote right there, everybody else resolves it from the path as usual.
 internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
 {
-    public ReactionType type;
+    public EmoteType type;
 
     public UiNodeId[]? path;
 
@@ -36,7 +36,7 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
 
     public void Serialize(PacketWriter writer)
     {
-        writer.WriteEnum(type);
+        writer.WriteByte((byte)type);
         UiPath.Write(writer, path);
         writer.WriteVector2(position, EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
         writer.WriteBool(inHeader);
@@ -44,7 +44,7 @@ internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
 
     public void Deserialize(PacketReader reader)
     {
-        type = reader.ReadEnum<ReactionType>();
+        type = (EmoteType)reader.ReadByte();
         path = UiPath.Read(reader);
         position = reader.ReadVector2(EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
         inHeader = reader.ReadBool();

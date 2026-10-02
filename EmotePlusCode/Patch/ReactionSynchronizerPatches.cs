@@ -2,8 +2,11 @@ using EmotePlus.EmotePlusCode.Reaction;
 using EmotePlus.EmotePlusCode.Ui;
 using Godot;
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Multiplayer.Game;
+using MegaCrit.Sts2.Core.Multiplayer.Messages.Game.Flavor;
 using MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Cards;
@@ -27,7 +30,7 @@ internal static class ContextEmoteHandler
             return;
         }
 
-        EmoteTracker.Spawn(container, message.type, message.path, message.position, message.inHeader);
+        EmoteTracker.Spawn(container, message.type, senderId, message.path, message.position, message.inHeader);
     }
 }
 
@@ -49,14 +52,59 @@ public static class DoLocalReactionPatch
         var path = UiTree.LocalPath(position);
         if (path.Length == 0)
         {
-            return true; // not in a run: vanilla
+            // Not in a run. In the lobby the emote gets the outline color of the character picked there.
+            if (LobbyEmote.Show(__instance, EmoteImages.FromVanilla(TextureToType(tex)), LocalContext.NetId ?? 0UL, position))
+            {
+                Synchronizer(__instance)?.SendLocalReaction(TextureToType(tex), position);
+                return false;
+            }
+
+            return true; // vanilla
         }
 
-        var type = TextureToType(tex);
+        var vanillaType = TextureToType(tex);
+        var type = EmoteImages.FromVanilla(vanillaType);
         var inHeader = UiTree.ShowsHeader(path) && UiTree.IsOnHeader(position);
-        EmoteTracker.Spawn(__instance, type, path, EmoteCoordinates.PositionFor(path, position, __instance, inHeader), inHeader);
-        Synchronizer(__instance)?.SendLocalReaction(type, position);
+        EmoteTracker.Spawn(__instance, type, LocalContext.NetId ?? 0UL, path, EmoteCoordinates.PositionFor(path, position, __instance, inHeader), inHeader);
+        Synchronizer(__instance)?.SendLocalReaction(vanillaType, position);
         return false;
+    }
+}
+
+// Outside a run the vanilla ReactionMessage is used. A lobby emote is drawn like the vanilla one (at the screen
+// position), but with the outline in the color of the sender's picked character; with no such character (random,
+// or not a new-run lobby) the vanilla code draws it.
+internal static class LobbyEmote
+{
+    public static bool Show(NReactionContainer container, EmoteType type, ulong senderId, Vector2 position)
+    {
+        var character = UiTree.LobbyCharacter(senderId);
+        if (character == null)
+        {
+            return false;
+        }
+
+        var color = character.MapDrawingColor == Colors.Black ? character.NameColor : character.MapDrawingColor;
+        var emote = EmoteTracker.CreateEmote(type, color);
+        container.AddChildSafely(emote);
+        emote.GlobalPosition = position - emote.Size / 2f;
+        emote.BeginAnim();
+        return true;
+    }
+}
+
+[HarmonyPatch(typeof(ReactionSynchronizer), "HandleReactionMessage")]
+public static class HandleLobbyReactionPatch
+{
+    private static readonly AccessTools.FieldRef<ReactionSynchronizer, NReactionContainer> Container =
+        AccessTools.FieldRefAccess<ReactionSynchronizer, NReactionContainer>("_container");
+
+    [HarmonyPrefix]
+    public static bool Prefix(ReactionSynchronizer __instance, ReactionMessage message, ulong senderId)
+    {
+        var container = Container(__instance);
+        var position = NetCursorHelper.GetControlSpacePosition(message.normalizedPosition, container);
+        return !LobbyEmote.Show(container, EmoteImages.FromVanilla(message.type), senderId, position);
     }
 }
 
@@ -81,7 +129,7 @@ public static class SendLocalReactionPatch
         EmoteLog.Info($"send type={type} sender={UiPath.Describe(path)} screenPos={mouseScreenPos} pos={position} inHeader={inHeader}");
         __instance.NetService.SendMessage(new ContextEmoteMessage
         {
-            type = type, path = path, position = position, inHeader = inHeader,
+            type = EmoteImages.FromVanilla(type), path = path, position = position, inHeader = inHeader,
         });
         return false;
     }

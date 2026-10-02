@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput;
 using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.Nodes.Reaction;
 using MegaCrit.Sts2.Core.Nodes.Screens.Map;
 
@@ -83,7 +84,8 @@ public static class EmoteTracker
     private sealed class Entry
     {
         public required NReactionContainer Container;
-        public required ReactionType Type;
+        public required EmoteType Type;
+        public required Color OutlineColor;
         public required UiNodeId[] SenderPath;
         public required Vector2 Position;
         public required bool InHeader;
@@ -95,7 +97,7 @@ public static class EmoteTracker
     private static readonly List<Entry> Entries = new();
     private static SceneTree? _subscribedTree;
 
-    public static void Spawn(NReactionContainer container, ReactionType type, UiNodeId[] senderPath, Vector2 position,
+    public static void Spawn(NReactionContainer container, EmoteType type, ulong senderNetId, UiNodeId[] senderPath, Vector2 position,
         bool inHeader)
     {
         if (!GodotObject.IsInstanceValid(container) || !container.IsInsideTree())
@@ -107,6 +109,7 @@ public static class EmoteTracker
         {
             Container = container,
             Type = type,
+            OutlineColor = OutlineColorOf(senderNetId),
             SenderPath = senderPath,
             Position = position,
             InHeader = inHeader,
@@ -274,7 +277,7 @@ public static class EmoteTracker
         }
 
         var holder = new Control { MouseFilter = Control.MouseFilterEnum.Ignore, Size = entry.Container.Size };
-        var emote = NReaction.Create(entry.Type);
+        var emote = CreateEmote(entry.Type, entry.OutlineColor);
         parent.AddChildSafely(holder);
         if (placeAfter != null && placeAfter.GetParent() == parent)
         {
@@ -291,6 +294,41 @@ public static class EmoteTracker
         };
         entry.Layers.Add(new Layer { Spec = spec, Holder = holder, Emote = emote, BasePosition = emote.Position });
         EmoteLog.Info($"created layer {spec} under {parent.Name}");
+    }
+
+    // The outline is tinted with the color the sender's character draws on the map with (white silhouette x color).
+    // A character without one (the base value is black) falls back to its name color.
+    public static Color OutlineColorOf(ulong netId)
+    {
+        var character = RunManager.Instance.DebugOnlyGetState()?.GetPlayer(netId)?.Character;
+        if (character == null)
+        {
+            return Colors.Black;
+        }
+
+        return character.MapDrawingColor == Colors.Black ? character.NameColor : character.MapDrawingColor;
+    }
+
+    /// <summary>
+    /// The vanilla emote node, showing the tinted outline silhouette (a filled shape) as its own texture, with the
+    /// icon as a child: children draw after their parent, so the icon ends up in front. The node fades itself out
+    /// through its own modulate, which also applies to children, so both fade together.
+    /// </summary>
+    public static NReaction CreateEmote(EmoteType type, Color outlineColor)
+    {
+        var name = EmoteImages.NameOf(type);
+        var emote = NReaction.Create(EmoteImages.Outline(name));
+        emote.SelfModulate = outlineColor;
+        var icon = new TextureRect
+        {
+            Texture = EmoteImages.Icon(name),
+            ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
+            StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
+            MouseFilter = Control.MouseFilterEnum.Ignore,
+        };
+        icon.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
+        emote.AddChild(icon);
+        return emote;
     }
 
     private static Placement? Resolve(Entry entry, UiNodeId[] viewer)

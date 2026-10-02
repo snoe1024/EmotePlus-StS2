@@ -6,6 +6,12 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Characters;
+using MegaCrit.Sts2.Core.Nodes.Screens.CharacterSelect;
+using MegaCrit.Sts2.Core.Nodes.Screens.CustomRun;
+using MegaCrit.Sts2.Core.Multiplayer.Game.Lobby;
+using MegaCrit.Sts2.Core.Saves;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Cards;
 using MegaCrit.Sts2.Core.Nodes.Cards.Holders;
@@ -679,6 +685,32 @@ public static class UiTree
         };
         return scene != null && GodotObject.IsInstanceValid(scene) ? scene : null;
     }
+
+    /// <summary>
+    /// The character a player picked in the (new run) lobby, or null when there is no such lobby or the player
+    /// chose the random character (which has no color of its own).
+    /// </summary>
+    public static CharacterModel? LobbyCharacter(ulong netId)
+    {
+        var players = Submenu<NCharacterSelectScreen>()?.Lobby?.Players;
+        var character = players?.Find(p => p.id == netId).character;
+        if (character != null)
+        {
+            return character is RandomCharacter ? null : character;
+        }
+
+        // The lobby for continuing a saved run: every player's character is fixed by the save.
+        var load = Submenu<NMultiplayerLoadGameScreen>() is { } screen ? LoadLobby(screen) : null;
+        load ??= Submenu<NCustomRunLoadScreen>() is { } custom ? CustomLoadLobby(custom) : null;
+        var saved = load?.Run.Players.FirstOrDefault(p => p.NetId == netId);
+        return saved == null ? null : ModelDb.GetById<CharacterModel>(saved.CharacterId);
+    }
+
+    private static readonly AccessTools.FieldRef<NMultiplayerLoadGameScreen, LoadRunLobby> LoadLobby =
+        AccessTools.FieldRefAccess<NMultiplayerLoadGameScreen, LoadRunLobby>("_runLobby");
+
+    private static readonly AccessTools.FieldRef<NCustomRunLoadScreen, LoadRunLobby> CustomLoadLobby =
+        AccessTools.FieldRefAccess<NCustomRunLoadScreen, LoadRunLobby>("_lobby");
 
     // Submenus are owned by the capstone submenu stack, and are only reachable while that capstone is open.
     private static T? Submenu<T>() where T : NSubmenu
