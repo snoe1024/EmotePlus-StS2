@@ -13,7 +13,7 @@ Le contour de l'émote prend la couleur du personnage du joueur qui l'a utilisé
 [b]Affichée à l'endroit qui correspond à l'écran[/b]
 Les émotes ne sont pas placées selon des coordonnées d'écran, mais à l'endroit exact de l'écran que le joueur a ouvert.
 [list]
-[*]Écrans à défilement comme la carte : l'émote s'affiche à sa position sur la carte et reste fixée à celle-ci quand vous faites défiler.
+[*]Écrans à défilement comme la carte : l'émote s'affiche à sa position dans l'interface et reste fixée à celle-ci quand vous faites défiler.
 [*]Quand l'autre joueur a ouvert un autre écran : l'émote s'affiche à l'emplacement du bouton qui mène à cet écran.
 [*]Détails d'une carte, par exemple dans la Bibliothèque : l'émote est affichée de façon à pouvoir suivre, étape par étape, les boutons sur lesquels il a fallu appuyer pour arriver à cette carte.
 [/list]
@@ -21,9 +21,9 @@ Les émotes ne sont pas placées selon des coordonnées d'écran, mais à l'endr
 [b]Roue d'émotes à pages[/b]
 Les émotes étant devenues trop nombreuses pour les huit emplacements de la roue, celle-ci fonctionne désormais par pages.
 [list]
-[*]Tant que la roue est ouverte, le clic gauche affiche la page précédente et le clic droit la page suivante.
+[*]Tant que la roue est ouverte, vous pouvez changer de page avec la molette de la souris. Le sens peut être inversé dans les paramètres.
 [*]La page actuelle est indiquée au centre de la roue, par exemple « 1/3 ».
-[*]Si vous relâchez la touche sans presque bouger la souris, aucune émote n'est envoyée. Vous n'en déclenchez donc pas une par erreur en changeant simplement de page.
+[*]Si vous relâchez la touche sans presque bouger la souris, aucune émote n'est envoyée.
 [/list]
 
 [b]Choisir ses émotes[/b]

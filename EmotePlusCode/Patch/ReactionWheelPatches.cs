@@ -12,8 +12,7 @@ namespace EmotePlus.EmotePlusCode.Patch;
 /// The emote wheel with pages. Replaces NReactionWheel._Input, which still has the 8 wedges (the slots of a page):
 /// - the emotes of the current page are put on the wedges (a wedge without an emote on the last page is hidden);
 /// - released with the mouse (almost) not moved: no emote;
-/// - while the wheel is open the mouse buttons turn the page (left: back, right: next, see the config) and do
-///   nothing else;
+/// - while the wheel is open, scrolling turns the page (down: next, see the config);
 /// - the wheel appears and disappears quickly.
 /// </summary>
 [HarmonyPatch(typeof(NReactionWheel), nameof(NReactionWheel._Input))]
@@ -87,7 +86,8 @@ public static class ReactionWheelInputPatch
         var typing = focus is TextEdit or LineEdit;
         var open = __instance.Visible && !_closing;
 
-        if (!NGame.Instance.ReactionContainer.InMultiplayer)
+        // Vanilla: multiplayer only. The singleplayer connection just drops what is sent, so showing the emote is all it takes.
+        if (!NGame.Instance.ReactionContainer.InMultiplayer && !EmotePlusConfig.EnableInSingleplayer)
         {
             if (open)
             {
@@ -107,14 +107,12 @@ public static class ReactionWheelInputPatch
                 WarpMouseBack(__instance);
             }
         }
-        else if (inputEvent is InputEventMouseButton button && open)
+        else if (inputEvent is InputEventMouseButton { ButtonIndex: MouseButton.WheelUp or MouseButton.WheelDown } wheelEvent
+                 && open)
         {
-            // Clicks are not for the game while the wheel is open (both press and release are swallowed).
-            if (button.Pressed && button.ButtonIndex is MouseButton.Left or MouseButton.Right)
-            {
-                TurnPage(__instance, next: (button.ButtonIndex == MouseButton.Right) != EmotePlusConfig.ReversePageClicks);
-            }
-
+            // Scrolling turns the page (down: next) and is not for the game meanwhile (e.g. the map zoom).
+            // Clicks are left alone.
+            TurnPage(__instance, next: (wheelEvent.ButtonIndex == MouseButton.WheelDown) == EmotePlusConfig.ReverseScrollPaging);
             __instance.GetViewport().SetInputAsHandled();
         }
         else if (inputEvent.IsActionPressed(ReactWheel) && !typing)

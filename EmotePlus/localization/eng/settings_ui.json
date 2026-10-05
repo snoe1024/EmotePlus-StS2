@@ -5,15 +5,17 @@
   "EMOTEPLUS-EMOTE_DISPLAY_TIME.hover.desc": "How long every emote stays on screen.\nOnly affects your own screen.",
   "EMOTEPLUS-EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}s",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Reverse Page Click Direction",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "While the emote wheel is open, left click goes to the previous page and right click to the next one.\nTurn this on to swap them.",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "Reverse Scroll Page Direction",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "While the emote wheel is open, scrolling down goes to the next page and scrolling up to the previous one. Turn this on to swap them.",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "Emotes on the Wheel",
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Click an emote to hide or show it on your wheel (the wheel closes the gaps).\nOther players' emotes are always shown. If every emote is hidden, all are shown.",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Click an emote to hide or show it on your wheel (the wheel closes the gaps). If every emote is hidden, all are shown.\nDoesn't affect the emotes other players use.",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Show All",
   "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Hide All",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.title": "Map Emote Display Time",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "How long emotes made while the map is open stay on screen. They point at a place, so they stay longer by default. Only affects what you see.",
-  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}s"
+  "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}s",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Emotes in Singleplayer",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Use the emote wheel in singleplayer runs too."
 }

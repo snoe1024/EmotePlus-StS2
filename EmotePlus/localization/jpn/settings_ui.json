@@ -9,12 +9,15 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "マップを開いている状態で出されたエモートが画面に表示される時間です。自分の画面だけに影響します。",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}秒",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "クリックによるページ送りの方向を逆にする",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "エモートホイールを開いている間、左クリックで前のページ、右クリックで次のページに移動します。\nオンにすると逆になります。",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "スクロールによるページ送りの方向を反転する",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "エモートホイールを開いている間、下にスクロールすると次のページ、上にスクロールすると前のページに移動します。オンにすると逆になります。",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "ホイールに表示するエモート",
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "エモートをクリックすると、自分のホイールでの表示と非表示が切り替わります(隙間は詰められます)。\n他のプレイヤーのエモートは常に表示されます。すべて非表示にした場合は、すべて表示されます。",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "エモートをクリックすると、自分のホイールでの表示と非表示が切り替わります(隙間は詰められます)。すべて非表示にした場合は、すべて表示されます。\n他のプレイヤーが使用するエモートには影響しません。",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "すべて表示",
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "すべて非表示"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "すべて非表示",
+
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "シングルプレイでもエモートを使う",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "シングルプレイでもエモートホイールを使えるようにします。"
 }

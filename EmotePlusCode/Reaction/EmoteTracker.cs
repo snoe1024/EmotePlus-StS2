@@ -513,8 +513,14 @@ public static class EmoteTracker
             }
 
             var scroll = UiTree.GetScrollSpace(node);
+
+            // The enlarged card is not part of the deck screen's scene: it covers the screen, so an emote there has
+            // to be above it too. (The emote keeps following the deck's scroll, which does not move meanwhile.)
+            var sceneLayer = node.Kind == UiNodeKind.DeckView && UiTree.ViewsEnlargedCard
+                ? new LayerSpec(LayerKind.Top)
+                : SceneLayerOf(node);
             return scroll != null
-                ? new Placement(SceneLayerOf(node), onScreen.Value, Mode.Drift, scroll.Value.Bounds)
+                ? new Placement(sceneLayer, onScreen.Value, Mode.Drift, scroll.Value.Bounds)
                 : new Placement(new LayerSpec(LayerKind.Top), onScreen.Value, Mode.Drift);
         }
 

@@ -9,14 +9,17 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "開啟地圖時發出的表情在螢幕上顯示的時間。僅影響你自己的畫面。",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} 秒",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "反轉點擊翻頁方向",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "開啟表情輪盤時，左鍵點擊翻到上一頁，右鍵點擊翻到下一頁。\n開啟後方向相反。",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "反轉滾動翻頁方向",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "開啟表情輪盤時，向下滾動翻到下一頁，向上滾動翻到上一頁。開啟後方向相反。",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "輪盤中顯示的表情",
 
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "點擊表情即可切換其在你輪盤中的顯示或隱藏（空位會被補齊）。\n其他玩家的表情一律顯示。如果隱藏了所有表情，則會顯示全部表情。",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "點擊表情即可切換其在你輪盤中的顯示或隱藏（空位會被補齊）。如果隱藏了所有表情，則會顯示全部表情。\n不會影響其他玩家使用的表情。",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "全部顯示",
 
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "全部隱藏"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "全部隱藏",
+
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "單人遊戲中也使用表情",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "讓單人遊戲中也可以使用表情輪盤。"
 }

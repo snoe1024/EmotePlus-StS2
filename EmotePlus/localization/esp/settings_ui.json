@@ -9,14 +9,17 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "Tiempo que permanecen en pantalla los emotes enviados con el mapa abierto. Solo afecta a tu propia pantalla.",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} s",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Invertir el sentido de cambio de página con clic",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Mientras la rueda de emotes está abierta, el clic izquierdo va a la página anterior y el clic derecho a la siguiente.\nActívalo para invertirlo.",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "Invertir el sentido de cambio de página con la rueda",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "Mientras la rueda de emotes está abierta, desplazarte hacia abajo va a la página siguiente y hacia arriba a la anterior. Actívalo para invertirlo.",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "Emotes en la rueda",
 
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Haz clic en un emote para mostrarlo u ocultarlo en tu rueda (los huecos se cierran).\nLos emotes de otros jugadores siempre se muestran. Si ocultas todos los emotes, se mostrarán todos.",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Haz clic en un emote para mostrarlo u ocultarlo en tu rueda (los huecos se cierran). Si ocultas todos los emotes, se mostrarán todos.\nNo afecta a los emotes que usan otros jugadores.",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Mostrar todos",
 
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Ocultar todos"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Ocultar todos",
+
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Usar emotes también en un jugador",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permite usar la rueda de emotes también en el modo de un jugador."
 }

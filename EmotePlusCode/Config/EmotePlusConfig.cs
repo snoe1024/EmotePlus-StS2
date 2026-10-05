@@ -18,11 +18,14 @@ public sealed class EmotePlusConfig : SimpleModConfig
     [ConfigSlider(0.5, 10.0, 0.1, Format = "{0:0.0}sec")]
     public static float MapEmoteDisplayTime { get; set; } = 4.5f;
 
+    /// <summary>Use the emote wheel in singleplayer too (the emotes are only shown to the player themself).</summary>
+    public static bool EnableInSingleplayer { get; set; } = true;
+
     /// <summary>
-    /// While the emote wheel is open, the left click goes to the previous page and the right click to the next one;
+    /// While the emote wheel is open, scrolling down goes to the next page and scrolling up to the previous one;
     /// with this on, the other way round.
     /// </summary>
-    public static bool ReversePageClicks { get; set; } = false;
+    public static bool ReverseScrollPaging { get; set; } = false;
 
     /// <summary>
     /// The emotes hidden from the wheel (see <see cref="EmoteImages.IsHidden"/>): their names, comma separated.

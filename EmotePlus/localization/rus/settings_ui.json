@@ -9,14 +9,17 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "Как долго остаются на экране эмоции, отправленные при открытой карте. Влияет только на ваш экран.",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} с",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Поменять направление листания страниц щелчком",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Пока открыто колесо эмоций, щелчок левой кнопкой открывает предыдущую страницу, правой — следующую.\nЕсли включить, направление меняется на обратное.",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "Поменять направление листания страниц прокруткой",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "Пока открыто колесо эмоций, прокрутка вниз открывает следующую страницу, а вверх — предыдущую. Включите, чтобы поменять направления местами.",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "Эмоции в колесе",
 
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Щёлкните по эмоции, чтобы показать или скрыть её в вашем колесе (пропуски закрываются).\nЭмоции других игроков показываются всегда. Если скрыть все эмоции, будут показаны все.",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Щёлкните по эмоции, чтобы показать или скрыть её в вашем колесе (пропуски закрываются). Если скрыть все эмоции, будут показаны все.\nЭто не влияет на эмоции, которые используют другие игроки.",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Показать все",
 
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Скрыть все"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Скрыть все",
+
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Использовать эмоции и в одиночной игре",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Позволяет использовать колесо эмоций и в одиночной игре."
 }

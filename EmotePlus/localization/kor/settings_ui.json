@@ -9,14 +9,17 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "지도를 연 상태에서 보낸 이모티콘이 화면에 표시되는 시간입니다. 자신의 화면에만 영향을 줍니다.",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}초",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "클릭 페이지 넘김 방향 반대로",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "이모티콘 휠이 열려 있는 동안 좌클릭은 이전 페이지, 우클릭은 다음 페이지로 이동합니다.\n켜면 반대로 동작합니다.",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "스크롤 페이지 넘김 방향 반대로",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "이모티콘 휠이 열려 있는 동안 아래로 스크롤하면 다음 페이지, 위로 스크롤하면 이전 페이지로 이동합니다. 켜면 반대로 동작합니다.",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "휠에 표시할 이모티콘",
 
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "이모티콘을 클릭하면 내 휠에서 표시 또는 숨김이 전환됩니다(빈 자리는 채워집니다).\n다른 플레이어의 이모티콘은 항상 표시됩니다. 모두 숨기면 모두 표시됩니다.",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "이모티콘을 클릭하면 내 휠에서 표시 또는 숨김이 전환됩니다(빈 자리는 채워집니다). 모두 숨기면 모두 표시됩니다.\n다른 플레이어가 사용하는 이모티콘에는 영향을 주지 않습니다.",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "모두 표시",
 
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "모두 숨기기"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "모두 숨기기",
+
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "싱글플레이에서도 이모티콘 사용",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "싱글플레이에서도 이모티콘 휠을 사용할 수 있게 합니다."
 }

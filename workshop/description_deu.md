@@ -13,7 +13,7 @@ Die Umrandung des Emotes hat die Farbe des Charakters des Spielers, der es benut
 [b]Anzeige passend zum Bildschirminhalt[/b]
 Emotes erscheinen nicht an Bildschirmkoordinaten, sondern genau an der Stelle des Bildschirms, den der jeweilige Spieler gerade geöffnet hat.
 [list]
-[*]Scrollbare Bildschirme wie die Karte: Das Emote erscheint an seiner Position auf der Karte und bleibt beim Scrollen dort verankert.
+[*]Scrollbare Bildschirme wie die Karte: Das Emote erscheint an seiner Position in der Oberfläche und bleibt beim Scrollen dort verankert.
 [*]Wenn der andere Spieler einen anderen Bildschirm geöffnet hat: Das Emote erscheint an der Schaltfläche, die zu diesem Bildschirm führt.
 [*]Kartendetails, zum Beispiel in der Kartenbibliothek: Das Emote wird so angezeigt, dass sich Schritt für Schritt nachvollziehen lässt, welche Schaltflächen gedrückt wurden, bis diese Karte angesehen wurde.
 [/list]
@@ -21,9 +21,9 @@ Emotes erscheinen nicht an Bildschirmkoordinaten, sondern genau an der Stelle de
 [b]Emote-Rad mit Seiten[/b]
 Es gibt inzwischen so viele Emotes, dass acht Plätze im Rad nicht mehr ausreichten. Deshalb hat das Rad jetzt Seiten.
 [list]
-[*]Solange das Rad geöffnet ist, wechselst du mit Linksklick zur vorherigen und mit Rechtsklick zur nächsten Seite.
+[*]Solange das Rad geöffnet ist, kannst du mit dem Mausrad die Seite wechseln. Die Richtung lässt sich in den Einstellungen umkehren.
 [*]In der Mitte des Rads wird die aktuelle Seite angezeigt, zum Beispiel „1/3“.
-[*]Wenn du die Taste loslässt, ohne die Maus nennenswert zu bewegen, wird kein Emote gesendet. So löst du beim reinen Blättern nicht versehentlich eines aus.
+[*]Wenn du die Taste loslässt, ohne die Maus nennenswert zu bewegen, wird kein Emote gesendet.
 [/list]
 
 [b]Emotes auswählen[/b]

@@ -9,14 +9,17 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "Durée pendant laquelle les émotes envoyées carte ouverte restent à l'écran. N'affecte que votre propre écran.",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} s",
 
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.title": "Inverser le sens de changement de page au clic",
-  "EMOTEPLUS-REVERSE_PAGE_CLICKS.hover.desc": "Tant que la roue d'émotes est ouverte, le clic gauche affiche la page précédente et le clic droit la page suivante.\nActivé, c'est l'inverse.",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "Inverser le sens de changement de page au défilement",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "Tant que la roue d'émotes est ouverte, faire défiler vers le bas affiche la page suivante et vers le haut la page précédente. Activez cette option pour inverser.",
 
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "Émotes dans la roue",
 
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Cliquez sur une émote pour l'afficher ou la masquer dans votre roue (les vides sont comblés).\nLes émotes des autres joueurs sont toujours affichées. Si toutes les émotes sont masquées, elles sont toutes affichées.",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Cliquez sur une émote pour l'afficher ou la masquer dans votre roue (les vides sont comblés). Si toutes les émotes sont masquées, elles sont toutes affichées.\nCela n'affecte pas les émotes utilisées par les autres joueurs.",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Tout afficher",
 
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Tout masquer"
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Tout masquer",
+
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Utiliser les émotes aussi en solo",
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permet d'utiliser la roue d'émotes aussi en solo."
 }

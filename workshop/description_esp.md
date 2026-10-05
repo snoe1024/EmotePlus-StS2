@@ -13,7 +13,7 @@ El contorno del emote toma el color del personaje del jugador que lo usó.
 [b]Se muestra donde corresponde según la pantalla[/b]
 Los emotes no se colocan por coordenadas de pantalla, sino en la posición exacta de la pantalla que ese jugador tiene abierta.
 [list]
-[*]Pantallas con desplazamiento como el mapa: se muestra en su posición en el mapa y se mantiene fijo al desplazarte.
+[*]Pantallas con desplazamiento como el mapa: se muestra en su posición en la interfaz y se mantiene fijo ahí al desplazarte.
 [*]Cuando el otro jugador tiene abierta otra pantalla: se muestra en la posición del botón que lleva a esa pantalla.
 [*]Detalles de una carta, por ejemplo en la Colección de cartas: se muestra de modo que puedas seguir, paso a paso, qué botones se pulsaron hasta llegar a esa carta.
 [/list]
@@ -21,9 +21,9 @@ Los emotes no se colocan por coordenadas de pantalla, sino en la posición exact
 [b]Rueda de emotes con páginas[/b]
 Al haber tantos emotes, los ocho huecos de la rueda se quedaban cortos, así que ahora la rueda tiene páginas.
 [list]
-[*]Mientras la rueda está abierta, el clic izquierdo va a la página anterior y el clic derecho a la siguiente.
+[*]Mientras la rueda está abierta, puedes cambiar de página con la rueda del ratón. Puedes invertir el sentido en los ajustes.
 [*]En el centro de la rueda se muestra la página actual, por ejemplo «1/3».
-[*]Si sueltas la tecla casi sin mover el ratón, no se envía ningún emote. Así no envías uno por error cuando solo quieres cambiar de página.
+[*]Si sueltas la tecla casi sin mover el ratón, no se envía ningún emote.
 [/list]
 
 [b]Elige tus emotes[/b]

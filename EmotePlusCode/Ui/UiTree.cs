@@ -398,6 +398,9 @@ public static class UiTree
 
     private static string? ViewedCardKey() => ViewedCard()?.Id.ToString();
 
+    /// <summary>True while a card is shown enlarged (it is drawn above every screen, the deck screen included).</summary>
+    public static bool ViewsEnlargedCard => ViewedCard() != null;
+
     /// <summary>The card shown enlarged on the card inspect screen, if it is open.</summary>
     private static CardModel? ViewedCard()
     {
