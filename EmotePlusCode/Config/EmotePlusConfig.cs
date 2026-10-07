@@ -1,6 +1,11 @@
 using BaseLib.Config;
+using BaseLib.Config.UI;
 using EmotePlus.EmotePlusCode.Reaction;
 using Godot;
+using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Nodes.HoverTips;
 
 namespace EmotePlus.EmotePlusCode.Config;
 
@@ -8,8 +13,11 @@ namespace EmotePlus.EmotePlusCode.Config;
 [ConfigHoverTipsByDefault]
 public sealed class EmotePlusConfig : SimpleModConfig
 {
+    private const string OrderImagePath = "res://EmotePlus/ui/settings/wheel_order.png";
+    private const string HiddenMarkPath = "res://EmotePlus/ui/settings/mark_hidden.png";
+
     /// <summary>How long every emote stays on screen (appearing + waiting + fading out; the game's own is 1.1).</summary>
-    [ConfigSlider(0.5, 5.0, 0.1, Format = "{0:0.0}sec")]
+    [ConfigSlider(0.5, 10.0, 0.1, Format = "{0:0.0}sec")]
     public static float EmoteDisplayTime { get; set; } = 1.1f;
 
     /// <summary>
@@ -34,13 +42,20 @@ public sealed class EmotePlusConfig : SimpleModConfig
     [ConfigHideInUI]
     public static string HiddenEmotes { get; set; } = "";
 
+    /// <summary>
+    /// The order of the emotes on the wheel (see <see cref="EmoteImages.WheelSlots"/>): their names, comma separated;
+    /// empty = the default order. Edited by the same grid.
+    /// </summary>
+    [ConfigHideInUI]
+    public static string EmoteOrder { get; set; } = "";
+
     public override void SetupConfigUI(Control optionContainer)
     {
         base.SetupConfigUI(optionContainer);
 
         // The grid of emotes goes above the "restore defaults" button the base class put last.
         var section = CreateCollapsibleSection("EmoteVisibility");
-        section.ContentContainer.AddChild(CreateVisibilityGrid());
+        section.ContentContainer.AddChild(CreateEmoteGrid());
         optionContainer.AddChild(section);
         var reset = optionContainer.GetNodeOrNull("ResetDefaultsButtonContainer");
         if (reset != null)
@@ -51,35 +66,65 @@ public sealed class EmotePlusConfig : SimpleModConfig
         SetupFocusNeighbors(optionContainer);
     }
 
-    private Control CreateVisibilityGrid()
+    private Control CreateEmoteGrid()
     {
         var box = new VBoxContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
         box.AddThemeConstantOverride("separation", 12);
 
-        var hint = CreateRawLabelControl(GetLabelText("EmoteVisibilityHint"), 22);
-        hint.AutowrapMode = TextServer.AutowrapMode.WordSmart;
-        hint.CustomMinimumSize = new Vector2(760f, 0f);
-        box.AddChild(hint);
+        // The picture explaining the order of the wheel (made by hand; skipped while the file is missing).
+        if (ResourceLoader.Exists(OrderImagePath))
+        {
+            box.AddChild(new TextureRect
+            {
+                Texture = ResourceLoader.Load<Texture2D>(OrderImagePath),
+                ExpandMode = TextureRect.ExpandModeEnum.FitWidthProportional,
+                StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
+                SizeFlagsHorizontal = Control.SizeFlags.ExpandFill,
+                MouseFilter = Control.MouseFilterEnum.Ignore,
+            });
+        }
 
-        var buttons = new HBoxContainer();
-        buttons.AddThemeConstantOverride("separation", 16);
+        foreach (var key in new[] { "EmoteOrderHint", "EmoteVisibilityHint" })
+        {
+            var hint = CreateRawLabelControl("[center]" + GetLabelText(key) + "[/center]", 22);
+            hint.AutowrapMode = TextServer.AutowrapMode.WordSmart;
+            hint.SizeFlagsHorizontal = Control.SizeFlags.ExpandFill;
+            hint.CustomMinimumSize = new Vector2(760f, 0f);
+            box.AddChild(hint);
+        }
+
+        var buttons = new HFlowContainer
+        {
+            SizeFlagsHorizontal = Control.SizeFlags.ExpandFill,
+            Alignment = FlowContainer.AlignmentMode.Center,
+        };
+        buttons.AddThemeConstantOverride("h_separation", 16);
+        buttons.AddThemeConstantOverride("v_separation", 8);
         box.AddChild(buttons);
 
-        // A flow container wraps at whatever width the settings screen gives it (as many per row as fit).
-        var grid = new HFlowContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
+        // 8 emotes to a row: one row is one page of the wheel (when the hidden emotes are packed at the end).
+        var grid = new GridContainer { Columns = 8, SizeFlagsHorizontal = Control.SizeFlags.ShrinkCenter };
         grid.AddThemeConstantOverride("h_separation", 8);
-        grid.AddThemeConstantOverride("v_separation", 8);
+        grid.AddThemeConstantOverride("v_separation", 14);
         box.AddChild(grid);
 
-        var cells = new List<(string Name, TextureButton Button, Control Mark)>();
+        var cells = new List<(TextureButton Button, Control Mark)>();
+        var swapMode = false;
+        int? selected = null; // swap mode: the first of the two emotes to swap
 
         void Refresh()
         {
-            foreach (var (name, button, mark) in cells)
+            var order = EmoteImages.WheelSlots;
+            for (var i = 0; i < cells.Count && i < order.Count; i++)
             {
+                var name = EmoteImages.NameOf(order[i]);
+                var (button, mark) = cells[i];
                 var hidden = EmoteImages.IsHidden(name);
+                button.TextureNormal = EmoteImages.Icon(name);
+                button.TooltipText = name;
                 mark.Visible = hidden;
                 button.SelfModulate = hidden ? new Color(1f, 1f, 1f, 0.45f) : Colors.White;
+                button.Modulate = selected == i ? new Color(1.5f, 1.4f, 0.5f) : Colors.White;
             }
         }
 
@@ -90,31 +135,98 @@ public sealed class EmotePlusConfig : SimpleModConfig
             Refresh();
         }
 
-        foreach (var (_, name) in EmoteImages.AllEmotes)
+        void SetOrder(IEnumerable<EmoteType> order)
         {
+            EmoteImages.SetOrder(order);
+            Edited();
+        }
+
+        void Swap(int a, int b)
+        {
+            var order = EmoteImages.WheelSlots.ToList();
+            if (a == b || a >= order.Count || b >= order.Count)
+            {
+                return;
+            }
+
+            (order[a], order[b]) = (order[b], order[a]);
+            SetOrder(order);
+        }
+
+        for (var i = 0; i < EmoteImages.WheelSlots.Count; i++)
+        {
+            var index = i;
             var button = new TextureButton
             {
-                TextureNormal = EmoteImages.Icon(name),
                 IgnoreTextureSize = true,
                 StretchMode = TextureButton.StretchModeEnum.KeepAspectCentered,
                 CustomMinimumSize = new Vector2(72f, 72f),
-                TooltipText = name,
                 FocusMode = Control.FocusModeEnum.All,
             };
             var mark = CreateHiddenMark();
             button.AddChild(mark);
             mark.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
-            var captured = name;
+
+            // Dragging an emote onto another swaps them.
+            button.SetDragForwarding(
+                Callable.From<Vector2, Variant>(_ =>
+                {
+                    button.SetDragPreview(new TextureRect
+                    {
+                        Texture = button.TextureNormal,
+                        ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
+                        StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
+                        CustomMinimumSize = new Vector2(72f, 72f),
+                        Size = new Vector2(72f, 72f),
+                        Modulate = new Color(1f, 1f, 1f, 0.8f),
+                        MouseFilter = Control.MouseFilterEnum.Ignore,
+                    });
+                    return Variant.From(index);
+                }),
+                Callable.From<Vector2, Variant, bool>((_, data) => data.VariantType == Variant.Type.Int),
+                Callable.From<Vector2, Variant>((_, data) => Swap(data.AsInt32(), index)));
+
             button.Pressed += () =>
             {
-                EmoteImages.SetHidden(captured, !EmoteImages.IsHidden(captured));
-                Edited();
+                if (!swapMode)
+                {
+                    // A click hides or shows the emote.
+                    var name = EmoteImages.NameOf(EmoteImages.WheelSlots[index]);
+                    EmoteImages.SetHidden(name, !EmoteImages.IsHidden(name));
+                    Edited();
+                }
+                else if (selected == null)
+                {
+                    selected = index;
+                    Refresh();
+                }
+                else
+                {
+                    var first = selected.Value;
+                    selected = null;
+                    Swap(first, index);
+                    Refresh();
+                }
             };
             grid.AddChild(button);
-            cells.Add((name, button, mark));
+            cells.Add((button, mark));
         }
 
-        buttons.AddChild(CreateRawButtonControl(GetLabelText("ShowAllEmotes"), () =>
+        // Swap mode: for those who cannot drag (a controller), and as a second way. Its button is lit while on.
+        NConfigButton? swapButton = null;
+        swapButton = CreateButtonWithTip("SwapMode", () =>
+        {
+            swapMode = !swapMode;
+            selected = null;
+            swapButton!.SetColor(Color.FromHtml(swapMode ? "#c9822b" : NConfigButton.DefaultColor));
+            Refresh();
+        });
+        buttons.AddChild(swapButton);
+
+        buttons.AddChild(CreateButtonWithTip("DefaultOrder", () => SetOrder(EmoteImages.DefaultOrder)));
+        buttons.AddChild(CreateButtonWithTip("VanillaOrder", () => SetOrder(EmoteImages.VanillaFirst())));
+        buttons.AddChild(CreateButtonWithTip("PackHiddenEmotes", () => SetOrder(EmoteImages.HiddenLast())));
+        buttons.AddChild(CreateButtonWithTip("ShowAllEmotes", () =>
         {
             foreach (var (_, name) in EmoteImages.AllEmotes)
             {
@@ -123,7 +235,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
 
             Edited();
         }));
-        buttons.AddChild(CreateRawButtonControl(GetLabelText("HideAllEmotes"), () =>
+        buttons.AddChild(CreateButtonWithTip("HideAllEmotes", () =>
         {
             foreach (var (_, name) in EmoteImages.AllEmotes)
             {
@@ -133,7 +245,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
             Edited();
         }));
 
-        // "Restore defaults" changes the property from outside.
+        // "Restore defaults" changes the properties from outside.
         void OnReloaded() => Refresh();
         OnConfigReloaded += OnReloaded;
         box.TreeExiting += () => OnConfigReloaded -= OnReloaded;
@@ -142,15 +254,31 @@ public sealed class EmotePlusConfig : SimpleModConfig
         return box;
     }
 
+    // A settings button with its label and a hover tip (the mouse-over text): the keys are the name's
+    // EMOTEPLUS-<NAME>.title and .hover.desc in settings_ui.json. A missing .hover.desc just means no tip.
+    private NConfigButton CreateButtonWithTip(string name, Action onPressed)
+    {
+        var button = CreateRawButtonControl(GetLabelText(name), onPressed);
+        var key = ModPrefix + StringHelper.Slugify(name);
+        if (LocString.Exists("settings_ui", key + ".hover.desc"))
+        {
+            var tip = new HoverTip(new LocString("settings_ui", key + ".title"), new LocString("settings_ui", key + ".hover.desc"));
+            button.MouseEntered += () => NHoverTipSet.CreateAndShow(button, tip, HoverTipAlignment.Center);
+            button.MouseExited += () => NHoverTipSet.Remove(button);
+            button.TreeExiting += () => NHoverTipSet.Remove(button);
+        }
+
+        return button;
+    }
+
     // The mark over a hidden emote: the red cross image, or (if that file is missing) a red x.
     private static Control CreateHiddenMark()
     {
-        const string path = "res://EmotePlus/ui/settings/mark_hidden.png";
-        if (ResourceLoader.Exists(path))
+        if (ResourceLoader.Exists(HiddenMarkPath))
         {
             return new TextureRect
             {
-                Texture = ResourceLoader.Load<Texture2D>(path),
+                Texture = ResourceLoader.Load<Texture2D>(HiddenMarkPath),
                 ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
                 StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
                 MouseFilter = Control.MouseFilterEnum.Ignore,

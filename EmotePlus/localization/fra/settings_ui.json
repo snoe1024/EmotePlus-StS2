@@ -21,5 +21,16 @@
   "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Tout masquer",
 
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Utiliser les émotes aussi en solo",
-  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permet d'utiliser la roue d'émotes aussi en solo."
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permet d'utiliser la roue d'émotes aussi en solo.",
+  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "Les émotes sont rangées par lignes de 8 : une ligne correspond à une page de la roue, remplie dans le sens horaire à partir de la droite. Faites glisser une émote sur une autre pour les échanger, ou activez le mode échange et cliquez sur deux émotes. Hors du mode échange, un clic masque ou affiche une émote.",
+  "EMOTEPLUS-SWAP_MODE.title": "Mode échange",
+  "EMOTEPLUS-DEFAULT_ORDER.title": "Ordre par défaut",
+  "EMOTEPLUS-VANILLA_ORDER.title": "Ordre d'origine",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "Regrouper les masquées à la fin",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "Activez-le puis cliquez sur deux émotes l'une après l'autre pour les échanger. Tant qu'il est actif, un clic ne masque ni n'affiche les émotes. Faire glisser une émote sur une autre les échange aussi.",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "Range les émotes dans l'ordre par défaut (groupées par type). Les émotes masquées restent masquées.",
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "Place d'abord les 8 émotes du jeu d'origine, dans l'ordre de la roue d'origine, puis les autres dans leur ordre actuel.",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "Déplace les émotes masquées à la fin, afin que les émotes affichées soient regroupées au début et que chaque ligne corresponde à une page de la roue.",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "Affiche toutes les émotes sur la roue.",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "Masque toutes les émotes. Si toutes sont masquées, la roue les affiche toutes."
 }

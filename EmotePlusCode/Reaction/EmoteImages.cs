@@ -11,8 +11,9 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 /// (without ".png" / "_outline.png").
 ///
 /// To add an emote: put the two images there, add an <see cref="EmoteType"/> value (a new number), add it to
-/// <see cref="Names"/>, and put it in <see cref="WheelLayout"/> where it should be. Images of any size work: they
-/// are fitted into the same box.
+/// <see cref="Names"/>, and put it in <see cref="WheelLayout"/> where it should be by default. Images of any size
+/// work: they are fitted into the same box. The player can rearrange the emotes in the mod settings
+/// (<see cref="WheelSlots"/>).
 /// </summary>
 public static class EmoteImages
 {
@@ -46,7 +47,7 @@ public static class EmoteImages
     };
 
     /// <summary>
-    /// Where the emotes are on the wheel, in order: 8 per page, each page clockwise from the right (right, lower
+    /// The default order of the emotes on the wheel: 8 per page, each page clockwise from the right (right, lower
     /// right, down, lower left, left, upper left, up, upper right). <see cref="EmoteType.None"/> leaves a slot empty
     /// (to keep the next emote at a given wedge, or to end a page early). Emotes missing here are added at the end,
     /// so a forgotten one is never unreachable.
@@ -55,13 +56,13 @@ public static class EmoteImages
     [
         // page 1
         EmoteType.Exclamation,
-        EmoteType.QuestionMark,
+        EmoteType.Vulnerable,
         EmoteType.ThumbDown,
+        EmoteType.Weak,
+        EmoteType.QuestionMark,
+        EmoteType.Gold,
         EmoteType.ThumbUp,
         EmoteType.HelloWorld,
-        EmoteType.Gold,
-        EmoteType.Vulnerable,
-        EmoteType.Weak,
         
         // page 2
         EmoteType.Skull,
@@ -84,9 +85,73 @@ public static class EmoteImages
         EmoteType.Vakuu,
     ];
 
-    /// <summary>The slots of the wheel, page after page (<see cref="EmoteType.None"/> = empty slot).</summary>
-    public static readonly IReadOnlyList<EmoteType> WheelSlots =
-        WheelLayout.Concat(Names.Keys.Except(WheelLayout)).ToList();
+    /// <summary>The default order, complete (no placeholders; every emote exactly once).</summary>
+    public static readonly IReadOnlyList<EmoteType> DefaultOrder =
+        WheelLayout.Where(t => t != EmoteType.None).Concat(Names.Keys.Except(WheelLayout)).ToList();
+
+    /// <summary>
+    /// The order of the emotes on the wheel, page after page: the player's own order from the settings
+    /// (<see cref="EmotePlusConfig.EmoteOrder"/>) or else <see cref="DefaultOrder"/>. Always complete: unknown names
+    /// are ignored, and emotes the saved order does not mention (added by an update) are put at the end.
+    /// </summary>
+    public static IReadOnlyList<EmoteType> WheelSlots
+    {
+        get
+        {
+            var text = EmotePlusConfig.EmoteOrder ?? "";
+            if (text != _orderText)
+            {
+                _orderText = text;
+                _order = ParseOrder(text);
+            }
+
+            return _order;
+        }
+    }
+
+    private static string? _orderText;
+    private static IReadOnlyList<EmoteType> _order = DefaultOrder;
+
+    private static IReadOnlyList<EmoteType> ParseOrder(string text)
+    {
+        if (text.Length == 0)
+        {
+            return DefaultOrder;
+        }
+
+        var byName = Names.ToDictionary(e => e.Value, e => e.Key);
+        var order = new List<EmoteType>();
+        foreach (var name in text.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+            if (byName.TryGetValue(name, out var type) && !order.Contains(type))
+            {
+                order.Add(type);
+            }
+        }
+
+        order.AddRange(DefaultOrder.Except(order));
+        return order;
+    }
+
+    /// <summary>Saves the order (an empty text stands for the default order).</summary>
+    public static void SetOrder(IEnumerable<EmoteType> order)
+    {
+        var list = order.ToList();
+        EmotePlusConfig.EmoteOrder = list.SequenceEqual(DefaultOrder) ? "" : string.Join(",", list.Select(NameOf));
+    }
+
+    /// <summary>The order of the original game's wheel (its 8 emotes) first, then the others as they are now.</summary>
+    public static List<EmoteType> VanillaFirst()
+    {
+        var vanilla = Enumerable.Range(1, 8).Select(i => (EmoteType)i).ToList();
+        return vanilla.Concat(WheelSlots.Except(vanilla)).ToList();
+    }
+
+    /// <summary>The emotes that are shown on the wheel first (in their order), the hidden ones after them.</summary>
+    public static List<EmoteType> HiddenLast()
+    {
+        return WheelSlots.Where(t => !IsHidden(NameOf(t))).Concat(WheelSlots.Where(t => IsHidden(NameOf(t)))).ToList();
+    }
 
     /// <summary>Every emote with its image name, in the order of <see cref="WheelSlots"/>.</summary>
     public static IEnumerable<(EmoteType Type, string Name)> AllEmotes =>

@@ -21,5 +21,16 @@
   "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Ocultar todos",
 
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Usar emotes también en un jugador",
-  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permite usar la rueda de emotes también en el modo de un jugador."
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permite usar la rueda de emotes también en el modo de un jugador.",
+  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "Los emotes se ordenan en filas de 8: cada fila es una página de la rueda, rellenada en sentido horario desde la derecha. Arrastra un emote sobre otro para intercambiarlos, o activa el modo de intercambio y haz clic en dos emotes. Sin el modo de intercambio, un clic oculta o muestra un emote.",
+  "EMOTEPLUS-SWAP_MODE.title": "Modo de intercambio",
+  "EMOTEPLUS-DEFAULT_ORDER.title": "Orden predeterminado",
+  "EMOTEPLUS-VANILLA_ORDER.title": "Orden original",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "Agrupar ocultos al final",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "Actívalo y haz clic en dos emotes seguidos para intercambiarlos. Mientras está activo, hacer clic no oculta ni muestra emotes. Arrastrar un emote sobre otro también los intercambia.",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "Ordena los emotes en el orden predeterminado (agrupados por tipo). Los emotes ocultos siguen ocultos.",
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "Coloca primero los 8 emotes del juego original, en el orden de la rueda original, y después los demás en su orden actual.",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "Mueve los emotes ocultos al final, de modo que los emotes visibles queden al principio y cada fila coincida con una página de la rueda.",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "Muestra todos los emotes en la rueda.",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "Oculta todos los emotes. Si todos están ocultos, la rueda muestra todos."
 }

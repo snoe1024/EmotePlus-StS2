@@ -17,5 +17,16 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "How long emotes made while the map is open stay on screen. They point at a place, so they stay longer by default. Only affects what you see.",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}s",
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Emotes in Singleplayer",
-  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Use the emote wheel in singleplayer runs too."
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Use the emote wheel in singleplayer runs too.",
+  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "The emotes are arranged in rows of 8: one row is one page of the wheel, filled clockwise from the right. Drag an emote onto another to swap them, or turn on Swap Mode and click two emotes. With Swap Mode off, a click hides or shows an emote.",
+  "EMOTEPLUS-SWAP_MODE.title": "Swap Mode",
+  "EMOTEPLUS-DEFAULT_ORDER.title": "Default Order",
+  "EMOTEPLUS-VANILLA_ORDER.title": "Vanilla Order",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "Pack Hidden Emotes",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "Turn on, then click two emotes in turn to swap them. While on, clicking does not hide or show emotes. Dragging an emote onto another also swaps them.",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "Arrange the emotes in the default order (grouped by kind). Hidden emotes stay hidden.",
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "Put the original game's 8 emotes first, in the original wheel's order, followed by the others in their current order.",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "Move the hidden emotes to the end, so that the emotes shown on the wheel are packed at the front and each row matches one wheel page.",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "Show every emote on the wheel.",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "Hide every emote. If every emote is hidden, the wheel shows all of them."
 }

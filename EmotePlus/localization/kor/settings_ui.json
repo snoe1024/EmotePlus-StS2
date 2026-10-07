@@ -21,5 +21,16 @@
   "EMOTEPLUS-HIDE_ALL_EMOTES.title": "모두 숨기기",
 
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "싱글플레이에서도 이모티콘 사용",
-  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "싱글플레이에서도 이모티콘 휠을 사용할 수 있게 합니다."
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "싱글플레이에서도 이모티콘 휠을 사용할 수 있게 합니다.",
+  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "이모티콘은 8개씩 한 줄로 배치됩니다. 한 줄이 휠의 한 페이지이며 오른쪽부터 시계 방향으로 채워집니다. 이모티콘을 다른 이모티콘 위로 드래그하면 서로 바뀝니다. 교환 모드를 켜고 두 이모티콘을 차례로 클릭해도 됩니다. 교환 모드가 꺼져 있으면 클릭으로 표시/숨김이 전환됩니다.",
+  "EMOTEPLUS-SWAP_MODE.title": "교환 모드",
+  "EMOTEPLUS-DEFAULT_ORDER.title": "기본 순서",
+  "EMOTEPLUS-VANILLA_ORDER.title": "원본 순서",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "숨긴 이모티콘 뒤로 모으기",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "켜고 이모티콘 두 개를 차례로 클릭하면 서로 바뀝니다. 켜져 있는 동안에는 클릭해도 표시/숨김이 바뀌지 않습니다. 이모티콘을 다른 이모티콘 위로 드래그해도 바뀝니다.",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "이모티콘을 기본 순서(종류별 묶음)로 다시 배치합니다. 숨긴 설정은 바뀌지 않습니다.",
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "원본 게임의 이모티콘 8개를 원본 휠과 같은 순서로 맨 앞에 두고, 나머지는 현재 순서대로 이어 붙입니다.",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "숨긴 이모티콘을 맨 뒤로 옮깁니다. 휠에 표시되는 이모티콘이 앞으로 모이고, 한 줄이 휠의 한 페이지와 일치합니다.",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "모든 이모티콘을 휠에 표시합니다.",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "모든 이모티콘을 숨깁니다. 모두 숨기면 휠에는 모두 표시됩니다."
 }

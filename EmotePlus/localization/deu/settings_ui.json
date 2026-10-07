@@ -21,5 +21,16 @@
   "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Alle ausblenden",
 
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Emotes auch im Einzelspielermodus nutzen",
-  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Ermöglicht die Nutzung des Emote-Rads auch im Einzelspielermodus."
+  "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Ermöglicht die Nutzung des Emote-Rads auch im Einzelspielermodus.",
+  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "Die Emotes stehen in Reihen zu je 8: Eine Reihe ist eine Seite des Rads, im Uhrzeigersinn von rechts gefüllt. Ziehe ein Emote auf ein anderes, um sie zu tauschen, oder aktiviere den Tauschmodus und klicke zwei Emotes an. Ohne Tauschmodus blendet ein Klick ein Emote aus oder ein.",
+  "EMOTEPLUS-SWAP_MODE.title": "Tauschmodus",
+  "EMOTEPLUS-DEFAULT_ORDER.title": "Standardreihenfolge",
+  "EMOTEPLUS-VANILLA_ORDER.title": "Original-Reihenfolge",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "Ausgeblendete ans Ende",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "Einschalten und dann nacheinander zwei Emotes anklicken, um sie zu tauschen. Solange der Modus an ist, blendet ein Klick keine Emotes aus oder ein. Auch das Ziehen eines Emotes auf ein anderes tauscht sie.",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "Ordnet die Emotes in der Standardreihenfolge (nach Art gruppiert) an. Ausgeblendete Emotes bleiben ausgeblendet.",
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "Setzt die 8 Emotes des Originalspiels in der Reihenfolge des originalen Rads an den Anfang, danach folgen die übrigen in ihrer aktuellen Reihenfolge.",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "Verschiebt ausgeblendete Emotes ans Ende, sodass die angezeigten Emotes vorne stehen und jede Reihe einer Seite des Rads entspricht.",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "Zeigt alle Emotes im Rad an.",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "Blendet alle Emotes aus. Sind alle ausgeblendet, zeigt das Rad trotzdem alle an."
 }

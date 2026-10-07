@@ -24,8 +24,12 @@ public static class ReactionWheelInputPatch
     /// </summary>
     private const float MinSelectDistance = 10f;
 
-    /// <summary>Show the outline behind the emote previews on the wheel? (Tinted with the local character's color.)</summary>
-    private const bool PreviewWithOutline = false;
+    /// <summary>
+    /// Show an outline behind the emote previews on the wheel? It is always the translucent black one (as for emotes
+    /// of an unknown character, whatever character the player has), so that the previews stay readable over busy
+    /// backgrounds.
+    /// </summary>
+    private const bool PreviewWithOutline = true;
 
     private const int SlotCount = 8;
     private const float MarkerRadius = 70f;
@@ -179,7 +183,7 @@ public static class ReactionWheelInputPatch
     // Puts the emotes of the current page on the wedges.
     private static void ShowPage()
     {
-        var color = EmoteTracker.OutlineColorOf(_wheel != null ? PlayerRef(_wheel)?.Character : null);
+        var color = EmoteTracker.NeutralOutline;
         for (var i = 0; i < SlotCount; i++)
         {
             var index = _page * SlotCount + i;
