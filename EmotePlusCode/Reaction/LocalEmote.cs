@@ -63,11 +63,12 @@ public static class LocalEmote
 public static class LobbyEmote
 {
     public static void Show(NReactionContainer container, EmoteType type, ulong senderId, Vector2 position,
-        EmoteDrift drift)
+        EmoteDrift drift, ulong elapsedMs = 0)
     {
         var character = UiTree.LobbyCharacter(senderId);
         var emote = EmoteTracker.CreateEmote(type, EmoteTracker.OutlineColorOf(character));
         emote.SetMeta(ReactionAnimPatch.DriftMeta, drift.Offset);
+        emote.SetMeta(ReactionAnimPatch.ElapsedMeta, elapsedMs / 1000.0);
         container.AddChildSafely(emote);
         emote.GlobalPosition = position - emote.Size / 2f;
         emote.BeginAnim();

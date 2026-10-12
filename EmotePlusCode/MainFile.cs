@@ -33,6 +33,7 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
 
         harmony.PatchAll(assembly);
+        EmotePlus.EmotePlusCode.Reaction.EmoteNetworking.Initialize();
 
         // Log what actually got patched, so a silently-unapplied patch shows up in godot.log right away.
         var patchedMethods = harmony.GetPatchedMethods().ToList();

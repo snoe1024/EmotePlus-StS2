@@ -1,58 +1,89 @@
-using EmotePlus.EmotePlusCode.Ui;
+using System.Text;
 using Godot;
+using EmotePlus.EmotePlusCode.Ui;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
-using MegaCrit.Sts2.Core.Logging;
+using MegaCrit.Sts2.Core.Multiplayer.Messages.Game.Flavor;
 using MegaCrit.Sts2.Core.Multiplayer.Serialization;
-using MegaCrit.Sts2.Core.Multiplayer.Transport;
 
 namespace EmotePlus.EmotePlusCode.Reaction;
 
-// The only emote message EmotePlus sends inside a run (vanilla's ReactionMessage is replaced). EmotePlus is
-// affects_gameplay=true, so every peer has this type and the auto-assigned message ids line up (see
-// sts2_dev_knowledge multiplayer-networking.md).
-//
-// path     where the sender was in the UI tree (UiTree.LocalPath)
-// position in the coordinate system of the LAST node of path (see EmoteCoordinates)
-// drift    where the emote drifts to while it appears (see EmoteDrift)
-// inHeader the sender made the emote on the header bar (only possible on a screen that shows it, see
-//          UiTree.ShowsHeader). Then position is a normalized SCREEN position instead: viewers who also see the
-//          header show the emote right there, everybody else resolves it from the path as usual.
-internal struct ContextEmoteMessage : INetMessage, IPacketSerializable
+// This is an application payload, deliberately not an INetMessage (game IDs must stay unchanged).
+internal sealed record ContextEmoteMessage(EmoteType Type, UiNodeId[] Path, Vector2 Position,
+    bool InHeader, EmoteDrift Drift, Vector2 ScreenPosition, ulong Sequence)
 {
-    public EmoteType type;
+    public const int MaxBytes = 1024;
+    private static readonly UTF8Encoding Utf8 = new(false, true);
 
-    public UiNodeId[]? path;
+    public ReactionType VanillaType => ToVanilla(Type);
+    public static ReactionType ToVanilla(EmoteType type) => (int)type is >= 1 and <= 8
+        ? (ReactionType)(int)type : ReactionType.QuestionMark;
 
-    public Vector2 position;
-
-    public bool inHeader;
-
-    public EmoteDrift drift;
-
-    public bool ShouldBroadcast => true;
-
-    public NetTransferMode Mode => NetTransferMode.Reliable;
-
-    public LogLevel LogLevel => LogLevel.Debug;
-
-    public bool ShouldBuffer => true;
-
-    public void Serialize(PacketWriter writer)
+    public byte[] Encode()
     {
-        writer.WriteByte((byte)type);
-        UiPath.Write(writer, path);
-        writer.WriteVector2(position, EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
-        writer.WriteBool(inHeader);
-        writer.WriteByte(drift.Angle);
-        writer.WriteByte(drift.Distance);
+        using var stream = new MemoryStream();
+        using var w = new BinaryWriter(stream, Utf8);
+        w.Write(Sequence); w.Write((byte)Type); w.Write(Position.X); w.Write(Position.Y);
+        w.Write(ScreenPosition.X); w.Write(ScreenPosition.Y); w.Write(InHeader);
+        w.Write(Drift.Angle); w.Write(Drift.Distance);
+        if (Path.Length > 8) throw new InvalidDataException("UI path too long");
+        w.Write((byte)Path.Length);
+        foreach (var n in Path)
+        {
+            w.Write((byte)n.Kind); w.Write(n.Arg);
+            var key = Utf8.GetBytes(n.Key ?? "");
+            if (key.Length > 256) throw new InvalidDataException("UI key too long");
+            w.Write((ushort)key.Length); w.Write(key);
+        }
+        if (stream.Length > MaxBytes) throw new InvalidDataException("Emote payload too large");
+        return stream.ToArray();
     }
 
-    public void Deserialize(PacketReader reader)
+    public static bool TryDecode(ReadOnlySpan<byte> bytes, out ContextEmoteMessage? message)
     {
-        type = (EmoteType)reader.ReadByte();
-        path = UiPath.Read(reader);
-        position = reader.ReadVector2(EmoteCoordinates.Quantize, EmoteCoordinates.Quantize);
-        inHeader = reader.ReadBool();
-        drift = new EmoteDrift(reader.ReadByte(), reader.ReadByte());
+        message = null;
+        if (bytes.Length > MaxBytes) return false;
+        try
+        {
+            using var stream = new MemoryStream(bytes.ToArray());
+            using var r = new BinaryReader(stream, Utf8);
+            var seq = r.ReadUInt64(); var type = (EmoteType)r.ReadByte();
+            if (type == EmoteType.None || !Enum.IsDefined(type)) return false;
+            var pos = new Vector2(r.ReadSingle(), r.ReadSingle());
+            var screen = new Vector2(r.ReadSingle(), r.ReadSingle());
+            if (!Valid(pos, 30) || !Valid(screen, 3)) return false;
+            var headerByte = r.ReadByte(); if (headerByte > 1) return false;
+            var drift = new EmoteDrift(r.ReadByte(), r.ReadByte());
+            var count = r.ReadByte(); if (count > 8) return false;
+            var path = new UiNodeId[count];
+            for (var i = 0; i < count; i++)
+            {
+                var kind = (UiNodeKind)r.ReadByte(); if (!Enum.IsDefined(kind)) return false;
+                var arg = r.ReadUInt64(); var length = r.ReadUInt16();
+                if (length > 256 || length > stream.Length - stream.Position) return false;
+                var keyed = kind is UiNodeKind.CardDetail or UiNodeKind.RelicDetail
+                    or UiNodeKind.BestiaryMonster or UiNodeKind.PlayerDetailCard;
+                if (keyed != (length > 0) || kind != UiNodeKind.PlayerDetail && kind != UiNodeKind.CardLibraryPool && arg != 0
+                    || kind == UiNodeKind.CardLibraryPool && arg > 255) return false;
+                var key = Utf8.GetString(r.ReadBytes(length));
+                if (key.Any(char.IsControl)) return false;
+                path[i] = new UiNodeId(kind, arg, key.Length == 0 ? null : key);
+            }
+            if (count > 0 && path[0].Kind != UiNodeKind.Base || stream.Position != stream.Length) return false;
+            message = new(type, path, pos, headerByte != 0, drift, screen, seq);
+            return true;
+        }
+        catch (Exception e) when (e is IOException or ArgumentException) { return false; }
+    }
+
+    private static bool Valid(Vector2 v, float max) => float.IsFinite(v.X) && float.IsFinite(v.Y)
+        && Math.Abs(v.X) <= max && Math.Abs(v.Y) <= max;
+
+    // Both routes use exactly the game's quantized coordinates for matching, including boundary clamping.
+    public static Vector2 QuantizedScreen(ReactionMessage message)
+    {
+        var w = new PacketWriter(); message.Serialize(w);
+        var r = new PacketReader(); r.Reset(w.Buffer[..w.BytePosition]);
+        var decoded = new ReactionMessage(); decoded.Deserialize(r);
+        return decoded.normalizedPosition;
     }
 }

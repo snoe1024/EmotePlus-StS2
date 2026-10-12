@@ -1,4 +1,4 @@
-﻿<Project Sdk="Godot.NET.Sdk/4.5.1" InitialTargets="CheckDependencyPaths">
+<Project Sdk="Godot.NET.Sdk/4.5.1" InitialTargets="CheckDependencyPaths">
     <Import Project=".\Sts2PathDiscovery.props"/>
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
@@ -61,6 +61,14 @@
         <None Include="EmotePlus/**"/>
     </ItemGroup>
 
+    <PropertyGroup>
+        <RitsuLibDirectory Condition="'$(RitsuLibDirectory)' == ''">$(SteamLibraryPath)/workshop/content/2868840/3747602295</RitsuLibDirectory>
+        <RitsuLibReferenceTarget Condition="'$(RitsuLibReferenceTarget)' == ''">0.111.0</RitsuLibReferenceTarget>
+    </PropertyGroup>
+    <Import Project="$(RitsuLibDirectory)/RitsuLib.References.props" Condition="Exists('$(RitsuLibDirectory)/RitsuLib.References.props')"/>
+    <Target Name="CheckRitsuLibReferences" BeforeTargets="ResolveAssemblyReferences">
+        <Error Condition="!Exists('$(RitsuLibDirectory)/RitsuLib.References.props')" Text="Set RitsuLibDirectory to a complete RitsuLib 0.6.7+ installation."/>
+    </Target>
     <Target Name="CheckDependencyPaths">
         <Error
                 Text=" Slay the Spire 2 data not found at path '$(Sts2DataDir)'"

@@ -136,7 +136,7 @@ public static class EmoteTracker
     private static SceneTree? _subscribedTree;
 
     public static void Spawn(NReactionContainer container, EmoteType type, ulong senderNetId, UiNodeId[] senderPath, Vector2 position,
-        bool inHeader, EmoteDrift drift)
+        bool inHeader, EmoteDrift drift, ulong elapsedMs = 0)
     {
         if (!GodotObject.IsInstanceValid(container) || !container.IsInsideTree())
         {
@@ -152,12 +152,12 @@ public static class EmoteTracker
             Position = position,
             InHeader = inHeader,
             Drift = drift,
-            SpawnedMs = Time.GetTicksMsec(),
+            SpawnedMs = Time.GetTicksMsec() - Math.Min(elapsedMs, Time.GetTicksMsec()),
         };
         Entries.Add(entry);
         var viewer = UiTree.LocalPath();
         EmoteLog.Info($"spawn type={type} sender={UiPath.Describe(senderPath)} viewer={UiPath.Describe(viewer)} pos={position}");
-        UpdateEntries(viewer, entry.SpawnedMs);
+        UpdateEntries(viewer, Time.GetTicksMsec());
         Subscribe(container.GetTree());
     }
 

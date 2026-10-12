@@ -65,23 +65,23 @@ public static class EmoteImages
         EmoteType.HelloWorld,
         
         // page 2
-        EmoteType.Skull,
-        EmoteType.SadSlime,
-        EmoteType.Heart,
-        EmoteType.HappyCultist,
         EmoteType.Enrage,
-        EmoteType.Curious,
-        EmoteType.Devotion,
+        EmoteType.Skull,
         EmoteType.RIP,
+        EmoteType.SadSlime,
+        EmoteType.Devotion,
+        EmoteType.HappyCultist,
+        EmoteType.Curious,
+        EmoteType.Heart,
         
         // page 3
-        EmoteType.Darv,
         EmoteType.Neow,
-        EmoteType.Nonupeipe,
         EmoteType.Orobas,
-        EmoteType.Pael,
-        EmoteType.Tanx,
         EmoteType.Tezcatara,
+        EmoteType.Pael,
+        EmoteType.Darv,
+        EmoteType.Tanx,
+        EmoteType.Nonupeipe,
         EmoteType.Vakuu,
     ];
 

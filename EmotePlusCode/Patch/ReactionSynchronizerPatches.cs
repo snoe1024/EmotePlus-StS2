@@ -15,88 +15,37 @@ using MegaCrit.Sts2.Core.Nodes.Screens.Map;
 
 namespace EmotePlus.EmotePlusCode.Patch;
 
-// Vanilla sends a ReactionMessage with a viewport-normalized position. We always send a ContextEmoteMessage instead:
-// inside a run the sender's UI path + a position in that node's coordinate system (displayed by EmoteTracker),
-// outside a run (lobbies) an empty path + a normalized screen position (displayed by LobbyEmote).
-internal static class ContextEmoteHandler
-{
-    public static void Handle(ContextEmoteMessage message, ulong senderId)
-    {
-        var container = NGame.Instance?.ReactionContainer;
-        EmoteLog.Info($"received from {senderId}: type={message.type} sender={UiPath.Describe(message.path ?? [])}");
-        if (container == null || message.path == null)
-        {
-            return;
-        }
-
-        if (message.path.Length == 0)
-        {
-            LobbyEmote.Show(container, message.type, senderId,
-                NetCursorHelper.GetControlSpacePosition(message.position, container), message.drift);
-            return;
-        }
-
-        EmoteTracker.Spawn(container, message.type, senderId, message.path, message.position, message.inHeader,
-            message.drift);
-    }
-}
-
+// Enhanced messages bypass the game's automatically assigned message IDs.
 [HarmonyPatch(typeof(ReactionSynchronizer), nameof(ReactionSynchronizer.SendLocalReaction))]
 public static class SendLocalReactionPatch
 {
     [HarmonyPrefix]
     public static bool Prefix(ReactionSynchronizer __instance, ReactionType type, Vector2 mouseScreenPos)
     {
-        var path = UiTree.SenderPath(mouseScreenPos);
-        var container = NGame.Instance?.ReactionContainer;
-        if (container == null)
-        {
-            return true;
-        }
-
-        if (path.Length == 0)
-        {
-            // Not in a run (a lobby): just the screen position.
-            __instance.NetService.SendMessage(new ContextEmoteMessage
-            {
-                type = EmoteImages.FromVanilla(type), path = [], drift = LocalEmote.TakeDrift(),
-                position = NetCursorHelper.GetNormalizedPosition(mouseScreenPos, container),
-            });
-            return false;
-        }
-
-        // The position is in the coordinate system of the last node of the path (see ContextEmoteMessage), unless
-        // the emote was made on the header bar (then it is a screen position).
-        var inHeader = UiTree.ShowsHeader(UiTree.LocalPath(mouseScreenPos)) && UiTree.IsOnHeader(mouseScreenPos);
-        var position = EmoteCoordinates.PositionFor(path, mouseScreenPos, container, inHeader);
-        EmoteLog.Info($"send type={type} sender={UiPath.Describe(path)} screenPos={mouseScreenPos} pos={position} inHeader={inHeader}");
-        __instance.NetService.SendMessage(new ContextEmoteMessage
-        {
-            type = EmoteImages.FromVanilla(type), path = path, position = position, inHeader = inHeader,
-            drift = LocalEmote.TakeDrift(),
-        });
+        EmoteNetworking.Send(__instance.NetService, EmoteImages.FromVanilla(type), mouseScreenPos, LocalEmote.TakeDrift());
         return false;
     }
 }
 
-[HarmonyPatch(typeof(ReactionSynchronizer), MethodType.Constructor,
-    typeof(INetGameService), typeof(NReactionContainer))]
+[HarmonyPatch(typeof(ReactionSynchronizer), MethodType.Constructor, typeof(INetGameService), typeof(NReactionContainer))]
 public static class ReactionSynchronizerCtorPatch
 {
     [HarmonyPostfix]
-    public static void Postfix(ReactionSynchronizer __instance)
-    {
-        __instance.NetService.RegisterMessageHandler<ContextEmoteMessage>(ContextEmoteHandler.Handle);
-    }
+    public static void Postfix(ReactionSynchronizer __instance) => EmoteNetworking.Bind(__instance.NetService);
 }
 
-[HarmonyPatch(typeof(ReactionSynchronizer), nameof(ReactionSynchronizer.Dispose))]
-public static class ReactionSynchronizerDisposePatch
+[HarmonyPatch(typeof(ReactionSynchronizer), "HandleReactionMessage")]
+public static class VanillaReactionReceivePatch
 {
+    private static readonly AccessTools.FieldRef<ReactionSynchronizer, NReactionContainer> Container =
+        AccessTools.FieldRefAccess<ReactionSynchronizer, NReactionContainer>("_container");
+
     [HarmonyPrefix]
-    public static void Prefix(ReactionSynchronizer __instance)
+    public static bool Prefix(ReactionSynchronizer __instance,
+        MegaCrit.Sts2.Core.Multiplayer.Messages.Game.Flavor.ReactionMessage message, ulong senderId)
     {
-        __instance.NetService.UnregisterMessageHandler<ContextEmoteMessage>(ContextEmoteHandler.Handle);
+        EmoteNetworking.ReceiveVanilla(__instance.NetService, Container(__instance), message, senderId);
+        return false;
     }
 }
 

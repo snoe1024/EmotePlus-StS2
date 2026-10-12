@@ -1,4 +1,4 @@
-[b]Importante: todos los jugadores de la sesión necesitan este mod[/b]
+[b]Mod del lado del cliente: ¡ya no afecta al desarrollo de la partida![/b]
 
 [b]¡La función de emotes se ha ampliado enormemente![/b]
 En el modo multijugador puedes mostrar un emote en pantalla manteniendo pulsada la tecla V y usando el ratón. ¿Lo sabías?
@@ -23,25 +23,34 @@ Al haber tantos emotes, los ocho huecos de la rueda se quedaban cortos, así que
 [list]
 [*]Mientras la rueda está abierta, puedes cambiar de página con la rueda del ratón. Puedes invertir el sentido en los ajustes.
 [*]En el centro de la rueda se muestra la página actual, por ejemplo «1/3».
-[*]Si sueltas la tecla casi sin mover el ratón, no se envía ningún emote.
+[*]Se mantiene la función de repetir emotes y ahora también puedes no enviar ningún emote después de pulsar la tecla de emote.
 [/list]
 
 [b]Elige tus emotes[/b]
 Vendrán muchos más emotes, por eso puedes mostrar u ocultar cada uno desde los ajustes del mod.
-¡Marca solo los emotes que uses y construye tu propio mazo de emotes!
+¡Además, ahora puedes ordenar a tu gusto los emotes de la rueda!
+¡Elige libremente qué emotes se muestran y construye tu propio mazo de emotes!
+
+[b]Si otros jugadores no tienen este mod[/b]
+Si el anfitrión tiene RitsuLib, los jugadores con este mod comparten los emotes adicionales y sus posiciones.
+Los jugadores sin este mod ven los emotes adicionales que no tienen como un «?».
+Los emotes enviados por jugadores sin este mod aparecen en las coordenadas de pantalla, como en el juego base.
+Sin RitsuLib en el anfitrión, funciona como si ninguno de los demás jugadores tuviera este mod.
 
 [b]Compatibilidad de ramas[/b]
 Funciona tanto en la rama predeterminada como en la Public Beta.
 
 [b]Requisitos[/b]
-BaseLib (se instala automáticamente como dependencia del Workshop).
-
-[b]Idiomas[/b]
-El desarrollador es japonés, así que aparte del japonés todo está traducido automáticamente. Las correcciones son muy bienvenidas.
+BaseLib, RitsuLib (se instalan automáticamente como dependencias del Workshop).
+[b]Para que ya no sea necesario que todos los jugadores tengan este mod, se ha añadido RitsuLib como dependencia.[/b]
+Si el mod no se carga correctamente tras actualizarlo, comprueba que RitsuLib esté instalado.
 
 [b]Haz el multijugador aún más divertido[/b]
 ¡Echa también un vistazo a mis otros mods para multijugador!
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3804845182]Apodo[/url]
+
+[b]Traducción[/b]
+El desarrollador habla japonés, por lo que los demás idiomas están traducidos automáticamente. ¡Las correcciones son muy bienvenidas!
 
 [b]Comentarios[/b]
 Las peticiones de nuevos emotes se recogen en el hilo de este mod.

@@ -1,4 +1,4 @@
-[b]Wichtig: Alle Spieler in der Sitzung benötigen diese Mod[/b]
+[b]Clientseitige Mod: beeinflusst den Spielablauf nicht mehr![/b]
 
 [b]Die Emote-Funktion wurde massiv erweitert![/b]
 Im Mehrspielermodus kannst du Emotes auf dem Bildschirm anzeigen, indem du die V-Taste gedrückt hältst und die Maus bewegst. Wusstest du das?
@@ -23,25 +23,34 @@ Es gibt inzwischen so viele Emotes, dass acht Plätze im Rad nicht mehr ausreich
 [list]
 [*]Solange das Rad geöffnet ist, kannst du mit dem Mausrad die Seite wechseln. Die Richtung lässt sich in den Einstellungen umkehren.
 [*]In der Mitte des Rads wird die aktuelle Seite angezeigt, zum Beispiel „1/3“.
-[*]Wenn du die Taste loslässt, ohne die Maus nennenswert zu bewegen, wird kein Emote gesendet.
+[*]Die Wiederholung von Emotes bleibt erhalten, und nach dem Drücken der Emote-Taste kannst du jetzt auch gezielt kein Emote senden.
 [/list]
 
 [b]Emotes auswählen[/b]
 Es kommen noch viele weitere Emotes dazu, deshalb kannst du in den Mod-Einstellungen jedes einzeln ein- oder ausblenden.
-Hake nur die Emotes an, die du benutzt, und stelle dein eigenes Emote-Deck zusammen!
+Außerdem kannst du die Reihenfolge der Emotes im Rad jetzt frei festlegen!
+Wähle frei, welche Emotes angezeigt werden, und stelle dein eigenes Emote-Deck zusammen!
+
+[b]Wenn andere Spieler diese Mod nicht installiert haben[/b]
+Hat der Host RitsuLib, teilen Spieler mit dieser Mod zusätzliche Emotes und deren Positionen.
+Spieler ohne diese Mod sehen zusätzliche Emotes, die sie nicht haben, als „?“.
+Emotes von Spielern ohne diese Mod erscheinen wie im Grundspiel an Bildschirmkoordinaten.
+Ohne RitsuLib beim Host verhält es sich so, als hätte keiner der anderen Spieler diese Mod.
 
 [b]Unterstützte Zweige[/b]
 Funktioniert sowohl im Standardzweig als auch im Public-Beta-Zweig.
 
 [b]Voraussetzungen[/b]
-BaseLib (wird automatisch als Workshop-Abhängigkeit installiert).
-
-[b]Sprachen[/b]
-Der Entwickler ist Japaner, daher wurde die Mod – abgesehen vom Japanischen – maschinell übersetzt. Korrekturen sind sehr willkommen.
+BaseLib, RitsuLib (werden automatisch als Workshop-Abhängigkeiten installiert).
+[b]Damit nicht mehr alle Mitspieler diese Mod benötigen, wurde RitsuLib als Abhängigkeit hinzugefügt.[/b]
+Wird die Mod nach dem Update nicht richtig geladen, prüfe, ob RitsuLib installiert ist.
 
 [b]Mehrspielermodus noch angenehmer machen[/b]
 Schau dir gern auch meine anderen Mods für den Mehrspielermodus an!
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3804845182]Nickname[/url]
+
+[b]Übersetzung[/b]
+Der Entwickler spricht Japanisch, daher sind alle anderen Sprachen maschinell übersetzt. Korrekturvorschläge sind sehr willkommen!
 
 [b]Feedback[/b]
 Wünsche für neue Emotes sammeln wir im Thread dieser Mod.
