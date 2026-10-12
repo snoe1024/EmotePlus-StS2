@@ -9,28 +9,37 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "Durée pendant laquelle les émotes envoyées carte ouverte restent à l'écran. N'affecte que votre propre écran.",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} s",
 
-  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "Inverser le sens de changement de page au défilement",
-  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "Tant que la roue d'émotes est ouverte, faire défiler vers le bas affiche la page suivante et vers le haut la page précédente. Activez cette option pour inverser.",
-
-  "EMOTEPLUS-EMOTE_VISIBILITY.title": "Émotes dans la roue",
-
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Cliquez sur une émote pour l'afficher ou la masquer dans votre roue (les vides sont comblés). Si toutes les émotes sont masquées, elles sont toutes affichées.\nCela n'affecte pas les émotes utilisées par les autres joueurs.",
-
-  "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Tout afficher",
-
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Tout masquer",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.title": "Délai de répétition d'émote",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.hover.desc": "Si vous appuyez sur la touche d'émote et la relâchez aussitôt sans bouger la souris, la dernière émote envoyée est renvoyée.\nPour annuler, attendez plus longtemps que ce délai, puis relâchez la touche au centre de la roue : rien ne sera envoyé.",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.sliderFormat": "{0:0.0} s",
 
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "Utiliser les émotes aussi en solo",
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "Permet d'utiliser la roue d'émotes aussi en solo.",
-  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "Les émotes sont rangées par lignes de 8 : une ligne correspond à une page de la roue, remplie dans le sens horaire à partir de la droite. Faites glisser une émote sur une autre pour les échanger, ou activez le mode échange et cliquez sur deux émotes. Hors du mode échange, un clic masque ou affiche une émote.",
+
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "Inverser le sens de changement de page au défilement",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "Tant que la roue d'émotes est ouverte, faire défiler vers le bas affiche la page suivante et vers le haut la page précédente. Activez cette option pour inverser.",
+
+  "EMOTEPLUS-EMOTE_VISIBILITY.title": "Émotes affichées dans la roue",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "Cliquez sur une émote pour l'afficher ou la masquer dans votre roue (les vides sont comblés). Si toutes sont masquées, toutes sont affichées.\nCela n'affecte pas les émotes utilisées par les autres joueurs.",
+
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.title": "Ordre dans la roue",
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.hover.desc": "Une ligne de la grille ci-dessous correspond à une page de la roue.\nL'ordre de la grille est repris sur la page, dans le sens horaire à partir de la droite.\nSi vous activez les émotes en solo, vous pouvez les essayer pour de bon avec la touche V.",
+
   "EMOTEPLUS-SWAP_MODE.title": "Mode échange",
-  "EMOTEPLUS-DEFAULT_ORDER.title": "Ordre par défaut",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "Vous pouvez échanger l'ordre des émotes par glisser-déposer.\nTant que ce mode est activé, cliquer successivement sur deux émotes les échange.",
+
+  "EMOTEPLUS-DEFAULT_ORDER.title": "Ordre recommandé",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "Réorganise toutes les émotes selon le classement de l'auteur.",
+
   "EMOTEPLUS-VANILLA_ORDER.title": "Ordre d'origine",
-  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "Regrouper les masquées à la fin",
-  "EMOTEPLUS-SWAP_MODE.hover.desc": "Activez-le puis cliquez sur deux émotes l'une après l'autre pour les échanger. Tant qu'il est actif, un clic ne masque ni n'affiche les émotes. Faire glisser une émote sur une autre les échange aussi.",
-  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "Range les émotes dans l'ordre par défaut (groupées par type). Les émotes masquées restent masquées.",
-  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "Place d'abord les 8 émotes du jeu d'origine, dans l'ordre de la roue d'origine, puis les autres dans leur ordre actuel.",
-  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "Déplace les émotes masquées à la fin, afin que les émotes affichées soient regroupées au début et que chaque ligne corresponde à une page de la roue.",
-  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "Affiche toutes les émotes sur la roue.",
-  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "Masque toutes les émotes. Si toutes sont masquées, la roue les affiche toutes."
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "Place en tête les 8 émotes du jeu d'origine, dans le bon ordre.\nL'ordre des autres émotes n'est pas modifié.",
+
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "Masquées à la fin",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "Déplace les émotes masquées à la fin.\nLes émotes affichées dans la roue passent devant, si bien qu'une ligne de la grille correspond à une page de la roue.",
+
+  "EMOTEPLUS-SHOW_ALL_EMOTES.title": "Tout afficher",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "Affiche toutes les émotes dans la roue.",
+
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "Tout masquer",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "Masque toutes les émotes.\nSi vous ouvrez la roue alors que tout est masqué, toutes les émotes sont traitées comme affichées."
 }

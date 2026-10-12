@@ -26,6 +26,13 @@ public sealed class EmotePlusConfig : SimpleModConfig
     [ConfigSlider(0.5, 10.0, 0.1, Format = "{0:0.0}sec")]
     public static float MapEmoteDisplayTime { get; set; } = 4.5f;
 
+    /// <summary>
+    /// Releasing the emote key in the middle of the wheel (the mouse hardly moved) repeats the last emote, if the key
+    /// was held shorter than this many seconds; held longer, nothing is sent. 0 turns the repeating off.
+    /// </summary>
+    [ConfigSlider(0.0, 5.0, 0.1, Format = "{0:0.0}sec")]
+    public static float RepeatEmoteTime { get; set; } = 2.5f;
+
     /// <summary>Use the emote wheel in singleplayer too (the emotes are only shown to the player themself).</summary>
     public static bool EnableInSingleplayer { get; set; } = true;
 
@@ -74,14 +81,30 @@ public sealed class EmotePlusConfig : SimpleModConfig
         // The picture explaining the order of the wheel (made by hand; skipped while the file is missing).
         if (ResourceLoader.Exists(OrderImagePath))
         {
-            box.AddChild(new TextureRect
+            var texture = ResourceLoader.Load<Texture2D>(OrderImagePath);
+            var picture = new TextureRect
             {
-                Texture = ResourceLoader.Load<Texture2D>(OrderImagePath),
-                ExpandMode = TextureRect.ExpandModeEnum.FitWidthProportional,
+                Texture = texture,
+                ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
                 StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
                 SizeFlagsHorizontal = Control.SizeFlags.ExpandFill,
-                MouseFilter = Control.MouseFilterEnum.Ignore,
-            });
+                // Pass: it must see the mouse for its hover tip, and still hand the scrolling on to the screen.
+                MouseFilter = Control.MouseFilterEnum.Pass,
+            };
+            AttachTip(picture, "WheelOrderImage");
+
+            // As wide as the settings screen gives it, as high as its proportions need. (The built-in
+            // FitWidthProportional mode left the height at 0 here: the height is asked for before the width is known.)
+            var ratio = texture.GetHeight() / (float)Math.Max(1, texture.GetWidth());
+            picture.Resized += () =>
+            {
+                var height = picture.Size.X * ratio;
+                if (Math.Abs(picture.CustomMinimumSize.Y - height) > 0.5f)
+                {
+                    picture.CustomMinimumSize = new Vector2(0f, height);
+                }
+            };
+            box.AddChild(picture);
         }
 
         foreach (var key in new[] { "EmoteOrderHint", "EmoteVisibilityHint" })
@@ -259,16 +282,23 @@ public sealed class EmotePlusConfig : SimpleModConfig
     private NConfigButton CreateButtonWithTip(string name, Action onPressed)
     {
         var button = CreateRawButtonControl(GetLabelText(name), onPressed);
+        AttachTip(button, name);
+        return button;
+    }
+
+    // Shows the hover tip of the given name while the mouse is over the control.
+    private void AttachTip(Control control, string name)
+    {
         var key = ModPrefix + StringHelper.Slugify(name);
-        if (LocString.Exists("settings_ui", key + ".hover.desc"))
+        if (!LocString.Exists("settings_ui", key + ".hover.desc"))
         {
-            var tip = new HoverTip(new LocString("settings_ui", key + ".title"), new LocString("settings_ui", key + ".hover.desc"));
-            button.MouseEntered += () => NHoverTipSet.CreateAndShow(button, tip, HoverTipAlignment.Center);
-            button.MouseExited += () => NHoverTipSet.Remove(button);
-            button.TreeExiting += () => NHoverTipSet.Remove(button);
+            return;
         }
 
-        return button;
+        var tip = new HoverTip(new LocString("settings_ui", key + ".title"), new LocString("settings_ui", key + ".hover.desc"));
+        control.MouseEntered += () => NHoverTipSet.CreateAndShow(control, tip, HoverTipAlignment.Center);
+        control.MouseExited += () => NHoverTipSet.Remove(control);
+        control.TreeExiting += () => NHoverTipSet.Remove(control);
     }
 
     // The mark over a hidden emote: the red cross image, or (if that file is missing) a red x.

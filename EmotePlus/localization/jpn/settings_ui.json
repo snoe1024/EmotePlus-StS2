@@ -8,6 +8,10 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.title": "マップ上のエモートの表示時間",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "マップを開いている状態で出されたエモートが画面に表示される時間です。自分の画面だけに影響します。",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0}秒",
+
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.title": "エモート連投の受付時間",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.hover.desc": "エモートキーを押して、マウスを動かさずにすぐに離すと、直前に送信したエモートをもう一度送ります。\nエモート送信をキャンセルするときはこの設定時間よりも長く待機し、ホイール中央でエモートキーを離せば何も送りません。",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.sliderFormat": "{0:0.0}秒",
   
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "シングルプレイでもエモートを使う",
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "シングルプレイでもエモートホイールを使えるようにします。",
@@ -18,7 +22,8 @@
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "ホイールに表示するエモート",
   "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "エモートをクリックすると、自分のホイールでの表示と非表示が切り替わります(隙間は詰められます)。すべて非表示にした場合は、すべて表示されます。\n他のプレイヤーが使用するエモートには影響しません。",
 
-  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "エモートは1ページのホイールに8つまで表示できます。1行が1ホイールに該当し、真右から反時計回りに並びます。",
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.title": "ホイール上での並び順",
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.hover.desc": "下のグリッドの1行が、ホイールの1ページに該当します。\nグリッドでの並び順が、そのまま1ページの右から時計回りに配置されます。\nシングルプレイでもエモートを有効にすると、実際にVキーで試せます。",
 
   "EMOTEPLUS-SWAP_MODE.title": "入れ替えモード",
   "EMOTEPLUS-SWAP_MODE.hover.desc": "エモートはドラッグで表示順を入れ替えられます。\nこのモードがオンだと、2度のクリックで2つを入れ替えます。",
@@ -29,7 +34,7 @@
   "EMOTEPLUS-VANILLA_ORDER.title": "バニラの順番",
   "EMOTEPLUS-VANILLA_ORDER.hover.desc": "オリジナルに存在する8個のエモートを、先頭に正しく並べます。\nそれ以外のエモートの順に影響しません。",
 
-  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "非表示のエモートを詰める",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "非表示を末尾へ",
   "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "非表示のエモートを末尾に移します。\nホイールに出るエモートが前に詰まり、グリッドの1行がホイールの1ページと一致します。",
   
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "すべて表示",

@@ -11,7 +11,7 @@ namespace EmotePlus.EmotePlusCode.Patch;
 /// <summary>
 /// The emote wheel with pages. Replaces NReactionWheel._Input, which still has the 8 wedges (the slots of a page):
 /// - the emotes of the current page are put on the wedges (a wedge without an emote on the last page is hidden);
-/// - released with the mouse (almost) not moved: no emote;
+/// - released with the mouse (almost) not moved: the last emote again if that was soon (RepeatEmoteTime), else none;
 /// - while the wheel is open, scrolling turns the page (down: next, see the config);
 /// - the wheel appears and disappears quickly.
 /// </summary>
@@ -72,6 +72,8 @@ public static class ReactionWheelInputPatch
     private static Tween? _tween;
     private static int _page;
     private static bool _closing;
+    private static ulong _pressedMs;
+    private static EmoteType? _lastEmote; // the emote sent last (the one a release in the middle repeats)
 
     // The emotes on the wheel (the options may hide some): read again each time the wheel opens.
     private static IReadOnlyList<EmoteType> _layout = EmoteImages.WheelSlots;
@@ -255,6 +257,7 @@ public static class ReactionWheelInputPatch
         marker.Position = (wheel.Size - marker.Size) * 0.5f;
         marker.Rotation = 0f;
         Input.MouseMode = Input.MouseModeEnum.Hidden;
+        _pressedMs = Time.GetTicksMsec();
 
         wheel.Visible = true;
         wheel.Modulate = new Color(1f, 1f, 1f, 0f);
@@ -275,12 +278,23 @@ public static class ReactionWheelInputPatch
         var distance = (marker.Position - (wheel.Size - marker.Size) * 0.5f).Length();
         var center = CenterRef(wheel);
         var picked = SelectedRef(wheel) is { } wedge ? SlotOf(wedge) : null;
+        var heldSeconds = (Time.GetTicksMsec() - _pressedMs) / 1000.0;
 
         Close(wheel);
 
-        if (distance >= MinSelectDistance && picked is { } type)
+        if (distance >= MinSelectDistance)
         {
-            LocalEmote.Do(NGame.Instance.ReactionContainer, type, center);
+            if (picked is { } type)
+            {
+                _lastEmote = type;
+                LocalEmote.Do(NGame.Instance.ReactionContainer, type, center);
+            }
+        }
+        else if (_lastEmote is { } last && heldSeconds < EmotePlusConfig.RepeatEmoteTime)
+        {
+            // Released in the middle soon after pressing: the same emote again (0 seconds = this is off). Held
+            // longer, it was a change of mind: nothing.
+            LocalEmote.Do(NGame.Instance.ReactionContainer, last, center);
         }
     }
 

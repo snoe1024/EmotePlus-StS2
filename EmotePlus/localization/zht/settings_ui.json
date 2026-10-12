@@ -9,28 +9,37 @@
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.hover.desc": "開啟地圖時發出的表情在螢幕上顯示的時間。僅影響你自己的畫面。",
   "EMOTEPLUS-MAP_EMOTE_DISPLAY_TIME.sliderFormat": "{0:0.0} 秒",
 
-  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "反轉滾動翻頁方向",
-  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "開啟表情輪盤時，向下滾動翻到下一頁，向上滾動翻到上一頁。開啟後方向相反。",
-
-  "EMOTEPLUS-EMOTE_VISIBILITY.title": "輪盤中顯示的表情",
-
-  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "點擊表情即可切換其在你輪盤中的顯示或隱藏（空位會被補齊）。如果隱藏了所有表情，則會顯示全部表情。\n不會影響其他玩家使用的表情。",
-
-  "EMOTEPLUS-SHOW_ALL_EMOTES.title": "全部顯示",
-
-  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "全部隱藏",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.title": "表情連發的受理時間",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.hover.desc": "按下表情鍵後不移動滑鼠並立即放開，會再次發送上一次發送的表情。\n想取消發送時，請等待超過此設定時間，然後在輪盤中央放開表情鍵，就不會發送任何內容。",
+  "EMOTEPLUS-REPEAT_EMOTE_TIME.sliderFormat": "{0:0.0} 秒",
 
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.title": "單人遊戲中也使用表情",
   "EMOTEPLUS-ENABLE_IN_SINGLEPLAYER.hover.desc": "讓單人遊戲中也可以使用表情輪盤。",
-  "EMOTEPLUS-EMOTE_ORDER_HINT.title": "表情按每行8個排列，一行對應輪盤的一頁，從右側開始順時針填入。將一個表情拖到另一個表情上即可交換位置，也可以開啟「交換模式」後依序點擊兩個表情。未開啟交換模式時，點擊表情會切換其顯示/隱藏。",
+
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.title": "反轉捲動翻頁方向",
+  "EMOTEPLUS-REVERSE_SCROLL_PAGING.hover.desc": "開啟表情輪盤時，向下捲動翻到下一頁，向上捲動翻到上一頁。開啟後方向相反。",
+
+  "EMOTEPLUS-EMOTE_VISIBILITY.title": "輪盤中顯示的表情",
+  "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "點擊表情即可切換其在你輪盤中的顯示或隱藏（空位會被補齊）。如果全部隱藏，則會顯示全部。\n不會影響其他玩家使用的表情。",
+
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.title": "輪盤上的順序",
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.hover.desc": "下方網格的每一行對應輪盤的一頁。\n網格中的順序會從該頁的右側開始依順時針方向排列。\n在單人遊戲中啟用表情後，可以直接用 V 鍵實際試用。",
+
   "EMOTEPLUS-SWAP_MODE.title": "交換模式",
-  "EMOTEPLUS-DEFAULT_ORDER.title": "預設順序",
+  "EMOTEPLUS-SWAP_MODE.hover.desc": "可以透過拖曳來交換表情的顯示順序。\n開啟此模式後，依序點擊兩個表情即可將它們互換。",
+
+  "EMOTEPLUS-DEFAULT_ORDER.title": "推薦順序",
+  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "依照製作者的分類重新排列所有表情。",
+
   "EMOTEPLUS-VANILLA_ORDER.title": "原版順序",
-  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "隱藏的表情移到末尾",
-  "EMOTEPLUS-SWAP_MODE.hover.desc": "開啟後依序點擊兩個表情即可交換位置。開啟期間，點擊不會切換表情的顯示/隱藏。把一個表情拖到另一個表情上也能交換。",
-  "EMOTEPLUS-DEFAULT_ORDER.hover.desc": "將表情恢復為預設順序（依種類分組）。已隱藏的表情維持隱藏。",
-  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "把原版遊戲的8個表情依原版輪盤的順序放在最前面，其餘表情依目前順序排在後面。",
-  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "把已隱藏的表情移到末尾，使輪盤上顯示的表情集中在前面，每一行對應輪盤的一頁。",
-  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "在輪盤上顯示所有表情。",
-  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "隱藏所有表情。若全部隱藏，輪盤會顯示全部表情。"
+  "EMOTEPLUS-VANILLA_ORDER.hover.desc": "將原版遊戲中的 8 個表情依正確順序排在最前面。\n不會影響其他表情的順序。",
+
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "隱藏項移至末尾",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "將隱藏的表情移到末尾。\n輪盤中顯示的表情會向前靠攏，使網格的每一行與輪盤的一頁一致。",
+
+  "EMOTEPLUS-SHOW_ALL_EMOTES.title": "全部顯示",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "在輪盤中顯示所有表情。",
+
+  "EMOTEPLUS-HIDE_ALL_EMOTES.title": "全部隱藏",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "隱藏所有表情。\n如果在全部隱藏的狀態下開啟輪盤，則視為顯示全部表情。"
 }
