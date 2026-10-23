@@ -1,0 +1,46 @@
+using MegaCrit.Sts2.Core.Models;
+
+namespace EmotePlus.EmotePlusCode.Reaction;
+
+/// <summary>An official ancient's model name and corresponding existing emote.</summary>
+public sealed record AncientEmoteDefinition(string TypeName, EmoteType Emote);
+
+/// <summary>Ancient lookup without a static dependency on individual ancient classes.</summary>
+public static class AncientEmotes
+{
+    /// <summary>Public API version for ancient lookup.</summary>
+    public const int ApiVersion = 1;
+
+    private static readonly AncientEmoteDefinition[] Definitions =
+    [
+        new("Darv", EmoteType.Darv),
+        new("Neow", EmoteType.Neow),
+        new("Nonupeipe", EmoteType.Nonupeipe),
+        new("Orobas", EmoteType.Orobas),
+        new("Pael", EmoteType.Pael),
+        new("Tanx", EmoteType.Tanx),
+        new("Tezcatara", EmoteType.Tezcatara),
+        new("Vakuu", EmoteType.Vakuu),
+    ];
+    private static readonly IReadOnlyDictionary<string, AncientEmoteDefinition> ByType =
+        Definitions.ToDictionary(d => d.TypeName, StringComparer.Ordinal);
+
+    /// <summary>The eight supported ancients; unknown future ancients are not inferred by name alone.</summary>
+    public static IReadOnlyList<AncientEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
+
+    /// <summary>Maps an exact official ancient model type. Unknown and third-party models return false/None.</summary>
+    public static bool TryGetEmote(Type? ancientType, out EmoteType emote)
+    {
+        emote = EmoteType.None;
+        if (ancientType == null || ancientType.Assembly != typeof(AncientEventModel).Assembly ||
+            ancientType.Namespace != "MegaCrit.Sts2.Core.Models.Events" ||
+            !typeof(AncientEventModel).IsAssignableFrom(ancientType) ||
+            !ByType.TryGetValue(ancientType.Name, out var entry)) return false;
+        emote = entry.Emote;
+        return true;
+    }
+
+    /// <summary>Maps an ancient instance without constructing or mutating any game model.</summary>
+    public static bool TryGetEmote(AncientEventModel? ancient, out EmoteType emote) =>
+        TryGetEmote(ancient?.GetType(), out emote);
+}

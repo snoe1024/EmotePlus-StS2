@@ -30,6 +30,7 @@ public static class ReactionWheelInputPatch
     /// backgrounds.
     /// </summary>
     private const bool PreviewWithOutline = true;
+    private const string DeliveryWarningPath = "res://EmotePlus/ui/settings/warn.png";
 
     private const int SlotCount = 8;
     private const float MarkerRadius = 70f;
@@ -68,10 +69,14 @@ public static class ReactionWheelInputPatch
     private static NReactionWheel? _wheel;
     private static NReactionWheelWedge[] _wedges = [];
     private static readonly EmoteType?[] Slots = new EmoteType?[SlotCount];
+    private static readonly TextureRect?[] DeliveryWarnings = new TextureRect?[SlotCount];
+    private static ulong _lastWarningRefresh;
+    private static ulong _recentRevision;
     private static Label? _pageLabel;
     private static Tween? _tween;
     private static int _page;
     private static bool _closing;
+    private static bool _preserveCursorPosition;
     private static ulong _pressedMs;
     private static EmoteType? _lastEmote; // the emote sent last (the one a release in the middle repeats)
 
@@ -102,7 +107,12 @@ public static class ReactionWheelInputPatch
         }
         else if (inputEvent is InputEventMouseMotion motion)
         {
-            if (IgnoreNextRef(__instance))
+            if (open && _preserveCursorPosition)
+            {
+                // Leave the hidden OS cursor free to move so revealing it requires no synthetic repositioning.
+                MoveMarker(__instance, motion.Relative);
+            }
+            else if (IgnoreNextRef(__instance))
             {
                 IgnoreNextRef(__instance) = false;
             }
@@ -118,7 +128,9 @@ public static class ReactionWheelInputPatch
         {
             // Scrolling turns the page (down: next) and is not for the game meanwhile (e.g. the map zoom).
             // Clicks are left alone.
-            TurnPage(__instance, next: (wheelEvent.ButtonIndex == MouseButton.WheelDown) == EmotePlusConfig.ReverseScrollPaging);
+            // A wheel notch can produce both press and release. Paging twice wraps back on a two-page wheel.
+            if (wheelEvent.Pressed)
+                TurnPage(__instance, next: (wheelEvent.ButtonIndex == MouseButton.WheelDown) != EmotePlusConfig.ReverseScrollPaging);
             __instance.GetViewport().SetInputAsHandled();
         }
         else if (inputEvent.IsActionPressed(ReactWheel) && !typing)
@@ -142,6 +154,26 @@ public static class ReactionWheelInputPatch
         _tween = null;
         _closing = false;
         _page = 0;
+        Array.Clear(DeliveryWarnings);
+
+        // Route negotiation can finish while the user holds the wheel open without moving the mouse.
+        var tree = wheel.GetTree();
+        void RefreshWarnings()
+        {
+            if (!ReferenceEquals(_wheel, wheel) || !wheel.Visible || _closing) return;
+            var now = Time.GetTicksMsec();
+            if (now - _lastWarningRefresh < 250) return;
+            _lastWarningRefresh = now;
+            if (EmotePlusConfig.ShowRecentPowers && _recentRevision != RecentPowerEmotes.Revision)
+            {
+                LoadLayout();
+                ShowPage();
+                MoveMarker(wheel, Vector2.Zero);
+            }
+            UpdateDeliveryWarnings();
+        }
+        tree.ProcessFrame += RefreshWarnings;
+        wheel.TreeExiting += () => tree.ProcessFrame -= RefreshWarnings;
 
         // Scaled around its center, so that the appearing animation does not move it.
         wheel.PivotOffset = wheel.Size / 2f;
@@ -186,8 +218,12 @@ public static class ReactionWheelInputPatch
     private static void ShowPage()
     {
         var color = EmoteTracker.NeutralOutline;
+        // The artist may add this optional asset later; do not emit load errors while it is absent.
+        var warningTexture = ResourceLoader.Exists(DeliveryWarningPath)
+            ? ResourceLoader.Load<Texture2D>(DeliveryWarningPath) : null;
         for (var i = 0; i < SlotCount; i++)
         {
+            DeliveryWarnings[i] = null;
             var index = _page * SlotCount + i;
             var wedge = _wedges[i];
             if (index >= _layout.Count || _layout[index] == EmoteType.None)
@@ -198,7 +234,6 @@ public static class ReactionWheelInputPatch
             }
 
             var type = _layout[index];
-            var name = EmoteImages.NameOf(type);
             Slots[i] = type;
             wedge.Visible = true;
             var icon = WedgeIconRef(wedge);
@@ -210,11 +245,11 @@ public static class ReactionWheelInputPatch
             if (PreviewWithOutline)
             {
                 // The outline is the rect's own image (tinted), the emote is on top of it as a child.
-                icon.Texture = EmoteImages.Outline(name);
+                icon.Texture = EmoteImages.Outline(type);
                 icon.SelfModulate = color;
                 var top = new TextureRect
                 {
-                    Texture = EmoteImages.Icon(name),
+                    Texture = EmoteImages.Icon(type),
                     MouseFilter = Control.MouseFilterEnum.Ignore,
                 };
                 PrepareIcon(top);
@@ -223,16 +258,43 @@ public static class ReactionWheelInputPatch
             }
             else
             {
-                icon.Texture = EmoteImages.Icon(name);
+                icon.Texture = EmoteImages.Icon(type);
                 icon.SelfModulate = Colors.White;
             }
+
+            if ((int)type > 8 && warningTexture != null)
+            {
+                var warning = new TextureRect
+                {
+                    Texture = warningTexture,
+                    MouseFilter = Control.MouseFilterEnum.Ignore,
+                    Visible = false,
+                };
+                PrepareIcon(warning);
+                icon.AddChild(warning);
+                warning.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.TopRight);
+                warning.OffsetLeft = -20f;
+                warning.OffsetTop = -6f;
+                warning.OffsetRight = 8f;
+                warning.OffsetBottom = 22f;
+                DeliveryWarnings[i] = warning;
+            }
         }
+
+        UpdateDeliveryWarnings();
 
         if (_pageLabel != null)
         {
             _pageLabel.Visible = PageCount >= 2;
             _pageLabel.Text = $"{_page + 1}/{PageCount}";
         }
+    }
+
+    private static void UpdateDeliveryWarnings()
+    {
+        var warn = EmoteNetworking.WarnAboutExtendedEmotes;
+        foreach (var badge in DeliveryWarnings)
+            if (GodotObject.IsInstanceValid(badge)) badge!.Visible = warn;
     }
 
     private static void Open(NReactionWheel wheel)
@@ -250,10 +312,12 @@ public static class ReactionWheelInputPatch
         SelectedRef(wheel)?.OnDeselected();
         SelectedRef(wheel) = null;
 
-        _layout = EmoteImages.VisibleSlots();
+        LoadLayout();
         _page = Math.Min(_page, Math.Max(0, PageCount - 1));
         ShowPage();
         CenterRef(wheel) = wheel.GetViewport().GetMousePosition();
+        _preserveCursorPosition = EmotePlusConfig.PreserveCursorPosition;
+        IgnoreNextRef(wheel) = false;
         marker.Position = (wheel.Size - marker.Size) * 0.5f;
         marker.Rotation = 0f;
         Input.MouseMode = Input.MouseModeEnum.Hidden;
@@ -298,6 +362,19 @@ public static class ReactionWheelInputPatch
         }
     }
 
+    private static void LoadLayout()
+    {
+        var layout = EmoteImages.VisibleSlots().ToList();
+        if (EmotePlusConfig.ShowRecentPowers)
+        {
+            // A dedicated final page must not share the last partly-filled regular page.
+            while (layout.Count % SlotCount != 0) layout.Add(EmoteType.None);
+            layout.AddRange(RecentPowerEmotes.Snapshot());
+        }
+        _layout = layout;
+        _recentRevision = RecentPowerEmotes.Revision;
+    }
+
     private static void TurnPage(NReactionWheel wheel, bool next)
     {
         if (PageCount < 2)
@@ -319,7 +396,7 @@ public static class ReactionWheelInputPatch
     private static void Close(NReactionWheel wheel)
     {
         Input.MouseMode = Input.MouseModeEnum.Visible;
-        WarpMouseBack(wheel);
+        if (!_preserveCursorPosition) WarpMouseBack(wheel);
 
         _tween?.Kill();
         _closing = true;

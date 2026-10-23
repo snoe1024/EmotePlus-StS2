@@ -1,0 +1,15 @@
+namespace EmotePlus.EmotePlusCode.Reaction;
+
+/// <summary>Exclusive artwork directory classification, independent of the non-exclusive search tags.</summary>
+public enum EmoteCategory
+{
+    None = 0,
+    Relic = 1,
+    Power = 2,
+    Ancient = 3,
+    Enchantment = 4,
+    Potion = 5,
+}
+
+/// <summary>A stable emote identity, persistent settings key and its separately classified artwork.</summary>
+public sealed record EmoteDefinition(EmoteType Type, string Name, string AssetName, EmoteCategory Category);

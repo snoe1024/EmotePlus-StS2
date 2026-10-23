@@ -20,9 +20,10 @@ internal sealed record ContextEmoteMessage(EmoteType Type, UiNodeId[] Path, Vect
 
     public byte[] Encode()
     {
+        if (UiTree.IsLocalOnlyPath(Path)) throw new InvalidDataException("Private overlay emotes must stay local");
         using var stream = new MemoryStream();
         using var w = new BinaryWriter(stream, Utf8);
-        w.Write(Sequence); w.Write((byte)Type); w.Write(Position.X); w.Write(Position.Y);
+        w.Write(Sequence); w.Write(checked((ushort)Type)); w.Write(Position.X); w.Write(Position.Y);
         w.Write(ScreenPosition.X); w.Write(ScreenPosition.Y); w.Write(InHeader);
         w.Write(Drift.Angle); w.Write(Drift.Distance);
         if (Path.Length > 8) throw new InvalidDataException("UI path too long");
@@ -46,7 +47,7 @@ internal sealed record ContextEmoteMessage(EmoteType Type, UiNodeId[] Path, Vect
         {
             using var stream = new MemoryStream(bytes.ToArray());
             using var r = new BinaryReader(stream, Utf8);
-            var seq = r.ReadUInt64(); var type = (EmoteType)r.ReadByte();
+            var seq = r.ReadUInt64(); var type = (EmoteType)r.ReadUInt16();
             if (type == EmoteType.None || !Enum.IsDefined(type)) return false;
             var pos = new Vector2(r.ReadSingle(), r.ReadSingle());
             var screen = new Vector2(r.ReadSingle(), r.ReadSingle());
@@ -58,6 +59,7 @@ internal sealed record ContextEmoteMessage(EmoteType Type, UiNodeId[] Path, Vect
             for (var i = 0; i < count; i++)
             {
                 var kind = (UiNodeKind)r.ReadByte(); if (!Enum.IsDefined(kind)) return false;
+                if (kind == UiNodeKind.PrivateOverlay) return false;
                 var arg = r.ReadUInt64(); var length = r.ReadUInt16();
                 if (length > 256 || length > stream.Length - stream.Position) return false;
                 var keyed = kind is UiNodeKind.CardDetail or UiNodeKind.RelicDetail

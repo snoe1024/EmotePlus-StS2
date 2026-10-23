@@ -23,6 +23,12 @@ internal static class EmoteNetworking
     private static SceneTree? _tree;
     private static readonly List<Delivery> Deliveries = [];
     private static readonly Dictionary<(ulong, ulong), ulong> Seen = [];
+
+    // Route participants already account for host relay support and endpoint compatibility. A host with only
+    // RitsuLib can relay between modded clients without itself appearing as an EmotePlus participant.
+    internal static bool WarnAboutExtendedEmotes => _service is { IsConnected: true, Type: not NetGameType.Singleplayer }
+        && !(_endpoint?.GetParticipantsSnapshot().Any(peer => peer != _service.NetId) ?? false);
+
     private readonly record struct Key(ulong Sender, ReactionType Type, Vector2 Screen);
     private sealed class Delivery
     {
@@ -33,6 +39,8 @@ internal static class EmoteNetworking
         public NReactionContainer? Container;
         public ReactionMessage Vanilla;
         public NReaction? Fallback;
+        public ulong PresentationId = ExternalEmotes.NewId();
+        public ExternalEmoteClaim? ExternalClaim;
         public bool Displayed;
         public ulong Due;
     }
@@ -49,7 +57,7 @@ internal static class EmoteNetworking
     {
         var generation = _generation;
         _endpoint = RitsuLibSidecarEndpoints.Register(new RitsuLibSidecarEndpointDescriptor(
-            ownerId: MainFile.ModId, name: "emotes", protocolVersion: 1, minimumCompatibleProtocolVersion: 1,
+            ownerId: MainFile.ModId, name: "emotes", protocolVersion: 2, minimumCompatibleProtocolVersion: 2,
             deliveryProfile: RitsuLibSidecarDeliveryProfile.RealtimeDatagram,
             topology: RitsuLibSidecarEndpointTopology.RelayGroup,
             maxPayloadBytes: ContextEmoteMessage.MaxBytes,
@@ -77,6 +85,7 @@ internal static class EmoteNetworking
         if (_service != null && _disconnect != null) _service.Disconnected -= _disconnect;
         // Pending vanilla messages already received remain valid when a session changes.
         foreach (var d in Deliveries.Where(d => !d.Sidecar && !d.Displayed && !d.Matched)) ShowVanilla(d);
+        if (_service != null) ExternalEmotes.EndSession();
         Deliveries.Clear(); Seen.Clear();
         _service = null; _disconnect = null; _generation++;
         _endpoint?.Dispose(); _endpoint = null;
@@ -84,6 +93,8 @@ internal static class EmoteNetworking
 
     public static void Send(INetGameService service, EmoteType type, Vector2 screen, EmoteDrift drift)
     {
+        var path = UiTree.SenderPath(screen);
+        if (UiTree.IsLocalOnlyPath(path)) return;
         Bind(service);
         if (service.Type == NetGameType.Singleplayer) return;
         var container = NGame.Instance?.ReactionContainer;
@@ -93,7 +104,6 @@ internal static class EmoteNetworking
             type = ContextEmoteMessage.ToVanilla(type),
             normalizedPosition = NetCursorHelper.GetNormalizedPosition(screen, container),
         };
-        var path = UiTree.SenderPath(screen);
         var header = UiTree.ShowsHeader(UiTree.LocalPath(screen)) && UiTree.IsOnHeader(screen);
         var position = path.Length == 0 ? vanilla.normalizedPosition
             : EmoteCoordinates.PositionFor(path, screen, container, header);
@@ -127,7 +137,7 @@ internal static class EmoteNetworking
 
     private static void ReceiveSidecar(RitsuLibSidecarEndpointMessage incoming)
     {
-        if (_service == null || incoming.NegotiatedProtocolVersion != 1 || incoming.OriginalSenderNetId == _service.NetId) return;
+        if (_service == null || incoming.NegotiatedProtocolVersion != 2 || incoming.OriginalSenderNetId == _service.NetId) return;
         if (!ContextEmoteMessage.TryDecode(incoming.Payload.Span, out var message) || message == null)
         { MainFile.Logger.Warn("Rejected invalid emote payload."); return; }
         Pump();
@@ -138,8 +148,15 @@ internal static class EmoteNetworking
         if (vanilla != null)
         {
             vanilla.Matched = true;
+            if (vanilla.ExternalClaim is { } external && !external.Source.IsSceneCurrent)
+                external.End(ExternalEmoteEnd.SceneRemoved);
             // A late enhanced message must not restart an emote whose vanilla animation already ended.
-            if (vanilla.Displayed && !GodotObject.IsInstanceValid(vanilla.Fallback)) return;
+            if (vanilla.ExternalClaim is { ManagesLifetime: false } claim &&
+                claim.Source.ElapsedSeconds >= claim.Source.LifetimeSeconds)
+                claim.End(ExternalEmoteEnd.Expired);
+            if (vanilla.Displayed && vanilla.ExternalClaim is { IsActive: false }) return;
+            if (vanilla.Displayed && vanilla.ExternalClaim == null && !GodotObject.IsInstanceValid(vanilla.Fallback)) return;
+            vanilla.ExternalClaim?.End(ExternalEmoteEnd.Replaced);
             if (GodotObject.IsInstanceValid(vanilla.Fallback))
             {
                 vanilla.Fallback!.Visible = false;
@@ -151,9 +168,11 @@ internal static class EmoteNetworking
         if (container == null) return;
         EmoteLog.Info($"sidecar receive sender={sender} seq={message.Sequence} matched={vanilla != null}");
         if (message.Path.Length == 0)
-            LobbyEmote.Show(container, message.Type, sender,
-                NetCursorHelper.GetControlSpacePosition(message.Position, container), message.Drift, vanilla == null ? 0 : now - vanilla.At);
-        else EmoteTracker.Spawn(container, message.Type, sender, message.Path, message.Position, message.InHeader, message.Drift, vanilla == null ? 0 : now - vanilla.At);
+            LobbyEmote.ShowWithPresentation(container, message.Type, sender,
+                NetCursorHelper.GetControlSpacePosition(message.Position, container), message.Drift,
+                vanilla == null ? 0 : now - vanilla.At, vanilla?.PresentationId ?? 0);
+        else EmoteTracker.SpawnWithPresentation(container, message.Type, sender, message.Path, message.Position, message.InHeader,
+            message.Drift, vanilla == null ? 0 : now - vanilla.At, vanilla?.PresentationId ?? 0);
         Trim(now);
     }
 
@@ -161,6 +180,9 @@ internal static class EmoteNetworking
     {
         d.Displayed = true;
         if (d.Container == null || !GodotObject.IsInstanceValid(d.Container) || !d.Container.IsInsideTree()) return;
+        d.ExternalClaim = ExternalEmotes.Offer(d.Container, (EmoteType)(int)d.Vanilla.type, d.Key.Sender,
+            [], d.Vanilla.normalizedPosition, false, true, Time.GetTicksMsec() - d.At, d.PresentationId);
+        if (d.ExternalClaim != null) return;
         // Use the original rendering path: screen coordinates, top layer, no UI anchoring or scroll following.
         var before = d.Container.GetChildren().ToHashSet();
         d.Container.DoRemoteReaction(d.Vanilla.type,

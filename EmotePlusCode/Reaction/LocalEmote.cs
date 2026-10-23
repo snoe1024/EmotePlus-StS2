@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Multiplayer.Game;
+using MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput;
 using MegaCrit.Sts2.Core.Nodes.Reaction;
 
 namespace EmotePlus.EmotePlusCode.Reaction;
@@ -52,7 +53,9 @@ public static class LocalEmote
 
         // The synchronizer's parameter is the vanilla enum, but SendLocalReactionPatch takes over and only reads
         // the number (see EmoteType).
-        Synchronizer(container)?.SendLocalReaction((ReactionType)(int)type, screenPosition);
+        if (!UiTree.IsLocalOnlyPath(path))
+            Synchronizer(container)?.SendLocalReaction((ReactionType)(int)type, screenPosition);
+        else _pendingDrift = null;
     }
 }
 
@@ -64,7 +67,14 @@ public static class LobbyEmote
 {
     public static void Show(NReactionContainer container, EmoteType type, ulong senderId, Vector2 position,
         EmoteDrift drift, ulong elapsedMs = 0)
+        => ShowWithPresentation(container, type, senderId, position, drift, elapsedMs, 0);
+
+    internal static void ShowWithPresentation(NReactionContainer container, EmoteType type, ulong senderId,
+        Vector2 position, EmoteDrift drift, ulong elapsedMs, ulong presentationId)
     {
+        if (ExternalEmotes.Offer(container, type, senderId, [],
+                NetCursorHelper.GetNormalizedPosition(position, container), false, false, elapsedMs, presentationId) != null)
+            return;
         var character = UiTree.LobbyCharacter(senderId);
         var emote = EmoteTracker.CreateEmote(type, EmoteTracker.OutlineColorOf(character));
         emote.SetMeta(ReactionAnimPatch.DriftMeta, drift.Offset);

@@ -54,6 +54,13 @@ public enum UiNodeKind : byte
     BestiaryMonster,
     BestiaryList,
     PlayerDetailCard,
+    DrawPile,
+    DiscardPile,
+    ExhaustPile,
+    Rewards,
+    CardRewards,
+    // Local instance identity only; never put this path on either transport.
+    PrivateOverlay,
 }
 
 /// <param name="Arg">PlayerDetail: the inspected player's net id. CardLibraryPool: the pool index.</param>

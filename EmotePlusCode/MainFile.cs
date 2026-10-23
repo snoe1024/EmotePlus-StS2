@@ -23,6 +23,7 @@ public partial class MainFile : Node
     {
         Config = new EmotePlusConfig();
         Config.Load();
+        if (Reaction.EmoteImages.MigrateVisibility()) Config.SaveDebounced();
         ModConfigRegistry.Register(ModId, Config);
 
         var assembly = Assembly.GetExecutingAssembly();
@@ -34,6 +35,7 @@ public partial class MainFile : Node
 
         harmony.PatchAll(assembly);
         EmotePlus.EmotePlusCode.Reaction.EmoteNetworking.Initialize();
+        MegaCrit.Sts2.Core.Runs.RunManager.Instance.RunStarted += _ => Reaction.RecentPowerEmotes.Clear();
 
         // Log what actually got patched, so a silently-unapplied patch shows up in godot.log right away.
         var patchedMethods = harmony.GetPatchedMethods().ToList();

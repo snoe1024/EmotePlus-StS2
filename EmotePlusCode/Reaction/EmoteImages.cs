@@ -7,44 +7,33 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 
 /// <summary>
 /// The emotes and their images. An emote has an icon and an outline (tinted separately, see
-/// <see cref="StringExtensions"/>); it is identified by name = the file name under res://EmotePlus/ui/emote/
-/// (without ".png" / "_outline.png").
+/// <see cref="StringExtensions"/>). Stored keys are independent of filenames and the explicit artwork category
+/// in <see cref="EmoteCatalog"/>. Icons and outlines use matching category subdirectories.
 ///
 /// To add an emote: put the two images there, add an <see cref="EmoteType"/> value (a new number), add it to
-/// <see cref="Names"/>, and put it in <see cref="WheelLayout"/> where it should be by default. Images of any size
+/// <see cref="EmoteCatalog"/>, and put it in <see cref="WheelLayout"/> where it should be by default. Images of any size
 /// work: they are fitted into the same box. The player can rearrange the emotes in the mod settings
 /// (<see cref="WheelSlots"/>).
 /// </summary>
 public static class EmoteImages
 {
-    /// <summary>The image name of every emote. The order does not matter here.</summary>
-    private static readonly Dictionary<EmoteType, string> Names = new()
+    /// <summary>The persistent settings key of every emote. The order does not matter here.</summary>
+    private static readonly Dictionary<EmoteType, string> Names =
+        EmoteCatalog.All.ToDictionary(d => d.Type, d => d.Name);
+
+    /// <summary>The pre-1.0 selection. Future additions must not change this migration/default baseline.</summary>
+    public const string InitialSelection = "exclaim,skull,thumb_down,slime_sad,question,heart,thumb_up,happy_cultist,darv,neow,nonupeipe,orobas,pael,tanx,tezcatara,vakuu,curious,enrage,hello_world,vulnerable,weak,gold,blasphemyrip,devotion";
+
+    /// <summary>Migrates the old exclusion list, preserving its effective 24-emote selection.</summary>
+    public static bool MigrateVisibility()
     {
-        [EmoteType.Exclamation] = "exclaim",
-        [EmoteType.Skull] = "skull",
-        [EmoteType.ThumbDown] = "thumb_down",
-        [EmoteType.SadSlime] = "slime_sad",
-        [EmoteType.QuestionMark] = "question",
-        [EmoteType.Heart] = "heart",
-        [EmoteType.ThumbUp] = "thumb_up",
-        [EmoteType.HappyCultist] = "happy_cultist",
-        [EmoteType.Darv] = "darv",
-        [EmoteType.Neow] = "neow",
-        [EmoteType.Nonupeipe] = "nonupeipe",
-        [EmoteType.Orobas] = "orobas",
-        [EmoteType.Pael] = "pael",
-        [EmoteType.Tanx] = "tanx",
-        [EmoteType.Tezcatara] = "tezcatara",
-        [EmoteType.Vakuu] = "vakuu",
-        [EmoteType.Curious] = "curious",
-        [EmoteType.Enrage] = "enrage",
-        [EmoteType.HelloWorld] = "hello_world",
-        [EmoteType.Vulnerable] = "vulnerable",
-        [EmoteType.Weak] = "weak",
-        [EmoteType.Gold] = "gold",
-        [EmoteType.RIP] = "blasphemyrip",
-        [EmoteType.Devotion] = "devotion",
-    };
+        if (EmotePlusConfig.EmoteVisibilityVersion >= 1) return false;
+        var hidden = ParseNames(EmotePlusConfig.HiddenEmotes);
+        EmotePlusConfig.EnabledEmotes = string.Join(",", ParseNames(InitialSelection).Where(n => !hidden.Contains(n)));
+        EmotePlusConfig.EmptySelectionFallback = InitialSelection;
+        EmotePlusConfig.EmoteVisibilityVersion = 1;
+        return true;
+    }
 
     /// <summary>
     /// The default order of the emotes on the wheel: 8 per page, each page clockwise from the right (right, lower
@@ -157,36 +146,48 @@ public static class EmoteImages
     public static IEnumerable<(EmoteType Type, string Name)> AllEmotes =>
         WheelSlots.Where(t => t != EmoteType.None).Select(t => (t, NameOf(t)));
 
-    // The emotes the player hid (EmotePlusConfig.HiddenEmotes), parsed again whenever the text changes.
-    private static string _hiddenText = "";
-    private static HashSet<string> _hidden = [];
+    private static string? _enabledText;
+    private static HashSet<string> _enabled = [];
 
-    private static HashSet<string> Hidden
+    private static HashSet<string> Enabled
     {
         get
         {
-            var text = EmotePlusConfig.HiddenEmotes ?? "";
-            if (text != _hiddenText)
+            var text = EmotePlusConfig.EnabledEmotes ?? "";
+            if (text != _enabledText)
             {
-                _hiddenText = text;
-                _hidden = text.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToHashSet();
+                _enabledText = text;
+                _enabled = ParseNames(text);
             }
 
-            return _hidden;
+            return _enabled;
         }
     }
 
-    public static bool IsHidden(string name) => Hidden.Contains(name);
+    private static HashSet<string> ParseNames(string? text) => (text ?? "").Split(',',
+        StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToHashSet(StringComparer.Ordinal);
+
+    public static bool IsHidden(string name) => !Enabled.Contains(name);
 
     public static void SetHidden(string name, bool hidden)
     {
-        var set = new HashSet<string>(Hidden);
-        if (hidden ? !set.Add(name) : !set.Remove(name))
+        var set = new HashSet<string>(Enabled);
+        if (hidden ? !set.Remove(name) : !set.Add(name))
         {
             return;
         }
 
-        EmotePlusConfig.HiddenEmotes = string.Join(",", set.Order());
+        EmotePlusConfig.EnabledEmotes = string.Join(",", set.Order());
+        // Explicit user edits may include today's catalogue in the all-hidden fallback. Future additions are
+        // excluded because this snapshot is saved, rather than recalculated when loading a newer mod version.
+        EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
+    }
+
+    /// <summary>Explicitly selects or hides the current catalogue without opting into future additions.</summary>
+    public static void SetAllHidden(bool hidden)
+    {
+        EmotePlusConfig.EnabledEmotes = hidden ? "" : string.Join(",", Names.Values);
+        EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
     }
 
     /// <summary>
@@ -195,13 +196,12 @@ public static class EmoteImages
     /// </summary>
     public static IReadOnlyList<EmoteType> VisibleSlots()
     {
-        var hidden = Hidden;
-        if (hidden.Count == 0 || AllEmotes.All(e => hidden.Contains(e.Name)))
-        {
-            return WheelSlots;
-        }
-
-        return WheelSlots.Where(t => t == EmoteType.None || !hidden.Contains(NameOf(t))).ToList();
+        var selected = Enabled;
+        if (!Names.Values.Any(selected.Contains)) selected = ParseNames(EmotePlusConfig.EmptySelectionFallback);
+        var visible = WheelSlots.Where(t => t != EmoteType.None && selected.Contains(NameOf(t))).ToList();
+        if (visible.Count > 0) return visible;
+        var baseline = ParseNames(InitialSelection);
+        return WheelSlots.Where(t => baseline.Contains(NameOf(t))).ToList();
     }
 
     private static readonly Dictionary<string, Texture2D> Cache = new();
@@ -214,6 +214,12 @@ public static class EmoteImages
     public static Texture2D Icon(string name) => Load(name.GetEmotePath());
 
     public static Texture2D Outline(string name) => Load(name.GetEmoteOutlinePath());
+
+    /// <summary>Loads the icon through its explicit artwork category.</summary>
+    public static Texture2D Icon(EmoteType type) => Load(type.GetEmotePath());
+
+    /// <summary>Loads the outline through its explicit artwork category.</summary>
+    public static Texture2D Outline(EmoteType type) => Load(type.GetEmoteOutlinePath());
 
     private static Texture2D Load(string path)
     {

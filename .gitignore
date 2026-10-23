@@ -9,3 +9,9 @@ riderModule.iml
 
 CLAUDE.md
 TODO.md
+
+AGENTS.md
+docs/handoff-status.md
+.local/
+/docs/*.translation
+/docs/*.csv.import

@@ -42,9 +42,27 @@ public sealed class EmotePlusConfig : SimpleModConfig
     /// </summary>
     public static bool ReverseScrollPaging { get; set; } = false;
 
+    /// <summary>Let the hidden cursor move naturally during selection instead of warping it back to the opening point.</summary>
+    public static bool PreserveCursorPosition { get; set; } = false;
+
+    /// <summary>Add a final wheel page containing the latest eight distinct official powers applied in combat.</summary>
+    public static bool ShowRecentPowers { get; set; } = false;
+
+    /// <summary>Persistent migration marker for the old exclusion-list setting.</summary>
+    [ConfigHideInUI]
+    public static int EmoteVisibilityVersion { get; set; }
+
+    /// <summary>Explicitly selected emote names; unknown future additions remain unselected.</summary>
+    [ConfigHideInUI]
+    public static string EnabledEmotes { get; set; } = EmoteImages.InitialSelection;
+
+    /// <summary>Saved catalogue snapshot used by the all-hidden fallback.</summary>
+    [ConfigHideInUI]
+    public static string EmptySelectionFallback { get; set; } = EmoteImages.InitialSelection;
+
     /// <summary>
     /// The emotes hidden from the wheel (see <see cref="EmoteImages.IsHidden"/>): their names, comma separated.
-    /// Edited by the grid below the other options, not by a row of its own.
+    /// Read once for migration; the grid now edits EnabledEmotes.
     /// </summary>
     [ConfigHideInUI]
     public static string HiddenEmotes { get; set; } = "";
@@ -126,30 +144,116 @@ public sealed class EmotePlusConfig : SimpleModConfig
         box.AddChild(buttons);
 
         // 8 emotes to a row: one row is one page of the wheel (when the hidden emotes are packed at the end).
-        var grid = new GridContainer { Columns = 8, SizeFlagsHorizontal = Control.SizeFlags.ShrinkCenter };
-        grid.AddThemeConstantOverride("h_separation", 8);
+        const int columns = 8;
+        const float cellSize = 72f;
+        const int columnGap = 8;
+        const float gridWidth = columns * cellSize + (columns - 1) * columnGap;
+        // Filtering hides children, so reserve the full row width independently of the remaining column count.
+        var grid = new GridContainer
+        {
+            Columns = columns,
+            CustomMinimumSize = new Vector2(gridWidth, 0f),
+            SizeFlagsHorizontal = Control.SizeFlags.ShrinkBegin,
+        };
+        grid.AddThemeConstantOverride("h_separation", columnGap);
         grid.AddThemeConstantOverride("v_separation", 14);
-        box.AddChild(grid);
+        var browser = new HBoxContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
+        browser.AddThemeConstantOverride("separation", 20);
+        var filters = new VBoxContainer { CustomMinimumSize = new Vector2(180f, 0f) };
+        var search = new LineEdit
+        {
+            PlaceholderText = GetLabelText("SearchPlaceholder"),
+            CustomMinimumSize = new Vector2(180f, 44f),
+            SizeFlagsHorizontal = Control.SizeFlags.ExpandFill,
+        };
+        AttachTip(search, "EmoteSearch");
+        filters.AddChild(new Label { Text = GetLabelText("EmoteSearch") });
+        filters.AddChild(search);
+        var activeTags = new HashSet<string>();
+        var tagButtons = new List<CheckButton>();
+        var tagFlow = new HFlowContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
+        var count = new Label();
+        filters.AddChild(count);
+        filters.AddChild(tagFlow);
+        browser.AddChild(filters);
+        browser.AddChild(grid);
+        box.AddChild(browser);
+
+        // Keep the eight-column grid intact on narrower settings panels.
+        box.Resized += () =>
+        {
+            var narrow = box.Size.X < filters.GetCombinedMinimumSize().X + gridWidth + 20f;
+            if (narrow && filters.GetParent() == browser)
+            {
+                browser.RemoveChild(filters);
+                box.AddChild(filters);
+                box.MoveChild(filters, browser.GetIndex());
+            }
+            else if (!narrow && filters.GetParent() == box)
+            {
+                box.RemoveChild(filters);
+                browser.AddChild(filters);
+                browser.MoveChild(filters, 0);
+            }
+        };
+        var notice = CreateRawLabelControl(GetLabelText("FilterNotice"), 20);
+        notice.AutowrapMode = TextServer.AutowrapMode.WordSmart;
+        notice.SizeFlagsHorizontal = Control.SizeFlags.ExpandFill;
+        box.AddChild(notice);
 
         var cells = new List<(TextureButton Button, Control Mark)>();
         var swapMode = false;
         int? selected = null; // swap mode: the first of the two emotes to swap
+        var metadata = EmoteImages.WheelSlots.ToDictionary(t => t, EmoteSearch.Describe);
 
         void Refresh()
         {
             var order = EmoteImages.WheelSlots;
+            var matches = 0;
             for (var i = 0; i < cells.Count && i < order.Count; i++)
             {
                 var name = EmoteImages.NameOf(order[i]);
                 var (button, mark) = cells[i];
                 var hidden = EmoteImages.IsHidden(name);
-                button.TextureNormal = EmoteImages.Icon(name);
-                button.TooltipText = name;
+                var entry = metadata[order[i]];
+                button.Visible = entry.Matches(search.Text, activeTags);
+                if (button.Visible)
+                {
+                    matches++;
+                    button.TextureNormal = EmoteImages.Icon(order[i]);
+                }
+                else button.TextureNormal = null;
+                button.TooltipText = entry.Title + "\n" + name + "\n" + string.Join(", ",
+                    EmoteSearch.Tags.Where(entry.Tags.Contains).Select(t => GetLabelText("Tag" + t)));
                 mark.Visible = hidden;
                 button.SelfModulate = hidden ? new Color(1f, 1f, 1f, 0.45f) : Colors.White;
                 button.Modulate = selected == i ? new Color(1.5f, 1.4f, 0.5f) : Colors.White;
             }
+            count.Text = $"{matches} / {order.Count}";
         }
+
+        search.TextChanged += _ => { selected = null; Refresh(); };
+        foreach (var tag in EmoteSearch.Tags)
+        {
+            var toggle = new CheckButton { Text = GetLabelText("Tag" + tag) };
+            AttachTip(toggle, "Tag" + tag);
+            toggle.Toggled += on =>
+            {
+                if (on) activeTags.Add(tag); else activeTags.Remove(tag);
+                selected = null;
+                Refresh();
+            };
+            tagButtons.Add(toggle);
+            tagFlow.AddChild(toggle);
+        }
+        filters.AddChild(CreateButtonWithTip("ClearFilters", () =>
+        {
+            search.Text = "";
+            activeTags.Clear();
+            foreach (var toggle in tagButtons) toggle.SetPressedNoSignal(false);
+            selected = null;
+            Refresh();
+        }));
 
         void Edited()
         {
@@ -167,7 +271,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
         void Swap(int a, int b)
         {
             var order = EmoteImages.WheelSlots.ToList();
-            if (a == b || a >= order.Count || b >= order.Count)
+            if (a == b || a < 0 || b < 0 || a >= order.Count || b >= order.Count)
             {
                 return;
             }
@@ -251,25 +355,19 @@ public sealed class EmotePlusConfig : SimpleModConfig
         buttons.AddChild(CreateButtonWithTip("PackHiddenEmotes", () => SetOrder(EmoteImages.HiddenLast())));
         buttons.AddChild(CreateButtonWithTip("ShowAllEmotes", () =>
         {
-            foreach (var (_, name) in EmoteImages.AllEmotes)
-            {
-                EmoteImages.SetHidden(name, false);
-            }
+            EmoteImages.SetAllHidden(false);
 
             Edited();
         }));
         buttons.AddChild(CreateButtonWithTip("HideAllEmotes", () =>
         {
-            foreach (var (_, name) in EmoteImages.AllEmotes)
-            {
-                EmoteImages.SetHidden(name, true);
-            }
+            EmoteImages.SetAllHidden(true);
 
             Edited();
         }));
 
         // "Restore defaults" changes the properties from outside.
-        void OnReloaded() => Refresh();
+        void OnReloaded() { EmoteImages.MigrateVisibility(); Refresh(); }
         OnConfigReloaded += OnReloaded;
         box.TreeExiting += () => OnConfigReloaded -= OnReloaded;
 

@@ -5,10 +5,14 @@ using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Nodes.Screens.CharacterSelect;
 using MegaCrit.Sts2.Core.Nodes.Screens.CustomRun;
+using MegaCrit.Sts2.Core.Nodes.Screens.DailyRun;
+using MegaCrit.Sts2.Core.Multiplayer.Game;
+using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Multiplayer.Game.Lobby;
 using MegaCrit.Sts2.Core.Saves;
 using MegaCrit.Sts2.Core.Helpers;
@@ -22,6 +26,8 @@ using MegaCrit.Sts2.Core.Nodes.Screens.Bestiary;
 using MegaCrit.Sts2.Core.Nodes.Screens.InspectScreens;
 using MegaCrit.Sts2.Core.Nodes.Screens.Capstones;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
+using MegaCrit.Sts2.Core.Nodes.Screens.CardSelection;
+using MegaCrit.Sts2.Core.Nodes.Screens.Overlays;
 using MegaCrit.Sts2.Core.Nodes.Screens.MainMenu;
 using MegaCrit.Sts2.Core.Nodes.Screens.Map;
 using MegaCrit.Sts2.Core.Nodes.Screens.PauseMenu;
@@ -161,13 +167,20 @@ public static class UiTree
     public static UiNodeId[] SenderPath(Vector2 mousePosition)
     {
         var path = LocalPath(mousePosition);
-        if (path.Length != 2 || path[1].Kind != UiNodeKind.DeckView || LocalContext.NetId is not { } me)
+        if (path.Length != 2 || !(path[1].Kind == UiNodeKind.DeckView || IsCombatPile(path[1].Kind)) ||
+            LocalContext.NetId is not { } me)
         {
             return path;
         }
 
         return PlayerDetailPath(me, ViewedCard() ?? (IsOnHeader(mousePosition) ? null : CardUnder(mousePosition)));
     }
+
+    internal static bool IsCombatPile(UiNodeKind kind) =>
+        kind is UiNodeKind.DrawPile or UiNodeKind.DiscardPile or UiNodeKind.ExhaustPile;
+
+    internal static bool IsLocalOnlyPath(IReadOnlyList<UiNodeId> path) =>
+        path.Any(node => node.Kind == UiNodeKind.PrivateOverlay);
 
     private static UiNodeId[] PlayerDetailPath(ulong netId, CardModel? card)
     {
@@ -181,7 +194,7 @@ public static class UiTree
     public static bool ShowsHeader(IReadOnlyList<UiNodeId> path)
     {
         return path.Count == 1 ||
-               (path.Count == 2 && path[1].Kind is UiNodeKind.Map or UiNodeKind.DeckView);
+               (path.Count == 2 && (path[1].Kind is UiNodeKind.Map or UiNodeKind.DeckView || IsCombatPile(path[1].Kind)));
     }
 
     /// <summary>True if <paramref name="position"/> is on the header bar. Only meaningful where it is shown.</summary>
@@ -214,14 +227,19 @@ public static class UiTree
     // The card of the deck screen's grid under the given position, if any (the topmost one).
     private static CardModel? CardUnder(Vector2 position)
     {
-        if (NCapstoneContainer.Instance?.CurrentCapstoneScreen is not NDeckViewScreen deck)
+        var grid = NCapstoneContainer.Instance?.CurrentCapstoneScreen switch
+        {
+            NDeckViewScreen deck => DeckGrid(deck),
+            NCardPileScreen pile => pile.GetNodeOrNull<NCardGrid>("CardGrid"),
+            _ => null,
+        };
+        if (grid == null)
         {
             return null;
         }
 
         // A grid card holder is a zero-size Control placed at the card's CENTER (and scaled): the card's area is its
         // Hitbox child. Only cards inside the grid's own area count (the rest is scrolled out from under the header).
-        var grid = DeckGrid(deck);
         if (!grid.GetGlobalRect().HasPoint(position))
         {
             return null;
@@ -282,13 +300,32 @@ public static class UiTree
             {
                 NMultiplayerPlayerExpandedState detail => PlayerDetailPath(DetailPlayer(detail).NetId, ViewedCard()),
                 NDeckViewScreen => new[] { Base, new UiNodeId(UiNodeKind.DeckView) },
+                NCardPileScreen pile => new[] { Base, new UiNodeId(PileKind(pile.Pile.Type)) },
                 NCapstoneSubmenuStack stack => SubmenuPath(stack.Stack.Peek()),
                 _ => new[] { Base, new UiNodeId(UiNodeKind.OtherCapstone) },
             };
         }
 
-        return NMapScreen.Instance?.IsOpen == true ? new[] { Base, new UiNodeId(UiNodeKind.Map) } : new[] { Base };
+        if (NMapScreen.Instance?.IsOpen == true) return new[] { Base, new UiNodeId(UiNodeKind.Map) };
+
+        return NOverlayStack.Instance?.Peek() switch
+        {
+            NRewardsScreen => new[] { Base, new UiNodeId(UiNodeKind.Rewards) },
+            NCardRewardSelectionScreen => new[] { Base, new UiNodeId(UiNodeKind.Rewards), new UiNodeId(UiNodeKind.CardRewards) },
+            // Choices such as generated cards are private. Include the instance ID so reopening another choice
+            // cannot show a previous choice's emote, even if it uses the same Control type.
+            Control overlay => new[] { Base, new UiNodeId(UiNodeKind.PrivateOverlay, overlay.GetInstanceId()) },
+            _ => new[] { Base },
+        };
     }
+
+    private static UiNodeKind PileKind(PileType type) => type switch
+    {
+        PileType.Draw => UiNodeKind.DrawPile,
+        PileType.Discard => UiNodeKind.DiscardPile,
+        PileType.Exhaust => UiNodeKind.ExhaustPile,
+        _ => UiNodeKind.OtherCapstone,
+    };
 
     private static UiNodeId[] SubmenuPath(NSubmenu? submenu)
     {
@@ -418,6 +455,8 @@ public static class UiTree
     /// <summary>The scrolling content/viewport of a node's screen, or null if the node does not scroll.</summary>
     public static ScrollSpace? GetScrollSpace(UiNodeId node)
     {
+        if (IsCombatPile(node.Kind))
+            return PileScreen(node.Kind) is { } pile ? ScrollOfGrid(pile.GetNodeOrNull<NCardGrid>("CardGrid")) : null;
         if (node.Kind == UiNodeKind.DeckView)
         {
             return NCapstoneContainer.Instance?.CurrentCapstoneScreen is NDeckViewScreen deck ? ScrollOfGrid(DeckGrid(deck)) : null;
@@ -682,12 +721,24 @@ public static class UiTree
             UiNodeKind.Bestiary or UiNodeKind.BestiaryMonster or UiNodeKind.BestiaryList => Submenu<NBestiary>(),
             UiNodeKind.Stats => Submenu<NStatsScreen>(),
             UiNodeKind.RunHistory => Submenu<NRunHistory>(),
+            UiNodeKind.DrawPile or UiNodeKind.DiscardPile or UiNodeKind.ExhaustPile => PileScreen(node.Kind),
+            UiNodeKind.Rewards => FindOverlay<NRewardsScreen>(),
+            UiNodeKind.CardRewards => FindOverlay<NCardRewardSelectionScreen>(),
+            UiNodeKind.PrivateOverlay => NOverlayStack.Instance?.GetChildren().OfType<Control>()
+                .FirstOrDefault(c => c.GetInstanceId() == node.Arg && !c.IsQueuedForDeletion()),
             UiNodeKind.PlayerDetail or UiNodeKind.DeckView or UiNodeKind.OtherCapstone =>
                 NCapstoneContainer.Instance?.CurrentCapstoneScreen as Control,
             _ => null,
         };
         return scene != null && GodotObject.IsInstanceValid(scene) ? scene : null;
     }
+
+    private static NCardPileScreen? PileScreen(UiNodeKind kind) =>
+        NCapstoneContainer.Instance?.CurrentCapstoneScreen is NCardPileScreen pile && PileKind(pile.Pile.Type) == kind
+            ? pile : null;
+
+    private static T? FindOverlay<T>() where T : Control => NOverlayStack.Instance?.GetChildren().OfType<T>()
+        .LastOrDefault(c => GodotObject.IsInstanceValid(c) && !c.IsQueuedForDeletion());
 
     /// <summary>
     /// The character a player picked in the (new run) lobby, or null when there is no such lobby or the player
@@ -705,6 +756,7 @@ public static class UiTree
         // The lobby for continuing a saved run: every player's character is fixed by the save.
         var load = MenuScreen<NMultiplayerLoadGameScreen>() is { } screen ? LoadLobby(screen) : null;
         load ??= MenuScreen<NCustomRunLoadScreen>() is { } custom ? CustomLoadLobby(custom) : null;
+        load ??= MenuScreen<NDailyRunLoadScreen>() is { } daily ? DailyLoadLobby(daily) : null;
         var saved = load?.Run.Players.FirstOrDefault(p => p.NetId == netId);
         return saved == null ? null : ModelDb.GetById<CharacterModel>(saved.CharacterId);
     }
@@ -727,6 +779,33 @@ public static class UiTree
 
     private static readonly AccessTools.FieldRef<NCustomRunLoadScreen, LoadRunLobby> CustomLoadLobby =
         AccessTools.FieldRefAccess<NCustomRunLoadScreen, LoadRunLobby>("_lobby");
+
+    private static readonly AccessTools.FieldRef<NDailyRunLoadScreen, LoadRunLobby?> DailyLoadLobby =
+        AccessTools.FieldRefAccess<NDailyRunLoadScreen, LoadRunLobby?>("_lobby");
+
+    internal readonly record struct LobbyContext(Control Root, object Identity, INetGameService Service);
+
+    // Cached submenu nodes survive closing. The live lobby object, not just the screen node, identifies a visit.
+    internal static LobbyContext? ActiveLobby()
+    {
+        if (NRun.Instance != null) return null;
+        var stack = NGame.Instance?.MainMenu?.SubmenuStack;
+        if (stack == null || !GodotObject.IsInstanceValid(stack) || !stack.IsInsideTree()) return null;
+        foreach (var child in stack.GetChildren())
+        {
+            LobbyContext? context = child switch
+            {
+                NCharacterSelectScreen s when s.Lobby is { } lobby => new(s, lobby, lobby.NetService),
+                NMultiplayerLoadGameScreen s when LoadLobby(s) is { } lobby => new(s, lobby, lobby.NetService),
+                NCustomRunLoadScreen s when CustomLoadLobby(s) is { } lobby => new(s, lobby, lobby.NetService),
+                NDailyRunLoadScreen s when DailyLoadLobby(s) is { } lobby => new(s, lobby, lobby.NetService),
+                _ => null,
+            };
+            if (context is { } value && (value.Service.Type == NetGameType.Singleplayer || value.Service.IsConnected))
+                return value;
+        }
+        return null;
+    }
 
     // Submenus are owned by the capstone submenu stack, and are only reachable while that capstone is open.
     private static T? Submenu<T>() where T : NSubmenu

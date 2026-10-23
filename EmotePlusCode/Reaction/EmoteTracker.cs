@@ -128,6 +128,7 @@ public static class EmoteTracker
         public required bool InHeader;
         public required EmoteDrift Drift;
         public required ulong SpawnedMs;
+        public ExternalEmoteClaim? ExternalClaim;
         public readonly List<Layer> Layers = new();
         public LayerSpec? Active;
     }
@@ -137,11 +138,18 @@ public static class EmoteTracker
 
     public static void Spawn(NReactionContainer container, EmoteType type, ulong senderNetId, UiNodeId[] senderPath, Vector2 position,
         bool inHeader, EmoteDrift drift, ulong elapsedMs = 0)
+        => SpawnWithPresentation(container, type, senderNetId, senderPath, position, inHeader, drift, elapsedMs, 0);
+
+    internal static void SpawnWithPresentation(NReactionContainer container, EmoteType type, ulong senderNetId,
+        UiNodeId[] senderPath, Vector2 position, bool inHeader, EmoteDrift drift, ulong elapsedMs, ulong presentationId)
     {
         if (!GodotObject.IsInstanceValid(container) || !container.IsInsideTree())
         {
             return;
         }
+
+        var externalClaim = ExternalEmotes.Offer(container, type, senderNetId, senderPath, position, inHeader, false,
+            elapsedMs, presentationId);
 
         var entry = new Entry
         {
@@ -153,6 +161,7 @@ public static class EmoteTracker
             InHeader = inHeader,
             Drift = drift,
             SpawnedMs = Time.GetTicksMsec() - Math.Min(elapsedMs, Time.GetTicksMsec()),
+            ExternalClaim = externalClaim,
         };
         Entries.Add(entry);
         var viewer = UiTree.LocalPath();
@@ -223,7 +232,13 @@ public static class EmoteTracker
 
     private static void UpdateEntries(UiNodeId[] viewer, ulong now)
     {
-        var placements = Entries.Select(entry => Resolve(entry, viewer)).ToList();
+        var placements = Entries.Select(entry =>
+        {
+            var placement = Resolve(entry, viewer);
+            // Keep navigation hints, but never restore ordinary direct drawing after ownership was accepted.
+            return entry.ExternalClaim != null && (placement?.Element == null || !entry.ExternalClaim.IsActive)
+                ? null : placement;
+        }).ToList();
 
         // Per button, the newest emote that is still on screen (the entries are in the order of their spawn).
         var newest = new Dictionary<Control, Entry>();
@@ -448,12 +463,11 @@ public static class EmoteTracker
     /// </summary>
     public static NReaction CreateEmote(EmoteType type, Color outlineColor)
     {
-        var name = EmoteImages.NameOf(type);
-        var emote = NReaction.Create(EmoteImages.Outline(name));
+        var emote = NReaction.Create(EmoteImages.Outline(type));
         emote.SelfModulate = outlineColor;
         var icon = new TextureRect
         {
-            Texture = EmoteImages.Icon(name),
+            Texture = EmoteImages.Icon(type),
             ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
             StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
             MouseFilter = Control.MouseFilterEnum.Ignore,
@@ -516,7 +530,7 @@ public static class EmoteTracker
 
             // The enlarged card is not part of the deck screen's scene: it covers the screen, so an emote there has
             // to be above it too. (The emote keeps following the deck's scroll, which does not move meanwhile.)
-            var sceneLayer = node.Kind == UiNodeKind.DeckView && UiTree.ViewsEnlargedCard
+            var sceneLayer = (node.Kind == UiNodeKind.DeckView || UiTree.IsCombatPile(node.Kind)) && UiTree.ViewsEnlargedCard
                 ? new LayerSpec(LayerKind.Top)
                 : SceneLayerOf(node);
             return scroll != null
