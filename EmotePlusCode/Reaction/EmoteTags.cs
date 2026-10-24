@@ -36,6 +36,7 @@ internal static class EmoteTags
             [EmoteType.RelicYummyCookieRegent] = ["Character"],
             [EmoteType.RelicYummyCookieSilent] = ["Character"],
             
+            [EmoteType.MemeBuffSts1] = ["Meme"],
             [EmoteType.MemeThonking] = ["Communicate"],
         };
 }
