@@ -5,12 +5,13 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Reaction;
+using MegaCrit.Sts2.Core.Localization;
 
 namespace EmotePlus.EmotePlusCode.Patch;
 
 /// <summary>
 /// The emote wheel with pages. Replaces NReactionWheel._Input, which still has the 8 wedges (the slots of a page):
-/// - the emotes of the current page are put on the wedges (a wedge without an emote on the last page is hidden);
+/// - empty slots retain a dark, unselectable wedge;
 /// - released with the mouse (almost) not moved: the last emote again if that was soon (RepeatEmoteTime), else none;
 /// - while the wheel is open, scrolling turns the page (down: next, see the config);
 /// - the wheel appears and disappears quickly.
@@ -73,6 +74,7 @@ public static class ReactionWheelInputPatch
     private static ulong _lastWarningRefresh;
     private static ulong _recentRevision;
     private static Label? _pageLabel;
+    private static Label? _emptyActivityLabel;
     private static Tween? _tween;
     private static int _page;
     private static bool _closing;
@@ -164,7 +166,7 @@ public static class ReactionWheelInputPatch
             var now = Time.GetTicksMsec();
             if (now - _lastWarningRefresh < 250) return;
             _lastWarningRefresh = now;
-            if (EmotePlusConfig.ShowRecentPowers && _recentRevision != RecentPowerEmotes.Revision)
+            if (EmotePlusConfig.ShowRecentActivity && _recentRevision != RecentActivityEmotes.Revision)
             {
                 LoadLayout();
                 ShowPage();
@@ -199,6 +201,22 @@ public static class ReactionWheelInputPatch
         _pageLabel.Size = _pageLabel.CustomMinimumSize;
         _pageLabel.Position = (wheel.Size - _pageLabel.Size) / 2f;
 
+        _emptyActivityLabel = new Label
+        {
+            MouseFilter = Control.MouseFilterEnum.Ignore,
+            HorizontalAlignment = HorizontalAlignment.Center,
+            VerticalAlignment = VerticalAlignment.Center,
+            Size = new Vector2(300f, 50f),
+            Visible = false,
+        };
+        _emptyActivityLabel.AddThemeFontSizeOverride("font_size", 22);
+        _emptyActivityLabel.AddThemeConstantOverride("outline_size", 6);
+        _emptyActivityLabel.AddThemeColorOverride("font_outline_color", new Color(0f, 0f, 0f, 0.9f));
+        _emptyActivityLabel.AddThemeFontOverride("font", _pageLabel.GetThemeFont("font"));
+        wheel.AddChild(_emptyActivityLabel);
+        _emptyActivityLabel.Position = new Vector2((wheel.Size.X - _emptyActivityLabel.Size.X) / 2f,
+            _pageLabel.Position.Y + _pageLabel.Size.Y);
+
         foreach (var wedge in _wedges)
         {
             PrepareIcon(WedgeIconRef(wedge));
@@ -217,6 +235,8 @@ public static class ReactionWheelInputPatch
     // Puts the emotes of the current page on the wedges.
     private static void ShowPage()
     {
+        // A deselection tween from the previous page must not brighten an empty wedge again.
+        if (_wheel != null) SelectedRef(_wheel) = null;
         var color = EmoteTracker.NeutralOutline;
         // The artist may add this optional asset later; do not emit load errors while it is absent.
         var warningTexture = ResourceLoader.Exists(DeliveryWarningPath)
@@ -226,21 +246,25 @@ public static class ReactionWheelInputPatch
             DeliveryWarnings[i] = null;
             var index = _page * SlotCount + i;
             var wedge = _wedges[i];
-            if (index >= _layout.Count || _layout[index] == EmoteType.None)
+            wedge.Visible = true;
+            var icon = WedgeIconRef(wedge);
+            foreach (var child in icon.GetChildren())
+            {
+                if (child is CanvasItem item) item.Visible = false;
+                child.QueueFree();
+            }
+            var empty = index >= _layout.Count || _layout[index] == EmoteType.None;
+            WedgeDeselectPatch.ResetForPage(wedge, empty);
+            icon.Visible = !empty;
+            if (empty)
             {
                 Slots[i] = null;
-                wedge.Visible = false;
+                icon.Texture = null;
                 continue;
             }
 
             var type = _layout[index];
             Slots[i] = type;
-            wedge.Visible = true;
-            var icon = WedgeIconRef(wedge);
-            foreach (var child in icon.GetChildren())
-            {
-                child.QueueFree();
-            }
 
             if (PreviewWithOutline)
             {
@@ -287,6 +311,11 @@ public static class ReactionWheelInputPatch
         {
             _pageLabel.Visible = PageCount >= 2;
             _pageLabel.Text = $"{_page + 1}/{PageCount}";
+        }
+        if (_emptyActivityLabel != null)
+        {
+            _emptyActivityLabel.Visible = EmotePlusConfig.ShowRecentActivity && _page == PageCount - 1 && Slots.All(s => s == null);
+            _emptyActivityLabel.Text = new LocString("settings_ui", "EMOTEPLUS-NO_RECENT_ACTIVITY").GetFormattedText();
         }
     }
 
@@ -365,14 +394,14 @@ public static class ReactionWheelInputPatch
     private static void LoadLayout()
     {
         var layout = EmoteImages.VisibleSlots().ToList();
-        if (EmotePlusConfig.ShowRecentPowers)
+        if (EmotePlusConfig.ShowRecentActivity)
         {
             // A dedicated final page must not share the last partly-filled regular page.
             while (layout.Count % SlotCount != 0) layout.Add(EmoteType.None);
-            layout.AddRange(RecentPowerEmotes.Snapshot());
+            layout.AddRange(RecentActivityEmotes.Snapshot());
         }
         _layout = layout;
-        _recentRevision = RecentPowerEmotes.Revision;
+        _recentRevision = RecentActivityEmotes.Revision;
     }
 
     private static void TurnPage(NReactionWheel wheel, bool next)
@@ -458,6 +487,14 @@ public static class WedgeDeselectPatch
 
     private static readonly AccessTools.FieldRef<NReactionWheelWedge, Vector2> DefaultPositionRef =
         AccessTools.FieldRefAccess<NReactionWheelWedge, Vector2>("_defaultPosition");
+
+    internal static void ResetForPage(NReactionWheelWedge wedge, bool empty)
+    {
+        TweenRef(wedge)?.Kill();
+        TweenRef(wedge) = null;
+        wedge.Position = DefaultPositionRef(wedge);
+        wedge.SelfModulate = empty ? new Color(0f, 0f, 0f, 0.5f) : DefaultColor;
+    }
 
     [HarmonyPrefix]
     public static bool Prefix(NReactionWheelWedge __instance)

@@ -263,7 +263,6 @@ public static class RelicEmotes
         new("ScrollBoxes", EmoteType.RelicScrollBoxes, "scroll_boxes", false),
         new("SeaGlass", EmoteType.RelicSeaGlass, "sea_glass", false),
         new("SealOfGold", EmoteType.RelicSealOfGold, "seal_of_gold", false),
-        new(null, EmoteType.RelicSeethe, "seethe", true),
         new("SelfFormingClay", EmoteType.RelicSelfFormingClay, "self_forming_clay", false),
         new("SereTalon", EmoteType.RelicSereTalon, "sere_talon", false),
         new("Shovel", EmoteType.RelicShovel, "shovel", false),

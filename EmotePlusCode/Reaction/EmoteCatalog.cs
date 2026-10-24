@@ -36,24 +36,14 @@ public static class EmoteCatalog
             [EmoteType.Tanx] = "tanx",
             [EmoteType.Tezcatara] = "tezcatara",
             [EmoteType.Vakuu] = "vakuu",
-            [EmoteType.Curious] = "curious",
-            [EmoteType.Enrage] = "enrage",
-            [EmoteType.HelloWorld] = "hello_world",
-            [EmoteType.Vulnerable] = "vulnerable",
-            [EmoteType.Weak] = "weak",
             [EmoteType.Gold] = "gold",
-            [EmoteType.RIP] = "blasphemyrip",
-            [EmoteType.Devotion] = "devotion",
         };
         var definitions = names.ToDictionary(p => p.Key,
             p => new EmoteDefinition(p.Key, p.Value, p.Value, EmoteCategory.None));
         foreach (var power in PowerEmotes.All)
         {
-            var key = names.GetValueOrDefault(power.Emote, power.AssetName + "_power");
-            definitions[power.Emote] = new(power.Emote, key, power.AssetName, EmoteCategory.Power);
+            definitions.Add(power.Emote, new(power.Emote, power.AssetName + "_power", power.AssetName, EmoteCategory.Power));
         }
-        // The original and power-specific HelloWorld IDs intentionally share the same artwork.
-        definitions[EmoteType.HelloWorld] = definitions[EmoteType.HelloWorld] with { Category = EmoteCategory.Power };
         foreach (var ancient in AncientEmotes.All)
             definitions[ancient.Emote] = definitions[ancient.Emote] with { Category = EmoteCategory.Ancient };
         foreach (var relic in RelicEmotes.All)
@@ -63,6 +53,14 @@ public static class EmoteCatalog
                 enchantment.AssetName, EmoteCategory.Enchantment));
         foreach (var potion in PotionEmotes.All)
             definitions.Add(potion.Emote, new(potion.Emote, potion.AssetName + "_potion", potion.AssetName, EmoteCategory.Potion));
+        foreach (var character in CharacterEmotes.All)
+            definitions.Add(character.Emote, new(character.Emote, character.AssetName + "_character", character.AssetName, EmoteCategory.Character));
+        foreach (var creature in CreatureEmotes.All)
+            definitions.Add(creature.Emote, new(creature.Emote, creature.AssetName + "_creature", creature.AssetName, EmoteCategory.Creature));
+        foreach (var meme in MemeEmotes.All)
+            definitions.Add(meme.Type, meme);
+        if (definitions.Values.GroupBy(d => (d.Category, d.AssetName)).Any(g => g.Count() > 1))
+            throw new InvalidOperationException("Duplicate emote artwork: map model variants to a single emote ID.");
         return definitions.Values.ToArray();
     }
 

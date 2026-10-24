@@ -9,6 +9,9 @@ public enum EmoteCategory
     Ancient = 3,
     Enchantment = 4,
     Potion = 5,
+    Character = 6,
+    Creature = 7,
+    Meme = 8,
 }
 
 /// <summary>A stable emote identity, persistent settings key and its separately classified artwork.</summary>

@@ -21,8 +21,8 @@ public static class EmoteImages
     private static readonly Dictionary<EmoteType, string> Names =
         EmoteCatalog.All.ToDictionary(d => d.Type, d => d.Name);
 
-    /// <summary>The pre-1.0 selection. Future additions must not change this migration/default baseline.</summary>
-    public const string InitialSelection = "exclaim,skull,thumb_down,slime_sad,question,heart,thumb_up,happy_cultist,darv,neow,nonupeipe,orobas,pael,tanx,tezcatara,vakuu,curious,enrage,hello_world,vulnerable,weak,gold,blasphemyrip,devotion";
+    /// <summary>The default selection, also used when importing exclusion-list settings.</summary>
+    public const string InitialSelection = "exclaim,skull,thumb_down,slime_sad,question,heart,thumb_up,happy_cultist,darv,neow,nonupeipe,orobas,pael,tanx,tezcatara,vakuu,curious_power,enrage_power,hello_world_power,vulnerable_power,weak_power,gold,blasphemyrip,devotion";
 
     /// <summary>Migrates the old exclusion list, preserving its effective 24-emote selection.</summary>
     public static bool MigrateVisibility()
@@ -108,13 +108,12 @@ public static class EmoteImages
             return DefaultOrder;
         }
 
-        var byName = Names.ToDictionary(e => e.Value, e => e.Key);
         var order = new List<EmoteType>();
         foreach (var name in text.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
         {
-            if (byName.TryGetValue(name, out var type) && !order.Contains(type))
+            if (EmoteCatalog.TryGet(name, out var definition) && !order.Contains(definition.Type))
             {
-                order.Add(type);
+                order.Add(definition.Type);
             }
         }
 
@@ -125,7 +124,7 @@ public static class EmoteImages
     /// <summary>Saves the order (an empty text stands for the default order).</summary>
     public static void SetOrder(IEnumerable<EmoteType> order)
     {
-        var list = order.ToList();
+        var list = order.Distinct().ToList();
         EmotePlusConfig.EmoteOrder = list.SequenceEqual(DefaultOrder) ? "" : string.Join(",", list.Select(NameOf));
     }
 
@@ -165,12 +164,15 @@ public static class EmoteImages
     }
 
     private static HashSet<string> ParseNames(string? text) => (text ?? "").Split(',',
-        StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToHashSet(StringComparer.Ordinal);
+        StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Select(CanonicalName).ToHashSet(StringComparer.Ordinal);
 
-    public static bool IsHidden(string name) => !Enabled.Contains(name);
+    private static string CanonicalName(string name) => EmoteCatalog.TryGet(name, out var definition) ? definition.Name : name;
+
+    public static bool IsHidden(string name) => !Enabled.Contains(CanonicalName(name));
 
     public static void SetHidden(string name, bool hidden)
     {
+        name = CanonicalName(name);
         var set = new HashSet<string>(Enabled);
         if (hidden ? !set.Remove(name) : !set.Add(name))
         {
@@ -180,6 +182,22 @@ public static class EmoteImages
         EmotePlusConfig.EnabledEmotes = string.Join(",", set.Order());
         // Explicit user edits may include today's catalogue in the all-hidden fallback. Future additions are
         // excluded because this snapshot is saved, rather than recalculated when loading a newer mod version.
+        EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
+    }
+
+    /// <summary>Changes only the specified emotes, including filtered results outside the visible viewport.</summary>
+    internal static void SetHidden(IEnumerable<EmoteType> types, bool hidden)
+    {
+        var set = new HashSet<string>(Enabled);
+        var changed = false;
+        foreach (var type in types)
+        {
+            if (!Names.TryGetValue(type, out var name)) continue;
+            changed |= hidden ? set.Remove(name) : set.Add(name);
+        }
+        if (!changed) return;
+        // A filtered bulk edit must leave entries outside the result set untouched and save only once.
+        EmotePlusConfig.EnabledEmotes = string.Join(",", set.Order());
         EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
     }
 
@@ -209,7 +227,7 @@ public static class EmoteImages
     /// <summary>The vanilla emote's id: same numbers, see <see cref="EmoteType"/>.</summary>
     public static EmoteType FromVanilla(ReactionType type) => (EmoteType)(int)type;
 
-    public static string NameOf(EmoteType type) => Names.TryGetValue(type, out var name) ? name : "question";
+    public static string NameOf(EmoteType type) => EmoteCatalog.Get(type).Name;
 
     public static Texture2D Icon(string name) => Load(name.GetEmotePath());
 

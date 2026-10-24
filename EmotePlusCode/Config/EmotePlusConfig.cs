@@ -1,6 +1,7 @@
 using BaseLib.Config;
 using BaseLib.Config.UI;
 using EmotePlus.EmotePlusCode.Reaction;
+using EmotePlus.EmotePlusCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -45,8 +46,8 @@ public sealed class EmotePlusConfig : SimpleModConfig
     /// <summary>Let the hidden cursor move naturally during selection instead of warping it back to the opening point.</summary>
     public static bool PreserveCursorPosition { get; set; } = false;
 
-    /// <summary>Add a final wheel page containing the latest eight distinct official powers applied in combat.</summary>
-    public static bool ShowRecentPowers { get; set; } = false;
+    /// <summary>Add a final wheel page containing the latest eight distinct activity emotes. The saved key is retained.</summary>
+    public static bool ShowRecentActivity { get; set; } = true;
 
     /// <summary>Persistent migration marker for the old exclusion-list setting.</summary>
     [ConfigHideInUI]
@@ -144,19 +145,18 @@ public sealed class EmotePlusConfig : SimpleModConfig
         box.AddChild(buttons);
 
         // 8 emotes to a row: one row is one page of the wheel (when the hidden emotes are packed at the end).
-        const int columns = 8;
-        const float cellSize = 72f;
-        const int columnGap = 8;
-        const float gridWidth = columns * cellSize + (columns - 1) * columnGap;
-        // Filtering hides children, so reserve the full row width independently of the remaining column count.
-        var grid = new GridContainer
-        {
-            Columns = columns,
-            CustomMinimumSize = new Vector2(gridWidth, 0f),
-            SizeFlagsHorizontal = Control.SizeFlags.ShrinkBegin,
-        };
-        grid.AddThemeConstantOverride("h_separation", columnGap);
-        grid.AddThemeConstantOverride("v_separation", 14);
+        var grid = new VirtualEmoteGrid();
+        var gridArea = new VBoxContainer { CustomMinimumSize = new Vector2(VirtualEmoteGrid.GridWidth, 0f) };
+        var noResults = CreateRawLabelControl(new LocString("settings_ui", "EMOTEPLUS-NO_FILTER_RESULT").GetFormattedText(), 24);
+        noResults.HorizontalAlignment = HorizontalAlignment.Center;
+        noResults.VerticalAlignment = VerticalAlignment.Center;
+        noResults.AutowrapMode = TextServer.AutowrapMode.WordSmart;
+        noResults.CustomMinimumSize = new Vector2(0f, 72f);
+        noResults.SizeFlagsHorizontal = Control.SizeFlags.ExpandFill;
+        noResults.MouseFilter = Control.MouseFilterEnum.Ignore;
+        noResults.Visible = false;
+        gridArea.AddChild(noResults);
+        gridArea.AddChild(grid);
         var browser = new HBoxContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
         browser.AddThemeConstantOverride("separation", 20);
         var filters = new VBoxContainer { CustomMinimumSize = new Vector2(180f, 0f) };
@@ -176,13 +176,13 @@ public sealed class EmotePlusConfig : SimpleModConfig
         filters.AddChild(count);
         filters.AddChild(tagFlow);
         browser.AddChild(filters);
-        browser.AddChild(grid);
+        browser.AddChild(gridArea);
         box.AddChild(browser);
 
         // Keep the eight-column grid intact on narrower settings panels.
         box.Resized += () =>
         {
-            var narrow = box.Size.X < filters.GetCombinedMinimumSize().X + gridWidth + 20f;
+            var narrow = box.Size.X < filters.GetCombinedMinimumSize().X + VirtualEmoteGrid.GridWidth + 20f;
             if (narrow && filters.GetParent() == browser)
             {
                 browser.RemoveChild(filters);
@@ -201,37 +201,39 @@ public sealed class EmotePlusConfig : SimpleModConfig
         notice.SizeFlagsHorizontal = Control.SizeFlags.ExpandFill;
         box.AddChild(notice);
 
-        var cells = new List<(TextureButton Button, Control Mark)>();
         var swapMode = false;
         int? selected = null; // swap mode: the first of the two emotes to swap
         var metadata = EmoteImages.WheelSlots.ToDictionary(t => t, EmoteSearch.Describe);
+        EmoteType[] matchingEmotes = [];
+
+        void UpdateCell(int index, Control cell)
+        {
+            var type = EmoteImages.WheelSlots[index];
+            var name = EmoteImages.NameOf(type);
+            var button = (TextureButton)cell;
+            var entry = metadata[type];
+            var hidden = EmoteImages.IsHidden(name);
+            // Keep UI-only textures out of the gameplay's persistent texture cache.
+            button.TextureNormal = ResourceLoader.Load<Texture2D>(type.GetEmotePath());
+            button.TooltipText = entry.Title + "\n" + name + "\n" + string.Join(", ",
+                EmoteSearch.Tags.Where(entry.Tags.Contains).Select(t => GetLabelText("Tag" + t)));
+            button.GetNode<Control>("HiddenMark").Visible = hidden;
+            button.SelfModulate = hidden ? new Color(1f, 1f, 1f, 0.45f) : Colors.White;
+            button.Modulate = selected == index ? new Color(1.5f, 1.4f, 0.5f) : Colors.White;
+        }
+        grid.UpdateCell = UpdateCell;
 
         void Refresh()
         {
             var order = EmoteImages.WheelSlots;
-            var matches = 0;
-            for (var i = 0; i < cells.Count && i < order.Count; i++)
-            {
-                var name = EmoteImages.NameOf(order[i]);
-                var (button, mark) = cells[i];
-                var hidden = EmoteImages.IsHidden(name);
-                var entry = metadata[order[i]];
-                button.Visible = entry.Matches(search.Text, activeTags);
-                if (button.Visible)
-                {
-                    matches++;
-                    button.TextureNormal = EmoteImages.Icon(order[i]);
-                }
-                else button.TextureNormal = null;
-                button.TooltipText = entry.Title + "\n" + name + "\n" + string.Join(", ",
-                    EmoteSearch.Tags.Where(entry.Tags.Contains).Select(t => GetLabelText("Tag" + t)));
-                mark.Visible = hidden;
-                button.SelfModulate = hidden ? new Color(1f, 1f, 1f, 0.45f) : Colors.White;
-                button.Modulate = selected == i ? new Color(1.5f, 1.4f, 0.5f) : Colors.White;
-            }
-            count.Text = $"{matches} / {order.Count}";
+            var matches = Enumerable.Range(0, order.Count)
+                .Where(i => metadata[order[i]].Matches(search.Text, activeTags)).ToArray();
+            matchingEmotes = matches.Select(i => order[i]).ToArray();
+            grid.SetItems(matches);
+            grid.Visible = matches.Length > 0;
+            noResults.Visible = matches.Length == 0;
+            count.Text = $"{matches.Length} / {order.Count}";
         }
-
         search.TextChanged += _ => { selected = null; Refresh(); };
         foreach (var tag in EmoteSearch.Tags)
         {
@@ -280,9 +282,8 @@ public sealed class EmotePlusConfig : SimpleModConfig
             SetOrder(order);
         }
 
-        for (var i = 0; i < EmoteImages.WheelSlots.Count; i++)
+        grid.CreateCell = index =>
         {
-            var index = i;
             var button = new TextureButton
             {
                 IgnoreTextureSize = true,
@@ -291,6 +292,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
                 FocusMode = Control.FocusModeEnum.All,
             };
             var mark = CreateHiddenMark();
+            mark.Name = "HiddenMark";
             button.AddChild(mark);
             mark.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
 
@@ -298,6 +300,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
             button.SetDragForwarding(
                 Callable.From<Vector2, Variant>(_ =>
                 {
+                    grid.PinDragSource(index);
                     button.SetDragPreview(new TextureRect
                     {
                         Texture = button.TextureNormal,
@@ -335,9 +338,8 @@ public sealed class EmotePlusConfig : SimpleModConfig
                     Refresh();
                 }
             };
-            grid.AddChild(button);
-            cells.Add((button, mark));
-        }
+            return button;
+        };
 
         // Swap mode: for those who cannot drag (a controller), and as a second way. Its button is lit while on.
         NConfigButton? swapButton = null;
@@ -355,13 +357,13 @@ public sealed class EmotePlusConfig : SimpleModConfig
         buttons.AddChild(CreateButtonWithTip("PackHiddenEmotes", () => SetOrder(EmoteImages.HiddenLast())));
         buttons.AddChild(CreateButtonWithTip("ShowAllEmotes", () =>
         {
-            EmoteImages.SetAllHidden(false);
+            EmoteImages.SetHidden(matchingEmotes, false);
 
             Edited();
         }));
         buttons.AddChild(CreateButtonWithTip("HideAllEmotes", () =>
         {
-            EmoteImages.SetAllHidden(true);
+            EmoteImages.SetHidden(matchingEmotes, true);
 
             Edited();
         }));

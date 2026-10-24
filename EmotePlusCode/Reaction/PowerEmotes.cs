@@ -123,7 +123,7 @@ public static class PowerEmotes
         new("HauntPower", EmoteType.PowerHauntPower, "haunt"),
         new("HeistPower", EmoteType.PowerHeistPower, "heist"),
         new("HelicalDartPower", EmoteType.PowerHelicalDartPower, "helical_dart"),
-        new("HelloWorldPower", EmoteType.PowerHelloWorldPower, "hello_world"),
+        new("HelloWorldPower", EmoteType.HelloWorld, "hello_world"),
         new("HellraiserPower", EmoteType.PowerHellraiserPower, "hellraiser"),
         new("HexPower", EmoteType.PowerHexPower, "hex"),
         new("HibernatePower", EmoteType.PowerHibernatePower, "hibernate"),

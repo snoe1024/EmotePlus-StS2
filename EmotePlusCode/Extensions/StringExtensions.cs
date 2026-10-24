@@ -60,6 +60,9 @@ public static class StringExtensions
             EmoteCategory.Relic => "relics/",
             EmoteCategory.Enchantment => "enchantments/",
             EmoteCategory.Potion => "potions/",
+            EmoteCategory.Character => "characters/",
+            EmoteCategory.Creature => "creatures/",
+            EmoteCategory.Meme => "memes/",
             _ => throw new ArgumentOutOfRangeException(nameof(definition), definition.Category, "Unknown artwork category"),
         };
         return $"{MainFile.ResPath}/ui/emote/{(outline ? "outlines" : "icons")}/{folder}{definition.AssetName}.png";
