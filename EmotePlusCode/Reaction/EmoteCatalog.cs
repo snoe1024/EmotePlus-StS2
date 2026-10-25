@@ -28,14 +28,14 @@ public static class EmoteCatalog
             [EmoteType.Heart] = "heart",
             [EmoteType.ThumbUp] = "thumb_up",
             [EmoteType.HappyCultist] = "happy_cultist",
-            [EmoteType.Darv] = "darv",
-            [EmoteType.Neow] = "neow",
-            [EmoteType.Nonupeipe] = "nonupeipe",
-            [EmoteType.Orobas] = "orobas",
-            [EmoteType.Pael] = "pael",
-            [EmoteType.Tanx] = "tanx",
-            [EmoteType.Tezcatara] = "tezcatara",
-            [EmoteType.Vakuu] = "vakuu",
+            [EmoteType.AncientDarv] = "darv",
+            [EmoteType.AncientNeow] = "neow",
+            [EmoteType.AncientNonupeipe] = "nonupeipe",
+            [EmoteType.AncientOrobas] = "orobas",
+            [EmoteType.AncientPael] = "pael",
+            [EmoteType.AncientTanx] = "tanx",
+            [EmoteType.AncientTezcatara] = "tezcatara",
+            [EmoteType.AncientVakuu] = "vakuu",
             [EmoteType.Gold] = "gold",
         };
         var definitions = names.ToDictionary(p => p.Key,
@@ -67,6 +67,9 @@ public static class EmoteCatalog
                 definitions.Add((EmoteType)entry.Id, new((EmoteType)entry.Id, entry.Name, entry.AssetName, entry.Category));
         if (definitions.Values.GroupBy(d => (d.Category, d.AssetName)).Any(g => g.Count() > 1))
             throw new InvalidOperationException("Duplicate emote artwork: map model variants to a single emote ID.");
+        foreach (var definition in definitions.Values)
+            if (!EmoteIdLayout.MatchesCategory((int)definition.Type, definition.Category))
+                throw new InvalidOperationException($"Emote ID outside category range: {definition.Name}");
         return definitions.Values.ToArray();
     }
 

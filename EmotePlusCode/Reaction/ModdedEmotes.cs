@@ -9,17 +9,31 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 /// <summary>A fixed optional-mod model mapping. Model identities never depend on runtime registration order.</summary>
 public sealed record ModdedEmoteDefinition(int Id, string Name, string AssetName, EmoteCategory Category,
     string Assembly, string TypeName, string Title, string[] Aliases, string? LocTable, string? LocKey,
-    string[]? Tags = null, bool CharacterCookie = false);
+    string[]? Tags = null, bool CharacterCookie = false)
+{
+    /// <summary>Source Workshop item; required when the group spans multiple Workshop items.</summary>
+    public string? WorkshopId { get; init; }
+}
 
 /// <summary>An installable content group; multiple manifest IDs can identify bundled characters.</summary>
-public sealed record ContentModDefinition(string Key, string[] ModIds, string Name, string WorkshopId,
-    string[] Aliases, ModdedEmoteDefinition[] Entries);
+public sealed record ContentModDefinition(string Key, string[] ModIds, string Name, string? WorkshopId,
+    string[] Aliases, ModdedEmoteDefinition[] Entries)
+{
+    /// <summary>Additional Workshop sources; the existing singular source remains supported.</summary>
+    public string[] WorkshopIds { get; init; } = [];
+
+    /// <summary>Distinct source items, including the optional singular source.</summary>
+    [JsonIgnore]
+    public IReadOnlyList<string> AllWorkshopIds => (WorkshopIds ?? [])
+        .Concat(string.IsNullOrWhiteSpace(WorkshopId) ? [] : new[] { WorkshopId })
+        .Distinct(StringComparer.Ordinal).ToArray();
+}
 
 /// <summary>Optional content support, without loading assemblies or constructing third-party models.</summary>
 public static class ModdedEmotes
 {
     /// <summary>Public content lookup API version.</summary>
-    public const int ApiVersion = 1;
+    public const int ApiVersion = 2;
     private static readonly IReadOnlyDictionary<EmoteCategory, Type> BaseTypes = new Dictionary<EmoteCategory, Type>
     {
         [EmoteCategory.Character] = typeof(CharacterModel), [EmoteCategory.Creature] = typeof(MonsterModel),
@@ -53,11 +67,17 @@ public static class ModdedEmotes
         {
             if (group.ModIds.Length == 0 || string.IsNullOrWhiteSpace(group.Key))
                 throw new InvalidDataException("Content groups require a key and manifest IDs.");
+            var workshopIds = group.AllWorkshopIds;
+            if (workshopIds.Count == 0 || workshopIds.Any(id => !ulong.TryParse(id, out var value) || value == 0 || id.Any(c => c is < '0' or > '9')))
+                throw new InvalidDataException($"Invalid Workshop sources: {group.Key}");
             foreach (var entry in group.Entries)
-                if (entry.Id <= 0 || !Enum.IsDefined((EmoteType)entry.Id) ||
+                if (entry.Id < 10000 || !Enum.IsDefined((EmoteType)entry.Id) ||
+                    !EmoteIdLayout.MatchesCategory(entry.Id, entry.Category) ||
                     !entry.AssetName.StartsWith("mods/" + group.Key + "/", StringComparison.Ordinal) ||
                     entry.AssetName.Contains("..") || entry.AssetName.Contains('\\') ||
-                    !BaseTypes.ContainsKey(entry.Category) || entry.CharacterCookie && entry.Category != EmoteCategory.Relic)
+                    !BaseTypes.ContainsKey(entry.Category) || entry.CharacterCookie && entry.Category != EmoteCategory.Relic ||
+                    (entry.WorkshopId != null && !workshopIds.Contains(entry.WorkshopId, StringComparer.Ordinal)) ||
+                    (workshopIds.Count > 1 && entry.WorkshopId == null))
                     throw new InvalidDataException($"Invalid content entry: {group.Key}/{entry.Name}");
             foreach (var character in group.Entries.Where(e => e.Category == EmoteCategory.Character))
                 if (!group.Entries.Any(e => e.CharacterCookie && e.Assembly == character.Assembly && e.TypeName == character.TypeName))

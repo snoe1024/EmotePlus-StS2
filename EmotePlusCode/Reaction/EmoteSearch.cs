@@ -86,7 +86,7 @@ internal static class EmoteSearch
             var modelTitle = content.LocTable != null && content.LocKey != null && LocString.Exists(content.LocTable, content.LocKey)
                 ? new LocString(content.LocTable, content.LocKey).GetFormattedText() : content.Title;
             if (!hasLocalTitle) title = modelTitle;
-            words.Append(' ').Append(group.Name).Append(' ').Append(group.Key).Append(' ').Append(group.WorkshopId)
+            words.Append(' ').Append(group.Name).Append(' ').Append(group.Key).Append(' ').AppendJoin(' ', group.AllWorkshopIds)
                 .Append(' ').AppendJoin(' ', group.Aliases).Append(' ').AppendJoin(' ', content.Aliases)
                 .Append(' ').Append(content.Title).Append(' ').Append(modelTitle).Append(' ').Append(content.TypeName);
         }

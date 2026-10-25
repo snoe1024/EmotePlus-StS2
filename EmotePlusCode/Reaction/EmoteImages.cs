@@ -45,33 +45,33 @@ public static class EmoteImages
     [
         // page 1
         EmoteType.Exclamation,
-        EmoteType.Vulnerable,
+        EmoteType.PowerVulnerable,
         EmoteType.ThumbDown,
-        EmoteType.Weak,
+        EmoteType.PowerWeak,
         EmoteType.QuestionMark,
         EmoteType.Gold,
         EmoteType.ThumbUp,
         EmoteType.HelloWorld,
         
         // page 2
-        EmoteType.Enrage,
+        EmoteType.PowerEnrage,
         EmoteType.Skull,
-        EmoteType.RIP,
+        EmoteType.MemeRip,
         EmoteType.SadSlime,
-        EmoteType.Devotion,
+        EmoteType.MemeDevotion,
         EmoteType.HappyCultist,
-        EmoteType.Curious,
+        EmoteType.PowerCurious,
         EmoteType.Heart,
         
         // page 3
-        EmoteType.Neow,
-        EmoteType.Orobas,
-        EmoteType.Tezcatara,
-        EmoteType.Pael,
-        EmoteType.Darv,
-        EmoteType.Tanx,
-        EmoteType.Nonupeipe,
-        EmoteType.Vakuu,
+        EmoteType.AncientNeow,
+        EmoteType.AncientOrobas,
+        EmoteType.AncientTezcatara,
+        EmoteType.AncientPael,
+        EmoteType.AncientDarv,
+        EmoteType.AncientTanx,
+        EmoteType.AncientNonupeipe,
+        EmoteType.AncientVakuu,
     ];
 
     /// <summary>The default order, complete (no placeholders; every emote exactly once).</summary>

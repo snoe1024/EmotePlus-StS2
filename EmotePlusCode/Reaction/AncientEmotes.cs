@@ -13,14 +13,14 @@ public static class AncientEmotes
 
     private static readonly AncientEmoteDefinition[] Definitions =
     [
-        new("Darv", EmoteType.Darv),
-        new("Neow", EmoteType.Neow),
-        new("Nonupeipe", EmoteType.Nonupeipe),
-        new("Orobas", EmoteType.Orobas),
-        new("Pael", EmoteType.Pael),
-        new("Tanx", EmoteType.Tanx),
-        new("Tezcatara", EmoteType.Tezcatara),
-        new("Vakuu", EmoteType.Vakuu),
+        new("Darv", EmoteType.AncientDarv),
+        new("Neow", EmoteType.AncientNeow),
+        new("Nonupeipe", EmoteType.AncientNonupeipe),
+        new("Orobas", EmoteType.AncientOrobas),
+        new("Pael", EmoteType.AncientPael),
+        new("Tanx", EmoteType.AncientTanx),
+        new("Tezcatara", EmoteType.AncientTezcatara),
+        new("Vakuu", EmoteType.AncientVakuu),
     ];
     private static readonly IReadOnlyDictionary<string, AncientEmoteDefinition> ByType =
         Definitions.ToDictionary(d => d.TypeName, StringComparer.Ordinal);
