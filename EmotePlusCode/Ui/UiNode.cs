@@ -5,7 +5,9 @@ namespace EmotePlus.EmotePlusCode.Ui;
 
 // The UI screens EmotePlus knows about, as a tree (a node is identified by its path from the root):
 //
-//   Base                          the room (overlays such as rewards are part of it)
+//   Base                          the room, including the merchant waiting scene
+//     MerchantInventory           the regular merchant's open shop sheet
+//     FakeMerchantInventory       the FakeMerchant event's open shop sheet
 //     Map
 //     PlayerDetail(netId)         NMultiplayerPlayerExpandedState, one node per inspected player
 //       PlayerDetailCard(key)     a card of that player's deck, enlarged from the detail screen
@@ -61,6 +63,8 @@ public enum UiNodeKind : byte
     CardRewards,
     // Local instance identity only; never put this path on either transport.
     PrivateOverlay,
+    MerchantInventory,
+    FakeMerchantInventory,
 }
 
 /// <param name="Arg">PlayerDetail: the inspected player's net id. CardLibraryPool: the pool index.</param>

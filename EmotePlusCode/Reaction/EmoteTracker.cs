@@ -535,7 +535,9 @@ public static class EmoteTracker
                 : SceneLayerOf(node);
             return scroll != null
                 ? new Placement(sceneLayer, onScreen.Value, Mode.Drift, scroll.Value.Bounds)
-                : new Placement(new LayerSpec(LayerKind.Top), onScreen.Value, Mode.Drift);
+                : new Placement(UiTree.IsMerchantInventory(node.Kind) ||
+                    node.Kind == UiNodeKind.Base && UiTree.FindSceneNode(node) != null
+                        ? sceneLayer : new LayerSpec(LayerKind.Top), onScreen.Value, Mode.Drift);
         }
 
         if (common == viewer.Length)
@@ -565,7 +567,8 @@ public static class EmoteTracker
         // The base scene's buttons (top bar, player list) stay on top of the map and of the deck screen, so a viewer
         // on either must see the emote at the button's own depth. Under other capstones they are hidden anyway:
         // the Room layer, which the capstone covers, is right.
-        var layer = ancestor.Kind == UiNodeKind.Base && viewer.Length == 2 && UiTree.ShowsHeader(viewer)
+        var layer = !UiTree.IsMerchantInventory(sender[common].Kind) &&
+            ancestor.Kind == UiNodeKind.Base && viewer.Length == 2 && UiTree.ShowsHeader(viewer)
             ? new LayerSpec(UiTree.IsInPlayerList(button.Value.Control) ? LayerKind.PlayerList : LayerKind.Top)
             : SceneLayerOf(ancestor);
         return PinAt(layer, button.Value);
@@ -597,7 +600,8 @@ public static class EmoteTracker
     {
         return node.Kind switch
         {
-            UiNodeKind.Base => new LayerSpec(LayerKind.Room),
+            UiNodeKind.Base => UiTree.FindSceneNode(node) != null
+                ? new LayerSpec(LayerKind.Scene, node) : new LayerSpec(LayerKind.Room),
             UiNodeKind.Map => new LayerSpec(LayerKind.UnderHeader),
             _ => new LayerSpec(LayerKind.Scene, node),
         };

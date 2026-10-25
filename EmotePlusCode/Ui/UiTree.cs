@@ -17,6 +17,9 @@ using MegaCrit.Sts2.Core.Multiplayer.Game.Lobby;
 using MegaCrit.Sts2.Core.Saves;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
+using MegaCrit.Sts2.Core.Nodes.Events.Custom;
+using MegaCrit.Sts2.Core.Nodes.Screens.Shops;
 using MegaCrit.Sts2.Core.Nodes.Cards;
 using MegaCrit.Sts2.Core.Nodes.Cards.Holders;
 using MegaCrit.Sts2.Core.Nodes.GodotExtensions;
@@ -155,6 +158,8 @@ public static class UiTree
     private static readonly UiNodeId Base = new(UiNodeKind.Base);
     private static readonly UiNodeId Pause = new(UiNodeKind.PauseMenu);
     private static readonly UiNodeId Compendium = new(UiNodeKind.Compendium);
+    private static readonly UiNodeKind[] MerchantInventoryKinds =
+        [UiNodeKind.MerchantInventory, UiNodeKind.FakeMerchantInventory];
 
     /// <summary>
     /// The path an emote made at <paramref name="mousePosition"/> is SENT with: the local player's path
@@ -190,11 +195,12 @@ public static class UiTree
             : new[] { Base, detail, new UiNodeId(UiNodeKind.PlayerDetailCard, 0, DetailCardKey(card)) };
     }
 
-    /// <summary>The screens that show the header bar (top bar): the base scene, the map and the deck screen.</summary>
+    /// <summary>The screens that show the header bar, including rooms, merchant inventories, map and deck.</summary>
     public static bool ShowsHeader(IReadOnlyList<UiNodeId> path)
     {
         return path.Count == 1 ||
-               (path.Count == 2 && (path[1].Kind is UiNodeKind.Map or UiNodeKind.DeckView || IsCombatPile(path[1].Kind)));
+               (path.Count == 2 && (path[1].Kind is UiNodeKind.Map or UiNodeKind.DeckView || IsCombatPile(path[1].Kind)
+                   || IsMerchantInventory(path[1].Kind)));
     }
 
     /// <summary>True if <paramref name="position"/> is on the header bar. Only meaningful where it is shown.</summary>
@@ -315,8 +321,46 @@ public static class UiTree
             // Choices such as generated cards are private. Include the instance ID so reopening another choice
             // cannot show a previous choice's emote, even if it uses the same Control type.
             Control overlay => new[] { Base, new UiNodeId(UiNodeKind.PrivateOverlay, overlay.GetInstanceId()) },
-            _ => new[] { Base },
+            _ => MerchantPath(),
         };
+    }
+
+    internal static bool IsMerchantInventory(UiNodeKind kind) =>
+        kind is UiNodeKind.MerchantInventory or UiNodeKind.FakeMerchantInventory;
+
+    private static NFakeMerchant? FakeMerchant() => NRun.Instance?.EventRoom?.CustomEventNode is NFakeMerchant fake
+        && GodotObject.IsInstanceValid(fake) && !fake.IsQueuedForDeletion() ? fake : null;
+
+    private static NMerchantInventory? MerchantInventory(UiNodeKind kind) => kind switch
+    {
+        UiNodeKind.MerchantInventory => NMerchantRoom.Instance?.Inventory,
+        UiNodeKind.FakeMerchantInventory => FakeMerchant()?.Inventory,
+        _ => null,
+    };
+
+    private static Control? MerchantButton(UiNodeKind kind) => kind switch
+    {
+        UiNodeKind.MerchantInventory => NMerchantRoom.Instance?.MerchantButton,
+        UiNodeKind.FakeMerchantInventory => FakeMerchant()?.MerchantButton,
+        _ => null,
+    };
+
+    private static UiNodeId[] MerchantPath()
+    {
+        foreach (var kind in MerchantInventoryKinds)
+            if (MerchantInventory(kind) is { IsOpen: true } inventory && GodotObject.IsInstanceValid(inventory)
+                && inventory.IsVisibleInTree())
+                return new[] { Base, new UiNodeId(kind) };
+        return new[] { Base };
+    }
+
+    // Both scenes place their inventory after SceneContainer. Emotes here therefore stay behind the shop sheet.
+    private static Control? MerchantWaitingScene()
+    {
+        Control? room = NMerchantRoom.Instance;
+        room ??= FakeMerchant() is { } fake && fake.MerchantButton is { Visible: true } ? fake : null;
+        return room != null && GodotObject.IsInstanceValid(room) && !room.IsQueuedForDeletion()
+            ? room.GetNodeOrNull<Control>("SceneContainer") : null;
     }
 
     private static UiNodeKind PileKind(PileType type) => type switch
@@ -674,6 +718,12 @@ public static class UiTree
 
     private static ButtonTarget? FindBaseButton(UiNodeId child)
     {
+        if (IsMerchantInventory(child.Kind))
+        {
+            var merchant = MerchantButton(child.Kind);
+            return merchant != null && GodotObject.IsInstanceValid(merchant) && merchant.IsVisibleInTree()
+                ? new ButtonTarget(merchant, ButtonAnchor.TopRightCorner) : null;
+        }
         var globalUi = NRun.Instance?.GlobalUi;
         if (globalUi == null)
         {
@@ -705,12 +755,14 @@ public static class UiTree
 
     /// <summary>
     /// The scene node whose children are "inside" the given node, or null if the node has no scene of its own
-    /// (Base and Map get dedicated layers, see EmoteTracker) or it is not currently alive.
+    /// (Base outside merchant scenes and Map get dedicated layers, see EmoteTracker) or it is not currently alive.
     /// </summary>
     public static Control? FindSceneNode(UiNodeId node)
     {
         Control? scene = node.Kind switch
         {
+            UiNodeKind.Base => MerchantWaitingScene(),
+            UiNodeKind.MerchantInventory or UiNodeKind.FakeMerchantInventory => MerchantInventory(node.Kind),
             UiNodeKind.PauseMenu => Submenu<NPauseMenu>(),
             UiNodeKind.Settings => Submenu<NSettingsScreen>(),
             UiNodeKind.Compendium => Submenu<NCompendiumSubmenu>(),
