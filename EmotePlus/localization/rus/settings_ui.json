@@ -104,5 +104,7 @@
   "EMOTEPLUS-EMOTE_PAELS_REGION_CREATURE.aliases": "Область Паэля область территория пол pael pael’s region territory floor",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "Значок усиления StS1",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "Значок усиления StS1 усиление сила сильнее buff strength stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "думать размышление задуматься thonking thinking think hmm"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "думать размышление задуматься thonking thinking think hmm",
+  "EMOTEPLUS-TAG_MODDED.title": "Из модов",
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Эмоции из установленных контентных модов."
 }

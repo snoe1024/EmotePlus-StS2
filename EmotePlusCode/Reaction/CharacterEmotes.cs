@@ -21,10 +21,10 @@ public static class CharacterEmotes
         Definitions.ToDictionary(d => d.TypeName, StringComparer.Ordinal);
     /// <summary>All supported characters.</summary>
     public static IReadOnlyList<CharacterEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
-    /// <summary>Maps exact official types; null, unknown and third-party types return false/None.</summary>
+    /// <summary>Maps registered content or exact official types; null, unknown and unregistered types return false/None.</summary>
     public static bool TryGetEmote(Type? type, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(type, EmoteCategory.Character, out emote)) return true;
         if (type == null || type.Assembly != typeof(CharacterModel).Assembly ||
             type.Namespace != "MegaCrit.Sts2.Core.Models.Characters" || !typeof(CharacterModel).IsAssignableFrom(type) ||
             !ByType.TryGetValue(type.Name, out var entry)) return false;

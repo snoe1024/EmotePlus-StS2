@@ -104,5 +104,7 @@
   "EMOTEPLUS-EMOTE_PAELS_REGION_CREATURE.aliases": "Pael's Region pael pael’s region territory floor",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "StS1 Buff Icon",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1 Buff Icon buff strength stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "thonking thinking think hmm"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "thonking thinking think hmm",
+  "EMOTEPLUS-TAG_MODDED.title": "Modded",
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes from installed content mods."
 }

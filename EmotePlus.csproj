@@ -18,6 +18,10 @@
         <NoWarn>$(NoWarn);MSB3270</NoWarn>
     </PropertyGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Include="EmotePlusCode/ContentMods/*.json" />
+    </ItemGroup>
+
     <ItemGroup Condition="Exists('$(Sts2DataDir)')">
         <Reference Include="0Harmony">
             <HintPath>$(Sts2DataDir)/0Harmony.dll</HintPath>

@@ -39,10 +39,10 @@ public static class CreatureEmotes
     internal static bool TracksActivity(EmoteType type) => !ActivityExcluded.Contains(type);
     /// <summary>All artwork. Doormaker is explicitly marked unused even if an older model type is supplied.</summary>
     public static IReadOnlyList<CreatureEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
-    /// <summary>Maps an exact official monster or encounter type; no static dependency on retired classes.</summary>
+    /// <summary>Maps a registered content or exact official monster or encounter type; no static dependency on retired classes.</summary>
     public static bool TryGetEmote(Type? type, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(type, EmoteCategory.Creature, out emote)) return true;
         if (type == null || type.Assembly != typeof(MonsterModel).Assembly) return false;
         CreatureEmoteDefinition? entry;
         if (type.Namespace == "MegaCrit.Sts2.Core.Models.Monsters" && typeof(MonsterModel).IsAssignableFrom(type))

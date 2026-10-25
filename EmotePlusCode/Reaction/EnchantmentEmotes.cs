@@ -43,10 +43,10 @@ public static class EnchantmentEmotes
     /// <summary>All registered artwork, including entries without a model in either inspected branch.</summary>
     public static IReadOnlyList<EnchantmentEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
 
-    /// <summary>Maps an exact official model type; unknown, null and third-party types return false/None.</summary>
+    /// <summary>Maps a registered content or exact official model type; unknown, null and unregistered types return false/None.</summary>
     public static bool TryGetEmote(Type? modelType, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(modelType, EmoteCategory.Enchantment, out emote)) return true;
         if (modelType == null || modelType.Assembly != typeof(EnchantmentModel).Assembly ||
             modelType.Namespace != "MegaCrit.Sts2.Core.Models.Enchantments" ||
             !typeof(EnchantmentModel).IsAssignableFrom(modelType) || !ByType.TryGetValue(modelType.Name, out var entry))

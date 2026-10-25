@@ -35,7 +35,7 @@ public partial class MainFile : Node
 
         harmony.PatchAll(assembly);
         EmotePlus.EmotePlusCode.Reaction.EmoteNetworking.Initialize();
-        MegaCrit.Sts2.Core.Runs.RunManager.Instance.RunStarted += _ => Reaction.RecentActivityEmotes.Clear();
+        MegaCrit.Sts2.Core.Runs.RunManager.Instance.RunStarted += Reaction.RecentActivityEmotes.StartRun;
 
         // Log what actually got patched, so a silently-unapplied patch shows up in godot.log right away.
         var patchedMethods = harmony.GetPatchedMethods().ToList();

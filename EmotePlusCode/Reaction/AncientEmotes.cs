@@ -28,10 +28,10 @@ public static class AncientEmotes
     /// <summary>The eight supported ancients; unknown future ancients are not inferred by name alone.</summary>
     public static IReadOnlyList<AncientEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
 
-    /// <summary>Maps an exact official ancient model type. Unknown and third-party models return false/None.</summary>
+    /// <summary>Maps a registered content or exact official ancient model type. Unknown and unregistered third-party models return false/None.</summary>
     public static bool TryGetEmote(Type? ancientType, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(ancientType, EmoteCategory.Ancient, out emote)) return true;
         if (ancientType == null || ancientType.Assembly != typeof(AncientEventModel).Assembly ||
             ancientType.Namespace != "MegaCrit.Sts2.Core.Models.Events" ||
             !typeof(AncientEventModel).IsAssignableFrom(ancientType) ||

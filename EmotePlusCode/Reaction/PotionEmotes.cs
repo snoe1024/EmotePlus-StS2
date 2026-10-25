@@ -85,10 +85,10 @@ public static class PotionEmotes
     /// <summary>All registered artwork, including entries without a model in either inspected branch.</summary>
     public static IReadOnlyList<PotionEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
 
-    /// <summary>Maps an exact official model type; unknown, null and third-party types return false/None.</summary>
+    /// <summary>Maps a registered content or exact official model type; unknown, null and unregistered types return false/None.</summary>
     public static bool TryGetEmote(Type? modelType, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(modelType, EmoteCategory.Potion, out emote)) return true;
         if (modelType == null || modelType.Assembly != typeof(PotionModel).Assembly ||
             modelType.Namespace != "MegaCrit.Sts2.Core.Models.Potions" ||
             !typeof(PotionModel).IsAssignableFrom(modelType) || !ByType.TryGetValue(modelType.Name, out var entry))

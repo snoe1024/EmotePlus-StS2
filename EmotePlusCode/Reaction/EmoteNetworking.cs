@@ -57,7 +57,8 @@ internal static class EmoteNetworking
     {
         var generation = _generation;
         _endpoint = RitsuLibSidecarEndpoints.Register(new RitsuLibSidecarEndpointDescriptor(
-            ownerId: MainFile.ModId, name: "emotes", protocolVersion: 2, minimumCompatibleProtocolVersion: 2,
+            ownerId: MainFile.ModId, name: "emotes", protocolVersion: ContextEmoteMessage.ProtocolVersion,
+            minimumCompatibleProtocolVersion: ContextEmoteMessage.ProtocolVersion,
             deliveryProfile: RitsuLibSidecarDeliveryProfile.RealtimeDatagram,
             topology: RitsuLibSidecarEndpointTopology.RelayGroup,
             maxPayloadBytes: ContextEmoteMessage.MaxBytes,
@@ -137,7 +138,7 @@ internal static class EmoteNetworking
 
     private static void ReceiveSidecar(RitsuLibSidecarEndpointMessage incoming)
     {
-        if (_service == null || incoming.NegotiatedProtocolVersion != 2 || incoming.OriginalSenderNetId == _service.NetId) return;
+        if (_service == null || incoming.NegotiatedProtocolVersion != ContextEmoteMessage.ProtocolVersion || incoming.OriginalSenderNetId == _service.NetId) return;
         if (!ContextEmoteMessage.TryDecode(incoming.Payload.Span, out var message) || message == null)
         { MainFile.Logger.Warn("Rejected invalid emote payload."); return; }
         Pump();

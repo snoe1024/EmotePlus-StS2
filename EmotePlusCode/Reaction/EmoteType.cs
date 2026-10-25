@@ -1,7 +1,7 @@
 namespace EmotePlus.EmotePlusCode.Reaction;
 
 /// <summary>
-/// EmotePlus's own emote ids (sent as an unsigned 16-bit ID). The vanilla ReactionType cannot be extended: the game writes an
+/// EmotePlus's own emote ids (sent as a signed 32-bit ID). The vanilla ReactionType cannot be extended: the game writes an
 /// enum with just enough bits for its largest DEFINED value, so an extra value cast into it would be cut off.
 /// 1-8 are the vanilla emotes with the same numbers as ReactionType, so converting is a plain int cast;
 /// new emotes get new numbers (never reuse or renumber: the value goes over the network).

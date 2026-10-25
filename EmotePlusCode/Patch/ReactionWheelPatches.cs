@@ -214,8 +214,14 @@ public static class ReactionWheelInputPatch
         _emptyActivityLabel.AddThemeColorOverride("font_outline_color", new Color(0f, 0f, 0f, 0.9f));
         _emptyActivityLabel.AddThemeFontOverride("font", _pageLabel.GetThemeFont("font"));
         wheel.AddChild(_emptyActivityLabel);
-        _emptyActivityLabel.Position = new Vector2((wheel.Size.X - _emptyActivityLabel.Size.X) / 2f,
-            _pageLabel.Position.Y + _pageLabel.Size.Y);
+        var emptyLabel = _emptyActivityLabel;
+        var pageLabel = _pageLabel;
+        void CenterEmptyLabel() => emptyLabel.Position = new Vector2((wheel.Size.X - emptyLabel.Size.X) / 2f,
+            pageLabel.Position.Y + pageLabel.Size.Y);
+        // Translated text can enlarge the minimum width after setup; center the actual final rect on every resize.
+        emptyLabel.Resized += CenterEmptyLabel;
+        wheel.Resized += CenterEmptyLabel;
+        CenterEmptyLabel();
 
         foreach (var wedge in _wedges)
         {

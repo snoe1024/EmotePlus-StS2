@@ -22,6 +22,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Screens.PotionLab;
 using MegaCrit.Sts2.Core.Nodes.Screens.RelicCollection;
 using MegaCrit.Sts2.Core.Nodes.Screens.Shops;
+using MegaCrit.Sts2.Core.Nodes.Screens.Map;
 using MegaCrit.Sts2.Core.Nodes.Screens.TreasureRoomRelic;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Runs;
@@ -124,6 +125,8 @@ internal static class RecentActivityHover
         AccessTools.FieldRefAccess<NLabPotionHolder, ModelVisibility>("_visibility");
     private static readonly AccessTools.FieldRef<NLabPotionHolder, PotionModel> LabModel =
         AccessTools.FieldRefAccess<NLabPotionHolder, PotionModel>("_model");
+    private static readonly AccessTools.FieldRef<NMapPoint, IRunState> MapRunState =
+        AccessTools.FieldRefAccess<NMapPoint, IRunState>("_runState");
 
     internal static readonly Type[] FocusTypes =
     [
@@ -133,6 +136,7 @@ internal static class RecentActivityHover
         typeof(NTreasureRoomRelicHolder), typeof(NRewardButton),
         typeof(NCreature), typeof(NMultiplayerPlayerState),
         typeof(NMerchantButton),
+        typeof(NAncientMapPoint), typeof(NBossMapPoint),
     ];
 
     internal static IEnumerable<MethodBase> Methods(bool enter)
@@ -158,6 +162,9 @@ internal static class RecentActivityHover
         }
         AbstractModel? model = control switch
         {
+            NAncientMapPoint point => MapRunState(point).Act.Ancient,
+            NBossMapPoint point => point.Point == MapRunState(point).Map.SecondBossMapPoint
+                ? MapRunState(point).Act.SecondBossEncounter : MapRunState(point).Act.BossEncounter,
             NRelicInventoryHolder holder => holder.Relic.Model,
             NRelicBasicHolder holder => holder.Relic.Model,
             NPotionHolder holder => holder.Potion?.Model,

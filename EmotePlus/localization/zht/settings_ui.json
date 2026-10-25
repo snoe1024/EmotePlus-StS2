@@ -104,5 +104,7 @@
   "EMOTEPLUS-EMOTE_PAELS_REGION_CREATURE.aliases": "佩爾的領域 領域 區域 地面 pael pael’s region territory floor",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "StS1 增益圖示",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1 增益圖示 強化 增益 力量 buff strength stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "思考 想 猶豫 thonking thinking think hmm"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "思考 想 猶豫 thonking thinking think hmm",
+  "EMOTEPLUS-TAG_MODDED.title": "模組內容",
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "已安裝內容模組中的表情。"
 }

@@ -104,5 +104,7 @@
   "EMOTEPLUS-EMOTE_PAELS_REGION_CREATURE.aliases": "파엘의 영역 영역 지역 바닥 pael pael’s region territory floor",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "StS1 버프 아이콘",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1 버프 아이콘 강화 버프 힘 buff strength stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "생각 고민 사고 thonking thinking think hmm"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "생각 고민 사고 thonking thinking think hmm",
+  "EMOTEPLUS-TAG_MODDED.title": "모드 추가",
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "설치된 콘텐츠 모드의 이모트입니다."
 }

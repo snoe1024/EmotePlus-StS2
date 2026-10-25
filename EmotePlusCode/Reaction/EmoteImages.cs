@@ -94,7 +94,7 @@ public static class EmoteImages
                 _order = ParseOrder(text);
             }
 
-            return _order;
+            return _order.Where(ModdedEmotes.IsAvailable).ToArray();
         }
     }
 
@@ -125,6 +125,8 @@ public static class EmoteImages
     public static void SetOrder(IEnumerable<EmoteType> order)
     {
         var list = order.Distinct().ToList();
+        // Keep stored preferences for content absent from this installation.
+        list.AddRange(ParseOrder(EmotePlusConfig.EmoteOrder ?? "").Where(t => !ModdedEmotes.IsAvailable(t)).Except(list));
         EmotePlusConfig.EmoteOrder = list.SequenceEqual(DefaultOrder) ? "" : string.Join(",", list.Select(NameOf));
     }
 
@@ -168,6 +170,8 @@ public static class EmoteImages
 
     private static string CanonicalName(string name) => EmoteCatalog.TryGet(name, out var definition) ? definition.Name : name;
 
+    private static IEnumerable<string> AvailableNames => Names.Where(p => ModdedEmotes.IsAvailable(p.Key)).Select(p => p.Value);
+
     public static bool IsHidden(string name) => !Enabled.Contains(CanonicalName(name));
 
     public static void SetHidden(string name, bool hidden)
@@ -182,7 +186,7 @@ public static class EmoteImages
         EmotePlusConfig.EnabledEmotes = string.Join(",", set.Order());
         // Explicit user edits may include today's catalogue in the all-hidden fallback. Future additions are
         // excluded because this snapshot is saved, rather than recalculated when loading a newer mod version.
-        EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
+        EmotePlusConfig.EmptySelectionFallback = string.Join(",", AvailableNames);
     }
 
     /// <summary>Changes only the specified emotes, including filtered results outside the visible viewport.</summary>
@@ -198,14 +202,16 @@ public static class EmoteImages
         if (!changed) return;
         // A filtered bulk edit must leave entries outside the result set untouched and save only once.
         EmotePlusConfig.EnabledEmotes = string.Join(",", set.Order());
-        EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
+        EmotePlusConfig.EmptySelectionFallback = string.Join(",", AvailableNames);
     }
 
     /// <summary>Explicitly selects or hides the current catalogue without opting into future additions.</summary>
     public static void SetAllHidden(bool hidden)
     {
-        EmotePlusConfig.EnabledEmotes = hidden ? "" : string.Join(",", Names.Values);
-        EmotePlusConfig.EmptySelectionFallback = string.Join(",", Names.Values);
+        var available = AvailableNames.ToHashSet(StringComparer.Ordinal);
+        var selected = Enabled.Where(n => !available.Contains(n));
+        EmotePlusConfig.EnabledEmotes = string.Join(",", hidden ? selected : selected.Concat(available));
+        EmotePlusConfig.EmptySelectionFallback = string.Join(",", available);
     }
 
     /// <summary>

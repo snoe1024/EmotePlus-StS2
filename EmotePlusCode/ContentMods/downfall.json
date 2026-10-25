@@ -1,0 +1,22 @@
+{
+  "Key": "downfall",
+  "ModIds": [
+    "Downfall",
+    "Automaton",
+    "Awakened",
+    "Champ",
+    "Guardian",
+    "Hermit",
+    "Hexaghost",
+    "SlimeBoss",
+    "Snecko"
+  ],
+  "Name": "Downfall - Classic",
+  "WorkshopId": "3747508091",
+  "Aliases": [
+    "Downfall",
+    "Downfall Classic",
+    "ダウンフォール"
+  ],
+  "Entries": []
+}

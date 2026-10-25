@@ -288,10 +288,10 @@ public static class PowerEmotes
     /// <summary>The stable catalogue, including powers absent from the installed game branch.</summary>
     public static IReadOnlyList<PowerEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
 
-    /// <summary>Maps an exact official PowerModel type. Mod classes and unknown future powers return false.</summary>
+    /// <summary>Maps a registered content or exact official PowerModel type. Unregistered types return false.</summary>
     public static bool TryGetEmote(Type? powerType, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(powerType, EmoteCategory.Power, out emote)) return true;
         if (powerType == null || powerType.Assembly != typeof(PowerModel).Assembly ||
             powerType.Namespace != "MegaCrit.Sts2.Core.Models.Powers" ||
             !typeof(PowerModel).IsAssignableFrom(powerType) || !ByType.TryGetValue(powerType.Name, out var entry))

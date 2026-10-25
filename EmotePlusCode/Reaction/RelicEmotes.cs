@@ -347,10 +347,10 @@ public static class RelicEmotes
     /// <summary>All registered artwork, including variants and assets without a known model.</summary>
     public static IReadOnlyList<RelicEmoteDefinition> All { get; } = Array.AsReadOnly(Definitions);
 
-    /// <summary>Maps an exact official type. YummyCookie defaults to Ironclad; LoomingFruit to its base artwork.</summary>
+    /// <summary>Maps a registered content or exact official type. YummyCookie defaults to Ironclad; LoomingFruit to its base artwork.</summary>
     public static bool TryGetEmote(Type? relicType, out EmoteType emote)
     {
-        emote = EmoteType.None;
+        if (ModdedEmotes.TryGetEmote(relicType, EmoteCategory.Relic, out emote)) return true;
         if (relicType == null || relicType.Assembly != typeof(RelicModel).Assembly ||
             relicType.Namespace != "MegaCrit.Sts2.Core.Models.Relics" ||
             !typeof(RelicModel).IsAssignableFrom(relicType) || !ByType.TryGetValue(relicType.Name, out var entry))
@@ -359,12 +359,30 @@ public static class RelicEmotes
         return true;
     }
 
-    /// <summary>Maps an instance, using its displayed variant for owned YummyCookie and LoomingFruit relics.</summary>
+    /// <summary>Maps an instance using its owner's character for YummyCookie and displayed variant for LoomingFruit.</summary>
     public static bool TryGetEmote(RelicModel? relic, out EmoteType emote)
     {
         if (!TryGetEmote(relic?.GetType(), out emote)) return false;
-        // Canonical/unowned cookies choose random artwork when queried. Avoid consuming game RNG for a lookup.
-        if (relic!.GetType().Name is "YummyCookie" or "LoomingFruit" && !relic.IsCanonical && relic.Owner != null)
+        if (relic!.GetType().Assembly != typeof(RelicModel).Assembly) return true;
+        if (relic!.GetType().Name == "YummyCookie")
+        {
+            // Ownership is authoritative; never substitute the default character when artwork cannot be resolved.
+            emote = EmoteType.None;
+            if (relic.IsCanonical || relic.Owner == null) return false;
+            if (ModdedEmotes.TryGetCookieEmote(relic.Owner.Character, out emote)) return true;
+            if (!CharacterEmotes.TryGetEmote(relic.Owner.Character, out var character)) return false;
+            emote = character switch
+            {
+                EmoteType.CharacterIronclad => EmoteType.RelicYummyCookieIronclad,
+                EmoteType.CharacterSilent => EmoteType.RelicYummyCookieSilent,
+                EmoteType.CharacterRegent => EmoteType.RelicYummyCookieRegent,
+                EmoteType.CharacterNecrobinder => EmoteType.RelicYummyCookieNecro,
+                EmoteType.CharacterDefect => EmoteType.RelicYummyCookieDefect,
+                _ => EmoteType.None,
+            };
+            return emote != EmoteType.None;
+        }
+        if (relic.GetType().Name == "LoomingFruit" && !relic.IsCanonical && relic.Owner != null)
         {
             var asset = Path.GetFileNameWithoutExtension(relic.PackedIconPath);
             if (ByAsset.TryGetValue(asset, out var variant) && variant.TypeName == relic.GetType().Name)

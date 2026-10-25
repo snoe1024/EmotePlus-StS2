@@ -8,7 +8,7 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 /// <summary>Search metadata independent of wheel order, visibility and texture loading.</summary>
 internal static class EmoteSearch
 {
-    internal static readonly string[] Tags = ["Power", "Buff", "Debuff", "Relic", "Enchantment", "Potion", "Unused", "Ancient", "Character", "Creature", "Communicate", "Meme"];
+    internal static readonly string[] Tags = ["Power", "Buff", "Debuff", "Relic", "Enchantment", "Potion", "Unused", "Ancient", "Character", "Creature", "Communicate", "Meme", "Modded"];
 
     internal sealed record Entry(string Title, string Text, HashSet<string> Tags)
     {
@@ -77,6 +77,19 @@ internal static class EmoteSearch
                 words.Append(' ').Append(modelName).Append(' ').Append(LocString.Exists("monsters", monsterKey)
                     ? new LocString("monsters", monsterKey).GetFormattedText() : modelName);
             }
+        }
+        if (ModdedEmotes.TryDescribe(type, out var group, out var content))
+        {
+            tags.Add("Modded");
+            tags.Add(content.Category.ToString());
+            if (content.CharacterCookie) tags.Add("Character");
+            foreach (var tag in content.Tags ?? []) tags.Add(tag);
+            var modelTitle = content.LocTable != null && content.LocKey != null && LocString.Exists(content.LocTable, content.LocKey)
+                ? new LocString(content.LocTable, content.LocKey).GetFormattedText() : content.Title;
+            if (!hasLocalTitle) title = modelTitle;
+            words.Append(' ').Append(group.Name).Append(' ').Append(group.Key).Append(' ').Append(group.WorkshopId)
+                .Append(' ').AppendJoin(' ', group.Aliases).Append(' ').AppendJoin(' ', content.Aliases)
+                .Append(' ').Append(content.Title).Append(' ').Append(modelTitle).Append(' ').Append(content.TypeName);
         }
         return new Entry(title, Normalize(words.ToString()), tags);
     }

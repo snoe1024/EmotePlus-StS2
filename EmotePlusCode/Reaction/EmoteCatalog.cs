@@ -59,6 +59,9 @@ public static class EmoteCatalog
             definitions.Add(creature.Emote, new(creature.Emote, creature.AssetName + "_creature", creature.AssetName, EmoteCategory.Creature));
         foreach (var meme in MemeEmotes.All)
             definitions.Add(meme.Type, meme);
+        foreach (var group in ModdedEmotes.Groups)
+            foreach (var entry in group.Entries)
+                definitions.Add((EmoteType)entry.Id, new((EmoteType)entry.Id, entry.Name, entry.AssetName, entry.Category));
         if (definitions.Values.GroupBy(d => (d.Category, d.AssetName)).Any(g => g.Count() > 1))
             throw new InvalidOperationException("Duplicate emote artwork: map model variants to a single emote ID.");
         return definitions.Values.ToArray();

@@ -9,8 +9,8 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 /// <summary>Local, in-memory activity history. Entries are unique emote IDs, newest first.</summary>
 public static class RecentActivityEmotes
 {
-    /// <summary>Public API version for reading the local activity page.</summary>
-    public const int ApiVersion = 1;
+    /// <summary>Public API version for reading and recording local activity.</summary>
+    public const int ApiVersion = 2;
     private static readonly List<EmoteType> Recent = [];
     private static readonly HashSet<ModelId> Flashed = [];
     private static ICombatState? _combat;
@@ -30,16 +30,38 @@ public static class RecentActivityEmotes
         ResetCombat();
     }
 
+    internal static void StartRun(RunState state)
+    {
+        Clear();
+        // Launch has assigned the local NetId and both new/saved players already contain their relics.
+        var player = LocalContext.GetMe(state);
+        if (player == null) return;
+        foreach (var relic in player.Relics) Record(relic);
+    }
+
     internal static void ResetCombat() { Flashed.Clear(); _combat = null; _side = null; }
 
-    internal static void Record(EmoteType type)
+    /// <summary>
+    /// Records an explicitly selected emote locally. Call on the game main thread during a run.
+    /// Returns false for None, unregistered IDs or outside a run; true when accepted, including an unchanged front entry.
+    /// Moves duplicates to the front, keeps at most eight entries, and never sends or persists activity.
+    /// Unlike automatic model observation, explicit activity accepts every registered emote, including hidden ones.
+    /// </summary>
+    public static bool TryRecord(EmoteType type)
     {
-        if (!RunManager.Instance.IsInProgress || type == EmoteType.None || !CreatureEmotes.TracksActivity(type) ||
-            Recent.Count > 0 && Recent[0] == type) return;
+        if (!RunManager.Instance.IsInProgress || type == EmoteType.None || EmoteCatalog.Get(type).Type != type ||
+            !ModdedEmotes.IsAvailable(type)) return false;
+        if (Recent.Count > 0 && Recent[0] == type) return true;
         Recent.Remove(type);
         Recent.Insert(0, type);
         if (Recent.Count > 8) Recent.RemoveAt(8);
         Revision++;
+        return true;
+    }
+
+    internal static void Record(EmoteType type)
+    {
+        if (CreatureEmotes.TracksActivity(type)) TryRecord(type);
     }
 
     internal static void Record(AbstractModel? model)

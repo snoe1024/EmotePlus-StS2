@@ -128,5 +128,7 @@
 
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "StS1のバフアイコン",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "強化 バフ buff stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "考える 思考 悩む thonking thinking think hmm"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "考える 思考 悩む thonking thinking think hmm",
+  "EMOTEPLUS-TAG_MODDED.title": "Mod追加",
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "導入されているコンテンツ追加modのエモートです。"
 }
