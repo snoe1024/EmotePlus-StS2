@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "Значок усиления StS1 усиление сила сильнее buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "думать размышление задуматься thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "Из модов",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "Эмоции из установленных контентных модов."
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Эмоции из установленных контентных модов.",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "Найдено более 400 эмоций. Показаны только первые 400. Уточните поиск или выберите теги. Показать все и Скрыть все применяются ко всем результатам, включая пропущенные.",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Контентный мод",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Фильтр по источнику дополняет поиск и теги. В списке только моды с доступными поддерживаемыми эмоциями. Базовый контент включает эмоции, не требующие отдельного мода.",
+  "EMOTEPLUS-ALL_CONTENT.title": "Весь контент",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Базовый контент"
 }

@@ -57,6 +57,9 @@ public static class EmoteCatalog
             definitions.Add(character.Emote, new(character.Emote, character.AssetName + "_character", character.AssetName, EmoteCategory.Character));
         foreach (var creature in CreatureEmotes.All)
             definitions.Add(creature.Emote, new(creature.Emote, creature.AssetName + "_creature", creature.AssetName, EmoteCategory.Creature));
+        // Classify provenance before adding custom artwork and optional-mod definitions.
+        foreach (var type in definitions.Keys.ToArray())
+            definitions[type] = definitions[type] with { IsVanillaContent = true };
         foreach (var meme in MemeEmotes.All)
             definitions.Add(meme.Type, meme);
         foreach (var group in ModdedEmotes.Groups)

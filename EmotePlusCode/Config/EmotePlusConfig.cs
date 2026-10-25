@@ -157,6 +157,13 @@ public sealed class EmotePlusConfig : SimpleModConfig
         noResults.Visible = false;
         gridArea.AddChild(noResults);
         gridArea.AddChild(grid);
+        const int maxGridItems = VirtualEmoteGrid.Columns * 50;
+        var truncatedResults = CreateRawLabelControl(GetLabelText("FilterResultLimit"), 22);
+        truncatedResults.AutowrapMode = TextServer.AutowrapMode.WordSmart;
+        truncatedResults.SizeFlagsHorizontal = Control.SizeFlags.ExpandFill;
+        truncatedResults.MouseFilter = Control.MouseFilterEnum.Ignore;
+        truncatedResults.Visible = false;
+        gridArea.AddChild(truncatedResults);
         var browser = new HBoxContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
         browser.AddThemeConstantOverride("separation", 20);
         var filters = new VBoxContainer { CustomMinimumSize = new Vector2(180f, 0f) };
@@ -175,6 +182,21 @@ public sealed class EmotePlusConfig : SimpleModConfig
         var count = new Label();
         filters.AddChild(count);
         filters.AddChild(tagFlow);
+        var contentMods = ModdedEmotes.Groups
+            .Where(g => g.Entries.Any(e => ModdedEmotes.IsAvailable((EmoteType)e.Id)))
+            .OrderBy(g => g.Name, StringComparer.CurrentCultureIgnoreCase).ToArray();
+        var contentFilter = new OptionButton
+        {
+            SizeFlagsHorizontal = Control.SizeFlags.ExpandFill,
+            CustomMinimumSize = new Vector2(180f, 44f),
+        };
+        contentFilter.AddItem(GetLabelText("AllContent"));
+        contentFilter.AddItem(GetLabelText("VanillaContent"));
+        foreach (var mod in contentMods) contentFilter.AddItem(mod.Name);
+        contentFilter.Select(0);
+        AttachTip(contentFilter, "ContentModFilter");
+        filters.AddChild(new Label { Text = GetLabelText("ContentModFilter") });
+        filters.AddChild(contentFilter);
         browser.AddChild(filters);
         browser.AddChild(gridArea);
         box.AddChild(browser);
@@ -204,6 +226,8 @@ public sealed class EmotePlusConfig : SimpleModConfig
         var swapMode = false;
         int? selected = null; // swap mode: the first of the two emotes to swap
         var metadata = EmoteImages.WheelSlots.ToDictionary(t => t, EmoteSearch.Describe);
+        var contentGroups = metadata.Keys.ToDictionary(t => t,
+            t => ModdedEmotes.TryDescribe(t, out var group, out _) ? group.Key : null);
         EmoteType[] matchingEmotes = [];
 
         void UpdateCell(int index, Control cell)
@@ -226,15 +250,21 @@ public sealed class EmotePlusConfig : SimpleModConfig
         void Refresh()
         {
             var order = EmoteImages.WheelSlots;
+            var selection = contentFilter.Selected;
             var matches = Enumerable.Range(0, order.Count)
-                .Where(i => metadata[order[i]].Matches(search.Text, activeTags)).ToArray();
+                .Where(i => metadata[order[i]].Matches(search.Text, activeTags) &&
+                    (selection == 0 || (selection == 1 ? EmoteCatalog.Get(order[i]).IsVanillaContent
+                        : contentGroups[order[i]] == contentMods[selection - 2].Key))).ToArray();
             matchingEmotes = matches.Select(i => order[i]).ToArray();
-            grid.SetItems(matches);
+            // Keep bulk actions on the full result; only materialized rows are limited.
+            grid.SetItems(matches.Take(maxGridItems).ToArray());
+            truncatedResults.Visible = matches.Length > maxGridItems;
             grid.Visible = matches.Length > 0;
             noResults.Visible = matches.Length == 0;
             count.Text = $"{matches.Length} / {order.Count}";
         }
         search.TextChanged += _ => { selected = null; Refresh(); };
+        contentFilter.ItemSelected += _ => { selected = null; Refresh(); };
         foreach (var tag in EmoteSearch.Tags)
         {
             var toggle = new CheckButton { Text = GetLabelText("Tag" + tag) };
@@ -253,6 +283,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
             search.Text = "";
             activeTags.Clear();
             foreach (var toggle in tagButtons) toggle.SetPressedNoSignal(false);
+            contentFilter.Select(0);
             selected = null;
             Refresh();
         }));

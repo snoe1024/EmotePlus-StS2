@@ -15,4 +15,8 @@ public enum EmoteCategory
 }
 
 /// <summary>A stable emote identity, persistent settings key and its separately classified artwork.</summary>
-public sealed record EmoteDefinition(EmoteType Type, string Name, string AssetName, EmoteCategory Category);
+public sealed record EmoteDefinition(EmoteType Type, string Name, string AssetName, EmoteCategory Category)
+{
+    /// <summary>Whether the artwork represents base-game content, independently of its tags or directory.</summary>
+    public bool IsVanillaContent { get; init; }
+}

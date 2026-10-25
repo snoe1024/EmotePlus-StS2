@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "Icono de beneficio de StS1 beneficio mejora fuerza buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "pensar pensamiento duda thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "De mods",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes de mods de contenido instalados."
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes de mods de contenido instalados.",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "Hay más de 400 emotes coincidentes. Solo se muestran los primeros 400. Usa la búsqueda o las etiquetas para reducir los resultados. Mostrar todos y Ocultar todos se aplican a todos los resultados, incluidos los omitidos.",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Mod de contenido",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Filtra por origen junto con la búsqueda y las etiquetas. Solo aparecen mods con emotes compatibles disponibles. El contenido base incluye emotes que no requieren un mod específico.",
+  "EMOTEPLUS-ALL_CONTENT.title": "Todo el contenido",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Contenido base"
 }

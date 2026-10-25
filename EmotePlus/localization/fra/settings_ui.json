@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "Icône de bonus StS1 bonus renforcement force buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "penser réflexion hésitation thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "Mods",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes des mods de contenu installés."
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes des mods de contenu installés.",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "Plus de 400 emotes correspondent. Seuls les 400 premiers sont affichés. Affinez les résultats avec la recherche ou les tags. Tout afficher et Tout masquer concernent tous les résultats, y compris ceux qui sont omis.",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Mod de contenu",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Filtre par origine en plus de la recherche et des tags. Seuls les mods avec des emotes compatibles disponibles sont proposés. Le contenu de base inclut aussi les emotes sans mod requis.",
+  "EMOTEPLUS-ALL_CONTENT.title": "Tout le contenu",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Contenu de base"
 }

@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1 버프 아이콘 강화 버프 힘 buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "생각 고민 사고 thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "모드 추가",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "설치된 콘텐츠 모드의 이모트입니다."
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "설치된 콘텐츠 모드의 이모트입니다.",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "검색 결과가 400개를 초과하여 처음 400개만 표시합니다. 검색어나 태그로 결과를 좁혀 주세요. 모두 표시와 모두 숨기기는 생략된 이모트를 포함한 모든 검색 결과에 적용됩니다.",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "콘텐츠 모드",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "검색 및 태그 조건과 함께 출처로 필터링합니다. 지원되는 이모트를 사용할 수 있는 모드만 표시합니다. 바닐라 콘텐츠에는 특정 모드가 필요 없는 이모트도 포함됩니다.",
+  "EMOTEPLUS-ALL_CONTENT.title": "모든 콘텐츠",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "바닐라 콘텐츠"
 }

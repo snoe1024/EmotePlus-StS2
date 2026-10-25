@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1-Buffsymbol Buff Verstärkung stärker buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "denken nachdenken grübeln thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "Mod-Inhalte",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes aus installierten Inhaltsmods."
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes aus installierten Inhaltsmods.",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "Mehr als 400 Emotes gefunden. Nur die ersten 400 werden angezeigt. Grenze die Ergebnisse mit Suche oder Tags ein. Alle anzeigen und Alle ausblenden gelten weiterhin für alle Treffer, auch die nicht angezeigten.",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Inhaltsmod",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Filtert zusätzlich zu Suche und Tags nach Herkunft. Nur Mods mit verfügbaren unterstützten Emotes werden aufgeführt. Vanilla enthält auch Emotes ohne benötigten Inhaltsmod.",
+  "EMOTEPLUS-ALL_CONTENT.title": "Alle Inhalte",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Vanilla-Inhalte"
 }

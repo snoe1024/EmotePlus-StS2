@@ -8,7 +8,7 @@ namespace EmotePlus.EmotePlusCode.Reaction;
 /// <summary>Search metadata independent of wheel order, visibility and texture loading.</summary>
 internal static class EmoteSearch
 {
-    internal static readonly string[] Tags = ["Power", "Buff", "Debuff", "Relic", "Enchantment", "Potion", "Unused", "Ancient", "Character", "Creature", "Communicate", "Meme", "Modded"];
+    internal static readonly string[] Tags = ["Power", "Buff", "Debuff", "Relic", "Enchantment", "Potion", "Unused", "Ancient", "Character", "Creature", "Communicate", "Meme"];
 
     internal sealed record Entry(string Title, string Text, HashSet<string> Tags)
     {
@@ -80,7 +80,6 @@ internal static class EmoteSearch
         }
         if (ModdedEmotes.TryDescribe(type, out var group, out var content))
         {
-            tags.Add("Modded");
             tags.Add(content.Category.ToString());
             if (content.CharacterCookie) tags.Add("Character");
             foreach (var tag in content.Tags ?? []) tags.Add(tag);

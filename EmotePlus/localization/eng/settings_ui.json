@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1 Buff Icon buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "Modded",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes from installed content mods."
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "Emotes from installed content mods.",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "More than 400 emotes match. Only the first 400 are shown. Narrow the results using search or tags. Show All and Hide All still apply to every match, including omitted emotes.",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Content mod",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Filter by source in addition to search and tags. Only mods with available supported emotes are listed. Vanilla content also includes emotes that require no specific mod.",
+  "EMOTEPLUS-ALL_CONTENT.title": "All content",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Vanilla content"
 }

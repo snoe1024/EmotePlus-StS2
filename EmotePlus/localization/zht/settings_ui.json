@@ -106,5 +106,10 @@
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "StS1 增益圖示 強化 增益 力量 buff strength stronger sts1",
   "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "思考 想 猶豫 thonking thinking think hmm",
   "EMOTEPLUS-TAG_MODDED.title": "模組內容",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "已安裝內容模組中的表情。"
+  "EMOTEPLUS-TAG_MODDED.hover.desc": "已安裝內容模組中的表情。",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "符合條件的表情超過400個，僅顯示前400個。請使用搜尋或標籤縮小範圍。「全部顯示」和「全部隱藏」仍會套用至所有符合條件的結果，包含未顯示的表情。",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "內容模組",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "在搜尋和標籤條件之外，依表情來源篩選。僅列出有可用支援表情的模組。原版內容也包含不依賴特定模組的表情。",
+  "EMOTEPLUS-ALL_CONTENT.title": "全部內容",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "原版內容"
 }

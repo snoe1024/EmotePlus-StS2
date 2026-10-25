@@ -29,7 +29,7 @@
   "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "エモートをクリックすると、自分のホイールでの表示と非表示が切り替わります(隙間は詰められます)。すべて非表示にした場合は、すべて表示されます。\n他のプレイヤーが使用するエモートには影響しません。",
 
   "EMOTEPLUS-WHEEL_ORDER_IMAGE.title": "ホイール上での並び順",
-  "EMOTEPLUS-WHEEL_ORDER_IMAGE.hover.desc": "下のグリッドの1行が、ホイールの1ページに該当します。\nグリッドでの並び順が、そのまま1ページの右から時計回りに配置されます。\nシングルプレイでもエモートを有効にすると、実際にVキーで試せます。",
+  "EMOTEPLUS-WHEEL_ORDER_IMAGE.hover.desc": "下の一覧表示における1行が、ホイールの1ページに該当します。\n行での並び順が、そのまま1ページの右から時計回りに配置されます。\nシングルプレイでもエモートを有効にすると、実際にVキーで試せます。",
 
   "EMOTEPLUS-SWAP_MODE.title": "入れ替えモード",
   "EMOTEPLUS-SWAP_MODE.hover.desc": "エモートはドラッグで表示順を入れ替えられます。\nこのモードがオンだと、2度のクリックで2つを入れ替えます。",
@@ -41,13 +41,13 @@
   "EMOTEPLUS-VANILLA_ORDER.hover.desc": "オリジナルに存在する8個のエモートを、先頭に正しく並べます。\nそれ以外のエモートの順に影響しません。",
 
   "EMOTEPLUS-PACK_HIDDEN_EMOTES.title": "非表示を末尾へ",
-  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "非表示のエモートを末尾に移します。\nホイールに出るエモートが前に詰まり、グリッドの1行がホイールの1ページと一致します。",
+  "EMOTEPLUS-PACK_HIDDEN_EMOTES.hover.desc": "非表示のエモートを末尾に移します。\nホイールに出るエモートが前に詰まり、1行がホイールの1ページと一致します。",
 
   "EMOTEPLUS-SHOW_ALL_EMOTES.title": "すべて表示",
-  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "現在の検索・フィルター条件でグリッドに表示されているすべてのエモートを、ホイールに表示します。\nスクロール範囲外の一致するエモートも対象です。",
+  "EMOTEPLUS-SHOW_ALL_EMOTES.hover.desc": "現在の検索・フィルター条件でに当てはまるすべてのエモートを、ホイールに表示します。\nスクロール範囲外の一致するエモートも対象です。",
 
   "EMOTEPLUS-HIDE_ALL_EMOTES.title": "すべて非表示",
-  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "現在の検索・フィルター条件でグリッドに表示されているすべてのエモートを、ホイールから非表示にします。\nスクロール範囲外の一致するエモートも対象です。全エモートが非表示の場合は、全て表示扱いになります。",
+  "EMOTEPLUS-HIDE_ALL_EMOTES.hover.desc": "現在の検索・フィルター条件でに当てはまるすべてのエモートを、ホイールから非表示にします。\nスクロール範囲外の一致するエモートも対象です。全エモートが非表示の場合は、全て表示扱いになります。",
 
 
   "EMOTEPLUS-EMOTE_SEARCH.title": "エモート検索",
@@ -83,8 +83,16 @@
   "EMOTEPLUS-TAG_CREATURE.title": "クリーチャー",
   "EMOTEPLUS-TAG_CREATURE.hover.desc": "アクティビティページを有効にしていると、そのクリーチャーに遭遇した際、カーソルで注目した際に追加されます。",
 
+  "EMOTEPLUS-CONTENT_MOD_FILTER.title": "コンテンツmod",
+  "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "エモートの出典となった導入済みのmodで絞り込みます。エモートに対応しているmodがある場合にのみ、選択できます。",
+
+  "EMOTEPLUS-ALL_CONTENT.title": "すべてのコンテンツ",
+  "EMOTEPLUS-VANILLA_CONTENT.title": "バニラのコンテンツ",
+
   "EMOTEPLUS-NO_RECENT_ACTIVITY": "最近のアクティビティはありません",
   "EMOTEPLUS-NO_FILTER_RESULT": "フィルター条件に一致するエモートはありません",
+  "EMOTEPLUS-FILTER_RESULT_LIMIT.title": "先頭400件のみ表示しています。検索やタグで絞り込み、数を減らしてください。",
+
 
   "EMOTEPLUS-EMOTE_EXCLAIM.title": "注目",
   "EMOTEPLUS-EMOTE_EXCLAIM.aliases": "注意 警告 びっくり 驚き 感嘆符 alert warning wow exclamation",
@@ -128,7 +136,5 @@
 
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "StS1のバフアイコン",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "強化 バフ buff stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "考える 思考 悩む thonking thinking think hmm",
-  "EMOTEPLUS-TAG_MODDED.title": "Mod追加",
-  "EMOTEPLUS-TAG_MODDED.hover.desc": "導入されているコンテンツ追加modのエモートです。"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "考える 思考 悩む thonking thinking think hmm"
 }
