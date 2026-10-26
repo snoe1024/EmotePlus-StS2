@@ -1,0 +1,972 @@
+{
+  "Key": "ovelle",
+  "ModIds": [
+    "Ovelle"
+  ],
+  "Name": "奥薇乐MOD",
+  "WorkshopId": "3749703466",
+  "Aliases": [
+    "Ovelle"
+  ],
+  "Entries": [
+    {
+      "Id": 161000,
+      "Name": "ovelle_battle_axe_power_power",
+      "AssetName": "mods/ovelle/battle_axe_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Power.BattleAxePower",
+      "Title": "Battle Axe",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_BATTLE_AXE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 163000,
+      "Name": "ovelle_temporary_debt_enchantment_enchantment",
+      "AssetName": "mods/ovelle/temporary_debt_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Enchantments.TemporaryDebtEnchantment",
+      "Title": "Term Debt",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "OVELLE_ENCHANTMENT_TEMPORARY_DEBT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 162000,
+      "Name": "ovelle_agile_pincer_relic_relic",
+      "AssetName": "mods/ovelle/agile_pincer_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.AgilePincerRelic",
+      "Title": "Agile Pincer",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_AGILE_PINCER_RELIC.title"
+    },
+    {
+      "Id": 162001,
+      "Name": "ovelle_bloodline_for32_people_relic_relic",
+      "AssetName": "mods/ovelle/bloodline_for32_people_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.BloodlineFor32PeopleRelic",
+      "Title": "Bloodline for 32",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_BLOODLINE_FOR32_PEOPLE_RELIC.title"
+    },
+    {
+      "Id": 162002,
+      "Name": "ovelle_dragon_egg_relic_relic",
+      "AssetName": "mods/ovelle/dragon_egg_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.DragonEggRelic",
+      "Title": "Dragon Egg",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_DRAGON_EGG_RELIC.title"
+    },
+    {
+      "Id": 162003,
+      "Name": "ovelle_escape_speed_relic_relic",
+      "AssetName": "mods/ovelle/escape_speed_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.EscapeSpeedRelic",
+      "Title": "Escape Velocity",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_ESCAPE_SPEED_RELIC.title"
+    },
+    {
+      "Id": 162004,
+      "Name": "ovelle_experimental_serum_relic_relic",
+      "AssetName": "mods/ovelle/experimental_serum_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.ExperimentalSerumRelic",
+      "Title": "Experimental Serum",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_EXPERIMENTAL_SERUM_RELIC.title"
+    },
+    {
+      "Id": 162005,
+      "Name": "ovelle_heroine_relic_relic",
+      "AssetName": "mods/ovelle/heroine_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.HeroineRelic",
+      "Title": "Heroine",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_HEROINE_RELIC.title",
+      "TypeAliases": [
+        "Ovelle.OvelleCode.Relics.SuccubusBloodlineRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 162006,
+      "Name": "ovelle_inkshadow_painting_relic_relic",
+      "AssetName": "mods/ovelle/inkshadow_painting_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.InkshadowPaintingRelic",
+      "Title": "Inkshadow Painting",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_INKSHADOW_PAINTING_RELIC.title"
+    },
+    {
+      "Id": 162007,
+      "Name": "ovelle_inner_explosion_relic_relic",
+      "AssetName": "mods/ovelle/inner_explosion_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.InnerExplosionRelic",
+      "Title": "Inner Explosion",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_INNER_EXPLOSION_RELIC.title"
+    },
+    {
+      "Id": 162008,
+      "Name": "ovelle_matriarch_shell_relic_relic",
+      "AssetName": "mods/ovelle/matriarch_shell_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.MatriarchShellRelic",
+      "Title": "Matriarch's Shell",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_MATRIARCH_SHELL_RELIC.title"
+    },
+    {
+      "Id": 162009,
+      "Name": "ovelle_mother_red_scarf_relic_relic",
+      "AssetName": "mods/ovelle/mother_red_scarf_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.MotherRedScarfRelic",
+      "Title": "Mother's Red Scarf",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_MOTHER_RED_SCARF_RELIC.title"
+    },
+    {
+      "Id": 162010,
+      "Name": "ovelle_nicolit_bond_relic_relic",
+      "AssetName": "mods/ovelle/nicolit_bond_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.NicolitBondRelic",
+      "Title": "Bond of Friendship",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_NICOLIT_BOND_RELIC.title"
+    },
+    {
+      "Id": 162011,
+      "Name": "ovelle_nicolit_relic_relic",
+      "AssetName": "mods/ovelle/nicolit_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.NicolitRelic",
+      "Title": "Buddy - Nicolett",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_NICOLIT_RELIC.title"
+    },
+    {
+      "Id": 162012,
+      "Name": "ovelle_omniscient_scale_relic_relic",
+      "AssetName": "mods/ovelle/omniscient_scale_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.OmniscientScaleRelic",
+      "Title": "Scale of Omniscience",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_OMNISCIENT_SCALE_RELIC.title"
+    },
+    {
+      "Id": 162013,
+      "Name": "ovelle_potion_mastery_relic_relic",
+      "AssetName": "mods/ovelle/potion_mastery_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.PotionMasteryRelic",
+      "Title": "Potion Mastery",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_POTION_MASTERY_RELIC.title"
+    },
+    {
+      "Id": 162014,
+      "Name": "ovelle_quiver_relic_relic",
+      "AssetName": "mods/ovelle/quiver_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.QuiverRelic",
+      "Title": "Quiver",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_QUIVER_RELIC.title"
+    },
+    {
+      "Id": 162015,
+      "Name": "ovelle_ritual_antler_relic_relic",
+      "AssetName": "mods/ovelle/ritual_antler_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.RitualAntlerRelic",
+      "Title": "Ritual Antler",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_RITUAL_ANTLER_RELIC.title"
+    },
+    {
+      "Id": 162016,
+      "Name": "ovelle_sands_of_time_relic_relic",
+      "AssetName": "mods/ovelle/sands_of_time_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.SandsOfTimeRelic",
+      "Title": "Sands of Time",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_SANDS_OF_TIME_RELIC.title"
+    },
+    {
+      "Id": 162017,
+      "Name": "ovelle_soulbound_chains_relic_relic",
+      "AssetName": "mods/ovelle/soulbound_chains_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.SoulboundChainsRelic",
+      "Title": "Soulbound Chains",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_SOULBOUND_CHAINS_RELIC.title"
+    },
+    {
+      "Id": 162018,
+      "Name": "ovelle_soul_calling_voice_relic_relic",
+      "AssetName": "mods/ovelle/soul_calling_voice_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.SoulCallingVoiceRelic",
+      "Title": "Soul-Calling Voice",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_SOUL_CALLING_VOICE_RELIC.title"
+    },
+    {
+      "Id": 162019,
+      "Name": "ovelle_succubus_awakening_relic_relic",
+      "AssetName": "mods/ovelle/succubus_awakening_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.SuccubusAwakeningRelic",
+      "Title": "Succubus Awakening",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_SUCCUBUS_AWAKENING_RELIC.title"
+    },
+    {
+      "Id": 162021,
+      "Name": "ovelle_vow_of_chastity_relic_relic",
+      "AssetName": "mods/ovelle/vow_of_chastity_relic",
+      "Category": "Relic",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Relics.VowOfChastityRelic",
+      "Title": "Vow of Chastity",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "OVELLE_RELIC_VOW_OF_CHASTITY_RELIC.title"
+    },
+    {
+      "Id": 161001,
+      "Name": "ovelle_arrow_power_power",
+      "AssetName": "mods/ovelle/arrow_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ArrowPower",
+      "Title": "Arrow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_ARROW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161002,
+      "Name": "ovelle_chest_bound_power_power",
+      "AssetName": "mods/ovelle/chest_bound_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ChestBoundPower",
+      "Title": "Binding (Chest)",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_CHEST_BOUND_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161003,
+      "Name": "ovelle_dragon_power_power",
+      "AssetName": "mods/ovelle/dragon_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.DragonPower",
+      "Title": "Dragon Power",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_DRAGON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161004,
+      "Name": "ovelle_knocked_down_power_power",
+      "AssetName": "mods/ovelle/knocked_down_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.KnockedDownPower",
+      "Title": "Knocked Down",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_KNOCKED_DOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161005,
+      "Name": "ovelle_legs_bound_power_power",
+      "AssetName": "mods/ovelle/legs_bound_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.LegsBoundPower",
+      "Title": "Binding (Legs)",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_LEGS_BOUND_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161006,
+      "Name": "ovelle_suppressed_power_power",
+      "AssetName": "mods/ovelle/suppressed_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.SuppressedPower",
+      "Title": "Suppressed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_SUPPRESSED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161007,
+      "Name": "ovelle_medium_damage_power_power",
+      "AssetName": "mods/ovelle/medium_damage_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.MediumDamagePower",
+      "Title": "Medium Damage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_MEDIUM_DAMAGE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161008,
+      "Name": "ovelle_violated_oral_power_power",
+      "AssetName": "mods/ovelle/violated_oral_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ViolatedOralPower",
+      "Title": "Violated - Oral",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_VIOLATED_ORAL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "Ovelle.OvelleCode.Powers.DamageHalvedThisTurnPower"
+      ]
+    },
+    {
+      "Id": 161009,
+      "Name": "ovelle_violated_ass_power_power",
+      "AssetName": "mods/ovelle/violated_ass_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ViolatedAssPower",
+      "Title": "Violated - Ass",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_VIOLATED_ASS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161010,
+      "Name": "ovelle_violated_pussy_power_power",
+      "AssetName": "mods/ovelle/violated_pussy_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ViolatedPussyPower",
+      "Title": "Violated - Pussy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_VIOLATED_PUSSY_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161011,
+      "Name": "ovelle_violated_breasts_power_power",
+      "AssetName": "mods/ovelle/violated_breasts_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ViolatedBreastsPower",
+      "Title": "Violated - Breasts",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_VIOLATED_BREASTS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161012,
+      "Name": "ovelle_frozen_earth_power_power",
+      "AssetName": "mods/ovelle/frozen_earth_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.FrozenEarthPower",
+      "Title": "Frozen Earth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_FROZEN_EARTH_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161013,
+      "Name": "ovelle_ice_power_power",
+      "AssetName": "mods/ovelle/ice_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.IcePower",
+      "Title": "Freeze",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_ICE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161014,
+      "Name": "ovelle_sword_and_shield_power_power",
+      "AssetName": "mods/ovelle/sword_and_shield_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.SwordAndShieldPower",
+      "Title": "Sword & Shield",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_SWORD_AND_SHIELD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161015,
+      "Name": "ovelle_dagger_power_power",
+      "AssetName": "mods/ovelle/dagger_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.DaggerPower",
+      "Title": "Dagger",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_DAGGER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161016,
+      "Name": "ovelle_heavy_damage_power_power",
+      "AssetName": "mods/ovelle/heavy_damage_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.HeavyDamagePower",
+      "Title": "Heavy Damage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_HEAVY_DAMAGE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161017,
+      "Name": "ovelle_heavenly_maiden_robe_power_power",
+      "AssetName": "mods/ovelle/heavenly_maiden_robe_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.HeavenlyMaidenRobePower",
+      "Title": "Heavenly Maiden's Robe",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_HEAVENLY_MAIDEN_ROBE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161018,
+      "Name": "ovelle_conductive_power_power",
+      "AssetName": "mods/ovelle/conductive_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ConductivePower",
+      "Title": "Conductive",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_CONDUCTIVE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161019,
+      "Name": "ovelle_earth_power_power",
+      "AssetName": "mods/ovelle/earth_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.EarthPower",
+      "Title": "Crystal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_EARTH_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161020,
+      "Name": "ovelle_cursed_demon_sword_power_power",
+      "AssetName": "mods/ovelle/cursed_demon_sword_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.CursedDemonSwordPower",
+      "Title": "Cursed Demon Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_CURSED_DEMON_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161021,
+      "Name": "ovelle_pleasure_power_power",
+      "AssetName": "mods/ovelle/pleasure_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.PleasurePower",
+      "Title": "Pleasure Damage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_PLEASURE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161022,
+      "Name": "ovelle_nicolit_cooldown_power_power",
+      "AssetName": "mods/ovelle/nicolit_cooldown_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.NicolitCooldownPower",
+      "Title": "Buddy Fatigue",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_NICOLIT_COOLDOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161023,
+      "Name": "ovelle_elven_bow_power_power",
+      "AssetName": "mods/ovelle/elven_bow_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ElvenBowPower",
+      "Title": "Elven Bow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_ELVEN_BOW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161025,
+      "Name": "ovelle_mage_robe_power_power",
+      "AssetName": "mods/ovelle/mage_robe_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.MageRobePower",
+      "Title": "Mage Robe",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_MAGE_ROBE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161026,
+      "Name": "ovelle_staff_power_power",
+      "AssetName": "mods/ovelle/staff_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.StaffPower",
+      "Title": "Staff",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_STAFF_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161027,
+      "Name": "ovelle_titan_axe_power_power",
+      "AssetName": "mods/ovelle/titan_axe_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.TitanAxePower",
+      "Title": "Titan Axe",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_TITAN_AXE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161028,
+      "Name": "ovelle_sea_serpent_fang_power_power",
+      "AssetName": "mods/ovelle/sea_serpent_fang_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.SeaSerpentFangPower",
+      "Title": "Sea Serpent Fang",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_SEA_SERPENT_FANG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161029,
+      "Name": "ovelle_undines_grace_power_power",
+      "AssetName": "mods/ovelle/undines_grace_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.UndinesGracePower",
+      "Title": "Undine's Grace",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_UNDINES_GRACE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161030,
+      "Name": "ovelle_water_power_power",
+      "AssetName": "mods/ovelle/water_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.WaterPower",
+      "Title": "Wet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_WATER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161031,
+      "Name": "ovelle_flame_demon_sword_power_power",
+      "AssetName": "mods/ovelle/flame_demon_sword_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.FlameDemonSwordPower",
+      "Title": "Flame Demon Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_FLAME_DEMON_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161032,
+      "Name": "ovelle_fire_power_power",
+      "AssetName": "mods/ovelle/fire_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.FirePower",
+      "Title": "Burn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_FIRE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161033,
+      "Name": "ovelle_exploding_flame_power_power",
+      "AssetName": "mods/ovelle/exploding_flame_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ExplodingFlamePower",
+      "Title": "Exploding Flame",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_EXPLODING_FLAME_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161034,
+      "Name": "ovelle_lunar_dual_swords_power_power",
+      "AssetName": "mods/ovelle/lunar_dual_swords_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.LunarDualSwordsPower",
+      "Title": "Lunar Dual Swords",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_LUNAR_DUAL_SWORDS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161035,
+      "Name": "ovelle_leather_armor_power_power",
+      "AssetName": "mods/ovelle/leather_armor_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.LeatherArmorPower",
+      "Title": "Leather Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_LEATHER_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161036,
+      "Name": "ovelle_intact_clothes_power_power",
+      "AssetName": "mods/ovelle/intact_clothes_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.IntactClothesPower",
+      "Title": "Clothed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_INTACT_CLOTHES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161037,
+      "Name": "ovelle_short_sword_power_power",
+      "AssetName": "mods/ovelle/short_sword_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ShortSwordPower",
+      "Title": "Short Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_SHORT_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161038,
+      "Name": "ovelle_chestplate_power_power",
+      "AssetName": "mods/ovelle/chestplate_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ChestplatePower",
+      "Title": "Chestplate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_CHESTPLATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161039,
+      "Name": "ovelle_hecates_shining_fingertips_power_power",
+      "AssetName": "mods/ovelle/hecates_shining_fingertips_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.HecatesShiningFingertipsPower",
+      "Title": "Hecate's Shining Fingertips",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_HECATES_SHINING_FINGERTIPS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161040,
+      "Name": "ovelle_radiant_power_power",
+      "AssetName": "mods/ovelle/radiant_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.RadiantPower",
+      "Title": "Radiant",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_RADIANT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161041,
+      "Name": "ovelle_longsword_power_power",
+      "AssetName": "mods/ovelle/longsword_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.LongswordPower",
+      "Title": "Longsword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_LONGSWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161042,
+      "Name": "ovelle_longbow_power_power",
+      "AssetName": "mods/ovelle/longbow_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.LongbowPower",
+      "Title": "Longbow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_LONGBOW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161043,
+      "Name": "ovelle_lance_power_power",
+      "AssetName": "mods/ovelle/lance_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.LancePower",
+      "Title": "Lance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_LANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 161044,
+      "Name": "ovelle_wind_power_power",
+      "AssetName": "mods/ovelle/wind_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.WindPower",
+      "Title": "Wind Wrap",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_WIND_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 161045,
+      "Name": "ovelle_paralysis_power_power",
+      "AssetName": "mods/ovelle/paralysis_power",
+      "Category": "Power",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Powers.ParalysisPower",
+      "Title": "Paralysis",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OVELLE_POWER_PARALYSIS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 165000,
+      "Name": "ovelle_ovelle_character_character",
+      "AssetName": "mods/ovelle/ovelle_character",
+      "Category": "Character",
+      "Assembly": "Ovelle",
+      "TypeName": "Ovelle.OvelleCode.Characters.OvelleCharacter",
+      "Title": "Ovelle",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "OVELLE_CHARACTER_OVELLE_CHARACTER.title",
+      "CookieEmoteId": 2319
+    }
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "Key": "little_wizard",
+  "ModIds": [
+    "LittleWizard"
+  ],
+  "Name": "LittleWizard",
+  "WorkshopId": "3747560296",
+  "Aliases": [
+    "Little Wizard",
+    "小さな魔法使い"
+  ],
+  "Entries": [
+    {
+      "Id": 92000,
+      "Name": "little_wizard_apprentice_codex_relic",
+      "AssetName": "mods/little_wizard/little_wizard/apprentice_codex",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.ApprenticeCodex",
+      "Title": "Apprentice Codex",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-APPRENTICE_CODEX.title"
+    },
+    {
+      "Id": 92001,
+      "Name": "little_wizard_arcane_tome_relic",
+      "AssetName": "mods/little_wizard/little_wizard/arcane_tome",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.ArcaneTome",
+      "Title": "Arcane Tome",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-ARCANE_TOME.title"
+    },
+    {
+      "Id": 92002,
+      "Name": "little_wizard_elemental_gem_relic",
+      "AssetName": "mods/little_wizard/little_wizard/elemental_gem",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.ElementalGem",
+      "Title": "Elemental Gem",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-ELEMENTAL_GEM.title"
+    },
+    {
+      "Id": 92003,
+      "Name": "little_wizard_elemental_ore_relic",
+      "AssetName": "mods/little_wizard/little_wizard/elemental_ore",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.ElementalOre",
+      "Title": "Elemental Ore",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-ELEMENTAL_ORE.title"
+    },
+    {
+      "Id": 92004,
+      "Name": "little_wizard_elemental_pendant_relic",
+      "AssetName": "mods/little_wizard/little_wizard/elemental_pendant",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.ElementalPendant",
+      "Title": "Elemental Pendant",
+      "Aliases": [
+        "属性のぺんだんと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-ELEMENTAL_PENDANT.title"
+    },
+    {
+      "Id": 92005,
+      "Name": "little_wizard_fire_element_gem_relic",
+      "AssetName": "mods/little_wizard/little_wizard/fire_element_gem",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.FireElementGem",
+      "Title": "Fire Element Gem",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-FIRE_ELEMENT_GEM.title"
+    },
+    {
+      "Id": 92006,
+      "Name": "little_wizard_handwriting_relic",
+      "AssetName": "mods/little_wizard/little_wizard/handwriting",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.Handwriting",
+      "Title": "Handwriting",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-HANDWRITING.title"
+    },
+    {
+      "Id": 92007,
+      "Name": "little_wizard_ritual_list_relic",
+      "AssetName": "mods/little_wizard/little_wizard/ritual_list",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.RitualList",
+      "Title": "Ritual List",
+      "Aliases": [
+        "儀式りすと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-RITUAL_LIST.title"
+    },
+    {
+      "Id": 92008,
+      "Name": "little_wizard_undead_essence_relic",
+      "AssetName": "mods/little_wizard/little_wizard/undead_essence",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Relics.UndeadEssence",
+      "Title": "Undead Essence",
+      "Aliases": [
+        "不死のえっせんす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LITTLEWIZARD-UNDEAD_ESSENCE.title"
+    },
+    {
+      "Id": 91000,
+      "Name": "little_wizard_stun_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/stun_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.StunPower",
+      "Title": "Stun",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-STUN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91001,
+      "Name": "little_wizard_earth_element_power",
+      "AssetName": "mods/little_wizard/little_wizard/earth_element",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Elements.EarthElement",
+      "Title": "Earth Element",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-EARTH_ELEMENT.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91002,
+      "Name": "little_wizard_fire_element_power",
+      "AssetName": "mods/little_wizard/little_wizard/fire_element",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Elements.FireElement",
+      "Title": "Fire Element",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-FIRE_ELEMENT.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91003,
+      "Name": "little_wizard_water_element_power",
+      "AssetName": "mods/little_wizard/little_wizard/water_element",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Elements.WaterElement",
+      "Title": "Water Element",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WATER_ELEMENT.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91004,
+      "Name": "little_wizard_fire_earth_reactor_power",
+      "AssetName": "mods/little_wizard/little_wizard/fire_earth_reactor",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Elements.Reacts.FireEarthReactor",
+      "Title": "Fire-Earth Synergy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-FIRE_EARTH_REACTOR.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91005,
+      "Name": "little_wizard_fire_water_reactor_power",
+      "AssetName": "mods/little_wizard/little_wizard/fire_water_reactor",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Elements.Reacts.FireWaterReactor",
+      "Title": "Fire-Water Synergy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-FIRE_WATER_REACTOR.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91006,
+      "Name": "little_wizard_water_earth_reactor_power",
+      "AssetName": "mods/little_wizard/little_wizard/water_earth_reactor",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Elements.Reacts.WaterEarthReactor",
+      "Title": "Water-Earth Synergy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WATER_EARTH_REACTOR.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91007,
+      "Name": "little_wizard_brew_potions_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/brew_potions_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.BrewPotionsPower",
+      "Title": "Brew Potions",
+      "Aliases": [
+        "ぽーしょん調合"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-BREW_POTIONS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91008,
+      "Name": "little_wizard_burn_everything_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/burn_everything_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.BurnEverythingPower",
+      "Title": "Burn Everything",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-BURN_EVERYTHING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91009,
+      "Name": "little_wizard_could_not_put_it_down_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/could_not_put_it_down_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.CouldNotPutItDownPower",
+      "Title": "Could Not Put It Down",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-COULD_NOT_PUT_IT_DOWN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91010,
+      "Name": "little_wizard_deep_thought_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/deep_thought_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.DeepThoughtPower",
+      "Title": "Deep Thought",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-DEEP_THOUGHT_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 91011,
+      "Name": "little_wizard_element_blessing_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/element_blessing_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ElementBlessingPower",
+      "Title": "Element Blessing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-ELEMENT_BLESSING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91012,
+      "Name": "little_wizard_emerge_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/emerge_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.EmergePower",
+      "Title": "Emerge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-EMERGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91013,
+      "Name": "little_wizard_explore_taboo_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/explore_taboo_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ExploreTabooPower",
+      "Title": "Explore Taboo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-EXPLORE_TABOO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91014,
+      "Name": "little_wizard_flustered_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/flustered_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.FlusteredPower",
+      "Title": "Flustered",
+      "Aliases": [
+        "ぱにっく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-FLUSTERED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91015,
+      "Name": "little_wizard_focused_casting_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/focused_casting_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.FocusedCastingPower",
+      "Title": "Focused Casting",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-FOCUSED_CASTING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91016,
+      "Name": "little_wizard_gather_elements_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/gather_elements_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.GatherElementsPower",
+      "Title": "Gather Elements",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-GATHER_ELEMENTS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91017,
+      "Name": "little_wizard_gather_elements_upgrade_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/gather_elements_upgrade_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.GatherElementsUpgradePower",
+      "Title": "Gather Elements+",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-GATHER_ELEMENTS_UPGRADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91018,
+      "Name": "little_wizard_guidance_mark_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/guidance_mark_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.GuidanceMarkPower",
+      "Title": "Slow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-GUIDANCE_MARK_POWER.title",
+      "Tags": [
+        "Buff",
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "LittleWizard.LittleWizardCode.Powers.Cards.GuidancePower"
+      ]
+    },
+    {
+      "Id": 91020,
+      "Name": "little_wizard_ignite_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/ignite_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.IgnitePower",
+      "Title": "Ignite",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-IGNITE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91021,
+      "Name": "little_wizard_mana_burst_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/mana_burst_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ManaBurstPower",
+      "Title": "Mana Burst",
+      "Aliases": [
+        "まなばーすと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-MANA_BURST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91022,
+      "Name": "little_wizard_mana_burst_upgrade_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/mana_burst_upgrade_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ManaBurstUpgradePower",
+      "Title": "Mana Burst+",
+      "Aliases": [
+        "まなばーすと+"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-MANA_BURST_UPGRADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91023,
+      "Name": "little_wizard_manager_master_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/manager_master_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ManagerMasterPower",
+      "Title": "Manager Master",
+      "Aliases": [
+        "えなじーの残滓"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-MANAGER_MASTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91024,
+      "Name": "little_wizard_mana_shield_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/mana_shield_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ManaShieldPower",
+      "Title": "Mana Shield",
+      "Aliases": [
+        "まなしーるど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-MANA_SHIELD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91025,
+      "Name": "little_wizard_mana_surge_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/mana_surge_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ManaSurgePower",
+      "Title": "Mana Surge",
+      "Aliases": [
+        "まなさーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-MANA_SURGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91026,
+      "Name": "little_wizard_oceanus_form_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/oceanus_form_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.OceanusFormPower",
+      "Title": "Oceanus Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-OCEANUS_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91027,
+      "Name": "little_wizard_rock_wall_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/rock_wall_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.RockWallPower",
+      "Title": "Rock Wall",
+      "Aliases": [
+        "ろっくうぉーる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-ROCK_WALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91028,
+      "Name": "little_wizard_simple_trick_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/simple_trick_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.SimpleTrickPower",
+      "Title": "Simple Trick",
+      "Aliases": [
+        "簡単なとりっく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-SIMPLE_TRICK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91029,
+      "Name": "little_wizard_skyfire_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/skyfire_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.SkyfirePower",
+      "Title": "Skyfire",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-SKYFIRE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91030,
+      "Name": "little_wizard_thesis_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/thesis_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.ThesisPower",
+      "Title": "Thesis",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-THESIS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91031,
+      "Name": "little_wizard_unlearned_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/unlearned_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.UnlearnedPower",
+      "Title": "Unlearned",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-UNLEARNED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91032,
+      "Name": "little_wizard_warmup_beam_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/warmup_beam_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.WarmupBeamPower",
+      "Title": "Warmup Beam",
+      "Aliases": [
+        "予熱びーむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WARMUP_BEAM_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91033,
+      "Name": "little_wizard_water_under_the_bridge_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/water_under_the_bridge_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.WaterUnderTheBridgePower",
+      "Title": "Water Under The Bridge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WATER_UNDER_THE_BRIDGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91034,
+      "Name": "little_wizard_water_vapour_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/water_vapour_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.WaterVapourPower",
+      "Title": "Water Vapour",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WATER_VAPOUR_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 91035,
+      "Name": "little_wizard_wild_magic_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/wild_magic_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.WildMagicPower",
+      "Title": "Wild Magic",
+      "Aliases": [
+        "わいるどまじっく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WILD_MAGIC_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 91036,
+      "Name": "little_wizard_wind_technique_power_power",
+      "AssetName": "mods/little_wizard/little_wizard/wind_technique_power",
+      "Category": "Power",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Powers.Cards.WindTechniquePower",
+      "Title": "Fly",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LITTLEWIZARD-WIND_TECHNIQUE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 95000,
+      "Name": "little_wizard_little_wizard_character",
+      "AssetName": "mods/little_wizard/little_wizard/little_wizard",
+      "Category": "Character",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Character.LittleWizard",
+      "Title": "The Little Wizard",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "LITTLEWIZARD-LITTLE_WIZARD.title"
+    },
+    {
+      "Id": 92009,
+      "Name": "little_wizard_little_wizard_yummy_cookie_relic",
+      "AssetName": "mods/little_wizard/little_wizard/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "LittleWizard",
+      "TypeName": "LittleWizard.LittleWizardCode.Character.LittleWizard",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

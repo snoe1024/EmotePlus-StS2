@@ -1,0 +1,2354 @@
+{
+  "Key": "pikachu",
+  "ModIds": [
+    "PikaMod"
+  ],
+  "Name": "PikaMod",
+  "WorkshopId": "3748191435",
+  "Aliases": [
+    "PikaMod"
+  ],
+  "Entries": [
+    {
+      "Id": 222000,
+      "Name": "pikachu_acro_bike_relic_relic",
+      "AssetName": "mods/pikachu/acro_bike_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.AcroBikeRelic",
+      "Title": "Acro Bike",
+      "Aliases": [
+        "あくろさいくる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_ACRO_BIKE_RELIC.title"
+    },
+    {
+      "Id": 222001,
+      "Name": "pikachu_bond_relic_relic",
+      "AssetName": "mods/pikachu/bond_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.BondRelic",
+      "Title": "Bond",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_BOND_RELIC.title",
+      "TypeAliases": [
+        "PikaMod.PikaModCode.Relics.BondStarRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 222003,
+      "Name": "pikachu_bug_spray_relic_relic",
+      "AssetName": "mods/pikachu/bug_spray_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.BugSprayRelic",
+      "Title": "Repel",
+      "Aliases": [
+        "むしよけすぷれー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_BUG_SPRAY_RELIC.title"
+    },
+    {
+      "Id": 222004,
+      "Name": "pikachu_butterfree_companion_relic_relic",
+      "AssetName": "mods/pikachu/butterfree_companion_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.ButterfreeCompanionRelic",
+      "Title": "Companion - Butterfree",
+      "Aliases": [
+        "仲間：ばたふりー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_BUTTERFREE_COMPANION_RELIC.title"
+    },
+    {
+      "Id": 222005,
+      "Name": "pikachu_c001_sneasel_relic_relic",
+      "AssetName": "mods/pikachu/c001_sneasel_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c001SneaselRelic",
+      "Title": "Sneasel",
+      "Aliases": [
+        "にゅーら"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C001_SNEASEL_RELIC.title"
+    },
+    {
+      "Id": 222006,
+      "Name": "pikachu_c002_krokorok_relic_relic",
+      "AssetName": "mods/pikachu/c002_krokorok_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c002KrokorokRelic",
+      "Title": "Krokorok",
+      "Aliases": [
+        "わるびる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C002_KROKOROK_RELIC.title"
+    },
+    {
+      "Id": 222007,
+      "Name": "pikachu_c003_spiritomb_relic_relic",
+      "AssetName": "mods/pikachu/c003_spiritomb_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c003SpiritombRelic",
+      "Title": "Spiritomb",
+      "Aliases": [
+        "みかるげ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C003_SPIRITOMB_RELIC.title"
+    },
+    {
+      "Id": 222008,
+      "Name": "pikachu_c004_scrafty_relic_relic",
+      "AssetName": "mods/pikachu/c004_scrafty_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c004ScraftyRelic",
+      "Title": "Scrafty",
+      "Aliases": [
+        "ずるずきん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C004_SCRAFTY_RELIC.title"
+    },
+    {
+      "Id": 222009,
+      "Name": "pikachu_c005_metang_relic_relic",
+      "AssetName": "mods/pikachu/c005_metang_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c005MetangRelic",
+      "Title": "Metang",
+      "Aliases": [
+        "めたんぐ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C005_METANG_RELIC.title"
+    },
+    {
+      "Id": 222010,
+      "Name": "pikachu_c006_gastly_relic_relic",
+      "AssetName": "mods/pikachu/c006_gastly_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c006GastlyRelic",
+      "Title": "Gastly",
+      "Aliases": [
+        "ごーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C006_GASTLY_RELIC.title"
+    },
+    {
+      "Id": 222011,
+      "Name": "pikachu_c007_parasect_relic_relic",
+      "AssetName": "mods/pikachu/c007_parasect_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c007ParasectRelic",
+      "Title": "Parasect",
+      "Aliases": [
+        "ぱらせくと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C007_PARASECT_RELIC.title"
+    },
+    {
+      "Id": 222012,
+      "Name": "pikachu_c008_haunter_relic_relic",
+      "AssetName": "mods/pikachu/c008_haunter_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c008HaunterRelic",
+      "Title": "Haunter",
+      "Aliases": [
+        "ごーすと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C008_HAUNTER_RELIC.title"
+    },
+    {
+      "Id": 222013,
+      "Name": "pikachu_c009_venonat_relic_relic",
+      "AssetName": "mods/pikachu/c009_venonat_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c009VenonatRelic",
+      "Title": "Venonat",
+      "Aliases": [
+        "こんぱん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C009_VENONAT_RELIC.title"
+    },
+    {
+      "Id": 222014,
+      "Name": "pikachu_c010_goomy_relic_relic",
+      "AssetName": "mods/pikachu/c010_goomy_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c010GoomyRelic",
+      "Title": "Goomy",
+      "Aliases": [
+        "ぬめら"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C010_GOOMY_RELIC.title"
+    },
+    {
+      "Id": 222015,
+      "Name": "pikachu_c011_kakuna_relic_relic",
+      "AssetName": "mods/pikachu/c011_kakuna_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c011KakunaRelic",
+      "Title": "Kakuna",
+      "Aliases": [
+        "こくーん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C011_KAKUNA_RELIC.title"
+    },
+    {
+      "Id": 222016,
+      "Name": "pikachu_c012_weedle_relic_relic",
+      "AssetName": "mods/pikachu/c012_weedle_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c012WeedleRelic",
+      "Title": "Weedle",
+      "Aliases": [
+        "びーどる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C012_WEEDLE_RELIC.title"
+    },
+    {
+      "Id": 222017,
+      "Name": "pikachu_c013_tauros_relic_relic",
+      "AssetName": "mods/pikachu/c013_tauros_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c013TaurosRelic",
+      "Title": "Tauros",
+      "Aliases": [
+        "けんたろす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C013_TAUROS_RELIC.title"
+    },
+    {
+      "Id": 222018,
+      "Name": "pikachu_c014_lairon_relic_relic",
+      "AssetName": "mods/pikachu/c014_lairon_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c014LaironRelic",
+      "Title": "Lairon",
+      "Aliases": [
+        "こどら"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C014_LAIRON_RELIC.title"
+    },
+    {
+      "Id": 222019,
+      "Name": "pikachu_c015_shuckle_relic_relic",
+      "AssetName": "mods/pikachu/c015_shuckle_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c015ShuckleRelic",
+      "Title": "Shuckle",
+      "Aliases": [
+        "つぼつぼ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C015_SHUCKLE_RELIC.title"
+    },
+    {
+      "Id": 222020,
+      "Name": "pikachu_c016_ekans_relic_relic",
+      "AssetName": "mods/pikachu/c016_ekans_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c016EkansRelic",
+      "Title": "Ekans",
+      "Aliases": [
+        "あーぼ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C016_EKANS_RELIC.title"
+    },
+    {
+      "Id": 222021,
+      "Name": "pikachu_c017_weepinbell_relic_relic",
+      "AssetName": "mods/pikachu/c017_weepinbell_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c017WeepinbellRelic",
+      "Title": "Weepinbell",
+      "Aliases": [
+        "うつどん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C017_WEEPINBELL_RELIC.title"
+    },
+    {
+      "Id": 222022,
+      "Name": "pikachu_c018_stunky_relic_relic",
+      "AssetName": "mods/pikachu/c018_stunky_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c018StunkyRelic",
+      "Title": "Stunky",
+      "Aliases": [
+        "すかんぷー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C018_STUNKY_RELIC.title"
+    },
+    {
+      "Id": 222023,
+      "Name": "pikachu_c019_ariados_relic_relic",
+      "AssetName": "mods/pikachu/c019_ariados_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c019AriadosRelic",
+      "Title": "Ariados",
+      "Aliases": [
+        "ありあどす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C019_ARIADOS_RELIC.title"
+    },
+    {
+      "Id": 222024,
+      "Name": "pikachu_c020_spinarak_relic_relic",
+      "AssetName": "mods/pikachu/c020_spinarak_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c020SpinarakRelic",
+      "Title": "Spinarak",
+      "Aliases": [
+        "いとまる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C020_SPINARAK_RELIC.title"
+    },
+    {
+      "Id": 222025,
+      "Name": "pikachu_c021_ivysaur_relic_relic",
+      "AssetName": "mods/pikachu/c021_ivysaur_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c021IvysaurRelic",
+      "Title": "Ivysaur",
+      "Aliases": [
+        "ふしぎそう"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C021_IVYSAUR_RELIC.title"
+    },
+    {
+      "Id": 222026,
+      "Name": "pikachu_c022_slaking_relic_relic",
+      "AssetName": "mods/pikachu/c022_slaking_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c022SlakingRelic",
+      "Title": "Slaking",
+      "Aliases": [
+        "けっきんぐ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C022_SLAKING_RELIC.title"
+    },
+    {
+      "Id": 222027,
+      "Name": "pikachu_c023_pidgeot_relic_relic",
+      "AssetName": "mods/pikachu/c023_pidgeot_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c023PidgeotRelic",
+      "Title": "Pidgeot",
+      "Aliases": [
+        "ぴじょっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C023_PIDGEOT_RELIC.title"
+    },
+    {
+      "Id": 222028,
+      "Name": "pikachu_c024_muk_relic_relic",
+      "AssetName": "mods/pikachu/c024_muk_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c024MukRelic",
+      "Title": "Muk",
+      "Aliases": [
+        "べとべとん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C024_MUK_RELIC.title"
+    },
+    {
+      "Id": 222029,
+      "Name": "pikachu_c025_grimer_relic_relic",
+      "AssetName": "mods/pikachu/c025_grimer_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c025GrimerRelic",
+      "Title": "Grimer",
+      "Aliases": [
+        "べとべたー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C025_GRIMER_RELIC.title"
+    },
+    {
+      "Id": 222030,
+      "Name": "pikachu_c026_wugtrio_relic_relic",
+      "AssetName": "mods/pikachu/c026_wugtrio_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c026WugtrioRelic",
+      "Title": "Wugtrio",
+      "Aliases": [
+        "うみとりお"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C026_WUGTRIO_RELIC.title"
+    },
+    {
+      "Id": 222031,
+      "Name": "pikachu_c027_cloyster_relic_relic",
+      "AssetName": "mods/pikachu/c027_cloyster_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c027CloysterRelic",
+      "Title": "Cloyster",
+      "Aliases": [
+        "ぱるしぇん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C027_CLOYSTER_RELIC.title"
+    },
+    {
+      "Id": 222032,
+      "Name": "pikachu_c028_eelektross_relic_relic",
+      "AssetName": "mods/pikachu/c028_eelektross_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c028EelektrossRelic",
+      "Title": "Eelektross",
+      "Aliases": [
+        "しびるどん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C028_EELEKTROSS_RELIC.title"
+    },
+    {
+      "Id": 222033,
+      "Name": "pikachu_c029_nidorino_relic_relic",
+      "AssetName": "mods/pikachu/c029_nidorino_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c029NidorinoRelic",
+      "Title": "Nidorino",
+      "Aliases": [
+        "にどりーの"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C029_NIDORINO_RELIC.title"
+    },
+    {
+      "Id": 222034,
+      "Name": "pikachu_c030_poochyena_relic_relic",
+      "AssetName": "mods/pikachu/c030_poochyena_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c030PoochyenaRelic",
+      "Title": "Poochyena",
+      "Aliases": [
+        "ぽちえな"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C030_POOCHYENA_RELIC.title"
+    },
+    {
+      "Id": 222035,
+      "Name": "pikachu_c031_nidorina_relic_relic",
+      "AssetName": "mods/pikachu/c031_nidorina_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c031NidorinaRelic",
+      "Title": "Nidorina",
+      "Aliases": [
+        "にどりーな"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C031_NIDORINA_RELIC.title"
+    },
+    {
+      "Id": 222036,
+      "Name": "pikachu_c032_purrloin_relic_relic",
+      "AssetName": "mods/pikachu/c032_purrloin_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c032PurrloinRelic",
+      "Title": "Purrloin",
+      "Aliases": [
+        "ちょろねこ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C032_PURRLOIN_RELIC.title"
+    },
+    {
+      "Id": 222037,
+      "Name": "pikachu_c033_nincada_relic_relic",
+      "AssetName": "mods/pikachu/c033_nincada_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c033NincadaRelic",
+      "Title": "Nincada",
+      "Aliases": [
+        "つちにん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C033_NINCADA_RELIC.title"
+    },
+    {
+      "Id": 222038,
+      "Name": "pikachu_c034_persian_relic_relic",
+      "AssetName": "mods/pikachu/c034_persian_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c034PersianRelic",
+      "Title": "Persian",
+      "Aliases": [
+        "ぺるしあん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C034_PERSIAN_RELIC.title"
+    },
+    {
+      "Id": 222039,
+      "Name": "pikachu_c035_palossand_relic_relic",
+      "AssetName": "mods/pikachu/c035_palossand_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c035PalossandRelic",
+      "Title": "Palossand",
+      "Aliases": [
+        "しろですな"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C035_PALOSSAND_RELIC.title"
+    },
+    {
+      "Id": 222040,
+      "Name": "pikachu_c036_koffing_relic_relic",
+      "AssetName": "mods/pikachu/c036_koffing_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c036KoffingRelic",
+      "Title": "Koffing",
+      "Aliases": [
+        "どがーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C036_KOFFING_RELIC.title"
+    },
+    {
+      "Id": 222041,
+      "Name": "pikachu_c037_magneton_relic_relic",
+      "AssetName": "mods/pikachu/c037_magneton_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c037MagnetonRelic",
+      "Title": "Magneton",
+      "Aliases": [
+        "れあこいる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C037_MAGNETON_RELIC.title"
+    },
+    {
+      "Id": 222042,
+      "Name": "pikachu_c038_tangela_relic_relic",
+      "AssetName": "mods/pikachu/c038_tangela_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c038TangelaRelic",
+      "Title": "Tangela",
+      "Aliases": [
+        "もんじゃら"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C038_TANGELA_RELIC.title"
+    },
+    {
+      "Id": 222043,
+      "Name": "pikachu_c039_clamperl_relic_relic",
+      "AssetName": "mods/pikachu/c039_clamperl_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c039ClamperlRelic",
+      "Title": "Clamperl",
+      "Aliases": [
+        "ぱーるる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C039_CLAMPERL_RELIC.title"
+    },
+    {
+      "Id": 222044,
+      "Name": "pikachu_c040_corphish_relic_relic",
+      "AssetName": "mods/pikachu/c040_corphish_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c040CorphishRelic",
+      "Title": "Corphish",
+      "Aliases": [
+        "へいがに"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C040_CORPHISH_RELIC.title"
+    },
+    {
+      "Id": 222045,
+      "Name": "pikachu_c041_meowth_relic_relic",
+      "AssetName": "mods/pikachu/c041_meowth_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c041MeowthRelic",
+      "Title": "Meowth",
+      "Aliases": [
+        "にゃーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C041_MEOWTH_RELIC.title"
+    },
+    {
+      "Id": 222046,
+      "Name": "pikachu_c042_cacnea_relic_relic",
+      "AssetName": "mods/pikachu/c042_cacnea_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c042CacneaRelic",
+      "Title": "Cacnea",
+      "Aliases": [
+        "さぼねあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C042_CACNEA_RELIC.title"
+    },
+    {
+      "Id": 222047,
+      "Name": "pikachu_c043_rattata_relic_relic",
+      "AssetName": "mods/pikachu/c043_rattata_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c043RattataRelic",
+      "Title": "Rattata",
+      "Aliases": [
+        "こらった"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C043_RATTATA_RELIC.title"
+    },
+    {
+      "Id": 222048,
+      "Name": "pikachu_c044_yanma_relic_relic",
+      "AssetName": "mods/pikachu/c044_yanma_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c044YanmaRelic",
+      "Title": "Yanma",
+      "Aliases": [
+        "やんやんま"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C044_YANMA_RELIC.title"
+    },
+    {
+      "Id": 222049,
+      "Name": "pikachu_c045_beautifly_relic_relic",
+      "AssetName": "mods/pikachu/c045_beautifly_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c045BeautiflyRelic",
+      "Title": "Beautifly",
+      "Aliases": [
+        "あげはんと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C045_BEAUTIFLY_RELIC.title"
+    },
+    {
+      "Id": 222050,
+      "Name": "pikachu_c046_beedrill_relic_relic",
+      "AssetName": "mods/pikachu/c046_beedrill_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c046BeedrillRelic",
+      "Title": "Beedrill",
+      "Aliases": [
+        "すぴあー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C046_BEEDRILL_RELIC.title"
+    },
+    {
+      "Id": 222051,
+      "Name": "pikachu_c047_dustox_relic_relic",
+      "AssetName": "mods/pikachu/c047_dustox_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c047DustoxRelic",
+      "Title": "Dustox",
+      "Aliases": [
+        "どくけいる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C047_DUSTOX_RELIC.title"
+    },
+    {
+      "Id": 222052,
+      "Name": "pikachu_c048_klang_relic_relic",
+      "AssetName": "mods/pikachu/c048_klang_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c048KlangRelic",
+      "Title": "Klang",
+      "Aliases": [
+        "ぎぎある"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C048_KLANG_RELIC.title"
+    },
+    {
+      "Id": 222053,
+      "Name": "pikachu_c049_ledian_relic_relic",
+      "AssetName": "mods/pikachu/c049_ledian_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c049LedianRelic",
+      "Title": "Ledian",
+      "Aliases": [
+        "れでぃあん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C049_LEDIAN_RELIC.title"
+    },
+    {
+      "Id": 222054,
+      "Name": "pikachu_c050_zoroark_relic_relic",
+      "AssetName": "mods/pikachu/c050_zoroark_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c050ZoroarkRelic",
+      "Title": "Zoroark",
+      "Aliases": [
+        "ぞろあーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C050_ZOROARK_RELIC.title"
+    },
+    {
+      "Id": 222055,
+      "Name": "pikachu_c051_rhydon_relic_relic",
+      "AssetName": "mods/pikachu/c051_rhydon_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c051RhydonRelic",
+      "Title": "Rhydon",
+      "Aliases": [
+        "さいどん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C051_RHYDON_RELIC.title"
+    },
+    {
+      "Id": 222056,
+      "Name": "pikachu_c052_seviper_relic_relic",
+      "AssetName": "mods/pikachu/c052_seviper_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c052SeviperRelic",
+      "Title": "Seviper",
+      "Aliases": [
+        "はぶねーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C052_SEVIPER_RELIC.title"
+    },
+    {
+      "Id": 222057,
+      "Name": "pikachu_c053_vespiquen_relic_relic",
+      "AssetName": "mods/pikachu/c053_vespiquen_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c053VespiquenRelic",
+      "Title": "Vespiquen",
+      "Aliases": [
+        "びーくいん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C053_VESPIQUEN_RELIC.title"
+    },
+    {
+      "Id": 222058,
+      "Name": "pikachu_c054_shedinja_relic_relic",
+      "AssetName": "mods/pikachu/c054_shedinja_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c054ShedinjaRelic",
+      "Title": "Shedinja",
+      "Aliases": [
+        "ぬけにん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C054_SHEDINJA_RELIC.title"
+    },
+    {
+      "Id": 222059,
+      "Name": "pikachu_c055_wailord_relic_relic",
+      "AssetName": "mods/pikachu/c055_wailord_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c055WailordRelic",
+      "Title": "Wailord",
+      "Aliases": [
+        "ほえるおー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C055_WAILORD_RELIC.title"
+    },
+    {
+      "Id": 222060,
+      "Name": "pikachu_c056_ferrothorn_relic_relic",
+      "AssetName": "mods/pikachu/c056_ferrothorn_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c056FerrothornRelic",
+      "Title": "Ferrothorn",
+      "Aliases": [
+        "なっとれい"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C056_FERROTHORN_RELIC.title"
+    },
+    {
+      "Id": 222061,
+      "Name": "pikachu_c057_ninjask_relic_relic",
+      "AssetName": "mods/pikachu/c057_ninjask_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c057NinjaskRelic",
+      "Title": "Ninjask",
+      "Aliases": [
+        "てっかにん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C057_NINJASK_RELIC.title"
+    },
+    {
+      "Id": 222062,
+      "Name": "pikachu_c058_lokix_relic_relic",
+      "AssetName": "mods/pikachu/c058_lokix_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c058LokixRelic",
+      "Title": "Lokix",
+      "Aliases": [
+        "えくすれっぐ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C058_LOKIX_RELIC.title"
+    },
+    {
+      "Id": 222063,
+      "Name": "pikachu_c059_combee_relic_relic",
+      "AssetName": "mods/pikachu/c059_combee_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c059CombeeRelic",
+      "Title": "Combee",
+      "Aliases": [
+        "みつはにー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C059_COMBEE_RELIC.title"
+    },
+    {
+      "Id": 222064,
+      "Name": "pikachu_c060_onix_relic_relic",
+      "AssetName": "mods/pikachu/c060_onix_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c060OnixRelic",
+      "Title": "Onix",
+      "Aliases": [
+        "いわーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C060_ONIX_RELIC.title"
+    },
+    {
+      "Id": 222065,
+      "Name": "pikachu_c061_flutter_mane_relic_relic",
+      "AssetName": "mods/pikachu/c061_flutter_mane_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c061FlutterManeRelic",
+      "Title": "Flutter Mane",
+      "Aliases": [
+        "はばたくかみ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C061_FLUTTER_MANE_RELIC.title"
+    },
+    {
+      "Id": 222066,
+      "Name": "pikachu_c062_nihilego_relic_relic",
+      "AssetName": "mods/pikachu/c062_nihilego_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c062NihilegoRelic",
+      "Title": "Nihilego",
+      "Aliases": [
+        "うつろいど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C062_NIHILEGO_RELIC.title"
+    },
+    {
+      "Id": 222067,
+      "Name": "pikachu_c063_sharpedo_relic_relic",
+      "AssetName": "mods/pikachu/c063_sharpedo_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c063SharpedoRelic",
+      "Title": "Sharpedo",
+      "Aliases": [
+        "さめはだー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C063_SHARPEDO_RELIC.title"
+    },
+    {
+      "Id": 222068,
+      "Name": "pikachu_c064_nidoking_relic_relic",
+      "AssetName": "mods/pikachu/c064_nidoking_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c064NidokingRelic",
+      "Title": "Nidoking",
+      "Aliases": [
+        "にどきんぐ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C064_NIDOKING_RELIC.title"
+    },
+    {
+      "Id": 222069,
+      "Name": "pikachu_c065_vileplume_relic_relic",
+      "AssetName": "mods/pikachu/c065_vileplume_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c065VileplumeRelic",
+      "Title": "Vileplume",
+      "Aliases": [
+        "らふれしあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C065_VILEPLUME_RELIC.title"
+    },
+    {
+      "Id": 222070,
+      "Name": "pikachu_c066_golem_relic_relic",
+      "AssetName": "mods/pikachu/c066_golem_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c066GolemRelic",
+      "Title": "Golem",
+      "Aliases": [
+        "ごろーにゃ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C066_GOLEM_RELIC.title"
+    },
+    {
+      "Id": 222071,
+      "Name": "pikachu_c067_electivire_relic_relic",
+      "AssetName": "mods/pikachu/c067_electivire_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c067ElectivireRelic",
+      "Title": "Electivire",
+      "Aliases": [
+        "えれきぶる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C067_ELECTIVIRE_RELIC.title"
+    },
+    {
+      "Id": 222072,
+      "Name": "pikachu_c068_masquerain_relic_relic",
+      "AssetName": "mods/pikachu/c068_masquerain_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c068MasquerainRelic",
+      "Title": "Masquerain",
+      "Aliases": [
+        "あめもーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C068_MASQUERAIN_RELIC.title"
+    },
+    {
+      "Id": 222073,
+      "Name": "pikachu_c069_gallade_relic_relic",
+      "AssetName": "mods/pikachu/c069_gallade_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c069GalladeRelic",
+      "Title": "Gallade",
+      "Aliases": [
+        "えるれいど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C069_GALLADE_RELIC.title"
+    },
+    {
+      "Id": 222074,
+      "Name": "pikachu_c070_mothim_relic_relic",
+      "AssetName": "mods/pikachu/c070_mothim_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c070MothimRelic",
+      "Title": "Mothim",
+      "Aliases": [
+        "がーめいる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C070_MOTHIM_RELIC.title"
+    },
+    {
+      "Id": 222075,
+      "Name": "pikachu_c071_flygon_relic_relic",
+      "AssetName": "mods/pikachu/c071_flygon_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c071FlygonRelic",
+      "Title": "Flygon",
+      "Aliases": [
+        "ふらいごん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C071_FLYGON_RELIC.title"
+    },
+    {
+      "Id": 222076,
+      "Name": "pikachu_c072_raticate_relic_relic",
+      "AssetName": "mods/pikachu/c072_raticate_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c072RaticateRelic",
+      "Title": "Raticate",
+      "Aliases": [
+        "らった"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C072_RATICATE_RELIC.title"
+    },
+    {
+      "Id": 222077,
+      "Name": "pikachu_c073_tentacruel_relic_relic",
+      "AssetName": "mods/pikachu/c073_tentacruel_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c073TentacruelRelic",
+      "Title": "Tentacruel",
+      "Aliases": [
+        "どくくらげ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C073_TENTACRUEL_RELIC.title"
+    },
+    {
+      "Id": 222078,
+      "Name": "pikachu_c074_vivillon_relic_relic",
+      "AssetName": "mods/pikachu/c074_vivillon_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c074VivillonRelic",
+      "Title": "Vivillon",
+      "Aliases": [
+        "びびよん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C074_VIVILLON_RELIC.title"
+    },
+    {
+      "Id": 222079,
+      "Name": "pikachu_c075_omastar_relic_relic",
+      "AssetName": "mods/pikachu/c075_omastar_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c075OmastarRelic",
+      "Title": "Omastar",
+      "Aliases": [
+        "おむすたー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C075_OMASTAR_RELIC.title"
+    },
+    {
+      "Id": 222080,
+      "Name": "pikachu_c076_kabutops_relic_relic",
+      "AssetName": "mods/pikachu/c076_kabutops_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c076KabutopsRelic",
+      "Title": "Kabutops",
+      "Aliases": [
+        "かぶとぷす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C076_KABUTOPS_RELIC.title"
+    },
+    {
+      "Id": 222081,
+      "Name": "pikachu_c077_gardevoir_relic_relic",
+      "AssetName": "mods/pikachu/c077_gardevoir_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c077GardevoirRelic",
+      "Title": "Gardevoir",
+      "Aliases": [
+        "さーないと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C077_GARDEVOIR_RELIC.title"
+    },
+    {
+      "Id": 222082,
+      "Name": "pikachu_c078_ribombee_relic_relic",
+      "AssetName": "mods/pikachu/c078_ribombee_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c078RibombeeRelic",
+      "Title": "Ribombee",
+      "Aliases": [
+        "あぶりぼん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C078_RIBOMBEE_RELIC.title"
+    },
+    {
+      "Id": 222083,
+      "Name": "pikachu_c079_terrakion_relic_relic",
+      "AssetName": "mods/pikachu/c079_terrakion_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c079TerrakionRelic",
+      "Title": "Terrakion",
+      "Aliases": [
+        "てらきおん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C079_TERRAKION_RELIC.title"
+    },
+    {
+      "Id": 222084,
+      "Name": "pikachu_c080_virizion_relic_relic",
+      "AssetName": "mods/pikachu/c080_virizion_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c080VirizionRelic",
+      "Title": "Virizion",
+      "Aliases": [
+        "びりじおん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C080_VIRIZION_RELIC.title"
+    },
+    {
+      "Id": 222085,
+      "Name": "pikachu_c081_heatran_relic_relic",
+      "AssetName": "mods/pikachu/c081_heatran_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c081HeatranRelic",
+      "Title": "Heatran",
+      "Aliases": [
+        "ひーどらん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C081_HEATRAN_RELIC.title"
+    },
+    {
+      "Id": 222086,
+      "Name": "pikachu_c082_urshifu_relic_relic",
+      "AssetName": "mods/pikachu/c082_urshifu_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c082UrshifuRelic",
+      "Title": "Urshifu",
+      "Aliases": [
+        "うーらおす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C082_URSHIFU_RELIC.title"
+    },
+    {
+      "Id": 222087,
+      "Name": "pikachu_c083_cobalion_relic_relic",
+      "AssetName": "mods/pikachu/c083_cobalion_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c083CobalionRelic",
+      "Title": "Cobalion",
+      "Aliases": [
+        "こばるおん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C083_COBALION_RELIC.title"
+    },
+    {
+      "Id": 222088,
+      "Name": "pikachu_c084_kyurem_relic_relic",
+      "AssetName": "mods/pikachu/c084_kyurem_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c084KyuremRelic",
+      "Title": "Kyurem",
+      "Aliases": [
+        "きゅれむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C084_KYUREM_RELIC.title"
+    },
+    {
+      "Id": 222089,
+      "Name": "pikachu_c085_calyrex_relic_relic",
+      "AssetName": "mods/pikachu/c085_calyrex_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c085CalyrexRelic",
+      "Title": "Calyrex",
+      "Aliases": [
+        "ばどれっくす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C085_CALYREX_RELIC.title"
+    },
+    {
+      "Id": 222090,
+      "Name": "pikachu_c086_spectrier_relic_relic",
+      "AssetName": "mods/pikachu/c086_spectrier_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c086SpectrierRelic",
+      "Title": "Spectrier",
+      "Aliases": [
+        "ぶるどりがー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C086_SPECTRIER_RELIC.title"
+    },
+    {
+      "Id": 222091,
+      "Name": "pikachu_c087_mewtwo_relic_relic",
+      "AssetName": "mods/pikachu/c087_mewtwo_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c087MewtwoRelic",
+      "Title": "Mewtwo",
+      "Aliases": [
+        "みゅうつー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C087_MEWTWO_RELIC.title"
+    },
+    {
+      "Id": 222092,
+      "Name": "pikachu_c088_garchomp_relic_relic",
+      "AssetName": "mods/pikachu/c088_garchomp_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c088GarchompRelic",
+      "Title": "Garchomp",
+      "Aliases": [
+        "がぶりあす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C088_GARCHOMP_RELIC.title"
+    },
+    {
+      "Id": 222093,
+      "Name": "pikachu_c089_dragonair_relic_relic",
+      "AssetName": "mods/pikachu/c089_dragonair_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c089DragonairRelic",
+      "Title": "Dragonair",
+      "Aliases": [
+        "はくりゅー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C089_DRAGONAIR_RELIC.title"
+    },
+    {
+      "Id": 222094,
+      "Name": "pikachu_c090_dragonite_relic_relic",
+      "AssetName": "mods/pikachu/c090_dragonite_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c090DragoniteRelic",
+      "Title": "Dragonite",
+      "Aliases": [
+        "かいりゅー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C090_DRAGONITE_RELIC.title"
+    },
+    {
+      "Id": 222095,
+      "Name": "pikachu_c091_goodra_relic_relic",
+      "AssetName": "mods/pikachu/c091_goodra_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c091GoodraRelic",
+      "Title": "Goodra",
+      "Aliases": [
+        "ぬめるごん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C091_GOODRA_RELIC.title"
+    },
+    {
+      "Id": 222096,
+      "Name": "pikachu_c092_tyranitar_relic_relic",
+      "AssetName": "mods/pikachu/c092_tyranitar_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c092TyranitarRelic",
+      "Title": "Tyranitar",
+      "Aliases": [
+        "ばんぎらす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C092_TYRANITAR_RELIC.title"
+    },
+    {
+      "Id": 222097,
+      "Name": "pikachu_c093_dragapult_relic_relic",
+      "AssetName": "mods/pikachu/c093_dragapult_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c093DragapultRelic",
+      "Title": "Dragapult",
+      "Aliases": [
+        "どらぱると"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C093_DRAGAPULT_RELIC.title"
+    },
+    {
+      "Id": 222098,
+      "Name": "pikachu_c094_metagross_relic_relic",
+      "AssetName": "mods/pikachu/c094_metagross_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c094MetagrossRelic",
+      "Title": "Metagross",
+      "Aliases": [
+        "めたぐろす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C094_METAGROSS_RELIC.title"
+    },
+    {
+      "Id": 222099,
+      "Name": "pikachu_c095_latias_relic_relic",
+      "AssetName": "mods/pikachu/c095_latias_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c095LatiasRelic",
+      "Title": "Latias",
+      "Aliases": [
+        "らてぃあす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C095_LATIAS_RELIC.title"
+    },
+    {
+      "Id": 222100,
+      "Name": "pikachu_c096_latios_relic_relic",
+      "AssetName": "mods/pikachu/c096_latios_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c096LatiosRelic",
+      "Title": "Latios",
+      "Aliases": [
+        "らてぃおす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C096_LATIOS_RELIC.title"
+    },
+    {
+      "Id": 222101,
+      "Name": "pikachu_c097_hoopa_relic_relic",
+      "AssetName": "mods/pikachu/c097_hoopa_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c097HoopaRelic",
+      "Title": "Hoopa",
+      "Aliases": [
+        "ふーぱ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C097_HOOPA_RELIC.title"
+    },
+    {
+      "Id": 222102,
+      "Name": "pikachu_c098_regirock_relic_relic",
+      "AssetName": "mods/pikachu/c098_regirock_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c098RegirockRelic",
+      "Title": "Regirock",
+      "Aliases": [
+        "れじろっく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C098_REGIROCK_RELIC.title"
+    },
+    {
+      "Id": 222103,
+      "Name": "pikachu_c099_eternatus_relic_relic",
+      "AssetName": "mods/pikachu/c099_eternatus_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c099EternatusRelic",
+      "Title": "Eternatus",
+      "Aliases": [
+        "むげんだいな"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C099_ETERNATUS_RELIC.title"
+    },
+    {
+      "Id": 222104,
+      "Name": "pikachu_c101_giratina_relic_relic",
+      "AssetName": "mods/pikachu/c101_giratina_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c101GiratinaRelic",
+      "Title": "Giratina",
+      "Aliases": [
+        "ぎらてぃな"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C101_GIRATINA_RELIC.title"
+    },
+    {
+      "Id": 222105,
+      "Name": "pikachu_c103_rayquaza_relic_relic",
+      "AssetName": "mods/pikachu/c103_rayquaza_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c103RayquazaRelic",
+      "Title": "Rayquaza",
+      "Aliases": [
+        "れっくうざ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C103_RAYQUAZA_RELIC.title"
+    },
+    {
+      "Id": 222106,
+      "Name": "pikachu_c104_mew_relic_relic",
+      "AssetName": "mods/pikachu/c104_mew_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c104MewRelic",
+      "Title": "Mew",
+      "Aliases": [
+        "みゅう"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C104_MEW_RELIC.title"
+    },
+    {
+      "Id": 222107,
+      "Name": "pikachu_c105_uxie_relic_relic",
+      "AssetName": "mods/pikachu/c105_uxie_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c105UxieRelic",
+      "Title": "Uxie",
+      "Aliases": [
+        "ゆくしー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C105_UXIE_RELIC.title"
+    },
+    {
+      "Id": 222108,
+      "Name": "pikachu_c106_mesprit_relic_relic",
+      "AssetName": "mods/pikachu/c106_mesprit_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c106MespritRelic",
+      "Title": "Mesprit",
+      "Aliases": [
+        "えむりっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C106_MESPRIT_RELIC.title"
+    },
+    {
+      "Id": 222109,
+      "Name": "pikachu_c107_azelf_relic_relic",
+      "AssetName": "mods/pikachu/c107_azelf_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.c107AzelfRelic",
+      "Title": "Azelf",
+      "Aliases": [
+        "あぐのむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_C107_AZELF_RELIC.title"
+    },
+    {
+      "Id": 222110,
+      "Name": "pikachu_caterpie_companion_relic_relic",
+      "AssetName": "mods/pikachu/caterpie_companion_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.CaterpieCompanionRelic",
+      "Title": "Companion - Caterpie",
+      "Aliases": [
+        "仲間：きゃたぴー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_CATERPIE_COMPANION_RELIC.title"
+    },
+    {
+      "Id": 222111,
+      "Name": "pikachu_charge_relic_relic",
+      "AssetName": "mods/pikachu/charge_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.ChargeRelic",
+      "Title": "Electric Sac",
+      "Aliases": [
+        "ちゃーじれりっく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_CHARGE_RELIC.title",
+      "TypeAliases": [
+        "PikaMod.PikaModCode.Relics.TestCaughtBatchRelic",
+        "PikaMod.PikaModCode.Relics.TestDesyncRelic",
+        "PikaMod.PikaModCode.Relics.TestDrawAtCombatStartRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 222112,
+      "Name": "pikachu_charge_relic_plus_relic",
+      "AssetName": "mods/pikachu/charge_relic_plus",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.ChargeRelicPlus",
+      "Title": "Electric Sac+",
+      "Aliases": [
+        "ちゃーじれりっく+"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_CHARGE_RELIC_PLUS.title"
+    },
+    {
+      "Id": 222113,
+      "Name": "pikachu_charging_battery_relic_relic",
+      "AssetName": "mods/pikachu/charging_battery_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.ChargingBatteryRelic",
+      "Title": "Light Ball",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_CHARGING_BATTERY_RELIC.title"
+    },
+    {
+      "Id": 222114,
+      "Name": "pikachu_electric_seed_relic_relic",
+      "AssetName": "mods/pikachu/electric_seed_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.ElectricSeedRelic",
+      "Title": "Electric Seed",
+      "Aliases": [
+        "えれきしーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_ELECTRIC_SEED_RELIC.title"
+    },
+    {
+      "Id": 222115,
+      "Name": "pikachu_leftovers_relic_relic",
+      "AssetName": "mods/pikachu/leftovers_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.LeftoversRelic",
+      "Title": "Leftovers",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_LEFTOVERS_RELIC.title"
+    },
+    {
+      "Id": 222116,
+      "Name": "pikachu_light_powder_relic_relic",
+      "AssetName": "mods/pikachu/light_powder_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.LightPowderRelic",
+      "Title": "X Speed",
+      "Aliases": [
+        "すぴーどすたー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_LIGHT_POWDER_RELIC.title"
+    },
+    {
+      "Id": 222117,
+      "Name": "pikachu_magnet_relic_relic",
+      "AssetName": "mods/pikachu/magnet_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.MagnetRelic",
+      "Title": "Magnet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_MAGNET_RELIC.title"
+    },
+    {
+      "Id": 222118,
+      "Name": "pikachu_metapod_companion_relic_relic",
+      "AssetName": "mods/pikachu/metapod_companion_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.MetapodCompanionRelic",
+      "Title": "Companion - Metapod",
+      "Aliases": [
+        "仲間：とらんせる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_METAPOD_COMPANION_RELIC.title"
+    },
+    {
+      "Id": 222119,
+      "Name": "pikachu_pokeball_belt_relic_relic",
+      "AssetName": "mods/pikachu/pokeball_belt_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.PokeballBeltRelic",
+      "Title": "Poké Ball Belt",
+      "Aliases": [
+        "もんすたーぼーるべると"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_POKEBALL_BELT_RELIC.title"
+    },
+    {
+      "Id": 222120,
+      "Name": "pikachu_scarf_relic_relic",
+      "AssetName": "mods/pikachu/scarf_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.ScarfRelic",
+      "Title": "Choice Scarf",
+      "Aliases": [
+        "こだわりすかーふ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_SCARF_RELIC.title"
+    },
+    {
+      "Id": 222121,
+      "Name": "pikachu_super_rod_relic_relic",
+      "AssetName": "mods/pikachu/super_rod_relic",
+      "Category": "Relic",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Relics.SuperRodRelic",
+      "Title": "Super Rod",
+      "Aliases": [
+        "すーぱーろっど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PIKAMOD_RELIC_SUPER_ROD_RELIC.title"
+    },
+    {
+      "Id": 221000,
+      "Name": "pikachu_adventure_power_power",
+      "AssetName": "mods/pikachu/adventure_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.AdventurePower",
+      "Title": "New Adventure",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_ADVENTURE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221001,
+      "Name": "pikachu_agile_power_power",
+      "AssetName": "mods/pikachu/agile_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.AgilePower",
+      "Title": "Agile",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_AGILE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221002,
+      "Name": "pikachu_bathing_power_power",
+      "AssetName": "mods/pikachu/bathing_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.BathingPower",
+      "Title": "Electric Bath",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_BATHING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221003,
+      "Name": "pikachu_best_partner_power_power",
+      "AssetName": "mods/pikachu/best_partner_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.BestPartnerPower",
+      "Title": "Best Partner",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_BEST_PARTNER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221004,
+      "Name": "pikachu_charge_power_power",
+      "AssetName": "mods/pikachu/charge_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ChargePower",
+      "Title": "Charge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_CHARGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221005,
+      "Name": "pikachu_combo_power_power",
+      "AssetName": "mods/pikachu/combo_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ComboPower",
+      "Title": "Combo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_COMBO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221006,
+      "Name": "pikachu_continuous_dodge_power_power",
+      "AssetName": "mods/pikachu/continuous_dodge_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ContinuousDodgePower",
+      "Title": "Continuous Dodge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_CONTINUOUS_DODGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221007,
+      "Name": "pikachu_darkest_day_power_power",
+      "AssetName": "mods/pikachu/darkest_day_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.DarkestDayPower",
+      "Title": "Darkest Day",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_DARKEST_DAY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221008,
+      "Name": "pikachu_delta_stream_power_power",
+      "AssetName": "mods/pikachu/delta_stream_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.DeltaStreamPower",
+      "Title": "Delta Stream",
+      "Aliases": [
+        "でるたすとりーむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_DELTA_STREAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221009,
+      "Name": "pikachu_dodge_power_power",
+      "AssetName": "mods/pikachu/dodge_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.DodgePower",
+      "Title": "Dodge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_DODGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221010,
+      "Name": "pikachu_electric_bond_power_power",
+      "AssetName": "mods/pikachu/electric_bond_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ElectricBondPower",
+      "Title": "Electric Bond",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_ELECTRIC_BOND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221011,
+      "Name": "pikachu_electric_overflow_power_power",
+      "AssetName": "mods/pikachu/electric_overflow_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ElectricOverflowPower",
+      "Title": "Electric Overflow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_ELECTRIC_OVERFLOW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221012,
+      "Name": "pikachu_electric_surge_power_power",
+      "AssetName": "mods/pikachu/electric_surge_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ElectricSurgePower",
+      "Title": "Electric Surge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_ELECTRIC_SURGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221013,
+      "Name": "pikachu_eternamax_power_power",
+      "AssetName": "mods/pikachu/eternamax_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.EternamaxPower",
+      "Title": "Eternamax",
+      "Aliases": [
+        "むげんだいまっくす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_ETERNAMAX_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221014,
+      "Name": "pikachu_fatigue_power_power",
+      "AssetName": "mods/pikachu/fatigue_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.FatiguePower",
+      "Title": "Fatigue",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_FATIGUE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 221015,
+      "Name": "pikachu_fly_power_power",
+      "AssetName": "mods/pikachu/fly_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.FlyPower",
+      "Title": "Flying",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_FLY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221016,
+      "Name": "pikachu_gigantamax_power_power",
+      "AssetName": "mods/pikachu/gigantamax_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.GigantamaxPower",
+      "Title": "Gigantamax",
+      "Aliases": [
+        "きょだいまっくす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_GIGANTAMAX_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221017,
+      "Name": "pikachu_giratina_form_power_power",
+      "AssetName": "mods/pikachu/giratina_form_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.GiratinaFormPower",
+      "Title": "Griseous Core",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_GIRATINA_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221018,
+      "Name": "pikachu_intimacy_power_power",
+      "AssetName": "mods/pikachu/intimacy_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.IntimacyPower",
+      "Title": "Intimacy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_INTIMACY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221019,
+      "Name": "pikachu_journey_power_power",
+      "AssetName": "mods/pikachu/journey_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.JourneyPower",
+      "Title": "Journey",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_JOURNEY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221020,
+      "Name": "pikachu_keen_riposte_power_power",
+      "AssetName": "mods/pikachu/keen_riposte_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.KeenRipostePower",
+      "Title": "Keen Riposte",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_KEEN_RIPOSTE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221021,
+      "Name": "pikachu_mega_rayquaza_power_power",
+      "AssetName": "mods/pikachu/mega_rayquaza_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.MegaRayquazaPower",
+      "Title": "Hidden Potential",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_MEGA_RAYQUAZA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221022,
+      "Name": "pikachu_nimble_dodge_power_power",
+      "AssetName": "mods/pikachu/nimble_dodge_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.NimbleDodgePower",
+      "Title": "Nimble Dodge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_NIMBLE_DODGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221023,
+      "Name": "pikachu_perfect_cooperation_power_power",
+      "AssetName": "mods/pikachu/perfect_cooperation_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.PerfectCooperationPower",
+      "Title": "Perfect Cooperation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_PERFECT_COOPERATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221024,
+      "Name": "pikachu_pm_energy_drain_power_power",
+      "AssetName": "mods/pikachu/pm_energy_drain_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.PmEnergyDrainPower",
+      "Title": "Energy Drain",
+      "Aliases": [
+        "えねるぎー吸収"
+      ],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_PM_ENERGY_DRAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221025,
+      "Name": "pikachu_potential_acceleration_power_power",
+      "AssetName": "mods/pikachu/potential_acceleration_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.PotentialAccelerationPower",
+      "Title": "Potential Acceleration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_POTENTIAL_ACCELERATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221026,
+      "Name": "pikachu_power_conversion_cost_power_power",
+      "AssetName": "mods/pikachu/power_conversion_cost_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.PowerConversionCostPower",
+      "Title": "Power Overload",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_POWER_CONVERSION_COST_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 221027,
+      "Name": "pikachu_power_cycle_power_power",
+      "AssetName": "mods/pikachu/power_cycle_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.PowerCyclePower",
+      "Title": "Power Cycle",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_POWER_CYCLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221028,
+      "Name": "pikachu_proficiency_power_power",
+      "AssetName": "mods/pikachu/proficiency_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ProficiencyPower",
+      "Title": "Proficiency",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_PROFICIENCY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221029,
+      "Name": "pikachu_snorlax_nap_power_power",
+      "AssetName": "mods/pikachu/snorlax_nap_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.SnorlaxNapPower",
+      "Title": "Deep Drowsiness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_SNORLAX_NAP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221030,
+      "Name": "pikachu_stay_vigilant_power_power",
+      "AssetName": "mods/pikachu/stay_vigilant_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.StayVigilantPower",
+      "Title": "Stay Vigilant",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_STAY_VIGILANT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221031,
+      "Name": "pikachu_toxic_body_power_power",
+      "AssetName": "mods/pikachu/toxic_body_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.ToxicBodyPower",
+      "Title": "Toxic Aura",
+      "Aliases": [
+        "猛毒のおーら"
+      ],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_TOXIC_BODY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221032,
+      "Name": "pikachu_volt_charge_power_power",
+      "AssetName": "mods/pikachu/volt_charge_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.VoltChargePower",
+      "Title": "Volt Charge",
+      "Aliases": [
+        "ぼるとちゃーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_VOLT_CHARGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 221033,
+      "Name": "pikachu_weakness_exposed_power_power",
+      "AssetName": "mods/pikachu/weakness_exposed_power",
+      "Category": "Power",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Powers.WeaknessExposedPower",
+      "Title": "Find Weakness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PIKA_MOD_POWER_WEAKNESS_EXPOSED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 224000,
+      "Name": "pikachu_bug_spray_potion",
+      "AssetName": "mods/pikachu/bug_spray",
+      "Category": "Potion",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Potions.BugSpray",
+      "Title": "Repel",
+      "Aliases": [
+        "むしよけすぷれー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "PIKAMOD_POTION_BUG_SPRAY.title"
+    },
+    {
+      "Id": 224001,
+      "Name": "pikachu_gigantamax_crystal_potion",
+      "AssetName": "mods/pikachu/gigantamax_crystal",
+      "Category": "Potion",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Potions.GigantamaxCrystal",
+      "Title": "Dynamax Candy",
+      "Aliases": [
+        "きょだいきゃんでぃ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "PIKAMOD_POTION_GIGANTAMAX_CRYSTAL.title"
+    },
+    {
+      "Id": 224002,
+      "Name": "pikachu_healing_medicine_potion",
+      "AssetName": "mods/pikachu/healing_medicine",
+      "Category": "Potion",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Potions.HealingMedicine",
+      "Title": "Healing Potion",
+      "Aliases": [
+        "きずぐすり"
+      ],
+      "LocTable": "potions",
+      "LocKey": "PIKAMOD_POTION_HEALING_MEDICINE.title"
+    },
+    {
+      "Id": 224003,
+      "Name": "pikachu_pokeball_potion_potion",
+      "AssetName": "mods/pikachu/pokeball_potion",
+      "Category": "Potion",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Potions.PokeballPotion",
+      "Title": "Poké Ball",
+      "Aliases": [
+        "もんすたーぼーる"
+      ],
+      "LocTable": "potions",
+      "LocKey": "PIKAMOD_POTION_POKEBALL_POTION.title"
+    },
+    {
+      "Id": 226000,
+      "Name": "pikachu_eternatus_encounter_creature",
+      "AssetName": "mods/pikachu/bosses/eternatus_encounter",
+      "Category": "Creature",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Monsters.EternatusEncounter",
+      "TypeAliases": [
+        "PikaMod.PikaModCode.Monsters.Eternatus",
+        "PikaMod.PikaModCode.Monsters.EternatusEnhanced"
+      ],
+      "Title": "Eternatus",
+      "Aliases": [
+        "むげんだいな"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "PIKA_MOD_ENCOUNTER_ETERNATUS_ENCOUNTER.title"
+    },
+    {
+      "Id": 226001,
+      "Name": "pikachu_giratina_encounter_creature",
+      "AssetName": "mods/pikachu/bosses/giratina_encounter",
+      "Category": "Creature",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Monsters.GiratinaEncounter",
+      "TypeAliases": [
+        "PikaMod.PikaModCode.Monsters.Giratina",
+        "PikaMod.PikaModCode.Monsters.GiratinaEnhanced"
+      ],
+      "Title": "Giratina",
+      "Aliases": [
+        "ぎらてぃな"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "PIKA_MOD_ENCOUNTER_GIRATINA_ENCOUNTER.title"
+    },
+    {
+      "Id": 226002,
+      "Name": "pikachu_rayquaza_encounter_creature",
+      "AssetName": "mods/pikachu/bosses/rayquaza_encounter",
+      "Category": "Creature",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Monsters.RayquazaEncounter",
+      "TypeAliases": [
+        "PikaMod.PikaModCode.Monsters.Rayquaza",
+        "PikaMod.PikaModCode.Monsters.RayquazaEnhanced"
+      ],
+      "Title": "Rayquzaza",
+      "Aliases": [
+        "れっくうざ"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "PIKA_MOD_ENCOUNTER_RAYQUAZA_ENCOUNTER.title"
+    },
+    {
+      "Id": 225000,
+      "Name": "pikachu_pikachu_character",
+      "AssetName": "mods/pikachu/pikachu",
+      "Category": "Character",
+      "Assembly": "PikaMod.Core",
+      "TypeName": "PikaMod.PikaModCode.Character.Pikachu",
+      "Title": "Pikachu",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "PIKA_MOD_CHARACTER_PIKACHU.title",
+      "CookieEmoteId": 2319
+    }
+  ]
+}

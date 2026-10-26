@@ -1,0 +1,699 @@
+{
+  "Key": "ryoshu",
+  "ModIds": [
+    "Ryoshu"
+  ],
+  "Name": "Ryoshu",
+  "WorkshopId": "3747528329",
+  "Aliases": [
+    "Ryoshu"
+  ],
+  "Entries": [
+    {
+      "Id": 191000,
+      "Name": "ryoshu_critical_rhythm_power_power",
+      "AssetName": "mods/ryoshu/critical_rhythm_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.CriticalRhythmPower",
+      "Title": "Lethal Tempo",
+      "Aliases": [
+        "致命のりずむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CRITICAL_RHYTHM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191001,
+      "Name": "ryoshu_deep_breath_power_power",
+      "AssetName": "mods/ryoshu/deep_breath_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.DeepBreathPower",
+      "Title": "Deep Breath",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DEEP_BREATH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191002,
+      "Name": "ryoshu_erase_power_power",
+      "AssetName": "mods/ryoshu/erase_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.ErasePower",
+      "Title": "Forget",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ERASE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191003,
+      "Name": "ryoshu_memory_power_power",
+      "AssetName": "mods/ryoshu/memory_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.MemoryPower",
+      "Title": "Remember",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MEMORY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191004,
+      "Name": "ryoshu_muga_power_power",
+      "AssetName": "mods/ryoshu/muga_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.MugaPower",
+      "Title": "Muga",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MUGA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191005,
+      "Name": "ryoshu_multi_attack_power_power",
+      "AssetName": "mods/ryoshu/multi_attack_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.MultiAttackPower",
+      "Title": "Multiattack",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTI_ATTACK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 191006,
+      "Name": "ryoshu_rewrite_destiny_power_power",
+      "AssetName": "mods/ryoshu/rewrite_destiny_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.RewriteDestinyPower",
+      "Title": "Rewrite Destiny",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "REWRITE_DESTINY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191007,
+      "Name": "ryoshu_ryoshu_bleed_power_power",
+      "AssetName": "mods/ryoshu/ryoshu_bleed_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.RyoshuBleedPower",
+      "Title": "Bleed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RYOSHU_BLEED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 191008,
+      "Name": "ryoshu_ryoshu_poise_power_power",
+      "AssetName": "mods/ryoshu/ryoshu_poise_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.RyoshuPoisePower",
+      "Title": "Poise",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RYOSHU_POISE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191009,
+      "Name": "ryoshu_bizarre_power_power",
+      "AssetName": "mods/ryoshu/bizarre_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.BizarrePower",
+      "Title": "Grotesque Pursuit",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "BIZARRE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191010,
+      "Name": "ryoshu_blood_blade_power_power",
+      "AssetName": "mods/ryoshu/blood_blade_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.BloodBladePower",
+      "Title": "Blood Blade",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "BLOOD_BLADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191011,
+      "Name": "ryoshu_blood_feast_power_power",
+      "AssetName": "mods/ryoshu/blood_feast_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.BloodFeastPower",
+      "Title": "Blood Feast",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "BLOOD_FEAST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191012,
+      "Name": "ryoshu_blood_wave_power_power",
+      "AssetName": "mods/ryoshu/blood_wave_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.BloodWavePower",
+      "Title": "Blood Wave",
+      "Aliases": [
+        "ぶらっどうぇーぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "BLOOD_WAVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191013,
+      "Name": "ryoshu_deep_rooted_power_power",
+      "AssetName": "mods/ryoshu/deep_rooted_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.DeepRootedPower",
+      "Title": "Deeply Rooted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DEEP_ROOTED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191014,
+      "Name": "ryoshu_dust_explosion_power_power",
+      "AssetName": "mods/ryoshu/dust_explosion_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.DustExplosionPower",
+      "Title": "Dust Explosion",
+      "Aliases": [
+        "だすと爆発"
+      ],
+      "LocTable": "powers",
+      "LocKey": "DUST_EXPLOSION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191015,
+      "Name": "ryoshu_dust_wave_power_power",
+      "AssetName": "mods/ryoshu/dust_wave_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.DustWavePower",
+      "Title": "Dust Wave",
+      "Aliases": [
+        "だすとうぇーぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "DUST_WAVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191016,
+      "Name": "ryoshu_erase_me_power_power",
+      "AssetName": "mods/ryoshu/erase_me_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.EraseMePower",
+      "Title": "Erase Me",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ERASE_ME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191017,
+      "Name": "ryoshu_heart_to_heart_power_power",
+      "AssetName": "mods/ryoshu/heart_to_heart_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.HeartToHeartPower",
+      "Title": "Heart to Heart",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEART_TO_HEART_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191018,
+      "Name": "ryoshu_hemorrhage_power_power",
+      "AssetName": "mods/ryoshu/hemorrhage_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.HemorrhagePower",
+      "Title": "Hemorrhage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEMORRHAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191019,
+      "Name": "ryoshu_laceration_power_power",
+      "AssetName": "mods/ryoshu/laceration_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.LacerationPower",
+      "Title": "Laceration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LACERATION_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 191020,
+      "Name": "ryoshu_memory_surge_power_power",
+      "AssetName": "mods/ryoshu/memory_surge_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.MemorySurgePower",
+      "Title": "Memory Surge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MEMORY_SURGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191021,
+      "Name": "ryoshu_mental_barriers_power_power",
+      "AssetName": "mods/ryoshu/mental_barriers_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.MentalBarriersPower",
+      "Title": "Constellation Blessing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MENTAL_BARRIERS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191022,
+      "Name": "ryoshu_open_wound_power_power",
+      "AssetName": "mods/ryoshu/open_wound_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.OpenWoundPower",
+      "Title": "Open Wound",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "OPEN_WOUND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191023,
+      "Name": "ryoshu_prevent_hemostasis_power_power",
+      "AssetName": "mods/ryoshu/prevent_hemostasis_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.PreventHemostasisPower",
+      "Title": "Prevent Hemostasis",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PREVENT_HEMOSTASIS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 191024,
+      "Name": "ryoshu_pungent_smell_power_power",
+      "AssetName": "mods/ryoshu/pungent_smell_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.PungentSmellPower",
+      "Title": "Pungence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PUNGENT_SMELL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191025,
+      "Name": "ryoshu_review_to_refresh_power_power",
+      "AssetName": "mods/ryoshu/review_to_refresh_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.ReviewToRefreshPower",
+      "Title": "Review to Refresh",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "REVIEW_TO_REFRESH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191026,
+      "Name": "ryoshu_scarlet_fever_power_power",
+      "AssetName": "mods/ryoshu/scarlet_fever_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.ScarletFeverPower",
+      "Title": "Scarlet Fever",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SCARLET_FEVER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 191027,
+      "Name": "ryoshu_smog_form_power_power",
+      "AssetName": "mods/ryoshu/smog_form_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.SmogFormPower",
+      "Title": "Smog Form",
+      "Aliases": [
+        "すもっぐふぉーむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SMOG_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191028,
+      "Name": "ryoshu_tear_tendons_power_power",
+      "AssetName": "mods/ryoshu/tear_tendons_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.TearTendonsPower",
+      "Title": "Tear Tendons",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "TEAR_TENDONS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191029,
+      "Name": "ryoshu_thorn_armor_power_power",
+      "AssetName": "mods/ryoshu/thorn_armor_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.ThornArmorPower",
+      "Title": "Thorn Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THORN_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191030,
+      "Name": "ryoshu_thoughts_on_night_power_power",
+      "AssetName": "mods/ryoshu/thoughts_on_night_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.ThoughtsOnNightPower",
+      "Title": "Midnight Reminiscence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THOUGHTS_ON_NIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191031,
+      "Name": "ryoshu_thought_stream_power_power",
+      "AssetName": "mods/ryoshu/thought_stream_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.ThoughtStreamPower",
+      "Title": "Thought Stream",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THOUGHT_STREAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 191032,
+      "Name": "ryoshu_trauma_power_power",
+      "AssetName": "mods/ryoshu/trauma_power",
+      "Category": "Power",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.TraumaPower",
+      "Title": "Trauma",
+      "Aliases": [
+        "とらうま"
+      ],
+      "LocTable": "powers",
+      "LocKey": "TRAUMA_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 192000,
+      "Name": "ryoshu_ampule_relic",
+      "AssetName": "mods/ryoshu/ampule",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.Ampule",
+      "Title": "Ampule",
+      "Aliases": [
+        "あんぷる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AMPULE.title"
+    },
+    {
+      "Id": 192001,
+      "Name": "ryoshu_clear_mirror_calm_water_relic",
+      "AssetName": "mods/ryoshu/clear_mirror_calm_water",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.ClearMirrorCalmWater",
+      "Title": "Clear Mirror Calm Water",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CLEAR_MIRROR_CALM_WATER.title"
+    },
+    {
+      "Id": 192002,
+      "Name": "ryoshu_dihui_star_blade_relic",
+      "AssetName": "mods/ryoshu/dihui_star_blade",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.DihuiStarBlade",
+      "Title": "Dihui Star Blade",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "DIHUI_STAR_BLADE.title"
+    },
+    {
+      "Id": 192003,
+      "Name": "ryoshu_laevatain_relic",
+      "AssetName": "mods/ryoshu/laevatain",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.Laevatain",
+      "Title": "Laevatain",
+      "Aliases": [
+        "れーヴぁていん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LAEVATAIN.title"
+    },
+    {
+      "Id": 192004,
+      "Name": "ryoshu_nebulizer_relic",
+      "AssetName": "mods/ryoshu/nebulizer",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.Nebulizer",
+      "Title": "Nebulizer",
+      "Aliases": [
+        "ねびゅらいざー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "NEBULIZER.title"
+    },
+    {
+      "Id": 192005,
+      "Name": "ryoshu_prescript_relic",
+      "AssetName": "mods/ryoshu/prescript",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.Prescript",
+      "Title": "Prescript",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PRESCRIPT.title"
+    },
+    {
+      "Id": 192006,
+      "Name": "ryoshu_red_stained_gossypium_relic",
+      "AssetName": "mods/ryoshu/red_stained_gossypium",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.RedStainedGossypium",
+      "Title": "Red Stained Gossypium",
+      "Aliases": [
+        "血染めのごしぴうむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "RED_STAINED_GOSSYPIUM.title"
+    },
+    {
+      "Id": 192007,
+      "Name": "ryoshu_sealed_sword_relic",
+      "AssetName": "mods/ryoshu/sealed_sword",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.SealedSword",
+      "Title": "Sealed Sword",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SEALED_SWORD.title"
+    },
+    {
+      "Id": 192008,
+      "Name": "ryoshu_smokes_and_wires_relic",
+      "AssetName": "mods/ryoshu/smokes_and_wires",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.SmokesAndWires",
+      "Title": "Smokes and Wires",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SMOKES_AND_WIRES.title"
+    },
+    {
+      "Id": 192009,
+      "Name": "ryoshu_tiansha_star_blade_arayashiki_relic",
+      "AssetName": "mods/ryoshu/tiansha_star_blade_arayashiki",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.TianshaStarBladeArayashiki",
+      "Title": "Tiansha Star's Blade-Arayashiki",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "TIANSHA_STAR_BLADE_ARAYASHIKI.title"
+    },
+    {
+      "Id": 192010,
+      "Name": "ryoshu_tiansha_star_blade_wound_relic",
+      "AssetName": "mods/ryoshu/tiansha_star_blade_wound",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.TianshaStarBladeWound",
+      "Title": "Tiansha Star's Blade Wound",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "TIANSHA_STAR_BLADE_WOUND.title"
+    },
+    {
+      "Id": 192011,
+      "Name": "ryoshu_veil_relic",
+      "AssetName": "mods/ryoshu/veil",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.Veil",
+      "Title": "Veil",
+      "Aliases": [
+        "ヴぇーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "VEIL.title"
+    },
+    {
+      "Id": 192012,
+      "Name": "ryoshu_wound_clerid_relic",
+      "AssetName": "mods/ryoshu/wound_clerid",
+      "Category": "Relic",
+      "Assembly": "Ryoshu",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Relics.WoundClerid",
+      "Title": "Wound Clerid",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "WOUND_CLERID.title"
+    },
+    {
+      "Id": 195000,
+      "Name": "ryoshu_ryoshu_character",
+      "AssetName": "mods/ryoshu/ryoshu",
+      "Category": "Character",
+      "Assembly": "Ryoshu",
+      "TypeName": "RyoshuMod.Ryoshu",
+      "Title": "Ryoshu",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "RYOSHU.title",
+      "CookieEmoteId": 2319
+    }
+  ]
+}

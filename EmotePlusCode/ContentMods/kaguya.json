@@ -1,0 +1,2184 @@
+{
+  "Key": "kaguya",
+  "ModIds": [
+    "Kaguya"
+  ],
+  "Name": "超时空辉夜姬",
+  "WorkshopId": "3747548629",
+  "Aliases": [
+    "Kaguya"
+  ],
+  "Entries": [
+    {
+      "Id": 252000,
+      "Name": "kaguya_happy_synthesizer_relic_relic",
+      "AssetName": "mods/kaguya/happy_synthesizer_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HappySynthesizerRelic",
+      "Title": "Happy Synthesizer",
+      "Aliases": [
+        "はっぴーしんせさいざー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HAPPY_SYNTHESIZER_RELIC.title"
+    },
+    {
+      "Id": 252001,
+      "Name": "kaguya_ideal_relic",
+      "AssetName": "mods/kaguya/ideal",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Ideal",
+      "Title": "Ideal",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "IDEAL.title"
+    },
+    {
+      "Id": 252002,
+      "Name": "kaguya_kaguya_account_relic",
+      "AssetName": "mods/kaguya/kaguya_account",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.KaguyaAccount",
+      "Title": "Kaguya's Account",
+      "Aliases": [
+        "かぐやのあかうんと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA_ACCOUNT.title"
+    },
+    {
+      "Id": 252003,
+      "Name": "kaguya_ordinary_happiness_relic",
+      "AssetName": "mods/kaguya/ordinary_happiness",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.OrdinaryHappiness",
+      "Title": "Ordinary Happiness",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ORDINARY_HAPPINESS.title"
+    },
+    {
+      "Id": 252004,
+      "Name": "kaguya_parting_gift_relic",
+      "AssetName": "mods/kaguya/parting_gift",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.PartingGift",
+      "Title": "Farewell Gift",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PARTING_GIFT.title"
+    },
+    {
+      "Id": 252005,
+      "Name": "kaguya_performance_costume_relic",
+      "AssetName": "mods/kaguya/performance_costume",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.PerformanceCostume",
+      "Title": "Performance Costume",
+      "Aliases": [
+        "すてーじ衣装"
+      ],
+      "LocTable": "relics",
+      "LocKey": "PERFORMANCE_COSTUME.title"
+    },
+    {
+      "Id": 252006,
+      "Name": "kaguya_tears_of_memory_relic",
+      "AssetName": "mods/kaguya/tears_of_memory",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.TearsOfMemory",
+      "Title": "Tears of Memory",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "TEARS_OF_MEMORY.title"
+    },
+    {
+      "Id": 252007,
+      "Name": "kaguya_tsukuyomi_shrine_relic",
+      "AssetName": "mods/kaguya/tsukuyomi_shrine",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.TsukuyomiShrine",
+      "Title": "Handshake Ticket",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "TSUKUYOMI_SHRINE.title"
+    },
+    {
+      "Id": 252008,
+      "Name": "kaguya_yachiyo_shrine_relic",
+      "AssetName": "mods/kaguya/yachiyo_shrine",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.YachiyoShrine",
+      "Title": "Yachiyo Shrine",
+      "Aliases": [
+        "やちよの神棚"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YACHIYO_SHRINE.title"
+    },
+    {
+      "Id": 254000,
+      "Name": "kaguya_apple_candy_potion",
+      "AssetName": "mods/kaguya/apple_candy",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Potions.AppleCandy",
+      "Title": "Candy Apple",
+      "Aliases": [
+        "りんご飴"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-APPLE_CANDY.title"
+    },
+    {
+      "Id": 254001,
+      "Name": "kaguya_pancake_potion",
+      "AssetName": "mods/kaguya/pancake",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Potions.Pancake",
+      "Title": "Muffin",
+      "Aliases": [
+        "まふぃん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-PANCAKE.title"
+    },
+    {
+      "Id": 254002,
+      "Name": "kaguya_smoothie_potion",
+      "AssetName": "mods/kaguya/smoothie",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Potions.Smoothie",
+      "Title": "Smoothie",
+      "Aliases": [
+        "すむーじー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-SMOOTHIE.title"
+    },
+    {
+      "Id": 254003,
+      "Name": "kaguya_sushi_potion",
+      "AssetName": "mods/kaguya/sushi",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Potions.Sushi",
+      "Title": "Sushi",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-SUSHI.title"
+    },
+    {
+      "Id": 252009,
+      "Name": "kaguya_brothers_deposit_relic",
+      "AssetName": "mods/kaguya/brothers_deposit",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.BrothersDeposit",
+      "Title": "Big Brother's Savings",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "BROTHERS_DEPOSIT.title"
+    },
+    {
+      "Id": 252010,
+      "Name": "kaguya_challenge_letter_relic",
+      "AssetName": "mods/kaguya/challenge_letter",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.ChallengeLetter",
+      "Title": "Challenge Letter",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-CHALLENGE_LETTER.title"
+    },
+    {
+      "Id": 252011,
+      "Name": "kaguya_charming_antler_relic",
+      "AssetName": "mods/kaguya/charming_antler",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.CharmingAntler",
+      "Title": "Charming Antler",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-CHARMING_ANTLER.title"
+    },
+    {
+      "Id": 252012,
+      "Name": "kaguya_costume_system_relic",
+      "AssetName": "mods/kaguya/costume_system",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.CostumeSystem",
+      "Title": "Costume System",
+      "Aliases": [
+        "着替えしすてむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-COSTUME_SYSTEM.title"
+    },
+    {
+      "Id": 252013,
+      "Name": "kaguya_data_usb_relic",
+      "AssetName": "mods/kaguya/data_usb",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.DataUsb",
+      "Title": "Data USB",
+      "Aliases": [
+        "でーたUSB"
+      ],
+      "LocTable": "relics",
+      "LocKey": "DATA_USB.title"
+    },
+    {
+      "Id": 252014,
+      "Name": "kaguya_doll_sized_girl_relic",
+      "AssetName": "mods/kaguya/doll_sized_girl",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.DollSizedGirl",
+      "Title": "Doll-Sized Girl",
+      "Aliases": [
+        "人形さいずの少女"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-DOLL_SIZED_GIRL.title"
+    },
+    {
+      "Id": 252015,
+      "Name": "kaguya_eight_thousand_years_longing_relic",
+      "AssetName": "mods/kaguya/eight_thousand_years_longing",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.EightThousandYearsLonging",
+      "Title": "Eight Thousand Years of Longing",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-EIGHT_THOUSAND_YEARS_LONGING.title"
+    },
+    {
+      "Id": 252016,
+      "Name": "kaguya_electronic_keyboard_relic",
+      "AssetName": "mods/kaguya/electronic_keyboard",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.ElectronicKeyboard",
+      "Title": "Electronic Keyboard",
+      "Aliases": [
+        "きーぼーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-ELECTRONIC_KEYBOARD.title"
+    },
+    {
+      "Id": 252017,
+      "Name": "kaguya_flat_sheath_charm_relic",
+      "AssetName": "mods/kaguya/flat_sheath_charm",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.FlatSheathCharm",
+      "Title": "Flat Sheath Charm",
+      "Aliases": [
+        "扁面鞘のちゃーむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-FLAT_SHEATH_CHARM.title"
+    },
+    {
+      "Id": 252018,
+      "Name": "kaguya_fushi_doll_relic",
+      "AssetName": "mods/kaguya/fushi_doll",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.FushiDoll",
+      "Title": "Fushi Doll",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-FUSHI_DOLL.title"
+    },
+    {
+      "Id": 252019,
+      "Name": "kaguya_gashapon_machine_l1_relic",
+      "AssetName": "mods/kaguya/gashapon_machine_l1",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.GashaponMachineL1",
+      "Title": "Gashapon Machine",
+      "Aliases": [
+        "がちゃましん",
+        "すーぱーがちゃましん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-GASHAPON_MACHINE_L1.title",
+      "TypeAliases": [
+        "Kaguya.Relics.SuperGashaponMachine",
+        "Kaguya.Relics.GashaponMachineL2",
+        "Kaguya.Relics.GashaponMachineL3"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 252022,
+      "Name": "kaguya_gluttonous_flying_fish_relic",
+      "AssetName": "mods/kaguya/gluttonous_flying_fish",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.GluttonousFlyingFish",
+      "Title": "Gluttonous Flying Fish",
+      "Aliases": [
+        "食いしん坊とびうお"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-GLUTTONOUS_FLYING_FISH.title"
+    },
+    {
+      "Id": 252023,
+      "Name": "kaguya_iroha_ipad_relic",
+      "AssetName": "mods/kaguya/iroha_ipad",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.IrohaIpad",
+      "Title": "Iroha's iPad",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-IROHA_IPAD.title"
+    },
+    {
+      "Id": 252024,
+      "Name": "kaguya_iroha_schedule_relic",
+      "AssetName": "mods/kaguya/iroha_schedule",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.IrohaSchedule",
+      "Title": "Iroha's Schedule",
+      "Aliases": [
+        "彩葉のすけじゅーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-IROHA_SCHEDULE.title"
+    },
+    {
+      "Id": 252025,
+      "Name": "kaguya_kaguya_hammer_relic",
+      "AssetName": "mods/kaguya/kaguya_hammer",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.KaguyaHammer",
+      "Title": "Kaguya's Hammer",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-KAGUYA_HAMMER.title"
+    },
+    {
+      "Id": 252026,
+      "Name": "kaguya_landmine_trap_relic",
+      "AssetName": "mods/kaguya/landmine_trap",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.LandmineTrap",
+      "Title": "Landmine Trap",
+      "Aliases": [
+        "地雷とらっぷ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-LANDMINE_TRAP.title"
+    },
+    {
+      "Id": 252027,
+      "Name": "kaguya_lei_big_sword_relic",
+      "AssetName": "mods/kaguya/lei_big_sword",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.LeiBigSword",
+      "Title": "Lei's Greatsword",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEI_BIG_SWORD.title"
+    },
+    {
+      "Id": 252028,
+      "Name": "kaguya_live_streaming_relic",
+      "AssetName": "mods/kaguya/live_streaming",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.LiveStreaming",
+      "Title": "Live Streaming",
+      "Aliases": [
+        "らいぶ配信"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-LIVE_STREAMING.title"
+    },
+    {
+      "Id": 252029,
+      "Name": "kaguya_luxury_apartment_relic",
+      "AssetName": "mods/kaguya/luxury_apartment",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.LuxuryApartment",
+      "Title": "Luxury Apartment",
+      "Aliases": [
+        "高級あぱーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-LUXURY_APARTMENT.title"
+    },
+    {
+      "Id": 252030,
+      "Name": "kaguya_mami_gourmet_guide_relic",
+      "AssetName": "mods/kaguya/mami_gourmet_guide",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MamiGourmetGuide",
+      "Title": "Mami's Gourmet Guide",
+      "Aliases": [
+        "真実のぐるめがいど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MAMI_GOURMET_GUIDE.title"
+    },
+    {
+      "Id": 252031,
+      "Name": "kaguya_memory_fragment_concert_relic",
+      "AssetName": "mods/kaguya/memory_fragment_concert",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MemoryFragmentConcert",
+      "Title": "Memory Fragment · Concert",
+      "Aliases": [
+        "記憶の欠片・らいぶ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MEMORY_FRAGMENT_CONCERT.title"
+    },
+    {
+      "Id": 252032,
+      "Name": "kaguya_memory_fragment_daily_relic",
+      "AssetName": "mods/kaguya/memory_fragment_daily",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MemoryFragmentDaily",
+      "Title": "Memory Fragment · Daily Life",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MEMORY_FRAGMENT_DAILY.title"
+    },
+    {
+      "Id": 252033,
+      "Name": "kaguya_memory_fragment_resolution_relic",
+      "AssetName": "mods/kaguya/memory_fragment_resolution",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MemoryFragmentResolution",
+      "Title": "Memory Fragment · Resolution",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MEMORY_FRAGMENT_RESOLUTION.title"
+    },
+    {
+      "Id": 252034,
+      "Name": "kaguya_memory_fragment_start_relic",
+      "AssetName": "mods/kaguya/memory_fragment_start",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MemoryFragmentStart",
+      "Title": "Memory Fragment · Beginning",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MEMORY_FRAGMENT_START.title"
+    },
+    {
+      "Id": 252035,
+      "Name": "kaguya_moon_headdress_relic",
+      "AssetName": "mods/kaguya/moon_headdress",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MoonHeaddress",
+      "Title": "Moon Headdress",
+      "Aliases": [
+        "月のへあばんど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MOON_HEADDRESS.title"
+    },
+    {
+      "Id": 252036,
+      "Name": "kaguya_nai_bow_relic",
+      "AssetName": "mods/kaguya/nai_bow",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.NaiBow",
+      "Title": "Nai's Bow",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-NAI_BOW.title"
+    },
+    {
+      "Id": 252037,
+      "Name": "kaguya_mami_onigiri_relic",
+      "AssetName": "mods/kaguya/mami_onigiri",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.MamiOnigiri",
+      "Title": "Mami's Onigiri",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MAMI_ONIGIRI.title"
+    },
+    {
+      "Id": 252038,
+      "Name": "kaguya_roka_makeup_bag_relic",
+      "AssetName": "mods/kaguya/roka_makeup_bag",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.RokaMakeupBag",
+      "Title": "Roka's Makeup Bag",
+      "Aliases": [
+        "芦花の化粧ぽーち"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-ROKA_MAKEUP_BAG.title"
+    },
+    {
+      "Id": 252039,
+      "Name": "kaguya_roka_nail_art_relic",
+      "AssetName": "mods/kaguya/roka_nail_art",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.RokaNailArt",
+      "Title": "Roka's Nail Art",
+      "Aliases": [
+        "芦花のねいるあーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-ROKA_NAIL_ART.title"
+    },
+    {
+      "Id": 252040,
+      "Name": "kaguya_royal_twin_blades_relic",
+      "AssetName": "mods/kaguya/royal_twin_blades",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.RoyalTwinBlades",
+      "Title": "Royal Twin Blades",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-ROYAL_TWIN_BLADES.title"
+    },
+    {
+      "Id": 252041,
+      "Name": "kaguya_rundown_apartment_relic",
+      "AssetName": "mods/kaguya/rundown_apartment",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.RundownApartment",
+      "Title": "Run-Down Apartment",
+      "Aliases": [
+        "ぼろあぱーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-RUNDOWN_APARTMENT.title"
+    },
+    {
+      "Id": 252042,
+      "Name": "kaguya_school_uniform_relic",
+      "AssetName": "mods/kaguya/school_uniform",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SchoolUniform",
+      "Title": "School Uniform",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SCHOOL_UNIFORM.title"
+    },
+    {
+      "Id": 252043,
+      "Name": "kaguya_sea_slug_blessing_relic",
+      "AssetName": "mods/kaguya/sea_slug_blessing",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SeaSlugBlessing",
+      "Title": "Sea Slug's Blessing",
+      "Aliases": [
+        "うみうしの祝福"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SEA_SLUG_BLESSING.title"
+    },
+    {
+      "Id": 252044,
+      "Name": "kaguya_sea_slug_memory_relic",
+      "AssetName": "mods/kaguya/sea_slug_memory",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SeaSlugMemory",
+      "Title": "Sea Slug's Memory",
+      "Aliases": [
+        "うみうしの記憶"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SEA_SLUG_MEMORY.title"
+    },
+    {
+      "Id": 252045,
+      "Name": "kaguya_spoon_and_fork_relic",
+      "AssetName": "mods/kaguya/spoon_and_fork",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SpoonAndFork",
+      "Title": "Spoon & Fork",
+      "Aliases": [
+        "すぷーん&ふぉーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SPOON_AND_FORK.title"
+    },
+    {
+      "Id": 252046,
+      "Name": "kaguya_sun_headdress_relic",
+      "AssetName": "mods/kaguya/sun_headdress",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SunHeaddress",
+      "Title": "Kaguya's Petition",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SUN_HEADDRESS.title"
+    },
+    {
+      "Id": 252047,
+      "Name": "kaguya_superdimensional_kaguya_relic",
+      "AssetName": "mods/kaguya/superdimensional_kaguya",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SuperdimensionalKaguya",
+      "Title": "Superdimensional Kaguya!",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SUPERDIMENSIONAL_KAGUYA.title"
+    },
+    {
+      "Id": 252048,
+      "Name": "kaguya_swaddled_infant_relic",
+      "AssetName": "mods/kaguya/swaddled_infant",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.SwaddledInfant",
+      "Title": "Swaddled Infant",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SWADDLED_INFANT.title"
+    },
+    {
+      "Id": 252049,
+      "Name": "kaguya_tech_contact_lens_relic",
+      "AssetName": "mods/kaguya/tech_contact_lens",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.TechContactLens",
+      "Title": "Tech Contact Lens",
+      "Aliases": [
+        "すまこん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-TECH_CONTACT_LENS.title"
+    },
+    {
+      "Id": 252050,
+      "Name": "kaguya_thought_strand_relic",
+      "AssetName": "mods/kaguya/thought_strand",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.ThoughtStrand",
+      "Title": "Thought Strand",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-THOUGHT_STRAND.title"
+    },
+    {
+      "Id": 252051,
+      "Name": "kaguya_timeless_bond_relic",
+      "AssetName": "mods/kaguya/timeless_bond",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.TimelessBond",
+      "Title": "Timeless Bond",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-TIMELESS_BOND.title"
+    },
+    {
+      "Id": 252052,
+      "Name": "kaguya_work_clothes_relic",
+      "AssetName": "mods/kaguya/work_clothes",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.WorkClothes",
+      "Title": "Work Clothes",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-WORK_CLOTHES.title"
+    },
+    {
+      "Id": 252053,
+      "Name": "kaguya_yaccho_special_care_relic",
+      "AssetName": "mods/kaguya/yaccho_special_care",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Relics.YacchoSpecialCare",
+      "Title": "Yachiyo's Special Care",
+      "Aliases": [
+        "やちよの特別さーびす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-YACCHO_SPECIAL_CARE.title"
+    },
+    {
+      "Id": 251000,
+      "Name": "kaguya_backlash_trap_power_power",
+      "AssetName": "mods/kaguya/backlash_trap_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.BacklashTrapPower",
+      "Title": "Landmine Trap",
+      "Aliases": [
+        "地雷とらっぷ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-BACKLASH_TRAP_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 251001,
+      "Name": "kaguya_battle_start_power_power",
+      "AssetName": "mods/kaguya/battle_start_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.BattleStartPower",
+      "Title": "Battle Start",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-BATTLE_START_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Kaguya.Powers.FairDuelPower"
+      ]
+    },
+    {
+      "Id": 251002,
+      "Name": "kaguya_best_partner_power_power",
+      "AssetName": "mods/kaguya/best_partner_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.BestPartnerPower",
+      "Title": "Best Partner",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-BEST_PARTNER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251003,
+      "Name": "kaguya_bosatsu_phase_transition_power_power",
+      "AssetName": "mods/kaguya/bosatsu_phase_transition_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.BosatsuPhaseTransitionPower",
+      "Title": "Tsukito",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-BOSATSU_PHASE_TRANSITION_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Kaguya.Powers.KongoPhaseTransitionPower",
+        "Kaguya.Powers.PhaseTransitionPower",
+        "Kaguya.Powers.TurnCounterPower",
+        "Kaguya.Powers.ZuishoPhaseTransitionPower"
+      ]
+    },
+    {
+      "Id": 251004,
+      "Name": "kaguya_chain_trick_power_power",
+      "AssetName": "mods/kaguya/chain_trick_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ChainTrickPower",
+      "Title": "Chain Trick",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-CHAIN_TRICK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251005,
+      "Name": "kaguya_chaotic_sound_power_power",
+      "AssetName": "mods/kaguya/chaotic_sound_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ChaoticSoundPower",
+      "Title": "Chaotic Sound",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-CHAOTIC_SOUND_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "Kaguya.Powers.ChaoticSoundPowerV2"
+      ]
+    },
+    {
+      "Id": 251006,
+      "Name": "kaguya_compose_power_power",
+      "AssetName": "mods/kaguya/compose_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ComposePower",
+      "Title": "Compose",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-COMPOSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251007,
+      "Name": "kaguya_computer_room_power_power",
+      "AssetName": "mods/kaguya/computer_room_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ComputerRoomPower",
+      "Title": "Computer Room",
+      "Aliases": [
+        "さーばーるーむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-COMPUTER_ROOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251008,
+      "Name": "kaguya_creation_power_power",
+      "AssetName": "mods/kaguya/creation_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.CreationPower",
+      "Title": "Creation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-CREATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251009,
+      "Name": "kaguya_determination_power_power",
+      "AssetName": "mods/kaguya/determination_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.DeterminationPower",
+      "Title": "Determination",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-DETERMINATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251010,
+      "Name": "kaguya_excited_power_power",
+      "AssetName": "mods/kaguya/excited_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ExcitedPower",
+      "Title": "Excited",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-EXCITED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251011,
+      "Name": "kaguya_future_plan_power_power",
+      "AssetName": "mods/kaguya/future_plan_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.FuturePlanPower",
+      "Title": "Future Plan",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-FUTURE_PLAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251012,
+      "Name": "kaguya_gluttony_power_power",
+      "AssetName": "mods/kaguya/gluttony_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.GluttonyPower",
+      "Title": "Gluttony",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-GLUTTONY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251013,
+      "Name": "kaguya_gong_noise_power_power",
+      "AssetName": "mods/kaguya/gong_noise_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.GongNoisePower",
+      "Title": "Gong Noise",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-GONG_NOISE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251014,
+      "Name": "kaguya_good_ending_power_power",
+      "AssetName": "mods/kaguya/good_ending_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.GoodEndingPower",
+      "Title": "Good Ending",
+      "Aliases": [
+        "ぐっどえんど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-GOOD_ENDING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251015,
+      "Name": "kaguya_high_dimensional_being_power_power",
+      "AssetName": "mods/kaguya/high_dimensional_being_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.HighDimensionalBeingPower",
+      "Title": "Higher Dimensional Being",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-HIGH_DIMENSIONAL_BEING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251016,
+      "Name": "kaguya_inspiration_power_power",
+      "AssetName": "mods/kaguya/inspiration_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.InspirationPower",
+      "Title": "Inspiration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-INSPIRATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251017,
+      "Name": "kaguya_kurakawa_high_school_power_power",
+      "AssetName": "mods/kaguya/kurakawa_high_school_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.KurakawaHighSchoolPower",
+      "Title": "Kurakawa High School",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-KURAKAWA_HIGH_SCHOOL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251018,
+      "Name": "kaguya_limit_break_power_power",
+      "AssetName": "mods/kaguya/limit_break_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.LimitBreakPower",
+      "Title": "Limit Release",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-LIMIT_BREAK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251019,
+      "Name": "kaguya_live_performance_power_power",
+      "AssetName": "mods/kaguya/live_performance_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.LivePerformancePower",
+      "Title": "Live Performance",
+      "Aliases": [
+        "らいぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-LIVE_PERFORMANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251020,
+      "Name": "kaguya_model_student_power_power",
+      "AssetName": "mods/kaguya/model_student_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ModelStudentPower",
+      "Title": "Model Student",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-MODEL_STUDENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251021,
+      "Name": "kaguya_nail_art_next_attack_power_power",
+      "AssetName": "mods/kaguya/nail_art_next_attack_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.NailArtNextAttackPower",
+      "Title": "Nail Art (Ready)",
+      "Aliases": [
+        "ねいるあーと（準備）"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-NAIL_ART_NEXT_ATTACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251022,
+      "Name": "kaguya_never_give_up_power_power",
+      "AssetName": "mods/kaguya/never_give_up_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.NeverGiveUpPower",
+      "Title": "Longing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-NEVER_GIVE_UP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251023,
+      "Name": "kaguya_oppressive_pressure_power_power",
+      "AssetName": "mods/kaguya/oppressive_pressure_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.OppressivePressurePower",
+      "Title": "Oppressive Pressure",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-OPPRESSIVE_PRESSURE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251024,
+      "Name": "kaguya_overdraw_body_power_power",
+      "AssetName": "mods/kaguya/overdraw_body_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.OverdrawBodyPower",
+      "Title": "Overdraw Body",
+      "Aliases": [
+        "身体のおーばーどろー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-OVERDRAW_BODY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251025,
+      "Name": "kaguya_preparation_for_performance_power_power",
+      "AssetName": "mods/kaguya/preparation_for_performance_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.PreparationForPerformancePower",
+      "Title": "Preparation for Performance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-PREPARATION_FOR_PERFORMANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251026,
+      "Name": "kaguya_preparatory_stance_power_power",
+      "AssetName": "mods/kaguya/preparatory_stance_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.PreparatoryStancePower",
+      "Title": "Preparatory Stance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-PREPARATORY_STANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251027,
+      "Name": "kaguya_rope_trap_power_power",
+      "AssetName": "mods/kaguya/rope_trap_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.RopeTrapPower",
+      "Title": "Rope Trap",
+      "Aliases": [
+        "ろーぷとらっぷ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-ROPE_TRAP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251028,
+      "Name": "kaguya_sandfield_heroism_power_power",
+      "AssetName": "mods/kaguya/sandfield_heroism_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.SandfieldHeroismPower",
+      "Title": "Battlefield Heroism",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SANDFIELD_HEROISM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251029,
+      "Name": "kaguya_schedule_power_power",
+      "AssetName": "mods/kaguya/schedule_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.SchedulePower",
+      "Title": "Schedule",
+      "Aliases": [
+        "すけじゅーる調整"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SCHEDULE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251030,
+      "Name": "kaguya_surprise_performance_power_power",
+      "AssetName": "mods/kaguya/surprise_performance_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.SurprisePerformancePower",
+      "Title": "Surprise Performance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SURPRISE_PERFORMANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251031,
+      "Name": "kaguya_taketori_monogatari_power_power",
+      "AssetName": "mods/kaguya/taketori_monogatari_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.TaketoriMonogatariPower",
+      "Title": "Taketori Monogatari",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TAKETORI_MONOGATARI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251032,
+      "Name": "kaguya_thorn_trap_power_power",
+      "AssetName": "mods/kaguya/thorn_trap_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.ThornTrapPower",
+      "Title": "Binding Trap",
+      "Aliases": [
+        "拘束とらっぷ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-THORN_TRAP_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 251033,
+      "Name": "kaguya_tsukuyomi_form_power_power",
+      "AssetName": "mods/kaguya/tsukuyomi_form_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.TsukuyomiFormPower",
+      "Title": "Tsukuyomi Form",
+      "Aliases": [
+        "つくよみ化"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKUYOMI_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251034,
+      "Name": "kaguya_unbreakable_power_power",
+      "AssetName": "mods/kaguya/unbreakable_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.UnbreakablePower",
+      "Title": "Unbreakable",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-UNBREAKABLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Kaguya.Powers.VajraAllPower",
+        "Kaguya.Powers.VajraPower"
+      ]
+    },
+    {
+      "Id": 251035,
+      "Name": "kaguya_kaguya_no_energy_power",
+      "AssetName": "mods/kaguya/kaguya_no_energy",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.KaguyaNoEnergy",
+      "Title": "Three Rules",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-KAGUYA_NO_ENERGY.title",
+      "Tags": [
+        "Buff",
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "Kaguya.Powers.AccountRemedyPower"
+      ]
+    },
+    {
+      "Id": 251036,
+      "Name": "kaguya_genius_scientist_power_power",
+      "AssetName": "mods/kaguya/genius_scientist_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.GeniusScientistPower",
+      "Title": "Genius Scientist",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-GENIUS_SCIENTIST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 252054,
+      "Name": "kaguya_hina_kaguya_smartphone_relic_relic",
+      "AssetName": "mods/kaguya/hina_kaguya_smartphone_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.HinaKaguyaSmartphoneRelic",
+      "Title": "Kaguya's Smartphone",
+      "Aliases": [
+        "かぐやのすまほ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-HINA_KAGUYA_SMARTPHONE_RELIC.title"
+    },
+    {
+      "Id": 252055,
+      "Name": "kaguya_hina_mods_ancient_fortune_relic_relic",
+      "AssetName": "mods/kaguya/hina_mods_ancient_fortune_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.HinaModsAncientFortuneRelic",
+      "Title": "Moon View Umbrella",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-HINA_MODS_ANCIENT_FORTUNE_RELIC.title"
+    },
+    {
+      "Id": 252056,
+      "Name": "kaguya_hina_mods_fortune_relic_relic",
+      "AssetName": "mods/kaguya/hina_mods_fortune_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.HinaModsFortuneRelic",
+      "Title": "Kaguya's Bracelet",
+      "Aliases": [
+        "かぐやのぶれすれっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-HINA_MODS_FORTUNE_RELIC.title"
+    },
+    {
+      "Id": 252057,
+      "Name": "kaguya_hina_original_light_bamboo_relic_relic",
+      "AssetName": "mods/kaguya/hina_original_light_bamboo_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.HinaOriginalLightBambooRelic",
+      "Title": "Original Light Bamboo",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-HINA_ORIGINAL_LIGHT_BAMBOO_RELIC.title"
+    },
+    {
+      "Id": 252058,
+      "Name": "kaguya_hina_phonograph_relic_relic",
+      "AssetName": "mods/kaguya/hina_phonograph_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.HinaPhonographRelic",
+      "Title": "Kaguya's Headphones",
+      "Aliases": [
+        "かぐやのいやほん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-HINA_PHONOGRAPH_RELIC.title"
+    },
+    {
+      "Id": 252059,
+      "Name": "kaguya_moon_headdress_relic_relic",
+      "AssetName": "mods/kaguya/moon_headdress_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.MoonHeaddressRelic",
+      "Title": "Yachiyo's Hairpin",
+      "Aliases": [
+        "やちよの簪"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-MOON_HEADDRESS_RELIC.title"
+    },
+    {
+      "Id": 252060,
+      "Name": "kaguya_star_glasses_relic_relic",
+      "AssetName": "mods/kaguya/star_glasses_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.StarGlassesRelic",
+      "Title": "Star Glasses",
+      "Aliases": [
+        "星のめがね"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-STAR_GLASSES_RELIC.title"
+    },
+    {
+      "Id": 252061,
+      "Name": "kaguya_sun_headdress_relic_relic",
+      "AssetName": "mods/kaguya/sun_headdress_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.SunHeaddressRelic",
+      "Title": "Sun Headdress",
+      "Aliases": [
+        "太陽のへあばんど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-SUN_HEADDRESS_RELIC.title"
+    },
+    {
+      "Id": 252062,
+      "Name": "kaguya_yachiyo_fan_relic_relic",
+      "AssetName": "mods/kaguya/yachiyo_fan_relic",
+      "Category": "Relic",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Relics.YachiyoFanRelic",
+      "Title": "Yachiyo's Folding Fan",
+      "Aliases": [
+        "やちよの扇子"
+      ],
+      "LocTable": "relics",
+      "LocKey": "KAGUYA-YACHIYO_FAN_RELIC.title"
+    },
+    {
+      "Id": 251037,
+      "Name": "kaguya_star_night_power_power",
+      "AssetName": "mods/kaguya/star_night_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.StarNightPower",
+      "Title": "Sound-Seeking",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-STAR_NIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251038,
+      "Name": "kaguya_fortune_guard_power_power",
+      "AssetName": "mods/kaguya/fortune_guard_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.FortuneGuardPower",
+      "Title": "Piece of Cake",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-FORTUNE_GUARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251039,
+      "Name": "kaguya_fortune_power_power",
+      "AssetName": "mods/kaguya/fortune_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.FortunePower",
+      "Title": "Moonlight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-FORTUNE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251040,
+      "Name": "kaguya_growth_power_power",
+      "AssetName": "mods/kaguya/growth_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.GrowthPower",
+      "Title": "Growth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-GROWTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251041,
+      "Name": "kaguya_lead_power_power",
+      "AssetName": "mods/kaguya/lead_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.LeadPower",
+      "Title": "Peach",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-LEAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251042,
+      "Name": "kaguya_moonlight_block_power_power",
+      "AssetName": "mods/kaguya/moonlight_block_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.MoonlightBlockPower",
+      "Title": "Moon Gate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-MOONLIGHT_BLOCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251043,
+      "Name": "kaguya_performance_power_power",
+      "AssetName": "mods/kaguya/performance_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.PerformancePower",
+      "Title": "Performance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-PERFORMANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251044,
+      "Name": "kaguya_singer_cascade_power_power",
+      "AssetName": "mods/kaguya/singer_cascade_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SingerCascadePower",
+      "Title": "Reverberation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SINGER_CASCADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251045,
+      "Name": "kaguya_singer_convert_power_power",
+      "AssetName": "mods/kaguya/singer_convert_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SingerConvertPower",
+      "Title": "Shining Stage",
+      "Aliases": [
+        "輝くすてーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SINGER_CONVERT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251046,
+      "Name": "kaguya_singer_moon_ao_e_power_power",
+      "AssetName": "mods/kaguya/singer_moon_ao_e_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SingerMoonAoEPower",
+      "Title": "Gaze",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SINGER_MOON_AO_E_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251047,
+      "Name": "kaguya_support_attack_power_power",
+      "AssetName": "mods/kaguya/support_attack_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportAttackPower",
+      "Title": "Attack Support",
+      "Aliases": [
+        "あたっく支援",
+        "すきる支援"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_ATTACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Kaguya.HinaMods.Powers.SupportSkillPower"
+      ]
+    },
+    {
+      "Id": 251048,
+      "Name": "kaguya_support_aura_power_power",
+      "AssetName": "mods/kaguya/support_aura_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportAuraPower",
+      "Title": "Weapon Swap",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_AURA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251049,
+      "Name": "kaguya_support_channeling_power_power",
+      "AssetName": "mods/kaguya/support_channeling_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportChannelingPower",
+      "Title": "Banquet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_CHANNELING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251050,
+      "Name": "kaguya_support_orbit_power_power",
+      "AssetName": "mods/kaguya/support_orbit_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportOrbitPower",
+      "Title": "Golden Scale",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_ORBIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251051,
+      "Name": "kaguya_support_forge_power_power",
+      "AssetName": "mods/kaguya/support_forge_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportForgePower",
+      "Title": "Under Fireworks",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_FORGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251052,
+      "Name": "kaguya_support_rhythm_power_power",
+      "AssetName": "mods/kaguya/support_rhythm_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportRhythmPower",
+      "Title": "Curtain Raiser",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_RHYTHM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251053,
+      "Name": "kaguya_support_strike_aura_power_power",
+      "AssetName": "mods/kaguya/support_strike_aura_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.SupportStrikeAuraPower",
+      "Title": "Coordinated Ops",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-SUPPORT_STRIKE_AURA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251054,
+      "Name": "kaguya_tsukimi_blessing_power_power",
+      "AssetName": "mods/kaguya/tsukimi_blessing_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TsukimiBlessingPower",
+      "Title": "Moon View Stance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKIMI_BLESSING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251055,
+      "Name": "kaguya_tsukimi_contract_power_power",
+      "AssetName": "mods/kaguya/tsukimi_contract_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TsukimiContractPower",
+      "Title": "Climax",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKIMI_CONTRACT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251056,
+      "Name": "kaguya_tsukimi_draw_buff_power",
+      "AssetName": "mods/kaguya/tsukimi_draw_buff",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TsukimiDrawBuff",
+      "Title": "Starlit Brilliance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKIMI_DRAW_BUFF.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251057,
+      "Name": "kaguya_tsukimi_form_power_power",
+      "AssetName": "mods/kaguya/tsukimi_form_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TsukimiFormPower",
+      "Title": "Celestial Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKIMI_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251058,
+      "Name": "kaguya_tsukimi_robe_buff_power",
+      "AssetName": "mods/kaguya/tsukimi_robe_buff",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TsukimiRobeBuff",
+      "Title": "Heavenly Robe",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKIMI_ROBE_BUFF.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251059,
+      "Name": "kaguya_tsukimi_time_power_power",
+      "AssetName": "mods/kaguya/tsukimi_time_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TsukimiTimePower",
+      "Title": "Moon Sights",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-TSUKIMI_TIME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 254004,
+      "Name": "kaguya_moon_potion_potion",
+      "AssetName": "mods/kaguya/moon_potion",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Potions.MoonPotion",
+      "Title": "Moon Potion",
+      "Aliases": [
+        "月のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-MOON_POTION.title"
+    },
+    {
+      "Id": 254005,
+      "Name": "kaguya_star_night_potion_potion",
+      "AssetName": "mods/kaguya/star_night_potion",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Potions.StarNightPotion",
+      "Title": "Sound-Seeking Potion",
+      "Aliases": [
+        "循声ぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-STAR_NIGHT_POTION.title"
+    },
+    {
+      "Id": 254006,
+      "Name": "kaguya_support_potion_potion",
+      "AssetName": "mods/kaguya/support_potion",
+      "Category": "Potion",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Potions.SupportPotion",
+      "Title": "Support Potion",
+      "Aliases": [
+        "支援ぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAGUYA-SUPPORT_POTION.title"
+    },
+    {
+      "Id": 253000,
+      "Name": "kaguya_thought_enchantment_enchantment",
+      "AssetName": "mods/kaguya/thought_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Enchantments.ThoughtEnchantment",
+      "Title": "Thoughts",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "KAGUYA-THOUGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 251060,
+      "Name": "kaguya_this_night_is_also_eternal_temp_power_power",
+      "AssetName": "mods/kaguya/this_night_is_also_eternal_temp_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Cards.ThisNightIsAlsoEternalTempPower",
+      "Title": "Return to Daily Life",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAGUYA-THIS_NIGHT_IS_ALSO_ETERNAL_TEMP_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Kaguya.Powers.Overwork"
+      ]
+    },
+    {
+      "Id": 251061,
+      "Name": "kaguya_melt_power_power",
+      "AssetName": "mods/kaguya/melt_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.MeltPower",
+      "Title": "Melt",
+      "Aliases": [
+        "めると"
+      ],
+      "LocTable": "powers",
+      "LocKey": "MELT_POWER.title"
+    },
+    {
+      "Id": 251062,
+      "Name": "kaguya_princess_power_power",
+      "AssetName": "mods/kaguya/princess_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.PrincessPower",
+      "Title": "Princess",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PRINCESS_POWER.title"
+    },
+    {
+      "Id": 251063,
+      "Name": "kaguya_recall_power_power",
+      "AssetName": "mods/kaguya/recall_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.RecallPower",
+      "Title": "Remember",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RECALL_POWER.title"
+    },
+    {
+      "Id": 251064,
+      "Name": "kaguya_starlit_sea_power_power",
+      "AssetName": "mods/kaguya/starlit_sea_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.StarlitSeaPower",
+      "Title": "Starlit Sea",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STARLIT_SEA_POWER.title"
+    },
+    {
+      "Id": 251065,
+      "Name": "kaguya_transient_symphony_power_power",
+      "AssetName": "mods/kaguya/transient_symphony_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.TransientSymphonyPower",
+      "Title": "Transient Symphony",
+      "Aliases": [
+        "瞬間、しんふぉにー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "TRANSIENT_SYMPHONY_POWER.title"
+    },
+    {
+      "Id": 251067,
+      "Name": "kaguya_reality_power",
+      "AssetName": "mods/kaguya/reality",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.Reality",
+      "Title": "Reality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "REALITY.title"
+    },
+    {
+      "Id": 251068,
+      "Name": "kaguya_tsukuyomi_power",
+      "AssetName": "mods/kaguya/tsukuyomi",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.Tsukuyomi",
+      "Title": "Tsukuyomi",
+      "Aliases": [
+        "つくよみ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "TSUKUYOMI.title"
+    },
+    {
+      "Id": 251066,
+      "Name": "kaguya_cut_off_power_power",
+      "AssetName": "mods/kaguya/cut_off_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.CutOffPower",
+      "Title": "Cut Off",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "KAGUYA-CUT_OFF.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 251069,
+      "Name": "kaguya_jealousy_power_power",
+      "AssetName": "mods/kaguya/jealousy_power",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Powers.JealousyPower",
+      "Title": "Jealousy",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "KAGUYA-JEALOUSY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 251070,
+      "Name": "kaguya_temp_strength_down_power",
+      "AssetName": "mods/kaguya/temp_strength_down",
+      "Category": "Power",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Powers.TempStrengthDown",
+      "Title": "Act Cute",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "KAGUYA-HINA_MODS_MOON_LEVERAGE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 257000,
+      "Name": "kaguya_black_onyx_ancient_ancient",
+      "AssetName": "mods/kaguya/black_onyx_ancient",
+      "Category": "Ancient",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.BlackOnyxAncient",
+      "Title": "Black Onyx",
+      "Aliases": [
+        "ぶらっくおにきす"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "BLACK_ONYX_ANCIENT.title"
+    },
+    {
+      "Id": 257001,
+      "Name": "kaguya_fushi_ancient_ancient",
+      "AssetName": "mods/kaguya/fushi_ancient",
+      "Category": "Ancient",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.FushiAncient",
+      "Title": "Fushi",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "FUSHI_ANCIENT.title"
+    },
+    {
+      "Id": 257002,
+      "Name": "kaguya_kaguya_ancient_ancient",
+      "AssetName": "mods/kaguya/kaguya_ancient",
+      "Category": "Ancient",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.KaguyaAncient",
+      "Title": "Kaguya",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "KAGUYA_ANCIENT.title"
+    },
+    {
+      "Id": 257003,
+      "Name": "kaguya_roka_and_mami_ancient_ancient",
+      "AssetName": "mods/kaguya/roka_and_mami_ancient",
+      "Category": "Ancient",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.RokaAndMamiAncient",
+      "Title": "Roka & Mami",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "ROKA_AND_MAMI_ANCIENT.title"
+    },
+    {
+      "Id": 257004,
+      "Name": "kaguya_sakayori_iroha_ancient_ancient",
+      "AssetName": "mods/kaguya/sakayori_iroha_ancient",
+      "Category": "Ancient",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.SakayoriIrohaAncient",
+      "Title": "Sakayori Iroha",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "SAKAYORI_IROHA_ANCIENT.title"
+    },
+    {
+      "Id": 257005,
+      "Name": "kaguya_yachiyo_ancient_ancient",
+      "AssetName": "mods/kaguya/yachiyo_ancient",
+      "Category": "Ancient",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.YachiyoAncient",
+      "Title": "Yachiyo",
+      "Aliases": [
+        "やちよ"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "YACHIYO_ANCIENT.title"
+    },
+    {
+      "Id": 256000,
+      "Name": "kaguya_tsukito_bosatsu_boss_encounter_creature",
+      "AssetName": "mods/kaguya/bosses/tsukito_bosatsu_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Encounters.TsukitoBosatsuBossEncounter",
+      "TypeAliases": [
+        "Kaguya.Monsters.TsukitoBosatsu",
+        "Kaguya.Monsters.TsukitoKongoPhase3Only",
+        "Kaguya.Monsters.TsukitoKongoTwoPhase",
+        "Kaguya.Monsters.TsukitoTenchuPhase2Only",
+        "Kaguya.Monsters.TsukitoZuishoPhase2Only"
+      ],
+      "Title": "Tsukito · Bodhisattva Type",
+      "Aliases": [
+        "月人　ぼさつ型"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "TSUKITO_BOSATSU_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 256001,
+      "Name": "kaguya_tsukito_kongo_boss_encounter_creature",
+      "AssetName": "mods/kaguya/bosses/tsukito_kongo_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Encounters.TsukitoKongoBossEncounter",
+      "TypeAliases": [
+        "Kaguya.Monsters.TsukitoKongo"
+      ],
+      "Title": "Tsukito · Vajra Type",
+      "Aliases": [
+        "月人　こんごう型"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "TSUKITO_KONGO_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 256002,
+      "Name": "kaguya_tsukito_tenchu_boss_encounter_creature",
+      "AssetName": "mods/kaguya/bosses/tsukito_tenchu_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Encounters.TsukitoTenchuBossEncounter",
+      "TypeAliases": [
+        "Kaguya.Monsters.TsukitoTenchu"
+      ],
+      "Title": "Tsukito · Celestial Maiden Type",
+      "Aliases": [
+        "月人　てんにゅ型"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "TSUKITO_TENCHU_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 255000,
+      "Name": "kaguya_sakayori_iroha_character",
+      "AssetName": "mods/kaguya/sakayori_iroha",
+      "Category": "Character",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.Characters.SakayoriIroha",
+      "Title": "Sakayori Iroha",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "KAGUYA-SAKAYORI_IROHA.title",
+      "CookieEmoteId": 2319
+    },
+    {
+      "Id": 255001,
+      "Name": "kaguya_hina_character_character",
+      "AssetName": "mods/kaguya/hina_character",
+      "Category": "Character",
+      "Assembly": "Kaguya",
+      "TypeName": "Kaguya.HinaMods.Character.HinaCharacter",
+      "Title": "Kaguya",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "KAGUYA-HINA_CHARACTER.title",
+      "CookieEmoteId": 2319
+    }
+  ]
+}

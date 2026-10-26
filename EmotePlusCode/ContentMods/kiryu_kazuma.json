@@ -1,0 +1,298 @@
+{
+  "Key": "kiryu_kazuma",
+  "ModIds": [
+    "KiryuKazuma"
+  ],
+  "Name": "Kiryu Kazuma",
+  "WorkshopId": "3750195727",
+  "Aliases": [
+    "KiryuKazuma",
+    "Kiryu Kazuma",
+    "桐生一馬"
+  ],
+  "Entries": [
+    {
+      "Id": 182000,
+      "Name": "kiryu_kazuma_the_fourth_chairman_relic",
+      "AssetName": "mods/kiryu_kazuma/the_fourth_chairman",
+      "Category": "Relic",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Relics.TheFourthChairman",
+      "Title": "The Fourth Chairman",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KIRYUKAZUMA-THE_FOURTH_CHAIRMAN.title"
+    },
+    {
+      "Id": 182001,
+      "Name": "kiryu_kazuma_the_man_who_erased_his_name_relic",
+      "AssetName": "mods/kiryu_kazuma/the_man_who_erased_his_name",
+      "Category": "Relic",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Relics.TheManWhoErasedHisName",
+      "Title": "The Man Who Erased His Name",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KIRYUKAZUMA-THE_MAN_WHO_ERASED_HIS_NAME.title"
+    },
+    {
+      "Id": 181000,
+      "Name": "kiryu_kazuma_beastly_momentum_power_power",
+      "AssetName": "mods/kiryu_kazuma/beastly_momentum_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.BeastlyMomentumPower",
+      "Title": "Beastly Momentum",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-BEASTLY_MOMENTUM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181001,
+      "Name": "kiryu_kazuma_beast_style_power_power",
+      "AssetName": "mods/kiryu_kazuma/beast_style_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.BeastStylePower",
+      "Title": "Beast Style",
+      "Aliases": [
+        "壊し屋すたいる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-BEAST_STYLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181002,
+      "Name": "kiryu_kazuma_brawler_style_power_power",
+      "AssetName": "mods/kiryu_kazuma/brawler_style_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.BrawlerStylePower",
+      "Title": "Brawler Style",
+      "Aliases": [
+        "ちんぴらすたいる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-BRAWLER_STYLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181003,
+      "Name": "kiryu_kazuma_climax_heat_power_power",
+      "AssetName": "mods/kiryu_kazuma/climax_heat_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.ClimaxHeatPower",
+      "Title": "Climax Heat",
+      "Aliases": [
+        "くらいまっくすひーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-CLIMAX_HEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181004,
+      "Name": "kiryu_kazuma_dragon_form_power_power",
+      "AssetName": "mods/kiryu_kazuma/dragon_form_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.DragonFormPower",
+      "Title": "Dragon Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-DRAGON_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181005,
+      "Name": "kiryu_kazuma_dragon_of_dojima_power_power",
+      "AssetName": "mods/kiryu_kazuma/dragon_of_dojima_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.DragonOfDojimaPower",
+      "Title": "Dragon of Dojima",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-DRAGON_OF_DOJIMA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181006,
+      "Name": "kiryu_kazuma_extreme_heat_power_power",
+      "AssetName": "mods/kiryu_kazuma/extreme_heat_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.ExtremeHeatPower",
+      "Title": "Extreme Heat",
+      "Aliases": [
+        "えくすとりーむひーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-EXTREME_HEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181007,
+      "Name": "kiryu_kazuma_heat_power_power",
+      "AssetName": "mods/kiryu_kazuma/heat_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.HeatPower",
+      "Title": "Heat",
+      "Aliases": [
+        "ひーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-HEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181008,
+      "Name": "kiryu_kazuma_herculean_throw_power_power",
+      "AssetName": "mods/kiryu_kazuma/herculean_throw_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.HerculeanThrowPower",
+      "Title": "Herculean Throw",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-HERCULEAN_THROW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181009,
+      "Name": "kiryu_kazuma_kiwami_means_extreme_power_power",
+      "AssetName": "mods/kiryu_kazuma/kiwami_means_extreme_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.KiwamiMeansExtremePower",
+      "Title": "Kiwami Means EXTREME",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-KIWAMI_MEANS_EXTREME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181010,
+      "Name": "kiryu_kazuma_legend_next_turn_power_power",
+      "AssetName": "mods/kiryu_kazuma/legend_next_turn_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.LegendNextTurnPower",
+      "Title": "Legend Next Turn",
+      "Aliases": [
+        "次たーん伝説"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-LEGEND_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181011,
+      "Name": "kiryu_kazuma_legend_style_power_power",
+      "AssetName": "mods/kiryu_kazuma/legend_style_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.LegendStylePower",
+      "Title": "Legend Style",
+      "Aliases": [
+        "伝説すたいる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-LEGEND_STYLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181012,
+      "Name": "kiryu_kazuma_phoenix_spirit_power_power",
+      "AssetName": "mods/kiryu_kazuma/phoenix_spirit_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.PhoenixSpiritPower",
+      "Title": "Unwavering Spirit",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-PHOENIX_SPIRIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "KiryuKazuma.KiryuKazumaCode.Powers.UnwaveringSpiritPower"
+      ]
+    },
+    {
+      "Id": 181013,
+      "Name": "kiryu_kazuma_rush_style_power_power",
+      "AssetName": "mods/kiryu_kazuma/rush_style_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.RushStylePower",
+      "Title": "Rush Style",
+      "Aliases": [
+        "らっしゅすたいる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-RUSH_STYLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 181015,
+      "Name": "kiryu_kazuma_weapon_change_up_power_power",
+      "AssetName": "mods/kiryu_kazuma/weapon_change_up_power",
+      "Category": "Power",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Powers.WeaponChangeUpPower",
+      "Title": "Weapon Change Up",
+      "Aliases": [
+        "武器ちぇんじあっぷ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KIRYUKAZUMA-WEAPON_CHANGE_UP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 185000,
+      "Name": "kiryu_kazuma_kiryu_kazuma_character",
+      "AssetName": "mods/kiryu_kazuma/kiryu_kazuma",
+      "Category": "Character",
+      "Assembly": "KiryuKazuma",
+      "TypeName": "KiryuKazuma.KiryuKazumaCode.Character.KiryuKazuma",
+      "Title": "Kiryu Kazuma",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "KIRYUKAZUMA-KIRYU_KAZUMA.title",
+      "CookieEmoteId": 2319
+    }
+  ]
+}

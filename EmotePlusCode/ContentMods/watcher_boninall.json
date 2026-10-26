@@ -1,8 +1,703 @@
 {
   "Key": "watcher_boninall",
-  "ModIds": ["Watcher"],
+  "ModIds": [
+    "Watcher"
+  ],
   "Name": "Watcher (Boninall)",
   "WorkshopId": "3747526116",
-  "Aliases": ["Watcher", "ウォッチャー", "Boninall"],
-  "Entries": []
+  "Aliases": [
+    "Watcher",
+    "ウォッチャー",
+    "Boninall"
+  ],
+  "Entries": [
+    {
+      "Id": 41000,
+      "Name": "watcher_boninall_wish_plated_armor_power_power",
+      "AssetName": "mods/watcher_boninall/wish_plated_armor_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.WishPlatedArmorPower",
+      "Title": "Plated Armor",
+      "Aliases": [
+        "ぷれーとあーまー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "WISH_PLATED_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41001,
+      "Name": "watcher_boninall_omega_power_power",
+      "AssetName": "mods/watcher_boninall/omega_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.OmegaPower",
+      "Title": "Omega",
+      "Aliases": [
+        "おめが"
+      ],
+      "LocTable": "powers",
+      "LocKey": "OMEGA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41002,
+      "Name": "watcher_boninall_energy_down_power_power",
+      "AssetName": "mods/watcher_boninall/energy_down_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.EnergyDownPower",
+      "Title": "Energy Down",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ENERGY_DOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 41003,
+      "Name": "watcher_boninall_simmering_fury_power_power",
+      "AssetName": "mods/watcher_boninall/simmering_fury_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.SimmeringFuryPower",
+      "Title": "Simmering Fury",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SIMMERING_FURY_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 41004,
+      "Name": "watcher_boninall_collect_power_power",
+      "AssetName": "mods/watcher_boninall/collect_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.CollectPower",
+      "Title": "Collect",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "COLLECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41005,
+      "Name": "watcher_boninall_battle_hymn_power_power",
+      "AssetName": "mods/watcher_boninall/battle_hymn_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.BattleHymnPower",
+      "Title": "Battle Hymn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "BATTLE_HYMN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41006,
+      "Name": "watcher_boninall_know_fate_power_power",
+      "AssetName": "mods/watcher_boninall/know_fate_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.KnowFatePower",
+      "Title": "Know Fate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KNOW_FATE_POWER.title",
+      "TypeAliases": [
+        "WatcherMod.Foreseen"
+      ],
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41007,
+      "Name": "watcher_boninall_enlighten_fate_power_power",
+      "AssetName": "mods/watcher_boninall/enlighten_fate_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.EnlightenFatePower",
+      "Title": "Awaken Fate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ENLIGHTEN_FATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41008,
+      "Name": "watcher_boninall_bless_prophecy_damage_power_power",
+      "AssetName": "mods/watcher_boninall/bless_prophecy_damage_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.BlessProphecyDamagePower",
+      "Title": "Blessing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "BLESS_PROPHECY_DAMAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41009,
+      "Name": "watcher_boninall_guard_next_scry_power_power",
+      "AssetName": "mods/watcher_boninall/guard_next_scry_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.GuardNextScryPower",
+      "Title": "Guard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARD_NEXT_SCRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41010,
+      "Name": "watcher_boninall_confusion_power_power",
+      "AssetName": "mods/watcher_boninall/confusion_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.ConfusionPower",
+      "Title": "Confusion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CONFUSION_POWER.title",
+      "Tags": [
+        "Debuff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 41011,
+      "Name": "watcher_boninall_deep_thought_sleep_power_power",
+      "AssetName": "mods/watcher_boninall/deep_thought_sleep_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.DeepThoughtSleepPower",
+      "Title": "Deep Thought",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DEEP_THOUGHT_SLEEP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41012,
+      "Name": "watcher_boninall_mantra_power",
+      "AssetName": "mods/watcher_boninall/mantra",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Mantra",
+      "Title": "Mantra",
+      "Aliases": [
+        "まんとら"
+      ],
+      "LocTable": "powers",
+      "LocKey": "MANTRA.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41013,
+      "Name": "watcher_boninall_devotion_power_power",
+      "AssetName": "mods/watcher_boninall/devotion_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.DevotionPower",
+      "Title": "Devotion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DEVOTION_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 41014,
+      "Name": "watcher_boninall_mark_power_power",
+      "AssetName": "mods/watcher_boninall/mark_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.MarkPower",
+      "Title": "Mark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 41015,
+      "Name": "watcher_boninall_mental_fortress_power_power",
+      "AssetName": "mods/watcher_boninall/mental_fortress_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.MentalFortressPower",
+      "Title": "Mental Fortress",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MENTAL_FORTRESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41016,
+      "Name": "watcher_boninall_nirvana_power_power",
+      "AssetName": "mods/watcher_boninall/nirvana_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.NirvanaPower",
+      "Title": "Nirvana",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "NIRVANA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41017,
+      "Name": "watcher_boninall_rushdown_power_power",
+      "AssetName": "mods/watcher_boninall/rushdown_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.RushdownPower",
+      "Title": "Rushdown",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUSHDOWN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41018,
+      "Name": "watcher_boninall_foresight_power_power",
+      "AssetName": "mods/watcher_boninall/foresight_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.ForesightPower",
+      "Title": "Foresight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FORESIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41019,
+      "Name": "watcher_boninall_study_power_power",
+      "AssetName": "mods/watcher_boninall/study_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.StudyPower",
+      "Title": "Study",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STUDY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41020,
+      "Name": "watcher_boninall_like_water_power_power",
+      "AssetName": "mods/watcher_boninall/like_water_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.LikeWaterPower",
+      "Title": "Like Water",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LIKE_WATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41021,
+      "Name": "watcher_boninall_establishment_power_power",
+      "AssetName": "mods/watcher_boninall/establishment_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.EstablishmentPower",
+      "Title": "Establishment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ESTABLISHMENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41022,
+      "Name": "watcher_boninall_master_reality_power_power",
+      "AssetName": "mods/watcher_boninall/master_reality_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.MasterRealityPower",
+      "Title": "Master Reality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MASTER_REALITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41023,
+      "Name": "watcher_boninall_deva_power_power",
+      "AssetName": "mods/watcher_boninall/deva_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.DevaPower",
+      "Title": "Deva Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DEVA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41024,
+      "Name": "watcher_boninall_end_turn_death_power_power",
+      "AssetName": "mods/watcher_boninall/end_turn_death_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.EndTurnDeathPower",
+      "Title": "End Turn Death",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "END_TURN_DEATH_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 41025,
+      "Name": "watcher_boninall_block_return_power_power",
+      "AssetName": "mods/watcher_boninall/block_return_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.BlockReturnPower",
+      "Title": "Block Return",
+      "Aliases": [
+        "ぶろっくりたーん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "BLOCK_RETURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 41026,
+      "Name": "watcher_boninall_wave_of_the_hand_power_power",
+      "AssetName": "mods/watcher_boninall/wave_of_the_hand_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.WaveOfTheHandPower",
+      "Title": "Wave of the Hand",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WAVE_OF_THE_HAND_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 41027,
+      "Name": "watcher_boninall_restful_power_power",
+      "AssetName": "mods/watcher_boninall/restful_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.RestfulPower",
+      "Title": "Restful",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RESTFUL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41028,
+      "Name": "watcher_boninall_gospel_power_power",
+      "AssetName": "mods/watcher_boninall/gospel_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.GospelPower",
+      "Title": "Gospel",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GOSPEL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41029,
+      "Name": "watcher_boninall_divine_doom_power_power",
+      "AssetName": "mods/watcher_boninall/divine_doom_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.DivineDoomPower",
+      "Title": "Divine Judgment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DIVINE_DOOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41030,
+      "Name": "watcher_boninall_cold_observation_power_power",
+      "AssetName": "mods/watcher_boninall/cold_observation_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.ColdObservationPower",
+      "Title": "Cold Observation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "COLD_OBSERVATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 41031,
+      "Name": "watcher_boninall_cannot_change_stance_power_power",
+      "AssetName": "mods/watcher_boninall/cannot_change_stance_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.CannotChangeStancePower",
+      "Title": "Stance Lock",
+      "Aliases": [
+        "すたんす変更不可"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CANNOT_CHANGE_STANCE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 42000,
+      "Name": "watcher_boninall_pure_water_relic",
+      "AssetName": "mods/watcher_boninall/pure_water",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.PureWater",
+      "Title": "Pure Water",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "PURE_WATER.title"
+    },
+    {
+      "Id": 42001,
+      "Name": "watcher_boninall_damaru_relic",
+      "AssetName": "mods/watcher_boninall/damaru",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Damaru",
+      "Title": "Damaru",
+      "Aliases": [
+        "だまる太鼓"
+      ],
+      "LocTable": "relics",
+      "LocKey": "DAMARU.title"
+    },
+    {
+      "Id": 42002,
+      "Name": "watcher_boninall_teardrop_locket_relic",
+      "AssetName": "mods/watcher_boninall/teardrop_locket",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.TeardropLocket",
+      "Title": "Teardrop Locket",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "TEARDROP_LOCKET.title"
+    },
+    {
+      "Id": 42003,
+      "Name": "watcher_boninall_holy_water_relic",
+      "AssetName": "mods/watcher_boninall/holy_water",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.HolyWater",
+      "Title": "Holy Water",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HOLY_WATER.title"
+    },
+    {
+      "Id": 42004,
+      "Name": "watcher_boninall_golden_eye_relic",
+      "AssetName": "mods/watcher_boninall/golden_eye",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.GoldenEye",
+      "Title": "Golden Eye",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GOLDEN_EYE.title"
+    },
+    {
+      "Id": 42005,
+      "Name": "watcher_boninall_melange_relic",
+      "AssetName": "mods/watcher_boninall/melange",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Melange",
+      "Title": "Melange",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MELANGE.title"
+    },
+    {
+      "Id": 42006,
+      "Name": "watcher_boninall_violet_lotus_relic",
+      "AssetName": "mods/watcher_boninall/violet_lotus",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.VioletLotus",
+      "Title": "Violet Lotus",
+      "Aliases": [
+        "ばいおれっと・ろーたす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "VIOLET_LOTUS.title"
+    },
+    {
+      "Id": 42007,
+      "Name": "watcher_boninall_cloak_clasp_p_relic",
+      "AssetName": "mods/watcher_boninall/cloak_clasp_p",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.CloakClasp_P",
+      "Title": "Cloak Clasp",
+      "Aliases": [
+        "まんとの留具"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CLOAK_CLASP_P.title"
+    },
+    {
+      "Id": 42008,
+      "Name": "watcher_boninall_ceramic_fish_p_relic",
+      "AssetName": "mods/watcher_boninall/ceramic_fish_p",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.CeramicFish_P",
+      "Title": "Ceramic Fish",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CERAMIC_FISH_P.title"
+    },
+    {
+      "Id": 42009,
+      "Name": "watcher_boninall_yang_relic",
+      "AssetName": "mods/watcher_boninall/yang",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Yang",
+      "Title": "Duality",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "YANG.title"
+    },
+    {
+      "Id": 45000,
+      "Name": "watcher_boninall_watcher_character",
+      "AssetName": "mods/watcher_boninall/watcher/watcher",
+      "Category": "Character",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Watcher",
+      "Title": "The Watcher",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "WATCHER.title"
+    },
+    {
+      "Id": 42010,
+      "Name": "watcher_boninall_watcher_yummy_cookie_relic",
+      "AssetName": "mods/watcher_boninall/watcher/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Watcher",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 44000,
+      "Name": "watcher_boninall_ambrosia_potion",
+      "AssetName": "mods/watcher_boninall/ambrosia",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.Ambrosia",
+      "Title": "Ambrosia",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "AMBROSIA.title"
+    },
+    {
+      "Id": 44001,
+      "Name": "watcher_boninall_bottled_miracle_potion",
+      "AssetName": "mods/watcher_boninall/bottled_miracle",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.BottledMiracle",
+      "Title": "Bottled Miracle",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "BOTTLED_MIRACLE.title"
+    },
+    {
+      "Id": 44002,
+      "Name": "watcher_boninall_stance_potion_potion",
+      "AssetName": "mods/watcher_boninall/stance_potion",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "WatcherMod.StancePotion",
+      "Title": "Stance Potion",
+      "Aliases": [
+        "すたんすぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STANCE_POTION.title"
+    }
+  ]
 }

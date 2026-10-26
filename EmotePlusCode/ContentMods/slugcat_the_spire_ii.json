@@ -1,0 +1,2103 @@
+{
+  "Key": "slugcat_the_spire_ii",
+  "ModIds": [
+    "SlugcatTheSpireII"
+  ],
+  "Name": "SlugcatTheSpireII",
+  "WorkshopId": "3763346628",
+  "Aliases": [
+    "Slugcat",
+    "Rain World",
+    "スラグキャット",
+    "Survivor",
+    "Hunter",
+    "Rivulet"
+  ],
+  "Entries": [
+    {
+      "Id": 81000,
+      "Name": "slugcat_the_spire_ii_shared_cat_constrict_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/cat_constrict_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "MegaCrit.Sts2.Core.Models.Powers.CatConstrictPower",
+      "Title": "Entangle",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CAT_CONSTRICT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 82000,
+      "Name": "slugcat_the_spire_ii_shared_anthem_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/anthem",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Anthem",
+      "Title": "Hymn",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_ANTHEM.title"
+    },
+    {
+      "Id": 82001,
+      "Name": "slugcat_the_spire_ii_shared_battery_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/battery",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Battery",
+      "Title": "Mass-Dilution Battery",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_BATTERY.title"
+    },
+    {
+      "Id": 82002,
+      "Name": "slugcat_the_spire_ii_shared_catrock_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/catrock",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Catrock",
+      "Title": "Moon Stone",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_MOONROCK.title",
+      "TypeAliases": [
+        "Rainworld.relics.Moonrock"
+      ]
+    },
+    {
+      "Id": 82003,
+      "Name": "slugcat_the_spire_ii_shared_forever_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/forever",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Forever",
+      "Title": "Eternity",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_FOREVER.title"
+    },
+    {
+      "Id": 82004,
+      "Name": "slugcat_the_spire_ii_shared_future_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/future",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Future",
+      "Title": "Future's Eye",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_FUTURE.title"
+    },
+    {
+      "Id": 82005,
+      "Name": "slugcat_the_spire_ii_liver_liver_birdmask_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_birdmask",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Birdmask",
+      "Title": "Vulture King Mask",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_BIRDMASK.title"
+    },
+    {
+      "Id": 82006,
+      "Name": "slugcat_the_spire_ii_liver_liver_fireblood_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_fireblood",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Fireblood",
+      "Title": "Blazing Blood",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_FIREBLOOD.title"
+    },
+    {
+      "Id": 82007,
+      "Name": "slugcat_the_spire_ii_liver_liver_fruit1_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_fruit1",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Fruit1",
+      "Title": "Blue Fruit Gift Box",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_FRUIT1.title"
+    },
+    {
+      "Id": 82008,
+      "Name": "slugcat_the_spire_ii_liver_liver_fruit2_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_fruit2",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Fruit2",
+      "Title": "Deluxe Blue Fruit Box",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_FRUIT2.title"
+    },
+    {
+      "Id": 82009,
+      "Name": "slugcat_the_spire_ii_liver_liver_sleeppotion_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_sleeppotion",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Sleeppotion",
+      "Title": "Sleeping Pills",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_SLEEPPOTION.title"
+    },
+    {
+      "Id": 82010,
+      "Name": "slugcat_the_spire_ii_liver_liver_tubularis_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_tubularis",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Tubularis",
+      "Title": "Straw",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_TUBULARIS.title"
+    },
+    {
+      "Id": 82011,
+      "Name": "slugcat_the_spire_ii_liver_liver_whiteskin_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/liver_whiteskin",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Liver_Whiteskin",
+      "Title": "White Lizard Skin",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_LIVER_WHITESKIN.title"
+    },
+    {
+      "Id": 82012,
+      "Name": "slugcat_the_spire_ii_shared_mushroom_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mushroom",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Mushroom",
+      "Title": "Leggy Mushroom Chunk",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_MUSHROOM.title"
+    },
+    {
+      "Id": 82013,
+      "Name": "slugcat_the_spire_ii_shared_partner_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/partner",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Partner",
+      "Title": "Good Buddy",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_PARTNER.title"
+    },
+    {
+      "Id": 82014,
+      "Name": "slugcat_the_spire_ii_redcat_redcat_book1_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/redcat/redcat_book1",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Redcat_Book1",
+      "Title": "Hunter's Notes",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_REDCAT_BOOK1.title"
+    },
+    {
+      "Id": 82015,
+      "Name": "slugcat_the_spire_ii_redcat_redcat_book2_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/redcat/redcat_book2",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Redcat_Book2",
+      "Title": "Hunter's Notes II",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_REDCAT_BOOK2.title"
+    },
+    {
+      "Id": 82016,
+      "Name": "slugcat_the_spire_ii_redcat_redcat_paintboard_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/redcat/redcat_paintboard",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Redcat_Paintboard",
+      "Title": "Graffiti Board",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_REDCAT_PAINTBOARD.title"
+    },
+    {
+      "Id": 82017,
+      "Name": "slugcat_the_spire_ii_redcat_redcat_yoyo_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/redcat/redcat_yoyo",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Redcat_Yoyo",
+      "Title": "Yoyo",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_REDCAT_YOYO.title"
+    },
+    {
+      "Id": 82018,
+      "Name": "slugcat_the_spire_ii_shared_redmushroom_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/redmushroom",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Redmushroom",
+      "Title": "Red Mushroom Chunk",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_REDMUSHROOM.title"
+    },
+    {
+      "Id": 82019,
+      "Name": "slugcat_the_spire_ii_river_river_cream_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/river/river_cream",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.River_Cream",
+      "Title": "Body Wash",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_RIVER_CREAM.title"
+    },
+    {
+      "Id": 82020,
+      "Name": "slugcat_the_spire_ii_river_river_lightrow_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/river/river_lightrow",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.River_Lightrow",
+      "Title": "Lightning Rod",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_RIVER_LIGHTROW.title"
+    },
+    {
+      "Id": 82021,
+      "Name": "slugcat_the_spire_ii_river_river_waterball1_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/river/river_waterball1",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.River_Waterball1",
+      "Title": "Small Water Ball",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_RIVER_WATERBALL1.title"
+    },
+    {
+      "Id": 82022,
+      "Name": "slugcat_the_spire_ii_river_river_waterball2_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/river/river_waterball2",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.River_Waterball2",
+      "Title": "Big Water Ball",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_RIVER_WATERBALL2.title"
+    },
+    {
+      "Id": 82023,
+      "Name": "slugcat_the_spire_ii_shared_talksign_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/talksign",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Talksign",
+      "Title": "Communication Mark",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_TALKSIGN.title"
+    },
+    {
+      "Id": 82024,
+      "Name": "slugcat_the_spire_ii_shared_touchallow_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/touchallow",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.relics.Touchallow",
+      "Title": "Pet Ticket",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_RELIC_TOUCHALLOW.title"
+    },
+    {
+      "Id": 85000,
+      "Name": "slugcat_the_spire_ii_liver_rainworld_liver_character",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/rainworld_liver",
+      "Category": "Character",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Rainworld_Liver",
+      "Title": "Survivor",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_CHARACTER_RAINWORLD_LIVER.title"
+    },
+    {
+      "Id": 85001,
+      "Name": "slugcat_the_spire_ii_redcat_rainworld_redcat_character",
+      "AssetName": "mods/slugcat_the_spire_ii/redcat/rainworld_redcat",
+      "Category": "Character",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Rainworld_Redcat",
+      "Title": "Hunter",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_CHARACTER_RAINWORLD_REDCAT.title"
+    },
+    {
+      "Id": 85002,
+      "Name": "slugcat_the_spire_ii_river_rainworld_river_character",
+      "AssetName": "mods/slugcat_the_spire_ii/river/rainworld_river",
+      "Category": "Character",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Rainworld_River",
+      "Title": "Rivulet",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_CHARACTER_RAINWORLD_RIVER.title"
+    },
+    {
+      "Id": 87000,
+      "Name": "slugcat_the_spire_ii_shared_slugcatancient_ancient",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/slugcatancient",
+      "Category": "Ancient",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Ancient.Slugcatancient",
+      "Title": "The Spinning Top",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_EVENT_SLUGCATANCIENT.title"
+    },
+    {
+      "Id": 81001,
+      "Name": "slugcat_the_spire_ii_shared_addwork_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/addwork_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AddworkPower",
+      "Title": "Overtime",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ADDWORK_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.WorkCatPower"
+      ]
+    },
+    {
+      "Id": 81002,
+      "Name": "slugcat_the_spire_ii_shared_because_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/because_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BecausePower",
+      "Title": "Causality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BECAUSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81003,
+      "Name": "slugcat_the_spire_ii_shared_chuang_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/chuang_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ChuangPower",
+      "Title": "Trauma",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CHUANG_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 81004,
+      "Name": "slugcat_the_spire_ii_shared_combo_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/combo_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ComboPower",
+      "Title": "Combo Attack",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_COMBO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81005,
+      "Name": "slugcat_the_spire_ii_shared_fatworld_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/fatworld_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FatworldPower",
+      "Title": "Fat World",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FATWORLD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81006,
+      "Name": "slugcat_the_spire_ii_shared_freespear_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/freespear_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FreespearPower",
+      "Title": "Stone Toss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FREESPEAR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81007,
+      "Name": "slugcat_the_spire_ii_shared_huntsign_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/huntsign_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.HuntsignPower",
+      "Title": "Prey Mark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_HUNTSIGN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 81008,
+      "Name": "slugcat_the_spire_ii_shared_acidslime_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/acidslime_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AcidslimePower",
+      "Title": "Acidic Slime",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ACIDSLIME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81009,
+      "Name": "slugcat_the_spire_ii_shared_acmedefend_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/acmedefend_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AcmedefendPower",
+      "Title": "Ultimate Defense",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ACMEDEFEND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81010,
+      "Name": "slugcat_the_spire_ii_shared_bigjumpliver_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/bigjumpliver_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BigjumpliverPower",
+      "Title": "Big Jump",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BIGJUMPLIVER_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.BigjumpMonkPower",
+        "Rainworld.Scripts.Powers.BigjumpredcatPower",
+        "Rainworld.Scripts.Powers.BigjumpriverPower"
+      ]
+    },
+    {
+      "Id": 81011,
+      "Name": "slugcat_the_spire_ii_shared_catcantdie_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/catcantdie_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CatcantdiePower",
+      "Title": "Quick",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_QUICKERCAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.QuickercatPower"
+      ]
+    },
+    {
+      "Id": 81012,
+      "Name": "slugcat_the_spire_ii_shared_catcome_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/catcome_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CatcomePower",
+      "Title": "Fierce Cat Charge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CATCOME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81013,
+      "Name": "slugcat_the_spire_ii_shared_chief_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/chief_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ChiefPower",
+      "Title": "Chieftain",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CHIEF_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.ShamanFormPower"
+      ]
+    },
+    {
+      "Id": 81014,
+      "Name": "slugcat_the_spire_ii_shared_coffie_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/coffie_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CoffiePower",
+      "Title": "Civet Coffee",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_COFFIE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81015,
+      "Name": "slugcat_the_spire_ii_shared_commonroad_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/commonroad_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CommonroadPower",
+      "Title": "Ordinary Path",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_COMMONROAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81016,
+      "Name": "slugcat_the_spire_ii_shared_fly_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/fly_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FlyPower",
+      "Title": "Flight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FLY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81017,
+      "Name": "slugcat_the_spire_ii_shared_getsafe_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/getsafe_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.GetsafePower",
+      "Title": "Vitality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_GETSAFE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81018,
+      "Name": "slugcat_the_spire_ii_shared_keep_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/keep_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.KeepPower",
+      "Title": "Keep Going",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_KEEP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81019,
+      "Name": "slugcat_the_spire_ii_shared_kitty_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/kitty_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.KittyPower",
+      "Title": "Warrior Kitten",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_KITTY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81020,
+      "Name": "slugcat_the_spire_ii_shared_nimble_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/nimble_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.NimblePower",
+      "Title": "Nimble",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_NIMBLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.TunePower"
+      ]
+    },
+    {
+      "Id": 81021,
+      "Name": "slugcat_the_spire_ii_shared_pull_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/pull_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.PullPower",
+      "Title": "Unsteady",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_PULL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 81022,
+      "Name": "slugcat_the_spire_ii_shared_randomslime_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/randomslime_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.RandomslimePower",
+      "Title": "Random Slime",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_RANDOMSLIME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81023,
+      "Name": "slugcat_the_spire_ii_shared_sharefood_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/sharefood_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SharefoodPower",
+      "Title": "Shared Meal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SHAREFOOD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81024,
+      "Name": "slugcat_the_spire_ii_shared_slugfeel_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/slugfeel_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SlugfeelPower",
+      "Title": "Slug Perception",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SLUGFEEL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81025,
+      "Name": "slugcat_the_spire_ii_shared_stronger_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/stronger_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.StrongerPower",
+      "Title": "Stronger Slugcat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_STRONGER_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.WantPower",
+        "Rainworld.Scripts.Powers.PloughsharePower"
+      ]
+    },
+    {
+      "Id": 81026,
+      "Name": "slugcat_the_spire_ii_shared_tired_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/tired_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TiredPower",
+      "Title": "Exhaustion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TIRED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 81027,
+      "Name": "slugcat_the_spire_ii_shared_twohands_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/twohands_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TwohandsPower",
+      "Title": "Two-Handed Prep",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TWOHANDS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81028,
+      "Name": "slugcat_the_spire_ii_shared_workdefend_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/workdefend_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.WorkdefendPower",
+      "Title": "Karma Shield",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_WORKDEFEND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81029,
+      "Name": "slugcat_the_spire_ii_shared_livewill_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/livewill_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.LivewillPower",
+      "Title": "Ambush",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_LIVEWILL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81030,
+      "Name": "slugcat_the_spire_ii_shared_metabolize_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/metabolize_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MetabolizePower",
+      "Title": "Untouched by Leaf",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_METABOLIZE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81031,
+      "Name": "slugcat_the_spire_ii_shared_catch_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/catch_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CatchPower",
+      "Title": "Organism Dissociation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CATCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81032,
+      "Name": "slugcat_the_spire_ii_shared_firecab_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/firecab_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FirecabPower",
+      "Title": "Flame",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FIRECAB_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81033,
+      "Name": "slugcat_the_spire_ii_shared_firecent_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/firecent_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FirecentPower",
+      "Title": "Flame Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FIRECENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81034,
+      "Name": "slugcat_the_spire_ii_shared_ironfly_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/ironfly_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.IronflyPower",
+      "Title": "Iron Fly",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_IRONFLY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81035,
+      "Name": "slugcat_the_spire_ii_shared_mushroom_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mushroom_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MushroomPower",
+      "Title": "Corrupted Growth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MUSHROOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81036,
+      "Name": "slugcat_the_spire_ii_shared_mushroomstart_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mushroomstart_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MushroomstartPower",
+      "Title": "Self-Evolution",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MUSHROOMSTART_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81037,
+      "Name": "slugcat_the_spire_ii_shared_watercent_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/watercent_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.WatercentPower",
+      "Title": "Electrified",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_WATERCENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81038,
+      "Name": "slugcat_the_spire_ii_shared_oldfram_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/oldfram_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.OldframPower",
+      "Title": "Ancestral Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_OLDFRAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81039,
+      "Name": "slugcat_the_spire_ii_shared_angry_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/angry_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AngryPower",
+      "Title": "Hair-Raising Fury",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ANGRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Rainworld.Scripts.Powers.ManiaPower"
+      ]
+    },
+    {
+      "Id": 81040,
+      "Name": "slugcat_the_spire_ii_shared_back_to_hand_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/back_to_hand_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BackToHandPower",
+      "Title": "Return to Hand",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BACK_TO_HAND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81041,
+      "Name": "slugcat_the_spire_ii_shared_bloody_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/bloody_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BloodyPower",
+      "Title": "Bloodied",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BLOODY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81042,
+      "Name": "slugcat_the_spire_ii_shared_bypass_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/bypass_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BypassPower",
+      "Title": "Excuse Me",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BYPASS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81043,
+      "Name": "slugcat_the_spire_ii_shared_cantcontrol_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/cantcontrol_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CantcontrolPower",
+      "Title": "Loss of Control",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CANTCONTROL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81044,
+      "Name": "slugcat_the_spire_ii_shared_corrupt_strength_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/corrupt_strength_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CorruptStrengthPower",
+      "Title": "Corrupted Strength",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CORRUPT_STRENGTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81045,
+      "Name": "slugcat_the_spire_ii_shared_createsong_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/createsong_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CreatesongPower",
+      "Title": "Creator's Song",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CREATESONG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81046,
+      "Name": "slugcat_the_spire_ii_shared_donttouch_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/donttouch_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.DonttouchPower",
+      "Title": "Don't Touch Me!",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_DONTTOUCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81047,
+      "Name": "slugcat_the_spire_ii_shared_evolution_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/evolution_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.EvolutionPower",
+      "Title": "Adaptive Evolution",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_EVOLUTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81048,
+      "Name": "slugcat_the_spire_ii_shared_excite_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/excite_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ExcitePower",
+      "Title": "Neural Stimulation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_EXCITE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81049,
+      "Name": "slugcat_the_spire_ii_shared_extend_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/extend_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ExtendPower",
+      "Title": "Inheritance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_EXTEND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81050,
+      "Name": "slugcat_the_spire_ii_shared_fakedeath_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/fakedeath_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FakedeathPower",
+      "Title": "Hunter Long Legs",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FAKEDEATH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81051,
+      "Name": "slugcat_the_spire_ii_shared_grow_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/grow_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.GrowPower",
+      "Title": "Wild Growth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_GROW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81052,
+      "Name": "slugcat_the_spire_ii_shared_hunterinstinct_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/hunterinstinct_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.HunterinstinctPower",
+      "Title": "Hunter's Instinct",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_HUNTERINSTINCT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81053,
+      "Name": "slugcat_the_spire_ii_shared_inveteracy_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/inveteracy_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.InveteracyPower",
+      "Title": "Ingrained",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_INVETERACY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81054,
+      "Name": "slugcat_the_spire_ii_shared_last_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/last_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.LastPower",
+      "Title": "Burn Out",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_LAST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81055,
+      "Name": "slugcat_the_spire_ii_shared_misfortune_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/misfortune_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MisfortunePower",
+      "Title": "Unfortunate Development",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MISFORTUNE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81056,
+      "Name": "slugcat_the_spire_ii_shared_mix_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mix_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MixPower",
+      "Title": "Blending",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MIX_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81057,
+      "Name": "slugcat_the_spire_ii_shared_mushblock_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mushblock_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MushblockPower",
+      "Title": "Fungal Plating",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MUSHBLOCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81058,
+      "Name": "slugcat_the_spire_ii_shared_mushspread_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mushspread_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MushspreadPower",
+      "Title": "Spreading Spores",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MUSHSPREAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81059,
+      "Name": "slugcat_the_spire_ii_shared_parasitism_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/parasitism_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ParasitismPower",
+      "Title": "Parasitism",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_PARASITISM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81060,
+      "Name": "slugcat_the_spire_ii_shared_quickrun_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/quickrun_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.QuickrunPower",
+      "Title": "High-Speed Movement",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_QUICKRUN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81061,
+      "Name": "slugcat_the_spire_ii_shared_redmushroom_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/redmushroom_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.RedmushroomPower",
+      "Title": "Fungalized",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_REDMUSHROOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81062,
+      "Name": "slugcat_the_spire_ii_shared_refuse_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/refuse_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.RefusePower",
+      "Title": "Refusal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_REFUSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81063,
+      "Name": "slugcat_the_spire_ii_shared_restrain_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/restrain_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.RestrainPower",
+      "Title": "Restraint",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_RESTRAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81064,
+      "Name": "slugcat_the_spire_ii_shared_silent_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/silent_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SilentPower",
+      "Title": "Pacify",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SILENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81065,
+      "Name": "slugcat_the_spire_ii_shared_spread_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/spread_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SpreadPower",
+      "Title": "Spread",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SPREAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81066,
+      "Name": "slugcat_the_spire_ii_shared_study_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/study_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.StudyPower",
+      "Title": "Practice Makes Perfect",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_STUDY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81067,
+      "Name": "slugcat_the_spire_ii_shared_substrate_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/substrate_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SubstratePower",
+      "Title": "Substrate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SUBSTRATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81068,
+      "Name": "slugcat_the_spire_ii_shared_twistform_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/twistform_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TwistformPower",
+      "Title": "Aberrant Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TWISTFORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81069,
+      "Name": "slugcat_the_spire_ii_shared_twist_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/twist_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TwistPower",
+      "Title": "Martyrdom",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TWIST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81070,
+      "Name": "slugcat_the_spire_ii_shared_adroitcap_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/adroitcap_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AdroitcapPower",
+      "Title": "Adroit Cap",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ADROITCAP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81071,
+      "Name": "slugcat_the_spire_ii_shared_adroit_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/adroit_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AdroitPower",
+      "Title": "Adroit",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ADROIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81072,
+      "Name": "slugcat_the_spire_ii_shared_airwater_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/airwater_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.AirwaterPower",
+      "Title": "Evaporation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_AIRWATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81073,
+      "Name": "slugcat_the_spire_ii_shared_baptism_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/baptism_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BaptismPower",
+      "Title": "Baptism",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BAPTISM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81074,
+      "Name": "slugcat_the_spire_ii_shared_both_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/both_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.BothPower",
+      "Title": "All From One",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_BOTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81075,
+      "Name": "slugcat_the_spire_ii_shared_corrode_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/corrode_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.CorrodePower",
+      "Title": "Water Erosion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_CORRODE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 81076,
+      "Name": "slugcat_the_spire_ii_shared_donttry_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/donttry_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.DonttryPower",
+      "Title": "Do Not Imitate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_DONTTRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81077,
+      "Name": "slugcat_the_spire_ii_shared_fairyform_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/fairyform_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FairyformPower",
+      "Title": "Fairy Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FAIRYFORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81078,
+      "Name": "slugcat_the_spire_ii_shared_flexibility_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/flexibility_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FlexibilityPower",
+      "Title": "Suppleness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FLEXIBILITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81079,
+      "Name": "slugcat_the_spire_ii_shared_flower_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/flower_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.FlowerPower",
+      "Title": "Butterfly Dance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FLOWER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81080,
+      "Name": "slugcat_the_spire_ii_shared_forward_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/forward_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.ForwardPower",
+      "Title": "Press Onward",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_FORWARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81081,
+      "Name": "slugcat_the_spire_ii_shared_icewater_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/icewater_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.IcewaterPower",
+      "Title": "Ice Crystal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_ICEWATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81082,
+      "Name": "slugcat_the_spire_ii_shared_lightrain_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/lightrain_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.LightrainPower",
+      "Title": "Stormy Weather",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_LIGHTRAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81083,
+      "Name": "slugcat_the_spire_ii_shared_limbo_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/limbo_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.LimboPower",
+      "Title": "Wave Dashing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_LIMBO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81084,
+      "Name": "slugcat_the_spire_ii_shared_lotus_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/lotus_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.LotusPower",
+      "Title": "Portable Shelter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_LOTUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81085,
+      "Name": "slugcat_the_spire_ii_shared_moisturizer_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/moisturizer_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.MoisturizerPower",
+      "Title": "Moisturizer",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_MOISTURIZER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81086,
+      "Name": "slugcat_the_spire_ii_shared_near_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/near_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.NearPower",
+      "Title": "Step by Step",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_NEAR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81087,
+      "Name": "slugcat_the_spire_ii_shared_pourrain_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/pourrain_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.PourrainPower",
+      "Title": "Downpour",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_POURRAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81088,
+      "Name": "slugcat_the_spire_ii_shared_rustspear_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/rustspear_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.RustspearPower",
+      "Title": "Rust",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_RUSTSPEAR_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 81089,
+      "Name": "slugcat_the_spire_ii_shared_savewater_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/savewater_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SavewaterPower",
+      "Title": "Water Conservation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SAVEWATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81090,
+      "Name": "slugcat_the_spire_ii_shared_seasound_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/seasound_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SeasoundPower",
+      "Title": "Liquid Cat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SEASOUND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81091,
+      "Name": "slugcat_the_spire_ii_shared_sky_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/sky_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SkyPower",
+      "Title": "Revelation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SKY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81092,
+      "Name": "slugcat_the_spire_ii_shared_smoke_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/smoke_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SmokePower",
+      "Title": "Whimsical",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SMOKE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81093,
+      "Name": "slugcat_the_spire_ii_shared_tempt_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/tempt_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TemptPower",
+      "Title": "Counter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TEMPT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81094,
+      "Name": "slugcat_the_spire_ii_shared_tide_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/tide_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TidePower",
+      "Title": "Water Cycle",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TIDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81095,
+      "Name": "slugcat_the_spire_ii_shared_utube_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/utube_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.UtubePower",
+      "Title": "U-Tube",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_UTUBE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81096,
+      "Name": "slugcat_the_spire_ii_shared_waterworld_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/waterworld_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.WaterworldPower",
+      "Title": "Water World",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_WATERWORLD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81097,
+      "Name": "slugcat_the_spire_ii_shared_wet_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/wet_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.WetPower",
+      "Title": "Realizer",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_WET_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81098,
+      "Name": "slugcat_the_spire_ii_shared_sharp_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/sharp_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SharpPower",
+      "Title": "Sharp",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SHARP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81099,
+      "Name": "slugcat_the_spire_ii_shared_sleep_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/sleep_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SleepPower",
+      "Title": "Hibernating",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SLEEP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81100,
+      "Name": "slugcat_the_spire_ii_shared_spearmasternote_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/spearmasternote_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.SpearmasternotePower",
+      "Title": "Spear Master's Notes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_SPEARMASTERNOTE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81101,
+      "Name": "slugcat_the_spire_ii_shared_tube_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/tube_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.TubePower",
+      "Title": "Tube Fanatic",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_TUBE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81102,
+      "Name": "slugcat_the_spire_ii_shared_usefulslime_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/usefulslime_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.UsefulslimePower",
+      "Title": "Versatile Slime",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_USEFULSLIME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81103,
+      "Name": "slugcat_the_spire_ii_shared_workerror_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/workerror_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.WorkerrorPower",
+      "Title": "Karmic Burden",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_WORKERROR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 81104,
+      "Name": "slugcat_the_spire_ii_shared_worklock_power_power",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/worklock_power",
+      "Category": "Power",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Powers.WorklockPower",
+      "Title": "Karma Lock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POWER_WORKLOCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 84000,
+      "Name": "slugcat_the_spire_ii_shared_excitepotion_potion",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/excitepotion",
+      "Category": "Potion",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Potions.Excitepotion",
+      "Title": "Stimulant",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POTION_EXCITEPOTION.title"
+    },
+    {
+      "Id": 84001,
+      "Name": "slugcat_the_spire_ii_shared_fireblood_potion",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/fireblood",
+      "Category": "Potion",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Potions.Fireblood",
+      "Title": "Trauma Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POTION_FIREBLOOD.title",
+      "TypeAliases": [
+        "Rainworld.Scripts.Potions.Glue"
+      ]
+    },
+    {
+      "Id": 84002,
+      "Name": "slugcat_the_spire_ii_shared_milktea_potion",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/milktea",
+      "Category": "Potion",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Potions.Milktea",
+      "Title": "Milk Tea",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POTION_MILKTEA.title"
+    },
+    {
+      "Id": 84003,
+      "Name": "slugcat_the_spire_ii_shared_mushroompotion_potion",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/mushroompotion",
+      "Category": "Potion",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Potions.Mushroompotion",
+      "Title": "Unknown Substance",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POTION_MUSHROOMPOTION.title"
+    },
+    {
+      "Id": 84004,
+      "Name": "slugcat_the_spire_ii_shared_water_potion",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/water",
+      "Category": "Potion",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Potions.Water",
+      "Title": "Water",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POTION_WATER.title"
+    },
+    {
+      "Id": 84005,
+      "Name": "slugcat_the_spire_ii_shared_workflower_potion",
+      "AssetName": "mods/slugcat_the_spire_ii/shared/workflower",
+      "Category": "Potion",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Potions.Workflower",
+      "Title": "Bottled Karma Flower",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_POTION_WORKFLOWER.title"
+    },
+    {
+      "Id": 82025,
+      "Name": "slugcat_the_spire_ii_liver_yummy_cookie_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/liver/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Rainworld_Liver",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 82026,
+      "Name": "slugcat_the_spire_ii_redcat_yummy_cookie_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/redcat/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Rainworld_Redcat",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 82027,
+      "Name": "slugcat_the_spire_ii_river_yummy_cookie_relic",
+      "AssetName": "mods/slugcat_the_spire_ii/river/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Rainworld_River",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 86000,
+      "Name": "slugcat_the_spire_ii_mushroom_boss_creature",
+      "AssetName": "mods/slugcat_the_spire_ii/bosses/mushroom_boss",
+      "Category": "Creature",
+      "Assembly": "SlugcatTheSpireII",
+      "TypeName": "Rainworld.Scripts.Monster.MushroomBoss",
+      "TypeAliases": [
+        "Rainworld.Scripts.Monster.Mushroom"
+      ],
+      "Title": "Mother Long Legs",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "SLUGCAT_THE_SPIRE_II_ENCOUNTER_MUSHROOM_BOSS.title"
+    }
+  ]
+}

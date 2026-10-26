@@ -1,0 +1,476 @@
+{
+  "Key": "chiikawa",
+  "ModIds": [
+    "ChiikawaMod"
+  ],
+  "Name": "Chiikawa Character Mod",
+  "WorkshopId": "3784620507",
+  "Aliases": [
+    "ChiikawaMod",
+    "Chiikawa",
+    "ちいかわ",
+    "ハチワレ",
+    "うさぎ"
+  ],
+  "Entries": [
+    {
+      "Id": 202000,
+      "Name": "chiikawa_friends_relic",
+      "AssetName": "mods/chiikawa/friends",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Friends",
+      "Title": "にこいちキーホルダー",
+      "Aliases": [
+        "にこいちきーほるだー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-FRIENDS.title"
+    },
+    {
+      "Id": 202001,
+      "Name": "chiikawa_user_relic001_relic",
+      "AssetName": "mods/chiikawa/user_relic001",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic001",
+      "Title": "さんこいちキーホルダー",
+      "Aliases": [
+        "さんこいちきーほるだー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC001.title"
+    },
+    {
+      "Id": 202002,
+      "Name": "chiikawa_user_relic003_relic",
+      "AssetName": "mods/chiikawa/user_relic003",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic003",
+      "Title": "さすまた強化部品",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC003.title"
+    },
+    {
+      "Id": 202003,
+      "Name": "chiikawa_user_relic004_relic",
+      "AssetName": "mods/chiikawa/user_relic004",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic004",
+      "Title": "試食スプーン",
+      "Aliases": [
+        "試食すぷーん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC004.title"
+    },
+    {
+      "Id": 202004,
+      "Name": "chiikawa_user_relic005_relic",
+      "AssetName": "mods/chiikawa/user_relic005",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic005",
+      "Title": "討伐指南書",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC005.title"
+    },
+    {
+      "Id": 202005,
+      "Name": "chiikawa_user_relic006_relic",
+      "AssetName": "mods/chiikawa/user_relic006",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic006",
+      "Title": "ふたりの合図",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC006.title"
+    },
+    {
+      "Id": 202006,
+      "Name": "chiikawa_user_relic007_relic",
+      "AssetName": "mods/chiikawa/user_relic007",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic007",
+      "Title": "むちゃうマンのマスク",
+      "Aliases": [
+        "むちゃうまんのますく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC007.title"
+    },
+    {
+      "Id": 202007,
+      "Name": "chiikawa_user_relic008_relic",
+      "AssetName": "mods/chiikawa/user_relic008",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic008",
+      "Title": "おおきな鞄",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC008.title"
+    },
+    {
+      "Id": 202008,
+      "Name": "chiikawa_user_relic009_relic",
+      "AssetName": "mods/chiikawa/user_relic009",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Relics.Generated.UserRelic009",
+      "Title": "すっからかんの財布",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHIIKAWAMOD-USER_RELIC009.title"
+    },
+    {
+      "Id": 201000,
+      "Name": "chiikawa_configured_indicator_user_card001_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card001_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard001Power",
+      "Title": "Pururururu",
+      "Aliases": [
+        "ぷるるるるるる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD001_POWER.title"
+    },
+    {
+      "Id": 201001,
+      "Name": "chiikawa_configured_indicator_user_card002_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card002_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard002Power",
+      "Title": "Yaha!",
+      "Aliases": [
+        "やは！"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD002_POWER.title"
+    },
+    {
+      "Id": 201002,
+      "Name": "chiikawa_configured_indicator_user_card005_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card005_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard005Power",
+      "Title": "Hmph",
+      "Aliases": [
+        "ふぅん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD005_POWER.title"
+    },
+    {
+      "Id": 201003,
+      "Name": "chiikawa_configured_indicator_user_card007_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card007_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard007Power",
+      "Title": "Tsutsu-ura-ura",
+      "Aliases": [
+        "つつうらうら"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD007_POWER.title"
+    },
+    {
+      "Id": 201004,
+      "Name": "chiikawa_configured_indicator_user_card008_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card008_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard008Power",
+      "Title": "Hitorigotsu",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD008_POWER.title"
+    },
+    {
+      "Id": 201005,
+      "Name": "chiikawa_configured_indicator_user_card011_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card011_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard011Power",
+      "Title": "Matching Sasumata",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD011_POWER.title"
+    },
+    {
+      "Id": 201006,
+      "Name": "chiikawa_configured_indicator_user_card012_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card012_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard012Power",
+      "Title": "Anoko",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD012_POWER.title"
+    },
+    {
+      "Id": 201007,
+      "Name": "chiikawa_configured_indicator_user_card022_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card022_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard022Power",
+      "Title": "Usagi's Assist",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD022_POWER.title"
+    },
+    {
+      "Id": 201008,
+      "Name": "chiikawa_configured_indicator_user_card025_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card025_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard025Power",
+      "Title": "Hachiware's Assist",
+      "Aliases": [
+        "はちわれの助太刀"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD025_POWER.title"
+    },
+    {
+      "Id": 201009,
+      "Name": "chiikawa_configured_indicator_user_card026_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card026_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard026Power",
+      "Title": "Grade 5",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD026_POWER.title"
+    },
+    {
+      "Id": 201010,
+      "Name": "chiikawa_configured_indicator_user_card034_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card034_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard034Power",
+      "Title": "Spawning Spot",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD034_POWER.title"
+    },
+    {
+      "Id": 201011,
+      "Name": "chiikawa_configured_indicator_user_card044_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card044_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard044Power",
+      "Title": "Teamwork",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD044_POWER.title"
+    },
+    {
+      "Id": 201012,
+      "Name": "chiikawa_configured_indicator_user_card047_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card047_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard047Power",
+      "Title": "Power of Courage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD047_POWER.title"
+    },
+    {
+      "Id": 201013,
+      "Name": "chiikawa_configured_indicator_user_card051_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card051_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard051Power",
+      "Title": "Shimajiro",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD051_POWER.title"
+    },
+    {
+      "Id": 201014,
+      "Name": "chiikawa_configured_indicator_user_card056_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card056_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard056Power",
+      "Title": "The Usual Three",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD056_POWER.title"
+    },
+    {
+      "Id": 201015,
+      "Name": "chiikawa_configured_indicator_user_card061_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card061_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard061Power",
+      "Title": "Shadow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD061_POWER.title"
+    },
+    {
+      "Id": 201016,
+      "Name": "chiikawa_configured_indicator_user_card068_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card068_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard068Power",
+      "Title": "Aged",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD068_POWER.title"
+    },
+    {
+      "Id": 201017,
+      "Name": "chiikawa_configured_indicator_user_card069_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card069_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard069Power",
+      "Title": "Friends",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD069_POWER.title"
+    },
+    {
+      "Id": 201018,
+      "Name": "chiikawa_configured_indicator_user_card073_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card073_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard073Power",
+      "Title": "Empty Shell",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD073_POWER.title"
+    },
+    {
+      "Id": 201019,
+      "Name": "chiikawa_configured_indicator_user_card076_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card076_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard076Power",
+      "Title": "Don't Eat the Mushroom!!",
+      "Aliases": [
+        "きのこ食べるな！！"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD076_POWER.title"
+    },
+    {
+      "Id": 201020,
+      "Name": "chiikawa_configured_indicator_user_card082_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card082_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard082Power",
+      "Title": "Dekatsuyo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD082_POWER.title"
+    },
+    {
+      "Id": 201021,
+      "Name": "chiikawa_configured_indicator_user_card088_power_power",
+      "AssetName": "mods/chiikawa/configured_indicator_user_card088_power",
+      "Category": "Power",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Powers.Generated.ConfiguredIndicatorUserCard088Power",
+      "Title": "Superalloy Sasumata",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHIIKAWAMOD-CONFIGURED_INDICATOR_USER_CARD088_POWER.title"
+    },
+    {
+      "Id": 204000,
+      "Name": "chiikawa_user_potion001_potion",
+      "AssetName": "mods/chiikawa/user_potion001",
+      "Category": "Potion",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Potions.Generated.UserPotion001",
+      "Title": "助太刀ポーション",
+      "Aliases": [
+        "助太刀ぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "CHIIKAWAMOD-USER_POTION001.title"
+    },
+    {
+      "Id": 204001,
+      "Name": "chiikawa_user_potion002_potion",
+      "AssetName": "mods/chiikawa/user_potion002",
+      "Category": "Potion",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Potions.Generated.UserPotion002",
+      "Title": "わきどころポーション",
+      "Aliases": [
+        "わきどころぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "CHIIKAWAMOD-USER_POTION002.title"
+    },
+    {
+      "Id": 204002,
+      "Name": "chiikawa_user_potion003_potion",
+      "AssetName": "mods/chiikawa/user_potion003",
+      "Category": "Potion",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Potions.Generated.UserPotion003",
+      "Title": "ゴミ捨てポーション",
+      "Aliases": [
+        "ごみ捨てぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "CHIIKAWAMOD-USER_POTION003.title"
+    },
+    {
+      "Id": 205000,
+      "Name": "chiikawa_chiikawa_character",
+      "AssetName": "mods/chiikawa/chiikawa",
+      "Category": "Character",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Character.Chiikawa",
+      "Title": "Chiikawa",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "CHIIKAWAMOD-CHIIKAWA.title"
+    },
+    {
+      "Id": 202009,
+      "Name": "chiikawa_chiikawa_yummy_cookie_relic",
+      "AssetName": "mods/chiikawa/chiikawa/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "ChiikawaMod",
+      "TypeName": "ChiikawaMod.ChiikawaModCode.Character.Chiikawa",
+      "Title": "Yummy Cookie",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title",
+      "CharacterCookie": true
+    }
+  ]
+}

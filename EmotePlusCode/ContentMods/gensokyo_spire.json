@@ -1,0 +1,1275 @@
+{
+  "Key": "gensokyo_spire",
+  "ModIds": [
+    "GensokyoSpire"
+  ],
+  "Name": "GensokyoSpire",
+  "WorkshopId": "3778988352",
+  "Aliases": [
+    "幻想郷",
+    "幻想乡",
+    "Touhou",
+    "東方"
+  ],
+  "Entries": [
+    {
+      "Id": 112000,
+      "Name": "gensokyo_spire_broken_amulet_relic",
+      "AssetName": "mods/gensokyo_spire/broken_amulet",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.BrokenAmulet",
+      "Title": "Broken Amulet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-BROKEN_AMULET.title"
+    },
+    {
+      "Id": 112001,
+      "Name": "gensokyo_spire_celebrity_cash_relic",
+      "AssetName": "mods/gensokyo_spire/celebrity_cash",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.CelebrityCash",
+      "Title": "Celebrity Cash",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-CELEBRITY_CASH.title"
+    },
+    {
+      "Id": 112002,
+      "Name": "gensokyo_spire_enchiridion_relic",
+      "AssetName": "mods/gensokyo_spire/enchiridion",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.Enchiridion",
+      "Title": "Enchiridion",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-ENCHIRIDION.title"
+    },
+    {
+      "Id": 112003,
+      "Name": "gensokyo_spire_feather_bookmark_relic",
+      "AssetName": "mods/gensokyo_spire/feather_bookmark",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.FeatherBookmark",
+      "Title": "Feather Bookmark",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-FEATHER_BOOKMARK.title"
+    },
+    {
+      "Id": 112004,
+      "Name": "gensokyo_spire_frog_amulet_relic",
+      "AssetName": "mods/gensokyo_spire/frog_amulet",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.FrogAmulet",
+      "Title": "Frog Amulet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-FROG_AMULET.title"
+    },
+    {
+      "Id": 112005,
+      "Name": "gensokyo_spire_gensokyo_chronicle_relic",
+      "AssetName": "mods/gensokyo_spire/gensokyo_chronicle",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.GensokyoChronicle",
+      "Title": "Gensokyo Chronicle",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-GENSOKYO_CHRONICLE.title"
+    },
+    {
+      "Id": 112006,
+      "Name": "gensokyo_spire_illusionary_keyboard_relic",
+      "AssetName": "mods/gensokyo_spire/illusionary_keyboard",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.IllusionaryKeyboard",
+      "Title": "Illusionary Keyboard",
+      "Aliases": [
+        "幻想きーぼーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-ILLUSIONARY_KEYBOARD.title"
+    },
+    {
+      "Id": 112007,
+      "Name": "gensokyo_spire_inchlings_bowl_relic",
+      "AssetName": "mods/gensokyo_spire/inchlings_bowl",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.InchlingsBowl",
+      "Title": "Inchlings' Bowl",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-INCHLINGS_BOWL.title"
+    },
+    {
+      "Id": 112008,
+      "Name": "gensokyo_spire_inserter_relic",
+      "AssetName": "mods/gensokyo_spire/inserter",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.Inserter",
+      "Title": "Inserter",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-INSERTER.title"
+    },
+    {
+      "Id": 112009,
+      "Name": "gensokyo_spire_lost_hat_relic",
+      "AssetName": "mods/gensokyo_spire/lost_hat",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.LostHat",
+      "Title": "Lost Hat",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-LOST_HAT.title"
+    },
+    {
+      "Id": 112010,
+      "Name": "gensokyo_spire_maniac_trumpet_relic",
+      "AssetName": "mods/gensokyo_spire/maniac_trumpet",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.ManiacTrumpet",
+      "Title": "Maniac Trumpet",
+      "Aliases": [
+        "狂躁とらんぺっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-MANIAC_TRUMPET.title"
+    },
+    {
+      "Id": 112011,
+      "Name": "gensokyo_spire_melancholic_violin_relic",
+      "AssetName": "mods/gensokyo_spire/melancholic_violin",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.MelancholicViolin",
+      "Title": "Melancholic Violin",
+      "Aliases": [
+        "憂鬱ばいおりん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-MELANCHOLIC_VIOLIN.title"
+    },
+    {
+      "Id": 112012,
+      "Name": "gensokyo_spire_mirage_bivalve_relic",
+      "AssetName": "mods/gensokyo_spire/mirage_bivalve",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.MirageBivalve",
+      "Title": "Mirage Bivalve",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-MIRAGE_BIVALVE.title"
+    },
+    {
+      "Id": 112013,
+      "Name": "gensokyo_spire_moriya_gohei_relic",
+      "AssetName": "mods/gensokyo_spire/moriya_gohei",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.MoriyaGohei",
+      "Title": "Moriya Gohei",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-MORIYA_GOHEI.title"
+    },
+    {
+      "Id": 112014,
+      "Name": "gensokyo_spire_mystery_novel_relic",
+      "AssetName": "mods/gensokyo_spire/mystery_novel",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.MysteryNovel",
+      "Title": "Mystery Novel",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-MYSTERY_NOVEL.title"
+    },
+    {
+      "Id": 112015,
+      "Name": "gensokyo_spire_necronomicon_relic",
+      "AssetName": "mods/gensokyo_spire/necronomicon",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.Necronomicon",
+      "Title": "Necronomicon",
+      "Aliases": [
+        "ねくろのみこん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-NECRONOMICON.title"
+    },
+    {
+      "Id": 112016,
+      "Name": "gensokyo_spire_nilry_codex_relic",
+      "AssetName": "mods/gensokyo_spire/nilry_codex",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.NilryCodex",
+      "Title": "Nilry's Codex",
+      "Aliases": [
+        "にるりーの宝典"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-NILRY_CODEX.title"
+    },
+    {
+      "Id": 112017,
+      "Name": "gensokyo_spire_old_psyche_lock_relic",
+      "AssetName": "mods/gensokyo_spire/old_psyche_lock",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.OldPsycheLock",
+      "Title": "Abandoned Heart's Lock",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-OLD_PSYCHE_LOCK.title"
+    },
+    {
+      "Id": 112018,
+      "Name": "gensokyo_spire_one_inch_wish_relic",
+      "AssetName": "mods/gensokyo_spire/one_inch_wish",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.OneInchWish",
+      "Title": "One-Inch Wish",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-ONE_INCH_WISH.title"
+    },
+    {
+      "Id": 112019,
+      "Name": "gensokyo_spire_ordinary_wish_relic",
+      "AssetName": "mods/gensokyo_spire/ordinary_wish",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.OrdinaryWish",
+      "Title": "Ordinary Wish",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-ORDINARY_WISH.title"
+    },
+    {
+      "Id": 112020,
+      "Name": "gensokyo_spire_reminiscent_hairband_relic",
+      "AssetName": "mods/gensokyo_spire/reminiscent_hairband",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.ReminiscentHairband",
+      "Title": "Reminiscent Hairband",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-REMINISCENT_HAIRBAND.title"
+    },
+    {
+      "Id": 112021,
+      "Name": "gensokyo_spire_runic_cube_relic",
+      "AssetName": "mods/gensokyo_spire/runic_cube",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.RunicCube",
+      "Title": "Runic Cube",
+      "Aliases": [
+        "るーん立方体"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-RUNIC_CUBE.title"
+    },
+    {
+      "Id": 112022,
+      "Name": "gensokyo_spire_slaver_collar_relic",
+      "AssetName": "mods/gensokyo_spire/slaver_collar",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.SlaverCollar",
+      "Title": "Slaver's Collar",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-SLAVER_COLLAR.title"
+    },
+    {
+      "Id": 112023,
+      "Name": "gensokyo_spire_snake_amulet_relic",
+      "AssetName": "mods/gensokyo_spire/snake_amulet",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.SnakeAmulet",
+      "Title": "Snake Amulet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-SNAKE_AMULET.title"
+    },
+    {
+      "Id": 112024,
+      "Name": "gensokyo_spire_tiny_house_relic",
+      "AssetName": "mods/gensokyo_spire/tiny_house",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.TinyHouse",
+      "Title": "Tiny House",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-TINY_HOUSE.title"
+    },
+    {
+      "Id": 112025,
+      "Name": "gensokyo_spire_weak_flower_relic",
+      "AssetName": "mods/gensokyo_spire/weak_flower",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.WeakFlower",
+      "Title": "Weak Little Flower",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-WEAK_FLOWER.title"
+    },
+    {
+      "Id": 112026,
+      "Name": "gensokyo_spire_wrist_blade_relic",
+      "AssetName": "mods/gensokyo_spire/wrist_blade",
+      "Category": "Relic",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Relics.WristBlade",
+      "Title": "Wrist Blade",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "GENSOKYOSPIRE-WRIST_BLADE.title"
+    },
+    {
+      "Id": 111000,
+      "Name": "gensokyo_spire_amulet_power_power",
+      "AssetName": "mods/gensokyo_spire/amulet_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.AmuletPower",
+      "Title": "Amulet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-AMULET_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111001,
+      "Name": "gensokyo_spire_apex_speedster_power",
+      "AssetName": "mods/gensokyo_spire/apex_speedster",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.ApexSpeedster",
+      "Title": "Apex Speedster",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-APEX_SPEEDSTER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111002,
+      "Name": "gensokyo_spire_blazing_fire_power_power",
+      "AssetName": "mods/gensokyo_spire/blazing_fire_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.BlazingFirePower",
+      "Title": "Blazing Fire",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-BLAZING_FIRE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111003,
+      "Name": "gensokyo_spire_brambly_rose_garden_power_power",
+      "AssetName": "mods/gensokyo_spire/brambly_rose_garden_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.BramblyRoseGardenPower",
+      "Title": "Brambly Rose Garden",
+      "Aliases": [
+        "ぶらんぶりーろーずがーでん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-BRAMBLY_ROSE_GARDEN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111004,
+      "Name": "gensokyo_spire_burn_out_pudding_power_power",
+      "AssetName": "mods/gensokyo_spire/burn_out_pudding_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.BurnOutPuddingPower",
+      "Title": "Burn-out Pudding",
+      "Aliases": [
+        "燃え尽きぷりん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-BURN_OUT_PUDDING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111005,
+      "Name": "gensokyo_spire_cat_walk_power_power",
+      "AssetName": "mods/gensokyo_spire/cat_walk_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.CatWalkPower",
+      "Title": "Cat Walk",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-CAT_WALK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111006,
+      "Name": "gensokyo_spire_corpse_explosion_power_power",
+      "AssetName": "mods/gensokyo_spire/corpse_explosion_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.CorpseExplosionPower",
+      "Title": "Corpse Explosion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-CORPSE_EXPLOSION_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111007,
+      "Name": "gensokyo_spire_dance_of_dazzling_iridescence_power_power",
+      "AssetName": "mods/gensokyo_spire/dance_of_dazzling_iridescence_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.DanceOfDazzlingIridescencePower",
+      "Title": "Dance of Dazzling Iridescence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-DANCE_OF_DAZZLING_IRIDESCENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111008,
+      "Name": "gensokyo_spire_drift_ice_power_power",
+      "AssetName": "mods/gensokyo_spire/drift_ice_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.DriftIcePower",
+      "Title": "Perfect Freeze",
+      "Aliases": [
+        "ぱーふぇくとふりーず"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-DRIFT_ICE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111009,
+      "Name": "gensokyo_spire_ego_power_power",
+      "AssetName": "mods/gensokyo_spire/ego_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.EgoPower",
+      "Title": "Ego",
+      "Aliases": [
+        "えご"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-EGO_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111010,
+      "Name": "gensokyo_spire_fairy_power_power",
+      "AssetName": "mods/gensokyo_spire/fairy_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.FairyPower",
+      "Title": "Fairy Revival",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-FAIRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111011,
+      "Name": "gensokyo_spire_formless_existence_power_power",
+      "AssetName": "mods/gensokyo_spire/formless_existence_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.FormlessExistencePower",
+      "Title": "Formless Existence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-FORMLESS_EXISTENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111012,
+      "Name": "gensokyo_spire_full_moon_roar_power_power",
+      "AssetName": "mods/gensokyo_spire/full_moon_roar_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.FullMoonRoarPower",
+      "Title": "Full Moon Roar",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-FULL_MOON_ROAR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111013,
+      "Name": "gensokyo_spire_guard_power_power",
+      "AssetName": "mods/gensokyo_spire/guard_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.GuardPower",
+      "Title": "Guard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-GUARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111014,
+      "Name": "gensokyo_spire_hidden_god_nagashi_bina_power_power",
+      "AssetName": "mods/gensokyo_spire/hidden_god_nagashi_bina_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.HiddenGodNagashiBinaPower",
+      "Title": "Hidden God Nagashi Bina",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-HIDDEN_GOD_NAGASHI_BINA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111015,
+      "Name": "gensokyo_spire_hide_and_seek_power_power",
+      "AssetName": "mods/gensokyo_spire/hide_and_seek_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.HideAndSeekPower",
+      "Title": "Hide and Seek",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-HIDE_AND_SEEK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111016,
+      "Name": "gensokyo_spire_hp_thievery_power_power",
+      "AssetName": "mods/gensokyo_spire/hp_thievery_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.HpThieveryPower",
+      "Title": "HP Thievery",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-HP_THIEVERY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111017,
+      "Name": "gensokyo_spire_id_power_power",
+      "AssetName": "mods/gensokyo_spire/id_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.IdPower",
+      "Title": "Id",
+      "Aliases": [
+        "いど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-ID_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111018,
+      "Name": "gensokyo_spire_immutable_power_power",
+      "AssetName": "mods/gensokyo_spire/immutable_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.ImmutablePower",
+      "Title": "Immutable",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-IMMUTABLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111019,
+      "Name": "gensokyo_spire_infectious_power_power",
+      "AssetName": "mods/gensokyo_spire/infectious_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.InfectiousPower",
+      "Title": "Infectious",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-INFECTIOUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111020,
+      "Name": "gensokyo_spire_jealousy_power_power",
+      "AssetName": "mods/gensokyo_spire/jealousy_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.JealousyPower",
+      "Title": "Jealousy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-JEALOUSY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111021,
+      "Name": "gensokyo_spire_lingering_spite_power_power",
+      "AssetName": "mods/gensokyo_spire/lingering_spite_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.LingeringSpitePower",
+      "Title": "Lingering Spite",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-LINGERING_SPITE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111022,
+      "Name": "gensokyo_spire_lunacy_power_power",
+      "AssetName": "mods/gensokyo_spire/lunacy_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.LunacyPower",
+      "Title": "Lunacy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-LUNACY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111023,
+      "Name": "gensokyo_spire_lunar_rainbow_market_power_power",
+      "AssetName": "mods/gensokyo_spire/lunar_rainbow_market_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.LunarRainbowMarketPower",
+      "Title": "Lunar Rainbow Market",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-LUNAR_RAINBOW_MARKET_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111024,
+      "Name": "gensokyo_spire_lunatic_torch_power_power",
+      "AssetName": "mods/gensokyo_spire/lunatic_torch_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.LunaticTorchPower",
+      "Title": "Lunatic Torch",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-LUNATIC_TORCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111025,
+      "Name": "gensokyo_spire_meltdown_power_power",
+      "AssetName": "mods/gensokyo_spire/meltdown_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.MeltdownPower",
+      "Title": "Meltdown",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-MELTDOWN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111026,
+      "Name": "gensokyo_spire_mirage_chaos_power_power",
+      "AssetName": "mods/gensokyo_spire/mirage_chaos_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.MirageChaosPower",
+      "Title": "Everyone's Favorite Cross-Turn Profit",
+      "Aliases": [
+        "皆が好きなたーん越え収益",
+        "になあるごりずむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-MIRAGE_CHAOS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "GensokyoSpire.Powers.MirageChaosTriggerPower"
+      ]
+    },
+    {
+      "Id": 111027,
+      "Name": "gensokyo_spire_night_blindness_power_power",
+      "AssetName": "mods/gensokyo_spire/night_blindness_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.NightBlindnessPower",
+      "Title": "Night Blindness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-NIGHT_BLINDNESS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111028,
+      "Name": "gensokyo_spire_overturning_all_under_heaven_power_power",
+      "AssetName": "mods/gensokyo_spire/overturning_all_under_heaven_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.OverturningAllUnderHeavenPower",
+      "Title": "Overturning All Under Heaven",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-OVERTURNING_ALL_UNDER_HEAVEN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111029,
+      "Name": "gensokyo_spire_possessed_by_mizuchi_power_power",
+      "AssetName": "mods/gensokyo_spire/possessed_by_mizuchi_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.PossessedByMizuchiPower",
+      "Title": "Possessed by Mizuchi",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-POSSESSED_BY_MIZUCHI_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111030,
+      "Name": "gensokyo_spire_pristine_beat_power_power",
+      "AssetName": "mods/gensokyo_spire/pristine_beat_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.PristineBeatPower",
+      "Title": "Primitive Rhythm",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-PRISTINE_BEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111031,
+      "Name": "gensokyo_spire_psyche_lock_power_power",
+      "AssetName": "mods/gensokyo_spire/psyche_lock_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.PsycheLockPower",
+      "Title": "Psyche Lock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-PSYCHE_LOCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111032,
+      "Name": "gensokyo_spire_rekindling_power_power",
+      "AssetName": "mods/gensokyo_spire/rekindling_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.RekindlingPower",
+      "Title": "Rekindling of Dead Ashes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-REKINDLING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111033,
+      "Name": "gensokyo_spire_satori_mind_reading_power_power",
+      "AssetName": "mods/gensokyo_spire/satori_mind_reading_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.SatoriMindReadingPower",
+      "Title": "Mind Reading",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-SATORI_MIND_READING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111034,
+      "Name": "gensokyo_spire_satori_temp_mind_reading_power_power",
+      "AssetName": "mods/gensokyo_spire/satori_temp_mind_reading_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.SatoriTempMindReadingPower",
+      "Title": "Temporary Mind Reading",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-SATORI_TEMP_MIND_READING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111035,
+      "Name": "gensokyo_spire_stone_goddess_power_power",
+      "AssetName": "mods/gensokyo_spire/stone_goddess_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.StoneGoddessPower",
+      "Title": "Stone Goddess",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-STONE_GODDESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111036,
+      "Name": "gensokyo_spire_superego_power_power",
+      "AssetName": "mods/gensokyo_spire/superego_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.SuperegoPower",
+      "Title": "Superego",
+      "Aliases": [
+        "すーぱーえご"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-SUPEREGO_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111037,
+      "Name": "gensokyo_spire_the_closed_eyesof_love_power_power",
+      "AssetName": "mods/gensokyo_spire/the_closed_eyesof_love_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.TheClosedEyesofLovePower",
+      "Title": "The Closed Eyes of Love",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-THE_CLOSED_EYESOF_LOVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111038,
+      "Name": "gensokyo_spire_the_embers_of_love_power_power",
+      "AssetName": "mods/gensokyo_spire/the_embers_of_love_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.TheEmbersOfLovePower",
+      "Title": "Embers of Love",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-THE_EMBERS_OF_LOVE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111039,
+      "Name": "gensokyo_spire_thoughtography_power_power",
+      "AssetName": "mods/gensokyo_spire/thoughtography_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.ThoughtographyPower",
+      "Title": "Thoughtography",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-THOUGHTOGRAPHY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111040,
+      "Name": "gensokyo_spire_unidentified_youkai_power_power",
+      "AssetName": "mods/gensokyo_spire/unidentified_youkai_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.UnidentifiedYoukaiPower",
+      "Title": "Unidentified Youkai",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-UNIDENTIFIED_YOUKAI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111041,
+      "Name": "gensokyo_spire_white_wolfs_telegnosis_power_power",
+      "AssetName": "mods/gensokyo_spire/white_wolfs_telegnosis_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.WhiteWolfsTelegnosisPower",
+      "Title": "White Wolf's Gaze",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-WHITE_WOLFS_TELEGNOSIS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111042,
+      "Name": "gensokyo_spire_wind_god_girl_power_power",
+      "AssetName": "mods/gensokyo_spire/wind_god_girl_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.WindGodGirlPower",
+      "Title": "Wind God Girl",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-WIND_GOD_GIRL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 111043,
+      "Name": "gensokyo_spire_yuugi_power_power",
+      "AssetName": "mods/gensokyo_spire/yuugi_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.YuugiPower",
+      "Title": "Unreasonable Force",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-YUUGI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 114000,
+      "Name": "gensokyo_spire_fourteenth_night_potion",
+      "AssetName": "mods/gensokyo_spire/fourteenth_night",
+      "Category": "Potion",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Potions.FourteenthNight",
+      "Title": "Fourteenth Night",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "GENSOKYOSPIRE-FOURTEENTH_NIGHT.title"
+    },
+    {
+      "Id": 114001,
+      "Name": "gensokyo_spire_green_tea_potion",
+      "AssetName": "mods/gensokyo_spire/green_tea",
+      "Category": "Potion",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Potions.GreenTea",
+      "Title": "Green Tea",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "GENSOKYOSPIRE-GREEN_TEA.title"
+    },
+    {
+      "Id": 114002,
+      "Name": "gensokyo_spire_misty_lake_drift_ice_potion",
+      "AssetName": "mods/gensokyo_spire/misty_lake_drift_ice",
+      "Category": "Potion",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Potions.MistyLakeDriftIce",
+      "Title": "Misty Lake Drift Ice",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "GENSOKYOSPIRE-MISTY_LAKE_DRIFT_ICE.title"
+    },
+    {
+      "Id": 114003,
+      "Name": "gensokyo_spire_spring_of_daiyousei_potion",
+      "AssetName": "mods/gensokyo_spire/spring_of_daiyousei",
+      "Category": "Potion",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Potions.SpringOfDaiyousei",
+      "Title": "Great Fairy's Fountain",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "GENSOKYOSPIRE-SPRING_OF_DAIYOUSEI.title"
+    },
+    {
+      "Id": 113000,
+      "Name": "gensokyo_spire_mountain_echo_enchantment",
+      "AssetName": "mods/gensokyo_spire/mountain_echo",
+      "Category": "Enchantment",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Enchantments.MountainEcho",
+      "Title": "Mountain Echo",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "GENSOKYOSPIRE-MOUNTAIN_ECHO.title"
+    },
+    {
+      "Id": 113001,
+      "Name": "gensokyo_spire_pure_spirit_enchantment",
+      "AssetName": "mods/gensokyo_spire/pure_spirit",
+      "Category": "Enchantment",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Enchantments.PureSpirit",
+      "Title": "Pure Spirit",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "GENSOKYOSPIRE-PURE_SPIRIT.title"
+    },
+    {
+      "Id": 113002,
+      "Name": "gensokyo_spire_scarlet_pact_enchantment",
+      "AssetName": "mods/gensokyo_spire/scarlet_pact",
+      "Category": "Enchantment",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Enchantments.ScarletPact",
+      "Title": "Scarlet Pact",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "GENSOKYOSPIRE-SCARLET_PACT.title"
+    },
+    {
+      "Id": 113003,
+      "Name": "gensokyo_spire_slash_of_departure_from_hesitation_enchantment",
+      "AssetName": "mods/gensokyo_spire/slash_of_departure_from_hesitation",
+      "Category": "Enchantment",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Enchantments.SlashOfDepartureFromHesitation",
+      "Title": "Slash of Departure from Hesitation",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "GENSOKYOSPIRE-SLASH_OF_DEPARTURE_FROM_HESITATION.title"
+    },
+    {
+      "Id": 113004,
+      "Name": "gensokyo_spire_sunken_enchantment",
+      "AssetName": "mods/gensokyo_spire/sunken",
+      "Category": "Enchantment",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Enchantments.Sunken",
+      "Title": "Sunken",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "GENSOKYOSPIRE-SUNKEN.title"
+    },
+    {
+      "Id": 111044,
+      "Name": "gensokyo_spire_deciduous_power_power",
+      "AssetName": "mods/gensokyo_spire/deciduous_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.DeciduousPower",
+      "Title": "Deciduous",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-DECIDUOUS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 111045,
+      "Name": "gensokyo_spire_red_ufo_dexterity_down_power_power",
+      "AssetName": "mods/gensokyo_spire/red_ufo_dexterity_down_power",
+      "Category": "Power",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Powers.RedUfoDexterityDownPower",
+      "Title": "Red UFO",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GENSOKYOSPIRE-RED_UFO_DEXTERITY_DOWN.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 116000,
+      "Name": "gensokyo_spire_ariya_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/ariya_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.AriyaBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.Ariya"
+      ],
+      "Title": "Iwanaga Ariya",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-ARIYA_BOSS.title"
+    },
+    {
+      "Id": 116001,
+      "Name": "gensokyo_spire_aya_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/aya_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.AyaBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.Aya"
+      ],
+      "Title": "Aya Shameimaru",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-AYA_BOSS.title"
+    },
+    {
+      "Id": 116002,
+      "Name": "gensokyo_spire_megumu_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/megumu_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.MegumuBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.CrowTengu",
+        "GensokyoSpire.Monsters.Megumu",
+        "GensokyoSpire.Monsters.WolfTengu"
+      ],
+      "Title": "Megumu Iizunamaru",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-MEGUMU_BOSS.title"
+    },
+    {
+      "Id": 116003,
+      "Name": "gensokyo_spire_rin_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/rin_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.RinBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.Rin"
+      ],
+      "Title": "Rin Kaenbyou",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-RIN_BOSS.title"
+    },
+    {
+      "Id": 116004,
+      "Name": "gensokyo_spire_satori_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/satori_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.SatoriBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.Satori"
+      ],
+      "Title": "Satori Komeiji",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-SATORI_BOSS.title"
+    },
+    {
+      "Id": 116005,
+      "Name": "gensokyo_spire_utsuho_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/utsuho_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.UtsuhoBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.Utsuho"
+      ],
+      "Title": "Utsuho Reiuji",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-UTSUHO_BOSS.title"
+    },
+    {
+      "Id": 116006,
+      "Name": "gensokyo_spire_koishi_boss_creature",
+      "AssetName": "mods/gensokyo_spire/bosses/koishi_boss",
+      "Category": "Creature",
+      "Assembly": "GensokyoSpire",
+      "TypeName": "GensokyoSpire.Encounters.KoishiBoss",
+      "TypeAliases": [
+        "GensokyoSpire.Monsters.Koishi"
+      ],
+      "Title": "Koishi Komeiji",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "GENSOKYOSPIRE-KOISHI_BOSS.title"
+    }
+  ]
+}

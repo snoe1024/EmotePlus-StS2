@@ -10,5 +10,739 @@
     "Hero Expansion",
     "ヒーロー"
   ],
-  "Entries": []
+  "Entries": [
+    {
+      "Id": 22000,
+      "Name": "the_hero_expansion_blade_handle_relic",
+      "AssetName": "mods/the_hero_expansion/blade_handle",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.BladeHandle",
+      "Title": "Blade Handle",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-BLADE_HANDLE.title"
+    },
+    {
+      "Id": 22001,
+      "Name": "the_hero_expansion_dainty_dandelion_relic",
+      "AssetName": "mods/the_hero_expansion/dainty_dandelion",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.DaintyDandelion",
+      "Title": "Dainty Dandelion",
+      "Aliases": [
+        "可憐なたんぽぽ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-DAINTY_DANDELION.title"
+    },
+    {
+      "Id": 22002,
+      "Name": "the_hero_expansion_mysterious_flashlight_relic",
+      "AssetName": "mods/the_hero_expansion/mysterious_flashlight",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.MysteriousFlashlight",
+      "Title": "Mysterious Flashlight",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-MYSTERIOUS_FLASHLIGHT.title"
+    },
+    {
+      "Id": 22003,
+      "Name": "the_hero_expansion_nostalgic_smores_relic",
+      "AssetName": "mods/the_hero_expansion/nostalgic_smores",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.NostalgicSmores",
+      "Title": "Nostalgic Smores",
+      "Aliases": [
+        "懐かしのすもあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-NOSTALGIC_SMORES.title"
+    },
+    {
+      "Id": 22004,
+      "Name": "the_hero_expansion_paels_blight_relic",
+      "AssetName": "mods/the_hero_expansion/paels_blight",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.PaelsBlight",
+      "Title": "Pael's Blight",
+      "Aliases": [
+        "ぱえるの疫病"
+      ],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-PAELS_BLIGHT.title"
+    },
+    {
+      "Id": 22005,
+      "Name": "the_hero_expansion_potted_aloe_vera_relic",
+      "AssetName": "mods/the_hero_expansion/potted_aloe_vera",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.PottedAloeVera",
+      "Title": "Potted Aloe Vera",
+      "Aliases": [
+        "鉢植えのあろえ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-POTTED_ALOE_VERA.title"
+    },
+    {
+      "Id": 22006,
+      "Name": "the_hero_expansion_smiling_mask_relic",
+      "AssetName": "mods/the_hero_expansion/smiling_mask",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.SmilingMask",
+      "Title": "Smiling Mask",
+      "Aliases": [
+        "すまいるますく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-SMILING_MASK.title"
+    },
+    {
+      "Id": 22007,
+      "Name": "the_hero_expansion_steel_ball_relic",
+      "AssetName": "mods/the_hero_expansion/steel_ball",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.SteelBall",
+      "Title": "Steel Ball",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-STEEL_BALL.title"
+    },
+    {
+      "Id": 22008,
+      "Name": "the_hero_expansion_the_ring_relic",
+      "AssetName": "mods/the_hero_expansion/the_ring",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.TheRing",
+      "Title": "The Ring",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-THE_RING.title"
+    },
+    {
+      "Id": 22009,
+      "Name": "the_hero_expansion_three_string_ukulele_relic",
+      "AssetName": "mods/the_hero_expansion/three_string_ukulele",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.ThreeStringUkulele",
+      "Title": "Three String Ukulele",
+      "Aliases": [
+        "三弦のうくれれ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-THREE_STRING_UKULELE.title"
+    },
+    {
+      "Id": 22010,
+      "Name": "the_hero_expansion_tome_of_origin_relic",
+      "AssetName": "mods/the_hero_expansion/tome_of_origin",
+      "Category": "Relic",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Relics.TomeOfOrigin",
+      "Title": "Tome Of Origin",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEHEROEXPANSION-TOME_OF_ORIGIN.title"
+    },
+    {
+      "Id": 21000,
+      "Name": "the_hero_expansion_akumetsu_power_power",
+      "AssetName": "mods/the_hero_expansion/akumetsu_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.AkumetsuPower",
+      "Title": "Akumetsu",
+      "Aliases": [
+        "あくめつ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-AKUMETSU_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21001,
+      "Name": "the_hero_expansion_astral_power_power",
+      "AssetName": "mods/the_hero_expansion/astral_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.AstralPower",
+      "Title": "Astral",
+      "Aliases": [
+        "あすとらる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-ASTRAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21002,
+      "Name": "the_hero_expansion_beast_within_power_power",
+      "AssetName": "mods/the_hero_expansion/beast_within_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.BeastWithinPower",
+      "Title": "Beast Within",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-BEAST_WITHIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21003,
+      "Name": "the_hero_expansion_better_days_power_power",
+      "AssetName": "mods/the_hero_expansion/better_days_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.BetterDaysPower",
+      "Title": "Better Days",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-BETTER_DAYS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21004,
+      "Name": "the_hero_expansion_cease_to_exist_power_power",
+      "AssetName": "mods/the_hero_expansion/cease_to_exist_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.CeaseToExistPower",
+      "Title": "Cease To Exist",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-CEASE_TO_EXIST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21005,
+      "Name": "the_hero_expansion_cheat_power_power",
+      "AssetName": "mods/the_hero_expansion/cheat_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.CheatPower",
+      "Title": "Cheat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-CHEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21006,
+      "Name": "the_hero_expansion_dark_magician_power_power",
+      "AssetName": "mods/the_hero_expansion/dark_magician_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.DarkMagicianPower",
+      "Title": "Dark Magician",
+      "Aliases": [
+        "ぶらっく・まじしゃん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-DARK_MAGICIAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21007,
+      "Name": "the_hero_expansion_edge_of_destiny_power_power",
+      "AssetName": "mods/the_hero_expansion/edge_of_destiny_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.EdgeOfDestinyPower",
+      "Title": "Edge of Destiny",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-EDGE_OF_DESTINY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21008,
+      "Name": "the_hero_expansion_fma_power_power",
+      "AssetName": "mods/the_hero_expansion/fma_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.FmaPower",
+      "Title": "F=ma",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-FMA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21009,
+      "Name": "the_hero_expansion_got_your_back_power_power",
+      "AssetName": "mods/the_hero_expansion/got_your_back_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.GotYourBackPower",
+      "Title": "Got Your Back",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-GOT_YOUR_BACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21010,
+      "Name": "the_hero_expansion_joy_of_creation_power_power",
+      "AssetName": "mods/the_hero_expansion/joy_of_creation_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.JoyOfCreationPower",
+      "Title": "Joy Of Creation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-JOY_OF_CREATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21011,
+      "Name": "the_hero_expansion_kill_drive_power_power",
+      "AssetName": "mods/the_hero_expansion/kill_drive_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.KillDrivePower",
+      "Title": "Kill Drive",
+      "Aliases": [
+        "きるどらいぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-KILL_DRIVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21012,
+      "Name": "the_hero_expansion_momentum_power_power",
+      "AssetName": "mods/the_hero_expansion/momentum_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.MomentumPower",
+      "Title": "Momentum",
+      "Aliases": [
+        "もめんたむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-MOMENTUM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21013,
+      "Name": "the_hero_expansion_nanomachines_power_power",
+      "AssetName": "mods/the_hero_expansion/nanomachines_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.NanomachinesPower",
+      "Title": "Nanomachines",
+      "Aliases": [
+        "なのましん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-NANOMACHINES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21014,
+      "Name": "the_hero_expansion_old_better_days_power_power",
+      "AssetName": "mods/the_hero_expansion/old_better_days_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.OldBetterDaysPower",
+      "Title": "Old Better Days",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-OLD_BETTER_DAYS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21015,
+      "Name": "the_hero_expansion_perish_song_power_power",
+      "AssetName": "mods/the_hero_expansion/perish_song_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.PerishSongPower",
+      "Title": "Perish Song",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-PERISH_SONG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21016,
+      "Name": "the_hero_expansion_repurpose_power_power",
+      "AssetName": "mods/the_hero_expansion/repurpose_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.RepurposePower",
+      "Title": "Repurpose",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-REPURPOSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21017,
+      "Name": "the_hero_expansion_serve_power_power",
+      "AssetName": "mods/the_hero_expansion/serve_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.ServePower",
+      "Title": "Serve",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-SERVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21018,
+      "Name": "the_hero_expansion_super_form_power_power",
+      "AssetName": "mods/the_hero_expansion/super_form_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.SuperFormPower",
+      "Title": "Super Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-SUPER_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21019,
+      "Name": "the_hero_expansion_tainted_blade_power_power",
+      "AssetName": "mods/the_hero_expansion/tainted_blade_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.TaintedBladePower",
+      "Title": "The Tainted Blade",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THEHEROEXPANSION-THE_TAINTED_BLADE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 21020,
+      "Name": "the_hero_expansion_the_world_power_power",
+      "AssetName": "mods/the_hero_expansion/the_world_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.TheWorldPower",
+      "Title": "The World",
+      "Aliases": [
+        "ざ・わーるど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-THE_WORLD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21021,
+      "Name": "the_hero_expansion_upgraded_serve_power_power",
+      "AssetName": "mods/the_hero_expansion/upgraded_serve_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.UpgradedServePower",
+      "Title": "Serve+",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-UPGRADED_SERVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21022,
+      "Name": "the_hero_expansion_yokai_power_power",
+      "AssetName": "mods/the_hero_expansion/yokai_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.YokaiPower",
+      "Title": "Yokai",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-YOKAI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21023,
+      "Name": "the_hero_expansion_fragile_strength_power_power",
+      "AssetName": "mods/the_hero_expansion/fragile_strength_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.VakuuPowers.FragileStrengthPower",
+      "Title": "Fragile Strength",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-FRAGILE_STRENGTH_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 21024,
+      "Name": "the_hero_expansion_hubris_power_power",
+      "AssetName": "mods/the_hero_expansion/hubris_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.VakuuPowers.HubrisPower",
+      "Title": "Hubris",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-HUBRIS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 21025,
+      "Name": "the_hero_expansion_my_turn_power_power",
+      "AssetName": "mods/the_hero_expansion/my_turn_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.VakuuPowers.MyTurnPower",
+      "Title": "My Turn",
+      "Aliases": [
+        "俺のたーん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-MY_TURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 21026,
+      "Name": "the_hero_expansion_soul_ring_power_power",
+      "AssetName": "mods/the_hero_expansion/soul_ring_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.VakuuPowers.SoulRingPower",
+      "Title": "Soul Ring",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-SOUL_RING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 21027,
+      "Name": "the_hero_expansion_unbreakable_strength_power_power",
+      "AssetName": "mods/the_hero_expansion/unbreakable_strength_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.VakuuPowers.UnbreakableStrengthPower",
+      "Title": "Unbreakable Strength",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-UNBREAKABLE_STRENGTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 21028,
+      "Name": "the_hero_expansion_vakuus_prank_power_power",
+      "AssetName": "mods/the_hero_expansion/vakuus_prank_power",
+      "Category": "Power",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Powers.VakuuPowers.VakuusPrankPower",
+      "Title": "Vakuu's Prank",
+      "Aliases": [
+        "ヴぁくーの悪戯"
+      ],
+      "LocTable": "powers",
+      "LocKey": "THEHEROEXPANSION-VAKUUS_PRANK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 24000,
+      "Name": "the_hero_expansion_bleeding_fuel_potion",
+      "AssetName": "mods/the_hero_expansion/bleeding_fuel",
+      "Category": "Potion",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Potions.BleedingFuel",
+      "Title": "Bleeding Fuel",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEHEROEXPANSION-BLEEDING_FUEL.title"
+    },
+    {
+      "Id": 24001,
+      "Name": "the_hero_expansion_time_in_a_bottle_potion",
+      "AssetName": "mods/the_hero_expansion/time_in_a_bottle",
+      "Category": "Potion",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Potions.TimeInABottle",
+      "Title": "Time In A Bottle",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEHEROEXPANSION-TIME_IN_A_BOTTLE.title"
+    },
+    {
+      "Id": 24002,
+      "Name": "the_hero_expansion_vigor_potion_potion",
+      "AssetName": "mods/the_hero_expansion/vigor_potion",
+      "Category": "Potion",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Potions.VigorPotion",
+      "Title": "Vigor Potion",
+      "Aliases": [
+        "活力ぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "THEHEROEXPANSION-VIGOR_POTION.title"
+    },
+    {
+      "Id": 23000,
+      "Name": "the_hero_expansion_advantageous_enchantment",
+      "AssetName": "mods/the_hero_expansion/advantageous",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.Advantageous",
+      "Title": "Advantageous",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-ADVANTAGEOUS.title"
+    },
+    {
+      "Id": 23001,
+      "Name": "the_hero_expansion_dreamy_enchantment",
+      "AssetName": "mods/the_hero_expansion/dreamy",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.Dreamy",
+      "Title": "Dreamy",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-DREAMY.title"
+    },
+    {
+      "Id": 23002,
+      "Name": "the_hero_expansion_golden_ratio_enchantment",
+      "AssetName": "mods/the_hero_expansion/golden_ratio",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.GoldenRatio",
+      "Title": "Golden Ratio",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-GOLDEN_RATIO.title"
+    },
+    {
+      "Id": 23003,
+      "Name": "the_hero_expansion_infected_enchantment",
+      "AssetName": "mods/the_hero_expansion/infected",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.Infected",
+      "Title": "Infected",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-INFECTED.title"
+    },
+    {
+      "Id": 23004,
+      "Name": "the_hero_expansion_jumpscare_enchantment",
+      "AssetName": "mods/the_hero_expansion/jumpscare",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.Jumpscare",
+      "Title": "Jumpscare",
+      "Aliases": [
+        "じゃんぷすけあ"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-JUMPSCARE.title"
+    },
+    {
+      "Id": 23005,
+      "Name": "the_hero_expansion_pure_horror_enchantment",
+      "AssetName": "mods/the_hero_expansion/pure_horror",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.PureHorror",
+      "Title": "Pure Horror",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-PURE_HORROR.title"
+    },
+    {
+      "Id": 23006,
+      "Name": "the_hero_expansion_ravenous_enchantment",
+      "AssetName": "mods/the_hero_expansion/ravenous",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.Ravenous",
+      "Title": "Ravenous",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-RAVENOUS.title"
+    },
+    {
+      "Id": 23007,
+      "Name": "the_hero_expansion_royal_enchantment",
+      "AssetName": "mods/the_hero_expansion/royal",
+      "Category": "Enchantment",
+      "Assembly": "TheHeroExpansion",
+      "TypeName": "TheHeroExpansion.TheHeroExpansionCode.Enchantments.Royal",
+      "Title": "Royal",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THEHEROEXPANSION-ROYAL.title"
+    }
+  ]
 }

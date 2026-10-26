@@ -1,0 +1,792 @@
+{
+  "Key": "hornet",
+  "ModIds": [
+    "HornetMod"
+  ],
+  "Name": "Hornet / 大黄蜂",
+  "WorkshopId": "3747589529",
+  "Aliases": [
+    "HornetMod"
+  ],
+  "Entries": [
+    {
+      "Id": 142000,
+      "Name": "hornet_hornet_biomass_gland_relic",
+      "AssetName": "mods/hornet/hornet_biomass_gland",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetBiomassGland",
+      "Title": "Plasmium Gland",
+      "Aliases": [
+        "ぷらすみうむの分泌腺"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_BIOMASS_GLAND.title"
+    },
+    {
+      "Id": 142001,
+      "Name": "hornet_hornet_crow_nest_relic",
+      "AssetName": "mods/hornet/hornet_crow_nest",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetCrowNest",
+      "Title": "Crawbell",
+      "Aliases": [
+        "ぼろがわの鐘"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_CROW_NEST.title"
+    },
+    {
+      "Id": 142002,
+      "Name": "hornet_hornet_hymn_cloak_relic",
+      "AssetName": "mods/hornet/hornet_hymn_cloak",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetHymnCloak",
+      "Title": "Choir Cloak",
+      "Aliases": [
+        "合唱者のくろーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_HYMN_CLOAK.title"
+    },
+    {
+      "Id": 142003,
+      "Name": "hornet_hornet_hymn_cylinder_relic",
+      "AssetName": "mods/hornet/hornet_hymn_cylinder",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetHymnCylinder",
+      "Title": "Sacred Cylinder",
+      "Aliases": [
+        "聖なるしりんだー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_HYMN_CYLINDER.title"
+    },
+    {
+      "Id": 142004,
+      "Name": "hornet_hornet_material_vault_relic",
+      "AssetName": "mods/hornet/hornet_material_vault",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetMaterialVault",
+      "Title": "Materium",
+      "Aliases": [
+        "まてりうむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_MATERIAL_VAULT.title"
+    },
+    {
+      "Id": 142005,
+      "Name": "hornet_hornet_needle_thread_relic",
+      "AssetName": "mods/hornet/hornet_needle_thread",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetNeedleThread",
+      "Title": "Needle",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_NEEDLE_THREAD.title"
+    },
+    {
+      "Id": 142006,
+      "Name": "hornet_hornet_pale_needle_relic",
+      "AssetName": "mods/hornet/hornet_pale_needle",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetPaleNeedle",
+      "Title": "Pale Steel Needle",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_PALE_NEEDLE.title"
+    },
+    {
+      "Id": 142007,
+      "Name": "hornet_hornet_snow_cloak_relic",
+      "AssetName": "mods/hornet/hornet_snow_cloak",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetSnowCloak",
+      "Title": "Faydown Cloak",
+      "Aliases": [
+        "ふぇいのくろーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_SNOW_CLOAK.title"
+    },
+    {
+      "Id": 142008,
+      "Name": "hornet_hornet_statue_relic",
+      "AssetName": "mods/hornet/hornet_statue",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Relics.HornetStatue",
+      "Title": "Hornet Statuette",
+      "Aliases": [
+        "ほーねっとの像"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HORNET_MOD_RELIC_HORNET_STATUE.title"
+    },
+    {
+      "Id": 144000,
+      "Name": "hornet_hornet_lifeblood_potion_potion",
+      "AssetName": "mods/hornet/hornet_lifeblood_potion",
+      "Category": "Potion",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Potions.HornetLifebloodPotion",
+      "Title": "Plasmified Blood",
+      "Aliases": [
+        "ぷらすみうむ化した血液"
+      ],
+      "LocTable": "potions",
+      "LocKey": "HORNET_MOD_POTION_HORNET_LIFEBLOOD_POTION.title"
+    },
+    {
+      "Id": 144001,
+      "Name": "hornet_hornet_silk_potion_potion",
+      "AssetName": "mods/hornet/hornet_silk_potion",
+      "Category": "Potion",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Potions.HornetSilkPotion",
+      "Title": "Mossberry Stew",
+      "Aliases": [
+        "苔の実のしちゅー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "HORNET_MOD_POTION_HORNET_SILK_POTION.title"
+    },
+    {
+      "Id": 144002,
+      "Name": "hornet_hornet_vigor_potion_potion",
+      "AssetName": "mods/hornet/hornet_vigor_potion",
+      "Category": "Potion",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Potions.HornetVigorPotion",
+      "Title": "Pale Oil",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "HORNET_MOD_POTION_HORNET_VIGOR_POTION.title"
+    },
+    {
+      "Id": 145000,
+      "Name": "hornet_hornet_mod_character_character",
+      "AssetName": "mods/hornet/hornet_mod_character",
+      "Category": "Character",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Characters.HornetModCharacter",
+      "Title": "Hornet",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "HORNET_MOD_CHARACTER_HORNET_MOD_CHARACTER.title"
+    },
+    {
+      "Id": 141000,
+      "Name": "hornet_beast_power_power",
+      "AssetName": "mods/hornet/beast_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.BeastPower",
+      "Title": "Beast",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_BEAST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141001,
+      "Name": "hornet_cross_stitch_power_power",
+      "AssetName": "mods/hornet/cross_stitch_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.CrossStitchPower",
+      "Title": "Cross Stitch",
+      "Aliases": [
+        "くろすすてぃっち"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_CROSS_STITCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141002,
+      "Name": "hornet_hornet_wanderer_power_power",
+      "AssetName": "mods/hornet/hornet_wanderer_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.HornetWandererPower",
+      "Title": "Wanderer",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_HORNET_WANDERER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141003,
+      "Name": "hornet_hunter_power_power",
+      "AssetName": "mods/hornet/hunter_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.HunterPower",
+      "Title": "Hunter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_HUNTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "HornetMod.Powers.HunterTempStrength"
+      ]
+    },
+    {
+      "Id": 141004,
+      "Name": "hornet_reaper_power_power",
+      "AssetName": "mods/hornet/reaper_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ReaperPower",
+      "Title": "Reaper",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_REAPER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141005,
+      "Name": "hornet_shaman_power_power",
+      "AssetName": "mods/hornet/shaman_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ShamanPower",
+      "Title": "Shaman",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_SHAMAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141006,
+      "Name": "hornet_witch_power_power",
+      "AssetName": "mods/hornet/witch_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.WitchPower",
+      "Title": "Witch",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_WITCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141007,
+      "Name": "hornet_architect_power_power",
+      "AssetName": "mods/hornet/architect_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ArchitectPower",
+      "Title": "Architect",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_ARCHITECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141008,
+      "Name": "hornet_barbed_bracelet_power_power",
+      "AssetName": "mods/hornet/barbed_bracelet_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.BarbedBraceletPower",
+      "Title": "Barbed Bracelet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_BARBED_BRACELET_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141009,
+      "Name": "hornet_battle_resonance_power_power",
+      "AssetName": "mods/hornet/battle_resonance_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.BattleResonancePower",
+      "Title": "Rallying Call",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_BATTLE_RESONANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141010,
+      "Name": "hornet_biomass_form_power_power",
+      "AssetName": "mods/hornet/biomass_form_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.BiomassFormPower",
+      "Title": "Plasmium Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_BIOMASS_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141011,
+      "Name": "hornet_challenge_power_power",
+      "AssetName": "mods/hornet/challenge_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ChallengePower",
+      "Title": "Potency",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_CHALLENGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141012,
+      "Name": "hornet_delayed_dexterity_power_power",
+      "AssetName": "mods/hornet/delayed_dexterity_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.DelayedDexterityPower",
+      "Title": "Delayed Dexterity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_DELAYED_DEXTERITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "HornetMod.Powers.TempDexterityBuffPower"
+      ]
+    },
+    {
+      "Id": 141013,
+      "Name": "hornet_druid_eye_power_power",
+      "AssetName": "mods/hornet/druid_eye_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.DruidEyePower",
+      "Title": "Druid's Eye",
+      "Aliases": [
+        "どるいどの眼"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_DRUID_EYE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141014,
+      "Name": "hornet_electrode_power_power",
+      "AssetName": "mods/hornet/electrode_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ElectrodePower",
+      "Title": "Charge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_ELECTRODE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141015,
+      "Name": "hornet_flea_egg_power_power",
+      "AssetName": "mods/hornet/flea_egg_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.FleaEggPower",
+      "Title": "Egg of Flealia",
+      "Aliases": [
+        "ふれありあの卵"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_FLEA_EGG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141016,
+      "Name": "hornet_fractured_mask_power_power",
+      "AssetName": "mods/hornet/fractured_mask_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.FracturedMaskPower",
+      "Title": "Fractured Mask",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_FRACTURED_MASK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141017,
+      "Name": "hornet_hornet_gear_bee_power_power",
+      "AssetName": "mods/hornet/hornet_gear_bee_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.HornetGearBeePower",
+      "Title": "Cogfly",
+      "Aliases": [
+        "からくりばえ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_HORNET_GEAR_BEE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141018,
+      "Name": "hornet_hornet_runic_fury_power_power",
+      "AssetName": "mods/hornet/hornet_runic_fury_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.HornetRunicFuryPower",
+      "Title": "Rune Rage",
+      "Aliases": [
+        "るーんの憤怒"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_HORNET_RUNIC_FURY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141019,
+      "Name": "hornet_lifeblood_power_power",
+      "AssetName": "mods/hornet/lifeblood_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.LifebloodPower",
+      "Title": "Lifeblood",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_LIFEBLOOD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141020,
+      "Name": "hornet_magma_scale_power_power",
+      "AssetName": "mods/hornet/magma_scale_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.MagmaScalePower",
+      "Title": "Magma Bell",
+      "Aliases": [
+        "まぐまの鈴"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_MAGMA_SCALE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141021,
+      "Name": "hornet_magnet_brooch_power_power",
+      "AssetName": "mods/hornet/magnet_brooch_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.MagnetBroochPower",
+      "Title": "Magnetite Brooch",
+      "Aliases": [
+        "まぐねたいとのぶろーち"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_MAGNET_BROOCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141022,
+      "Name": "hornet_memory_charge_power_power",
+      "AssetName": "mods/hornet/memory_charge_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.MemoryChargePower",
+      "Title": "Memory Charge",
+      "Aliases": [
+        "めもりーちゃーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_MEMORY_CHARGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "HornetMod.Powers.MemoryCrystalPower"
+      ]
+    },
+    {
+      "Id": 141023,
+      "Name": "hornet_multi_binder_power_power",
+      "AssetName": "mods/hornet/multi_binder_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.MultiBinderPower",
+      "Title": "Multibinder",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_MULTI_BINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141024,
+      "Name": "hornet_pin_badge_power_power",
+      "AssetName": "mods/hornet/pin_badge_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.PinBadgePower",
+      "Title": "Pin Badge",
+      "Aliases": [
+        "ぴんばっじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_PIN_BADGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141025,
+      "Name": "hornet_shell_pendant_power_power",
+      "AssetName": "mods/hornet/shell_pendant_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ShellPendantPower",
+      "Title": "Shard Pendant",
+      "Aliases": [
+        "破片のぺんだんと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_SHELL_PENDANT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141026,
+      "Name": "hornet_silk_blade_dash_power_power",
+      "AssetName": "mods/hornet/silk_blade_dash_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.SilkBladeDashPower",
+      "Title": "Intercept",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_SILK_BLADE_DASH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141027,
+      "Name": "hornet_silk_bloom_power_power",
+      "AssetName": "mods/hornet/silk_bloom_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.SilkBloomPower",
+      "Title": "Silk Bloom",
+      "Aliases": [
+        "ぽりっぷのぽーち"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_SILK_BLOOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141028,
+      "Name": "hornet_silk_heart_power_power",
+      "AssetName": "mods/hornet/silk_heart_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.SilkHeartPower",
+      "Title": "Silk Heart",
+      "Aliases": [
+        "しるくの心"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_SILK_HEART_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141029,
+      "Name": "hornet_temp_strength_loss_power_power",
+      "AssetName": "mods/hornet/temp_strength_loss_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.TempStrengthLossPower",
+      "Title": "Strength Loss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_TEMP_STRENGTH_LOSS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 141030,
+      "Name": "hornet_thief_mark_power_power",
+      "AssetName": "mods/hornet/thief_mark_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ThiefMarkPower",
+      "Title": "Thief's Mark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_THIEF_MARK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 141031,
+      "Name": "hornet_thousand_threads_power_power",
+      "AssetName": "mods/hornet/thousand_threads_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.ThousandThreadsPower",
+      "Title": "Thousand Threads",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_THOUSAND_THREADS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141032,
+      "Name": "hornet_unending_thread_power_power",
+      "AssetName": "mods/hornet/unending_thread_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.UnendingThreadPower",
+      "Title": "Unending Thread",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_UNENDING_THREAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141033,
+      "Name": "hornet_volt_filament_power_power",
+      "AssetName": "mods/hornet/volt_filament_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.VoltFilamentPower",
+      "Title": "Volt Filament",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_VOLT_FILAMENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 141034,
+      "Name": "hornet_weave_silk_power_power",
+      "AssetName": "mods/hornet/weave_silk_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.WeaveSilkPower",
+      "Title": "Weavelight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HORNET_MOD_POWER_WEAVE_SILK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 142009,
+      "Name": "hornet_hornet_mod_character_yummy_cookie_relic",
+      "AssetName": "mods/hornet/hornet_mod_character/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Characters.HornetModCharacter",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 141035,
+      "Name": "hornet_weave_memory_needle_power_power",
+      "AssetName": "mods/hornet/weave_memory_needle_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.WeaveMemoryNeedlePower",
+      "Title": "Weave Memory Needle",
+      "Aliases": [
+        "にーどりん"
+      ],
+      "LocTable": "cards",
+      "LocKey": "HORNET_MOD_CARD_HORNET_WEAVE_MEMORY_NEEDLE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 141036,
+      "Name": "hornet_spoolextenderpower_power",
+      "AssetName": "mods/hornet/spool_extender_power",
+      "Category": "Power",
+      "Assembly": "HornetMod",
+      "TypeName": "HornetMod.Powers.SpoolExtenderPower",
+      "Title": "Spool Extender",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SPOOL_EXTENDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ]
+}

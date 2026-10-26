@@ -9,5 +9,768 @@
     "AncientsAwakened",
     "Ancients Awakened"
   ],
-  "Entries": []
+  "Entries": [
+    {
+      "Id": 32000,
+      "Name": "ancients_awakened_experimental_serum_relic",
+      "AssetName": "mods/ancients_awakened/experimental_serum",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.ExperimentalSerum",
+      "Title": "Experimental Serum",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title"
+    },
+    {
+      "Id": 32001,
+      "Name": "ancients_awakened_flash_beacon_relic",
+      "AssetName": "mods/ancients_awakened/flash_beacon",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.FlashBeacon",
+      "Title": "Flash Beacon",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FLASH_BEACON.title"
+    },
+    {
+      "Id": 32002,
+      "Name": "ancients_awakened_glowing_vial_relic",
+      "AssetName": "mods/ancients_awakened/glowing_vial",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.GlowingVial",
+      "Title": "Glowing Vial",
+      "Aliases": [
+        "光るばいある"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-GLOWING_VIAL.title"
+    },
+    {
+      "Id": 32003,
+      "Name": "ancients_awakened_medical_kit_relic",
+      "AssetName": "mods/ancients_awakened/medical_kit",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.MedicalKit",
+      "Title": "Medical Kit",
+      "Aliases": [
+        "医療きっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-MEDICAL_KIT.title"
+    },
+    {
+      "Id": 32004,
+      "Name": "ancients_awakened_saline_infuser_relic",
+      "AssetName": "mods/ancients_awakened/saline_infuser",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.SalineInfuser",
+      "Title": "Saline Infuser",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SALINE_INFUSER.title"
+    },
+    {
+      "Id": 32005,
+      "Name": "ancients_awakened_sebastians_scanner_relic",
+      "AssetName": "mods/ancients_awakened/sebastians_scanner",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.SebastiansScanner",
+      "Title": "Sebastian's Scanner",
+      "Aliases": [
+        "せばすちゃんのすきゃなー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title"
+    },
+    {
+      "Id": 32006,
+      "Name": "ancients_awakened_sebby_charm_relic",
+      "AssetName": "mods/ancients_awakened/sebby_charm",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.SebbyCharm",
+      "Title": "Sebby Charm",
+      "Aliases": [
+        "せばすのお守り"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SEBBY_CHARM.title"
+    },
+    {
+      "Id": 32007,
+      "Name": "ancients_awakened_shipping_request_relic",
+      "AssetName": "mods/ancients_awakened/shipping_request",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.ShippingRequest",
+      "Title": "Shipping Request",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SHIPPING_REQUEST.title"
+    },
+    {
+      "Id": 32008,
+      "Name": "ancients_awakened_shotgun_shells_relic",
+      "AssetName": "mods/ancients_awakened/shotgun_shells",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.ShotgunShells",
+      "Title": "Shotgun Shells",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title"
+    },
+    {
+      "Id": 32009,
+      "Name": "ancients_awakened_wildlife_documents_relic",
+      "AssetName": "mods/ancients_awakened/wildlife_documents",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian.WildlifeDocuments",
+      "Title": "Wildlife Documents",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title"
+    },
+    {
+      "Id": 32010,
+      "Name": "ancients_awakened_ancient_scepter_relic",
+      "AssetName": "mods/ancients_awakened/ancient_scepter",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.AncientScepter",
+      "Title": "Ancient Scepter",
+      "Aliases": [
+        "えんしぇんとの笏"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title"
+    },
+    {
+      "Id": 32011,
+      "Name": "ancients_awakened_artifact_of_command_relic",
+      "AssetName": "mods/ancients_awakened/artifact_of_command",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.ArtifactOfCommand",
+      "Title": "Artifact Of Command",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title"
+    },
+    {
+      "Id": 32012,
+      "Name": "ancients_awakened_eulogy_zero_relic",
+      "AssetName": "mods/ancients_awakened/eulogy_zero",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.EulogyZero",
+      "Title": "Eulogy Zero",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-EULOGY_ZERO.title"
+    },
+    {
+      "Id": 32013,
+      "Name": "ancients_awakened_flawless_hammer_relic",
+      "AssetName": "mods/ancients_awakened/flawless_hammer",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.FlawlessHammer",
+      "Title": "Flawless Hammer",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title"
+    },
+    {
+      "Id": 32014,
+      "Name": "ancients_awakened_fractured_blade_relic",
+      "AssetName": "mods/ancients_awakened/fractured_blade",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.FracturedBlade",
+      "Title": "Fractured Blade",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FRACTURED_BLADE.title"
+    },
+    {
+      "Id": 32015,
+      "Name": "ancients_awakened_monsoon_charm_relic",
+      "AssetName": "mods/ancients_awakened/monsoon_charm",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.MonsoonCharm",
+      "Title": "Monsoon Charm",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-MONSOON_CHARM.title"
+    },
+    {
+      "Id": 32016,
+      "Name": "ancients_awakened_pillar_of_mass_relic",
+      "AssetName": "mods/ancients_awakened/pillar_of_mass",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.PillarOfMass",
+      "Title": "Pillar Of Mass",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-PILLAR_OF_MASS.title"
+    },
+    {
+      "Id": 32017,
+      "Name": "ancients_awakened_shaped_glass_relic",
+      "AssetName": "mods/ancients_awakened/shaped_glass",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.ShapedGlass",
+      "Title": "Shaped Glass",
+      "Aliases": [
+        "成形がらす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SHAPED_GLASS.title"
+    },
+    {
+      "Id": 32018,
+      "Name": "ancients_awakened_shared_design_relic",
+      "AssetName": "mods/ancients_awakened/shared_design",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.SharedDesign",
+      "Title": "Shared Design",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SHARED_DESIGN.title"
+    },
+    {
+      "Id": 32019,
+      "Name": "ancients_awakened_starseed_relic",
+      "AssetName": "mods/ancients_awakened/starseed",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix.Starseed",
+      "Title": "Starseed",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-STARSEED.title"
+    },
+    {
+      "Id": 32020,
+      "Name": "ancients_awakened_fallen_star_relic",
+      "AssetName": "mods/ancients_awakened/fallen_star",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.FallenStar",
+      "Title": "Fallen Star",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FALLEN_STAR.title"
+    },
+    {
+      "Id": 32021,
+      "Name": "ancients_awakened_mana_flower_relic",
+      "AssetName": "mods/ancients_awakened/mana_flower",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.ManaFlower",
+      "Title": "Mana Flower",
+      "Aliases": [
+        "まなふらわー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-MANA_FLOWER.title"
+    },
+    {
+      "Id": 32022,
+      "Name": "ancients_awakened_mysterious_tablet_relic",
+      "AssetName": "mods/ancients_awakened/mysterious_tablet",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.MysteriousTablet",
+      "Title": "Mysterious Tablet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title"
+    },
+    {
+      "Id": 32023,
+      "Name": "ancients_awakened_nebula_tome_relic",
+      "AssetName": "mods/ancients_awakened/nebula_tome",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.NebulaTome",
+      "Title": "Nebula Tome",
+      "Aliases": [
+        "ねびゅらの書"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-NEBULA_TOME.title"
+    },
+    {
+      "Id": 32024,
+      "Name": "ancients_awakened_refined_chlorophyte_relic",
+      "AssetName": "mods/ancients_awakened/refined_chlorophyte",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.RefinedChlorophyte",
+      "Title": "Refined Chlorophyte",
+      "Aliases": [
+        "精製くろろふぁいと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title"
+    },
+    {
+      "Id": 32025,
+      "Name": "ancients_awakened_shimmering_bottle_relic",
+      "AssetName": "mods/ancients_awakened/shimmering_bottle",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.ShimmeringBottle",
+      "Title": "Shimmering Bottle",
+      "Aliases": [
+        "びん詰めのきらめき"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title"
+    },
+    {
+      "Id": 32026,
+      "Name": "ancients_awakened_solar_brazier_relic",
+      "AssetName": "mods/ancients_awakened/solar_brazier",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.SolarBrazier",
+      "Title": "Solar Brazier",
+      "Aliases": [
+        "そーらーの火鉢"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SOLAR_BRAZIER.title"
+    },
+    {
+      "Id": 32027,
+      "Name": "ancients_awakened_stardust_shackles_relic",
+      "AssetName": "mods/ancients_awakened/stardust_shackles",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.StardustShackles",
+      "Title": "Stardust Shackles",
+      "Aliases": [
+        "すたーだすとの枷"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-STARDUST_SHACKLES.title"
+    },
+    {
+      "Id": 32028,
+      "Name": "ancients_awakened_vortex_eye_relic",
+      "AssetName": "mods/ancients_awakened/vortex_eye",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.VortexEye",
+      "Title": "Vortex Eye",
+      "Aliases": [
+        "ぼるてっくすの目"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-VORTEX_EYE.title"
+    },
+    {
+      "Id": 32029,
+      "Name": "ancients_awakened_whispering_tendrils_relic",
+      "AssetName": "mods/ancients_awakened/whispering_tendrils",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist.WhisperingTendrils",
+      "Title": "Whispering Tendrils",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title"
+    },
+    {
+      "Id": 32030,
+      "Name": "ancients_awakened_bone_lord_boon_relic",
+      "AssetName": "mods/ancients_awakened/bone_lord_boon",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.BoneLordBoon",
+      "Title": "Bone Lord's Boon",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-BONE_LORD_BOON.title"
+    },
+    {
+      "Id": 32031,
+      "Name": "ancients_awakened_carving_knife_relic",
+      "AssetName": "mods/ancients_awakened/carving_knife",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.CarvingKnife",
+      "Title": "Carving Knife",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-CARVING_KNIFE.title"
+    },
+    {
+      "Id": 32032,
+      "Name": "ancients_awakened_film_roll_relic",
+      "AssetName": "mods/ancients_awakened/film_roll",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.FilmRoll",
+      "Title": "Film Roll",
+      "Aliases": [
+        "ふぃるむろーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FILM_ROLL.title"
+    },
+    {
+      "Id": 32033,
+      "Name": "ancients_awakened_fish_hook_relic",
+      "AssetName": "mods/ancients_awakened/fish_hook",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.FishHook",
+      "Title": "Fish Hook",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FISH_HOOK.title"
+    },
+    {
+      "Id": 32034,
+      "Name": "ancients_awakened_goobert_relic",
+      "AssetName": "mods/ancients_awakened/goobert",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.Goobert",
+      "Title": "Goobert",
+      "Aliases": [
+        "ぐーばーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-GOOBERT.title"
+    },
+    {
+      "Id": 32035,
+      "Name": "ancients_awakened_pack_rat_relic",
+      "AssetName": "mods/ancients_awakened/pack_rat",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.PackRat",
+      "Title": "Pack Rat",
+      "Aliases": [
+        "荷物持ちねずみ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-PACK_RAT.title"
+    },
+    {
+      "Id": 32036,
+      "Name": "ancients_awakened_prospecting_pick_relic",
+      "AssetName": "mods/ancients_awakened/prospecting_pick",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.ProspectingPick",
+      "Title": "Prospecting Pick",
+      "Aliases": [
+        "採掘つるはし"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-PROSPECTING_PICK.title"
+    },
+    {
+      "Id": 32037,
+      "Name": "ancients_awakened_squirrel_in_a_bottle_relic",
+      "AssetName": "mods/ancients_awakened/squirrel_in_a_bottle",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.SquirrelInABottle",
+      "Title": "Squirrel in a Bottle",
+      "Aliases": [
+        "瓶入りのりす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title"
+    },
+    {
+      "Id": 32038,
+      "Name": "ancients_awakened_the_moon_relic",
+      "AssetName": "mods/ancients_awakened/the_moon",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.TheMoon",
+      "Title": "Miniature Moon",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-THE_MOON.title"
+    },
+    {
+      "Id": 32039,
+      "Name": "ancients_awakened_the_smoke_relic",
+      "AssetName": "mods/ancients_awakened/the_smoke",
+      "Category": "Relic",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Relics.Leshy.TheSmoke",
+      "Title": "The Smoke",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-THE_SMOKE.title"
+    },
+    {
+      "Id": 31000,
+      "Name": "ancients_awakened_disadvantaged_power_power",
+      "AssetName": "mods/ancients_awakened/disadvantaged_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian.DisadvantagedPower",
+      "Title": "Disadvantaged",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 31001,
+      "Name": "ancients_awakened_electrolyze_power_power",
+      "AssetName": "mods/ancients_awakened/electrolyze_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian.ElectrolyzePower",
+      "Title": "Electrolyze",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "ANCIENTSAWAKENED-ELECTROLYZE.title"
+    },
+    {
+      "Id": 31002,
+      "Name": "ancients_awakened_flash_beacon_power_power",
+      "AssetName": "mods/ancients_awakened/flash_beacon_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian.FlashBeaconPower",
+      "Title": "Flash Beacon",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ANCIENTSAWAKENED-FLASH_BEACON.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 31003,
+      "Name": "ancients_awakened_break_beneath_me_power_power",
+      "AssetName": "mods/ancients_awakened/break_beneath_me_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.Mithrix.BreakBeneathMePower",
+      "Title": "Break Beneath Me",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 31004,
+      "Name": "ancients_awakened_empowered_defend_power_power",
+      "AssetName": "mods/ancients_awakened/empowered_defend_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.Mithrix.EmpoweredDefendPower",
+      "Title": "Empowered Defend",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title"
+    },
+    {
+      "Id": 31005,
+      "Name": "ancients_awakened_guidance_power_power",
+      "AssetName": "mods/ancients_awakened/guidance_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist.GuidancePower",
+      "Title": "Guidance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ANCIENTSAWAKENED-GUIDANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 31006,
+      "Name": "ancients_awakened_lunatic_ritual_power_power",
+      "AssetName": "mods/ancients_awakened/lunatic_ritual_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist.LunaticRitualPower",
+      "Title": "Lunatic Ritual",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 31007,
+      "Name": "ancients_awakened_vortex_power_power",
+      "AssetName": "mods/ancients_awakened/vortex_power",
+      "Category": "Power",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist.VortexPower",
+      "Title": "Vortex",
+      "Aliases": [
+        "ぼるてっくす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ANCIENTSAWAKENED-VORTEX_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 34000,
+      "Name": "ancients_awakened_neloprephine_vial_potion",
+      "AssetName": "mods/ancients_awakened/neloprephine_vial",
+      "Category": "Potion",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Potions.Sebastian.NeloprephineVial",
+      "Title": "Neloprephine Shot",
+      "Aliases": [
+        "ねろぷれふぃん注射"
+      ],
+      "LocTable": "potions",
+      "LocKey": "ANCIENTSAWAKENED-NELOPREPHINE_VIAL.title"
+    },
+    {
+      "Id": 33000,
+      "Name": "ancients_awakened_charmed_enchantment",
+      "AssetName": "mods/ancients_awakened/charmed",
+      "Category": "Enchantment",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Enchantments.Sebastian.Charmed",
+      "Title": "Charmed",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "ANCIENTSAWAKENED-CHARMED.title"
+    },
+    {
+      "Id": 33001,
+      "Name": "ancients_awakened_design_enchantment",
+      "AssetName": "mods/ancients_awakened/design",
+      "Category": "Enchantment",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Enchantments.Mithrix.Design",
+      "Title": "Design",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "ANCIENTSAWAKENED-DESIGN.title"
+    },
+    {
+      "Id": 33002,
+      "Name": "ancients_awakened_mass_enchantment",
+      "AssetName": "mods/ancients_awakened/mass",
+      "Category": "Enchantment",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Enchantments.Mithrix.Mass",
+      "Title": "Mass",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "ANCIENTSAWAKENED-MASS.title"
+    },
+    {
+      "Id": 33003,
+      "Name": "ancients_awakened_celestial_enchantment",
+      "AssetName": "mods/ancients_awakened/celestial",
+      "Category": "Enchantment",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Enchantments.LunaticCultist.Celestial",
+      "Title": "Celestial",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "ANCIENTSAWAKENED-CELESTIAL.title"
+    },
+    {
+      "Id": 33004,
+      "Name": "ancients_awakened_smokey_enchantment",
+      "AssetName": "mods/ancients_awakened/smokey",
+      "Category": "Enchantment",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Enchantments.Leshy.Smokey",
+      "Title": "Candlelit",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "ANCIENTSAWAKENED-SMOKEY.title"
+    },
+    {
+      "Id": 37000,
+      "Name": "ancients_awakened_leshy_ancient_ancient",
+      "AssetName": "mods/ancients_awakened/leshy_ancient",
+      "Category": "Ancient",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Ancients.LeshyAncient",
+      "Title": "Leshy",
+      "Aliases": [
+        "れしー"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ANCIENTSAWAKENED-LESHY_ANCIENT.title"
+    },
+    {
+      "Id": 37001,
+      "Name": "ancients_awakened_lunatic_cultist_ancient_ancient",
+      "AssetName": "mods/ancients_awakened/lunatic_cultist_ancient",
+      "Category": "Ancient",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Ancients.LunaticCultistAncient",
+      "Title": "Lunatic Cultist",
+      "Aliases": [
+        "るなてぃっくかるてぃすと"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.title"
+    },
+    {
+      "Id": 37002,
+      "Name": "ancients_awakened_mithrix_ancient_ancient",
+      "AssetName": "mods/ancients_awakened/mithrix_ancient",
+      "Category": "Ancient",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Ancients.MithrixAncient",
+      "Title": "Mithrix",
+      "Aliases": [
+        "みすりくす"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ANCIENTSAWAKENED-MITHRIX_ANCIENT.title"
+    },
+    {
+      "Id": 37003,
+      "Name": "ancients_awakened_sebastian_ancient_ancient",
+      "AssetName": "mods/ancients_awakened/sebastian_ancient",
+      "Category": "Ancient",
+      "Assembly": "AncientsAwakened",
+      "TypeName": "AncientsAwakened.AncientsAwakenedCode.Ancients.SebastianAncient",
+      "Title": "Sebastian",
+      "Aliases": [
+        "せばすちゃん"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.title"
+    }
+  ]
 }

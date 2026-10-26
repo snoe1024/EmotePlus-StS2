@@ -18,5 +18,4978 @@
     "Downfall Classic",
     "ダウンフォール"
   ],
-  "Entries": []
+  "Entries": [
+    {
+      "Id": 12000,
+      "Name": "downfall_automaton_bottled_code_relic",
+      "AssetName": "mods/downfall/automaton/bottled_code",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.BottledCode",
+      "Title": "Bottled Code",
+      "Aliases": [
+        "瓶詰めのこーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-BOTTLED_CODE.title"
+    },
+    {
+      "Id": 12001,
+      "Name": "downfall_automaton_bronze_core_relic",
+      "AssetName": "mods/downfall/automaton/bronze_core",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.BronzeCore",
+      "Title": "Bronze Core",
+      "Aliases": [
+        "ぶろんずこあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-BRONZE_CORE.title"
+    },
+    {
+      "Id": 12002,
+      "Name": "downfall_automaton_cable_spool_relic",
+      "AssetName": "mods/downfall/automaton/cable_spool",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.CableSpool",
+      "Title": "Cable Spool",
+      "Aliases": [
+        "けーぶる巻き取り器"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-CABLE_SPOOL.title"
+    },
+    {
+      "Id": 12003,
+      "Name": "downfall_automaton_electromagnetic_coil_relic",
+      "AssetName": "mods/downfall/automaton/electromagnetic_coil",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.ElectromagneticCoil",
+      "Title": "Electromagnetic Coil",
+      "Aliases": [
+        "電磁石こいる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-ELECTROMAGNETIC_COIL.title"
+    },
+    {
+      "Id": 12004,
+      "Name": "downfall_automaton_frost_primer_relic",
+      "AssetName": "mods/downfall/automaton/frost_primer",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.FrostPrimer",
+      "Title": "Frost Primer",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-FROST_PRIMER.title"
+    },
+    {
+      "Id": 12005,
+      "Name": "downfall_automaton_mallet_relic",
+      "AssetName": "mods/downfall/automaton/mallet",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.Mallet",
+      "Title": "Mallet",
+      "Aliases": [
+        "まれっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-MALLET.title"
+    },
+    {
+      "Id": 12006,
+      "Name": "downfall_automaton_platinum_core_relic",
+      "AssetName": "mods/downfall/automaton/platinum_core",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.PlatinumCore",
+      "Title": "Platinum Core",
+      "Aliases": [
+        "ぷらちなむこあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-PLATINUM_CORE.title"
+    },
+    {
+      "Id": 12007,
+      "Name": "downfall_automaton_protective_goggles_relic",
+      "AssetName": "mods/downfall/automaton/protective_goggles",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.ProtectiveGoggles",
+      "Title": "Protective Goggles",
+      "Aliases": [
+        "保護ごーぐる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-PROTECTIVE_GOGGLES.title"
+    },
+    {
+      "Id": 12008,
+      "Name": "downfall_automaton_silver_bullet_relic",
+      "AssetName": "mods/downfall/automaton/silver_bullet",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Relics.SilverBullet",
+      "Title": "Silver Bullet",
+      "Aliases": [
+        "しるばーばれっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AUTOMATON-SILVER_BULLET.title"
+    },
+    {
+      "Id": 11000,
+      "Name": "downfall_automaton_alchyrical_elixir_power_power",
+      "AssetName": "mods/downfall/automaton/alchyrical_elixir_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.AlchyricalElixirPower",
+      "Title": "Alchyrical Elixir",
+      "Aliases": [
+        "あるきりかるえりくさー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-ALCHYRICAL_ELIXIR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11001,
+      "Name": "downfall_automaton_bronze_orb_power_power",
+      "AssetName": "mods/downfall/automaton/bronze_orb_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.BronzeOrbPower",
+      "Title": "Bronze Orb",
+      "Aliases": [
+        "ぶろんずおーぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-BRONZE_ORB_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11002,
+      "Name": "downfall_automaton_burn_out_power_power",
+      "AssetName": "mods/downfall/automaton/burn_out_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.BurnOutPower",
+      "Title": "Burn Out",
+      "Aliases": [
+        "ばーんあうと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-BURN_OUT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11003,
+      "Name": "downfall_automaton_class_default_power_power",
+      "AssetName": "mods/downfall/automaton/class_default_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.ClassDefaultPower",
+      "Title": "Class Default",
+      "Aliases": [
+        "くらす初期化"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-CLASS_DEFAULT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11004,
+      "Name": "downfall_automaton_clean_code_power_power",
+      "AssetName": "mods/downfall/automaton/clean_code_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.CleanCodePower",
+      "Title": "Clean Code",
+      "Aliases": [
+        "こーど清書"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-CLEAN_CODE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11005,
+      "Name": "downfall_automaton_copy_paste_power_power",
+      "AssetName": "mods/downfall/automaton/copy_paste_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.CopyPastePower",
+      "Title": "Copy Paste",
+      "Aliases": [
+        "こぴーぺーすと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-COPY_PASTE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11006,
+      "Name": "downfall_automaton_crashout_power_power",
+      "AssetName": "mods/downfall/automaton/crashout_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.CrashoutPower",
+      "Title": "Debug",
+      "Aliases": [
+        "でばっぐ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-CRASHOUT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11007,
+      "Name": "downfall_automaton_full_release_power_power",
+      "AssetName": "mods/downfall/automaton/full_release_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.FullReleasePower",
+      "Title": "Full Release",
+      "Aliases": [
+        "ふるりりーす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-FULL_RELEASE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11008,
+      "Name": "downfall_automaton_infinite_beams_power_power",
+      "AssetName": "mods/downfall/automaton/infinite_beams_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.InfiniteBeamsPower",
+      "Title": "Infinite Beams",
+      "Aliases": [
+        "無限のびーむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-INFINITE_BEAMS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11009,
+      "Name": "downfall_automaton_its_a_feature_power_power",
+      "AssetName": "mods/downfall/automaton/its_a_feature_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.ItsAFeaturePower",
+      "Title": "It's A Feature",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-ITS_A_FEATURE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11010,
+      "Name": "downfall_automaton_library_power_power",
+      "AssetName": "mods/downfall/automaton/library_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.LibraryPower",
+      "Title": "Library",
+      "Aliases": [
+        "らいぶらり"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-LIBRARY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11011,
+      "Name": "downfall_automaton_max_output_power_power",
+      "AssetName": "mods/downfall/automaton/max_output_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.MaxOutputPower",
+      "Title": "Max Output",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-MAX_OUTPUT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11012,
+      "Name": "downfall_automaton_merge_conflict_power_power",
+      "AssetName": "mods/downfall/automaton/merge_conflict_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.MergeConflictPower",
+      "Title": "Merge Conflict",
+      "Aliases": [
+        "競合をまーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-MERGE_CONFLICT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11013,
+      "Name": "downfall_automaton_merge_power_power",
+      "AssetName": "mods/downfall/automaton/merge_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.MergePower",
+      "Title": "Merge",
+      "Aliases": [
+        "まーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-MERGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11014,
+      "Name": "downfall_automaton_optimize_power_power",
+      "AssetName": "mods/downfall/automaton/optimize_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.OptimizePower",
+      "Title": "Optimized",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-OPTIMIZE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11015,
+      "Name": "downfall_automaton_overheat_power_power",
+      "AssetName": "mods/downfall/automaton/overheat_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.OverheatPower",
+      "Title": "Overheat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-OVERHEAT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11016,
+      "Name": "downfall_automaton_recreate_power_power",
+      "AssetName": "mods/downfall/automaton/recreate_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.RecreatePower",
+      "Title": "Recreate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-RECREATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11017,
+      "Name": "downfall_automaton_recycle_bin_power_power",
+      "AssetName": "mods/downfall/automaton/recycle_bin_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.RecycleBinPower",
+      "Title": "Recycle Bin",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-RECYCLE_BIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11018,
+      "Name": "downfall_automaton_repulse_power_power",
+      "AssetName": "mods/downfall/automaton/repulse_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.RepulsePower",
+      "Title": "Repulse",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-REPULSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11019,
+      "Name": "downfall_automaton_self_repair_power_power",
+      "AssetName": "mods/downfall/automaton/self_repair_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.SelfRepairPower",
+      "Title": "Self Repair",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-SELF_REPAIR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11020,
+      "Name": "downfall_automaton_sentient_form_power_power",
+      "AssetName": "mods/downfall/automaton/sentient_form_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.SentientFormPower",
+      "Title": "Sentient Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-SENTIENT_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11021,
+      "Name": "downfall_automaton_share_power_power",
+      "AssetName": "mods/downfall/automaton/share_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.SharePower",
+      "Title": "Share",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-SHARE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11022,
+      "Name": "downfall_automaton_summon_orb_power_power",
+      "AssetName": "mods/downfall/automaton/summon_orb_power",
+      "Category": "Power",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Powers.SummonOrbPower",
+      "Title": "Summon Orb",
+      "Aliases": [
+        "さもんおーぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AUTOMATON-SUMMON_ORB_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 14000,
+      "Name": "downfall_automaton_alchyrical_elixir_potion_potion",
+      "AssetName": "mods/downfall/automaton/alchyrical_elixir_potion",
+      "Category": "Potion",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Potions.AlchyricalElixirPotion",
+      "Title": "Alchyrical Elixir",
+      "Aliases": [
+        "あるきりかるえりくさー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "AUTOMATON-ALCHYRICAL_ELIXIR_POTION.title"
+    },
+    {
+      "Id": 14001,
+      "Name": "downfall_automaton_kios_clever_concoction_potion_potion",
+      "AssetName": "mods/downfall/automaton/kios_clever_concoction_potion",
+      "Category": "Potion",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Potions.KiosCleverConcoctionPotion",
+      "Title": "Kio's Clever Concoction",
+      "Aliases": [
+        "きおの巧みな調合薬"
+      ],
+      "LocTable": "potions",
+      "LocKey": "AUTOMATON-KIOS_CLEVER_CONCOCTION_POTION.title"
+    },
+    {
+      "Id": 14002,
+      "Name": "downfall_automaton_vexing_draught_potion_potion",
+      "AssetName": "mods/downfall/automaton/vexing_draught_potion",
+      "Category": "Potion",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Potions.VexingDraughtPotion",
+      "Title": "Vexing Draught",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "AUTOMATON-VEXING_DRAUGHT_POTION.title"
+    },
+    {
+      "Id": 13000,
+      "Name": "downfall_automaton_hardcoded_enchantment",
+      "AssetName": "mods/downfall/automaton/hardcoded",
+      "Category": "Enchantment",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Enchantments.Hardcoded",
+      "Title": "Hardcoded",
+      "Aliases": [
+        "はーどこーど"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "AUTOMATON-HARDCODED.title"
+    },
+    {
+      "Id": 15000,
+      "Name": "downfall_automaton_automaton_character",
+      "AssetName": "mods/downfall/automaton/automaton",
+      "Category": "Character",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Core.Automaton",
+      "Title": "The Automaton",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "AUTOMATON-AUTOMATON.title"
+    },
+    {
+      "Id": 12009,
+      "Name": "downfall_automaton_yummy_cookie_relic",
+      "AssetName": "mods/downfall/automaton/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Automaton",
+      "TypeName": "Automaton.AutomatonCode.Core.Automaton",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12010,
+      "Name": "downfall_awakened_crescent_talisman_relic",
+      "AssetName": "mods/downfall/awakened/crescent_talisman",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.CrescentTalisman",
+      "Title": "Crescent Talisman",
+      "Aliases": [
+        "くれせんとたりすまん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-CRESCENT_TALISMAN.title"
+    },
+    {
+      "Id": 12011,
+      "Name": "downfall_awakened_eye_of_the_occult_relic",
+      "AssetName": "mods/downfall/awakened/eye_of_the_occult",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.EyeOfTheOccult",
+      "Title": "Eye of the Occult",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-EYE_OF_THE_OCCULT.title"
+    },
+    {
+      "Id": 12012,
+      "Name": "downfall_awakened_manabomb_relic",
+      "AssetName": "mods/downfall/awakened/manabomb",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.Manabomb",
+      "Title": "Manabomb",
+      "Aliases": [
+        "まなぼむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-MANABOMB.title"
+    },
+    {
+      "Id": 12013,
+      "Name": "downfall_awakened_paper_crow_relic",
+      "AssetName": "mods/downfall/awakened/paper_crow",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.PaperCrow",
+      "Title": "Paper Crow",
+      "Aliases": [
+        "紙のからす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-PAPER_CROW.title"
+    },
+    {
+      "Id": 12014,
+      "Name": "downfall_awakened_ripped_doll_relic",
+      "AssetName": "mods/downfall/awakened/ripped_doll",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.RippedDoll",
+      "Title": "Ripped Doll",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-RIPPED_DOLL.title"
+    },
+    {
+      "Id": 12015,
+      "Name": "downfall_awakened_shredded_doll_relic",
+      "AssetName": "mods/downfall/awakened/shredded_doll",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.ShreddedDoll",
+      "Title": "Shredded Doll",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-SHREDDED_DOLL.title"
+    },
+    {
+      "Id": 12016,
+      "Name": "downfall_awakened_tome_of_portalmancy_relic",
+      "AssetName": "mods/downfall/awakened/tome_of_portalmancy",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.TomeOfPortalmancy",
+      "Title": "Tome of Portalmancy",
+      "Aliases": [
+        "ぽーたるの書"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-TOME_OF_PORTALMANCY.title"
+    },
+    {
+      "Id": 12017,
+      "Name": "downfall_awakened_zener_deck_relic",
+      "AssetName": "mods/downfall/awakened/zener_deck",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.ZenerDeck",
+      "Title": "Zener Deck",
+      "Aliases": [
+        "ぜなーでっき"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-ZENER_DECK.title"
+    },
+    {
+      "Id": 12018,
+      "Name": "downfall_awakened_zetsumei_relic",
+      "AssetName": "mods/downfall/awakened/zetsumei",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Relics.Zetsumei",
+      "Title": "Zetsumei",
+      "Aliases": [
+        "ぜつめい"
+      ],
+      "LocTable": "relics",
+      "LocKey": "AWAKENED-ZETSUMEI.title"
+    },
+    {
+      "Id": 11023,
+      "Name": "downfall_awakened_ancestral_grounds_power_power",
+      "AssetName": "mods/downfall/awakened/ancestral_grounds_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.AncestralGroundsPower",
+      "Title": "Ancestral Grounds",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-ANCESTRAL_GROUNDS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11024,
+      "Name": "downfall_awakened_ancestral_grounds_upgraded_power_power",
+      "AssetName": "mods/downfall/awakened/ancestral_grounds_upgraded_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.AncestralGroundsUpgradedPower",
+      "Title": "Ancestral Grounds+",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-ANCESTRAL_GROUNDS_UPGRADED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11025,
+      "Name": "downfall_awakened_aphotic_fount_power_power",
+      "AssetName": "mods/downfall/awakened/aphotic_fount_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.AphoticFountPower",
+      "Title": "Aphotic Fount",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-APHOTIC_FOUNT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11026,
+      "Name": "downfall_awakened_archmagus_power_power",
+      "AssetName": "mods/downfall/awakened/archmagus_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.ArchmagusPower",
+      "Title": "Archmagus",
+      "Aliases": [
+        "あーくめいじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-ARCHMAGUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11027,
+      "Name": "downfall_awakened_awakening_power_power",
+      "AssetName": "mods/downfall/awakened/awakening_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.AwakeningPower",
+      "Title": "Awakening",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-AWAKENING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11028,
+      "Name": "downfall_awakened_bloodied_preening_power_power",
+      "AssetName": "mods/downfall/awakened/bloodied_preening_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.BloodiedPreeningPower",
+      "Title": "Bloodied Preening",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-BLOODIED_PREENING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11029,
+      "Name": "downfall_awakened_burnout_power_power",
+      "AssetName": "mods/downfall/awakened/burnout_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.BurnoutPower",
+      "Title": "Burnout",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-BURNOUT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11030,
+      "Name": "downfall_awakened_chosen_verse_power_power",
+      "AssetName": "mods/downfall/awakened/chosen_verse_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.ChosenVersePower",
+      "Title": "Chosen Verse",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-CHOSEN_VERSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11031,
+      "Name": "downfall_awakened_clarion_call_power_power",
+      "AssetName": "mods/downfall/awakened/clarion_call_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.ClarionCallPower",
+      "Title": "Clarion Call",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-CLARION_CALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11032,
+      "Name": "downfall_awakened_curiosity_power_power",
+      "AssetName": "mods/downfall/awakened/curiosity_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.CuriosityPower",
+      "Title": "Curiosity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-CURIOSITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11033,
+      "Name": "downfall_awakened_daggerstorm_power_power",
+      "AssetName": "mods/downfall/awakened/daggerstorm_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.DaggerstormPower",
+      "Title": "Daggerstorm",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-DAGGERSTORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11034,
+      "Name": "downfall_awakened_darkblessed_power_power",
+      "AssetName": "mods/downfall/awakened/darkblessed_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.DarkblessedPower",
+      "Title": "Darkblessed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-DARKBLESSED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11035,
+      "Name": "downfall_awakened_dark_echo_power_power",
+      "AssetName": "mods/downfall/awakened/dark_echo_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.DarkEchoPower",
+      "Title": "Dark Echo",
+      "Aliases": [
+        "だーくえこー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-DARK_ECHO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11036,
+      "Name": "downfall_awakened_darkness_falls_power_power",
+      "AssetName": "mods/downfall/awakened/darkness_falls_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.DarknessFallsPower",
+      "Title": "Darkness Falls",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-DARKNESS_FALLS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11037,
+      "Name": "downfall_awakened_demon_glyph_power_power",
+      "AssetName": "mods/downfall/awakened/demon_glyph_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.DemonGlyphPower",
+      "Title": "Demon Glyph",
+      "Aliases": [
+        "でーもんぐりふ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-DEMON_GLYPH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11038,
+      "Name": "downfall_awakened_drained_power_power",
+      "AssetName": "mods/downfall/awakened/drained_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.DrainedPower",
+      "Title": "Drained",
+      "Aliases": [
+        "どれいん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-DRAINED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11039,
+      "Name": "downfall_awakened_eclipse_embrace_power_power",
+      "AssetName": "mods/downfall/awakened/eclipse_embrace_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.EclipseEmbracePower",
+      "Title": "Eclipse Embrace",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-ECLIPSE_EMBRACE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11040,
+      "Name": "downfall_awakened_fervent_worship_power_power",
+      "AssetName": "mods/downfall/awakened/fervent_worship_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.FerventWorshipPower",
+      "Title": "Fervent Worship",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-FERVENT_WORSHIP_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11041,
+      "Name": "downfall_awakened_from_within_power_power",
+      "AssetName": "mods/downfall/awakened/from_within_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.FromWithinPower",
+      "Title": "From Within",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-FROM_WITHIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11042,
+      "Name": "downfall_awakened_great_hex_power_power",
+      "AssetName": "mods/downfall/awakened/great_hex_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.GreatHexPower",
+      "Title": "Great Hex",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-GREAT_HEX_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11043,
+      "Name": "downfall_awakened_intensify_power_power",
+      "AssetName": "mods/downfall/awakened/intensify_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.IntensifyPower",
+      "Title": "Intensify",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-INTENSIFY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11044,
+      "Name": "downfall_awakened_magicianism_power_power",
+      "AssetName": "mods/downfall/awakened/magicianism_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.MagicianismPower",
+      "Title": "Magicianism",
+      "Aliases": [
+        "まじしゃにずむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-MAGICIANISM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11045,
+      "Name": "downfall_awakened_manaburn_power_power",
+      "AssetName": "mods/downfall/awakened/manaburn_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.ManaburnPower",
+      "Title": "Manaburn",
+      "Aliases": [
+        "まなばーん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-MANABURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11046,
+      "Name": "downfall_awakened_moonlit_vision_power_power",
+      "AssetName": "mods/downfall/awakened/moonlit_vision_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.MoonlitVisionPower",
+      "Title": "Moonlit Vision",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-MOONLIT_VISION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11047,
+      "Name": "downfall_awakened_primacy_power_power",
+      "AssetName": "mods/downfall/awakened/primacy_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.PrimacyPower",
+      "Title": "Primacy",
+      "Aliases": [
+        "ぷらいましー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-PRIMACY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11048,
+      "Name": "downfall_awakened_razor_sharp_power_power",
+      "AssetName": "mods/downfall/awakened/razor_sharp_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.RazorSharpPower",
+      "Title": "Razor Sharp",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-RAZOR_SHARP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11049,
+      "Name": "downfall_awakened_rising_chorus_power_power",
+      "AssetName": "mods/downfall/awakened/rising_chorus_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.RisingChorusPower",
+      "Title": "Rising Chorus",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-RISING_CHORUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11050,
+      "Name": "downfall_awakened_sacramental_wine_power_power",
+      "AssetName": "mods/downfall/awakened/sacramental_wine_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.SacramentalWinePower",
+      "Title": "Sacramental Wine",
+      "Aliases": [
+        "聖餐用わいん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-SACRAMENTAL_WINE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11051,
+      "Name": "downfall_awakened_scheme_power_power",
+      "AssetName": "mods/downfall/awakened/scheme_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.SchemePower",
+      "Title": "Scheme",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-SCHEME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11052,
+      "Name": "downfall_awakened_song_of_sorrow_power_power",
+      "AssetName": "mods/downfall/awakened/song_of_sorrow_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.SongOfSorrowPower",
+      "Title": "Song of Sorrow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-SONG_OF_SORROW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11053,
+      "Name": "downfall_awakened_spellbinder_power_power",
+      "AssetName": "mods/downfall/awakened/spellbinder_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.SpellbinderPower",
+      "Title": "Spellbinder",
+      "Aliases": [
+        "すぺるばいんだー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-SPELLBINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11054,
+      "Name": "downfall_awakened_spellshield_power_power",
+      "AssetName": "mods/downfall/awakened/spellshield_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.SpellshieldPower",
+      "Title": "Spellshield",
+      "Aliases": [
+        "すぺるしーるど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-SPELLSHIELD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11055,
+      "Name": "downfall_awakened_split_wide_power_power",
+      "AssetName": "mods/downfall/awakened/split_wide_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.SplitWidePower",
+      "Title": "Split Wide",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-SPLIT_WIDE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11056,
+      "Name": "downfall_awakened_storm_ruler_power_power",
+      "AssetName": "mods/downfall/awakened/storm_ruler_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.StormRulerPower",
+      "Title": "Storm Ruler",
+      "Aliases": [
+        "すとーむるーらー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-STORM_RULER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11057,
+      "Name": "downfall_awakened_thaumaturgy_power_power",
+      "AssetName": "mods/downfall/awakened/thaumaturgy_power",
+      "Category": "Power",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Powers.ThaumaturgyPower",
+      "Title": "Thaumaturgy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "AWAKENED-THAUMATURGY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 14003,
+      "Name": "downfall_awakened_cultists_delight_potion",
+      "AssetName": "mods/downfall/awakened/cultists_delight",
+      "Category": "Potion",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Potions.CultistsDelight",
+      "Title": "Cultist's Delight",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "AWAKENED-CULTISTS_DELIGHT.title"
+    },
+    {
+      "Id": 14004,
+      "Name": "downfall_awakened_sacramental_wine_potion",
+      "AssetName": "mods/downfall/awakened/sacramental_wine",
+      "Category": "Potion",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Potions.SacramentalWine",
+      "Title": "Sacramental Wine",
+      "Aliases": [
+        "聖餐用わいん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "AWAKENED-SACRAMENTAL_WINE.title"
+    },
+    {
+      "Id": 14005,
+      "Name": "downfall_awakened_unholy_water_potion",
+      "AssetName": "mods/downfall/awakened/unholy_water",
+      "Category": "Potion",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Potions.UnholyWater",
+      "Title": "Unholy Water",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "AWAKENED-UNHOLY_WATER.title"
+    },
+    {
+      "Id": 15001,
+      "Name": "downfall_awakened_awakened_character",
+      "AssetName": "mods/downfall/awakened/awakened",
+      "Category": "Character",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Core.Awakened",
+      "Title": "The Awakened",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "AWAKENED-AWAKENED.title"
+    },
+    {
+      "Id": 12019,
+      "Name": "downfall_awakened_yummy_cookie_relic",
+      "AssetName": "mods/downfall/awakened/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Awakened",
+      "TypeName": "Awakened.AwakenedCode.Core.Awakened",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12020,
+      "Name": "downfall_champ_amulet_of_unyielding_relic",
+      "AssetName": "mods/downfall/champ/amulet_of_unyielding",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.AmuletOfUnyielding",
+      "Title": "Amulet of Unyielding",
+      "Aliases": [
+        "不屈のあみゅれっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-AMULET_OF_UNYIELDING.title"
+    },
+    {
+      "Id": 12021,
+      "Name": "downfall_champ_berserkers_guide_relic",
+      "AssetName": "mods/downfall/champ/berserkers_guide",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.BerserkersGuide",
+      "Title": "Berserker's Guide",
+      "Aliases": [
+        "ばーさーかーの心得"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-BERSERKERS_GUIDE.title"
+    },
+    {
+      "Id": 12022,
+      "Name": "downfall_champ_champions_crown_relic",
+      "AssetName": "mods/downfall/champ/champions_crown",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.ChampionsCrown",
+      "Title": "Champion's Crown",
+      "Aliases": [
+        "ちゃんぴおんの王冠"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-CHAMPIONS_CROWN.title"
+    },
+    {
+      "Id": 12023,
+      "Name": "downfall_champ_defensive_thesis_relic",
+      "AssetName": "mods/downfall/champ/defensive_thesis",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.DefensiveThesis",
+      "Title": "Defensive Thesis",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-DEFENSIVE_THESIS.title"
+    },
+    {
+      "Id": 12024,
+      "Name": "downfall_champ_dolphins_style_guide_relic",
+      "AssetName": "mods/downfall/champ/dolphins_style_guide",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.DolphinsStyleGuide",
+      "Title": "Dolphin's Style Guide",
+      "Aliases": [
+        "どるふぃんのすたいるがいど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-DOLPHINS_STYLE_GUIDE.title"
+    },
+    {
+      "Id": 12025,
+      "Name": "downfall_champ_power_armor_relic",
+      "AssetName": "mods/downfall/champ/power_armor",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.PowerArmor",
+      "Title": "Power Armor",
+      "Aliases": [
+        "ぱわーあーまー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-POWER_ARMOR.title"
+    },
+    {
+      "Id": 12026,
+      "Name": "downfall_champ_signature_finisher_relic",
+      "AssetName": "mods/downfall/champ/signature_finisher",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.SignatureFinisher",
+      "Title": "Signature Finisher",
+      "Aliases": [
+        "ふぃにっしゃーさいん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-SIGNATURE_FINISHER.title"
+    },
+    {
+      "Id": 12027,
+      "Name": "downfall_champ_spectres_hand_relic",
+      "AssetName": "mods/downfall/champ/spectres_hand",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.SpectresHand",
+      "Title": "Spectre's Hand",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-SPECTRES_HAND.title"
+    },
+    {
+      "Id": 12028,
+      "Name": "downfall_champ_victorious_crown_relic",
+      "AssetName": "mods/downfall/champ/victorious_crown",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Relics.VictoriousCrown",
+      "Title": "Victorious Crown",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "CHAMP-VICTORIOUS_CROWN.title"
+    },
+    {
+      "Id": 11058,
+      "Name": "downfall_champ_arena_mastery_power_power",
+      "AssetName": "mods/downfall/champ/arena_mastery_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.ArenaMasteryPower",
+      "Title": "Arena Mastery",
+      "Aliases": [
+        "ありーなますたりー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-ARENA_MASTERY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11059,
+      "Name": "downfall_champ_chain_lash_power_power",
+      "AssetName": "mods/downfall/champ/chain_lash_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.ChainLashPower",
+      "Title": "Chain Lash",
+      "Aliases": [
+        "ちぇいんらっしゅ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-CHAIN_LASH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11060,
+      "Name": "downfall_champ_counter_power_power",
+      "AssetName": "mods/downfall/champ/counter_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.CounterPower",
+      "Title": "Counter",
+      "Aliases": [
+        "かうんたー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-COUNTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11061,
+      "Name": "downfall_champ_crowd_favorite_power_power",
+      "AssetName": "mods/downfall/champ/crowd_favorite_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.CrowdFavoritePower",
+      "Title": "Crowd Favorite",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-CROWD_FAVORITE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11062,
+      "Name": "downfall_champ_dancing_master_power_power",
+      "AssetName": "mods/downfall/champ/dancing_master_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.DancingMasterPower",
+      "Title": "Dancing Master",
+      "Aliases": [
+        "だんしんぐますたー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-DANCING_MASTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11063,
+      "Name": "downfall_champ_double_style_power_power",
+      "AssetName": "mods/downfall/champ/double_style_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.DoubleStylePower",
+      "Title": "Double Style",
+      "Aliases": [
+        "だぶるすたいる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-DOUBLE_STYLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11064,
+      "Name": "downfall_champ_en_garde_power_power",
+      "AssetName": "mods/downfall/champ/en_garde_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.EnGardePower",
+      "Title": "En Garde",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-EN_GARDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11065,
+      "Name": "downfall_champ_entangled_next_turn_power_power",
+      "AssetName": "mods/downfall/champ/entangled_next_turn_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.EntangledNextTurnPower",
+      "Title": "Sword Thrown",
+      "Aliases": [
+        "そーどすろー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-ENTANGLED_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11066,
+      "Name": "downfall_champ_entangled_power_power",
+      "AssetName": "mods/downfall/champ/entangled_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.EntangledPower",
+      "Title": "Entangled",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-ENTANGLED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11067,
+      "Name": "downfall_champ_fancy_footwork_power_power",
+      "AssetName": "mods/downfall/champ/fancy_footwork_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.FancyFootworkPower",
+      "Title": "Fancy Footwork",
+      "Aliases": [
+        "派手なふっとわーく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-FANCY_FOOTWORK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11068,
+      "Name": "downfall_champ_gladiator_form_power_power",
+      "AssetName": "mods/downfall/champ/gladiator_form_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.GladiatorFormPower",
+      "Title": "Gladiator Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-GLADIATOR_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11069,
+      "Name": "downfall_champ_glory_power_power",
+      "AssetName": "mods/downfall/champ/glory_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.GloryPower",
+      "Title": "Glory",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-GLORY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11070,
+      "Name": "downfall_champ_hone_blade_power_power",
+      "AssetName": "mods/downfall/champ/hone_blade_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.HoneBladePower",
+      "Title": "Honed Blade",
+      "Aliases": [
+        "ほーんぶれーど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-HONE_BLADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11071,
+      "Name": "downfall_champ_ignore_pain_power_power",
+      "AssetName": "mods/downfall/champ/ignore_pain_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.IgnorePainPower",
+      "Title": "Ignoring Pain",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-IGNORE_PAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11072,
+      "Name": "downfall_champ_improvising_power_power",
+      "AssetName": "mods/downfall/champ/improvising_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.ImprovisingPower",
+      "Title": "Improvising",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-IMPROVISING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11073,
+      "Name": "downfall_champ_killing_spree_power_power",
+      "AssetName": "mods/downfall/champ/killing_spree_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.KillingSpreePower",
+      "Title": "Killing Spree",
+      "Aliases": [
+        "きりんぐすぷりー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-KILLING_SPREE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11074,
+      "Name": "downfall_champ_magnificence_power_power",
+      "AssetName": "mods/downfall/champ/magnificence_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.MagnificencePower",
+      "Title": "Magnificence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-MAGNIFICENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11075,
+      "Name": "downfall_champ_no_block_next_turn_power_power",
+      "AssetName": "mods/downfall/champ/no_block_next_turn_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.NoBlockNextTurnPower",
+      "Title": "Shield Thrown",
+      "Aliases": [
+        "しーるどすろー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-NO_BLOCK_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11076,
+      "Name": "downfall_champ_parrying_power_power",
+      "AssetName": "mods/downfall/champ/parrying_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.ParryingPower",
+      "Title": "Parrying",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-PARRYING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11077,
+      "Name": "downfall_champ_protective_aura_power_power",
+      "AssetName": "mods/downfall/champ/protective_aura_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.ProtectiveAuraPower",
+      "Title": "Protective Aura",
+      "Aliases": [
+        "ぷろてくとおーら"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-PROTECTIVE_AURA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11078,
+      "Name": "downfall_champ_strike_of_genius_plus_power_power",
+      "AssetName": "mods/downfall/champ/strike_of_genius_plus_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.StrikeOfGeniusPlusPower",
+      "Title": "Strike of Genius+",
+      "Aliases": [
+        "すとらいくじーにあす+"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-STRIKE_OF_GENIUS_PLUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11079,
+      "Name": "downfall_champ_strike_of_genius_power_power",
+      "AssetName": "mods/downfall/champ/strike_of_genius_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.StrikeOfGeniusPower",
+      "Title": "Strike of Genius",
+      "Aliases": [
+        "すとらいくじーにあす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-STRIKE_OF_GENIUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11080,
+      "Name": "downfall_champ_technical_jig_power_power",
+      "AssetName": "mods/downfall/champ/technical_jig_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.TechnicalJigPower",
+      "Title": "Technical Jig",
+      "Aliases": [
+        "てくにかるじぐ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-TECHNICAL_JIG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11081,
+      "Name": "downfall_champ_ultimate_stance_power_power",
+      "AssetName": "mods/downfall/champ/ultimate_stance_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.UltimateStancePower",
+      "Title": "Ultimate Stance",
+      "Aliases": [
+        "あるてぃめっとすたんす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-ULTIMATE_STANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11082,
+      "Name": "downfall_champ_vigor_next_turn_power_power",
+      "AssetName": "mods/downfall/champ/vigor_next_turn_power",
+      "Category": "Power",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Powers.VigorNextTurnPower",
+      "Title": "Next Turn Vigor",
+      "Aliases": [
+        "次たーん活力"
+      ],
+      "LocTable": "powers",
+      "LocKey": "CHAMP-VIGOR_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 14006,
+      "Name": "downfall_champ_bottled_technique_potion",
+      "AssetName": "mods/downfall/champ/bottled_technique",
+      "Category": "Potion",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Potions.BottledTechnique",
+      "Title": "Bottled Technique",
+      "Aliases": [
+        "瓶詰めのてくにっく"
+      ],
+      "LocTable": "potions",
+      "LocKey": "CHAMP-BOTTLED_TECHNIQUE.title"
+    },
+    {
+      "Id": 14007,
+      "Name": "downfall_champ_brew_of_sharpness_potion",
+      "AssetName": "mods/downfall/champ/brew_of_sharpness",
+      "Category": "Potion",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Potions.BrewOfSharpness",
+      "Title": "Brew of Sharpness",
+      "Aliases": [
+        "きれの良い醸造酒"
+      ],
+      "LocTable": "potions",
+      "LocKey": "CHAMP-BREW_OF_SHARPNESS.title"
+    },
+    {
+      "Id": 14008,
+      "Name": "downfall_champ_stimpack_potion",
+      "AssetName": "mods/downfall/champ/stimpack",
+      "Category": "Potion",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Potions.Stimpack",
+      "Title": "Stimpack",
+      "Aliases": [
+        "すてぃむぱっく"
+      ],
+      "LocTable": "potions",
+      "LocKey": "CHAMP-STIMPACK.title"
+    },
+    {
+      "Id": 13001,
+      "Name": "downfall_champ_sturdy_enchantment",
+      "AssetName": "mods/downfall/champ/sturdy",
+      "Category": "Enchantment",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Enchantments.Sturdy",
+      "Title": "Sturdy",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "CHAMP-STURDY.title"
+    },
+    {
+      "Id": 15002,
+      "Name": "downfall_champ_champ_character",
+      "AssetName": "mods/downfall/champ/champ",
+      "Category": "Character",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Core.Champ",
+      "Title": "The Champ",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "CHAMP-CHAMP.title"
+    },
+    {
+      "Id": 12029,
+      "Name": "downfall_champ_yummy_cookie_relic",
+      "AssetName": "mods/downfall/champ/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Champ",
+      "TypeName": "Champ.ChampCode.Core.Champ",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12030,
+      "Name": "downfall_guardian_baalors_lordly_plate_relic",
+      "AssetName": "mods/downfall/guardian/baalors_lordly_plate",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.BaalorsLordlyPlate",
+      "Title": "Baalor's Lordly Plate",
+      "Aliases": [
+        "ばろーるの豪奢なぷれーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-BAALORS_LORDLY_PLATE.title"
+    },
+    {
+      "Id": 12031,
+      "Name": "downfall_guardian_bottled_black_hole_relic",
+      "AssetName": "mods/downfall/guardian/bottled_black_hole",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.BottledBlackHole",
+      "Title": "Bottled Black Hole",
+      "Aliases": [
+        "瓶詰めのぶらっくほーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-BOTTLED_BLACK_HOLE.title"
+    },
+    {
+      "Id": 12032,
+      "Name": "downfall_guardian_bronze_gear_relic",
+      "AssetName": "mods/downfall/guardian/bronze_gear",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.BronzeGear",
+      "Title": "Bronze Gear",
+      "Aliases": [
+        "ぶろんずぎあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-BRONZE_GEAR.title"
+    },
+    {
+      "Id": 12033,
+      "Name": "downfall_guardian_cryo_chamber_relic",
+      "AssetName": "mods/downfall/guardian/cryo_chamber",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.CryoChamber",
+      "Title": "Cryo Chamber",
+      "Aliases": [
+        "冷凍ちゃんばー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-CRYO_CHAMBER.title"
+    },
+    {
+      "Id": 12034,
+      "Name": "downfall_guardian_guardian_gear_relic",
+      "AssetName": "mods/downfall/guardian/guardian_gear",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.GuardianGear",
+      "Title": "Guardian Gear",
+      "Aliases": [
+        "がーでぃあんぎあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-GUARDIAN_GEAR.title"
+    },
+    {
+      "Id": 12035,
+      "Name": "downfall_guardian_pick_of_rhapsody_relic",
+      "AssetName": "mods/downfall/guardian/pick_of_rhapsody",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.PickOfRhapsody",
+      "Title": "Pick of Rhapsody",
+      "Aliases": [
+        "ぴっける・おぶ・らぷそでぃ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-PICK_OF_RHAPSODY.title"
+    },
+    {
+      "Id": 12036,
+      "Name": "downfall_guardian_pilots_codex_relic",
+      "AssetName": "mods/downfall/guardian/pilots_codex",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.PilotsCodex",
+      "Title": "Pilot's Codex",
+      "Aliases": [
+        "ぱいろっとこーでっくす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-PILOTS_CODEX.title"
+    },
+    {
+      "Id": 12037,
+      "Name": "downfall_guardian_quantum_chamber_relic",
+      "AssetName": "mods/downfall/guardian/quantum_chamber",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.QuantumChamber",
+      "Title": "Quantum Chamber",
+      "Aliases": [
+        "量子ちゃんばー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-QUANTUM_CHAMBER.title"
+    },
+    {
+      "Id": 12038,
+      "Name": "downfall_guardian_sack_of_gems_relic",
+      "AssetName": "mods/downfall/guardian/sack_of_gems",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.SackOfGems",
+      "Title": "Sack of Gems",
+      "Aliases": [
+        "じぇむ入り袋"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-SACK_OF_GEMS.title"
+    },
+    {
+      "Id": 12039,
+      "Name": "downfall_guardian_wander_bots_relic",
+      "AssetName": "mods/downfall/guardian/wander_bots",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Relics.WanderBots",
+      "Title": "Wander Bots",
+      "Aliases": [
+        "わんだーぼっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GUARDIAN-WANDER_BOTS.title"
+    },
+    {
+      "Id": 11083,
+      "Name": "downfall_guardian_ancient_construct_power_power",
+      "AssetName": "mods/downfall/guardian/ancient_construct_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.AncientConstructPower",
+      "Title": "Ancient Construct",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-ANCIENT_CONSTRUCT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11084,
+      "Name": "downfall_guardian_bastion_power_power",
+      "AssetName": "mods/downfall/guardian/bastion_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.BastionPower",
+      "Title": "Bastion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-BASTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11085,
+      "Name": "downfall_guardian_bracing_power_power",
+      "AssetName": "mods/downfall/guardian/bracing_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.BracingPower",
+      "Title": "Bracing",
+      "Aliases": [
+        "ぶれーき"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-BRACING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11086,
+      "Name": "downfall_guardian_brilliant_scales_power_power",
+      "AssetName": "mods/downfall/guardian/brilliant_scales_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.BrilliantScalesPower",
+      "Title": "Brilliant Scales",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-BRILLIANT_SCALES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11087,
+      "Name": "downfall_guardian_bronze_brambles_power_power",
+      "AssetName": "mods/downfall/guardian/bronze_brambles_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.BronzeBramblesPower",
+      "Title": "Bronze Brambles",
+      "Aliases": [
+        "青銅のいばら"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-BRONZE_BRAMBLES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11088,
+      "Name": "downfall_guardian_construction_form_power_power",
+      "AssetName": "mods/downfall/guardian/construction_form_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.ConstructionFormPower",
+      "Title": "Construction Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-CONSTRUCTION_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11089,
+      "Name": "downfall_guardian_defensive_mode_power_power",
+      "AssetName": "mods/downfall/guardian/defensive_mode_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.DefensiveModePower",
+      "Title": "Defensive Mode",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-DEFENSIVE_MODE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11090,
+      "Name": "downfall_guardian_evasive_protocol_power_power",
+      "AssetName": "mods/downfall/guardian/evasive_protocol_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.EvasiveProtocolPower",
+      "Title": "Evasive Protocol",
+      "Aliases": [
+        "回避ぷろとこる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-EVASIVE_PROTOCOL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11091,
+      "Name": "downfall_guardian_exhaust_statuses_power_power",
+      "AssetName": "mods/downfall/guardian/exhaust_statuses_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.ExhaustStatusesPower",
+      "Title": "Repulsor",
+      "Aliases": [
+        "りぱるさー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-EXHAUST_STATUSES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11092,
+      "Name": "downfall_guardian_floating_orbs_power_power",
+      "AssetName": "mods/downfall/guardian/floating_orbs_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.FloatingOrbsPower",
+      "Title": "Floating Orbs",
+      "Aliases": [
+        "漂うおーぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-FLOATING_ORBS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11093,
+      "Name": "downfall_guardian_future_plans_power_power",
+      "AssetName": "mods/downfall/guardian/future_plans_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.FuturePlansPower",
+      "Title": "Future Plans",
+      "Aliases": [
+        "未来のぷらん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-FUTURE_PLANS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11094,
+      "Name": "downfall_guardian_gem_finder_power_power",
+      "AssetName": "mods/downfall/guardian/gem_finder_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.GemFinderPower",
+      "Title": "Gem Finder",
+      "Aliases": [
+        "じぇむ探査"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-GEM_FINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11095,
+      "Name": "downfall_guardian_maximum_overdrive_power_power",
+      "AssetName": "mods/downfall/guardian/maximum_overdrive_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.MaximumOverdrivePower",
+      "Title": "Maximum Overdrive",
+      "Aliases": [
+        "まきしまむおーばーどらいぶ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-MAXIMUM_OVERDRIVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11096,
+      "Name": "downfall_guardian_mode_shift_power_power",
+      "AssetName": "mods/downfall/guardian/mode_shift_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.ModeShiftPower",
+      "Title": "Mode Shift",
+      "Aliases": [
+        "もーどしふと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-MODE_SHIFT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11097,
+      "Name": "downfall_guardian_next_turn_temporary_strength_up_power_power",
+      "AssetName": "mods/downfall/guardian/next_turn_temporary_strength_up_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.NextTurnTemporaryStrengthUpPower",
+      "Title": "Next Turn Charge Up",
+      "Aliases": [
+        "ちゃーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-NEXT_TURN_TEMPORARY_STRENGTH_UP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11098,
+      "Name": "downfall_guardian_overblock_block_power_power",
+      "AssetName": "mods/downfall/guardian/overblock_block_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.OverblockBlockPower",
+      "Title": "Overblock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-OVERBLOCK_BLOCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11099,
+      "Name": "downfall_guardian_reroute_power_power",
+      "AssetName": "mods/downfall/guardian/reroute_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.ReroutePower",
+      "Title": "Reroute",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-REROUTE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11100,
+      "Name": "downfall_guardian_revenge_protocol_power_power",
+      "AssetName": "mods/downfall/guardian/revenge_protocol_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.RevengeProtocolPower",
+      "Title": "Revenge Protocol",
+      "Aliases": [
+        "復讐ぷろとこる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-REVENGE_PROTOCOL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11101,
+      "Name": "downfall_guardian_sharp_hide_power_power",
+      "AssetName": "mods/downfall/guardian/sharp_hide_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.SharpHidePower",
+      "Title": "Sharp Hide",
+      "Aliases": [
+        "しゃーぷはいど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-SHARP_HIDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11102,
+      "Name": "downfall_guardian_spiker_protocol_power_power",
+      "AssetName": "mods/downfall/guardian/spiker_protocol_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.SpikerProtocolPower",
+      "Title": "Spiker Protocol",
+      "Aliases": [
+        "反撃ぷろとこる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-SPIKER_PROTOCOL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11103,
+      "Name": "downfall_guardian_stasis_engine_power_power",
+      "AssetName": "mods/downfall/guardian/stasis_engine_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.StasisEnginePower",
+      "Title": "Stasis Engine",
+      "Aliases": [
+        "停滞えんじん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-STASIS_ENGINE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11104,
+      "Name": "downfall_guardian_stunned_power_power",
+      "AssetName": "mods/downfall/guardian/stunned_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.StunnedPower",
+      "Title": "Stunned",
+      "Aliases": [
+        "すたん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-STUNNED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11105,
+      "Name": "downfall_guardian_temporal_refraction_power_power",
+      "AssetName": "mods/downfall/guardian/temporal_refraction_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.TemporalRefractionPower",
+      "Title": "Temporal Refraction",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-TEMPORAL_REFRACTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11106,
+      "Name": "downfall_guardian_time_sifter_power_power",
+      "AssetName": "mods/downfall/guardian/time_sifter_power",
+      "Category": "Power",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Powers.TimeSifterPower",
+      "Title": "Time Sifter",
+      "Aliases": [
+        "たいむしふたー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GUARDIAN-TIME_SIFTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 14009,
+      "Name": "downfall_guardian_liquid_accelerant_potion",
+      "AssetName": "mods/downfall/guardian/liquid_accelerant",
+      "Category": "Potion",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Potions.LiquidAccelerant",
+      "Title": "Liquid Accelerant",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "GUARDIAN-LIQUID_ACCELERANT.title"
+    },
+    {
+      "Id": 14010,
+      "Name": "downfall_guardian_polishing_oil_potion",
+      "AssetName": "mods/downfall/guardian/polishing_oil",
+      "Category": "Potion",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Potions.PolishingOil",
+      "Title": "Polishing Oil",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "GUARDIAN-POLISHING_OIL.title"
+    },
+    {
+      "Id": 14011,
+      "Name": "downfall_guardian_quantum_elixir_potion",
+      "AssetName": "mods/downfall/guardian/quantum_elixir",
+      "Category": "Potion",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Potions.QuantumElixir",
+      "Title": "Quantum Elixir",
+      "Aliases": [
+        "量子えりくさー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "GUARDIAN-QUANTUM_ELIXIR.title"
+    },
+    {
+      "Id": 15003,
+      "Name": "downfall_guardian_guardian_character",
+      "AssetName": "mods/downfall/guardian/guardian",
+      "Category": "Character",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Core.Guardian",
+      "Title": "The Guardian",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "GUARDIAN-GUARDIAN.title"
+    },
+    {
+      "Id": 12040,
+      "Name": "downfall_guardian_yummy_cookie_relic",
+      "AssetName": "mods/downfall/guardian/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Guardian",
+      "TypeName": "Guardian.GuardianCode.Core.Guardian",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12041,
+      "Name": "downfall_hermit_black_powder_relic",
+      "AssetName": "mods/downfall/hermit/black_powder",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.BlackPowder",
+      "Title": "Black Powder",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-BLACK_POWDER.title"
+    },
+    {
+      "Id": 12042,
+      "Name": "downfall_hermit_brass_tacks_relic",
+      "AssetName": "mods/downfall/hermit/brass_tacks",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.BrassTacks",
+      "Title": "Brass Tacks",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-BRASS_TACKS.title"
+    },
+    {
+      "Id": 12043,
+      "Name": "downfall_hermit_broken_tooth_relic",
+      "AssetName": "mods/downfall/hermit/broken_tooth",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.BrokenTooth",
+      "Title": "Broken Tooth",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-BROKEN_TOOTH.title"
+    },
+    {
+      "Id": 12044,
+      "Name": "downfall_hermit_charred_glove_relic",
+      "AssetName": "mods/downfall/hermit/charred_glove",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.CharredGlove",
+      "Title": "Charred Glove",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-CHARRED_GLOVE.title"
+    },
+    {
+      "Id": 12045,
+      "Name": "downfall_hermit_clasped_locket_relic",
+      "AssetName": "mods/downfall/hermit/clasped_locket",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.ClaspedLocket",
+      "Title": "Clasped Locket",
+      "Aliases": [
+        "留め具付きのろけっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-CLASPED_LOCKET.title"
+    },
+    {
+      "Id": 12046,
+      "Name": "downfall_hermit_dented_plate_relic",
+      "AssetName": "mods/downfall/hermit/dented_plate",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.DentedPlate",
+      "Title": "Dented Plate",
+      "Aliases": [
+        "へこんだぷれーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-DENTED_PLATE.title"
+    },
+    {
+      "Id": 12047,
+      "Name": "downfall_hermit_horseshoe_relic",
+      "AssetName": "mods/downfall/hermit/horseshoe",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.Horseshoe",
+      "Title": "Horseshoe",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-HORSESHOE.title"
+    },
+    {
+      "Id": 12048,
+      "Name": "downfall_hermit_old_locket_relic",
+      "AssetName": "mods/downfall/hermit/old_locket",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.OldLocket",
+      "Title": "Old Locket",
+      "Aliases": [
+        "古いろけっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-OLD_LOCKET.title"
+    },
+    {
+      "Id": 12049,
+      "Name": "downfall_hermit_pet_ghost_relic",
+      "AssetName": "mods/downfall/hermit/pet_ghost",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.PetGhost",
+      "Title": "Pet Ghost",
+      "Aliases": [
+        "ぺっとの幽霊"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-PET_GHOST.title"
+    },
+    {
+      "Id": 12050,
+      "Name": "downfall_hermit_red_scarf_relic",
+      "AssetName": "mods/downfall/hermit/red_scarf",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.RedScarf",
+      "Title": "Red Scarf",
+      "Aliases": [
+        "赤いすかーふ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-RED_SCARF.title"
+    },
+    {
+      "Id": 12051,
+      "Name": "downfall_hermit_rye_stalk_relic",
+      "AssetName": "mods/downfall/hermit/rye_stalk",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.RyeStalk",
+      "Title": "Rye Stalk",
+      "Aliases": [
+        "らい麦の茎"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-RYE_STALK.title"
+    },
+    {
+      "Id": 12052,
+      "Name": "downfall_hermit_scorched_locket_relic",
+      "AssetName": "mods/downfall/hermit/scorched_locket",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.ScorchedLocket",
+      "Title": "Scorched Locket",
+      "Aliases": [
+        "焼け焦げたろけっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-SCORCHED_LOCKET.title"
+    },
+    {
+      "Id": 12053,
+      "Name": "downfall_hermit_spyglass_relic",
+      "AssetName": "mods/downfall/hermit/spyglass",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.Spyglass",
+      "Title": "Spyglass",
+      "Aliases": [
+        "すぱいぐらす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-SPYGLASS.title"
+    },
+    {
+      "Id": 12054,
+      "Name": "downfall_hermit_straight_razor_relic",
+      "AssetName": "mods/downfall/hermit/straight_razor",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Relics.StraightRazor",
+      "Title": "Straight Razor",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HERMIT-STRAIGHT_RAZOR.title"
+    },
+    {
+      "Id": 11107,
+      "Name": "downfall_hermit_adapt_power_power",
+      "AssetName": "mods/downfall/hermit/adapt_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.AdaptPower",
+      "Title": "Adapt",
+      "Aliases": [
+        "あだぷと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-ADAPT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11108,
+      "Name": "downfall_hermit_big_bruiser_power_power",
+      "AssetName": "mods/downfall/hermit/big_bruiser_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.BigBruiserPower",
+      "Title": "Big Bruiser",
+      "Aliases": [
+        "びっぐぶるーざー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-BIG_BRUISER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11109,
+      "Name": "downfall_hermit_brawl_power_power",
+      "AssetName": "mods/downfall/hermit/brawl_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.BrawlPower",
+      "Title": "Brawl",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-BRAWL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11110,
+      "Name": "downfall_hermit_bruise_power_power",
+      "AssetName": "mods/downfall/hermit/bruise_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.BruisePower",
+      "Title": "Bruised",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-BRUISE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11111,
+      "Name": "downfall_hermit_burdened_power_power",
+      "AssetName": "mods/downfall/hermit/burdened_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.BurdenedPower",
+      "Title": "Burdened",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-BURDENED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11112,
+      "Name": "downfall_hermit_cheat_power_power",
+      "AssetName": "mods/downfall/hermit/cheat_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.CheatPower",
+      "Title": "Cheat",
+      "Aliases": [
+        "ぴーぴんぐ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-CHEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11113,
+      "Name": "downfall_hermit_coalescence_power_power",
+      "AssetName": "mods/downfall/hermit/coalescence_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.CoalescencePower",
+      "Title": "Coalescence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-COALESCENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11114,
+      "Name": "downfall_hermit_combo_power_power",
+      "AssetName": "mods/downfall/hermit/combo_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.ComboPower",
+      "Title": "Combo",
+      "Aliases": [
+        "こんぼ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-COMBO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11115,
+      "Name": "downfall_hermit_concentration_power_power",
+      "AssetName": "mods/downfall/hermit/concentration_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.ConcentrationPower",
+      "Title": "Concentration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-CONCENTRATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11116,
+      "Name": "downfall_hermit_deathwish_power_power",
+      "AssetName": "mods/downfall/hermit/deathwish_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.DeathwishPower",
+      "Title": "Fire Away",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-DEATHWISH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11117,
+      "Name": "downfall_hermit_determination_power_power",
+      "AssetName": "mods/downfall/hermit/determination_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.DeterminationPower",
+      "Title": "Determination",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-DETERMINATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11118,
+      "Name": "downfall_hermit_draw_fewer_cards_next_turn_power_power",
+      "AssetName": "mods/downfall/hermit/draw_fewer_cards_next_turn_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.DrawFewerCardsNextTurnPower",
+      "Title": "Draw Fewer Cards Next Turn",
+      "Aliases": [
+        "次たーんどろー減少"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-DRAW_FEWER_CARDS_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11119,
+      "Name": "downfall_hermit_eternal_power_power",
+      "AssetName": "mods/downfall/hermit/eternal_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.EternalPower",
+      "Title": "Eternal Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-ETERNAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11120,
+      "Name": "downfall_hermit_fatal_desire_power_power",
+      "AssetName": "mods/downfall/hermit/fatal_desire_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.FatalDesirePower",
+      "Title": "Fatal Desire",
+      "Aliases": [
+        "ふぇいたるでざいあ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-FATAL_DESIRE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11121,
+      "Name": "downfall_hermit_hair_trigger_power_power",
+      "AssetName": "mods/downfall/hermit/hair_trigger_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.HairTriggerPower",
+      "Title": "Hair Trigger",
+      "Aliases": [
+        "へあとりがー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-HAIR_TRIGGER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11122,
+      "Name": "downfall_hermit_high_noon_defend_power_power",
+      "AssetName": "mods/downfall/hermit/high_noon_defend_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.HighNoonDefendPower",
+      "Title": "High Noon+",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-HIGH_NOON_DEFEND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11123,
+      "Name": "downfall_hermit_high_noon_power_power",
+      "AssetName": "mods/downfall/hermit/high_noon_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.HighNoonPower",
+      "Title": "High Noon",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-HIGH_NOON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11124,
+      "Name": "downfall_hermit_horror_power_power",
+      "AssetName": "mods/downfall/hermit/horror_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.HorrorPower",
+      "Title": "Horror",
+      "Aliases": [
+        "ほらー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-HORROR_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11125,
+      "Name": "downfall_hermit_long_shadows_power_power",
+      "AssetName": "mods/downfall/hermit/long_shadows_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.LongShadowsPower",
+      "Title": "Long Shadows",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-LONG_SHADOWS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11126,
+      "Name": "downfall_hermit_magazine_power_power",
+      "AssetName": "mods/downfall/hermit/magazine_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.MagazinePower",
+      "Title": "Magazine",
+      "Aliases": [
+        "まがじん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-MAGAZINE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11127,
+      "Name": "downfall_hermit_maintenance_strike_power_power",
+      "AssetName": "mods/downfall/hermit/maintenance_strike_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.MaintenanceStrikePower",
+      "Title": "Maintenance",
+      "Aliases": [
+        "めんてなんす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-MAINTENANCE_STRIKE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11128,
+      "Name": "downfall_hermit_no_holds_barred_power_power",
+      "AssetName": "mods/downfall/hermit/no_holds_barred_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.NoHoldsBarredPower",
+      "Title": "No Holds Barred",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-NO_HOLDS_BARRED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11129,
+      "Name": "downfall_hermit_overwhelming_power_power_power",
+      "AssetName": "mods/downfall/hermit/overwhelming_power_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.OverwhelmingPowerPower",
+      "Title": "Overwhelming Power",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-OVERWHELMING_POWER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11130,
+      "Name": "downfall_hermit_rugged_power_power",
+      "AssetName": "mods/downfall/hermit/rugged_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.RuggedPower",
+      "Title": "Rugged",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-RUGGED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11131,
+      "Name": "downfall_hermit_scope_out_power_power",
+      "AssetName": "mods/downfall/hermit/scope_out_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.ScopeOutPower",
+      "Title": "Scope Out",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-SCOPE_OUT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11132,
+      "Name": "downfall_hermit_shadow_cloak_power_power",
+      "AssetName": "mods/downfall/hermit/shadow_cloak_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.ShadowCloakPower",
+      "Title": "Shadow Cloak",
+      "Aliases": [
+        "しゃどうくろーく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-SHADOW_CLOAK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11133,
+      "Name": "downfall_hermit_smoking_barrel_power_power",
+      "AssetName": "mods/downfall/hermit/smoking_barrel_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.SmokingBarrelPower",
+      "Title": "Smoking Barrel",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-SMOKING_BARREL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11134,
+      "Name": "downfall_hermit_snipe_power_power",
+      "AssetName": "mods/downfall/hermit/snipe_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.SnipePower",
+      "Title": "Snipe",
+      "Aliases": [
+        "すないぷ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-SNIPE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11135,
+      "Name": "downfall_hermit_take_aim_power_power",
+      "AssetName": "mods/downfall/hermit/take_aim_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.TakeAimPower",
+      "Title": "Take Aim",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-TAKE_AIM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11136,
+      "Name": "downfall_hermit_unyielding_power_power",
+      "AssetName": "mods/downfall/hermit/unyielding_power",
+      "Category": "Power",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Powers.UnyieldingPower",
+      "Title": "Unyielding",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HERMIT-UNYIELDING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 14012,
+      "Name": "downfall_hermit_black_bile_potion",
+      "AssetName": "mods/downfall/hermit/black_bile",
+      "Category": "Potion",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Potions.BlackBile",
+      "Title": "Black Bile",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "HERMIT-BLACK_BILE.title"
+    },
+    {
+      "Id": 14013,
+      "Name": "downfall_hermit_liquid_void_potion",
+      "AssetName": "mods/downfall/hermit/liquid_void",
+      "Category": "Potion",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Potions.LiquidVoid",
+      "Title": "Liquid Void",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "HERMIT-LIQUID_VOID.title"
+    },
+    {
+      "Id": 14014,
+      "Name": "downfall_hermit_tonic_potion",
+      "AssetName": "mods/downfall/hermit/tonic",
+      "Category": "Potion",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Potions.Tonic",
+      "Title": "Tonic",
+      "Aliases": [
+        "とにっく"
+      ],
+      "LocTable": "potions",
+      "LocKey": "HERMIT-TONIC.title"
+    },
+    {
+      "Id": 13002,
+      "Name": "downfall_hermit_seething_enchantment",
+      "AssetName": "mods/downfall/hermit/seething",
+      "Category": "Enchantment",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Enchantment.Seething",
+      "Title": "Seething",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "HERMIT-SEETHING.title"
+    },
+    {
+      "Id": 15004,
+      "Name": "downfall_hermit_hermit_character",
+      "AssetName": "mods/downfall/hermit/hermit",
+      "Category": "Character",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Core.Hermit",
+      "Title": "The Hermit",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "HERMIT-HERMIT.title"
+    },
+    {
+      "Id": 12055,
+      "Name": "downfall_hermit_yummy_cookie_relic",
+      "AssetName": "mods/downfall/hermit/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Hermit",
+      "TypeName": "Hermit.HermitCode.Core.Hermit",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12056,
+      "Name": "downfall_hexaghost_jar_of_tobsco_relic",
+      "AssetName": "mods/downfall/hexaghost/jar_of_tobsco",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.JarOfTobsco",
+      "Title": "Jar of Tobsco",
+      "Aliases": [
+        "たばすこの瓶詰め"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-JAR_OF_TOBSCO.title"
+    },
+    {
+      "Id": 12057,
+      "Name": "downfall_hexaghost_libra_relic",
+      "AssetName": "mods/downfall/hexaghost/libra",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.Libra",
+      "Title": "Libra",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-LIBRA.title"
+    },
+    {
+      "Id": 12058,
+      "Name": "downfall_hexaghost_mark_of_the_ether_relic",
+      "AssetName": "mods/downfall/hexaghost/mark_of_the_ether",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.MarkOfTheEther",
+      "Title": "Mark of the Ether",
+      "Aliases": [
+        "えーてるのまーく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-MARK_OF_THE_ETHER.title"
+    },
+    {
+      "Id": 12059,
+      "Name": "downfall_hexaghost_olexas_shield_relic",
+      "AssetName": "mods/downfall/hexaghost/olexas_shield",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.OlexasShield",
+      "Title": "Olexa's Shield",
+      "Aliases": [
+        "あれくさの盾"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-OLEXAS_SHIELD.title"
+    },
+    {
+      "Id": 12060,
+      "Name": "downfall_hexaghost_recycler_relic",
+      "AssetName": "mods/downfall/hexaghost/recycler",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.Recycler",
+      "Title": "Recycler",
+      "Aliases": [
+        "りさいくらー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-RECYCLER.title"
+    },
+    {
+      "Id": 12061,
+      "Name": "downfall_hexaghost_red_candle_relic",
+      "AssetName": "mods/downfall/hexaghost/red_candle",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.RedCandle",
+      "Title": "Red Candle",
+      "Aliases": [
+        "赤いろうそく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-RED_CANDLE.title"
+    },
+    {
+      "Id": 12062,
+      "Name": "downfall_hexaghost_sneaky_teakwood_match_relic",
+      "AssetName": "mods/downfall/hexaghost/sneaky_teakwood_match",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.SneakyTeakwoodMatch",
+      "Title": "Sneaky Teakwood Match",
+      "Aliases": [
+        "こっそりちーく材まっち"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-SNEAKY_TEAKWOOD_MATCH.title"
+    },
+    {
+      "Id": 12063,
+      "Name": "downfall_hexaghost_soul_stone_relic",
+      "AssetName": "mods/downfall/hexaghost/soul_stone",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.SoulStone",
+      "Title": "Thermal Stone",
+      "Aliases": [
+        "さーまるすとーん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-SOUL_STONE.title"
+    },
+    {
+      "Id": 12064,
+      "Name": "downfall_hexaghost_spirit_brand_relic",
+      "AssetName": "mods/downfall/hexaghost/spirit_brand",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Relics.SpiritBrand",
+      "Title": "Spirit Brand",
+      "Aliases": [
+        "すぴりっとぶらんど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "HEXAGHOST-SPIRIT_BRAND.title"
+    },
+    {
+      "Id": 11137,
+      "Name": "downfall_hexaghost_broiling_flames_power_power",
+      "AssetName": "mods/downfall/hexaghost/broiling_flames_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.BroilingFlamesPower",
+      "Title": "Broiling Flames",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-BROILING_FLAMES_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11138,
+      "Name": "downfall_hexaghost_devils_dance_power_power",
+      "AssetName": "mods/downfall/hexaghost/devils_dance_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.DevilsDancePower",
+      "Title": "Devil's Dance",
+      "Aliases": [
+        "でびるずだんす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-DEVILS_DANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11139,
+      "Name": "downfall_hexaghost_dooms_arrival_power_power",
+      "AssetName": "mods/downfall/hexaghost/dooms_arrival_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.DoomsArrivalPower",
+      "Title": "Doom's Arrival",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-DOOMS_ARRIVAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11140,
+      "Name": "downfall_hexaghost_doomsday_power_power",
+      "AssetName": "mods/downfall/hexaghost/doomsday_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.DoomsdayPower",
+      "Title": "Doomsday",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-DOOMSDAY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11141,
+      "Name": "downfall_hexaghost_extra_crispy_power_power",
+      "AssetName": "mods/downfall/hexaghost/extra_crispy_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.ExtraCrispyPower",
+      "Title": "Extra Crispy",
+      "Aliases": [
+        "かりっかり"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-EXTRA_CRISPY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11142,
+      "Name": "downfall_hexaghost_ghostflame_barrier_power_power",
+      "AssetName": "mods/downfall/hexaghost/ghostflame_barrier_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.GhostflameBarrierPower",
+      "Title": "Ghostflame Barrier",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-GHOSTFLAME_BARRIER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11143,
+      "Name": "downfall_hexaghost_gifts_from_beyond_power_power",
+      "AssetName": "mods/downfall/hexaghost/gifts_from_beyond_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.GiftsFromBeyondPower",
+      "Title": "Gifts from Beyond",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-GIFTS_FROM_BEYOND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11144,
+      "Name": "downfall_hexaghost_heating_power_power",
+      "AssetName": "mods/downfall/hexaghost/heating_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.HeatingPower",
+      "Title": "Heating",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-HEATING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11145,
+      "Name": "downfall_hexaghost_here_and_now_power_power",
+      "AssetName": "mods/downfall/hexaghost/here_and_now_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.HereAndNowPower",
+      "Title": "Here and Now",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-HERE_AND_NOW_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11146,
+      "Name": "downfall_hexaghost_hot_streak_power_power",
+      "AssetName": "mods/downfall/hexaghost/hot_streak_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.HotStreakPower",
+      "Title": "Hot Streak",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-HOT_STREAK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11147,
+      "Name": "downfall_hexaghost_infernal_form_power_power",
+      "AssetName": "mods/downfall/hexaghost/infernal_form_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.InfernalFormPower",
+      "Title": "Infernal Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-INFERNAL_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11148,
+      "Name": "downfall_hexaghost_inferno_potion_power_power",
+      "AssetName": "mods/downfall/hexaghost/inferno_potion_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.InfernoPotionPower",
+      "Title": "Infernal",
+      "Aliases": [
+        "いんふぇるの"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-INFERNO_POTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11149,
+      "Name": "downfall_hexaghost_intensity_power_power",
+      "AssetName": "mods/downfall/hexaghost/intensity_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.IntensityPower",
+      "Title": "Intensity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-INTENSITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11150,
+      "Name": "downfall_hexaghost_into_shadow_power_power",
+      "AssetName": "mods/downfall/hexaghost/into_shadow_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.IntoShadowPower",
+      "Title": "Into Shadow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-INTO_SHADOW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11151,
+      "Name": "downfall_hexaghost_living_bomb_power_power",
+      "AssetName": "mods/downfall/hexaghost/living_bomb_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.LivingBombPower",
+      "Title": "Living Bomb",
+      "Aliases": [
+        "りびんぐ・ぼむ！"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-LIVING_BOMB_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11152,
+      "Name": "downfall_hexaghost_more_energy_power_power",
+      "AssetName": "mods/downfall/hexaghost/more_energy_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.MoreEnergyPower",
+      "Title": "More Energy",
+      "Aliases": [
+        "えなじーをもっと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-MORE_ENERGY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11153,
+      "Name": "downfall_hexaghost_nightmare_vision_power_power",
+      "AssetName": "mods/downfall/hexaghost/nightmare_vision_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.NightmareVisionPower",
+      "Title": "Nightmare Vision",
+      "Aliases": [
+        "ないとめあびじょん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-NIGHTMARE_VISION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11154,
+      "Name": "downfall_hexaghost_poltergeist_power_power",
+      "AssetName": "mods/downfall/hexaghost/poltergeist_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.PoltergeistPower",
+      "Title": "Poltergeist",
+      "Aliases": [
+        "ぽるたーがいすと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-POLTERGEIST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11155,
+      "Name": "downfall_hexaghost_premonition_power_power",
+      "AssetName": "mods/downfall/hexaghost/premonition_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.PremonitionPower",
+      "Title": "Premonition",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-PREMONITION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11156,
+      "Name": "downfall_hexaghost_radiant_flame_power_power",
+      "AssetName": "mods/downfall/hexaghost/radiant_flame_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.RadiantFlamePower",
+      "Title": "Radiant Flame",
+      "Aliases": [
+        "れでぃあんとふれいむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-RADIANT_FLAME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11157,
+      "Name": "downfall_hexaghost_sizzle_power_power",
+      "AssetName": "mods/downfall/hexaghost/sizzle_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.SizzlePower",
+      "Title": "Sizzle",
+      "Aliases": [
+        "じゅーじゅー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-SIZZLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11158,
+      "Name": "downfall_hexaghost_soulfire_power_power",
+      "AssetName": "mods/downfall/hexaghost/soulfire_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.SoulfirePower",
+      "Title": "Soulfire",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-SOULFIRE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11159,
+      "Name": "downfall_hexaghost_unfettered_form_power_power",
+      "AssetName": "mods/downfall/hexaghost/unfettered_form_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.UnfetteredFormPower",
+      "Title": "Unfettered Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-UNFETTERED_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11160,
+      "Name": "downfall_hexaghost_volcano_visage_power_power",
+      "AssetName": "mods/downfall/hexaghost/volcano_visage_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.VolcanoVisagePower",
+      "Title": "Volcano Visage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-VOLCANO_VISAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11161,
+      "Name": "downfall_hexaghost_whisper_from_beyond_power_power",
+      "AssetName": "mods/downfall/hexaghost/whisper_from_beyond_power",
+      "Category": "Power",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Powers.WhisperFromBeyondPower",
+      "Title": "Whisper from Beyond",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "HEXAGHOST-WHISPER_FROM_BEYOND_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 14015,
+      "Name": "downfall_hexaghost_combustive_fluid_potion_potion",
+      "AssetName": "mods/downfall/hexaghost/combustive_fluid_potion",
+      "Category": "Potion",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Potions.CombustiveFluidPotion",
+      "Title": "Combustive Fluid",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "HEXAGHOST-COMBUSTIVE_FLUID_POTION.title"
+    },
+    {
+      "Id": 14016,
+      "Name": "downfall_hexaghost_ecto_cooler_potion_potion",
+      "AssetName": "mods/downfall/hexaghost/ecto_cooler_potion",
+      "Category": "Potion",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Potions.EctoCoolerPotion",
+      "Title": "Ecto Cooler",
+      "Aliases": [
+        "えくとくーらー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "HEXAGHOST-ECTO_COOLER_POTION.title"
+    },
+    {
+      "Id": 14017,
+      "Name": "downfall_hexaghost_inferno_potion_potion_potion",
+      "AssetName": "mods/downfall/hexaghost/inferno_potion_potion",
+      "Category": "Potion",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Potions.InfernoPotionPotion",
+      "Title": "Inferno Potion",
+      "Aliases": [
+        "いんふぇるのぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "HEXAGHOST-INFERNO_POTION_POTION.title"
+    },
+    {
+      "Id": 15005,
+      "Name": "downfall_hexaghost_hexaghost_character",
+      "AssetName": "mods/downfall/hexaghost/hexaghost",
+      "Category": "Character",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Core.Hexaghost",
+      "Title": "The Hexaghost",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "HEXAGHOST-HEXAGHOST.title"
+    },
+    {
+      "Id": 12065,
+      "Name": "downfall_hexaghost_yummy_cookie_relic",
+      "AssetName": "mods/downfall/hexaghost/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Hexaghost",
+      "TypeName": "Hexaghost.HexaghostCode.Core.Hexaghost",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12066,
+      "Name": "downfall_slime_boss_black_heart_of_goo_relic",
+      "AssetName": "mods/downfall/slime_boss/black_heart_of_goo",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.BlackHeartOfGoo",
+      "Title": "Black Heart of Goo",
+      "Aliases": [
+        "黒いべたつく心臓"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-BLACK_HEART_OF_GOO.title"
+    },
+    {
+      "Id": 12067,
+      "Name": "downfall_slime_boss_goop_dweller_relic",
+      "AssetName": "mods/downfall/slime_boss/goop_dweller",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.GoopDweller",
+      "Title": "Goop Dweller",
+      "Aliases": [
+        "へどろの住民"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-GOOP_DWELLER.title"
+    },
+    {
+      "Id": 12068,
+      "Name": "downfall_slime_boss_greed_ooze_relic",
+      "AssetName": "mods/downfall/slime_boss/greed_ooze",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.GreedOoze",
+      "Title": "Greed Ooze",
+      "Aliases": [
+        "ぐりーどうーず"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-GREED_OOZE.title"
+    },
+    {
+      "Id": 12069,
+      "Name": "downfall_slime_boss_heart_of_goo_relic",
+      "AssetName": "mods/downfall/slime_boss/heart_of_goo",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.HeartOfGoo",
+      "Title": "Heart of Goo",
+      "Aliases": [
+        "べたつく心臓"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-HEART_OF_GOO.title"
+    },
+    {
+      "Id": 12070,
+      "Name": "downfall_slime_boss_jeremiahs_banner_relic",
+      "AssetName": "mods/downfall/slime_boss/jeremiahs_banner",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.JeremiahsBanner",
+      "Title": "Jeremiah's Banner",
+      "Aliases": [
+        "えれみあの旗"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-JEREMIAHS_BANNER.title"
+    },
+    {
+      "Id": 12071,
+      "Name": "downfall_slime_boss_protective_gear_relic",
+      "AssetName": "mods/downfall/slime_boss/protective_gear",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.ProtectiveGear",
+      "Title": "Protective Gear",
+      "Aliases": [
+        "ぷろてくとぎあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-PROTECTIVE_GEAR.title"
+    },
+    {
+      "Id": 12072,
+      "Name": "downfall_slime_boss_scrap_ooze_relic",
+      "AssetName": "mods/downfall/slime_boss/scrap_ooze",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.ScrapOoze",
+      "Title": "Scrap Ooze",
+      "Aliases": [
+        "すくらっぷうーず"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-SCRAP_OOZE.title"
+    },
+    {
+      "Id": 12073,
+      "Name": "downfall_slime_boss_slimed_tail_relic",
+      "AssetName": "mods/downfall/slime_boss/slimed_tail",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.SlimedTail",
+      "Title": "Slimed Tail",
+      "Aliases": [
+        "すらいむのしっぽ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-SLIMED_TAIL.title"
+    },
+    {
+      "Id": 12074,
+      "Name": "downfall_slime_boss_slimy_skull_relic",
+      "AssetName": "mods/downfall/slime_boss/slimy_skull",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.SlimySkull",
+      "Title": "Slimy Skull",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-SLIMY_SKULL.title"
+    },
+    {
+      "Id": 12075,
+      "Name": "downfall_slime_boss_stone_of_nomakk_relic",
+      "AssetName": "mods/downfall/slime_boss/stone_of_nomakk",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.StoneOfNomakk",
+      "Title": "Stone of Nomakk",
+      "Aliases": [
+        "すとーんおぶのまっく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-STONE_OF_NOMAKK.title"
+    },
+    {
+      "Id": 12076,
+      "Name": "downfall_slime_boss_tarr_blob_relic",
+      "AssetName": "mods/downfall/slime_boss/tarr_blob",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Relics.TarrBlob",
+      "Title": "Tarr Blob",
+      "Aliases": [
+        "たらごんの球根"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SLIMEBOSS-TARR_BLOB.title"
+    },
+    {
+      "Id": 11162,
+      "Name": "downfall_slime_boss_douse_in_slime_power_power",
+      "AssetName": "mods/downfall/slime_boss/douse_in_slime_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.DouseInSlimePower",
+      "Title": "Doused in Slime",
+      "Aliases": [
+        "すらいむ浴び"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-DOUSE_IN_SLIME_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11163,
+      "Name": "downfall_slime_boss_duplicated_form_power_power",
+      "AssetName": "mods/downfall/slime_boss/duplicated_form_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.DuplicatedFormPower",
+      "Title": "Duplicated Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-DUPLICATED_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11164,
+      "Name": "downfall_slime_boss_flame_tackle_power_power",
+      "AssetName": "mods/downfall/slime_boss/flame_tackle_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.FlameTacklePower",
+      "Title": "Flame Tackle",
+      "Aliases": [
+        "ふれいむたっくる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-FLAME_TACKLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11165,
+      "Name": "downfall_slime_boss_gluttony_power_power",
+      "AssetName": "mods/downfall/slime_boss/gluttony_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.GluttonyPower",
+      "Title": "Gluttony",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-GLUTTONY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11166,
+      "Name": "downfall_slime_boss_goop_armor_power_power",
+      "AssetName": "mods/downfall/slime_boss/goop_armor_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.GoopArmorPower",
+      "Title": "Goop Armor",
+      "Aliases": [
+        "へどろあーまー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-GOOP_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11167,
+      "Name": "downfall_slime_boss_goop_power_power",
+      "AssetName": "mods/downfall/slime_boss/goop_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.GoopPower",
+      "Title": "Goop",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-GOOP_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11168,
+      "Name": "downfall_slime_boss_lead_by_example_power_power",
+      "AssetName": "mods/downfall/slime_boss/lead_by_example_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.LeadByExamplePower",
+      "Title": "Lead by Example",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-LEAD_BY_EXAMPLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11169,
+      "Name": "downfall_slime_boss_minion_master_power_power",
+      "AssetName": "mods/downfall/slime_boss/minion_master_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.MinionMasterPower",
+      "Title": "Minion Master",
+      "Aliases": [
+        "みにおんますたー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-MINION_MASTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11170,
+      "Name": "downfall_slime_boss_ooze_bath_power_power",
+      "AssetName": "mods/downfall/slime_boss/ooze_bath_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.OozeBathPower",
+      "Title": "Ooze Bath",
+      "Aliases": [
+        "へどろ風呂"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-OOZE_BATH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11171,
+      "Name": "downfall_slime_boss_overexert_power_power",
+      "AssetName": "mods/downfall/slime_boss/overexert_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.OverexertPower",
+      "Title": "Overexert",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-OVEREXERT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11172,
+      "Name": "downfall_slime_boss_potency_power_power",
+      "AssetName": "mods/downfall/slime_boss/potency_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.PotencyPower",
+      "Title": "Potency",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-POTENCY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11173,
+      "Name": "downfall_slime_boss_protect_the_boss_power_power",
+      "AssetName": "mods/downfall/slime_boss/protect_the_boss_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.ProtectTheBossPower",
+      "Title": "Protect the Boss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-PROTECT_THE_BOSS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11174,
+      "Name": "downfall_slime_boss_rally_the_troops_power_power",
+      "AssetName": "mods/downfall/slime_boss/rally_the_troops_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.RallyTheTroopsPower",
+      "Title": "Rally the Troops",
+      "Aliases": [
+        "すらいむ軍"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-RALLY_THE_TROOPS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11175,
+      "Name": "downfall_slime_boss_recklessness_power_power",
+      "AssetName": "mods/downfall/slime_boss/recklessness_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.RecklessnessPower",
+      "Title": "Recklessness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-RECKLESSNESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11176,
+      "Name": "downfall_slime_boss_recycling_power_power",
+      "AssetName": "mods/downfall/slime_boss/recycling_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.RecyclingPower",
+      "Title": "Recycling",
+      "Aliases": [
+        "りさいくる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-RECYCLING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11177,
+      "Name": "downfall_slime_boss_roll_through_power_power",
+      "AssetName": "mods/downfall/slime_boss/roll_through_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.RollThroughPower",
+      "Title": "Roll Through",
+      "Aliases": [
+        "ろーるするー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-ROLL_THROUGH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11178,
+      "Name": "downfall_slime_boss_slimy_tongue_power_power",
+      "AssetName": "mods/downfall/slime_boss/slimy_tongue_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.SlimyTonguePower",
+      "Title": "Slimy Tongue",
+      "Aliases": [
+        "粘性べろ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-SLIMY_TONGUE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11179,
+      "Name": "downfall_slime_boss_strength_next_turn_power_power",
+      "AssetName": "mods/downfall/slime_boss/strength_next_turn_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.StrengthNextTurnPower",
+      "Title": "Next Turn Strength",
+      "Aliases": [
+        "次たーん筋力"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-STRENGTH_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 15006,
+      "Name": "downfall_slime_boss_slime_boss_character",
+      "AssetName": "mods/downfall/slime_boss/slime_boss",
+      "Category": "Character",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Core.SlimeBoss",
+      "Title": "The Slime Boss",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "SLIMEBOSS-SLIME_BOSS.title"
+    },
+    {
+      "Id": 12077,
+      "Name": "downfall_slime_boss_yummy_cookie_relic",
+      "AssetName": "mods/downfall/slime_boss/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Core.SlimeBoss",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 12078,
+      "Name": "downfall_snecko_loaded_die_relic",
+      "AssetName": "mods/downfall/snecko/loaded_die",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.LoadedDie",
+      "Title": "Loaded Die",
+      "Aliases": [
+        "いかさまだいす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-LOADED_DIE.title"
+    },
+    {
+      "Id": 12079,
+      "Name": "downfall_snecko_prismatic_snecko_relic",
+      "AssetName": "mods/downfall/snecko/prismatic_snecko",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.PrismaticSnecko",
+      "Title": "Prismatic Mode",
+      "Aliases": [
+        "ぷりずむもーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-PRISMATIC_SNECKO.title"
+    },
+    {
+      "Id": 12080,
+      "Name": "downfall_snecko_rare_booster_box_relic",
+      "AssetName": "mods/downfall/snecko/rare_booster_box",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.RareBoosterBox",
+      "Title": "Rare Booster Box",
+      "Aliases": [
+        "れあぶーすたーぼっくす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-RARE_BOOSTER_BOX.title"
+    },
+    {
+      "Id": 12081,
+      "Name": "downfall_snecko_ring_of_the_snek_relic",
+      "AssetName": "mods/downfall/snecko/ring_of_the_snek",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.RingOfTheSnek",
+      "Title": "Ring of the Snek",
+      "Aliases": [
+        "すねっこりんぐ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-RING_OF_THE_SNEK.title"
+    },
+    {
+      "Id": 12082,
+      "Name": "downfall_snecko_seal_of_approval_relic",
+      "AssetName": "mods/downfall/snecko/seal_of_approval",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.SealOfApproval",
+      "Title": "Seal of Approval",
+      "Aliases": [
+        "認証しーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-SEAL_OF_APPROVAL.title"
+    },
+    {
+      "Id": 12083,
+      "Name": "downfall_snecko_sleeved_ace_relic",
+      "AssetName": "mods/downfall/snecko/sleeved_ace",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.SleevedAce",
+      "Title": "Sleeved Ace",
+      "Aliases": [
+        "とっておきのえーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-SLEEVED_ACE.title"
+    },
+    {
+      "Id": 12084,
+      "Name": "downfall_snecko_snake_charmers_flute_relic",
+      "AssetName": "mods/downfall/snecko/snake_charmers_flute",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.SnakeCharmersFlute",
+      "Title": "Snake-Charmer's Flute",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-SNAKE_CHARMERS_FLUTE.title"
+    },
+    {
+      "Id": 12085,
+      "Name": "downfall_snecko_snecko_choice_relic",
+      "AssetName": "mods/downfall/snecko/snecko_choice",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.SneckoChoice",
+      "Title": "{character}'s Blessing",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-SNECKO_CHOICE.title"
+    },
+    {
+      "Id": 12086,
+      "Name": "downfall_snecko_snecko_soul_relic",
+      "AssetName": "mods/downfall/snecko/snecko_soul",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.SneckoSoul",
+      "Title": "Snecko Soul",
+      "Aliases": [
+        "すねっこそうる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-SNECKO_SOUL.title"
+    },
+    {
+      "Id": 12087,
+      "Name": "downfall_snecko_super_snecko_soul_relic",
+      "AssetName": "mods/downfall/snecko/super_snecko_soul",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.SuperSneckoSoul",
+      "Title": "Super Snecko Soul",
+      "Aliases": [
+        "すねっこそうるSP"
+      ],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-SUPER_SNECKO_SOUL.title"
+    },
+    {
+      "Id": 12088,
+      "Name": "downfall_snecko_unidentified_egg_relic",
+      "AssetName": "mods/downfall/snecko/unidentified_egg",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.UnidentifiedEgg",
+      "Title": "Unidentified Egg",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-UNIDENTIFIED_EGG.title"
+    },
+    {
+      "Id": 12089,
+      "Name": "downfall_snecko_viper_skull_relic",
+      "AssetName": "mods/downfall/snecko/viper_skull",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Relics.ViperSkull",
+      "Title": "Viper Skull",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SNECKO-VIPER_SKULL.title"
+    },
+    {
+      "Id": 11180,
+      "Name": "downfall_snecko_blunder_guard_power_power",
+      "AssetName": "mods/downfall/snecko/blunder_guard_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.BlunderGuardPower",
+      "Title": "Blunder Guard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-BLUNDER_GUARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11181,
+      "Name": "downfall_snecko_cheap_stock_power_power",
+      "AssetName": "mods/downfall/snecko/cheap_stock_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.CheapStockPower",
+      "Title": "Cheap Stock",
+      "Aliases": [
+        "ちーぷすとっく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-CHEAP_STOCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11182,
+      "Name": "downfall_snecko_dice_case_power_power",
+      "AssetName": "mods/downfall/snecko/dice_case_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.DiceCasePower",
+      "Title": "Dice Case",
+      "Aliases": [
+        "だいすけーす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-DICE_CASE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11183,
+      "Name": "downfall_snecko_exotic_form_power_power",
+      "AssetName": "mods/downfall/snecko/exotic_form_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.ExoticFormPower",
+      "Title": "Exotic Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-EXOTIC_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11184,
+      "Name": "downfall_snecko_fountain_power_power",
+      "AssetName": "mods/downfall/snecko/fountain_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.FountainPower",
+      "Title": "Fountain",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-FOUNTAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11185,
+      "Name": "downfall_snecko_gamble_power_power",
+      "AssetName": "mods/downfall/snecko/gamble_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.GamblePower",
+      "Title": "Gamble",
+      "Aliases": [
+        "ぎゃんぶる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-GAMBLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11186,
+      "Name": "downfall_snecko_mimicry_power_power",
+      "AssetName": "mods/downfall/snecko/mimicry_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.MimicryPower",
+      "Title": "Mimicry",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-MIMICRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11187,
+      "Name": "downfall_snecko_muddy_power_power",
+      "AssetName": "mods/downfall/snecko/muddy_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.MuddyPower",
+      "Title": "Muddy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-MUDDY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11188,
+      "Name": "downfall_snecko_mud_shield_power_power",
+      "AssetName": "mods/downfall/snecko/mud_shield_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.MudShieldPower",
+      "Title": "Mud Shield",
+      "Aliases": [
+        "まっどしーるど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-MUD_SHIELD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11189,
+      "Name": "downfall_snecko_mulligan_power_power",
+      "AssetName": "mods/downfall/snecko/mulligan_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.MulliganPower",
+      "Title": "Mulligan",
+      "Aliases": [
+        "まりがん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-MULLIGAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11190,
+      "Name": "downfall_snecko_overwhelming_power_power",
+      "AssetName": "mods/downfall/snecko/overwhelming_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.OverwhelmingPower",
+      "Title": "Overwhelming",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-OVERWHELMING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11191,
+      "Name": "downfall_snecko_paralytic_venom_power_power",
+      "AssetName": "mods/downfall/snecko/paralytic_venom_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.ParalyticVenomPower",
+      "Title": "Paralytic Venom",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-PARALYTIC_VENOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11192,
+      "Name": "downfall_snecko_queen_of_pentacles_power_power",
+      "AssetName": "mods/downfall/snecko/queen_of_pentacles_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.QueenOfPentaclesPower",
+      "Title": "Queen of Pentacles",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-QUEEN_OF_PENTACLES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11193,
+      "Name": "downfall_snecko_save_for_later_power_power",
+      "AssetName": "mods/downfall/snecko/save_for_later_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.SaveForLaterPower",
+      "Title": "Save For Later",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-SAVE_FOR_LATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11194,
+      "Name": "downfall_snecko_serpentine_sleuth_power_power",
+      "AssetName": "mods/downfall/snecko/serpentine_sleuth_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.SerpentineSleuthPower",
+      "Title": "Serpentine Sleuth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-SERPENTINE_SLEUTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11195,
+      "Name": "downfall_snecko_serpents_nest_power_power",
+      "AssetName": "mods/downfall/snecko/serpents_nest_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.SerpentsNestPower",
+      "Title": "Serpent's Nest",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-SERPENTS_NEST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11196,
+      "Name": "downfall_snecko_snake_eyes_power_power",
+      "AssetName": "mods/downfall/snecko/snake_eyes_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.SnakeEyesPower",
+      "Title": "Snake Eyes",
+      "Aliases": [
+        "すねーくあいず"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-SNAKE_EYES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11197,
+      "Name": "downfall_snecko_snecko_constrict_power_power",
+      "AssetName": "mods/downfall/snecko/snecko_constrict_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.SneckoConstrictPower",
+      "Title": "Constricted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-SNECKO_CONSTRICT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11198,
+      "Name": "downfall_snecko_throwing_cards_power_power",
+      "AssetName": "mods/downfall/snecko/throwing_cards_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.ThrowingCardsPower",
+      "Title": "Throwing Cards",
+      "Aliases": [
+        "かーどすろー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-THROWING_CARDS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11199,
+      "Name": "downfall_snecko_trash_can_power_power",
+      "AssetName": "mods/downfall/snecko/trash_can_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.TrashCanPower",
+      "Title": "Trash Can",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-TRASH_CAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11200,
+      "Name": "downfall_snecko_tsunami_power_power",
+      "AssetName": "mods/downfall/snecko/tsunami_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.TsunamiPower",
+      "Title": "Tsunami",
+      "Aliases": [
+        "つなみ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-TSUNAMI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11201,
+      "Name": "downfall_snecko_typhoon_fang_power_power",
+      "AssetName": "mods/downfall/snecko/typhoon_fang_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.TyphoonFangPower",
+      "Title": "Typhoon Fang",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-TYPHOON_FANG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11202,
+      "Name": "downfall_snecko_unending_supply_power_power",
+      "AssetName": "mods/downfall/snecko/unending_supply_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.UnendingSupplyPower",
+      "Title": "Unending Supply",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-UNENDING_SUPPLY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11203,
+      "Name": "downfall_snecko_venomology_power_power",
+      "AssetName": "mods/downfall/snecko/venomology_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.VenomologyPower",
+      "Title": "Venomology",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-VENOMOLOGY_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11204,
+      "Name": "downfall_snecko_venom_power_power",
+      "AssetName": "mods/downfall/snecko/venom_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.VenomPower",
+      "Title": "Venom",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-VENOM_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11205,
+      "Name": "downfall_snecko_weighted_dice_power_power",
+      "AssetName": "mods/downfall/snecko/weighted_dice_power",
+      "Category": "Power",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Powers.WeightedDicePower",
+      "Title": "Weighted Dice",
+      "Aliases": [
+        "重り付きだいす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "SNECKO-WEIGHTED_DICE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 15007,
+      "Name": "downfall_snecko_snecko_character",
+      "AssetName": "mods/downfall/snecko/snecko",
+      "Category": "Character",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Core.Snecko",
+      "Title": "The Snecko",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "SNECKO-SNECKO.title"
+    },
+    {
+      "Id": 12090,
+      "Name": "downfall_snecko_yummy_cookie_relic",
+      "AssetName": "mods/downfall/snecko/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Core.Snecko",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 17000,
+      "Name": "downfall_snecko_snecko_spirit_ancient",
+      "AssetName": "mods/downfall/snecko/snecko_spirit",
+      "Category": "Ancient",
+      "Assembly": "Snecko",
+      "TypeName": "Snecko.SneckoCode.Ancients.SneckoSpirit",
+      "Title": "Sethiru",
+      "Aliases": [
+        "せしる"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "SNECKO-SNECKO_SPIRIT.title"
+    },
+    {
+      "Id": 11206,
+      "Name": "downfall_downfall_metallicize_power_power",
+      "AssetName": "mods/downfall/shared/metallicize_power",
+      "Category": "Power",
+      "Assembly": "Downfall",
+      "TypeName": "Downfall.DownfallCode.Powers.MetallicizePower",
+      "Title": "Metallicize",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DOWNFALL-METALLICIZE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11207,
+      "Name": "downfall_downfall_plated_armor_power_power",
+      "AssetName": "mods/downfall/shared/plated_armor_power",
+      "Category": "Power",
+      "Assembly": "Downfall",
+      "TypeName": "Downfall.DownfallCode.Powers.PlatedArmorPower",
+      "Title": "Plated Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "DOWNFALL-PLATED_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 11208,
+      "Name": "downfall_downfall_soul_burn_power_power",
+      "AssetName": "mods/downfall/shared/soul_burn_power",
+      "Category": "Power",
+      "Assembly": "Downfall",
+      "TypeName": "Downfall.DownfallCode.Powers.SoulBurnPower",
+      "Title": "Soulburn",
+      "Aliases": [
+        "そうるばーん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "DOWNFALL-SOUL_BURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 11209,
+      "Name": "downfall_energizedpower_power",
+      "AssetName": "mods/downfall/slimeboss/energized_power",
+      "Category": "Power",
+      "Assembly": "SlimeBoss",
+      "TypeName": "SlimeBoss.SlimeBossCode.Powers.EnergizedPower",
+      "Title": "Energized",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SLIMEBOSS-ENERGIZED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ]
 }

@@ -80,15 +80,16 @@ internal static class EmoteSearch
         }
         if (ModdedEmotes.TryDescribe(type, out var group, out var content))
         {
-            tags.Add(content.Category.ToString());
+            if (content.Category != EmoteCategory.None) tags.Add(content.Category.ToString());
             if (content.CharacterCookie) tags.Add("Character");
             foreach (var tag in content.Tags ?? []) tags.Add(tag);
             var modelTitle = content.LocTable != null && content.LocKey != null && LocString.Exists(content.LocTable, content.LocKey)
                 ? new LocString(content.LocTable, content.LocKey).GetFormattedText() : content.Title;
             if (!hasLocalTitle) title = modelTitle;
             words.Append(' ').Append(group.Name).Append(' ').Append(group.Key).Append(' ').AppendJoin(' ', group.AllWorkshopIds)
+                .Append(' ').Append(group.LocalizedName).Append(' ').Append(group.LocalizedAliases)
                 .Append(' ').AppendJoin(' ', group.Aliases).Append(' ').AppendJoin(' ', content.Aliases)
-                .Append(' ').Append(content.Title).Append(' ').Append(modelTitle).Append(' ').Append(content.TypeName);
+                .Append(' ').Append(content.Title).Append(' ').Append(modelTitle).Append(' ').AppendJoin(' ', content.AllModels.Select(m => m.TypeName));
         }
         return new Entry(title, Normalize(words.ToString()), tags);
     }

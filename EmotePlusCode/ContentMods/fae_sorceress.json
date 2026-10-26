@@ -1,0 +1,516 @@
+{
+  "Key": "fae_sorceress",
+  "ModIds": [
+    "FaeSorceress"
+  ],
+  "Name": "The Fae Sorceress",
+  "WorkshopId": "3747513395",
+  "Aliases": [
+    "FaeSorceress"
+  ],
+  "Entries": [
+    {
+      "Id": 232000,
+      "Name": "fae_sorceress_adder_stone_relic",
+      "AssetName": "mods/fae_sorceress/adder_stone",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.AdderStone",
+      "Title": "Adder Stone",
+      "Aliases": [
+        "まむし石"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-ADDER_STONE.title"
+    },
+    {
+      "Id": 232001,
+      "Name": "fae_sorceress_coloring_book_relic",
+      "AssetName": "mods/fae_sorceress/coloring_book",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.ColoringBook",
+      "Title": "Magical Palette",
+      "Aliases": [
+        "まじかるぱれっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-COLORING_BOOK.title"
+    },
+    {
+      "Id": 232002,
+      "Name": "fae_sorceress_diminulating_branch_relic",
+      "AssetName": "mods/fae_sorceress/diminulating_branch",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.DiminulatingBranch",
+      "Title": "Diminulating Branch",
+      "Aliases": [
+        "どわーふ枝"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-DIMINULATING_BRANCH.title"
+    },
+    {
+      "Id": 232003,
+      "Name": "fae_sorceress_fae_coalescence_relic",
+      "AssetName": "mods/fae_sorceress/fae_coalescence",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.FaeCoalescence",
+      "Title": "Fae Coalescence",
+      "Aliases": [
+        "ふぇい玉"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-FAE_COALESCENCE.title"
+    },
+    {
+      "Id": 232004,
+      "Name": "fae_sorceress_fairy_dust_relic",
+      "AssetName": "mods/fae_sorceress/fairy_dust",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.FairyDust",
+      "Title": "Fairy Dust",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-FAIRY_DUST.title"
+    },
+    {
+      "Id": 232005,
+      "Name": "fae_sorceress_glittering_bauble_relic",
+      "AssetName": "mods/fae_sorceress/glittering_bauble",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.GlitteringBauble",
+      "Title": "Glittering Bauble",
+      "Aliases": [
+        "ぴかぴかでこ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-GLITTERING_BAUBLE.title"
+    },
+    {
+      "Id": 232006,
+      "Name": "fae_sorceress_scuzzlebloom_relic",
+      "AssetName": "mods/fae_sorceress/scuzzlebloom",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.Scuzzlebloom",
+      "Title": "Scuzzlebloom Petal",
+      "Aliases": [
+        "すかじゅる花びら"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-SCUZZLEBLOOM.title"
+    },
+    {
+      "Id": 232007,
+      "Name": "fae_sorceress_smooshball_relic",
+      "AssetName": "mods/fae_sorceress/smooshball",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.Smooshball",
+      "Title": "Smooshball",
+      "Aliases": [
+        "すむっしゅぼーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-SMOOSHBALL.title"
+    },
+    {
+      "Id": 232008,
+      "Name": "fae_sorceress_sparkling_spyglass_relic",
+      "AssetName": "mods/fae_sorceress/sparkling_spyglass",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Relics.SparklingSpyglass",
+      "Title": "Sparkling Spyglass",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FAESORCERESS-SPARKLING_SPYGLASS.title"
+    },
+    {
+      "Id": 231000,
+      "Name": "fae_sorceress_abuzz_power_power",
+      "AssetName": "mods/fae_sorceress/abuzz_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.AbuzzPower",
+      "Title": "Abuzz",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-ABUZZ_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231001,
+      "Name": "fae_sorceress_banality_power_power",
+      "AssetName": "mods/fae_sorceress/banality_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.BanalityPower",
+      "Title": "Banality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-BANALITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231003,
+      "Name": "fae_sorceress_constricted_power_power",
+      "AssetName": "mods/fae_sorceress/constricted_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.ConstrictedPower",
+      "Title": "Constricted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-CONSTRICTED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 231004,
+      "Name": "fae_sorceress_dancing_lights_power_power",
+      "AssetName": "mods/fae_sorceress/dancing_lights_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.DancingLightsPower",
+      "Title": "Dancing Lights",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-DANCING_LIGHTS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231005,
+      "Name": "fae_sorceress_enfeebling_power_power",
+      "AssetName": "mods/fae_sorceress/enfeebling_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.EnfeeblingPower",
+      "Title": "Enfeebling Strike",
+      "Aliases": [
+        "衰えすとらいく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-ENFEEBLING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 231006,
+      "Name": "fae_sorceress_fae_form_power_power",
+      "AssetName": "mods/fae_sorceress/fae_form_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.FaeFormPower",
+      "Title": "Fae Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-FAE_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231007,
+      "Name": "fae_sorceress_fairynext_power_power",
+      "AssetName": "mods/fae_sorceress/fairynext_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.FairynextPower",
+      "Title": "Latent Fae",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-FAIRYNEXT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231008,
+      "Name": "fae_sorceress_fairy_power_power",
+      "AssetName": "mods/fae_sorceress/fairy_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.FairyPower",
+      "Title": "Fairy Power",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-FAIRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231009,
+      "Name": "fae_sorceress_fleeting_beauty_power_power",
+      "AssetName": "mods/fae_sorceress/fleeting_beauty_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.FleetingBeautyPower",
+      "Title": "Fleeting Beauty",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-FLEETING_BEAUTY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231010,
+      "Name": "fae_sorceress_illusory_power_power",
+      "AssetName": "mods/fae_sorceress/illusory_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.IllusoryPower",
+      "Title": "Illusory Veil",
+      "Aliases": [
+        "幻想ヴぇーる"
+      ],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-ILLUSORY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231011,
+      "Name": "fae_sorceress_imaginatory_power_power",
+      "AssetName": "mods/fae_sorceress/imaginatory_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.ImaginatoryPower",
+      "Title": "Imaginatory",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-IMAGINATORY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231012,
+      "Name": "fae_sorceress_magicinthe_air_power_power",
+      "AssetName": "mods/fae_sorceress/magicinthe_air_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.MagicintheAirPower",
+      "Title": "Magic in the Air",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-MAGICINTHE_AIR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231013,
+      "Name": "fae_sorceress_paradox_power_power",
+      "AssetName": "mods/fae_sorceress/paradox_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.ParadoxPower",
+      "Title": "Illusion Of Choice",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-PARADOX_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231014,
+      "Name": "fae_sorceress_prickly_power_power",
+      "AssetName": "mods/fae_sorceress/prickly_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.PricklyPower",
+      "Title": "Prickly",
+      "Aliases": [
+        "ちくちく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-PRICKLY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231015,
+      "Name": "fae_sorceress_resplendence_power_power",
+      "AssetName": "mods/fae_sorceress/resplendence_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.ResplendencePower",
+      "Title": "Resplendence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-RESPLENDENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231016,
+      "Name": "fae_sorceress_shrinked_power_power",
+      "AssetName": "mods/fae_sorceress/shrinked_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.ShrinkedPower",
+      "Title": "Shrink",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-SHRINKED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231017,
+      "Name": "fae_sorceress_spark_attack_power_power",
+      "AssetName": "mods/fae_sorceress/spark_attack_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.SparkAttackPower",
+      "Title": "Spark of Life",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-SPARK_ATTACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231018,
+      "Name": "fae_sorceress_spark_skill_power_power",
+      "AssetName": "mods/fae_sorceress/spark_skill_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.SparkSkillPower",
+      "Title": "Spark of Life",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-SPARK_SKILL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231019,
+      "Name": "fae_sorceress_synesthesia_power_power",
+      "AssetName": "mods/fae_sorceress/synesthesia_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.SynesthesiaPower",
+      "Title": "Synesthesia",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-SYNESTHESIA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231020,
+      "Name": "fae_sorceress_temp_fairy_power_power",
+      "AssetName": "mods/fae_sorceress/temp_fairy_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.TempFairyPower",
+      "Title": "Temporary Fairy Power",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-TEMP_FAIRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231021,
+      "Name": "fae_sorceress_thistleguard_power_power",
+      "AssetName": "mods/fae_sorceress/thistleguard_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.ThistleguardPower",
+      "Title": "Thistleguard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-THISTLEGUARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231022,
+      "Name": "fae_sorceress_transience_power_power",
+      "AssetName": "mods/fae_sorceress/transience_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.TransiencePower",
+      "Title": "Transience",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-TRANSIENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 231023,
+      "Name": "fae_sorceress_tremendo_power_power",
+      "AssetName": "mods/fae_sorceress/tremendo_power",
+      "Category": "Power",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Powers.TremendoPower",
+      "Title": "Tremendo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FAESORCERESS-TREMENDO_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "FaeSorceress.FaeSorceressCode.Powers.WildGrowthPower"
+      ]
+    },
+    {
+      "Id": 235000,
+      "Name": "fae_sorceress_fae_sorceress_character",
+      "AssetName": "mods/fae_sorceress/fae_sorceress",
+      "Category": "Character",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Character.FaeSorceress",
+      "Title": "The Fae Sorceress",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "FAESORCERESS-FAE_SORCERESS.title"
+    },
+    {
+      "Id": 232009,
+      "Name": "fae_sorceress_fae_sorceress_yummy_cookie_relic",
+      "AssetName": "mods/fae_sorceress/fae_sorceress/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "FaeSorceress",
+      "TypeName": "FaeSorceress.FaeSorceressCode.Character.FaeSorceress",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

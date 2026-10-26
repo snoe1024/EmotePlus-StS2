@@ -1,0 +1,1715 @@
+{
+  "Key": "winefox",
+  "ModIds": [
+    "STS2_WineFox"
+  ],
+  "Name": "酒狐",
+  "WorkshopId": "3747599967",
+  "Aliases": [
+    "STS2_WineFox"
+  ],
+  "Entries": [
+    {
+      "Id": 152000,
+      "Name": "winefox_bonus_chest_relic",
+      "AssetName": "mods/winefox/bonus_chest",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.BonusChest",
+      "Title": "Bonus Chest",
+      "Aliases": [
+        "ぼーなすちぇすと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_BONUS_CHEST.title"
+    },
+    {
+      "Id": 152001,
+      "Name": "winefox_cat_bomb_relic",
+      "AssetName": "mods/winefox/cat_bomb",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.CatBomb",
+      "Title": "Cat Bomb",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_CAT_BOMB.title"
+    },
+    {
+      "Id": 152002,
+      "Name": "winefox_creative_motor_relic",
+      "AssetName": "mods/winefox/creative_motor",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.CreativeMotor",
+      "Title": "Creative Motor",
+      "Aliases": [
+        "創造もーたー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_CREATIVE_MOTOR.title"
+    },
+    {
+      "Id": 152003,
+      "Name": "winefox_deployer_relic",
+      "AssetName": "mods/winefox/deployer",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Deployer",
+      "Title": "Deployer",
+      "Aliases": [
+        "でぷろいやー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_DEPLOYER.title"
+    },
+    {
+      "Id": 152004,
+      "Name": "winefox_hand_crank_relic",
+      "AssetName": "mods/winefox/hand_crank",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.HandCrank",
+      "Title": "Hand Crank",
+      "Aliases": [
+        "手回しくらんく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_HAND_CRANK.title"
+    },
+    {
+      "Id": 152005,
+      "Name": "winefox_maid_backpack_relic",
+      "AssetName": "mods/winefox/maid_backpack",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.MaidBackpack",
+      "Title": "Maid's Backpack",
+      "Aliases": [
+        "めいどのばっくぱっく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_MAID_BACKPACK.title"
+    },
+    {
+      "Id": 152006,
+      "Name": "winefox_maid_beacon_relic",
+      "AssetName": "mods/winefox/maid_beacon",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.MaidBeacon",
+      "Title": "Shrine Lantern",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_MAID_BEACON.title"
+    },
+    {
+      "Id": 152007,
+      "Name": "winefox_nimble_fabric_relic",
+      "AssetName": "mods/winefox/nimble_fabric",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.NimbleFabric",
+      "Title": "Nimble Fabric",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_NIMBLE_FABRIC.title"
+    },
+    {
+      "Id": 152008,
+      "Name": "winefox_oily_bean_curd_relic",
+      "AssetName": "mods/winefox/oily_bean_curd",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.OilyBeanCurd",
+      "Title": "Oily Bean Curd",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_OILY_BEAN_CURD.title"
+    },
+    {
+      "Id": 152009,
+      "Name": "winefox_orange_tiger_cake_relic",
+      "AssetName": "mods/winefox/orange_tiger_cake",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.OrangeTigerCake",
+      "Title": "Orange Tiger Cake Roll",
+      "Aliases": [
+        "おれんじ虎柄ろーるけーき"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_ORANGE_TIGER_CAKE.title"
+    },
+    {
+      "Id": 152010,
+      "Name": "winefox_shrine_relic",
+      "AssetName": "mods/winefox/shrine",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Shrine",
+      "Title": "Shrine",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_SHRINE.title"
+    },
+    {
+      "Id": 152011,
+      "Name": "winefox_sophisticated_backpack_relic",
+      "AssetName": "mods/winefox/sophisticated_backpack",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.SophisticatedBackpack",
+      "Title": "Sophisticated Backpack",
+      "Aliases": [
+        "精巧なばっくぱっく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_SOPHISTICATED_BACKPACK.title"
+    },
+    {
+      "Id": 152012,
+      "Name": "winefox_totemof_undying_relic",
+      "AssetName": "mods/winefox/totemof_undying",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.TotemofUndying",
+      "Title": "Totem of Undying",
+      "Aliases": [
+        "不死のとーてむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_TOTEMOF_UNDYING.title"
+    },
+    {
+      "Id": 152013,
+      "Name": "winefox_anchor_core_relic",
+      "AssetName": "mods/winefox/anchor_core",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Event.AnchorCore",
+      "Title": "Anchor Core",
+      "Aliases": [
+        "あんかーこあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_ANCHOR_CORE.title"
+    },
+    {
+      "Id": 152014,
+      "Name": "winefox_bleeding_heart_relic",
+      "AssetName": "mods/winefox/bleeding_heart",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Event.BleedingHeart",
+      "Title": "Bleeding Heart",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_BLEEDING_HEART.title"
+    },
+    {
+      "Id": 152015,
+      "Name": "winefox_flow_core_relic",
+      "AssetName": "mods/winefox/flow_core",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Event.FlowCore",
+      "Title": "Flow Core",
+      "Aliases": [
+        "流転のこあ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_FLOW_CORE.title"
+    },
+    {
+      "Id": 152016,
+      "Name": "winefox_ringof_burning_blood_relic",
+      "AssetName": "mods/winefox/ringof_burning_blood",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Event.RingofBurningBlood",
+      "Title": "Ring of Burning Blood",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_RINGOF_BURNING_BLOOD.title"
+    },
+    {
+      "Id": 152017,
+      "Name": "winefox_silver_cercis_crown_relic",
+      "AssetName": "mods/winefox/silver_cercis_crown",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Event.SilverCercisCrown",
+      "Title": "Silver Cercis Crown",
+      "Aliases": [
+        "銀のはなずおう冠"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_SILVER_CERCIS_CROWN.title"
+    },
+    {
+      "Id": 152018,
+      "Name": "winefox_wound_rime_blade_relic",
+      "AssetName": "mods/winefox/wound_rime_blade",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Event.WoundRimeBlade",
+      "Title": "Wound-Rime Blade",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_WOUND_RIME_BLADE.title"
+    },
+    {
+      "Id": 151000,
+      "Name": "winefox_anticipate_advantage_dex_power_power",
+      "AssetName": "mods/winefox/anticipate_advantage_dex_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.AnticipateAdvantageDexPower",
+      "Title": "Anticipate Advantage",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "STS2_WINE_FOX_CARD_ANTICIPATE_ADVANTAGE.title"
+    },
+    {
+      "Id": 151001,
+      "Name": "winefox_arm_to_teeth_power_power",
+      "AssetName": "mods/winefox/arm_to_teeth_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ArmToTeethPower",
+      "Title": "Arm To Teeth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_ARM_TO_TEETH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151002,
+      "Name": "winefox_auto_crafter_power_power",
+      "AssetName": "mods/winefox/auto_crafter_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.AutoCrafterPower",
+      "Title": "Auto Crafter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_AUTO_CRAFTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151003,
+      "Name": "winefox_brush_stone_form_power_power",
+      "AssetName": "mods/winefox/brush_stone_form_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.BrushStoneFormPower",
+      "Title": "Brush Stone Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_BRUSH_STONE_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151004,
+      "Name": "winefox_burning_power_power",
+      "AssetName": "mods/winefox/burning_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.BurningPower",
+      "Title": "Burning",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_BURNING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151005,
+      "Name": "winefox_chant_power_power",
+      "AssetName": "mods/winefox/chant_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ChantPower",
+      "Title": "Chant",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_CHANT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151006,
+      "Name": "winefox_collaborative_mining_power_power",
+      "AssetName": "mods/winefox/collaborative_mining_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.CollaborativeMiningPower",
+      "Title": "Collaborative Mining",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_COLLABORATIVE_MINING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151007,
+      "Name": "winefox_crafting_storage_power_power",
+      "AssetName": "mods/winefox/crafting_storage_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.CraftingStoragePower",
+      "Title": "Crafting Storage",
+      "Aliases": [
+        "くらふとすとれーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_CRAFTING_STORAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151008,
+      "Name": "winefox_diamond_armor_power_power",
+      "AssetName": "mods/winefox/diamond_armor_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.DiamondArmorPower",
+      "Title": "Equipment: Diamond Armor",
+      "Aliases": [
+        "装備：だいやもんどの鎧"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_DIAMOND_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151009,
+      "Name": "winefox_diamond_pickaxe_power_power",
+      "AssetName": "mods/winefox/diamond_pickaxe_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.DiamondPickaxePower",
+      "Title": "Tool: Diamond Pickaxe",
+      "Aliases": [
+        "道具：だいやもんどのつるはし"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_DIAMOND_PICKAXE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151010,
+      "Name": "winefox_diamond_sword_power_power",
+      "AssetName": "mods/winefox/diamond_sword_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.DiamondSwordPower",
+      "Title": "Weapon: Diamond Sword",
+      "Aliases": [
+        "武器：だいやもんどの剣"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_DIAMOND_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151011,
+      "Name": "winefox_digging_power_power",
+      "AssetName": "mods/winefox/digging_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.DiggingPower",
+      "Title": "Tool: Stone Pickaxe",
+      "Aliases": [
+        "道具：石のつるはし"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_DIGGING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151012,
+      "Name": "winefox_easy_peasy_power_power",
+      "AssetName": "mods/winefox/easy_peasy_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.EasyPeasyPower",
+      "Title": "Nuclear Power? Easy Peasy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_EASY_PEASY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151013,
+      "Name": "winefox_eternal_melody_plus_power_power",
+      "AssetName": "mods/winefox/eternal_melody_plus_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.EternalMelodyPlusPower",
+      "Title": "Eternal Melody+",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_ETERNAL_MELODY_PLUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "STS2_WineFox.Powers.EternalMelodyRetentionPower"
+      ]
+    },
+    {
+      "Id": 151014,
+      "Name": "winefox_fine_processing_power_power",
+      "AssetName": "mods/winefox/fine_processing_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.FineProcessingPower",
+      "Title": "Fine Processing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_FINE_PROCESSING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151015,
+      "Name": "winefox_golden_armor_power_power",
+      "AssetName": "mods/winefox/golden_armor_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.GoldenArmorPower",
+      "Title": "Equipment: Golden Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_GOLDEN_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151016,
+      "Name": "winefox_golden_pickaxe_power_power",
+      "AssetName": "mods/winefox/golden_pickaxe_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.GoldenPickaxePower",
+      "Title": "Tool: Golden Pickaxe",
+      "Aliases": [
+        "道具：金のつるはし"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_GOLDEN_PICKAXE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151017,
+      "Name": "winefox_golden_sword_power_power",
+      "AssetName": "mods/winefox/golden_sword_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.GoldenSwordPower",
+      "Title": "Weapon: Golden Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_GOLDEN_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151018,
+      "Name": "winefox_highly_focused_power_power",
+      "AssetName": "mods/winefox/highly_focused_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.HighlyFocusedPower",
+      "Title": "Highly Focused",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "STS2_WINE_FOX_CARD_HIGHLY_FOCUSED.title",
+      "TypeAliases": [
+        "STS2_WineFox.Powers.HighlyFocusedTrackerPower"
+      ],
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151019,
+      "Name": "winefox_hoarding_habit_power_power",
+      "AssetName": "mods/winefox/hoarding_habit_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.HoardingHabitPower",
+      "Title": "Hoarding Habit",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_HOARDING_HABIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151020,
+      "Name": "winefox_hp_loss_reduction_power_power",
+      "AssetName": "mods/winefox/hp_loss_reduction_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.HpLossReductionPower",
+      "Title": "Enchanted Golden Apple",
+      "Aliases": [
+        "えんちゃんとされた金のりんご"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_HP_LOSS_REDUCTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151021,
+      "Name": "winefox_infested_power_power",
+      "AssetName": "mods/winefox/infested_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.InfestedPower",
+      "Title": "Infested",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_INFESTED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151022,
+      "Name": "winefox_iron_armor_power_power",
+      "AssetName": "mods/winefox/iron_armor_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.IronArmorPower",
+      "Title": "Equipment: Iron Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_IRON_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151023,
+      "Name": "winefox_iron_pickaxe_power_power",
+      "AssetName": "mods/winefox/iron_pickaxe_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.IronPickaxePower",
+      "Title": "Tool: Iron Pickaxe",
+      "Aliases": [
+        "道具：鉄のつるはし",
+        "道具：鉄のつるはし+"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_IRON_PICKAXE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "STS2_WineFox.Powers.IronPickaxePowerUpgraded"
+      ]
+    },
+    {
+      "Id": 151024,
+      "Name": "winefox_iron_sword_power_power",
+      "AssetName": "mods/winefox/iron_sword_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.IronSwordPower",
+      "Title": "Weapon: Iron Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_IRON_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151025,
+      "Name": "winefox_launch_platform_power_power",
+      "AssetName": "mods/winefox/launch_platform_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.LaunchPlatformPower",
+      "Title": "Launch Platform",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_LAUNCH_PLATFORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151026,
+      "Name": "winefox_liberation_power_power",
+      "AssetName": "mods/winefox/liberation_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.LiberationPower",
+      "Title": "Liberation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_LIBERATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151027,
+      "Name": "winefox_magic_overloaded_power_power",
+      "AssetName": "mods/winefox/magic_overloaded_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.MagicOverloadedPower",
+      "Title": "Magic Overloaded",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_MAGIC_OVERLOADED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151028,
+      "Name": "winefox_mass_production_power_power",
+      "AssetName": "mods/winefox/mass_production_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.MassProductionPower",
+      "Title": "Mass Production",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_MASS_PRODUCTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151029,
+      "Name": "winefox_memory_power_power",
+      "AssetName": "mods/winefox/memory_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.MemoryPower",
+      "Title": "Memory",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_MEMORY_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "STS2_WineFox.Powers.MemoryPowerUpgraded"
+      ]
+    },
+    {
+      "Id": 151030,
+      "Name": "winefox_netherite_chest_plate_power_power",
+      "AssetName": "mods/winefox/netherite_chest_plate_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.NetheriteChestPlatePower",
+      "Title": "Equipment: Netherite Chestplate",
+      "Aliases": [
+        "装備：ねざらいとの胸当て"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_NETHERITE_CHEST_PLATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151031,
+      "Name": "winefox_netherite_pickaxe_power_power",
+      "AssetName": "mods/winefox/netherite_pickaxe_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.NetheritePickaxePower",
+      "Title": "Tool: Netherite Pickaxe",
+      "Aliases": [
+        "道具：ねざらいとのつるはし"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_NETHERITE_PICKAXE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151032,
+      "Name": "winefox_nothing_wasted_power_power",
+      "AssetName": "mods/winefox/nothing_wasted_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.NothingWastedPower",
+      "Title": "Nothing Wasted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_NOTHING_WASTED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151033,
+      "Name": "winefox_oozing_power_power",
+      "AssetName": "mods/winefox/oozing_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.OozingPower",
+      "Title": "Oozing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_OOZING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151034,
+      "Name": "winefox_otherworld_crossing_power_power",
+      "AssetName": "mods/winefox/otherworld_crossing_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.OtherworldCrossingPower",
+      "Title": "Otherworld Crossing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_OTHERWORLD_CROSSING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151035,
+      "Name": "winefox_planning_expert_power_power",
+      "AssetName": "mods/winefox/planning_expert_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.PlanningExpertPower",
+      "Title": "Planning Expert",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_PLANNING_EXPERT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151036,
+      "Name": "winefox_plant_power_power",
+      "AssetName": "mods/winefox/plant_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.PlantPower",
+      "Title": "Planting",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_PLANT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151037,
+      "Name": "winefox_portable_workbench_power_power",
+      "AssetName": "mods/winefox/portable_workbench_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.PortableWorkbenchPower",
+      "Title": "Portable Workbench",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_PORTABLE_WORKBENCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151038,
+      "Name": "winefox_production_document_power_power",
+      "AssetName": "mods/winefox/production_document_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ProductionDocumentPower",
+      "Title": "Production Log",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_PRODUCTION_DOCUMENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151039,
+      "Name": "winefox_radiation_leak_power_power",
+      "AssetName": "mods/winefox/radiation_leak_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.RadiationLeakPower",
+      "Title": "This Is Bad",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_RADIATION_LEAK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151040,
+      "Name": "winefox_repair_power_power",
+      "AssetName": "mods/winefox/repair_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.RepairPower",
+      "Title": "Repair",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_REPAIR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151041,
+      "Name": "winefox_scrap_recycling_power_power",
+      "AssetName": "mods/winefox/scrap_recycling_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ScrapRecyclingPower",
+      "Title": "Scrap Recycling",
+      "Aliases": [
+        "すくらっぷ再利用"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_SCRAP_RECYCLING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151042,
+      "Name": "winefox_shard_copy_power_power",
+      "AssetName": "mods/winefox/shard_copy_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ShardCopyPower",
+      "Title": "Mind Over Matter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_SHARD_COPY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151043,
+      "Name": "winefox_shield_cooldown_power_power",
+      "AssetName": "mods/winefox/shield_cooldown_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ShieldCooldownPower",
+      "Title": "Shield Cooldown",
+      "Aliases": [
+        "盾のくーるだうん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_SHIELD_COOLDOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151044,
+      "Name": "winefox_shield_dex_power_power",
+      "AssetName": "mods/winefox/shield_dex_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.ShieldDexPower",
+      "Title": "Shield",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "STS2_WINE_FOX_CARD_SHIELD.title"
+    },
+    {
+      "Id": 151045,
+      "Name": "winefox_slash_blade_wood_power_power",
+      "AssetName": "mods/winefox/slash_blade_wood_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.SlashBladeWoodPower",
+      "Title": "Slash Blade: Nameless Blade \"Wooden Puppet\"",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_SLASH_BLADE_WOOD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151046,
+      "Name": "winefox_snow_ball_overwhelming_power_power",
+      "AssetName": "mods/winefox/snow_ball_overwhelming_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.SnowBallOverwhelmingPower",
+      "Title": "Snowball to the Face",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_SNOW_BALL_OVERWHELMING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151047,
+      "Name": "winefox_spirit_fox_form_power_power",
+      "AssetName": "mods/winefox/spirit_fox_form_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.SpiritFoxFormPower",
+      "Title": "Spirit Fox Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_SPIRIT_FOX_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151048,
+      "Name": "winefox_steam_power_power",
+      "AssetName": "mods/winefox/steam_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.SteamPower",
+      "Title": "Steam",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_STEAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151049,
+      "Name": "winefox_stone_armor_power_power",
+      "AssetName": "mods/winefox/stone_armor_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.StoneArmorPower",
+      "Title": "Equipment: Stone Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_STONE_ARMOR_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151050,
+      "Name": "winefox_stone_sword_power_power",
+      "AssetName": "mods/winefox/stone_sword_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.StoneSwordPower",
+      "Title": "Weapon: Stone Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_STONE_SWORD_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151051,
+      "Name": "winefox_stress_power_power",
+      "AssetName": "mods/winefox/stress_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.StressPower",
+      "Title": "Stress",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_STRESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151052,
+      "Name": "winefox_tracking_power_power",
+      "AssetName": "mods/winefox/tracking_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.TrackingPower",
+      "Title": "Tracking",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_TRACKING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151053,
+      "Name": "winefox_turtle_master_power_power",
+      "AssetName": "mods/winefox/turtle_master_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.TurtleMasterPower",
+      "Title": "Resistance Boost",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_TURTLE_MASTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 151054,
+      "Name": "winefox_weaving_power_power",
+      "AssetName": "mods/winefox/weaving_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.WeavingPower",
+      "Title": "Weaving",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_WEAVING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151055,
+      "Name": "winefox_wind_charged_power_power",
+      "AssetName": "mods/winefox/wind_charged_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.WindChargedPower",
+      "Title": "Wind Charged",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_WIND_CHARGED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 151056,
+      "Name": "winefox_wooden_sword_power_power",
+      "AssetName": "mods/winefox/wooden_sword_power",
+      "Category": "Power",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Powers.WoodenSwordPower",
+      "Title": "Weapon: Wooden Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "STS2_WINE_FOX_POWER_WOODEN_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 154000,
+      "Name": "winefox_fire_resistance_potion_potion",
+      "AssetName": "mods/winefox/fire_resistance_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.FireResistancePotion",
+      "Title": "Fire Resistance Potion",
+      "Aliases": [
+        "耐火のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_FIRE_RESISTANCE_POTION.title"
+    },
+    {
+      "Id": 154001,
+      "Name": "winefox_apple_potion",
+      "AssetName": "mods/winefox/apple",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Apple",
+      "Title": "Apple",
+      "Aliases": [
+        "りんご"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_APPLE.title"
+    },
+    {
+      "Id": 154002,
+      "Name": "winefox_baked_potato_potion",
+      "AssetName": "mods/winefox/baked_potato",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.BakedPotato",
+      "Title": "Baked Potato",
+      "Aliases": [
+        "べいくどぽてと"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_BAKED_POTATO.title"
+    },
+    {
+      "Id": 154003,
+      "Name": "winefox_beet_potion",
+      "AssetName": "mods/winefox/beet",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Beet",
+      "Title": "Beet",
+      "Aliases": [
+        "びーとるーと"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_BEET.title"
+    },
+    {
+      "Id": 154004,
+      "Name": "winefox_beet_soup_potion",
+      "AssetName": "mods/winefox/beet_soup",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.BeetSoup",
+      "Title": "Beet Soup",
+      "Aliases": [
+        "びーとすーぷ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_BEET_SOUP.title"
+    },
+    {
+      "Id": 154005,
+      "Name": "winefox_bread_potion",
+      "AssetName": "mods/winefox/bread",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Bread",
+      "Title": "Bread",
+      "Aliases": [
+        "ぱん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_BREAD.title"
+    },
+    {
+      "Id": 154006,
+      "Name": "winefox_cake_potion",
+      "AssetName": "mods/winefox/cake",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Cake",
+      "Title": "Cake",
+      "Aliases": [
+        "けーき"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_CAKE.title"
+    },
+    {
+      "Id": 154007,
+      "Name": "winefox_carrot_potion",
+      "AssetName": "mods/winefox/carrot",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Carrot",
+      "Title": "Carrot",
+      "Aliases": [
+        "にんじん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_CARROT.title"
+    },
+    {
+      "Id": 154008,
+      "Name": "winefox_chorus_fruit_potion",
+      "AssetName": "mods/winefox/chorus_fruit",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.ChorusFruit",
+      "Title": "Chorus Fruit",
+      "Aliases": [
+        "こーらすふるーつ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_CHORUS_FRUIT.title"
+    },
+    {
+      "Id": 154009,
+      "Name": "winefox_cookie_potion",
+      "AssetName": "mods/winefox/cookie",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Cookie",
+      "Title": "Cookie",
+      "Aliases": [
+        "くっきー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_COOKIE.title"
+    },
+    {
+      "Id": 154010,
+      "Name": "winefox_enchanted_golden_apple_potion",
+      "AssetName": "mods/winefox/enchanted_golden_apple",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.EnchantedGoldenApple",
+      "Title": "Enchanted Golden Apple",
+      "Aliases": [
+        "えんちゃんとされた金のりんご"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_ENCHANTED_GOLDEN_APPLE.title"
+    },
+    {
+      "Id": 154011,
+      "Name": "winefox_glistering_melon_potion",
+      "AssetName": "mods/winefox/glistering_melon",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.GlisteringMelon",
+      "Title": "Glistering Melon",
+      "Aliases": [
+        "きらめくすいか"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_GLISTERING_MELON.title"
+    },
+    {
+      "Id": 154012,
+      "Name": "winefox_glow_berries_potion",
+      "AssetName": "mods/winefox/glow_berries",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.GlowBerries",
+      "Title": "Glow Berries",
+      "Aliases": [
+        "ぐろうべりー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_GLOW_BERRIES.title"
+    },
+    {
+      "Id": 154013,
+      "Name": "winefox_golden_apple_potion",
+      "AssetName": "mods/winefox/golden_apple",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.GoldenApple",
+      "Title": "Golden Apple",
+      "Aliases": [
+        "金のりんご"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_GOLDEN_APPLE.title"
+    },
+    {
+      "Id": 154014,
+      "Name": "winefox_golden_carrot_potion",
+      "AssetName": "mods/winefox/golden_carrot",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.GoldenCarrot",
+      "Title": "Golden Carrot",
+      "Aliases": [
+        "金のにんじん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_GOLDEN_CARROT.title"
+    },
+    {
+      "Id": 154015,
+      "Name": "winefox_golden_sweet_berries_potion",
+      "AssetName": "mods/winefox/golden_sweet_berries",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.GoldenSweetBerries",
+      "Title": "Golden Sweet Berries",
+      "Aliases": [
+        "金のすいーとべりー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_GOLDEN_SWEET_BERRIES.title"
+    },
+    {
+      "Id": 154016,
+      "Name": "winefox_mushroom_potion",
+      "AssetName": "mods/winefox/mushroom",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Mushroom",
+      "Title": "Mushroom",
+      "Aliases": [
+        "きのこ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_MUSHROOM.title"
+    },
+    {
+      "Id": 154017,
+      "Name": "winefox_mushroom_stew_potion",
+      "AssetName": "mods/winefox/mushroom_stew",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.MushroomStew",
+      "Title": "Mushroom Stew",
+      "Aliases": [
+        "きのこしちゅー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_MUSHROOM_STEW.title"
+    },
+    {
+      "Id": 154018,
+      "Name": "winefox_potato_potion",
+      "AssetName": "mods/winefox/potato",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Potato",
+      "Title": "Potato",
+      "Aliases": [
+        "じゃがいも"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_POTATO.title"
+    },
+    {
+      "Id": 154019,
+      "Name": "winefox_pumpkin_potion",
+      "AssetName": "mods/winefox/pumpkin",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Pumpkin",
+      "Title": "Pumpkin",
+      "Aliases": [
+        "かぼちゃ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_PUMPKIN.title"
+    },
+    {
+      "Id": 154020,
+      "Name": "winefox_pumpkin_pie_potion",
+      "AssetName": "mods/winefox/pumpkin_pie",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.PumpkinPie",
+      "Title": "Pumpkin Pie",
+      "Aliases": [
+        "ぱんぷきんぱい"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_PUMPKIN_PIE.title"
+    },
+    {
+      "Id": 154021,
+      "Name": "winefox_smoked_carrot_potion",
+      "AssetName": "mods/winefox/smoked_carrot",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.SmokedCarrot",
+      "Title": "Smoked Carrot",
+      "Aliases": [
+        "燻製にんじん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_SMOKED_CARROT.title"
+    },
+    {
+      "Id": 154022,
+      "Name": "winefox_sweet_berries_potion",
+      "AssetName": "mods/winefox/sweet_berries",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.SweetBerries",
+      "Title": "Sweet Berries",
+      "Aliases": [
+        "すいーとべりー"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_SWEET_BERRIES.title"
+    },
+    {
+      "Id": 154023,
+      "Name": "winefox_watermelon_potion",
+      "AssetName": "mods/winefox/watermelon",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Watermelon",
+      "Title": "Watermelon",
+      "Aliases": [
+        "すいか"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_WATERMELON.title"
+    },
+    {
+      "Id": 154024,
+      "Name": "winefox_wheat_potion",
+      "AssetName": "mods/winefox/wheat",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.Wheat",
+      "Title": "Wheat",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_WHEAT.title"
+    },
+    {
+      "Id": 154025,
+      "Name": "winefox_harming_potion_potion",
+      "AssetName": "mods/winefox/harming_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.HarmingPotion",
+      "Title": "Harming Potion",
+      "Aliases": [
+        "負傷のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_HARMING_POTION.title"
+    },
+    {
+      "Id": 154026,
+      "Name": "winefox_healing_potion_potion",
+      "AssetName": "mods/winefox/healing_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.HealingPotion",
+      "Title": "Healing Potion",
+      "Aliases": [
+        "治癒のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_HEALING_POTION.title"
+    },
+    {
+      "Id": 154027,
+      "Name": "winefox_infested_potion_potion",
+      "AssetName": "mods/winefox/infested_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.InfestedPotion",
+      "Title": "Infested Potion",
+      "Aliases": [
+        "寄生のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_INFESTED_POTION.title"
+    },
+    {
+      "Id": 154028,
+      "Name": "winefox_invisibility_potion_potion",
+      "AssetName": "mods/winefox/invisibility_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.InvisibilityPotion",
+      "Title": "Invisibility Potion",
+      "Aliases": [
+        "透明化のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_INVISIBILITY_POTION.title"
+    },
+    {
+      "Id": 154029,
+      "Name": "winefox_oozing_potion_potion",
+      "AssetName": "mods/winefox/oozing_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.OozingPotion",
+      "Title": "Oozing Potion",
+      "Aliases": [
+        "滲出のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_OOZING_POTION.title"
+    },
+    {
+      "Id": 154030,
+      "Name": "winefox_poison_potion_potion",
+      "AssetName": "mods/winefox/poison_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.PoisonPotion",
+      "Title": "Poison Potion",
+      "Aliases": [
+        "毒のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_POISON_POTION.title"
+    },
+    {
+      "Id": 154031,
+      "Name": "winefox_slowness_potion_potion",
+      "AssetName": "mods/winefox/slowness_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.SlownessPotion",
+      "Title": "Slowness Potion",
+      "Aliases": [
+        "鈍化のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_SLOWNESS_POTION.title"
+    },
+    {
+      "Id": 154032,
+      "Name": "winefox_stress_potion_potion",
+      "AssetName": "mods/winefox/stress_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.StressPotion",
+      "Title": "Stress Potion",
+      "Aliases": [
+        "すとれすのぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_STRESS_POTION.title"
+    },
+    {
+      "Id": 154033,
+      "Name": "winefox_turtle_master_potion_potion",
+      "AssetName": "mods/winefox/turtle_master_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.TurtleMasterPotion",
+      "Title": "Turtle Master Potion",
+      "Aliases": [
+        "たーとるますたーのぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_TURTLE_MASTER_POTION.title"
+    },
+    {
+      "Id": 154034,
+      "Name": "winefox_weaving_potion_potion",
+      "AssetName": "mods/winefox/weaving_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.WeavingPotion",
+      "Title": "Weaving Potion",
+      "Aliases": [
+        "織糸のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_WEAVING_POTION.title"
+    },
+    {
+      "Id": 154035,
+      "Name": "winefox_wind_charged_potion_potion",
+      "AssetName": "mods/winefox/wind_charged_potion",
+      "Category": "Potion",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Potions.WindChargedPotion",
+      "Title": "Wind Charged Potion",
+      "Aliases": [
+        "蓄風のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "STS2_WINE_FOX_POTION_WIND_CHARGED_POTION.title"
+    },
+    {
+      "Id": 153000,
+      "Name": "winefox_fire_aspect_enchantment",
+      "AssetName": "mods/winefox/fire_aspect",
+      "Category": "Enchantment",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Enchantments.FireAspect",
+      "Title": "Fire Aspect",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "STS2_WINE_FOX_ENCHANTMENT_FIRE_ASPECT.title"
+    },
+    {
+      "Id": 153001,
+      "Name": "winefox_sweeping_edge_enchantment",
+      "AssetName": "mods/winefox/sweeping_edge",
+      "Category": "Enchantment",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Enchantments.SweepingEdge",
+      "Title": "Sweeping Edge",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "STS2_WINE_FOX_ENCHANTMENT_SWEEPING_EDGE.title"
+    },
+    {
+      "Id": 152019,
+      "Name": "winefox_elytra_relic",
+      "AssetName": "mods/winefox/elytra",
+      "Category": "Relic",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Relics.Elytra",
+      "Title": "Elytra",
+      "Aliases": [
+        "えりとら"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STS2_WINE_FOX_RELIC_ELYTRA.title"
+    },
+    {
+      "Id": 155000,
+      "Name": "winefox_magic_wine_fox_character",
+      "AssetName": "mods/winefox/magic_wine_fox",
+      "Category": "Character",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Character.MagicWineFox",
+      "Title": "Magic Wine Fox",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "STS2_WINE_FOX_CHARACTER_MAGIC_WINE_FOX.title",
+      "CookieEmoteId": 2319
+    },
+    {
+      "Id": 155001,
+      "Name": "winefox_wine_fox_character",
+      "AssetName": "mods/winefox/wine_fox",
+      "Category": "Character",
+      "Assembly": "STS2_WineFox",
+      "TypeName": "STS2_WineFox.Character.WineFox",
+      "Title": "Wine Fox",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "STS2_WINE_FOX_CHARACTER_WINE_FOX.title",
+      "CookieEmoteId": 2319
+    }
+  ]
+}

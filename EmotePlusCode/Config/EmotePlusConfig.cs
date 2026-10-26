@@ -201,7 +201,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
         filters.AddChild(tagFlow);
         var contentMods = ModdedEmotes.Groups
             .Where(g => g.Entries.Any(e => ModdedEmotes.IsAvailable((EmoteType)e.Id)))
-            .OrderBy(g => g.Name, StringComparer.CurrentCultureIgnoreCase).ToArray();
+            .OrderBy(g => g.LocalizedName, StringComparer.CurrentCultureIgnoreCase).ToArray();
         var contentFilter = new OptionButton
         {
             SizeFlagsHorizontal = Control.SizeFlags.ExpandFill,
@@ -209,7 +209,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
         };
         contentFilter.AddItem(GetLabelText("AllContent"));
         contentFilter.AddItem(GetLabelText("VanillaContent"));
-        foreach (var mod in contentMods) contentFilter.AddItem(mod.Name);
+        foreach (var mod in contentMods) contentFilter.AddItem(mod.LocalizedName);
         contentFilter.Select(0);
         AttachTip(contentFilter, "ContentModFilter");
         filters.AddChild(new Label { Text = GetLabelText("ContentModFilter") });

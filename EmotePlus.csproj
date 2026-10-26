@@ -47,6 +47,8 @@
     </ItemGroup>
 
     <ItemGroup>
+        <!-- Godot relocates its intermediate directory; root obj may still contain investigation sources. -->
+        <Compile Remove="obj/**"/>
         <Compile Remove="EmotePlus/**"/>
         <Compile Remove="materials/**"/>
         <Compile Remove="shaders/**"/>

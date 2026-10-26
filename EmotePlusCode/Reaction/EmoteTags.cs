@@ -15,8 +15,6 @@ internal static class EmoteTags
             [EmoteType.ThumbUp] = ["Communicate"],
             [EmoteType.HappyCultist] = ["Meme"],
             [EmoteType.Gold] = ["Communicate"],
-            [EmoteType.MemeRip] = ["Meme"],
-            [EmoteType.MemeDevotion] = ["Communicate", "Meme"],
             
             [EmoteType.PowerCurious] = ["Communicate"],
             [EmoteType.PowerEnrage] = ["Communicate"],
@@ -30,13 +28,15 @@ internal static class EmoteTags
             
             [EmoteType.RelicByrdpip] = ["Creature"],
             [EmoteType.RelicPaelsLegion] = ["Creature"],
+            
+            // DO NOT DELETE: modded character's cookie has different route to add Character tag.
             [EmoteType.RelicYummyCookieDefect] = ["Character"],
             [EmoteType.RelicYummyCookieIronclad] = ["Character"],
             [EmoteType.RelicYummyCookieNecro] = ["Character"],
             [EmoteType.RelicYummyCookieRegent] = ["Character"],
             [EmoteType.RelicYummyCookieSilent] = ["Character"],
             
-            [EmoteType.MemeBuffSts1] = ["Meme"],
+            [EmoteType.MemeDevotion] = ["Communicate"],
             [EmoteType.MemeThonking] = ["Communicate"],
         };
 }

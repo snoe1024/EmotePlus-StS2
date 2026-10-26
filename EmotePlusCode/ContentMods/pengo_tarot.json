@@ -1,0 +1,965 @@
+{
+  "Key": "pengo_tarot",
+  "ModIds": [
+    "PengoTarot"
+  ],
+  "Name": "PengoTarot",
+  "WorkshopId": "3747679239",
+  "Aliases": [
+    "PengoTarot"
+  ],
+  "Entries": [
+    {
+      "Id": 302000,
+      "Name": "pengo_tarot_stargazer_kit_relic",
+      "AssetName": "mods/pengo_tarot/stargazer_kit",
+      "Category": "Relic",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Relics.StargazerKit",
+      "Title": "Stargazer's Kit",
+      "Aliases": [
+        "天体観測きっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "STARGAZER_KIT.title"
+    },
+    {
+      "Id": 301000,
+      "Name": "pengo_tarot_planet_earth_power_power",
+      "AssetName": "mods/pengo_tarot/planet_earth_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetEarthPower",
+      "Title": "Earth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_EARTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301001,
+      "Name": "pengo_tarot_planet_jupiter_power_power",
+      "AssetName": "mods/pengo_tarot/planet_jupiter_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetJupiterPower",
+      "Title": "Jupiter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_JUPITER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 301002,
+      "Name": "pengo_tarot_planet_mars_power_power",
+      "AssetName": "mods/pengo_tarot/planet_mars_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetMarsPower",
+      "Title": "Mars",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_MARS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301003,
+      "Name": "pengo_tarot_planet_mercury_power_power",
+      "AssetName": "mods/pengo_tarot/planet_mercury_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetMercuryPower",
+      "Title": "Mercury",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_MERCURY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301004,
+      "Name": "pengo_tarot_planet_saturn_power_power",
+      "AssetName": "mods/pengo_tarot/planet_saturn_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetSaturnPower",
+      "Title": "Saturn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_SATURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 301005,
+      "Name": "pengo_tarot_planet_venus_power_power",
+      "AssetName": "mods/pengo_tarot/planet_venus_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetVenusPower",
+      "Title": "Venus",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_VENUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301006,
+      "Name": "pengo_tarot_tar_chariot_reversed_power_power",
+      "AssetName": "mods/pengo_tarot/tar_chariot_reversed_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.TarChariotReversedPower",
+      "Title": "Chariot - Reversed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "TAR_CHARIOT_REVERSED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301007,
+      "Name": "pengo_tarot_tar_hermit_reversed_power_power",
+      "AssetName": "mods/pengo_tarot/tar_hermit_reversed_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.TarHermitReversedPower",
+      "Title": "Hermit - Reversed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "TAR_HERMIT_REVERSED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301008,
+      "Name": "pengo_tarot_tar_strength_reversed_power_power",
+      "AssetName": "mods/pengo_tarot/tar_strength_reversed_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.TarStrengthReversedPower",
+      "Title": "Strength - Reversed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "TAR_STRENGTH_REVERSED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 301009,
+      "Name": "pengo_tarot_tar_temperance_reversed_power_power",
+      "AssetName": "mods/pengo_tarot/tar_temperance_reversed_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.TarTemperanceReversedPower",
+      "Title": "Temperance - Reversed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "TAR_TEMPERANCE_REVERSED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 303000,
+      "Name": "pengo_tarot_planet_ceres_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_ceres_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetCeresEnchantment",
+      "Title": "Ceres",
+      "Aliases": [
+        "けれす"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_CERES_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303001,
+      "Name": "pengo_tarot_planet_earth_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_earth_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetEarthEnchantment",
+      "Title": "Earth",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_EARTH_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303002,
+      "Name": "pengo_tarot_planet_eris_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_eris_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetErisEnchantment",
+      "Title": "Eris",
+      "Aliases": [
+        "えりす"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_ERIS_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303003,
+      "Name": "pengo_tarot_planet_jupiter_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_jupiter_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetJupiterEnchantment",
+      "Title": "Jupiter",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_JUPITER_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303004,
+      "Name": "pengo_tarot_planet_mars_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_mars_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetMarsEnchantment",
+      "Title": "Mars",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_MARS_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303005,
+      "Name": "pengo_tarot_planet_mercury_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_mercury_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetMercuryEnchantment",
+      "Title": "Mercury",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_MERCURY_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303006,
+      "Name": "pengo_tarot_planet_neptune_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_neptune_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetNeptuneEnchantment",
+      "Title": "Neptune",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_NEPTUNE_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303007,
+      "Name": "pengo_tarot_planet_pluto_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_pluto_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetPlutoEnchantment",
+      "Title": "Pluto",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_PLUTO_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303008,
+      "Name": "pengo_tarot_planet_saturn_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_saturn_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetSaturnEnchantment",
+      "Title": "Saturn",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_SATURN_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303009,
+      "Name": "pengo_tarot_planet_uranus_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_uranus_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetUranusEnchantment",
+      "Title": "Uranus",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_URANUS_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303010,
+      "Name": "pengo_tarot_planet_venus_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_venus_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetVenusEnchantment",
+      "Title": "Venus",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_VENUS_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303011,
+      "Name": "pengo_tarot_planet_x_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/planet_x_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.PlanetXEnchantment",
+      "Title": "Planet X",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "PLANET_X_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303012,
+      "Name": "pengo_tarot_tar_chariot_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_chariot_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarChariotReversedEnchantment",
+      "Title": "VII",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_CHARIOT_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303013,
+      "Name": "pengo_tarot_tar_chariot_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_chariot_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarChariotUprightEnchantment",
+      "Title": "The Chariot",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_CHARIOT_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303014,
+      "Name": "pengo_tarot_tar_death_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_death_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarDeathReversedEnchantment",
+      "Title": "XIII",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_DEATH_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303015,
+      "Name": "pengo_tarot_tar_death_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_death_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarDeathUprightEnchantment",
+      "Title": "Death",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_DEATH_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303016,
+      "Name": "pengo_tarot_tar_devil_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_devil_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarDevilReversedEnchantment",
+      "Title": "XV",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_DEVIL_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303017,
+      "Name": "pengo_tarot_tar_devil_reversed_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_devil_reversed_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarDevilReversedSubEnchantment",
+      "Title": "Negative - The Devil",
+      "Aliases": [
+        "ねがてぃぶ-悪魔-逆"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_DEVIL_REVERSED_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303018,
+      "Name": "pengo_tarot_tar_devil_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_devil_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarDevilUprightEnchantment",
+      "Title": "The Devil",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_DEVIL_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303019,
+      "Name": "pengo_tarot_tar_devil_upright_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_devil_upright_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarDevilUprightSubEnchantment",
+      "Title": "Negative - The Devil",
+      "Aliases": [
+        "ねがてぃぶ-悪魔-正"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_DEVIL_UPRIGHT_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303020,
+      "Name": "pengo_tarot_tar_emperor_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_emperor_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarEmperorReversedEnchantment",
+      "Title": "IV",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_EMPEROR_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303021,
+      "Name": "pengo_tarot_tar_emperor_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_emperor_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarEmperorUprightEnchantment",
+      "Title": "The Emperor",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_EMPEROR_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303022,
+      "Name": "pengo_tarot_tar_empress_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_empress_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarEmpressReversedEnchantment",
+      "Title": "III",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_EMPRESS_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303023,
+      "Name": "pengo_tarot_tar_empress_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_empress_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarEmpressUprightEnchantment",
+      "Title": "The Empress",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_EMPRESS_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303024,
+      "Name": "pengo_tarot_tar_fool_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_fool_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarFoolReversedEnchantment",
+      "Title": "0",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_FOOL_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303025,
+      "Name": "pengo_tarot_tar_fool_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_fool_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarFoolUprightEnchantment",
+      "Title": "The Fool",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_FOOL_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303026,
+      "Name": "pengo_tarot_tar_hanged_man_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_hanged_man_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHangedManReversedEnchantment",
+      "Title": "XII",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HANGED_MAN_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303027,
+      "Name": "pengo_tarot_tar_hanged_man_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_hanged_man_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHangedManUprightEnchantment",
+      "Title": "The Hanged Man",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HANGED_MAN_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303028,
+      "Name": "pengo_tarot_tar_hermit_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_hermit_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHermitReversedEnchantment",
+      "Title": "IX",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HERMIT_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303029,
+      "Name": "pengo_tarot_tar_hermit_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_hermit_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHermitUprightEnchantment",
+      "Title": "The Hermit",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HERMIT_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303030,
+      "Name": "pengo_tarot_tar_hierophant_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_hierophant_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHierophantReversedEnchantment",
+      "Title": "V",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HIEROPHANT_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303031,
+      "Name": "pengo_tarot_tar_hierophant_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_hierophant_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHierophantUprightEnchantment",
+      "Title": "The Hierophant",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HIEROPHANT_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303032,
+      "Name": "pengo_tarot_tar_high_priestess_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_high_priestess_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHighPriestessReversedEnchantment",
+      "Title": "II",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HIGH_PRIESTESS_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303033,
+      "Name": "pengo_tarot_tar_high_priestess_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_high_priestess_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarHighPriestessUprightEnchantment",
+      "Title": "The High Priestess",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_HIGH_PRIESTESS_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303034,
+      "Name": "pengo_tarot_tar_judgement_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_judgement_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarJudgementReversedEnchantment",
+      "Title": "XX",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_JUDGEMENT_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303035,
+      "Name": "pengo_tarot_tar_judgement_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_judgement_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarJudgementUprightEnchantment",
+      "Title": "Judgement",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_JUDGEMENT_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303036,
+      "Name": "pengo_tarot_tar_justice_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_justice_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarJusticeReversedEnchantment",
+      "Title": "XI",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_JUSTICE_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303037,
+      "Name": "pengo_tarot_tar_justice_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_justice_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarJusticeUprightEnchantment",
+      "Title": "Justice",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_JUSTICE_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303038,
+      "Name": "pengo_tarot_tar_lovers_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_lovers_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarLoversReversedEnchantment",
+      "Title": "VI",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_LOVERS_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303039,
+      "Name": "pengo_tarot_tar_lovers_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_lovers_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarLoversUprightEnchantment",
+      "Title": "The Lovers",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_LOVERS_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303040,
+      "Name": "pengo_tarot_tar_magician_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_magician_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarMagicianReversedEnchantment",
+      "Title": "I",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_MAGICIAN_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303041,
+      "Name": "pengo_tarot_tar_magician_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_magician_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarMagicianUprightEnchantment",
+      "Title": "The Magician",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_MAGICIAN_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303042,
+      "Name": "pengo_tarot_tar_moon_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_moon_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarMoonReversedEnchantment",
+      "Title": "XVIII",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_MOON_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303043,
+      "Name": "pengo_tarot_tar_moon_reversed_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_moon_reversed_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarMoonReversedSubEnchantment",
+      "Title": "Negative - The Moon",
+      "Aliases": [
+        "ねがてぃぶ-月-逆"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_MOON_REVERSED_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303044,
+      "Name": "pengo_tarot_tar_moon_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_moon_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarMoonUprightEnchantment",
+      "Title": "The Moon",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_MOON_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303045,
+      "Name": "pengo_tarot_tar_moon_upright_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_moon_upright_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarMoonUprightSubEnchantment",
+      "Title": "Negative - The Moon",
+      "Aliases": [
+        "ねがてぃぶ-月-正"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_MOON_UPRIGHT_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303046,
+      "Name": "pengo_tarot_tar_star_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_star_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarStarReversedEnchantment",
+      "Title": "XVII",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_STAR_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303047,
+      "Name": "pengo_tarot_tar_star_reversed_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_star_reversed_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarStarReversedSubEnchantment",
+      "Title": "Negative - The Star",
+      "Aliases": [
+        "ねがてぃぶ-星-逆"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_STAR_REVERSED_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303048,
+      "Name": "pengo_tarot_tar_star_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_star_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarStarUprightEnchantment",
+      "Title": "The Star",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_STAR_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303049,
+      "Name": "pengo_tarot_tar_star_upright_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_star_upright_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarStarUprightSubEnchantment",
+      "Title": "Negative - The Star",
+      "Aliases": [
+        "ねがてぃぶ-星-正"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_STAR_UPRIGHT_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303050,
+      "Name": "pengo_tarot_tar_strength_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_strength_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarStrengthReversedEnchantment",
+      "Title": "VIII",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_STRENGTH_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303051,
+      "Name": "pengo_tarot_tar_strength_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_strength_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarStrengthUprightEnchantment",
+      "Title": "Strength",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_STRENGTH_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303052,
+      "Name": "pengo_tarot_tar_sun_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_sun_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarSunReversedEnchantment",
+      "Title": "XIX",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_SUN_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303053,
+      "Name": "pengo_tarot_tar_sun_reversed_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_sun_reversed_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarSunReversedSubEnchantment",
+      "Title": "Negative - The Sun",
+      "Aliases": [
+        "ねがてぃぶ-太陽-逆"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_SUN_REVERSED_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303054,
+      "Name": "pengo_tarot_tar_sun_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_sun_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarSunUprightEnchantment",
+      "Title": "The Sun",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_SUN_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303055,
+      "Name": "pengo_tarot_tar_sun_upright_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_sun_upright_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarSunUprightSubEnchantment",
+      "Title": "Negative - The Sun",
+      "Aliases": [
+        "ねがてぃぶ-太陽-正"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_SUN_UPRIGHT_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303056,
+      "Name": "pengo_tarot_tar_temperance_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_temperance_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarTemperanceReversedEnchantment",
+      "Title": "XIV",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_TEMPERANCE_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303057,
+      "Name": "pengo_tarot_tar_temperance_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_temperance_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarTemperanceUprightEnchantment",
+      "Title": "Temperance",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_TEMPERANCE_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303058,
+      "Name": "pengo_tarot_tar_world_reversed_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_world_reversed_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarWorldReversedEnchantment",
+      "Title": "XXI",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_WORLD_REVERSED_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303059,
+      "Name": "pengo_tarot_tar_world_reversed_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_world_reversed_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarWorldReversedSubEnchantment",
+      "Title": "Negative - The World",
+      "Aliases": [
+        "ねがてぃぶ-世界-逆"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_WORLD_REVERSED_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303060,
+      "Name": "pengo_tarot_tar_world_upright_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_world_upright_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarWorldUprightEnchantment",
+      "Title": "The World",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_WORLD_UPRIGHT_ENCHANTMENT.title"
+    },
+    {
+      "Id": 303061,
+      "Name": "pengo_tarot_tar_world_upright_sub_enchantment_enchantment",
+      "AssetName": "mods/pengo_tarot/tar_world_upright_sub_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Enchantments.TarWorldUprightSubEnchantment",
+      "Title": "Negative - The World",
+      "Aliases": [
+        "ねがてぃぶ-世界-正"
+      ],
+      "LocTable": "enchantments",
+      "LocKey": "TAR_WORLD_UPRIGHT_SUB_ENCHANTMENT.title"
+    },
+    {
+      "Id": 301010,
+      "Name": "pengo_tarot_planet_gold_power_power",
+      "AssetName": "mods/pengo_tarot/planet_gold_power",
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.PlanetGoldPower",
+      "Title": "Accumulate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "PLANET_GOLD_POWER.title"
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "TargetId": 1020,
+      "Category": "Power",
+      "Assembly": "PengoTarot",
+      "TypeName": "PengoTarot.Powers.TickTackPower"
+    }
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "Key": "gambler",
+  "ModIds": [
+    "Gambler"
+  ],
+  "Name": "Gambler",
+  "WorkshopId": "3795117200",
+  "Aliases": [
+    "Gambler"
+  ],
+  "Entries": [
+    {
+      "Id": 272000,
+      "Name": "gambler_dealers_deck_relic",
+      "AssetName": "mods/gambler/dealers_deck",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.DealersDeck",
+      "Title": "Dealer's Deck",
+      "Aliases": [
+        "でぃーらーのでっき"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-DEALERS_DECK.title"
+    },
+    {
+      "Id": 272001,
+      "Name": "gambler_house_rules_relic",
+      "AssetName": "mods/gambler/house_rules",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.HouseRules",
+      "Title": "House Rules",
+      "Aliases": [
+        "はうするーる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-HOUSE_RULES.title"
+    },
+    {
+      "Id": 272002,
+      "Name": "gambler_loaded_cylinder_relic",
+      "AssetName": "mods/gambler/loaded_cylinder",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.LoadedCylinder",
+      "Title": "Loaded Cylinder",
+      "Aliases": [
+        "装填済みしりんだー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-LOADED_CYLINDER.title"
+    },
+    {
+      "Id": 272003,
+      "Name": "gambler_lucky_coin_relic",
+      "AssetName": "mods/gambler/lucky_coin",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.LuckyCoin",
+      "Title": "Lucky Coin",
+      "Aliases": [
+        "幸運のこいん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-LUCKY_COIN.title"
+    },
+    {
+      "Id": 272004,
+      "Name": "gambler_ace_of_clubs_relic",
+      "AssetName": "mods/gambler/ace_of_clubs",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.AceOfClubs",
+      "Title": "Ace of Clubs",
+      "Aliases": [
+        "くらぶのえーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-ACE_OF_CLUBS.title"
+    },
+    {
+      "Id": 272005,
+      "Name": "gambler_ace_of_spades_relic",
+      "AssetName": "mods/gambler/ace_of_spades",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.AceOfSpades",
+      "Title": "Ace of Spades",
+      "Aliases": [
+        "すぺーどのえーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-ACE_OF_SPADES.title"
+    },
+    {
+      "Id": 272006,
+      "Name": "gambler_ace_of_hearts_relic",
+      "AssetName": "mods/gambler/ace_of_hearts",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.AceOfHearts",
+      "Title": "Ace of Hearts",
+      "Aliases": [
+        "はーとのえーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-ACE_OF_HEARTS.title"
+    },
+    {
+      "Id": 272007,
+      "Name": "gambler_ace_of_diamonds_relic",
+      "AssetName": "mods/gambler/ace_of_diamonds",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.AceOfDiamonds",
+      "Title": "Ace of Diamonds",
+      "Aliases": [
+        "だいやのえーす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-ACE_OF_DIAMONDS.title"
+    },
+    {
+      "Id": 272008,
+      "Name": "gambler_butterfly_knife_relic",
+      "AssetName": "mods/gambler/butterfly_knife",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.ButterflyKnife",
+      "Title": "Butterfly Knife",
+      "Aliases": [
+        "ばたふらいないふ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-BUTTERFLY_KNIFE.title"
+    },
+    {
+      "Id": 272009,
+      "Name": "gambler_dealers_visor_relic",
+      "AssetName": "mods/gambler/dealers_visor",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.DealersVisor",
+      "Title": "Dealer's Visor",
+      "Aliases": [
+        "でぃーらーのばいざー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-DEALERS_VISOR.title"
+    },
+    {
+      "Id": 272010,
+      "Name": "gambler_golden_revolver_relic",
+      "AssetName": "mods/gambler/golden_revolver",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.GoldenRevolver",
+      "Title": "Golden Revolver",
+      "Aliases": [
+        "黄金のりぼるばー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-GOLDEN_REVOLVER.title"
+    },
+    {
+      "Id": 272011,
+      "Name": "gambler_black_card_relic",
+      "AssetName": "mods/gambler/black_card",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Relics.BlackCard",
+      "Title": "Black Card",
+      "Aliases": [
+        "ぶらっくかーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "GAMBLER-BLACK_CARD.title"
+    },
+    {
+      "Id": 271000,
+      "Name": "gambler_shared_winnings_power_power",
+      "AssetName": "mods/gambler/shared_winnings_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.SharedWinningsPower",
+      "Title": "Friendly Wager",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-SHARED_WINNINGS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271001,
+      "Name": "gambler_loaded_dice_power_power",
+      "AssetName": "mods/gambler/loaded_dice_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.LoadedDicePower",
+      "Title": "Loaded Dice",
+      "Aliases": [
+        "仕込みだいす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-LOADED_DICE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271002,
+      "Name": "gambler_fifth_ace_power_power",
+      "AssetName": "mods/gambler/fifth_ace_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.FifthAcePower",
+      "Title": "The Fifth Ace",
+      "Aliases": [
+        "5枚目のえーす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-FIFTH_ACE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Gambler.GamblerCode.Powers.QualityGoodsPower"
+      ]
+    },
+    {
+      "Id": 271003,
+      "Name": "gambler_crossfire_power_power",
+      "AssetName": "mods/gambler/crossfire_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.CrossfirePower",
+      "Title": "Crossfire",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-CROSSFIRE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271004,
+      "Name": "gambler_bandolier_power_power",
+      "AssetName": "mods/gambler/bandolier_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.BandolierPower",
+      "Title": "Bandolier",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-BANDOLIER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271005,
+      "Name": "gambler_cheat_power_power",
+      "AssetName": "mods/gambler/cheat_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.CheatPower",
+      "Title": "Cheat",
+      "Aliases": [
+        "いかさま"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-CHEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271006,
+      "Name": "gambler_full_magazine_power_power",
+      "AssetName": "mods/gambler/full_magazine_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.FullMagazinePower",
+      "Title": "Full Magazine",
+      "Aliases": [
+        "満たんの弾倉"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-FULL_MAGAZINE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271007,
+      "Name": "gambler_hired_guns_power_power",
+      "AssetName": "mods/gambler/hired_guns_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.HiredGunsPower",
+      "Title": "Hired Guns",
+      "Aliases": [
+        "雇われがんまん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-HIRED_GUNS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271009,
+      "Name": "gambler_double_down_power_power",
+      "AssetName": "mods/gambler/double_down_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.DoubleDownPower",
+      "Title": "Double Down",
+      "Aliases": [
+        "だぶるだうん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-DOUBLE_DOWN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271010,
+      "Name": "gambler_jackpot_return_power_power",
+      "AssetName": "mods/gambler/jackpot_return_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.JackpotReturnPower",
+      "Title": "Jackpot",
+      "Aliases": [
+        "じゃっくぽっと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-JACKPOT_RETURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271011,
+      "Name": "gambler_double_tap_power_power",
+      "AssetName": "mods/gambler/double_tap_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.DoubleTapPower",
+      "Title": "Double Tap",
+      "Aliases": [
+        "だぶるたっぷ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-DOUBLE_TAP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271012,
+      "Name": "gambler_one_step_ahead_power_power",
+      "AssetName": "mods/gambler/one_step_ahead_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.OneStepAheadPower",
+      "Title": "One Step Ahead",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-ONE_STEP_AHEAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271013,
+      "Name": "gambler_four_of_a_kind_power_power",
+      "AssetName": "mods/gambler/four_of_a_kind_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.FourOfAKindPower",
+      "Title": "Four of a Kind",
+      "Aliases": [
+        "ふぉーかーど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-FOUR_OF_A_KIND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271014,
+      "Name": "gambler_gambling_high_power_power",
+      "AssetName": "mods/gambler/gambling_high_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.GamblingHighPower",
+      "Title": "Gambling High",
+      "Aliases": [
+        "ぎゃんぶるはい"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-GAMBLING_HIGH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271015,
+      "Name": "gambler_temporary_strength_loss_power_power",
+      "AssetName": "mods/gambler/temporary_strength_loss_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.TemporaryStrengthLossPower",
+      "Title": "Temporary Strength",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-TEMPORARY_STRENGTH_LOSS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271016,
+      "Name": "gambler_temporary_dexterity_loss_power_power",
+      "AssetName": "mods/gambler/temporary_dexterity_loss_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.TemporaryDexterityLossPower",
+      "Title": "Temporary Dexterity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-TEMPORARY_DEXTERITY_LOSS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271017,
+      "Name": "gambler_take_aim_power_power",
+      "AssetName": "mods/gambler/take_aim_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.TakeAimPower",
+      "Title": "Take Aim",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-TAKE_AIM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271018,
+      "Name": "gambler_take_a_breather_draw_power_power",
+      "AssetName": "mods/gambler/take_a_breather_draw_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.TakeABreatherDrawPower",
+      "Title": "Take a Breather",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-TAKE_A_BREATHER_DRAW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271019,
+      "Name": "gambler_steady_hands_power_power",
+      "AssetName": "mods/gambler/steady_hands_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.SteadyHandsPower",
+      "Title": "Steady Hands",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-STEADY_HANDS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271020,
+      "Name": "gambler_scavenge_power_power",
+      "AssetName": "mods/gambler/scavenge_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.ScavengePower",
+      "Title": "Scavenge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-SCAVENGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271021,
+      "Name": "gambler_keep_distance_power_power",
+      "AssetName": "mods/gambler/keep_distance_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.KeepDistancePower",
+      "Title": "Keep Distance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-KEEP_DISTANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271022,
+      "Name": "gambler_momentum_power_power",
+      "AssetName": "mods/gambler/momentum_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.MomentumPower",
+      "Title": "Momentum",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-MOMENTUM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271023,
+      "Name": "gambler_straight_power_power",
+      "AssetName": "mods/gambler/straight_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.StraightPower",
+      "Title": "Straight",
+      "Aliases": [
+        "すとれーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-STRAIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271024,
+      "Name": "gambler_thrill_seeker_power_power",
+      "AssetName": "mods/gambler/thrill_seeker_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.ThrillSeekerPower",
+      "Title": "Thrill Seeker",
+      "Aliases": [
+        "すりるしーかー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-THRILL_SEEKER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271025,
+      "Name": "gambler_flush_power_power",
+      "AssetName": "mods/gambler/flush_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.FlushPower",
+      "Title": "Flush",
+      "Aliases": [
+        "ふらっしゅ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-FLUSH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271026,
+      "Name": "gambler_pickpocket_power_power",
+      "AssetName": "mods/gambler/pickpocket_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.PickpocketPower",
+      "Title": "Pickpocket",
+      "Aliases": [
+        "すり"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-PICKPOCKET_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271027,
+      "Name": "gambler_bribed_power_power",
+      "AssetName": "mods/gambler/bribed_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.BribedPower",
+      "Title": "Bribed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-BRIBED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 271028,
+      "Name": "gambler_close_call_power_power",
+      "AssetName": "mods/gambler/close_call_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.CloseCallPower",
+      "Title": "Narrow Escape",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-CLOSE_CALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 271029,
+      "Name": "gambler_on_edge_power_power",
+      "AssetName": "mods/gambler/on_edge_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.OnEdgePower",
+      "Title": "On Edge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-ON_EDGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "Gambler.GamblerCode.Powers.OnEdgePlusPower"
+      ]
+    },
+    {
+      "Id": 271030,
+      "Name": "gambler_temporary_buffer_power_power",
+      "AssetName": "mods/gambler/temporary_buffer_power",
+      "Category": "Power",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Powers.TemporaryBufferPower",
+      "Title": "Temporary Buffer",
+      "Aliases": [
+        "一時的なばっふぁー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "GAMBLER-TEMPORARY_BUFFER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 275000,
+      "Name": "gambler_gambler_character",
+      "AssetName": "mods/gambler/gambler",
+      "Category": "Character",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Character.Gambler",
+      "Title": "The Gambler",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "GAMBLER-GAMBLER.title"
+    },
+    {
+      "Id": 272012,
+      "Name": "gambler_gambler_yummy_cookie_relic",
+      "AssetName": "mods/gambler/gambler/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Gambler",
+      "TypeName": "Gambler.GamblerCode.Character.Gambler",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "Key": "the_flaw",
+  "ModIds": [
+    "FlawTheFunction"
+  ],
+  "Name": "Flaw the Automaton",
+  "WorkshopId": "3816658424",
+  "Aliases": [
+    "FlawTheFunction"
+  ],
+  "Entries": [
+    {
+      "Id": 282000,
+      "Name": "the_flaw_flaw_two_twenty_volt_relic",
+      "AssetName": "mods/the_flaw/flaw_two_twenty_volt",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawTwoTwentyVolt",
+      "Title": "220V",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_TWO_TWENTY_VOLT.title"
+    },
+    {
+      "Id": 282001,
+      "Name": "the_flaw_flaw_adaptor_relic",
+      "AssetName": "mods/the_flaw/flaw_adaptor",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawAdaptor",
+      "Title": "Adaptor",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_ADAPTOR.title"
+    },
+    {
+      "Id": 282002,
+      "Name": "the_flaw_flaw_appendage_relic",
+      "AssetName": "mods/the_flaw/flaw_appendage",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawAppendage",
+      "Title": "Appendage",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_APPENDAGE.title"
+    },
+    {
+      "Id": 282003,
+      "Name": "the_flaw_flaw_cracked_core_relic",
+      "AssetName": "mods/the_flaw/flaw_cracked_core",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawCrackedCore",
+      "Title": "Malformed Core",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_CRACKED_CORE.title"
+    },
+    {
+      "Id": 282004,
+      "Name": "the_flaw_flaw_infused_core_relic",
+      "AssetName": "mods/the_flaw/flaw_infused_core",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawInfusedCore",
+      "Title": "Mutated Core",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_INFUSED_CORE.title"
+    },
+    {
+      "Id": 282005,
+      "Name": "the_flaw_flaw_mitogen_relic",
+      "AssetName": "mods/the_flaw/flaw_mitogen",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawMitogen",
+      "Title": "Mitogen",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_MITOGEN.title"
+    },
+    {
+      "Id": 282006,
+      "Name": "the_flaw_flaw_old_pal_relic",
+      "AssetName": "mods/the_flaw/flaw_old_pal",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawOldPal",
+      "Title": "Old Pal",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_OLD_PAL.title"
+    },
+    {
+      "Id": 282007,
+      "Name": "the_flaw_flaw_recovery_vehicle_relic",
+      "AssetName": "mods/the_flaw/flaw_recovery_vehicle",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawRecoveryVehicle",
+      "Title": "Recovery Vehicle",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_RECOVERY_VEHICLE.title"
+    },
+    {
+      "Id": 282008,
+      "Name": "the_flaw_flaw_semi_finished_relic",
+      "AssetName": "mods/the_flaw/flaw_semi_finished",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Relics.FlawSemiFinished",
+      "Title": "Semi-Finished",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "FLAW_THE_FUNCTION_RELIC_FLAW_SEMI_FINISHED.title"
+    },
+    {
+      "Id": 281000,
+      "Name": "the_flaw_flaw_believe_in_me_power_power",
+      "AssetName": "mods/the_flaw/flaw_believe_in_me_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawBelieveInMePower",
+      "Title": "Believe in Me",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_BELIEVE_IN_ME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281001,
+      "Name": "the_flaw_flaw_blueprint_power_power",
+      "AssetName": "mods/the_flaw/flaw_blueprint_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawBlueprintPower",
+      "Title": "Blueprint",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_BLUEPRINT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281002,
+      "Name": "the_flaw_flaw_breakdown_power_power",
+      "AssetName": "mods/the_flaw/flaw_breakdown_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawBreakdownPower",
+      "Title": "Breakdown",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_BREAKDOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 281003,
+      "Name": "the_flaw_flaw_chimera_power_power",
+      "AssetName": "mods/the_flaw/flaw_chimera_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawChimeraPower",
+      "Title": "Chimera",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_CHIMERA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281004,
+      "Name": "the_flaw_flaw_convolution_power_power",
+      "AssetName": "mods/the_flaw/flaw_convolution_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawConvolutionPower",
+      "Title": "Convolution",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_CONVOLUTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281005,
+      "Name": "the_flaw_flaw_core_meltdown_power_power",
+      "AssetName": "mods/the_flaw/flaw_core_meltdown_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawCoreMeltdownPower",
+      "Title": "Core Meltdown",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_CORE_MELTDOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 281006,
+      "Name": "the_flaw_flaw_correction_power_power",
+      "AssetName": "mods/the_flaw/flaw_correction_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawCorrectionPower",
+      "Title": "Correction",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_CORRECTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281007,
+      "Name": "the_flaw_flaw_cross_sync_power_power",
+      "AssetName": "mods/the_flaw/flaw_cross_sync_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawCrossSyncPower",
+      "Title": "Cross-Sync",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_CROSS_SYNC_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281008,
+      "Name": "the_flaw_flaw_electrify_power_power",
+      "AssetName": "mods/the_flaw/flaw_electrify_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawElectrifyPower",
+      "Title": "Electrify",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_ELECTRIFY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281009,
+      "Name": "the_flaw_flaw_firewall_power_power",
+      "AssetName": "mods/the_flaw/flaw_firewall_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawFirewallPower",
+      "Title": "Firewall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_FIREWALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281010,
+      "Name": "the_flaw_flaw_gestalt_power_power",
+      "AssetName": "mods/the_flaw/flaw_gestalt_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawGestaltPower",
+      "Title": "Gestalt",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_GESTALT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281011,
+      "Name": "the_flaw_flaw_incandescence_power_power",
+      "AssetName": "mods/the_flaw/flaw_incandescence_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawIncandescencePower",
+      "Title": "Incandescence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_INCANDESCENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281012,
+      "Name": "the_flaw_flaw_input_buffer_power_power",
+      "AssetName": "mods/the_flaw/flaw_input_buffer_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawInputBufferPower",
+      "Title": "Input Buffer",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_INPUT_BUFFER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281013,
+      "Name": "the_flaw_flaw_instinct_power_power",
+      "AssetName": "mods/the_flaw/flaw_instinct_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawInstinctPower",
+      "Title": "Instinct",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_INSTINCT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281014,
+      "Name": "the_flaw_flaw_law_of_identity_power_power",
+      "AssetName": "mods/the_flaw/flaw_law_of_identity_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawLawOfIdentityPower",
+      "Title": "Law of Identity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_LAW_OF_IDENTITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281015,
+      "Name": "the_flaw_flaw_long_shortcut_power_power",
+      "AssetName": "mods/the_flaw/flaw_long_shortcut_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawLongShortcutPower",
+      "Title": "Long Shortcut",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_LONG_SHORTCUT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281016,
+      "Name": "the_flaw_flaw_machine_translation_power_power",
+      "AssetName": "mods/the_flaw/flaw_machine_translation_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawMachineTranslationPower",
+      "Title": "Machine Translation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_MACHINE_TRANSLATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281017,
+      "Name": "the_flaw_flaw_orb_slot_next_turn_power_power",
+      "AssetName": "mods/the_flaw/flaw_orb_slot_next_turn_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawOrbSlotNextTurnPower",
+      "Title": "Slot Return",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_ORB_SLOT_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281018,
+      "Name": "the_flaw_flaw_overcapacity_power_power",
+      "AssetName": "mods/the_flaw/flaw_overcapacity_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawOvercapacityPower",
+      "Title": "Overcapacity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_OVERCAPACITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281019,
+      "Name": "the_flaw_flaw_parasitism_power_power",
+      "AssetName": "mods/the_flaw/flaw_parasitism_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawParasitismPower",
+      "Title": "Parasitism",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_PARASITISM_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 281020,
+      "Name": "the_flaw_flaw_path_dependence_power_power",
+      "AssetName": "mods/the_flaw/flaw_path_dependence_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawPathDependencePower",
+      "Title": "Path Dependence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_PATH_DEPENDENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281021,
+      "Name": "the_flaw_flaw_revern_form_power_power",
+      "AssetName": "mods/the_flaw/flaw_revern_form_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawRevernFormPower",
+      "Title": "Revern Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_REVERN_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281022,
+      "Name": "the_flaw_flaw_rubedo_power_power",
+      "AssetName": "mods/the_flaw/flaw_rubedo_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawRubedoPower",
+      "Title": "Rubedo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_RUBEDO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281023,
+      "Name": "the_flaw_flaw_shortcut_strength_power_power",
+      "AssetName": "mods/the_flaw/flaw_shortcut_strength_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawShortcutStrengthPower",
+      "Title": "Long Shortcut",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "FLAW_LONG_SHORTCUT.title"
+    },
+    {
+      "Id": 281024,
+      "Name": "the_flaw_flaw_shut_down_power_power",
+      "AssetName": "mods/the_flaw/flaw_shut_down_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawShutDownPower",
+      "Title": "Shut Down",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_SHUT_DOWN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 281025,
+      "Name": "the_flaw_flaw_singularity_power_power",
+      "AssetName": "mods/the_flaw/flaw_singularity_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawSingularityPower",
+      "Title": "Singularity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_SINGULARITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281026,
+      "Name": "the_flaw_flaw_symbiont_power_power",
+      "AssetName": "mods/the_flaw/flaw_symbiont_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawSymbiontPower",
+      "Title": "Symbiont",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_SYMBIONT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281027,
+      "Name": "the_flaw_flaw_torrent_of_data_power_power",
+      "AssetName": "mods/the_flaw/flaw_torrent_of_data_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawTorrentOfDataPower",
+      "Title": "Torrent of Data",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_TORRENT_OF_DATA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281028,
+      "Name": "the_flaw_flaw_touch_the_core_power_power",
+      "AssetName": "mods/the_flaw/flaw_touch_the_core_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawTouchTheCorePower",
+      "Title": "Touch the Core",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_TOUCH_THE_CORE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281029,
+      "Name": "the_flaw_flaw_unfortunate_progress_power_power",
+      "AssetName": "mods/the_flaw/flaw_unfortunate_progress_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawUnfortunateProgressPower",
+      "Title": "Unfortunate Progress",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_UNFORTUNATE_PROGRESS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 281030,
+      "Name": "the_flaw_flaw_wither_and_bloom_power_power",
+      "AssetName": "mods/the_flaw/flaw_wither_and_bloom_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawWitherAndBloomPower",
+      "Title": "Wither and Bloom",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_WITHER_AND_BLOOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 281031,
+      "Name": "the_flaw_flaw_workflow_power_power",
+      "AssetName": "mods/the_flaw/flaw_workflow_power",
+      "Category": "Power",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Powers.FlawWorkflowPower",
+      "Title": "Workflow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "FLAW_WORKFLOW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 284000,
+      "Name": "the_flaw_bath_solution_potion",
+      "AssetName": "mods/the_flaw/bath_solution",
+      "Category": "Potion",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Potions.BathSolution",
+      "Title": "Bath Solution",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "FLAW_THE_FUNCTION_POTION_BATH_SOLUTION.title"
+    },
+    {
+      "Id": 284001,
+      "Name": "the_flaw_bug_soup_potion",
+      "AssetName": "mods/the_flaw/bug_soup",
+      "Category": "Potion",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Potions.BugSoup",
+      "Title": "Bug Soup",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "FLAW_THE_FUNCTION_POTION_BUG_SOUP.title"
+    },
+    {
+      "Id": 284002,
+      "Name": "the_flaw_essence_of_life_potion",
+      "AssetName": "mods/the_flaw/essence_of_life",
+      "Category": "Potion",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Potions.EssenceOfLife",
+      "Title": "Essence of Life",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "FLAW_THE_FUNCTION_POTION_ESSENCE_OF_LIFE.title"
+    },
+    {
+      "Id": 283000,
+      "Name": "the_flaw_flaw_clipboard_enchantment",
+      "AssetName": "mods/the_flaw/flaw_clipboard",
+      "Category": "Enchantment",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Enchantments.FlawClipboard",
+      "Title": "Clipboard",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "FLAW_CLIPBOARD.title"
+    },
+    {
+      "Id": 285000,
+      "Name": "the_flaw_flaw_character",
+      "AssetName": "mods/the_flaw/flaw",
+      "Category": "Character",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Characters.Flaw",
+      "Title": "The Flaw",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "FLAW_THE_FUNCTION_CHARACTER_FLAW.title"
+    },
+    {
+      "Id": 282009,
+      "Name": "the_flaw_flaw_yummy_cookie_relic",
+      "AssetName": "mods/the_flaw/flaw/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "FlawTheFunction",
+      "TypeName": "FlawTheFunction.Core.Models.Characters.Flaw",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

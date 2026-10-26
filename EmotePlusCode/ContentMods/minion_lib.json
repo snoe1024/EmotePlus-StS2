@@ -1,0 +1,28 @@
+{
+  "Key": "minion_lib",
+  "ModIds": [
+    "MinionLib"
+  ],
+  "Name": "MinionLib",
+  "WorkshopId": "3747595039",
+  "Aliases": [
+    "MinionLib"
+  ],
+  "Entries": [
+    {
+      "Id": 351000,
+      "Name": "minion_lib_minion_guardian_power_power",
+      "AssetName": "mods/minion_lib/minion_guardian_power",
+      "Category": "Power",
+      "Assembly": "MinionLib",
+      "TypeName": "MinionLib.Powers.MinionGuardianPower",
+      "Title": "Guardian",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MINION_GUARDIAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "Key": "lex_ninja2",
+  "ModIds": [
+    "LexNinja2"
+  ],
+  "Name": "LexNinja2",
+  "WorkshopId": "3747530622",
+  "Aliases": [
+    "LexNinja2",
+    "蕾忍"
+  ],
+  "Entries": [
+    {
+      "Id": 62000,
+      "Name": "lex_ninja2_dim_dead_tree_relic",
+      "AssetName": "mods/lex_ninja2/dim_dead_tree",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.DimDeadTree",
+      "Title": "Dark Cold Dead Tree",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_DIM_DEAD_TREE.title"
+    },
+    {
+      "Id": 62001,
+      "Name": "lex_ninja2_kfc_relic",
+      "AssetName": "mods/lex_ninja2/kfc",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.KFC",
+      "Title": "KFC",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_KFC.title"
+    },
+    {
+      "Id": 62002,
+      "Name": "lex_ninja2_lotus_box_relic",
+      "AssetName": "mods/lex_ninja2/lotus_box",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.LotusBox",
+      "Title": "Lotus Rhizomes",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_LOTUS_BOX.title"
+    },
+    {
+      "Id": 62003,
+      "Name": "lex_ninja2_machine_ninja_relic",
+      "AssetName": "mods/lex_ninja2/machine_ninja",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.MachineNinja",
+      "Title": "Mecha Ninja: Diesel Machine",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_MACHINE_NINJA.title"
+    },
+    {
+      "Id": 62004,
+      "Name": "lex_ninja2_reaper_hand_relic",
+      "AssetName": "mods/lex_ninja2/reaper_hand",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.ReaperHand",
+      "Title": "Bleach Hand",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_REAPER_HAND.title"
+    },
+    {
+      "Id": 62005,
+      "Name": "lex_ninja2_sarira_relic",
+      "AssetName": "mods/lex_ninja2/sarira",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.Sarira",
+      "Title": "Sarira",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_SARIRA.title"
+    },
+    {
+      "Id": 62006,
+      "Name": "lex_ninja2_three_duuz_relic",
+      "AssetName": "mods/lex_ninja2/three_duuz",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.ThreeDuuz",
+      "Title": "3D Yuyuko",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_THREE_DUUZ.title"
+    },
+    {
+      "Id": 62007,
+      "Name": "lex_ninja2_toilet_water_relic",
+      "AssetName": "mods/lex_ninja2/toilet_water",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.ToiletWater",
+      "Title": "Florida Water",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_TOILET_WATER.title"
+    },
+    {
+      "Id": 62008,
+      "Name": "lex_ninja2_xiang_piao_piao_relic",
+      "AssetName": "mods/lex_ninja2/xiang_piao_piao",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Relics.XiangPiaoPiao",
+      "Title": "Xiang Piao Piao Hot Drink",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LEX_NINJA2_RELIC_XIANG_PIAO_PIAO.title"
+    },
+    {
+      "Id": 61000,
+      "Name": "lex_ninja2_alan_walker_power_power",
+      "AssetName": "mods/lex_ninja2/alan_walker_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.AlanWalkerPower",
+      "Title": "Alan Walker",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_ALAN_WALKER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61001,
+      "Name": "lex_ninja2_become_nong_power_power",
+      "AssetName": "mods/lex_ninja2/become_nong_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.BecomeNongPower",
+      "Title": "Mr. Bing Bong",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_BECOME_NONG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61002,
+      "Name": "lex_ninja2_black_snake_heart_power_power",
+      "AssetName": "mods/lex_ninja2/black_snake_heart_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.BlackSnakeHeartPower",
+      "Title": "Invisible Snake Heart",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_BLACK_SNAKE_HEART_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61003,
+      "Name": "lex_ninja2_blade_defence_power_power",
+      "AssetName": "mods/lex_ninja2/blade_defence_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.BladeDefencePower",
+      "Title": "Blade Guard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_BLADE_DEFENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61004,
+      "Name": "lex_ninja2_blade_power_up_power",
+      "AssetName": "mods/lex_ninja2/blade_power_up",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.BladePowerUp",
+      "Title": "Sharpened",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_BLADE_POWER_UP.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61005,
+      "Name": "lex_ninja2_build_sand_wall_power_power",
+      "AssetName": "mods/lex_ninja2/build_sand_wall_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.BuildSandWallPower",
+      "Title": "Lithification",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_BUILD_SAND_WALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61006,
+      "Name": "lex_ninja2_damage_next_turn_power_power",
+      "AssetName": "mods/lex_ninja2/damage_next_turn_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.DamageNextTurnPower",
+      "Title": "Next Turn Damage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_DAMAGE_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61007,
+      "Name": "lex_ninja2_disappointed_power_power",
+      "AssetName": "mods/lex_ninja2/disappointed_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.DisappointedPower",
+      "Title": "Bocchi not Rock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_DISAPPOINTED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61008,
+      "Name": "lex_ninja2_free_ninjutsu_power_power",
+      "AssetName": "mods/lex_ninja2/free_ninjutsu_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.FreeNinjutsuPower",
+      "Title": "Free Ninjutsu",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_FREE_NINJUTSU_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61009,
+      "Name": "lex_ninja2_get_all_hands_power_power",
+      "AssetName": "mods/lex_ninja2/get_all_hands_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.GetAllHandsPower",
+      "Title": "Omnihand",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_GET_ALL_HANDS_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 61010,
+      "Name": "lex_ninja2_good_night_power_power",
+      "AssetName": "mods/lex_ninja2/good_night_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.GoodNightPower",
+      "Title": "Zzz",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_GOOD_NIGHT_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 61011,
+      "Name": "lex_ninja2_heaven_cross_power_power",
+      "AssetName": "mods/lex_ninja2/heaven_cross_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.HeavenCrossPower",
+      "Title": "Heaven Cross",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_HEAVEN_CROSS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61012,
+      "Name": "lex_ninja2_ignis_healing_power_power",
+      "AssetName": "mods/lex_ninja2/ignis_healing_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.IgnisHealingPower",
+      "Title": "Ragnaros",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_IGNIS_HEALING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 61013,
+      "Name": "lex_ninja2_inferno_dragon_power_power",
+      "AssetName": "mods/lex_ninja2/inferno_dragon_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.InfernoDragonPower",
+      "Title": "Inferno Dragon",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_INFERNO_DRAGON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61014,
+      "Name": "lex_ninja2_infinite_snake_bites_power_power",
+      "AssetName": "mods/lex_ninja2/infinite_snake_bites_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.InfiniteSnakeBitesPower",
+      "Title": "Endless Snakes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_INFINITE_SNAKE_BITES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61015,
+      "Name": "lex_ninja2_i_represent_shinobi_power_power",
+      "AssetName": "mods/lex_ninja2/i_represent_shinobi_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.IRepresentShinobiPower",
+      "Title": "I am SHINOBI",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_I_REPRESENT_SHINOBI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61016,
+      "Name": "lex_ninja2_lan_blade_power_power",
+      "AssetName": "mods/lex_ninja2/lan_blade_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.LanBladePower",
+      "Title": "Arashi Storm",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_LAN_BLADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61017,
+      "Name": "lex_ninja2_man_too_weak_power_power",
+      "AssetName": "mods/lex_ninja2/man_too_weak_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.ManTooWeakPower",
+      "Title": "Perfect Body",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_MAN_TOO_WEAK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 61018,
+      "Name": "lex_ninja2_mummy_power_power",
+      "AssetName": "mods/lex_ninja2/mummy_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.MummyPower",
+      "Title": "Mummified",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_MUMMY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61019,
+      "Name": "lex_ninja2_no_lexkela_power_power",
+      "AssetName": "mods/lex_ninja2/no_lexkela_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.NoLexkelaPower",
+      "Title": "Cannot Gain Lexkra",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_NO_LEXKELA_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 61020,
+      "Name": "lex_ninja2_nuclear_dragon_power_power",
+      "AssetName": "mods/lex_ninja2/nuclear_dragon_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.NuclearDragonPower",
+      "Title": "Nucleon Dragon",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_NUCLEAR_DRAGON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61021,
+      "Name": "lex_ninja2_oh_fuck_flash_power_power",
+      "AssetName": "mods/lex_ninja2/oh_fuck_flash_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.OhFuckFlashPower",
+      "Title": "Flash!",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_OH_FUCK_FLASH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61022,
+      "Name": "lex_ninja2_pain_power",
+      "AssetName": "mods/lex_ninja2/pain",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.Pain",
+      "Title": "So Painful",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_PAIN.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 61023,
+      "Name": "lex_ninja2_plasma_arrow_power_power",
+      "AssetName": "mods/lex_ninja2/plasma_arrow_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.PlasmaArrowPower",
+      "Title": "Plasma Arrow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_PLASMA_ARROW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61024,
+      "Name": "lex_ninja2_radiation_power",
+      "AssetName": "mods/lex_ninja2/radiation",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.Radiation",
+      "Title": "Fallout",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_RADIATION.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 61025,
+      "Name": "lex_ninja2_reaper_flame_power",
+      "AssetName": "mods/lex_ninja2/reaper_flame",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.ReaperFlame",
+      "Title": "Ryujin Jakka",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_REAPER_FLAME.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61026,
+      "Name": "lex_ninja2_sand_wall_power",
+      "AssetName": "mods/lex_ninja2/sand_wall",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.SandWall",
+      "Title": "Sand Wall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_SAND_WALL.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61027,
+      "Name": "lex_ninja2_scare_power_power",
+      "AssetName": "mods/lex_ninja2/scare_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.ScarePower",
+      "Title": "Frightenlization Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_SCARE_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 61028,
+      "Name": "lex_ninja2_science_power_power",
+      "AssetName": "mods/lex_ninja2/science_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.SciencePower",
+      "Title": "INDUSTRY!!!",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_SCIENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61029,
+      "Name": "lex_ninja2_seal_power_power",
+      "AssetName": "mods/lex_ninja2/seal_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.SealPower",
+      "Title": "Southern Cross",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_SEAL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 61030,
+      "Name": "lex_ninja2_shen_wei_power_power",
+      "AssetName": "mods/lex_ninja2/shen_wei_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.ShenWeiPower",
+      "Title": "Kamui",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_SHEN_WEI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61031,
+      "Name": "lex_ninja2_shit_power_power",
+      "AssetName": "mods/lex_ninja2/shit_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.ShitPower",
+      "Title": "Feces",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_SHIT_POWER.title",
+      "Tags": [
+        "Buff",
+        "Meme"
+      ]
+    },
+    {
+      "Id": 61032,
+      "Name": "lex_ninja2_stone_strong_power_power",
+      "AssetName": "mods/lex_ninja2/stone_strong_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.StoneStrongPower",
+      "Title": "Like a Rock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_STONE_STRONG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61033,
+      "Name": "lex_ninja2_turbine_power_power",
+      "AssetName": "mods/lex_ninja2/turbine_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.TurbinePower",
+      "Title": "Turbo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_TURBINE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61034,
+      "Name": "lex_ninja2_two_monks_power_power",
+      "AssetName": "mods/lex_ninja2/two_monks_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.TwoMonksPower",
+      "Title": "Arhat Clone",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_TWO_MONKS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 61035,
+      "Name": "lex_ninja2_we_peace_power_power",
+      "AssetName": "mods/lex_ninja2/we_peace_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.WePeacePower",
+      "Title": "Ceasefire",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_WE_PEACE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 61036,
+      "Name": "lex_ninja2_wild_snake_god_power_power",
+      "AssetName": "mods/lex_ninja2/wild_snake_god_power",
+      "Category": "Power",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Powers.WildSnakeGodPower",
+      "Title": "Grasslands Snake God",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LEX_NINJA2_POWER_WILD_SNAKE_GOD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 65000,
+      "Name": "lex_ninja2_lex_ninja2_character",
+      "AssetName": "mods/lex_ninja2/lex_ninja2/lex_ninja2",
+      "Category": "Character",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Character.LexNinja2",
+      "Title": "Lex Ninja",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "LEX_NINJA2_CHARACTER_LEX_NINJA2.title"
+    },
+    {
+      "Id": 62009,
+      "Name": "lex_ninja2_lex_ninja2_yummy_cookie_relic",
+      "AssetName": "mods/lex_ninja2/lex_ninja2/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "LexNinja2",
+      "TypeName": "LexNinja2.LexNinja2Code.Character.LexNinja2",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

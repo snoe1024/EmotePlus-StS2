@@ -1,0 +1,823 @@
+{
+  "Key": "the_witch",
+  "ModIds": [
+    "TheWitch"
+  ],
+  "Name": "The Witch - Beta",
+  "WorkshopId": "3768831080",
+  "Aliases": [
+    "TheWitch"
+  ],
+  "Entries": [
+    {
+      "Id": 262000,
+      "Name": "the_witch_bottled_curiosity_relic",
+      "AssetName": "mods/the_witch/bottled_curiosity",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.BottledCuriosity",
+      "Title": "Bottled Curiosity",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-BOTTLED_CURIOSITY.title"
+    },
+    {
+      "Id": 262001,
+      "Name": "the_witch_cozy_nest_relic",
+      "AssetName": "mods/the_witch/cozy_nest",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.CozyNest",
+      "Title": "Cozy Nest",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-COZY_NEST.title"
+    },
+    {
+      "Id": 262002,
+      "Name": "the_witch_large_pockets_relic",
+      "AssetName": "mods/the_witch/large_pockets",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.LargePockets",
+      "Title": "Large Pockets",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-LARGE_POCKETS.title"
+    },
+    {
+      "Id": 262003,
+      "Name": "the_witch_morganne_relic",
+      "AssetName": "mods/the_witch/morganne",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.Morganne",
+      "Title": "Morganne",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-MORGANNE.title"
+    },
+    {
+      "Id": 262004,
+      "Name": "the_witch_sack_of_treats_relic",
+      "AssetName": "mods/the_witch/sack_of_treats",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.SackOfTreats",
+      "Title": "Sack of Treats",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-SACK_OF_TREATS.title"
+    },
+    {
+      "Id": 262005,
+      "Name": "the_witch_separatory_funnel_relic",
+      "AssetName": "mods/the_witch/separatory_funnel",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.SeparatoryFunnel",
+      "Title": "Separatory Funnel",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-SEPARATORY_FUNNEL.title"
+    },
+    {
+      "Id": 262006,
+      "Name": "the_witch_tasty_herbs_relic",
+      "AssetName": "mods/the_witch/tasty_herbs",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.TastyHerbs",
+      "Title": "Tasty Herbs",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-TASTY_HERBS.title"
+    },
+    {
+      "Id": 262007,
+      "Name": "the_witch_wormys_apple_relic",
+      "AssetName": "mods/the_witch/wormys_apple",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Relics.WormysApple",
+      "Title": "Wormy's Apple",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THEWITCH-WORMYS_APPLE.title"
+    },
+    {
+      "Id": 261000,
+      "Name": "the_witch_a_little_sip_power_power",
+      "AssetName": "mods/the_witch/a_little_sip_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.ALittleSipPower",
+      "Title": "A Little Sip",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-A_LITTLE_SIP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261001,
+      "Name": "the_witch_blood_anointment_power_power",
+      "AssetName": "mods/the_witch/blood_anointment_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.BloodAnointmentPower",
+      "Title": "Blood Anointment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-BLOOD_ANOINTMENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261002,
+      "Name": "the_witch_bottomless_cauldron_power_power",
+      "AssetName": "mods/the_witch/bottomless_cauldron_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.BottomlessCauldronPower",
+      "Title": "Bottomless Cauldron",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-BOTTOMLESS_CAULDRON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261003,
+      "Name": "the_witch_brambles_power_power",
+      "AssetName": "mods/the_witch/brambles_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.BramblesPower",
+      "Title": "Brambles",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-BRAMBLES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261004,
+      "Name": "the_witch_catalyst_power_power",
+      "AssetName": "mods/the_witch/catalyst_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.CatalystPower",
+      "Title": "Catalyst",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-CATALYST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261005,
+      "Name": "the_witch_cauldron_dance_power_power",
+      "AssetName": "mods/the_witch/cauldron_dance_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.CauldronDancePower",
+      "Title": "Cauldron Dance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-CAULDRON_DANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261006,
+      "Name": "the_witch_cloak_of_moonlight_power_power",
+      "AssetName": "mods/the_witch/cloak_of_moonlight_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.CloakOfMoonlightPower",
+      "Title": "Cloak of Moonlight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-CLOAK_OF_MOONLIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261007,
+      "Name": "the_witch_cloak_of_twilight_power_power",
+      "AssetName": "mods/the_witch/cloak_of_twilight_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.CloakOfTwilightPower",
+      "Title": "Cloak of Twilight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-CLOAK_OF_TWILIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261008,
+      "Name": "the_witch_crystal_bottle_power_power",
+      "AssetName": "mods/the_witch/crystal_bottle_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.CrystalBottlePower",
+      "Title": "Crystal Bottle",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-CRYSTAL_BOTTLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261009,
+      "Name": "the_witch_deep_roots_power_power",
+      "AssetName": "mods/the_witch/deep_roots_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.DeepRootsPower",
+      "Title": "Deep Roots",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-DEEP_ROOTS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261010,
+      "Name": "the_witch_embrace_the_wilds_power_power",
+      "AssetName": "mods/the_witch/embrace_the_wilds_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.EmbraceTheWildsPower",
+      "Title": "Embrace the Wilds",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-EMBRACE_THE_WILDS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 261011,
+      "Name": "the_witch_eye_of_newt_power_power",
+      "AssetName": "mods/the_witch/eye_of_newt_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.EyeOfNewtPower",
+      "Title": "Eye of Newt",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-EYE_OF_NEWT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261012,
+      "Name": "the_witch_hex_power_power",
+      "AssetName": "mods/the_witch/hex_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.HexPower",
+      "Title": "Hex",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-HEX_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 261013,
+      "Name": "the_witch_hidden_in_smoke_power_power",
+      "AssetName": "mods/the_witch/hidden_in_smoke_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.HiddenInSmokePower",
+      "Title": "Hidden in Smoke",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-HIDDEN_IN_SMOKE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261014,
+      "Name": "the_witch_incarnation_power_power",
+      "AssetName": "mods/the_witch/incarnation_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.IncarnationPower",
+      "Title": "Incarnation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-INCARNATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261015,
+      "Name": "the_witch_moonlight_power_power",
+      "AssetName": "mods/the_witch/moonlight_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.MoonlightPower",
+      "Title": "Moonlight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-MOONLIGHT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 261016,
+      "Name": "the_witch_neverending_potion_power_power",
+      "AssetName": "mods/the_witch/neverending_potion_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.NeverendingPotionPower",
+      "Title": "Neverending Potion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-NEVERENDING_POTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261017,
+      "Name": "the_witch_next_potion_copied_power_power",
+      "AssetName": "mods/the_witch/next_potion_copied_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.NextPotionCopiedPower",
+      "Title": "Gathered Herbs",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-NEXT_POTION_COPIED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261018,
+      "Name": "the_witch_next_potion_rare_power_power",
+      "AssetName": "mods/the_witch/next_potion_rare_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.NextPotionRarePower",
+      "Title": "Gathered Herbs",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-NEXT_POTION_RARE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261019,
+      "Name": "the_witch_next_skill_discount_power_power",
+      "AssetName": "mods/the_witch/next_skill_discount_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.NextSkillDiscountPower",
+      "Title": "Discounted Skill",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-NEXT_SKILL_DISCOUNT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261020,
+      "Name": "the_witch_overrun_power_power",
+      "AssetName": "mods/the_witch/overrun_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.OverrunPower",
+      "Title": "Overrun",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-OVERRUN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261021,
+      "Name": "the_witch_primal_form_power_power",
+      "AssetName": "mods/the_witch/primal_form_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.PrimalFormPower",
+      "Title": "Primal Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-PRIMAL_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261022,
+      "Name": "the_witch_ritual_casting_power_power",
+      "AssetName": "mods/the_witch/ritual_casting_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.RitualCastingPower",
+      "Title": "Ritual Casting",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-RITUAL_CASTING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261023,
+      "Name": "the_witch_rotting_roots_power_power",
+      "AssetName": "mods/the_witch/rotting_roots_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.RottingRootsPower",
+      "Title": "Rotting Roots",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-ROTTING_ROOTS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261024,
+      "Name": "the_witch_salt_and_ash_power_power",
+      "AssetName": "mods/the_witch/salt_and_ash_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.SaltAndAshPower",
+      "Title": "Salt and Ash",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-SALT_AND_ASH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261025,
+      "Name": "the_witch_smolder_power_power",
+      "AssetName": "mods/the_witch/smolder_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.SmolderPower",
+      "Title": "Smolder",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-SMOLDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261026,
+      "Name": "the_witch_strength_next_turn_power_power",
+      "AssetName": "mods/the_witch/strength_next_turn_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.StrengthNextTurnPower",
+      "Title": "Strength Next Turn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-STRENGTH_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261027,
+      "Name": "the_witch_vigor_next_turn_power_power",
+      "AssetName": "mods/the_witch/vigor_next_turn_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.VigorNextTurnPower",
+      "Title": "Vigor Next Turn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-VIGOR_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261028,
+      "Name": "the_witch_vile_renewal_power_power",
+      "AssetName": "mods/the_witch/vile_renewal_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.VileRenewalPower",
+      "Title": "Vile Renewal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-VILE_RENEWAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261029,
+      "Name": "the_witch_volatile_vapors_power_power",
+      "AssetName": "mods/the_witch/volatile_vapors_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.VolatileVaporsPower",
+      "Title": "Volatile Vapors",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-VOLATILE_VAPORS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261030,
+      "Name": "the_witch_wax_and_wane_power_power",
+      "AssetName": "mods/the_witch/wax_and_wane_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.WaxAndWanePower",
+      "Title": "Wax and Wane",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-WAX_AND_WANE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 261031,
+      "Name": "the_witch_wild_growth_power_power",
+      "AssetName": "mods/the_witch/wild_growth_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.WildGrowthPower",
+      "Title": "Wild Growth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THEWITCH-WILD_GROWTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 264000,
+      "Name": "the_witch_bottled_message_potion",
+      "AssetName": "mods/the_witch/bottled_message",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.BottledMessage",
+      "Title": "Bottled Message",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-BOTTLED_MESSAGE.title"
+    },
+    {
+      "Id": 264001,
+      "Name": "the_witch_buddy_in_a_bottle_potion",
+      "AssetName": "mods/the_witch/buddy_in_a_bottle",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.BuddyInABottle",
+      "Title": "Buddy in a Bottle",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-BUDDY_IN_A_BOTTLE.title"
+    },
+    {
+      "Id": 264002,
+      "Name": "the_witch_cursed_bottle_potion",
+      "AssetName": "mods/the_witch/cursed_bottle",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.CursedBottle",
+      "Title": "Cursed Bottle",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-CURSED_BOTTLE.title"
+    },
+    {
+      "Id": 264003,
+      "Name": "the_witch_ember_jar_potion",
+      "AssetName": "mods/the_witch/ember_jar",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.EmberJar",
+      "Title": "Ember Jar",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-EMBER_JAR.title"
+    },
+    {
+      "Id": 264004,
+      "Name": "the_witch_fertilizer_potion",
+      "AssetName": "mods/the_witch/fertilizer",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.Fertilizer",
+      "Title": "Fertilizer",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-FERTILIZER.title"
+    },
+    {
+      "Id": 264005,
+      "Name": "the_witch_mushroom_extract_potion",
+      "AssetName": "mods/the_witch/mushroom_extract",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.MushroomExtract",
+      "Title": "Mushroom Extract",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-MUSHROOM_EXTRACT.title"
+    },
+    {
+      "Id": 264006,
+      "Name": "the_witch_noxious_brew_potion",
+      "AssetName": "mods/the_witch/noxious_brew",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.NoxiousBrew",
+      "Title": "Noxious Brew",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-NOXIOUS_BREW.title"
+    },
+    {
+      "Id": 264007,
+      "Name": "the_witch_ominous_flask_potion",
+      "AssetName": "mods/the_witch/ominous_flask",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.OminousFlask",
+      "Title": "Ominous Flask",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-OMINOUS_FLASK.title"
+    },
+    {
+      "Id": 264008,
+      "Name": "the_witch_potion_shaped_pebble_potion",
+      "AssetName": "mods/the_witch/potion_shaped_pebble",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.PotionShapedPebble",
+      "Title": "Potion-Shaped Pebble",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-POTION_SHAPED_PEBBLE.title"
+    },
+    {
+      "Id": 264009,
+      "Name": "the_witch_prickly_vial_potion",
+      "AssetName": "mods/the_witch/prickly_vial",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.PricklyVial",
+      "Title": "Prickly Vial",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-PRICKLY_VIAL.title"
+    },
+    {
+      "Id": 264010,
+      "Name": "the_witch_puff_of_smoke_potion",
+      "AssetName": "mods/the_witch/puff_of_smoke",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.PuffOfSmoke",
+      "Title": "Puff of Smoke",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-PUFF_OF_SMOKE.title"
+    },
+    {
+      "Id": 264011,
+      "Name": "the_witch_vial_of_smoke_potion",
+      "AssetName": "mods/the_witch/vial_of_smoke",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.VialOfSmoke",
+      "Title": "Vial of Smoke",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-VIAL_OF_SMOKE.title"
+    },
+    {
+      "Id": 264012,
+      "Name": "the_witch_polished_bottlecap_potion",
+      "AssetName": "mods/the_witch/polished_bottlecap",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.Treasures.PolishedBottlecap",
+      "Title": "Polished Bottlecap",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-POLISHED_BOTTLECAP.title"
+    },
+    {
+      "Id": 264013,
+      "Name": "the_witch_shiny_hairpin_potion",
+      "AssetName": "mods/the_witch/shiny_hairpin",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.Treasures.ShinyHairpin",
+      "Title": "Shiny Hairpin",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-SHINY_HAIRPIN.title"
+    },
+    {
+      "Id": 264014,
+      "Name": "the_witch_foreign_coin_potion",
+      "AssetName": "mods/the_witch/foreign_coin",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.Treasures.ForeignCoin",
+      "Title": "Foreign Coin",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-FOREIGN_COIN.title"
+    },
+    {
+      "Id": 264015,
+      "Name": "the_witch_impeccable_silverware_potion",
+      "AssetName": "mods/the_witch/impeccable_silverware",
+      "Category": "Potion",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Potions.Treasures.ImpeccableSilverware",
+      "Title": "Impeccable Silverware",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THEWITCH-IMPECCABLE_SILVERWARE.title"
+    },
+    {
+      "Id": 265000,
+      "Name": "the_witch_witch_character",
+      "AssetName": "mods/the_witch/witch",
+      "Category": "Character",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Character.Witch",
+      "Title": "The Witch",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "THEWITCH-WITCH.title"
+    },
+    {
+      "Id": 262008,
+      "Name": "the_witch_witch_yummy_cookie_relic",
+      "AssetName": "mods/the_witch/witch/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Character.Witch",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 261032,
+      "Name": "the_witch_pack_tactics_power_power",
+      "AssetName": "mods/the_witch/pack_tactics_power",
+      "Category": "Power",
+      "Assembly": "TheWitch",
+      "TypeName": "TheWitch.TheWitchCode.Powers.PackTacticsPower",
+      "Title": "Pack Tactics",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THEWITCH-PACK_TACTICS.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ]
+}

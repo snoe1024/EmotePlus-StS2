@@ -1,0 +1,40 @@
+{
+  "Key": "momo_lib",
+  "ModIds": [
+    "MomoLib"
+  ],
+  "Name": "MomoLib",
+  "WorkshopId": "3753137192",
+  "Aliases": [
+    "MomoLib"
+  ],
+  "Entries": [
+    {
+      "Id": 341000,
+      "Name": "momo_lib_dodge_power_power",
+      "AssetName": "mods/momo_lib/dodge_power",
+      "Category": "Power",
+      "Assembly": "MomoLib",
+      "TypeName": "MomoLib.Powers.DodgePower",
+      "Title": "Dodge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MOMOLIB-DODGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 343000,
+      "Name": "momo_lib_bloom_enchantment",
+      "AssetName": "mods/momo_lib/bloom",
+      "Category": "Enchantment",
+      "Assembly": "MomoLib",
+      "TypeName": "MomoLib.Enchantments.Bloom",
+      "Title": "Bloom",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "MOMOLIB-BLOOM.title"
+    }
+  ]
+}

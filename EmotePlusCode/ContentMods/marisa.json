@@ -1,0 +1,596 @@
+{
+  "Key": "marisa",
+  "ModIds": [
+    "marisamod"
+  ],
+  "Name": "marisamod",
+  "WorkshopId": "3747647777",
+  "Aliases": [
+    "marisamod"
+  ],
+  "Entries": [
+    {
+      "Id": 132000,
+      "Name": "marisa_amplify_wand_relic",
+      "AssetName": "mods/marisa/amplify_wand",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.AmplifyWand",
+      "Title": "Amplify Wand",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-AMPLIFY_WAND.title"
+    },
+    {
+      "Id": 132001,
+      "Name": "marisa_bewitched_hakkero_relic",
+      "AssetName": "mods/marisa/bewitched_hakkero",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.BewitchedHakkero",
+      "Title": "Bewitched Hakkero",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-BEWITCHED_HAKKERO.title"
+    },
+    {
+      "Id": 132002,
+      "Name": "marisa_big_shroom_bag_relic",
+      "AssetName": "mods/marisa/big_shroom_bag",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.BigShroomBag",
+      "Title": "Big Shroom Bag",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-BIG_SHROOM_BAG.title"
+    },
+    {
+      "Id": 132003,
+      "Name": "marisa_bread_of_a_washoku_lover_relic",
+      "AssetName": "mods/marisa/bread_of_a_washoku_lover",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.BreadOfAWashokuLover",
+      "Title": "Bread of a Washoku Lover",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-BREAD_OF_A_WASHOKU_LOVER.title"
+    },
+    {
+      "Id": 132004,
+      "Name": "marisa_experimental_familiar_relic",
+      "AssetName": "mods/marisa/experimental_familiar",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.ExperimentalFamiliar",
+      "Title": "Experimental Familiar",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-EXPERIMENTAL_FAMILIAR.title"
+    },
+    {
+      "Id": 132005,
+      "Name": "marisa_handmade_grimoire_relic",
+      "AssetName": "mods/marisa/handmade_grimoire",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.HandmadeGrimoire",
+      "Title": "Homemade Grimoire",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-HANDMADE_GRIMOIRE.title"
+    },
+    {
+      "Id": 132006,
+      "Name": "marisa_magic_broom_relic",
+      "AssetName": "mods/marisa/magic_broom",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.MagicBroom",
+      "Title": "Magic Broom",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-MAGIC_BROOM.title"
+    },
+    {
+      "Id": 132007,
+      "Name": "marisa_mini_hakkero_relic",
+      "AssetName": "mods/marisa/mini_hakkero",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.MiniHakkero",
+      "Title": "Mini Hakkero",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-MINI_HAKKERO.title"
+    },
+    {
+      "Id": 132008,
+      "Name": "marisa_shroom_bag_relic",
+      "AssetName": "mods/marisa/shroom_bag",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.ShroomBag",
+      "Title": "Shroom Bag",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-SHROOM_BAG.title"
+    },
+    {
+      "Id": 132009,
+      "Name": "marisa_simple_launcher_relic",
+      "AssetName": "mods/marisa/simple_launcher",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.SimpleLauncher",
+      "Title": "Simple Launcher",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-SIMPLE_LAUNCHER.title"
+    },
+    {
+      "Id": 132010,
+      "Name": "marisa_unstable_magic_tool_relic",
+      "AssetName": "mods/marisa/unstable_magic_tool",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Relics.UnstableMagicTool",
+      "Title": "Unstable Magic Tool",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MARISAMOD-UNSTABLE_MAGIC_TOOL.title"
+    },
+    {
+      "Id": 131000,
+      "Name": "marisa_bound_of_protagonists_power_power",
+      "AssetName": "mods/marisa/bound_of_protagonists_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.BoundOfProtagonistsPower",
+      "Title": "Bond of Protagonists",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-BOUND_OF_PROTAGONISTS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131001,
+      "Name": "marisa_buff_blocker_power_power",
+      "AssetName": "mods/marisa/buff_blocker_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.BuffBlockerPower",
+      "Title": "Buff Blocker",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-BUFF_BLOCKER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 131002,
+      "Name": "marisa_casket_of_star_plus_power_power",
+      "AssetName": "mods/marisa/casket_of_star_plus_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.CasketOfStarPlusPower",
+      "Title": "Casket of Stars",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-CASKET_OF_STAR_PLUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "marisamod.Scripts.Powers.CasketOfStarPower"
+      ]
+    },
+    {
+      "Id": 131004,
+      "Name": "marisa_charge_up_power_power",
+      "AssetName": "mods/marisa/charge_up_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.ChargeUpPower",
+      "Title": "Charge-Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-CHARGE_UP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131005,
+      "Name": "marisa_deep_ecological_bomb_power_power",
+      "AssetName": "mods/marisa/deep_ecological_bomb_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.DeepEcologicalBombPower",
+      "Title": "Deep Ecological Bomb",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-DEEP_ECOLOGICAL_BOMB_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 131006,
+      "Name": "marisa_energy_flow_power_power",
+      "AssetName": "mods/marisa/energy_flow_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.EnergyFlowPower",
+      "Title": "Energy Flow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-ENERGY_FLOW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131007,
+      "Name": "marisa_escape_velocity_power_power",
+      "AssetName": "mods/marisa/escape_velocity_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.EscapeVelocityPower",
+      "Title": "Escape Velocity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-ESCAPE_VELOCITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131008,
+      "Name": "marisa_event_horizon_power_power",
+      "AssetName": "mods/marisa/event_horizon_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.EventHorizonPower",
+      "Title": "Event Horizon",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-EVENT_HORIZON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131009,
+      "Name": "marisa_flight_power_power",
+      "AssetName": "mods/marisa/flight_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.FlightPower",
+      "Title": "Flight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-FLIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131010,
+      "Name": "marisa_magic_and_red_dream_power_power",
+      "AssetName": "mods/marisa/magic_and_red_dream_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.MagicAndRedDreamPower",
+      "Title": "Magic and Red Dream",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-MAGIC_AND_RED_DREAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131011,
+      "Name": "marisa_maximise_power_power_power",
+      "AssetName": "mods/marisa/maximise_power_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.MaximisePowerPower",
+      "Title": "Full Power",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-MAXIMISE_POWER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131012,
+      "Name": "marisa_millisecond_pulsars_power_power",
+      "AssetName": "mods/marisa/millisecond_pulsars_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.MillisecondPulsarsPower",
+      "Title": "Millisecond Pulsars",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-MILLISECOND_PULSARS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "marisamod.Scripts.Powers.PulseMagicPower"
+      ]
+    },
+    {
+      "Id": 131013,
+      "Name": "marisa_one_time_off_power_power",
+      "AssetName": "mods/marisa/one_time_off_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.OneTimeOffPower",
+      "Title": "One Time Off",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-ONE_TIME_OFF_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131014,
+      "Name": "marisa_orrerys_galaxy_power_power",
+      "AssetName": "mods/marisa/orrerys_galaxy_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.OrrerysGalaxyPower",
+      "Title": "Orrerys Galaxy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-ORRERYS_GALAXY_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "marisamod.Scripts.Powers.OrrerysUniversePower",
+        "marisamod.Scripts.Powers.OrrerysGalaxyBlockPower"
+      ]
+    },
+    {
+      "Id": 131015,
+      "Name": "marisa_orrerys_sun_power_power",
+      "AssetName": "mods/marisa/orrerys_sun_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.OrrerysSunPower",
+      "Title": "Orrery's Sun",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-ORRERYS_SUN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131018,
+      "Name": "marisa_polaris_unique_power_power",
+      "AssetName": "mods/marisa/polaris_unique_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.PolarisUniquePower",
+      "Title": "Polaris Unique",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-POLARIS_UNIQUE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 131019,
+      "Name": "marisa_prop_bag_power_power",
+      "AssetName": "mods/marisa/prop_bag_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.PropBagPower",
+      "Title": "Prop Bag",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-PROP_BAG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131021,
+      "Name": "marisa_satellite_illusion_power_power",
+      "AssetName": "mods/marisa/satellite_illusion_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.SatelliteIllusionPower",
+      "Title": "Satellite Illusion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-SATELLITE_ILLUSION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131022,
+      "Name": "marisa_singularity_power_power",
+      "AssetName": "mods/marisa/singularity_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.SingularityPower",
+      "Title": "Singularity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-SINGULARITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131023,
+      "Name": "marisa_sprinkle_star_n_heart_power_power",
+      "AssetName": "mods/marisa/sprinkle_star_n_heart_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.SprinkleStarNHeartPower",
+      "Title": "Sprinkle Star & Heart",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-SPRINKLE_STAR_N_HEART_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131024,
+      "Name": "marisa_starlit_power_power",
+      "AssetName": "mods/marisa/starlit_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.StarlitPower",
+      "Title": "Starlit",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-STARLIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131025,
+      "Name": "marisa_super_nova_power_power",
+      "AssetName": "mods/marisa/super_nova_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.SuperNovaPower",
+      "Title": "Supernova",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-SUPER_NOVA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131026,
+      "Name": "marisa_swiped_card_power_power",
+      "AssetName": "mods/marisa/swiped_card_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.SwipedCardPower",
+      "Title": "Card swiped",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-SWIPED_CARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 131027,
+      "Name": "marisa_walpurgisnacht_amp_power_power",
+      "AssetName": "mods/marisa/walpurgisnacht_amp_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.WalpurgisnachtAmpPower",
+      "Title": "Walpurgisnacht",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-WALPURGISNACHT_AMP_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "marisamod.Scripts.Powers.WalpurgisnachtPower"
+      ]
+    },
+    {
+      "Id": 131029,
+      "Name": "marisa_witch_of_greed_potion_power_power",
+      "AssetName": "mods/marisa/witch_of_greed_potion_power",
+      "Category": "Power",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Powers.WitchOfGreedPotionPower",
+      "Title": "Potion Reward",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MARISAMOD-WITCH_OF_GREED_POTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 134000,
+      "Name": "marisa_bottled_spark_potion",
+      "AssetName": "mods/marisa/bottled_spark",
+      "Category": "Potion",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Potions.BottledSpark",
+      "Title": "Bottled Spark",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "MARISAMOD-BOTTLED_SPARK.title"
+    },
+    {
+      "Id": 134001,
+      "Name": "marisa_love_coloured_potion_potion",
+      "AssetName": "mods/marisa/love_coloured_potion",
+      "Category": "Potion",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Potions.LoveColouredPotion",
+      "Title": "Love Coloured Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "MARISAMOD-LOVE_COLOURED_POTION.title"
+    },
+    {
+      "Id": 134002,
+      "Name": "marisa_shroom_brew_potion",
+      "AssetName": "mods/marisa/shroom_brew",
+      "Category": "Potion",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Potions.ShroomBrew",
+      "Title": "Shroom Brew",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "MARISAMOD-SHROOM_BREW.title"
+    },
+    {
+      "Id": 135000,
+      "Name": "marisa_marisa_character_character",
+      "AssetName": "mods/marisa/marisa_character",
+      "Category": "Character",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Characters.MarisaCharacter",
+      "Title": "The Ordinary Magician",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "MARISAMOD-MARISA_CHARACTER.title"
+    },
+    {
+      "Id": 132011,
+      "Name": "marisa_marisa_character_yummy_cookie_relic",
+      "AssetName": "mods/marisa/marisa_character/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "marisamod",
+      "TypeName": "marisamod.Scripts.Characters.MarisaCharacter",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

@@ -1,0 +1,1545 @@
+{
+  "Key": "into_the_spireverse",
+  "ModIds": [
+    "IntoTheSpireverse"
+  ],
+  "Name": "Into The Spireverse",
+  "WorkshopId": "3747503080",
+  "Aliases": [
+    "IntoTheSpireverse",
+    "Into The Spireverse",
+    "Multiverse",
+    "The Tectonic",
+    "The Acolyte",
+    "The Captain"
+  ],
+  "Entries": [
+    {
+      "Id": 75000,
+      "Name": "into_the_spireverse_shadow_silent_shadow_silent_character",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/shadow_silent",
+      "Category": "Character",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.ShadowSilent",
+      "Title": "The Acolyte",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "INTOTHESPIREVERSE-SHADOW_SILENT.title",
+      "CookieEmoteId": 2319
+    },
+    {
+      "Id": 72000,
+      "Name": "into_the_spireverse_shadow_silent_armored_core_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/armored_core",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.ArmoredCore",
+      "Title": "Armored Core",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-ARMORED_CORE.title"
+    },
+    {
+      "Id": 72001,
+      "Name": "into_the_spireverse_shadow_silent_balete_root_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/balete_root",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.BaleteRoot",
+      "Title": "Balete Root",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-BALETE_ROOT.title"
+    },
+    {
+      "Id": 72002,
+      "Name": "into_the_spireverse_shadow_silent_mithridatium_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/mithridatium",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.Mithridatium",
+      "Title": "Mithridatium",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-MITHRIDATIUM.title"
+    },
+    {
+      "Id": 72003,
+      "Name": "into_the_spireverse_shadow_silent_prayer_beads_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/prayer_beads",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.PrayerBeads",
+      "Title": "Prayer Beads",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-PRAYER_BEADS.title"
+    },
+    {
+      "Id": 72004,
+      "Name": "into_the_spireverse_shadow_silent_rattleback_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/rattleback",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.Rattleback",
+      "Title": "Rattleback",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-RATTLEBACK.title"
+    },
+    {
+      "Id": 72005,
+      "Name": "into_the_spireverse_shadow_silent_sisters_crown_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/sisters_crown",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.SistersCrown",
+      "Title": "Sister's Crown",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-SISTERS_CROWN.title"
+    },
+    {
+      "Id": 72006,
+      "Name": "into_the_spireverse_shadow_silent_snecko_brand_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/snecko_brand",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.SneckoBrand",
+      "Title": "Snecko Brand",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-SNECKO_BRAND.title"
+    },
+    {
+      "Id": 72007,
+      "Name": "into_the_spireverse_shadow_silent_soul_brand_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/soul_brand",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.SoulBrand",
+      "Title": "Soul Brand",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-SOUL_BRAND.title"
+    },
+    {
+      "Id": 72008,
+      "Name": "into_the_spireverse_shadow_silent_vino_serpento_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/vino_serpento",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Relics.VinoSerpento",
+      "Title": "Vino Serpento",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-VINO_SERPENTO.title"
+    },
+    {
+      "Id": 71000,
+      "Name": "into_the_spireverse_shadow_silent_agent_of_chaos_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/agent_of_chaos_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.AgentOfChaosPower",
+      "Title": "Agent of Chaos",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-AGENT_OF_CHAOS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71001,
+      "Name": "into_the_spireverse_shadow_silent_anoint_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/anoint_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.AnointPower",
+      "Title": "Anointed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-ANOINT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71002,
+      "Name": "into_the_spireverse_shadow_silent_blunder_guard_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/blunder_guard_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.BlunderGuardPower",
+      "Title": "Blunder Guard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-BLUNDER_GUARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71003,
+      "Name": "into_the_spireverse_shadow_silent_blunderstorm_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/blunderstorm_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.BlunderstormPower",
+      "Title": "Blunderstorm",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-BLUNDERSTORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71004,
+      "Name": "into_the_spireverse_shadow_silent_coil_up_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/coil_up_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.CoilUpPower",
+      "Title": "Coil Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-COIL_UP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71005,
+      "Name": "into_the_spireverse_shadow_silent_conserve_energy_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/conserve_energy_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.ConserveEnergyPower",
+      "Title": "Conserve Energy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-CONSERVE_ENERGY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71006,
+      "Name": "into_the_spireverse_shadow_silent_corpse_explosion_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/corpse_explosion_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.CorpseExplosionPower",
+      "Title": "Corpse Explosion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-CORPSE_EXPLOSION_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71007,
+      "Name": "into_the_spireverse_shadow_silent_crown_of_madness_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/crown_of_madness_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.CrownOfMadnessPower",
+      "Title": "Crown of Madness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-CROWN_OF_MADNESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71008,
+      "Name": "into_the_spireverse_shadow_silent_divine_intervention_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/divine_intervention_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.DivineInterventionPower",
+      "Title": "Divine Intervention",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-DIVINE_INTERVENTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71009,
+      "Name": "into_the_spireverse_shadow_silent_dragonscale_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/dragonscale_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.DragonscalePower",
+      "Title": "Dragonscale",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-DRAGONSCALE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71010,
+      "Name": "into_the_spireverse_shadow_silent_foul_miasma_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/foul_miasma_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.FoulMiasmaPower",
+      "Title": "Foul Miasma",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-FOUL_MIASMA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71011,
+      "Name": "into_the_spireverse_shadow_silent_graze_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/graze_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.GrazePower",
+      "Title": "Graze",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-GRAZE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71012,
+      "Name": "into_the_spireverse_shadow_silent_have_faith_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/have_faith_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.HaveFaithPower",
+      "Title": "Have Faith",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-HAVE_FAITH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71013,
+      "Name": "into_the_spireverse_shadow_silent_horror_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/horror_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.HorrorPower",
+      "Title": "Horror",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-HORROR_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71014,
+      "Name": "into_the_spireverse_shadow_silent_illusion_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/illusion_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.IllusionPower",
+      "Title": "Illusion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-ILLUSION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71015,
+      "Name": "into_the_spireverse_shadow_silent_immobilize_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/immobilize_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.ImmobilizePower",
+      "Title": "Immobilize",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "INTOTHESPIREVERSE-IMMOBILIZE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71016,
+      "Name": "into_the_spireverse_shadow_silent_malevolent_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/malevolent_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.MalevolentPower",
+      "Title": "Malevolent",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-MALEVOLENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71017,
+      "Name": "into_the_spireverse_shadow_silent_mystical_barrier_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/mystical_barrier_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.MysticalBarrierPower",
+      "Title": "Mystical Barrier",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-MYSTICAL_BARRIER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71018,
+      "Name": "into_the_spireverse_shadow_silent_oath_of_devotion_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/oath_of_devotion_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.OathOfDevotionPower",
+      "Title": "Oath of Devotion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-OATH_OF_DEVOTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71019,
+      "Name": "into_the_spireverse_shadow_silent_pestilence_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/pestilence_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.PestilencePower",
+      "Title": "Pestilence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-PESTILENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71020,
+      "Name": "into_the_spireverse_shadow_silent_powerscale_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/powerscale_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.PowerscalePower",
+      "Title": "Powerscale",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-POWERSCALE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71021,
+      "Name": "into_the_spireverse_shadow_silent_recall_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/recall_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.RecallPower",
+      "Title": "Recall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-RECALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71022,
+      "Name": "into_the_spireverse_shadow_silent_shellback_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/shellback_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.ShellbackPower",
+      "Title": "Shellback",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SHELLBACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71023,
+      "Name": "into_the_spireverse_shadow_silent_snake_eyes_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/snake_eyes_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.SnakeEyesPower",
+      "Title": "Snake Eyes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SNAKE_EYES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71024,
+      "Name": "into_the_spireverse_shadow_silent_spearhead_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/spearhead_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.SpearheadPower",
+      "Title": "Spearhead",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SPEARHEAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71025,
+      "Name": "into_the_spireverse_shadow_silent_thousand_cuts_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/thousand_cuts_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Powers.ThousandCutsPower",
+      "Title": "Thousand Cuts",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-THOUSAND_CUTS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 74000,
+      "Name": "into_the_spireverse_shadow_silent_crafty_potion_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/crafty_potion",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Potions.CraftyPotion",
+      "Title": "Crafty Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-CRAFTY_POTION.title"
+    },
+    {
+      "Id": 74001,
+      "Name": "into_the_spireverse_shadow_silent_nightmare_fuel_potion_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/nightmare_fuel_potion",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Potions.NightmareFuelPotion",
+      "Title": "Nightmare Fuel",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-NIGHTMARE_FUEL_POTION.title"
+    },
+    {
+      "Id": 74002,
+      "Name": "into_the_spireverse_shadow_silent_viral_potion_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/viral_potion",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Potions.ViralPotion",
+      "Title": "Viral Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-VIRAL_POTION.title"
+    },
+    {
+      "Id": 73000,
+      "Name": "into_the_spireverse_shadow_silent_armored_enchantment",
+      "AssetName": "mods/into_the_spireverse/shadow_silent/armored",
+      "Category": "Enchantment",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowSilent.Enchantments.Armored",
+      "Title": "Armored",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "INTOTHESPIREVERSE-ARMORED.title"
+    },
+    {
+      "Id": 75001,
+      "Name": "into_the_spireverse_shadow_regent_shadow_regent_character",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/shadow_regent",
+      "Category": "Character",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.ShadowRegent",
+      "Title": "The Captain",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "INTOTHESPIREVERSE-SHADOW_REGENT.title",
+      "CookieEmoteId": 2319
+    },
+    {
+      "Id": 72009,
+      "Name": "into_the_spireverse_shadow_regent_admirals_hat_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/admirals_hat",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.AdmiralsHat",
+      "Title": "Admiral's Hat",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-ADMIRALS_HAT.title"
+    },
+    {
+      "Id": 72010,
+      "Name": "into_the_spireverse_shadow_regent_bobblehead_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/bobblehead",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.Bobblehead",
+      "Title": "Bobblehead",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-BOBBLEHEAD.title"
+    },
+    {
+      "Id": 72011,
+      "Name": "into_the_spireverse_shadow_regent_captains_hat_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/captains_hat",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.CaptainsHat",
+      "Title": "Captain's Hat",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-CAPTAINS_HAT.title"
+    },
+    {
+      "Id": 72012,
+      "Name": "into_the_spireverse_shadow_regent_comm_badge_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/comm_badge",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.CommBadge",
+      "Title": "Comm Badge",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-COMM_BADGE.title"
+    },
+    {
+      "Id": 72013,
+      "Name": "into_the_spireverse_shadow_regent_dilithium_crystal_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/dilithium_crystal",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.DilithiumCrystal",
+      "Title": "Dilithium Crystal",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-DILITHIUM_CRYSTAL.title"
+    },
+    {
+      "Id": 72014,
+      "Name": "into_the_spireverse_shadow_regent_fuzzy_dice_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/fuzzy_dice",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.FuzzyDice",
+      "Title": "Fuzzy Dice",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-FUZZY_DICE.title"
+    },
+    {
+      "Id": 72015,
+      "Name": "into_the_spireverse_shadow_regent_hula_figure_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/hula_figure",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.HulaFigure",
+      "Title": "Hula Figure",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-HULA_FIGURE.title"
+    },
+    {
+      "Id": 72016,
+      "Name": "into_the_spireverse_shadow_regent_purple_dough_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/purple_dough",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.PurpleDough",
+      "Title": "Purple Dough",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-PURPLE_DOUGH.title"
+    },
+    {
+      "Id": 72017,
+      "Name": "into_the_spireverse_shadow_regent_ship_in_a_bottle_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/ship_in_a_bottle",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Relics.ShipInABottle",
+      "Title": "Replica 'Sovereign'",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-SHIP_IN_A_BOTTLE.title"
+    },
+    {
+      "Id": 71026,
+      "Name": "into_the_spireverse_shadow_regent_armada_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/armada_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.ArmadaPower",
+      "Title": "Armada",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-ARMADA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71027,
+      "Name": "into_the_spireverse_shadow_regent_blockade_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/blockade_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.BlockadePower",
+      "Title": "Blockade",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-BLOCKADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71028,
+      "Name": "into_the_spireverse_shadow_regent_defensive_cannonade_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/defensive_cannonade_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.DefensiveCannonadePower",
+      "Title": "Defensive Cannonade",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-DEFENSIVE_CANNONADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71029,
+      "Name": "into_the_spireverse_shadow_regent_exalted_form_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/exalted_form_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.ExaltedFormPower",
+      "Title": "Exalted Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-EXALTED_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71030,
+      "Name": "into_the_spireverse_shadow_regent_firepower_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/firepower_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.FirepowerPower",
+      "Title": "Firepower",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-FIREPOWER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71031,
+      "Name": "into_the_spireverse_shadow_regent_grapeshot_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/grapeshot_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.GrapeshotPower",
+      "Title": "Grapeshot",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-GRAPESHOT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71032,
+      "Name": "into_the_spireverse_shadow_regent_ice_beam_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/ice_beam_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.IceBeamPower",
+      "Title": "Ice Beam",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "INTOTHESPIREVERSE-ICE_BEAM.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71033,
+      "Name": "into_the_spireverse_shadow_regent_mass_munition_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/mass_munition_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.MassMunitionPower",
+      "Title": "Mass Munitions",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-MASS_MUNITION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71034,
+      "Name": "into_the_spireverse_shadow_regent_powered_pulse_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/powered_pulse_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.PoweredPulsePower",
+      "Title": "Powered Pulse",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "INTOTHESPIREVERSE-POWERED_PULSE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71035,
+      "Name": "into_the_spireverse_shadow_regent_red_giant_random_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/red_giant_random_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.RedGiantRandomPower",
+      "Title": "Red Giant",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-RED_GIANT_RANDOM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71036,
+      "Name": "into_the_spireverse_shadow_regent_rousing_speech_temporary_strength_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/rousing_speech_temporary_strength_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.RousingSpeechTemporaryStrengthPower",
+      "Title": "Rousing Speech",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "INTOTHESPIREVERSE-ROUSING_SPEECH.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71037,
+      "Name": "into_the_spireverse_shadow_regent_royal_cloak_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/royal_cloak_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.RoyalCloakPower",
+      "Title": "Royal Cloak",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-ROYAL_CLOAK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71038,
+      "Name": "into_the_spireverse_shadow_regent_shards_next_turn_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/shards_next_turn_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.ShardsNextTurnPower",
+      "Title": "Shards Next Turn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SHARDS_NEXT_TURN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71039,
+      "Name": "into_the_spireverse_shadow_regent_shards_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/shards_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.ShardsPower",
+      "Title": "Shards",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SHARDS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71040,
+      "Name": "into_the_spireverse_shadow_regent_siege_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/siege_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.SiegePower",
+      "Title": "Siege",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SIEGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71041,
+      "Name": "into_the_spireverse_shadow_regent_smugglers_cargo_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/smugglers_cargo_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.SmugglersCargoPower",
+      "Title": "Smuggler's Cargo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SMUGGLERS_CARGO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71042,
+      "Name": "into_the_spireverse_shadow_regent_speed_harvest_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/speed_harvest_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.SpeedHarvestPower",
+      "Title": "Speed Harvest",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SPEED_HARVEST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71043,
+      "Name": "into_the_spireverse_shadow_regent_trade_routes_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/trade_routes_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.TradeRoutesPower",
+      "Title": "Trade Routes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-TRADE_ROUTES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71044,
+      "Name": "into_the_spireverse_shadow_regent_trial_of_audacity_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/trial_of_audacity_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.TrialOfAudacityPower",
+      "Title": "Trial of Audacity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-TRIAL_OF_AUDACITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71045,
+      "Name": "into_the_spireverse_shadow_regent_trial_of_combat_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/trial_of_combat_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.TrialOfCombatPower",
+      "Title": "Trial of Combat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-TRIAL_OF_COMBAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71046,
+      "Name": "into_the_spireverse_shadow_regent_trial_of_one_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/trial_of_one_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.TrialOfOnePower",
+      "Title": "Trial of One",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-TRIAL_OF_ONE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71047,
+      "Name": "into_the_spireverse_shadow_regent_trial_of_space_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/trial_of_space_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.TrialOfSpacePower",
+      "Title": "Trial of Space",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-TRIAL_OF_SPACE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71048,
+      "Name": "into_the_spireverse_shadow_regent_volley_damage_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/volley_damage_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Powers.VolleyDamagePower",
+      "Title": "Shot Damage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-VOLLEY_DAMAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 74003,
+      "Name": "into_the_spireverse_shadow_regent_illicit_munition_potion_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/illicit_munition_potion",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Potions.IllicitMunitionPotion",
+      "Title": "Illicit Munition",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-ILLICIT_MUNITION_POTION.title"
+    },
+    {
+      "Id": 74004,
+      "Name": "into_the_spireverse_shadow_regent_liquid_dilithium_potion_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/liquid_dilithium_potion",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Potions.LiquidDilithiumPotion",
+      "Title": "Liquid Dilithium",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-LIQUID_DILITHIUM_POTION.title"
+    },
+    {
+      "Id": 74005,
+      "Name": "into_the_spireverse_shadow_regent_space_dust_potion_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_regent/space_dust_potion",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowRegent.Potions.SpaceDustPotion",
+      "Title": "Space Dust",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-SPACE_DUST_POTION.title"
+    },
+    {
+      "Id": 75002,
+      "Name": "into_the_spireverse_shadow_ironclad_shadow_ironclad_character",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/shadow_ironclad",
+      "Category": "Character",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.ShadowIronclad",
+      "Title": "The Tectonic",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "INTOTHESPIREVERSE-SHADOW_IRONCLAD.title",
+      "CookieEmoteId": 2319
+    },
+    {
+      "Id": 72018,
+      "Name": "into_the_spireverse_shadow_ironclad_heart_of_stone_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/heart_of_stone",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.HeartOfStone",
+      "Title": "Heart of Stone",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-HEART_OF_STONE.title"
+    },
+    {
+      "Id": 72019,
+      "Name": "into_the_spireverse_shadow_ironclad_heart_of_the_mountain_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/heart_of_the_mountain",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.HeartOfTheMountain",
+      "Title": "Heart of the Mountain",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-HEART_OF_THE_MOUNTAIN.title"
+    },
+    {
+      "Id": 72020,
+      "Name": "into_the_spireverse_shadow_ironclad_buckler_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/buckler",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.Buckler",
+      "Title": "Buckler",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-BUCKLER.title"
+    },
+    {
+      "Id": 72021,
+      "Name": "into_the_spireverse_shadow_ironclad_iron_cestus_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/iron_cestus",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.IronCestus",
+      "Title": "Iron Cestus",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-IRON_CESTUS.title"
+    },
+    {
+      "Id": 72022,
+      "Name": "into_the_spireverse_shadow_ironclad_toy_cactus_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/toy_cactus",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.ToyCactus",
+      "Title": "Toy Cactus",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-TOY_CACTUS.title"
+    },
+    {
+      "Id": 72023,
+      "Name": "into_the_spireverse_shadow_ironclad_crimson_amulet_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/crimson_amulet",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.CrimsonAmulet",
+      "Title": "Crimson Amulet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-CRIMSON_AMULET.title"
+    },
+    {
+      "Id": 72024,
+      "Name": "into_the_spireverse_shadow_ironclad_pet_rock_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/pet_rock",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.PetRock",
+      "Title": "Pet Rock",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-PET_ROCK.title"
+    },
+    {
+      "Id": 72025,
+      "Name": "into_the_spireverse_shadow_ironclad_bellows_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/bellows",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.Bellows",
+      "Title": "Firestarter",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-BELLOWS.title"
+    },
+    {
+      "Id": 72026,
+      "Name": "into_the_spireverse_shadow_ironclad_mud_idol_relic",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/mud_idol",
+      "Category": "Relic",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Relics.MudIdol",
+      "Title": "Mud Idol",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "INTOTHESPIREVERSE-MUD_IDOL.title"
+    },
+    {
+      "Id": 71049,
+      "Name": "into_the_spireverse_shadow_ironclad_bedrock_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/bedrock_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.BedrockPower",
+      "Title": "Bedrock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-BEDROCK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71050,
+      "Name": "into_the_spireverse_shadow_ironclad_blind_fury_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/blind_fury_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.BlindFuryPower",
+      "Title": "Blind Fury",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-BLIND_FURY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71051,
+      "Name": "into_the_spireverse_shadow_ironclad_bloodbond_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/bloodbond_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.BloodbondPower",
+      "Title": "Bloodbond",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-BLOODBOND_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71052,
+      "Name": "into_the_spireverse_shadow_ironclad_clay_soldier_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/clay_soldier_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.ClaySoldierPower",
+      "Title": "Clay Soldier",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-CLAY_SOLDIER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71053,
+      "Name": "into_the_spireverse_shadow_ironclad_constitution_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/constitution_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.ConstitutionPower",
+      "Title": "Constitution",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-CONSTITUTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71054,
+      "Name": "into_the_spireverse_shadow_ironclad_gabbro_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/gabbro_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.GabbroPower",
+      "Title": "Gabbro",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-GABBRO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71055,
+      "Name": "into_the_spireverse_shadow_ironclad_grapple_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/grapple_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.GrapplePower",
+      "Title": "Grapple",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-GRAPPLE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71056,
+      "Name": "into_the_spireverse_shadow_ironclad_groundswell_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/groundswell_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.GroundswellPower",
+      "Title": "Groundswell",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-GROUNDSWELL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71057,
+      "Name": "into_the_spireverse_shadow_ironclad_obsidian_strike_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/obsidian_strike_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.ObsidianStrikePower",
+      "Title": "Obsidian Strike",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-OBSIDIAN_STRIKE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 71058,
+      "Name": "into_the_spireverse_shadow_ironclad_pebbleflinger_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/pebbleflinger_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.PebbleflingerPower",
+      "Title": "Pebbleflinger",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-PEBBLEFLINGER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71059,
+      "Name": "into_the_spireverse_shadow_ironclad_retaliation_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/retaliation_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.RetaliationPower",
+      "Title": "Retaliation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-RETALIATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71060,
+      "Name": "into_the_spireverse_shadow_ironclad_revenge_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/revenge_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.RevengePower",
+      "Title": "Revenge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-REVENGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71061,
+      "Name": "into_the_spireverse_shadow_ironclad_riebeckite_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/riebeckite_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.RiebeckitePower",
+      "Title": "Riebeckite",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-RIEBECKITE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71062,
+      "Name": "into_the_spireverse_shadow_ironclad_sculpt_reality_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/sculpt_reality_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.SculptRealityPower",
+      "Title": "Sculpt Reality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SCULPT_REALITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71063,
+      "Name": "into_the_spireverse_shadow_ironclad_slate_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/slate_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.SlatePower",
+      "Title": "Slate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-SLATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71064,
+      "Name": "into_the_spireverse_shadow_ironclad_stone_health_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/stone_health_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.StoneHealthPower",
+      "Title": "Stone Health",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-STONE_HEALTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71065,
+      "Name": "into_the_spireverse_shadow_ironclad_temper_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/temper_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.TemperPower",
+      "Title": "Temper",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-TEMPER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71066,
+      "Name": "into_the_spireverse_shadow_ironclad_unrelenting_form_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/unrelenting_form_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.UnrelentingFormPower",
+      "Title": "Unrelenting Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-UNRELENTING_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 71067,
+      "Name": "into_the_spireverse_shadow_ironclad_warcraft_power_power",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/warcraft_power",
+      "Category": "Power",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Powers.WarcraftPower",
+      "Title": "Warcraft",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INTOTHESPIREVERSE-WARCRAFT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 74006,
+      "Name": "into_the_spireverse_shadow_ironclad_devils_wine_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/devils_wine",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Potions.DevilsWine",
+      "Title": "Devil's Wine",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-DEVILS_WINE.title"
+    },
+    {
+      "Id": 74007,
+      "Name": "into_the_spireverse_shadow_ironclad_dew_bottle_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/dew_bottle",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Potions.DewBottle",
+      "Title": "Dew Bottle",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-DEW_BOTTLE.title"
+    },
+    {
+      "Id": 74008,
+      "Name": "into_the_spireverse_shadow_ironclad_stoneshaper_elixir_potion",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/stoneshaper_elixir",
+      "Category": "Potion",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Potions.StoneshaperElixir",
+      "Title": "Stoneshaper Elixir",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "INTOTHESPIREVERSE-STONESHAPER_ELIXIR.title"
+    },
+    {
+      "Id": 73001,
+      "Name": "into_the_spireverse_shadow_ironclad_polished_enchantment",
+      "AssetName": "mods/into_the_spireverse/shadow_ironclad/polished",
+      "Category": "Enchantment",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.ShadowIronclad.Enchantments.Polished",
+      "Title": "Polished",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "INTOTHESPIREVERSE-POLISHED.title"
+    },
+    {
+      "Id": 73002,
+      "Name": "into_the_spireverse_shared_hollow_enchantment",
+      "AssetName": "mods/into_the_spireverse/shared/hollow",
+      "Category": "Enchantment",
+      "Assembly": "IntoTheSpireverse",
+      "TypeName": "IntoTheSpireverse.IntoTheSpireverseCode.Character.Enchantments.Hollow",
+      "Title": "Hollow",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "INTOTHESPIREVERSE-HOLLOW.title"
+    }
+  ]
+}

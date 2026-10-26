@@ -1,8 +1,549 @@
 {
   "Key": "watcher_lamali",
-  "ModIds": ["Watcher"],
+  "ModIds": [
+    "Watcher"
+  ],
   "Name": "Watcher (lamali)",
   "WorkshopId": "3747492505",
-  "Aliases": ["Watcher", "ウォッチャー", "lamali"],
-  "Entries": []
+  "Aliases": [
+    "Watcher",
+    "ウォッチャー",
+    "lamali"
+  ],
+  "Entries": [
+    {
+      "Id": 52000,
+      "Name": "watcher_lamali_damaru_relic",
+      "AssetName": "mods/watcher_lamali/damaru",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.Damaru",
+      "Title": "Damaru",
+      "Aliases": [
+        "だまる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-DAMARU.title"
+    },
+    {
+      "Id": 52001,
+      "Name": "watcher_lamali_duality_relic",
+      "AssetName": "mods/watcher_lamali/duality",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.Duality",
+      "Title": "Duality",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-DUALITY.title"
+    },
+    {
+      "Id": 52002,
+      "Name": "watcher_lamali_golden_eye_relic",
+      "AssetName": "mods/watcher_lamali/golden_eye",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.GoldenEye",
+      "Title": "Golden Eye",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-GOLDEN_EYE.title"
+    },
+    {
+      "Id": 52003,
+      "Name": "watcher_lamali_holy_water_relic",
+      "AssetName": "mods/watcher_lamali/holy_water",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.HolyWater",
+      "Title": "Holy Water",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-HOLY_WATER.title"
+    },
+    {
+      "Id": 52004,
+      "Name": "watcher_lamali_melange_relic",
+      "AssetName": "mods/watcher_lamali/melange",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.Melange",
+      "Title": "Melange",
+      "Aliases": [
+        "めらんじゅ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-MELANGE.title"
+    },
+    {
+      "Id": 52005,
+      "Name": "watcher_lamali_pure_water_relic",
+      "AssetName": "mods/watcher_lamali/pure_water",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.PureWater",
+      "Title": "Pure Water",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-PURE_WATER.title"
+    },
+    {
+      "Id": 52006,
+      "Name": "watcher_lamali_teardrop_locket_relic",
+      "AssetName": "mods/watcher_lamali/teardrop_locket",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.TeardropLocket",
+      "Title": "Teardrop Locket",
+      "Aliases": [
+        "涙のろけっと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-TEARDROP_LOCKET.title"
+    },
+    {
+      "Id": 52007,
+      "Name": "watcher_lamali_violet_lotus_relic",
+      "AssetName": "mods/watcher_lamali/violet_lotus",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Relics.VioletLotus",
+      "Title": "Violet Lotus",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "WATCHER-VIOLET_LOTUS.title"
+    },
+    {
+      "Id": 51000,
+      "Name": "watcher_lamali_ancient_card_power_power",
+      "AssetName": "mods/watcher_lamali/ancient_card_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.AncientCardPower",
+      "Title": "Accumulate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-ANCIENT_CARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51001,
+      "Name": "watcher_lamali_battle_hymn_power_power",
+      "AssetName": "mods/watcher_lamali/battle_hymn_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.BattleHymnPower",
+      "Title": "Battle Hymn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-BATTLE_HYMN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51002,
+      "Name": "watcher_lamali_blasphemer_power_power",
+      "AssetName": "mods/watcher_lamali/blasphemer_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.BlasphemerPower",
+      "Title": "Blasphemer",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-BLASPHEMER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51003,
+      "Name": "watcher_lamali_block_return_power_power",
+      "AssetName": "mods/watcher_lamali/block_return_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.BlockReturnPower",
+      "Title": "Block Return",
+      "Aliases": [
+        "返しのぶろっく"
+      ],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-BLOCK_RETURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 51004,
+      "Name": "watcher_lamali_collect_power_power",
+      "AssetName": "mods/watcher_lamali/collect_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.CollectPower",
+      "Title": "Collect",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-COLLECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51005,
+      "Name": "watcher_lamali_deva_power_power",
+      "AssetName": "mods/watcher_lamali/deva_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.DevaPower",
+      "Title": "Deva",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-DEVA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51006,
+      "Name": "watcher_lamali_devotion_power_power",
+      "AssetName": "mods/watcher_lamali/devotion_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.DevotionPower",
+      "Title": "Devotion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-DEVOTION_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 51007,
+      "Name": "watcher_lamali_establishment_power_power",
+      "AssetName": "mods/watcher_lamali/establishment_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.EstablishmentPower",
+      "Title": "Establishment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-ESTABLISHMENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51008,
+      "Name": "watcher_lamali_fasting_power_power",
+      "AssetName": "mods/watcher_lamali/fasting_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.FastingPower",
+      "Title": "Fasting",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-FASTING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51009,
+      "Name": "watcher_lamali_foresight_power_power",
+      "AssetName": "mods/watcher_lamali/foresight_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.ForesightPower",
+      "Title": "Foresight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-FORESIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51010,
+      "Name": "watcher_lamali_like_water_power_power",
+      "AssetName": "mods/watcher_lamali/like_water_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.LikeWaterPower",
+      "Title": "Like Water",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-LIKE_WATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51011,
+      "Name": "watcher_lamali_mantra_power_power",
+      "AssetName": "mods/watcher_lamali/mantra_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.MantraPower",
+      "Title": "Mantra",
+      "Aliases": [
+        "まんとら"
+      ],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-MANTRA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51012,
+      "Name": "watcher_lamali_mark_power_power",
+      "AssetName": "mods/watcher_lamali/mark_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.MarkPower",
+      "Title": "Mark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-MARK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 51013,
+      "Name": "watcher_lamali_master_reality_power_power",
+      "AssetName": "mods/watcher_lamali/master_reality_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.MasterRealityPower",
+      "Title": "Master Reality",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-MASTER_REALITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51014,
+      "Name": "watcher_lamali_mental_fortress_power_power",
+      "AssetName": "mods/watcher_lamali/mental_fortress_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.MentalFortressPower",
+      "Title": "Mental Fortress",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-MENTAL_FORTRESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51015,
+      "Name": "watcher_lamali_multiplayer_card_uncommon_power_power",
+      "AssetName": "mods/watcher_lamali/multiplayer_card_uncommon_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.MultiplayerCardUncommonPower",
+      "Title": "Fleeting Clarity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-MULTIPLAYER_CARD_UNCOMMON_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51016,
+      "Name": "watcher_lamali_nirvana_power_power",
+      "AssetName": "mods/watcher_lamali/nirvana_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.NirvanaPower",
+      "Title": "Nirvana",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-NIRVANA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51017,
+      "Name": "watcher_lamali_omega_power_power",
+      "AssetName": "mods/watcher_lamali/omega_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.OmegaPower",
+      "Title": "Omega",
+      "Aliases": [
+        "おめが"
+      ],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-OMEGA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51018,
+      "Name": "watcher_lamali_plated_armor_power_power",
+      "AssetName": "mods/watcher_lamali/plated_armor_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.PlatedArmorPower",
+      "Title": "Plated Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-PLATED_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51019,
+      "Name": "watcher_lamali_rushdown_power_power",
+      "AssetName": "mods/watcher_lamali/rushdown_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.RushdownPower",
+      "Title": "Rushdown",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-RUSHDOWN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51020,
+      "Name": "watcher_lamali_simmering_rage_power_power",
+      "AssetName": "mods/watcher_lamali/simmering_rage_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.SimmeringRagePower",
+      "Title": "Simmering Rage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-SIMMERING_RAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51021,
+      "Name": "watcher_lamali_study_power_power",
+      "AssetName": "mods/watcher_lamali/study_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.StudyPower",
+      "Title": "Study",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-STUDY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 51022,
+      "Name": "watcher_lamali_wave_of_the_hand_power_power",
+      "AssetName": "mods/watcher_lamali/wave_of_the_hand_power",
+      "Category": "Power",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Powers.WaveOfTheHandPower",
+      "Title": "Wave of the Hand",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "WATCHER-WAVE_OF_THE_HAND_POWER.title",
+      "Tags": [
+        "Buff",
+        "Communicate"
+      ]
+    },
+    {
+      "Id": 54000,
+      "Name": "watcher_lamali_ambrosia_potion",
+      "AssetName": "mods/watcher_lamali/ambrosia",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Potions.Ambrosia",
+      "Title": "Ambrosia",
+      "Aliases": [
+        "あんぶろしあ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "WATCHER-AMBROSIA.title"
+    },
+    {
+      "Id": 54001,
+      "Name": "watcher_lamali_bottled_miracle_potion",
+      "AssetName": "mods/watcher_lamali/bottled_miracle",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Potions.BottledMiracle",
+      "Title": "Bottled Miracle",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "WATCHER-BOTTLED_MIRACLE.title"
+    },
+    {
+      "Id": 54002,
+      "Name": "watcher_lamali_calm_potion_potion",
+      "AssetName": "mods/watcher_lamali/calm_potion",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Potions.CalmPotion",
+      "Title": "Calm Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "WATCHER-CALM_POTION.title"
+    },
+    {
+      "Id": 54003,
+      "Name": "watcher_lamali_wrath_potion_potion",
+      "AssetName": "mods/watcher_lamali/wrath_potion",
+      "Category": "Potion",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Potions.WrathPotion",
+      "Title": "Wrath Potion",
+      "Aliases": [
+        "憤怒のぽーしょん"
+      ],
+      "LocTable": "potions",
+      "LocKey": "WATCHER-WRATH_POTION.title"
+    },
+    {
+      "Id": 55000,
+      "Name": "watcher_lamali_watcher_character",
+      "AssetName": "mods/watcher_lamali/watcher/watcher",
+      "Category": "Character",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Character.Watcher",
+      "Title": "The Watcher",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "WATCHER-WATCHER.title"
+    },
+    {
+      "Id": 52008,
+      "Name": "watcher_lamali_watcher_yummy_cookie_relic",
+      "AssetName": "mods/watcher_lamali/watcher/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "Watcher",
+      "TypeName": "Watcher.Code.Character.Watcher",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
 }

@@ -1,0 +1,1305 @@
+{
+  "Key": "multiplayer_expanded",
+  "ModIds": [
+    "MultiplayerExpanded"
+  ],
+  "Name": "Multiplayer Expanded",
+  "WorkshopId": "3766731110",
+  "Aliases": [
+    "MultiplayerExpanded"
+  ],
+  "Entries": [
+    {
+      "Id": 292000,
+      "Name": "multiplayer_expanded_abandoned_dagger_relic",
+      "AssetName": "mods/multiplayer_expanded/abandoned_dagger",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.AbandonedDagger",
+      "Title": "Abandoned Dagger",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-ABANDONED_DAGGER.title"
+    },
+    {
+      "Id": 292001,
+      "Name": "multiplayer_expanded_a_lingering_something_relic",
+      "AssetName": "mods/multiplayer_expanded/a_lingering_something",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.ALingeringSomething",
+      "Title": "A Lingering Something",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-A_LINGERING_SOMETHING.title"
+    },
+    {
+      "Id": 292002,
+      "Name": "multiplayer_expanded_bffs_bracelet_relic",
+      "AssetName": "mods/multiplayer_expanded/bffs_bracelet",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.BffsBracelet",
+      "Title": "BFFs Bracelet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-BFFS_BRACELET.title"
+    },
+    {
+      "Id": 292003,
+      "Name": "multiplayer_expanded_boiling_blood_relic",
+      "AssetName": "mods/multiplayer_expanded/boiling_blood",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.BoilingBlood",
+      "Title": "Boiling Blood",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-BOILING_BLOOD.title"
+    },
+    {
+      "Id": 292004,
+      "Name": "multiplayer_expanded_bottled_message_relic",
+      "AssetName": "mods/multiplayer_expanded/bottled_message",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.BottledMessage",
+      "Title": "Bottled Message",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-BOTTLED_MESSAGE.title"
+    },
+    {
+      "Id": 292005,
+      "Name": "multiplayer_expanded_composite_phylactery_relic",
+      "AssetName": "mods/multiplayer_expanded/composite_phylactery",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.CompositePhylactery",
+      "Title": "Composite Phylactery",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-COMPOSITE_PHYLACTERY.title"
+    },
+    {
+      "Id": 292006,
+      "Name": "multiplayer_expanded_discarded_buckler_relic",
+      "AssetName": "mods/multiplayer_expanded/discarded_buckler",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.DiscardedBuckler",
+      "Title": "Discarded Buckler",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-DISCARDED_BUCKLER.title"
+    },
+    {
+      "Id": 292007,
+      "Name": "multiplayer_expanded_expanded_scroll_box_relic",
+      "AssetName": "mods/multiplayer_expanded/expanded_scroll_box",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.ExpandedScrollBox",
+      "Title": "Expanded Scroll Box",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-EXPANDED_SCROLL_BOX.title"
+    },
+    {
+      "Id": 292008,
+      "Name": "multiplayer_expanded_forgotten_clasp_relic",
+      "AssetName": "mods/multiplayer_expanded/forgotten_clasp",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.ForgottenClasp",
+      "Title": "Forgotten Clasp",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-FORGOTTEN_CLASP.title"
+    },
+    {
+      "Id": 292009,
+      "Name": "multiplayer_expanded_gifting_kit_relic",
+      "AssetName": "mods/multiplayer_expanded/gifting_kit",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.GiftingKit",
+      "Title": "Gifting Kit",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-GIFTING_KIT.title"
+    },
+    {
+      "Id": 292010,
+      "Name": "multiplayer_expanded_lost_gear_relic",
+      "AssetName": "mods/multiplayer_expanded/lost_gear",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.LostGear",
+      "Title": "Lost Gear",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-LOST_GEAR.title"
+    },
+    {
+      "Id": 292011,
+      "Name": "multiplayer_expanded_massive_toolbox_relic",
+      "AssetName": "mods/multiplayer_expanded/massive_toolbox",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.MassiveToolbox",
+      "Title": "Massive Toolbox",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-MASSIVE_TOOLBOX.title"
+    },
+    {
+      "Id": 292012,
+      "Name": "multiplayer_expanded_neglected_ring_relic",
+      "AssetName": "mods/multiplayer_expanded/neglected_ring",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.NeglectedRing",
+      "Title": "Neglected Ring",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-NEGLECTED_RING.title"
+    },
+    {
+      "Id": 292013,
+      "Name": "multiplayer_expanded_neows_obsession_relic",
+      "AssetName": "mods/multiplayer_expanded/neows_obsession",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.NeowsObsession",
+      "Title": "Neow's Obsession",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-NEOWS_OBSESSION.title"
+    },
+    {
+      "Id": 292014,
+      "Name": "multiplayer_expanded_notebook_relic",
+      "AssetName": "mods/multiplayer_expanded/notebook",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.Notebook",
+      "Title": "Notebook",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-NOTEBOOK.title"
+    },
+    {
+      "Id": 292015,
+      "Name": "multiplayer_expanded_paels_heart_relic",
+      "AssetName": "mods/multiplayer_expanded/paels_heart",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.PaelsHeart",
+      "Title": "Pael's Heart",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-PAELS_HEART.title"
+    },
+    {
+      "Id": 292016,
+      "Name": "multiplayer_expanded_paels_tail_relic",
+      "AssetName": "mods/multiplayer_expanded/paels_tail",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.PaelsTail",
+      "Title": "Pael's Tail",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-PAELS_TAIL.title"
+    },
+    {
+      "Id": 292017,
+      "Name": "multiplayer_expanded_patched_core_relic",
+      "AssetName": "mods/multiplayer_expanded/patched_core",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.PatchedCore",
+      "Title": "Patched Core",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-PATCHED_CORE.title"
+    },
+    {
+      "Id": 292018,
+      "Name": "multiplayer_expanded_red_dwarf_relic",
+      "AssetName": "mods/multiplayer_expanded/red_dwarf",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.RedDwarf",
+      "Title": "Red Dwarf",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-RED_DWARF.title"
+    },
+    {
+      "Id": 292019,
+      "Name": "multiplayer_expanded_red_string_relic",
+      "AssetName": "mods/multiplayer_expanded/red_string",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.RedString",
+      "Title": "Red String",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-RED_STRING.title"
+    },
+    {
+      "Id": 292020,
+      "Name": "multiplayer_expanded_ring_of_the_wyvern_relic",
+      "AssetName": "mods/multiplayer_expanded/ring_of_the_wyvern",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.RingOfTheWyvern",
+      "Title": "Ring of the Wyvern",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-RING_OF_THE_WYVERN.title"
+    },
+    {
+      "Id": 292021,
+      "Name": "multiplayer_expanded_smoldering_locket_relic",
+      "AssetName": "mods/multiplayer_expanded/smoldering_locket",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.SmolderingLocket",
+      "Title": "Smoldering Locket",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-SMOLDERING_LOCKET.title"
+    },
+    {
+      "Id": 292022,
+      "Name": "multiplayer_expanded_thigh_pillow_relic",
+      "AssetName": "mods/multiplayer_expanded/thigh_pillow",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.ThighPillow",
+      "Title": "Thigh Pillow",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-THIGH_PILLOW.title"
+    },
+    {
+      "Id": 292023,
+      "Name": "multiplayer_expanded_throwing_shield_relic",
+      "AssetName": "mods/multiplayer_expanded/throwing_shield",
+      "Category": "Relic",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Relics.ThrowingShield",
+      "Title": "Throwing Shield",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "MULTIPLAYEREXPANDED-THROWING_SHIELD.title"
+    },
+    {
+      "Id": 291000,
+      "Name": "multiplayer_expanded_armor_cracker_power_power",
+      "AssetName": "mods/multiplayer_expanded/armor_cracker_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.ArmorCrackerPower",
+      "Title": "Cracked Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-ARMOR_CRACKER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291001,
+      "Name": "multiplayer_expanded_cheeky_stab_power_power",
+      "AssetName": "mods/multiplayer_expanded/cheeky_stab_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.CheekyStabPower",
+      "Title": "Stabby Stabby",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-CHEEKY_STAB_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "MultiplayerExpanded.Powers.Silent.CheekyStabUpgradedPower"
+      ]
+    },
+    {
+      "Id": 291002,
+      "Name": "multiplayer_expanded_envenomed_arsenal_power_power",
+      "AssetName": "mods/multiplayer_expanded/envenomed_arsenal_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.EnvenomedArsenalPower",
+      "Title": "Envenomed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-ENVENOMED_ARSENAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291003,
+      "Name": "multiplayer_expanded_reckless_power_power",
+      "AssetName": "mods/multiplayer_expanded/reckless_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.RecklessPower",
+      "Title": "Reckless",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-RECKLESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291004,
+      "Name": "multiplayer_expanded_shirk_double_take_power_power",
+      "AssetName": "mods/multiplayer_expanded/shirk_double_take_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.ShirkDoubleTakePower",
+      "Title": "Covering",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-SHIRK_DOUBLE_TAKE_POWER.title"
+    },
+    {
+      "Id": 291005,
+      "Name": "multiplayer_expanded_shirk_invuln_power_power",
+      "AssetName": "mods/multiplayer_expanded/shirk_invuln_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.ShirkInvulnPower",
+      "Title": "Hiding",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-SHIRK_INVULN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291006,
+      "Name": "multiplayer_expanded_dyson_sphere_power_power",
+      "AssetName": "mods/multiplayer_expanded/dyson_sphere_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.DysonSpherePower",
+      "Title": "Dyson Sphere",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-DYSON_SPHERE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291007,
+      "Name": "multiplayer_expanded_eternity_and_infinity_power_power",
+      "AssetName": "mods/multiplayer_expanded/eternity_and_infinity_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.EternityAndInfinityPower",
+      "Title": "Returning",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-ETERNITY_AND_INFINITY_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291008,
+      "Name": "multiplayer_expanded_forged_in_blood_power_power",
+      "AssetName": "mods/multiplayer_expanded/forged_in_blood_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.ForgedInBloodPower",
+      "Title": "Stiff",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-FORGED_IN_BLOOD_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291009,
+      "Name": "multiplayer_expanded_half_damage_power_power",
+      "AssetName": "mods/multiplayer_expanded/half_damage_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.HalfDamagePower",
+      "Title": "Unreachable",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-HALF_DAMAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291010,
+      "Name": "multiplayer_expanded_imbue_power_power",
+      "AssetName": "mods/multiplayer_expanded/imbue_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.ImbuePower",
+      "Title": "Starry",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-IMBUE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291011,
+      "Name": "multiplayer_expanded_new_pael_s_tail_power_power",
+      "AssetName": "mods/multiplayer_expanded/new_pael_s_tail_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.NewPaelSTailPower",
+      "Title": "Protectorate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-NEW_PAEL_S_TAIL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291012,
+      "Name": "multiplayer_expanded_refuel_power_power",
+      "AssetName": "mods/multiplayer_expanded/refuel_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.RefuelPower",
+      "Title": "Refuel",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-REFUEL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291013,
+      "Name": "multiplayer_expanded_sidereal_power_power",
+      "AssetName": "mods/multiplayer_expanded/sidereal_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.SiderealPower",
+      "Title": "Looming...",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-SIDEREAL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291014,
+      "Name": "multiplayer_expanded_twinkle_twinkle_power_power",
+      "AssetName": "mods/multiplayer_expanded/twinkle_twinkle_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Regent.TwinkleTwinklePower",
+      "Title": "Twinkling",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-TWINKLE_TWINKLE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291015,
+      "Name": "multiplayer_expanded_doombolt_power_power",
+      "AssetName": "mods/multiplayer_expanded/doombolt_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.DoomboltPower",
+      "Title": "Bolted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-DOOMBOLT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291016,
+      "Name": "multiplayer_expanded_hallows_eve_power_power",
+      "AssetName": "mods/multiplayer_expanded/hallows_eve_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.HallowsEvePower",
+      "Title": "Hallow's Eve",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-HALLOWS_EVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291017,
+      "Name": "multiplayer_expanded_polycle_power_power",
+      "AssetName": "mods/multiplayer_expanded/polycle_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.PolyclePower",
+      "Title": "Polycule",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-POLYCLE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291018,
+      "Name": "multiplayer_expanded_protector_of_all_power_power",
+      "AssetName": "mods/multiplayer_expanded/protector_of_all_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.ProtectorOfAllPower",
+      "Title": "Protected",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-PROTECTOR_OF_ALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291019,
+      "Name": "multiplayer_expanded_protector_power_power",
+      "AssetName": "mods/multiplayer_expanded/protector_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.ProtectorPower",
+      "Title": "Protector",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-PROTECTOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291020,
+      "Name": "multiplayer_expanded_purgatory_power_power",
+      "AssetName": "mods/multiplayer_expanded/purgatory_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.PurgatoryPower",
+      "Title": "Purgatory",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-PURGATORY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291021,
+      "Name": "multiplayer_expanded_shared_hand_power_power",
+      "AssetName": "mods/multiplayer_expanded/shared_hand_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.SharedHandPower",
+      "Title": "Temporarily Protected",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-SHARED_HAND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291022,
+      "Name": "multiplayer_expanded_soul_eater_power_power",
+      "AssetName": "mods/multiplayer_expanded/soul_eater_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.SoulEaterPower",
+      "Title": "Hungering",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-SOUL_EATER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291023,
+      "Name": "multiplayer_expanded_vulture_power_power",
+      "AssetName": "mods/multiplayer_expanded/vulture_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Necrobinder.VulturePower",
+      "Title": "Vulture",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-VULTURE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291024,
+      "Name": "multiplayer_expanded_modular_defect_ironclad_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_defect_ironclad_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularDefectIroncladPower",
+      "Title": "Demonic Echo Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_DEFECT_IRONCLAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291025,
+      "Name": "multiplayer_expanded_modular_defect_necrobinder_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_defect_necrobinder_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularDefectNecrobinderPower",
+      "Title": "Dead Echo Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_DEFECT_NECROBINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291026,
+      "Name": "multiplayer_expanded_modular_defect_regent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_defect_regent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularDefectRegentPower",
+      "Title": "Royal Echo Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_DEFECT_REGENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291027,
+      "Name": "multiplayer_expanded_modular_defect_silent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_defect_silent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularDefectSilentPower",
+      "Title": "Quiet Echo Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_DEFECT_SILENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291028,
+      "Name": "multiplayer_expanded_modular_doom_on_attack_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_doom_on_attack_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularDoomOnAttackPower",
+      "Title": "Grudge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_DOOM_ON_ATTACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291029,
+      "Name": "multiplayer_expanded_modular_forge_on_attack_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_forge_on_attack_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularForgeOnAttackPower",
+      "Title": "Hammering",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_FORGE_ON_ATTACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291030,
+      "Name": "multiplayer_expanded_modular_ironclad_defect_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_ironclad_defect_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularIroncladDefectPower",
+      "Title": "Binary Demon Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_IRONCLAD_DEFECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291031,
+      "Name": "multiplayer_expanded_modular_ironclad_necrobinder_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_ironclad_necrobinder_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularIroncladNecrobinderPower",
+      "Title": "Dead Demon Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_IRONCLAD_NECROBINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291032,
+      "Name": "multiplayer_expanded_modular_ironclad_regent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_ironclad_regent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularIroncladRegentPower",
+      "Title": "Royal Demon Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_IRONCLAD_REGENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291033,
+      "Name": "multiplayer_expanded_modular_ironclad_silent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_ironclad_silent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularIroncladSilentPower",
+      "Title": "Quiet Demon Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_IRONCLAD_SILENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291034,
+      "Name": "multiplayer_expanded_modular_necrobinder_defect_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_necrobinder_defect_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularNecrobinderDefectPower",
+      "Title": "Binary Reaper Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_NECROBINDER_DEFECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291035,
+      "Name": "multiplayer_expanded_modular_necrobinder_ironclad_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_necrobinder_ironclad_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularNecrobinderIroncladPower",
+      "Title": "Demonic Reaper Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_NECROBINDER_IRONCLAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291036,
+      "Name": "multiplayer_expanded_modular_necrobinder_regent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_necrobinder_regent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularNecrobinderRegentPower",
+      "Title": "Royal Reaper Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_NECROBINDER_REGENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291037,
+      "Name": "multiplayer_expanded_modular_necrobinder_silent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_necrobinder_silent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularNecrobinderSilentPower",
+      "Title": "Quiet Reaper Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_NECROBINDER_SILENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291038,
+      "Name": "multiplayer_expanded_modular_regent_defect_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_regent_defect_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularRegentDefectPower",
+      "Title": "Binary Void Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_REGENT_DEFECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291039,
+      "Name": "multiplayer_expanded_modular_regent_ironclad_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_regent_ironclad_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularRegentIroncladPower",
+      "Title": "Demonic Void Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_REGENT_IRONCLAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291040,
+      "Name": "multiplayer_expanded_modular_regent_necrobinder_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_regent_necrobinder_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularRegentNecrobinderPower",
+      "Title": "Dead Void Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_REGENT_NECROBINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291041,
+      "Name": "multiplayer_expanded_modular_regent_silent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_regent_silent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularRegentSilentPower",
+      "Title": "Quiet Void Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_REGENT_SILENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291042,
+      "Name": "multiplayer_expanded_modular_silent_defect_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_silent_defect_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularSilentDefectPower",
+      "Title": "Binary Serpent Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_SILENT_DEFECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291043,
+      "Name": "multiplayer_expanded_modular_silent_ironclad_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_silent_ironclad_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularSilentIroncladPower",
+      "Title": "Demonic Serpent Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_SILENT_IRONCLAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291044,
+      "Name": "multiplayer_expanded_modular_silent_necrobinder_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_silent_necrobinder_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularSilentNecrobinderPower",
+      "Title": "Dead Serpent Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_SILENT_NECROBINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291045,
+      "Name": "multiplayer_expanded_modular_silent_regent_power_power",
+      "AssetName": "mods/multiplayer_expanded/modular_silent_regent_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Modular.ModularSilentRegentPower",
+      "Title": "Royal Serpent Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MODULAR_SILENT_REGENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291046,
+      "Name": "multiplayer_expanded_dark_bargain_power_power",
+      "AssetName": "mods/multiplayer_expanded/dark_bargain_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Ironclad.DarkBargainPower",
+      "Title": "Dark Bargain",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-DARK_BARGAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291047,
+      "Name": "multiplayer_expanded_make_em_afraid_power_power",
+      "AssetName": "mods/multiplayer_expanded/make_em_afraid_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Ironclad.MakeEmAfraidPower",
+      "Title": "Make 'Em Afraid",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-MAKE_EM_AFRAID_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291048,
+      "Name": "multiplayer_expanded_rumbling_power_power",
+      "AssetName": "mods/multiplayer_expanded/rumbling_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Ironclad.RumblingPower",
+      "Title": "Rumbling",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-RUMBLING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291049,
+      "Name": "multiplayer_expanded_vengeance_power_power",
+      "AssetName": "mods/multiplayer_expanded/vengeance_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Ironclad.VengeancePower",
+      "Title": "Vengeance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-VENGEANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291050,
+      "Name": "multiplayer_expanded_vengeance_strength_tracker_power_power",
+      "AssetName": "mods/multiplayer_expanded/vengeance_strength_tracker_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Ironclad.VengeanceStrengthTrackerPower",
+      "Title": "Vengeance Surge",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-VENGEANCE_STRENGTH_TRACKER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291051,
+      "Name": "multiplayer_expanded_draw_from_reserves_power_power",
+      "AssetName": "mods/multiplayer_expanded/draw_from_reserves_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Defect.DrawFromReservesPower",
+      "Title": "Drawing from Reserves",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-DRAW_FROM_RESERVES_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "MultiplayerExpanded.Powers.Defect.DrawFromReservesUpgradedPower"
+      ]
+    },
+    {
+      "Id": 291052,
+      "Name": "multiplayer_expanded_dumpster_diving_power_power",
+      "AssetName": "mods/multiplayer_expanded/dumpster_diving_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Defect.DumpsterDivingPower",
+      "Title": "Dumpster Diving",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-DUMPSTER_DIVING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291053,
+      "Name": "multiplayer_expanded_impressive_orbs_power_power",
+      "AssetName": "mods/multiplayer_expanded/impressive_orbs_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Defect.ImpressiveOrbsPower",
+      "Title": "Impressive Orbs",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-IMPRESSIVE_ORBS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291054,
+      "Name": "multiplayer_expanded_and_again_power_power",
+      "AssetName": "mods/multiplayer_expanded/and_again_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.AndAgainPower",
+      "Title": "And Again",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-AND_AGAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291055,
+      "Name": "multiplayer_expanded_beckoned_power_power",
+      "AssetName": "mods/multiplayer_expanded/beckoned_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.BeckonedPower",
+      "Title": "Beckoned",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-BECKONED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291056,
+      "Name": "multiplayer_expanded_burning_power_power",
+      "AssetName": "mods/multiplayer_expanded/burning_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.BurningPower",
+      "Title": "Burning",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-BURNING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291057,
+      "Name": "multiplayer_expanded_copycat_tracker_power_power",
+      "AssetName": "mods/multiplayer_expanded/copycat_tracker_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.CopycatTrackerPower",
+      "Title": "Copycat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-COPYCAT_TRACKER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291058,
+      "Name": "multiplayer_expanded_decayed_power_power",
+      "AssetName": "mods/multiplayer_expanded/decayed_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.DecayedPower",
+      "Title": "Decayed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-DECAYED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291059,
+      "Name": "multiplayer_expanded_fascination_revelation_power_power",
+      "AssetName": "mods/multiplayer_expanded/fascination_revelation_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.FascinationRevelationPower",
+      "Title": "Revelation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-FASCINATION_REVELATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291060,
+      "Name": "multiplayer_expanded_fascination_reward_power_power",
+      "AssetName": "mods/multiplayer_expanded/fascination_reward_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.FascinationRewardPower",
+      "Title": "A Rarefied Mind Rewarded",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-FASCINATION_REWARD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291061,
+      "Name": "multiplayer_expanded_immortal_power_power",
+      "AssetName": "mods/multiplayer_expanded/immortal_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.ImmortalPower",
+      "Title": "Immortal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-IMMORTAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 291062,
+      "Name": "multiplayer_expanded_infected_power_power",
+      "AssetName": "mods/multiplayer_expanded/infected_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.InfectedPower",
+      "Title": "Infected",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-INFECTED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291063,
+      "Name": "multiplayer_expanded_toxified_power_power",
+      "AssetName": "mods/multiplayer_expanded/toxified_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.ToxifiedPower",
+      "Title": "Toxified",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-TOXIFIED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 291064,
+      "Name": "multiplayer_expanded_withered_power_power",
+      "AssetName": "mods/multiplayer_expanded/withered_power",
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.WitheredPower",
+      "Title": "Withered",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "MULTIPLAYEREXPANDED-WITHERED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 293000,
+      "Name": "multiplayer_expanded_fated_enchantment",
+      "AssetName": "mods/multiplayer_expanded/fated",
+      "Category": "Enchantment",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Cards.Enchantments.Fated",
+      "Title": "Fated",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "MULTIPLAYEREXPANDED-FATED.title"
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "TargetId": 1251,
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Silent.TrackingMpPower"
+    },
+    {
+      "TargetId": 1111,
+      "Category": "Power",
+      "Assembly": "MultiplayerExpanded",
+      "TypeName": "MultiplayerExpanded.Powers.Colorless.GluttonyHexPower"
+    }
+  ]
+}

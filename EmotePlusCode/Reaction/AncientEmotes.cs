@@ -3,7 +3,11 @@ using MegaCrit.Sts2.Core.Models;
 namespace EmotePlus.EmotePlusCode.Reaction;
 
 /// <summary>An official ancient's model name and corresponding existing emote.</summary>
-public sealed record AncientEmoteDefinition(string TypeName, EmoteType Emote);
+public sealed record AncientEmoteDefinition(string TypeName, EmoteType Emote)
+{
+    /// <summary>Artwork and persistent settings name, independently of the model name.</summary>
+    public string AssetName { get; init; } = TypeName.ToLowerInvariant();
+}
 
 /// <summary>Ancient lookup without a static dependency on individual ancient classes.</summary>
 public static class AncientEmotes

@@ -15,3 +15,6 @@ docs/handoff-status.md
 .local/
 /docs/*.translation
 /docs/*.csv.import
+
+# Local agent notes and research material.
+/docs/

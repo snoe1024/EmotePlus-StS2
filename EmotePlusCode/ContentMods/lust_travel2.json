@@ -1,0 +1,671 @@
+{
+  "Key": "lust_travel2",
+  "ModIds": [
+    "LustTravel2"
+  ],
+  "Name": "LustTravel2",
+  "WorkshopId": "3780369635",
+  "Aliases": [
+    "LustTravel",
+    "欲途",
+    "FoxHime",
+    "Elise"
+  ],
+  "Entries": [
+    {
+      "Id": 125000,
+      "Name": "lust_travel2_foxhime_fox_hime_character",
+      "AssetName": "mods/lust_travel2/foxhime/fox_hime",
+      "Category": "Character",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.FoxHime",
+      "Title": "LUSTTRAVEL - FoxHime",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "LUST_TRAVEL2_CHARACTER_FOX_HIME.title"
+    },
+    {
+      "Id": 122000,
+      "Name": "lust_travel2_foxhime_phantom_soul_essence_relic",
+      "AssetName": "mods/lust_travel2/foxhime/phantom_soul_essence",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.PhantomSoulEssence",
+      "Title": "Phantom Soul Essence",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_PHANTOM_SOUL_ESSENCE.title"
+    },
+    {
+      "Id": 122001,
+      "Name": "lust_travel2_foxhime_fearful_divine_relic_relic",
+      "AssetName": "mods/lust_travel2/foxhime/fearful_divine_relic",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.FearfulDivineRelic",
+      "Title": "Fearful Divine Relic",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_FEARFUL_DIVINE_RELIC.title"
+    },
+    {
+      "Id": 122002,
+      "Name": "lust_travel2_foxhime_desire_relief_rod_relic",
+      "AssetName": "mods/lust_travel2/foxhime/desire_relief_rod",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.DesireReliefRod",
+      "Title": "Desire Relief Rod",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_DESIRE_RELIEF_ROD.title"
+    },
+    {
+      "Id": 122003,
+      "Name": "lust_travel2_foxhime_elemental_essence_relic",
+      "AssetName": "mods/lust_travel2/foxhime/elemental_essence",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.ElementalEssence",
+      "Title": "Elemental Essence",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_ELEMENTAL_ESSENCE.title"
+    },
+    {
+      "Id": 122004,
+      "Name": "lust_travel2_foxhime_desire_extract_relic",
+      "AssetName": "mods/lust_travel2/foxhime/desire_extract",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.DesireExtract",
+      "Title": "Desire Extract",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_DESIRE_EXTRACT.title"
+    },
+    {
+      "Id": 122005,
+      "Name": "lust_travel2_foxhime_trait_alloc_soul_relic",
+      "AssetName": "mods/lust_travel2/foxhime/trait_alloc_soul",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.TraitAllocSoul",
+      "Title": "Invest in Soul",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_TRAIT_ALLOC_SOUL.title"
+    },
+    {
+      "Id": 122006,
+      "Name": "lust_travel2_foxhime_trait_alloc_body_relic",
+      "AssetName": "mods/lust_travel2/foxhime/trait_alloc_body",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.TraitAllocBody",
+      "Title": "Invest in Body",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_TRAIT_ALLOC_BODY.title"
+    },
+    {
+      "Id": 122007,
+      "Name": "lust_travel2_foxhime_trait_alloc_lust_relic",
+      "AssetName": "mods/lust_travel2/foxhime/trait_alloc_lust",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.TraitAllocLust",
+      "Title": "Invest in Lust",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_TRAIT_ALLOC_LUST.title"
+    },
+    {
+      "Id": 122008,
+      "Name": "lust_travel2_foxhime_undead_soul_relic",
+      "AssetName": "mods/lust_travel2/foxhime/undead_soul",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Relics.UndeadSoul",
+      "Title": "Undead Soul",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_UNDEAD_SOUL.title"
+    },
+    {
+      "Id": 121000,
+      "Name": "lust_travel2_foxhime_dullness_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/dullness_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.DullnessPower",
+      "Title": "Dullness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_DULLNESS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 121001,
+      "Name": "lust_travel2_foxhime_fu_orb_strength_down_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/fu_orb_strength_down_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.FuOrbStrengthDownPower",
+      "Title": "Talisman",
+      "Aliases": [],
+      "LocTable": "orbs",
+      "LocKey": "LUST_TRAVEL2_ORB_FU_ORB.title"
+    },
+    {
+      "Id": 121002,
+      "Name": "lust_travel2_foxhime_mei_huo_hu_wang_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/mei_huo_hu_wang_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.MeiHuoHuWangPower",
+      "Title": "Enchanting Fox",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_MEI_HUO_HU_WANG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121003,
+      "Name": "lust_travel2_foxhime_min_gan_shen_ti_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/min_gan_shen_ti_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.MinGanShenTiPower",
+      "Title": "Sensitive Body",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_MIN_GAN_SHEN_TI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121004,
+      "Name": "lust_travel2_foxhime_qinfan_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/qinfan_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.QinfanPower",
+      "Title": "Violated",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_QINFAN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 121005,
+      "Name": "lust_travel2_foxhime_sensitive_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/sensitive_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.SensitivePower",
+      "Title": "Sensitive",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_SENSITIVE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 121006,
+      "Name": "lust_travel2_foxhime_stamina_over_sensation_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/stamina_over_sensation_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.StaminaOverSensationPower",
+      "Title": "Over-sensation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_STAMINA_OVER_SENSATION_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 121007,
+      "Name": "lust_travel2_foxhime_stamina_card_play_fatigue_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/stamina_card_play_fatigue_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Powers.StaminaCardPlayFatiguePower",
+      "Title": "Fatigue",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_STAMINA_CARD_PLAY_FATIGUE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 124000,
+      "Name": "lust_travel2_foxhime_aphrodisiac_potion",
+      "AssetName": "mods/lust_travel2/foxhime/aphrodisiac",
+      "Category": "Potion",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Potions.Aphrodisiac",
+      "Title": "LUSTTRAVEL - Aphrodisiac",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "LUST_TRAVEL2_POTION_APHRODISIAC.title"
+    },
+    {
+      "Id": 124001,
+      "Name": "lust_travel2_foxhime_spirit_liquid_potion",
+      "AssetName": "mods/lust_travel2/foxhime/spirit_liquid",
+      "Category": "Potion",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Potions.SpiritLiquid",
+      "Title": "LUSTTRAVEL - Spirit Liquid",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "LUST_TRAVEL2_POTION_SPIRIT_LIQUID.title"
+    },
+    {
+      "Id": 124002,
+      "Name": "lust_travel2_foxhime_strong_tea_potion",
+      "AssetName": "mods/lust_travel2/foxhime/strong_tea",
+      "Category": "Potion",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.Potions.StrongTea",
+      "Title": "LUSTTRAVEL - Strong Tea",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "LUST_TRAVEL2_POTION_STRONG_TEA.title"
+    },
+    {
+      "Id": 122009,
+      "Name": "lust_travel2_elise_flower_card_relic",
+      "AssetName": "mods/lust_travel2/elise/flower_card",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.FlowerCard",
+      "Title": "Wildcard",
+      "Aliases": [
+        "わいるどかーど"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_FLOWER_CARD.title"
+    },
+    {
+      "Id": 122010,
+      "Name": "lust_travel2_elise_folded_corner_poker_relic",
+      "AssetName": "mods/lust_travel2/elise/folded_corner_poker",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.FoldedCornerPoker",
+      "Title": "Folded Corner Poker",
+      "Aliases": [
+        "折れた角のぽーかー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_FOLDED_CORNER_POKER.title"
+    },
+    {
+      "Id": 122011,
+      "Name": "lust_travel2_elise_used_condom_relic",
+      "AssetName": "mods/lust_travel2/elise/used_condom",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.UsedCondom",
+      "Title": "Used Condom",
+      "Aliases": [
+        "使い古しのこんどーむ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_USED_CONDOM.title"
+    },
+    {
+      "Id": 122012,
+      "Name": "lust_travel2_foxhime_clear_crystal_relic",
+      "AssetName": "mods/lust_travel2/foxhime/clear_crystal",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.EliseShop.ClearCrystal",
+      "Title": "Clear Crystal",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_CLEAR_CRYSTAL.title"
+    },
+    {
+      "Id": 122013,
+      "Name": "lust_travel2_foxhime_fear_essence_relic",
+      "AssetName": "mods/lust_travel2/foxhime/fear_essence",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.EliseShop.FearEssence",
+      "Title": "Fear Essence",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_FEAR_ESSENCE.title"
+    },
+    {
+      "Id": 122014,
+      "Name": "lust_travel2_foxhime_strength_essence_relic",
+      "AssetName": "mods/lust_travel2/foxhime/strength_essence",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.EliseShop.StrengthEssence",
+      "Title": "Strength Essence",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_STRENGTH_ESSENCE.title"
+    },
+    {
+      "Id": 122015,
+      "Name": "lust_travel2_foxhime_undead_spirit_relic_relic",
+      "AssetName": "mods/lust_travel2/foxhime/undead_spirit_relic",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.EliseShop.UndeadSpiritRelic",
+      "Title": "Undead Spirit",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_UNDEAD_SPIRIT_RELIC.title"
+    },
+    {
+      "Id": 122016,
+      "Name": "lust_travel2_foxhime_vision_essence_relic",
+      "AssetName": "mods/lust_travel2/foxhime/vision_essence",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Relics.EliseShop.VisionEssence",
+      "Title": "Vision Essence",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "LUST_TRAVEL2_RELIC_VISION_ESSENCE.title"
+    },
+    {
+      "Id": 121008,
+      "Name": "lust_travel2_foxhime_enemy_specialize_hole_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_specialize_hole_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemySpecializeHolePower",
+      "Title": "Specialize: Hole",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_SPECIALIZE_HOLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121009,
+      "Name": "lust_travel2_foxhime_enemy_specialize_mouth_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_specialize_mouth_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemySpecializeMouthPower",
+      "Title": "Specialize: Mouth",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_SPECIALIZE_MOUTH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121010,
+      "Name": "lust_travel2_foxhime_enemy_specialize_breast_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_specialize_breast_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemySpecializeBreastPower",
+      "Title": "Specialize: Breast",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_SPECIALIZE_BREAST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121011,
+      "Name": "lust_travel2_foxhime_enemy_specialize_butt_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_specialize_butt_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemySpecializeButtPower",
+      "Title": "Specialize: Butt",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_SPECIALIZE_BUTT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121012,
+      "Name": "lust_travel2_foxhime_enemy_stamina_fatigue1_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_stamina_fatigue1_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemyStaminaFatigue1Power",
+      "Title": "Enemy Stamina Fatigue 1",
+      "Aliases": [
+        "敵すたみな疲労 1",
+        "すたみな疲労 1"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_STAMINA_FATIGUE1_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "LustTravel.Powers.StaminaFatigue1Power"
+      ]
+    },
+    {
+      "Id": 121013,
+      "Name": "lust_travel2_foxhime_enemy_stamina_fatigue2_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_stamina_fatigue2_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemyStaminaFatigue2Power",
+      "Title": "Enemy Stamina Fatigue 2",
+      "Aliases": [
+        "敵すたみな疲労 2",
+        "すたみな疲労 2"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_STAMINA_FATIGUE2_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "LustTravel.Powers.StaminaFatigue2Power"
+      ]
+    },
+    {
+      "Id": 121014,
+      "Name": "lust_travel2_foxhime_enemy_stamina_rest_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_stamina_rest_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemyStaminaRestPower",
+      "Title": "Rest",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_STAMINA_REST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121015,
+      "Name": "lust_travel2_foxhime_enemy_stamina_status_replenish_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/enemy_stamina_status_replenish_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.EnemyStaminaStatusReplenishPower",
+      "Title": "Status Replenish",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_ENEMY_STAMINA_STATUS_REPLENISH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121016,
+      "Name": "lust_travel2_foxhime_stamina_fatigue3_power_power",
+      "AssetName": "mods/lust_travel2/foxhime/stamina_fatigue3_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.StaminaFatigue3Power",
+      "Title": "Stamina Fatigue 3",
+      "Aliases": [
+        "すたみな疲労 3"
+      ],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_STAMINA_FATIGUE3_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 121017,
+      "Name": "lust_travel2_elise_climax_fetish_power_power",
+      "AssetName": "mods/lust_travel2/elise/climax_fetish_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.Elise.ClimaxFetishPower",
+      "Title": "Climax Fetish",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_CLIMAX_FETISH_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 121018,
+      "Name": "lust_travel2_elise_heat_mode_power_power",
+      "AssetName": "mods/lust_travel2/elise/heat_mode_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.Elise.HeatModePower",
+      "Title": "Heat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_HEAT_MODE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 121019,
+      "Name": "lust_travel2_elise_sex_expert_power_power",
+      "AssetName": "mods/lust_travel2/elise/sex_expert_power",
+      "Category": "Power",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Powers.Elise.SexExpertPower",
+      "Title": "Sex Expert",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "LUST_TRAVEL2_POWER_SEX_EXPERT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 124003,
+      "Name": "lust_travel2_elise_elise_holy_water_potion",
+      "AssetName": "mods/lust_travel2/elise/elise_holy_water",
+      "Category": "Potion",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Potions.EliseHolyWater",
+      "Title": "LUSTTRAVEL - Elise's \"Holy Water\"",
+      "Aliases": [
+        "LUSTTRAVEL - えりすの「聖水」"
+      ],
+      "LocTable": "potions",
+      "LocKey": "LUST_TRAVEL2_POTION_ELISE_HOLY_WATER.title"
+    },
+    {
+      "Id": 124004,
+      "Name": "lust_travel2_elise_elise_lewd_fluid_potion",
+      "AssetName": "mods/lust_travel2/elise/elise_lewd_fluid",
+      "Category": "Potion",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Potions.EliseLewdFluid",
+      "Title": "LUSTTRAVEL - Elise's Lewd Fluid",
+      "Aliases": [
+        "LUSTTRAVEL - えりすの淫液"
+      ],
+      "LocTable": "potions",
+      "LocKey": "LUST_TRAVEL2_POTION_ELISE_LEWD_FLUID.title"
+    },
+    {
+      "Id": 124005,
+      "Name": "lust_travel2_elise_elise_lotion_potion",
+      "AssetName": "mods/lust_travel2/elise/elise_lotion",
+      "Category": "Potion",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Potions.EliseLotion",
+      "Title": "LUSTTRAVEL - Elise's Lotion",
+      "Aliases": [
+        "LUSTTRAVEL - えりすの乳液"
+      ],
+      "LocTable": "potions",
+      "LocKey": "LUST_TRAVEL2_POTION_ELISE_LOTION.title"
+    },
+    {
+      "Id": 125001,
+      "Name": "lust_travel2_elise_elise_character",
+      "AssetName": "mods/lust_travel2/elise/elise",
+      "Category": "Character",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Character.Elise",
+      "Title": "LUSTTRAVEL - Elise",
+      "Aliases": [
+        "LUSTTRAVEL - えりす"
+      ],
+      "LocTable": "characters",
+      "LocKey": "LUST_TRAVEL2_CHARACTER_ELISE.title"
+    },
+    {
+      "Id": 122017,
+      "Name": "lust_travel2_foxhime_yummy_cookie_relic",
+      "AssetName": "mods/lust_travel2/foxhime/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.FoxHime.FoxHime",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    },
+    {
+      "Id": 122018,
+      "Name": "lust_travel2_elise_yummy_cookie_relic",
+      "AssetName": "mods/lust_travel2/elise/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "LustTravel2",
+      "TypeName": "LustTravel.Character.Elise",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

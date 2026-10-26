@@ -1,8 +1,1888 @@
 {
   "Key": "honkai_star_rail_characters",
-  "ModIds": ["Kafka", "Acheron", "Evanescia"],
+  "ModIds": [
+    "Kafka",
+    "Acheron",
+    "Evanescia"
+  ],
   "Name": "Honkai: Star Rail Characters",
-  "WorkshopIds": ["3747588119", "3747588205", "3747578491"],
-  "Aliases": ["Honkai", "Star Rail", "崩壊：スターレイル"],
-  "Entries": []
+  "WorkshopIds": [
+    "3747588119",
+    "3747588205",
+    "3747578491"
+  ],
+  "Aliases": [
+    "Honkai",
+    "Star Rail",
+    "崩壊：スターレイル"
+  ],
+  "Entries": [
+    {
+      "Id": 242000,
+      "Name": "honkai_star_rail_characters_kafka_crowsongs_toll_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/crowsongs_toll",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.CrowsongsToll",
+      "Title": "Crowsong's Toll",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-CROWSONGS_TOLL.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242001,
+      "Name": "honkai_star_rail_characters_kafka_destinys_call_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/destinys_call",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.DestinysCall",
+      "Title": "Destiny's Call",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-DESTINYS_CALL.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242002,
+      "Name": "honkai_star_rail_characters_kafka_eidolon_e1_kafka_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eidolon_e1_kafka",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.EidolonE1Kafka",
+      "Title": "E1·Da Capo",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-EIDOLON_E1_KAFKA.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242003,
+      "Name": "honkai_star_rail_characters_kafka_eidolon_e2_kafka_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eidolon_e2_kafka",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.EidolonE2Kafka",
+      "Title": "E2·Fortississimo",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-EIDOLON_E2_KAFKA.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242004,
+      "Name": "honkai_star_rail_characters_kafka_eidolon_e3_kafka_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eidolon_e3_kafka",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.EidolonE3Kafka",
+      "Title": "E3·Capriccio",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-EIDOLON_E3_KAFKA.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242005,
+      "Name": "honkai_star_rail_characters_kafka_eidolon_e4_kafka_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eidolon_e4_kafka",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.EidolonE4Kafka",
+      "Title": "E4·Recitativo",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-EIDOLON_E4_KAFKA.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242006,
+      "Name": "honkai_star_rail_characters_kafka_eidolon_e5_kafka_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eidolon_e5_kafka",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.EidolonE5Kafka",
+      "Title": "E5·Doloroso",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-EIDOLON_E5_KAFKA.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242007,
+      "Name": "honkai_star_rail_characters_kafka_eidolon_e6_kafka_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eidolon_e6_kafka",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.EidolonE6Kafka",
+      "Title": "E6·Leggiero",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-EIDOLON_E6_KAFKA.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242008,
+      "Name": "honkai_star_rail_characters_kafka_manipulators_touch_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/manipulators_touch",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.ManipulatorsTouch",
+      "Title": "Manipulator's Touch",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-MANIPULATORS_TOUCH.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242009,
+      "Name": "honkai_star_rail_characters_kafka_serpents_elixir_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/serpents_elixir",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.SerpentsElixir",
+      "Title": "Serpent's Elixir",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-SERPENTS_ELIXIR.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242010,
+      "Name": "honkai_star_rail_characters_kafka_sundered_bonds_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/sundered_bonds",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.SunderedBonds",
+      "Title": "Sundered Bonds",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-SUNDERED_BONDS.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242011,
+      "Name": "honkai_star_rail_characters_kafka_veiled_shards_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/veiled_shards",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.VeiledShards",
+      "Title": "Veiled Shards",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-VEILED_SHARDS.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242012,
+      "Name": "honkai_star_rail_characters_kafka_web_of_intrigue_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/web_of_intrigue",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.WebOfIntrigue",
+      "Title": "Web of Intrigue",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-WEB_OF_INTRIGUE.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242013,
+      "Name": "honkai_star_rail_characters_kafka_whisper_of_whispers_relic",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/whisper_of_whispers",
+      "Category": "Relic",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Relics.WhisperOfWhispers",
+      "Title": "Whisper of Whispers",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "KAFKA-WHISPER_OF_WHISPERS.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241000,
+      "Name": "honkai_star_rail_characters_kafka_agents_creed_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/agents_creed_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.AgentsCreedPower",
+      "Title": "Agent's Creed",
+      "Aliases": [
+        "えーじぇんとの信条"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-AGENTS_CREED_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241001,
+      "Name": "honkai_star_rail_characters_kafka_capriccio_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/capriccio_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.CapriccioPower",
+      "Title": "Caprice",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-CAPRICCIO_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241002,
+      "Name": "honkai_star_rail_characters_kafka_da_capo_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/da_capo_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.DaCapoPower",
+      "Title": "Moto Perpetuo",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-DA_CAPO_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241003,
+      "Name": "honkai_star_rail_characters_kafka_domination_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/domination_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.DominationPower",
+      "Title": "Domination",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-DOMINATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241004,
+      "Name": "honkai_star_rail_characters_kafka_endless_pursuit_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/endless_pursuit_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.EndlessPursuitPower",
+      "Title": "Endless Follow-Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-ENDLESS_PURSUIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241005,
+      "Name": "honkai_star_rail_characters_kafka_eternal_midnight_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/eternal_midnight_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.EternalMidnightPower",
+      "Title": "Eternal Midnight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-ETERNAL_MIDNIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241006,
+      "Name": "honkai_star_rail_characters_kafka_fate_manipulation_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/fate_manipulation_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.FateManipulationPower",
+      "Title": "Fate Manipulation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-FATE_MANIPULATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241007,
+      "Name": "honkai_star_rail_characters_kafka_gentle_but_cruel_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/gentle_but_cruel_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.GentleButCruelPower",
+      "Title": "Gentle but Cruel",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-GENTLE_BUT_CRUEL_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241008,
+      "Name": "honkai_star_rail_characters_kafka_insight_pursuit_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/insight_pursuit_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.InsightPursuitPower",
+      "Title": "Insight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-INSIGHT_PURSUIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241009,
+      "Name": "honkai_star_rail_characters_kafka_i_praise_improvise_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/i_praise_improvise_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.IPraiseImprovisePower",
+      "Title": "Capriccio",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-I_PRAISE_IMPROVISE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241010,
+      "Name": "honkai_star_rail_characters_kafka_leggiero_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/leggiero_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.LeggieroPower",
+      "Title": "Leggiero",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-LEGGIERO_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241011,
+      "Name": "honkai_star_rail_characters_kafka_lightning_agent_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/lightning_agent_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.LightningAgentPower",
+      "Title": "Lightning Agent",
+      "Aliases": [
+        "雷電えーじぇんと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-LIGHTNING_AGENT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241012,
+      "Name": "honkai_star_rail_characters_kafka_perfect_rhythm_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/perfect_rhythm_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.PerfectRhythmPower",
+      "Title": "Perfect Rhythm",
+      "Aliases": [
+        "完璧なりずむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-PERFECT_RHYTHM_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241013,
+      "Name": "honkai_star_rail_characters_kafka_pursuit_potion_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/pursuit_potion_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.PursuitPotionPower",
+      "Title": "Follow-Up Potion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-PURSUIT_POTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241014,
+      "Name": "honkai_star_rail_characters_kafka_rest_note_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/rest_note_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.RestNotePower",
+      "Title": "Rest Note",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-REST_NOTE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241015,
+      "Name": "honkai_star_rail_characters_kafka_script_hijack_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/script_hijack_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.ScriptHijackPower",
+      "Title": "Script Hijack",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-SCRIPT_HIJACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241016,
+      "Name": "honkai_star_rail_characters_kafka_shock_core_detonation_count_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/shock_core_detonation_count_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.ShockCoreDetonationCountPower",
+      "Title": "Stellaron: Detonation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-SHOCK_CORE_DETONATION_COUNT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241017,
+      "Name": "honkai_star_rail_characters_kafka_shock_core_pursuit_count_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/shock_core_pursuit_count_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.ShockCorePursuitCountPower",
+      "Title": "Stellaron: Follow-Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-SHOCK_CORE_PURSUIT_COUNT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241018,
+      "Name": "honkai_star_rail_characters_kafka_shock_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/shock_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.ShockPower",
+      "Title": "Shock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-SHOCK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241019,
+      "Name": "honkai_star_rail_characters_kafka_shock_total_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/shock_total_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.ShockTotalPower",
+      "Title": "Shock Damage",
+      "Aliases": [
+        "感電総だめーじ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-SHOCK_TOTAL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241020,
+      "Name": "honkai_star_rail_characters_kafka_spirit_whisper_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/spirit_whisper_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.SpiritWhisperPower",
+      "Title": "Spirit Whisper",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-SPIRIT_WHISPER_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241021,
+      "Name": "honkai_star_rail_characters_kafka_stellaron_resonance_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/stellaron_resonance_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.StellaronResonancePower",
+      "Title": "Stellaron Resonance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-STELLARON_RESONANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 241022,
+      "Name": "honkai_star_rail_characters_kafka_thunder_foresight_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/thunder_foresight_power",
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.ThunderForesightPower",
+      "Title": "Thunder Foresight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "KAFKA-THUNDER_FORESIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 244000,
+      "Name": "honkai_star_rail_characters_kafka_pursuit_potion_potion",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/pursuit_potion",
+      "Category": "Potion",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Potions.PursuitPotion",
+      "Title": "Follow-Up Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "KAFKA-PURSUIT_POTION.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 244001,
+      "Name": "honkai_star_rail_characters_kafka_rewrite_ink_potion",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/rewrite_ink",
+      "Category": "Potion",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Potions.RewriteInk",
+      "Title": "Rewrite Ink",
+      "Aliases": [
+        "書き換えのいんく"
+      ],
+      "LocTable": "potions",
+      "LocKey": "KAFKA-REWRITE_INK.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 244002,
+      "Name": "honkai_star_rail_characters_kafka_shock_potion_potion",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/shock_potion",
+      "Category": "Potion",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Potions.ShockPotion",
+      "Title": "Shock Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "KAFKA-SHOCK_POTION.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 242014,
+      "Name": "honkai_star_rail_characters_acheron_blade_of_myriad_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/blade_of_myriad_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.BladeOfMyriadAcheron",
+      "Title": "Higanbana Hairpin",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-BLADE_OF_MYRIAD_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242015,
+      "Name": "honkai_star_rail_characters_acheron_crimson_umbrella_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/crimson_umbrella_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.CrimsonUmbrellaAcheron",
+      "Title": "Crimson Umbrella",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-CRIMSON_UMBRELLA_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242016,
+      "Name": "honkai_star_rail_characters_acheron_eidolon_e1_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eidolon_e1_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EidolonE1Acheron",
+      "Title": "E1: Thunder Judgment",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-EIDOLON_E1_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242017,
+      "Name": "honkai_star_rail_characters_acheron_eidolon_e2_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eidolon_e2_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EidolonE2Acheron",
+      "Title": "E2: Abyssal Pull",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-EIDOLON_E2_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242018,
+      "Name": "honkai_star_rail_characters_acheron_eidolon_e3_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eidolon_e3_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EidolonE3Acheron",
+      "Title": "E3: Final Edge",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-EIDOLON_E3_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242019,
+      "Name": "honkai_star_rail_characters_acheron_eidolon_e4_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eidolon_e4_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EidolonE4Acheron",
+      "Title": "E4: Karmic Omen",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-EIDOLON_E4_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242020,
+      "Name": "honkai_star_rail_characters_acheron_eidolon_e5_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eidolon_e5_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EidolonE5Acheron",
+      "Title": "E5: Tear Mark",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-EIDOLON_E5_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242021,
+      "Name": "honkai_star_rail_characters_acheron_eidolon_e6_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eidolon_e6_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EidolonE6Acheron",
+      "Title": "E6: Nihility's End",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-EIDOLON_E6_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242022,
+      "Name": "honkai_star_rail_characters_acheron_entwined_crimson_vine_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/entwined_crimson_vine_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.EntwinedCrimsonVineAcheron",
+      "Title": "Entwined Crimson Vine",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-ENTWINED_CRIMSON_VINE_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242023,
+      "Name": "honkai_star_rail_characters_acheron_forking_lantern_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/forking_lantern_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.ForkingLanternAcheron",
+      "Title": "Forking Lantern",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-FORKING_LANTERN_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242024,
+      "Name": "honkai_star_rail_characters_acheron_galaxy_wanderer_satchel_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/galaxy_wanderer_satchel_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.GalaxyWandererSatchelAcheron",
+      "Title": "Galaxy Wanderer Satchel",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-GALAXY_WANDERER_SATCHEL_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242025,
+      "Name": "honkai_star_rail_characters_acheron_huangquan_return_tsuba_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/huangquan_return_tsuba_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.HuangquanReturnTsubaAcheron",
+      "Title": "Stygian Resurge Tsuba",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-HUANGQUAN_RETURN_TSUBA_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242026,
+      "Name": "honkai_star_rail_characters_acheron_phantom_foam_bell_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/phantom_foam_bell_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.PhantomFoamBellAcheron",
+      "Title": "Phantom Foam Bell",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-PHANTOM_FOAM_BELL_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242027,
+      "Name": "honkai_star_rail_characters_acheron_wangchuan_bell_acheron_relic",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/wangchuan_bell_acheron",
+      "Category": "Relic",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Relics.WangchuanBellAcheron",
+      "Title": "Oblivion Bell",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACHERON-WANGCHUAN_BELL_ACHERON.title",
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241023,
+      "Name": "honkai_star_rail_characters_acheron_crimson_abyss_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/crimson_abyss_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.CrimsonAbyssPower",
+      "Title": "Crimson Abyss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-CRIMSON_ABYSS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241024,
+      "Name": "honkai_star_rail_characters_acheron_crimson_knot_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/crimson_knot_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.CrimsonKnotPower",
+      "Title": "Crimson Knot",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-CRIMSON_KNOT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241025,
+      "Name": "honkai_star_rail_characters_acheron_debuff_count_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/debuff_count_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.DebuffCountPower",
+      "Title": "Debuff Counter",
+      "Aliases": [
+        "減益かうんと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-DEBUFF_COUNT_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241026,
+      "Name": "honkai_star_rail_characters_acheron_dream_like_tide_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/dream_like_tide_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.DreamLikeTidePower",
+      "Title": "Dream Like Tide",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-DREAM_LIKE_TIDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241027,
+      "Name": "honkai_star_rail_characters_acheron_dream_reverse_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/dream_reverse_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.DreamReversePower",
+      "Title": "Dream Reverse",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-DREAM_REVERSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241028,
+      "Name": "honkai_star_rail_characters_acheron_dream_surging_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/dream_surging_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.DreamSurgingPower",
+      "Title": "Dream Surging",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-DREAM_SURGING_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241029,
+      "Name": "honkai_star_rail_characters_acheron_eternal_night_awake_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/eternal_night_awake_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.EternalNightAwakePower",
+      "Title": "Eternal Night Awakening",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-ETERNAL_NIGHT_AWAKE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241030,
+      "Name": "honkai_star_rail_characters_acheron_evening_rain_fall_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/evening_rain_fall_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.EveningRainFallPower",
+      "Title": "Evening Rain Fall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-EVENING_RAIN_FALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241031,
+      "Name": "honkai_star_rail_characters_acheron_exhausted_dream_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/exhausted_dream_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.ExhaustedDreamPower",
+      "Title": "Exhausted Dream",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-EXHAUSTED_DREAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241032,
+      "Name": "honkai_star_rail_characters_acheron_floating_world_three_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/floating_world_three_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.FloatingWorldThreePower",
+      "Title": "Floating World Three",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-FLOATING_WORLD_THREE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241033,
+      "Name": "honkai_star_rail_characters_acheron_guidance_chance_display_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/guidance_chance_display_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.GuidanceChanceDisplayPower",
+      "Title": "Guidance Chance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-GUIDANCE_CHANCE_DISPLAY_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241034,
+      "Name": "honkai_star_rail_characters_acheron_guidance_lantern_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/guidance_lantern_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.GuidanceLanternPower",
+      "Title": "Guidance Lantern",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-GUIDANCE_LANTERN_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241035,
+      "Name": "honkai_star_rail_characters_acheron_karma_wheel_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/karma_wheel_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.KarmaWheelPower",
+      "Title": "Karma Wheel",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-KARMA_WHEEL_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241036,
+      "Name": "honkai_star_rail_characters_acheron_knot_accumulator_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/knot_accumulator_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.KnotAccumulatorPower",
+      "Title": "Crimson Knot Accumulator",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-KNOT_ACCUMULATOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241037,
+      "Name": "honkai_star_rail_characters_acheron_lethe_recall_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/lethe_recall_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.LetheRecallPower",
+      "Title": "Oblivion Recall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-LETHE_RECALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241038,
+      "Name": "honkai_star_rail_characters_acheron_myriad_void_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/myriad_void_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.MyriadVoidPower",
+      "Title": "Myriad Void",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-MYRIAD_VOID_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241039,
+      "Name": "honkai_star_rail_characters_acheron_night_song_chorus_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/night_song_chorus_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.NightSongChorusPower",
+      "Title": "Night Song Chorus",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-NIGHT_SONG_CHORUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241040,
+      "Name": "honkai_star_rail_characters_acheron_no_turning_back_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/no_turning_back_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.NoTurningBackPower",
+      "Title": "No Turning Back",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-NO_TURNING_BACK_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241041,
+      "Name": "honkai_star_rail_characters_acheron_resonance_active_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/resonance_active_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.ResonanceActivePower",
+      "Title": "Resonance Active",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-RESONANCE_ACTIVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241042,
+      "Name": "honkai_star_rail_characters_acheron_return_to_void_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/return_to_void_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.ReturnToVoidPower",
+      "Title": "Return to Void",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-RETURN_TO_VOID_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241043,
+      "Name": "honkai_star_rail_characters_acheron_slashed_dream_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/slashed_dream_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.SlashedDreamPower",
+      "Title": "Slashed Dream",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-SLASHED_DREAM_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241044,
+      "Name": "honkai_star_rail_characters_acheron_thunder_heart_tide_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/thunder_heart_tide_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.ThunderHeartTidePower",
+      "Title": "Thunder Heart Tide",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-THUNDER_HEART_TIDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241045,
+      "Name": "honkai_star_rail_characters_acheron_void_crucible_abyss_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/void_crucible_abyss_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.VoidCrucibleAbyssPower",
+      "Title": "Void Crucible Abyss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-VOID_CRUCIBLE_ABYSS_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 241046,
+      "Name": "honkai_star_rail_characters_acheron_void_envoy_power_power",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/void_envoy_power",
+      "Category": "Power",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Powers.VoidEnvoyPower",
+      "Title": "Void Envoy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACHERON-VOID_ENVOY_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 242028,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e1_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e1_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.EidolonE1Evanescia",
+      "Title": "E1 · Homeland: Dance in Prayer",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-EIDOLON_E1_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242029,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e2_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e2_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.EidolonE2Evanescia",
+      "Title": "E2 · Voyage: A Wish for Everbloom",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-EIDOLON_E2_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242030,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e3_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e3_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.EidolonE3Evanescia",
+      "Title": "E3 · Blade: A Feast on Evils",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-EIDOLON_E3_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242031,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e4_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e4_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.EidolonE4Evanescia",
+      "Title": "E4 · Meadow: A Ruin by Vice",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-EIDOLON_E4_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242032,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e5_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e5_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.EidolonE5Evanescia",
+      "Title": "E5 · Arcadia: A Glimpse of Fates",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-EIDOLON_E5_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242033,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e6_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e6_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.EidolonE6Evanescia",
+      "Title": "E6 · Maiden: A Step into Dreams",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-EIDOLON_E6_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242034,
+      "Name": "honkai_star_rail_characters_evanescia_master_fox_notebook_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/master_fox_notebook_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.MasterFoxNotebookEvanescia",
+      "Title": "Ruler Blade",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-MASTER_FOX_NOTEBOOK_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 242035,
+      "Name": "honkai_star_rail_characters_evanescia_master_fox_notebook_plus_evanescia_relic",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/master_fox_notebook_plus_evanescia",
+      "Category": "Relic",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Relics.MasterFoxNotebookPlusEvanescia",
+      "Title": "Ruler Blade+",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EVANESCIA-MASTER_FOX_NOTEBOOK_PLUS_EVANESCIA.title",
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241047,
+      "Name": "honkai_star_rail_characters_evanescia_assist_max_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/assist_max_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.AssistMaxPowerEvanescia",
+      "Title": "Public Execution",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-ASSIST_MAX_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241048,
+      "Name": "honkai_star_rail_characters_evanescia_banger_to_block_accumulator_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/banger_to_block_accumulator_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.BangerToBlockAccumulatorPowerEvanescia",
+      "Title": "Block Charge",
+      "Aliases": [
+        "ちゃーじ変換"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-BANGER_TO_BLOCK_ACCUMULATOR_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241049,
+      "Name": "honkai_star_rail_characters_evanescia_barrier_block_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/barrier_block_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.BarrierBlockPowerEvanescia",
+      "Title": "Barrier",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-BARRIER_BLOCK_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241050,
+      "Name": "honkai_star_rail_characters_evanescia_big_spender_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/big_spender_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.BigSpenderPowerEvanescia",
+      "Title": "Big Spender",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-BIG_SPENDER_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241051,
+      "Name": "honkai_star_rail_characters_evanescia_certified_banger_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/certified_banger_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.CertifiedBangerPowerEvanescia",
+      "Title": "Certified Banger",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-CERTIFIED_BANGER_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241052,
+      "Name": "honkai_star_rail_characters_evanescia_certified_banger_total_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/certified_banger_total_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.CertifiedBangerTotalPowerEvanescia",
+      "Title": "Certified Banger (Total)",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-CERTIFIED_BANGER_TOTAL_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241053,
+      "Name": "honkai_star_rail_characters_evanescia_chain_assist_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/chain_assist_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.ChainAssistPowerEvanescia",
+      "Title": "Chain Assist",
+      "Aliases": [
+        "連鎖あしすと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-CHAIN_ASSIST_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241054,
+      "Name": "honkai_star_rail_characters_evanescia_cherry_blossom_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/cherry_blossom_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.CherryBlossomPowerEvanescia",
+      "Title": "Cherry Blossom",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-CHERRY_BLOSSOM_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241055,
+      "Name": "honkai_star_rail_characters_evanescia_class_notes_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/class_notes_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.ClassNotesPowerEvanescia",
+      "Title": "Iron Wall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-CLASS_NOTES_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241056,
+      "Name": "honkai_star_rail_characters_evanescia_daily_check_in_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/daily_check_in_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.DailyCheckInPowerEvanescia",
+      "Title": "Preview",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-DAILY_CHECK_IN_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241057,
+      "Name": "honkai_star_rail_characters_evanescia_dex_decay_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/dex_decay_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.DexDecayPowerEvanescia",
+      "Title": "Uniform Guard",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-DEX_DECAY_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241058,
+      "Name": "honkai_star_rail_characters_evanescia_eidolon_e3_pending_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/eidolon_e3_pending_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.EidolonE3PendingPowerEvanescia",
+      "Title": "Pending Reward",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-EIDOLON_E3_PENDING_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241059,
+      "Name": "honkai_star_rail_characters_evanescia_extra_draw_turns_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/extra_draw_turns_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.ExtraDrawTurnsPowerEvanescia",
+      "Title": "Borrow Notes",
+      "Aliases": [
+        "のーと貸して！"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-EXTRA_DRAW_TURNS_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241060,
+      "Name": "honkai_star_rail_characters_evanescia_first_freebie_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/first_freebie_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.FirstFreebiePowerEvanescia",
+      "Title": "Early Bird",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-FIRST_FREEBIE_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241061,
+      "Name": "honkai_star_rail_characters_evanescia_fly_high_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/fly_high_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.FlyHighPowerEvanescia",
+      "Title": "Discount",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-FLY_HIGH_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241062,
+      "Name": "honkai_star_rail_characters_evanescia_fox_progress_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/fox_progress_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.FoxProgressPowerEvanescia",
+      "Title": "Master Fox",
+      "Aliases": [
+        "きつね先生"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-FOX_PROGRESS_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241063,
+      "Name": "honkai_star_rail_characters_evanescia_intensify_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/intensify_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.IntensifyPowerEvanescia",
+      "Title": "Intensify",
+      "Aliases": [
+        "えすかれーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-INTENSIFY_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241064,
+      "Name": "honkai_star_rail_characters_evanescia_lucky_draw_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/lucky_draw_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.LuckyDrawPowerEvanescia",
+      "Title": "Lucky Streak",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-LUCKY_DRAW_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241065,
+      "Name": "honkai_star_rail_characters_evanescia_next_aha_discover_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/next_aha_discover_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.NextAhaDiscoverPowerEvanescia",
+      "Title": "Save Point · Discover",
+      "Aliases": [
+        "せーぶぽいんと·発見"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-NEXT_AHA_DISCOVER_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241066,
+      "Name": "honkai_star_rail_characters_evanescia_next_aha_energy_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/next_aha_energy_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.NextAhaEnergyPowerEvanescia",
+      "Title": "Save Point",
+      "Aliases": [
+        "せーぶぽいんと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-NEXT_AHA_ENERGY_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241067,
+      "Name": "honkai_star_rail_characters_evanescia_next_aha_heal_per_enemy_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/next_aha_heal_per_enemy_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.NextAhaHealPerEnemyPowerEvanescia",
+      "Title": "Mend",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-NEXT_AHA_HEAL_PER_ENEMY_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241068,
+      "Name": "honkai_star_rail_characters_evanescia_next_aha_heal_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/next_aha_heal_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.NextAhaHealPowerEvanescia",
+      "Title": "Mend",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-NEXT_AHA_HEAL_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241069,
+      "Name": "honkai_star_rail_characters_evanescia_next_pleasure_boost_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/next_pleasure_boost_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.NextPleasureBoostPowerEvanescia",
+      "Title": "Building Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-NEXT_PLEASURE_BOOST_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241070,
+      "Name": "honkai_star_rail_characters_evanescia_nurture_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/nurture_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.NurturePowerEvanescia",
+      "Title": "Nurture",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-NURTURE_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241071,
+      "Name": "honkai_star_rail_characters_evanescia_poke_me_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/poke_me_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.PokeMePowerEvanescia",
+      "Title": "Rhythm",
+      "Aliases": [
+        "りずむ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-POKE_ME_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241072,
+      "Name": "honkai_star_rail_characters_evanescia_punchline_get_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/punchline_get_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.PunchlineGetPowerEvanescia",
+      "Title": "Punchline Get",
+      "Aliases": [
+        "爆笑ねたGET"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-PUNCHLINE_GET_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241073,
+      "Name": "honkai_star_rail_characters_evanescia_refill_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/refill_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.RefillPowerEvanescia",
+      "Title": "Nurture",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-REFILL_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241074,
+      "Name": "honkai_star_rail_characters_evanescia_resilience_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/resilience_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.ResiliencePowerEvanescia",
+      "Title": "Bounce Back",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-RESILIENCE_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241075,
+      "Name": "honkai_star_rail_characters_evanescia_second_run_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/second_run_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.SecondRunPowerEvanescia",
+      "Title": "Combo Chain",
+      "Aliases": [
+        "ちぇいんこんぼ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-SECOND_RUN_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241076,
+      "Name": "honkai_star_rail_characters_evanescia_suppress_aha_trigger_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/suppress_aha_trigger_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.SuppressAhaTriggerPowerEvanescia",
+      "Title": "Held Over",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-SUPPRESS_AHA_TRIGGER_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241077,
+      "Name": "honkai_star_rail_characters_evanescia_suppress_punchline_this_turn_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/suppress_punchline_this_turn_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.SuppressPunchlineThisTurnPowerEvanescia",
+      "Title": "Curl Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-SUPPRESS_PUNCHLINE_THIS_TURN_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 241078,
+      "Name": "honkai_star_rail_characters_evanescia_teacher_favor_power_evanescia_power",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/teacher_favor_power_evanescia",
+      "Category": "Power",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Powers.TeacherFavorPowerEvanescia",
+      "Title": "Tacit Bond",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "EVANESCIA-TEACHER_FAVOR_POWER_EVANESCIA.title",
+      "Tags": [
+        "Buff"
+      ],
+      "WorkshopId": "3747578491"
+    },
+    {
+      "Id": 243000,
+      "Name": "honkai_star_rail_characters_kafka_rewrite_mark_enchantment",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/rewrite_mark",
+      "Category": "Enchantment",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Mechanics.RewriteMarkEnchantment",
+      "Title": "Rewritten",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "KAFKA-REWRITE_MARK_ENCHANTMENT.title",
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 245000,
+      "Name": "honkai_star_rail_characters_kafka_character_character",
+      "AssetName": "mods/honkai_star_rail_characters/kafka/kafka_character",
+      "Category": "Character",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Character.KafkaCharacter",
+      "Title": "Kafka",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "KAFKA-KAFKA_CHARACTER.title",
+      "CookieEmoteId": 2319,
+      "WorkshopId": "3747588119"
+    },
+    {
+      "Id": 245001,
+      "Name": "honkai_star_rail_characters_acheron_character_character",
+      "AssetName": "mods/honkai_star_rail_characters/acheron/acheron_character",
+      "Category": "Character",
+      "Assembly": "Acheron",
+      "TypeName": "Acheron.AcheronCode.Character.AcheronCharacter",
+      "Title": "Acheron",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "ACHERON-ACHERON_CHARACTER.title",
+      "CookieEmoteId": 2319,
+      "WorkshopId": "3747588205"
+    },
+    {
+      "Id": 245002,
+      "Name": "honkai_star_rail_characters_evanescia_character_character",
+      "AssetName": "mods/honkai_star_rail_characters/evanescia/evanescia_character",
+      "Category": "Character",
+      "Assembly": "Evanescia",
+      "TypeName": "Evanescia.EvanesciaCode.Character.EvanesciaCharacter",
+      "Title": "Evanescia",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "EVANESCIA-EVANESCIA_CHARACTER.title",
+      "CookieEmoteId": 2319,
+      "WorkshopId": "3747578491"
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "TargetId": 1089,
+      "Category": "Power",
+      "Assembly": "Kafka",
+      "TypeName": "Kafka.KafkaCode.Powers.LoseAllBlockPower",
+      "WorkshopId": "3747588119"
+    }
+  ]
 }

@@ -1,0 +1,3277 @@
+{
+  "Key": "blacksouls2",
+  "ModIds": [
+    "St2bs"
+  ],
+  "Name": "Black Souls 2",
+  "WorkshopId": "3749061519",
+  "Aliases": [
+    "St2bs",
+    "blacksouls2",
+    "ブラックソウル2"
+  ],
+  "Entries": [
+    {
+      "Id": 101000,
+      "Name": "blacksouls2_bloodlust_power_power",
+      "AssetName": "mods/blacksouls2/bloodlust_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.Sts2Code.Powers.BloodlustPower",
+      "Title": "Bloodlust",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BLOODLUST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101001,
+      "Name": "blacksouls2_wind_riding_entity_power_power",
+      "AssetName": "mods/blacksouls2/wind_riding_entity_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.Sts2Code.Powers.WindRidingEntityPower",
+      "Title": "Wind-Riding Entity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-WIND_RIDING_ENTITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 102000,
+      "Name": "blacksouls2_banaei_companion_relic_relic",
+      "AssetName": "mods/blacksouls2/banaei_companion_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.BanaeiCompanionRelic",
+      "Title": "BanaeiCompanionRelic",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-BANAEI_COMPANION_RELIC.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.HerbBottleRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102001,
+      "Name": "blacksouls2_black_goat_ring_relic_relic",
+      "AssetName": "mods/blacksouls2/black_goat_ring_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.BlackGoatRingRelic",
+      "Title": "Black Goat Ring",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-BLACK_GOAT_RING_RELIC.title"
+    },
+    {
+      "Id": 102002,
+      "Name": "blacksouls2_black_rabbit_ring_relic_relic",
+      "AssetName": "mods/blacksouls2/black_rabbit_ring_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.BlackRabbitRingRelic",
+      "Title": "Black Rabbit Ring",
+      "Aliases": [
+        "黒うさぎの指輪"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-BLACK_RABBIT_RING_RELIC.title"
+    },
+    {
+      "Id": 102003,
+      "Name": "blacksouls2_carroll_chick_blessing_relic_relic",
+      "AssetName": "mods/blacksouls2/carroll_chick_blessing_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.CarrollChickBlessingRelic",
+      "Title": "Blessing of {Name.StringValue}",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-CARROLL_CHICK_BLESSING_RELIC.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.CarrollChickCompanionRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102005,
+      "Name": "blacksouls2_catalina_blessing_relic",
+      "AssetName": "mods/blacksouls2/catalina_blessing",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.CatalinaBlessing",
+      "Title": "Catalina's Blessing",
+      "Aliases": [
+        "かたりーなの祝福"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-CATALINA_BLESSING.title"
+    },
+    {
+      "Id": 102006,
+      "Name": "blacksouls2_cheshire_cat_ring_relic",
+      "AssetName": "mods/blacksouls2/cheshire_cat_ring",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.CheshireCatRing",
+      "Title": "Cheshire Cat Ring",
+      "Aliases": [
+        "ちぇしゃ猫の指輪"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-CHESHIRE_CAT_RING.title"
+    },
+    {
+      "Id": 102007,
+      "Name": "blacksouls2_cooking_ticket_relic",
+      "AssetName": "mods/blacksouls2/cooking_ticket",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.CookingTicket",
+      "Title": "Cooking Ticket",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-COOKING_TICKET.title"
+    },
+    {
+      "Id": 102008,
+      "Name": "blacksouls2_cosmic_eye_relic",
+      "AssetName": "mods/blacksouls2/cosmic_eye",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.CosmicEye",
+      "Title": "Cosmic Eye",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-COSMIC_EYE.title"
+    },
+    {
+      "Id": 102009,
+      "Name": "blacksouls2_death_relic_relic",
+      "AssetName": "mods/blacksouls2/death_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.DeathRelic",
+      "Title": "Death",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-DEATH_RELIC.title"
+    },
+    {
+      "Id": 102010,
+      "Name": "blacksouls2_dodo_dash_relic",
+      "AssetName": "mods/blacksouls2/dodo_dash",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.DodoDash",
+      "Title": "Dodo Dash",
+      "Aliases": [
+        "どーどー走り"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-DODO_DASH.title"
+    },
+    {
+      "Id": 102012,
+      "Name": "blacksouls2_florence_companion_relic_relic",
+      "AssetName": "mods/blacksouls2/florence_companion_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.FlorenceCompanionRelic",
+      "Title": "Companion - Florence",
+      "Aliases": [
+        "同伴――ふろーれんす"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-FLORENCE_COMPANION_RELIC.title"
+    },
+    {
+      "Id": 102013,
+      "Name": "blacksouls2_fortify_fragment_relic_relic",
+      "AssetName": "mods/blacksouls2/fortify_fragment_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.FortifyFragmentRelic",
+      "Title": "Fortify Fragment",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-FORTIFY_FRAGMENT_RELIC.title"
+    },
+    {
+      "Id": 102014,
+      "Name": "blacksouls2_fortify_large_fragment_relic_relic",
+      "AssetName": "mods/blacksouls2/fortify_large_fragment_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.FortifyLargeFragmentRelic",
+      "Title": "Large Fortify Fragment",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-FORTIFY_LARGE_FRAGMENT_RELIC.title"
+    },
+    {
+      "Id": 102015,
+      "Name": "blacksouls2_fortify_original_disc_relic_relic",
+      "AssetName": "mods/blacksouls2/fortify_original_disc_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.FortifyOriginalDiscRelic",
+      "Title": "Fortify Original Disc",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-FORTIFY_ORIGINAL_DISC_RELIC.title"
+    },
+    {
+      "Id": 102016,
+      "Name": "blacksouls2_golden_egg_fluid_relic_relic",
+      "AssetName": "mods/blacksouls2/golden_egg_fluid_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.GoldenEggFluidRelic",
+      "Title": "Golden Egg Fluid",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-GOLDEN_EGG_FLUID_RELIC.title"
+    },
+    {
+      "Id": 102017,
+      "Name": "blacksouls2_green_relic",
+      "AssetName": "mods/blacksouls2/green",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.Green",
+      "Title": "Green",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-GREEN.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.OutsiderGreen"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102018,
+      "Name": "blacksouls2_griffin_shield_relic_relic",
+      "AssetName": "mods/blacksouls2/griffin_shield_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.GriffinShieldRelic",
+      "Title": "Griffin's Shield",
+      "Aliases": [
+        "ぐりふぃんの盾",
+        "ぐりふぃんの槍",
+        "誓約：ぐりふぃん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-GRIFFIN_SHIELD_RELIC.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.GriffinSpearRelic",
+        "St2bs.St2bsCode.Relics.OathGriffinRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102020,
+      "Name": "blacksouls2_holy_angel_dual_blades_relic",
+      "AssetName": "mods/blacksouls2/holy_angel_dual_blades",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.HolyAngelDualBlades",
+      "Title": "Holy Angel Dual Blades",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-HOLY_ANGEL_DUAL_BLADES.title"
+    },
+    {
+      "Id": 102021,
+      "Name": "blacksouls2_jabberwock_oath_relic_relic",
+      "AssetName": "mods/blacksouls2/jabberwock_oath_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.JabberwockOathRelic",
+      "Title": "Oath: Jabberwock",
+      "Aliases": [
+        "誓約：じゃばうぉっく"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-JABBERWOCK_OATH_RELIC.title"
+    },
+    {
+      "Id": 102022,
+      "Name": "blacksouls2_kanachi_notes_relic",
+      "AssetName": "mods/blacksouls2/kanachi_notes",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.KanachiNotes",
+      "Title": "Kanachi's Notes",
+      "Aliases": [
+        "かなちののーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-KANACHI_NOTES.title"
+    },
+    {
+      "Id": 102023,
+      "Name": "blacksouls2_ke_ti_oath_relic_relic",
+      "AssetName": "mods/blacksouls2/ke_ti_oath_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.KeTiOathRelic",
+      "Title": "Oath: Ke Ti",
+      "Aliases": [
+        "誓約：けーてぃ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-KE_TI_OATH_RELIC.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.ProduceHeirRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102024,
+      "Name": "blacksouls2_kuraninde_ticket_relic",
+      "AssetName": "mods/blacksouls2/kuraninde_ticket",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.KuranindeTicket",
+      "Title": "Kuraninde Ticket",
+      "Aliases": [
+        "くらにんでの切符"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-KURANINDE_TICKET.title"
+    },
+    {
+      "Id": 102025,
+      "Name": "blacksouls2_mabels_wine_relic",
+      "AssetName": "mods/blacksouls2/mabels_wine",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.MabelsWine",
+      "Title": "Mabel's Wine",
+      "Aliases": [
+        "めーべるの酒"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-MABELS_WINE.title"
+    },
+    {
+      "Id": 102026,
+      "Name": "blacksouls2_mystery_of_night_sky_relic",
+      "AssetName": "mods/blacksouls2/mystery_of_night_sky",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.MysteryOfNightSky",
+      "Title": "Mystery of the Night Sky",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-MYSTERY_OF_NIGHT_SKY.title"
+    },
+    {
+      "Id": 102027,
+      "Name": "blacksouls2_nordens_pocket_watch_relic",
+      "AssetName": "mods/blacksouls2/nordens_pocket_watch",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.NordensPocketWatch",
+      "Title": "Norden's Pocket Watch",
+      "Aliases": [
+        "のーでんの懐中時計",
+        "誓約：白うさぎ・のーでん"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-NORDENS_POCKET_WATCH.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.OathWhiteRabbitNorden"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102028,
+      "Name": "blacksouls2_oath_bill_relic_relic",
+      "AssetName": "mods/blacksouls2/oath_bill_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathBillRelic",
+      "Title": "Oath: Bill",
+      "Aliases": [
+        "誓約：びる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_BILL_RELIC.title"
+    },
+    {
+      "Id": 102029,
+      "Name": "blacksouls2_oath_dormouse_mountain_sleeper_relic",
+      "AssetName": "mods/blacksouls2/oath_dormouse_mountain_sleeper",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathDormouseMountainSleeper",
+      "Title": "Oath: Dormouse Mountain Sleeper",
+      "Aliases": [
+        "誓約：やまね・まうんてんすりーぱー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_DORMOUSE_MOUNTAIN_SLEEPER.title"
+    },
+    {
+      "Id": 102030,
+      "Name": "blacksouls2_oath_fake_turtle_relic",
+      "AssetName": "mods/blacksouls2/oath_fake_turtle",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathFakeTurtle",
+      "Title": "Oath: Fake Turtle",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_FAKE_TURTLE.title"
+    },
+    {
+      "Id": 102032,
+      "Name": "blacksouls2_oath_hatter_hano_relic",
+      "AssetName": "mods/blacksouls2/oath_hatter_hano",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathHatterHano",
+      "Title": "Oath: Hatter Hano",
+      "Aliases": [
+        "誓約：帽子屋はの"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_HATTER_HANO.title"
+    },
+    {
+      "Id": 102033,
+      "Name": "blacksouls2_oath_march_hare_heir_relic",
+      "AssetName": "mods/blacksouls2/oath_march_hare_heir",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathMarchHareHeir",
+      "Title": "Oath: March Hare Heir",
+      "Aliases": [
+        "誓約：三月うさぎ・へいる"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_MARCH_HARE_HEIR.title"
+    },
+    {
+      "Id": 102034,
+      "Name": "blacksouls2_oath_margareta_relic",
+      "AssetName": "mods/blacksouls2/oath_margareta",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathMargareta",
+      "Title": "Oath: Margareta",
+      "Aliases": [
+        "誓約：まるがれーた"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_MARGARETA.title"
+    },
+    {
+      "Id": 102035,
+      "Name": "blacksouls2_oath_plikate_relic",
+      "AssetName": "mods/blacksouls2/oath_plikate",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathPlikate",
+      "Title": "Oath: Plikate",
+      "Aliases": [
+        "誓約：ぷりけーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_PLIKATE.title"
+    },
+    {
+      "Id": 102036,
+      "Name": "blacksouls2_oath_rorina_relic_relic",
+      "AssetName": "mods/blacksouls2/oath_rorina_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathRorinaRelic",
+      "Title": "Oath: Rorina",
+      "Aliases": [
+        "誓約：ろりーな"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_RORINA_RELIC.title"
+    },
+    {
+      "Id": 102037,
+      "Name": "blacksouls2_oath_shifuqi_relic_relic",
+      "AssetName": "mods/blacksouls2/oath_shifuqi_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathShifuqiRelic",
+      "Title": "Oath: Shifuqi",
+      "Aliases": [
+        "誓約：しふき"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_SHIFUQI_RELIC.title"
+    },
+    {
+      "Id": 102038,
+      "Name": "blacksouls2_oath_shiya_relic",
+      "AssetName": "mods/blacksouls2/oath_shiya",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathShiya",
+      "Title": "Oath: Shiya",
+      "Aliases": [
+        "誓約：しーや"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_SHIYA.title"
+    },
+    {
+      "Id": 102039,
+      "Name": "blacksouls2_oath_tweedle_sisters1_relic_relic",
+      "AssetName": "mods/blacksouls2/oath_tweedle_sisters1_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathTweedleSisters1Relic",
+      "Title": "Oath: Tweedle Sisters (Escape)",
+      "Aliases": [
+        "誓約：とうぃーどる姉妹（逃走）"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_TWEEDLE_SISTERS1_RELIC.title"
+    },
+    {
+      "Id": 102040,
+      "Name": "blacksouls2_oath_tweedle_sisters2_relic_relic",
+      "AssetName": "mods/blacksouls2/oath_tweedle_sisters2_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OathTweedleSisters2Relic",
+      "Title": "Oath: Tweedle Sisters (Energy)",
+      "Aliases": [
+        "誓約：とうぃーどる姉妹（えなじー）"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OATH_TWEEDLE_SISTERS2_RELIC.title"
+    },
+    {
+      "Id": 102042,
+      "Name": "blacksouls2_ominous_vest_relic_relic",
+      "AssetName": "mods/blacksouls2/ominous_vest_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.OminousVestRelic",
+      "Title": "Ominous Vest",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-OMINOUS_VEST_RELIC.title"
+    },
+    {
+      "Id": 102043,
+      "Name": "blacksouls2_plikate_date_ticket_relic",
+      "AssetName": "mods/blacksouls2/plikate_date_ticket",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.PlikateDateTicket",
+      "Title": "Date",
+      "Aliases": [
+        "でーと"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-PLIKATE_DATE_TICKET.title"
+    },
+    {
+      "Id": 102044,
+      "Name": "blacksouls2_plikate_ring_relic",
+      "AssetName": "mods/blacksouls2/plikate_ring",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.PlikateRing",
+      "Title": "Plikate Ring",
+      "Aliases": [
+        "ぷりけーとの指輪"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-PLIKATE_RING.title"
+    },
+    {
+      "Id": 102046,
+      "Name": "blacksouls2_queen_tart_relic_relic",
+      "AssetName": "mods/blacksouls2/queen_tart_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.QueenTartRelic",
+      "Title": "Queen's Egg Tart",
+      "Aliases": [
+        "女王のえっぐたると"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-QUEEN_TART_RELIC.title"
+    },
+    {
+      "Id": 102047,
+      "Name": "blacksouls2_redemption_relic",
+      "AssetName": "mods/blacksouls2/redemption",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.Redemption",
+      "Title": "Redemption",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-REDEMPTION.title"
+    },
+    {
+      "Id": 102048,
+      "Name": "blacksouls2_red_relic_relic",
+      "AssetName": "mods/blacksouls2/red_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.RedRelic",
+      "Title": "Red",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-RED_RELIC.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Relics.ScarletRelic"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 102049,
+      "Name": "blacksouls2_seek_help_option_relic",
+      "AssetName": "mods/blacksouls2/seek_help_option",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.SeekHelpOption",
+      "Title": "Seek Help",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-SEEK_HELP_OPTION.title"
+    },
+    {
+      "Id": 102050,
+      "Name": "blacksouls2_slay_lan_jie_li_na_relic",
+      "AssetName": "mods/blacksouls2/slay_lan_jie_li_na",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.SlayLanJieLiNa",
+      "Title": "Slay LanJieLiNa",
+      "Aliases": [
+        "らん・じぇりーなを討つ"
+      ],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-SLAY_LAN_JIE_LI_NA.title"
+    },
+    {
+      "Id": 102051,
+      "Name": "blacksouls2_snake_god_curse_relic_relic",
+      "AssetName": "mods/blacksouls2/snake_god_curse_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.SnakeGodCurseRelic",
+      "Title": "Snake God Curse",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-SNAKE_GOD_CURSE_RELIC.title"
+    },
+    {
+      "Id": 102052,
+      "Name": "blacksouls2_snow_maiden_relic",
+      "AssetName": "mods/blacksouls2/snow_maiden",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.SnowMaiden",
+      "Title": "Fairy Tale: Snow Girl",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-SNOW_MAIDEN.title"
+    },
+    {
+      "Id": 102053,
+      "Name": "blacksouls2_sun_armor_relic",
+      "AssetName": "mods/blacksouls2/sun_armor",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.SunArmor",
+      "Title": "Sun Armor",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-SUN_ARMOR.title"
+    },
+    {
+      "Id": 102054,
+      "Name": "blacksouls2_wings_relic_relic",
+      "AssetName": "mods/blacksouls2/wings_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.WingsRelic",
+      "Title": "Wings",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-WINGS_RELIC.title"
+    },
+    {
+      "Id": 102055,
+      "Name": "blacksouls2_wonderland_key_relic_relic",
+      "AssetName": "mods/blacksouls2/wonderland_key_relic",
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.WonderlandKeyRelic",
+      "Title": "Wonderland Key",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ST2BS-WONDERLAND_KEY_RELIC.title"
+    },
+    {
+      "Id": 101002,
+      "Name": "blacksouls2_absolute_zero_power_power",
+      "AssetName": "mods/blacksouls2/absolute_zero_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.AbsoluteZeroPower",
+      "Title": "Absolute Zero",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ABSOLUTE_ZERO_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101003,
+      "Name": "blacksouls2_alice_marriage_power_power",
+      "AssetName": "mods/blacksouls2/alice_marriage_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.AliceMarriagePower",
+      "Title": "Vicious Theater: Alice's Marriage Tale",
+      "Aliases": [
+        "悪辣劇場「ありすの結婚奇譚」"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ALICE_MARRIAGE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101004,
+      "Name": "blacksouls2_andoru_sword_power_power",
+      "AssetName": "mods/blacksouls2/andoru_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.AndoruSwordPower",
+      "Title": "Andoru Sword",
+      "Aliases": [
+        "あんどるの剣"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ANDORU_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101005,
+      "Name": "blacksouls2_anti_requiem_power_power",
+      "AssetName": "mods/blacksouls2/anti_requiem_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.AntiRequiemPower",
+      "Title": "Anti Requiem",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ANTI_REQUIEM_POWER.title"
+    },
+    {
+      "Id": 101006,
+      "Name": "blacksouls2_approach_power_power",
+      "AssetName": "mods/blacksouls2/approach_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ApproachPower",
+      "Title": "Approach",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-APPROACH_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "St2bs.St2bsCode.Powers.FlashPower"
+      ]
+    },
+    {
+      "Id": 101007,
+      "Name": "blacksouls2_beast_hunting_saw_power_power",
+      "AssetName": "mods/blacksouls2/beast_hunting_saw_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BeastHuntingSawPower",
+      "Title": "Beast Hunting Saw",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BEAST_HUNTING_SAW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101008,
+      "Name": "blacksouls2_beast_slaying_saw_sword_power_power",
+      "AssetName": "mods/blacksouls2/beast_slaying_saw_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BeastSlayingSawSwordPower",
+      "Title": "Beast Slaying Saw Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BEAST_SLAYING_SAW_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101009,
+      "Name": "blacksouls2_black_rabbit_knight_damage_split_power_power",
+      "AssetName": "mods/blacksouls2/black_rabbit_knight_damage_split_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BlackRabbitKnightDamageSplitPower",
+      "Title": "Black Rabbit Knight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BLACK_RABBIT_KNIGHT_DAMAGE_SPLIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101010,
+      "Name": "blacksouls2_bleed_power_power",
+      "AssetName": "mods/blacksouls2/bleed_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BleedPower",
+      "Title": "Bleed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BLEED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101011,
+      "Name": "blacksouls2_blood_loss_power_power",
+      "AssetName": "mods/blacksouls2/blood_loss_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BloodLossPower",
+      "Title": "Blood Loss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BLOOD_LOSS_POWER.title",
+      "Tags": [
+        "Buff",
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "St2bs.St2bsCode.Powers.BloodLovePower"
+      ]
+    },
+    {
+      "Id": 101013,
+      "Name": "blacksouls2_brain_eating_power_power",
+      "AssetName": "mods/blacksouls2/brain_eating_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BrainEatingPower",
+      "Title": "Brain Eating",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BRAIN_EATING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101014,
+      "Name": "blacksouls2_broken_sword_power_power",
+      "AssetName": "mods/blacksouls2/broken_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BrokenSwordPower",
+      "Title": "Broken Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BROKEN_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101015,
+      "Name": "blacksouls2_burn_power_power",
+      "AssetName": "mods/blacksouls2/burn_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.BurnPower",
+      "Title": "Burn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-BURN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101016,
+      "Name": "blacksouls2_celestial_domain_power_power",
+      "AssetName": "mods/blacksouls2/celestial_domain_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.CelestialDomainPower",
+      "Title": "Celestial Domain: Angel's Song That Cures Disease",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CELESTIAL_DOMAIN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101017,
+      "Name": "blacksouls2_chaos_power_power",
+      "AssetName": "mods/blacksouls2/chaos_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ChaosPower",
+      "Title": "Vicious Theater: Chaos",
+      "Aliases": [
+        "悪辣劇場「かおす」"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CHAOS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101018,
+      "Name": "blacksouls2_club_knight_fortitude_power_power",
+      "AssetName": "mods/blacksouls2/club_knight_fortitude_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ClubKnightFortitudePower",
+      "Title": "Fortitude",
+      "Aliases": [
+        "ぷれーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CLUB_KNIGHT_FORTITUDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "St2bs.St2bsCode.Powers.PokerGuardianPlatingPower"
+      ]
+    },
+    {
+      "Id": 101019,
+      "Name": "blacksouls2_club_power_power",
+      "AssetName": "mods/blacksouls2/club_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ClubPower",
+      "Title": "Club",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CLUB_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101020,
+      "Name": "blacksouls2_clumsy_power_power",
+      "AssetName": "mods/blacksouls2/clumsy_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ClumsyPower",
+      "Title": "Clumsy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CLUMSY_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101021,
+      "Name": "blacksouls2_concussion_power_power",
+      "AssetName": "mods/blacksouls2/concussion_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ConcussionPower",
+      "Title": "Concussion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CONCUSSION_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101022,
+      "Name": "blacksouls2_confession_power_power",
+      "AssetName": "mods/blacksouls2/confession_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ConfessionPower",
+      "Title": "Confession",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CONFESSION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101023,
+      "Name": "blacksouls2_cripple_power_power",
+      "AssetName": "mods/blacksouls2/cripple_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.CripplePower",
+      "Title": "Cripple",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "ST2BS-CRIPPLE.title"
+    },
+    {
+      "Id": 101024,
+      "Name": "blacksouls2_curtain_call_power_power",
+      "AssetName": "mods/blacksouls2/curtain_call_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.CurtainCallPower",
+      "Title": "Vicious Theater: Curtain Call",
+      "Aliases": [
+        "悪辣劇場「ふぃなーれ」"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-CURTAIN_CALL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101025,
+      "Name": "blacksouls2_dance_of_swiftness_power_power",
+      "AssetName": "mods/blacksouls2/dance_of_swiftness_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DanceOfSwiftnessPower",
+      "Title": "Dance of Swiftness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DANCE_OF_SWIFTNESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101026,
+      "Name": "blacksouls2_dark_fairy_tale_gift_power_power",
+      "AssetName": "mods/blacksouls2/dark_fairy_tale_gift_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DarkFairyTaleGiftPower",
+      "Title": "Dark Fairy Tale",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DARK_FAIRY_TALE_GIFT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101027,
+      "Name": "blacksouls2_dark_fairy_tale_power_power",
+      "AssetName": "mods/blacksouls2/dark_fairy_tale_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DarkFairyTalePower",
+      "Title": "Dark Fairy Tale",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DARK_FAIRY_TALE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101028,
+      "Name": "blacksouls2_dark_star_chaos_power_power",
+      "AssetName": "mods/blacksouls2/dark_star_chaos_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DarkStarChaosPower",
+      "Title": "Dark Star Chaos",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DARK_STAR_CHAOS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101029,
+      "Name": "blacksouls2_dark_sword_power_power",
+      "AssetName": "mods/blacksouls2/dark_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DarkSwordPower",
+      "Title": "Dark Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DARK_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101030,
+      "Name": "blacksouls2_death_kiss_power_power",
+      "AssetName": "mods/blacksouls2/death_kiss_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DeathKissPower",
+      "Title": "Death Kiss",
+      "Aliases": [
+        "死のきす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DEATH_KISS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101031,
+      "Name": "blacksouls2_deep_sea_knight_anchor_power_power",
+      "AssetName": "mods/blacksouls2/deep_sea_knight_anchor_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DeepSeaKnightAnchorPower",
+      "Title": "Deep Sea Knight Anchor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DEEP_SEA_KNIGHT_ANCHOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101032,
+      "Name": "blacksouls2_deep_sea_knight_heavy_anchor_power_power",
+      "AssetName": "mods/blacksouls2/deep_sea_knight_heavy_anchor_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DeepSeaKnightHeavyAnchorPower",
+      "Title": "Heavy Anchor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DEEP_SEA_KNIGHT_HEAVY_ANCHOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101033,
+      "Name": "blacksouls2_defeat_power_power",
+      "AssetName": "mods/blacksouls2/defeat_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DefeatPower",
+      "Title": "Overwhelm",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DEFEAT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101034,
+      "Name": "blacksouls2_delicious_power_power",
+      "AssetName": "mods/blacksouls2/delicious_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DeliciousPower",
+      "Title": "Delicious",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DELICIOUS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101035,
+      "Name": "blacksouls2_despair_change_power_power",
+      "AssetName": "mods/blacksouls2/despair_change_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DespairChangePower",
+      "Title": "扈晄悍逧�ｻ晄悍",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DESPAIR_CHANGE_POWER.title"
+    },
+    {
+      "Id": 101036,
+      "Name": "blacksouls2_divine_interference_power_power",
+      "AssetName": "mods/blacksouls2/divine_interference_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DivineInterferencePower",
+      "Title": "Divine Interference",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DIVINE_INTERFERENCE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101037,
+      "Name": "blacksouls2_dominator_power_power",
+      "AssetName": "mods/blacksouls2/dominator_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DominatorPower",
+      "Title": "Dominator",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DOMINATOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101038,
+      "Name": "blacksouls2_duel_domain_immortal_power_power",
+      "AssetName": "mods/blacksouls2/duel_domain_immortal_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.DuelDomainImmortalPower",
+      "Title": "Duel Domain Immortal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-DUEL_DOMAIN_IMMORTAL_POWER.title",
+      "Tags": [
+        "Buff",
+        "Debuff"
+      ],
+      "TypeAliases": [
+        "St2bs.St2bsCode.Powers.DuelDomainLockdownPower",
+        "St2bs.St2bsCode.Powers.DuelDomainPower"
+      ]
+    },
+    {
+      "Id": 101041,
+      "Name": "blacksouls2_edema_power_power",
+      "AssetName": "mods/blacksouls2/edema_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.EdemaPower",
+      "Title": "Edema",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-EDEMA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101042,
+      "Name": "blacksouls2_equipment_slot_power_power",
+      "AssetName": "mods/blacksouls2/equipment_slot_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.EquipmentSlotPower",
+      "Title": "Equipment Slot",
+      "Aliases": [
+        "装備すろっと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-EQUIPMENT_SLOT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101043,
+      "Name": "blacksouls2_escape_curse_power_power",
+      "AssetName": "mods/blacksouls2/escape_curse_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.EscapeCursePower",
+      "Title": "Escape Curse",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ESCAPE_CURSE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101044,
+      "Name": "blacksouls2_evolution_armor_power_power",
+      "AssetName": "mods/blacksouls2/evolution_armor_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.EvolutionArmorPower",
+      "Title": "Evolution Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-EVOLUTION_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101045,
+      "Name": "blacksouls2_execution_power_power",
+      "AssetName": "mods/blacksouls2/execution_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ExecutionPower",
+      "Title": "Execution",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-EXECUTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101046,
+      "Name": "blacksouls2_fairy_tale_cried_wolf_power_power",
+      "AssetName": "mods/blacksouls2/fairy_tale_cried_wolf_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FairyTaleCriedWolfPower",
+      "Title": "The Boy Who Cried Wolf",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FAIRY_TALE_CRIED_WOLF_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101047,
+      "Name": "blacksouls2_fairy_tale_daddy_long_legs_power_power",
+      "AssetName": "mods/blacksouls2/fairy_tale_daddy_long_legs_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FairyTaleDaddyLongLegsPower",
+      "Title": "Daddy Long Legs",
+      "Aliases": [
+        "だでぃ・ろんぐれっぐす"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FAIRY_TALE_DADDY_LONG_LEGS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101048,
+      "Name": "blacksouls2_fairy_tale_ugly_duckling_power_power",
+      "AssetName": "mods/blacksouls2/fairy_tale_ugly_duckling_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FairyTaleUglyDucklingPower",
+      "Title": "The Ugly Duckling",
+      "Aliases": [
+        "醜いあひるの子"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FAIRY_TALE_UGLY_DUCKLING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101049,
+      "Name": "blacksouls2_filthy_power_power",
+      "AssetName": "mods/blacksouls2/filthy_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FilthyPower",
+      "Title": "Filthy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FILTHY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101050,
+      "Name": "blacksouls2_fire_suppression_power_power",
+      "AssetName": "mods/blacksouls2/fire_suppression_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FireSuppressionPower",
+      "Title": "Fire Suppression",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "ST2BS-FIRE_SUPPRESSION.title"
+    },
+    {
+      "Id": 101052,
+      "Name": "blacksouls2_flesh_cutting_power_power",
+      "AssetName": "mods/blacksouls2/flesh_cutting_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FleshCuttingPower",
+      "Title": "Flesh Cutting",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FLESH_CUTTING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101053,
+      "Name": "blacksouls2_flesh_wall_damage_redirect_power_power",
+      "AssetName": "mods/blacksouls2/flesh_wall_damage_redirect_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FleshWallDamageRedirectPower",
+      "Title": "Flesh Wall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FLESH_WALL_DAMAGE_REDIRECT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101054,
+      "Name": "blacksouls2_florence_gunblade_power_power",
+      "AssetName": "mods/blacksouls2/florence_gunblade_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FlorenceGunbladePower",
+      "Title": "Holy Gunblade",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FLORENCE_GUNBLADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "St2bs.St2bsCode.Powers.HolyGunbladePower"
+      ]
+    },
+    {
+      "Id": 101055,
+      "Name": "blacksouls2_flying_dragon_sword_power_power",
+      "AssetName": "mods/blacksouls2/flying_dragon_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FlyingDragonSwordPower",
+      "Title": "Flying Dragon Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FLYING_DRAGON_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101056,
+      "Name": "blacksouls2_flying_power_power",
+      "AssetName": "mods/blacksouls2/flying_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FlyingPower",
+      "Title": "Flying",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FLYING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101057,
+      "Name": "blacksouls2_fraud_power_power",
+      "AssetName": "mods/blacksouls2/fraud_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FraudPower",
+      "Title": "Fraud",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FRAUD_POWER.title"
+    },
+    {
+      "Id": 101058,
+      "Name": "blacksouls2_freeze_power_power",
+      "AssetName": "mods/blacksouls2/freeze_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.FreezePower",
+      "Title": "Freeze",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-FREEZE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101059,
+      "Name": "blacksouls2_gear_shift_power_power",
+      "AssetName": "mods/blacksouls2/gear_shift_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GearShiftPower",
+      "Title": "Gear Shift",
+      "Aliases": [
+        "ぎあしふと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GEAR_SHIFT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101060,
+      "Name": "blacksouls2_ghost_hunter_kanachi_power_power",
+      "AssetName": "mods/blacksouls2/ghost_hunter_kanachi_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GhostHunterKanachiPower",
+      "Title": "Ghost Hunter Kanachi",
+      "Aliases": [
+        "幽霊狩人かなち"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GHOST_HUNTER_KANACHI_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101061,
+      "Name": "blacksouls2_ghoul_curse_power_power",
+      "AssetName": "mods/blacksouls2/ghoul_curse_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GhoulCursePower",
+      "Title": "Ghoul Curse",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GHOUL_CURSE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101062,
+      "Name": "blacksouls2_giant_beast_power_power",
+      "AssetName": "mods/blacksouls2/giant_beast_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GiantBeastPower",
+      "Title": "Giant Beast",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GIANT_BEAST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101063,
+      "Name": "blacksouls2_gift_power_power",
+      "AssetName": "mods/blacksouls2/gift_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GiftPower",
+      "Title": "Gift",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GIFT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101064,
+      "Name": "blacksouls2_grachid_power_power",
+      "AssetName": "mods/blacksouls2/grachid_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GrachidPower",
+      "Title": "Grachid",
+      "Aliases": [
+        "ぐらきっど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GRACHID_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101065,
+      "Name": "blacksouls2_great_sword_power_power",
+      "AssetName": "mods/blacksouls2/great_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GreatSwordPower",
+      "Title": "Great Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GREAT_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101066,
+      "Name": "blacksouls2_greed_power_power",
+      "AssetName": "mods/blacksouls2/greed_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GreedPower",
+      "Title": "Greed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GREED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101067,
+      "Name": "blacksouls2_guarded_power_power",
+      "AssetName": "mods/blacksouls2/guarded_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GuardedPower",
+      "Title": "Guardian Blessing",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GUARDED_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "TypeAliases": [
+        "St2bs.St2bsCode.Powers.GuardianPower"
+      ]
+    },
+    {
+      "Id": 101068,
+      "Name": "blacksouls2_guardian_barrier_power_power",
+      "AssetName": "mods/blacksouls2/guardian_barrier_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.GuardianBarrierPower",
+      "Title": "Guardian Barrier",
+      "Aliases": [
+        "守護ばりけーど"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-GUARDIAN_BARRIER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101070,
+      "Name": "blacksouls2_heart_power_power",
+      "AssetName": "mods/blacksouls2/heart_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HeartPower",
+      "Title": "Heart",
+      "Aliases": [
+        "はーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HEART_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101071,
+      "Name": "blacksouls2_hero_power_power",
+      "AssetName": "mods/blacksouls2/hero_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HeroPower",
+      "Title": "Hero",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HERO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101072,
+      "Name": "blacksouls2_high_rank_magic_power_power",
+      "AssetName": "mods/blacksouls2/high_rank_magic_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HighRankMagicPower",
+      "Title": "High-rank Magic",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HIGH_RANK_MAGIC_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101073,
+      "Name": "blacksouls2_holy_angel_dual_blades_power_power",
+      "AssetName": "mods/blacksouls2/holy_angel_dual_blades_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HolyAngelDualBladesPower",
+      "Title": "Sword Qi",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HOLY_ANGEL_DUAL_BLADES_POWER.title"
+    },
+    {
+      "Id": 101075,
+      "Name": "blacksouls2_hundred_schools_power_power",
+      "AssetName": "mods/blacksouls2/hundred_schools_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HundredSchoolsPower",
+      "Title": "Hundred Schools of Thought",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HUNDRED_SCHOOLS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101076,
+      "Name": "blacksouls2_hyperactivity_power_power",
+      "AssetName": "mods/blacksouls2/hyperactivity_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HyperactivityPower",
+      "Title": "Hyperactivity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HYPERACTIVITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101077,
+      "Name": "blacksouls2_hyper_regeneration_power_power",
+      "AssetName": "mods/blacksouls2/hyper_regeneration_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.HyperRegenerationPower",
+      "Title": "Hyper Regeneration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-HYPER_REGENERATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101078,
+      "Name": "blacksouls2_immortal_power_power",
+      "AssetName": "mods/blacksouls2/immortal_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ImmortalPower",
+      "Title": "Immortal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-IMMORTAL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101079,
+      "Name": "blacksouls2_infection_power_power",
+      "AssetName": "mods/blacksouls2/infection_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.InfectionPower",
+      "Title": "Infection",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-INFECTION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101080,
+      "Name": "blacksouls2_iron_sword_power_power",
+      "AssetName": "mods/blacksouls2/iron_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.IronSwordPower",
+      "Title": "Iron Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-IRON_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101081,
+      "Name": "blacksouls2_kishin_sword_power_power",
+      "AssetName": "mods/blacksouls2/kishin_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.KishinSwordPower",
+      "Title": "Kishin Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-KISHIN_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101082,
+      "Name": "blacksouls2_knight_king_sword_power_power",
+      "AssetName": "mods/blacksouls2/knight_king_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.KnightKingSwordPower",
+      "Title": "Knight King Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-KNIGHT_KING_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101083,
+      "Name": "blacksouls2_lion_and_unicorn_power_power",
+      "AssetName": "mods/blacksouls2/lion_and_unicorn_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.LionAndUnicornPower",
+      "Title": "Vicious Theater: The Lion and the Unicorn",
+      "Aliases": [
+        "悪辣劇場「らいおんと一角獣」"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-LION_AND_UNICORN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101084,
+      "Name": "blacksouls2_lion_fury_power_power",
+      "AssetName": "mods/blacksouls2/lion_fury_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.LionFuryPower",
+      "Title": "Lion's Fury",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-LION_FURY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101085,
+      "Name": "blacksouls2_low_rank_magic_power_power",
+      "AssetName": "mods/blacksouls2/low_rank_magic_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.LowRankMagicPower",
+      "Title": "Low-Rank Magic",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-LOW_RANK_MAGIC_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101086,
+      "Name": "blacksouls2_magic_trick_power_power",
+      "AssetName": "mods/blacksouls2/magic_trick_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.MagicTrickPower",
+      "Title": "Magic Trick",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MAGIC_TRICK_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101087,
+      "Name": "blacksouls2_mana_stone_power_power",
+      "AssetName": "mods/blacksouls2/mana_stone_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ManaStonePower",
+      "Title": "Mana Stone",
+      "Aliases": [
+        "まなすとーん"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MANA_STONE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101088,
+      "Name": "blacksouls2_mental_imprisonment_power_power",
+      "AssetName": "mods/blacksouls2/mental_imprisonment_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.MentalImprisonmentPower",
+      "Title": "Mental Imprisonment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MENTAL_IMPRISONMENT_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101089,
+      "Name": "blacksouls2_miranda_power_power",
+      "AssetName": "mods/blacksouls2/miranda_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.MirandaPower",
+      "Title": "Miranda",
+      "Aliases": [
+        "みらんだ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MIRANDA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101090,
+      "Name": "blacksouls2_molten_core_power_power",
+      "AssetName": "mods/blacksouls2/molten_core_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.MoltenCorePower",
+      "Title": "Molten Core",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MOLTEN_CORE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101091,
+      "Name": "blacksouls2_moonlight_great_sword_power_power",
+      "AssetName": "mods/blacksouls2/moonlight_great_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.MoonlightGreatSwordPower",
+      "Title": "Moonlight Great Sword",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MOONLIGHT_GREAT_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101092,
+      "Name": "blacksouls2_multi_head_power_power",
+      "AssetName": "mods/blacksouls2/multi_head_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.MultiHeadPower",
+      "Title": "Multi-Head",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-MULTI_HEAD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101093,
+      "Name": "blacksouls2_nightmare_invasion_watcher_power_power",
+      "AssetName": "mods/blacksouls2/nightmare_invasion_watcher_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.NightmareInvasionWatcherPower",
+      "Title": "Nightmare Watch",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-NIGHTMARE_INVASION_WATCHER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101094,
+      "Name": "blacksouls2_no_more_power_power",
+      "AssetName": "mods/blacksouls2/no_more_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.NoMorePower",
+      "Title": "No More",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-NO_MORE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101095,
+      "Name": "blacksouls2_nurse_call_power_power",
+      "AssetName": "mods/blacksouls2/nurse_call_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.NurseCallPower",
+      "Title": "Sacred Domain: Plague Pandemonium",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-NURSE_CALL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101096,
+      "Name": "blacksouls2_paralysis_power_power",
+      "AssetName": "mods/blacksouls2/paralysis_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ParalysisPower",
+      "Title": "Paralysis",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PARALYSIS_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101097,
+      "Name": "blacksouls2_peck_kill_power_power",
+      "AssetName": "mods/blacksouls2/peck_kill_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PeckKillPower",
+      "Title": "Peck Kill",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PECK_KILL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101098,
+      "Name": "blacksouls2_poison_fang_power_power",
+      "AssetName": "mods/blacksouls2/poison_fang_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PoisonFangPower",
+      "Title": "Poison Fang",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-POISON_FANG_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101100,
+      "Name": "blacksouls2_poro_power_power",
+      "AssetName": "mods/blacksouls2/poro_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PoroPower",
+      "Title": "Poro",
+      "Aliases": [
+        "ぽろ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PORO_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101101,
+      "Name": "blacksouls2_precision_power_power",
+      "AssetName": "mods/blacksouls2/precision_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PrecisionPower",
+      "Title": "Precision",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PRECISION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101102,
+      "Name": "blacksouls2_predicate_power_power",
+      "AssetName": "mods/blacksouls2/predicate_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PredicatePower",
+      "Title": "Plikate",
+      "Aliases": [
+        "ぷりけーと"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PREDICATE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101103,
+      "Name": "blacksouls2_preparation_complete_power_power",
+      "AssetName": "mods/blacksouls2/preparation_complete_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PreparationCompletePower",
+      "Title": "Preparation Complete",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PREPARATION_COMPLETE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101104,
+      "Name": "blacksouls2_pumpkin_knight_power_power",
+      "AssetName": "mods/blacksouls2/pumpkin_knight_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.PumpkinKnightPower",
+      "Title": "Pumpkin Knight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-PUMPKIN_KNIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101105,
+      "Name": "blacksouls2_red_beast_power_power",
+      "AssetName": "mods/blacksouls2/red_beast_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.RedBeastPower",
+      "Title": "Red Beast",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-RED_BEAST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101106,
+      "Name": "blacksouls2_red_death_power_power",
+      "AssetName": "mods/blacksouls2/red_death_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.RedDeathPower",
+      "Title": "Red Death",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-RED_DEATH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101107,
+      "Name": "blacksouls2_rock_body_power_power",
+      "AssetName": "mods/blacksouls2/rock_body_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.RockBodyPower",
+      "Title": "Rock Body",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ROCK_BODY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101108,
+      "Name": "blacksouls2_rogues_dagger_power_power",
+      "AssetName": "mods/blacksouls2/rogues_dagger_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.RoguesDaggerPower",
+      "Title": "Rogue's Dagger",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ROGUES_DAGGER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101109,
+      "Name": "blacksouls2_royal_blend_dexterity_power_power",
+      "AssetName": "mods/blacksouls2/royal_blend_dexterity_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.RoyalBlendDexterityPower",
+      "Title": "Royal Blend Dexterity",
+      "Aliases": [
+        "ろいやるぶれんどの敏捷"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-ROYAL_BLEND_DEXTERITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101110,
+      "Name": "blacksouls2_shadow_power_power",
+      "AssetName": "mods/blacksouls2/shadow_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ShadowPower",
+      "Title": "Shadow",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SHADOW_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101111,
+      "Name": "blacksouls2_shark_coming_power_power",
+      "AssetName": "mods/blacksouls2/shark_coming_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SharkComingPower",
+      "Title": "Shark!",
+      "Aliases": [
+        "さめが来る!"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SHARK_COMING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101112,
+      "Name": "blacksouls2_sin_judging_demon_wolf_power_power",
+      "AssetName": "mods/blacksouls2/sin_judging_demon_wolf_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SinJudgingDemonWolfPower",
+      "Title": "Sin-Judging Demon Wolf",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SIN_JUDGING_DEMON_WOLF_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101113,
+      "Name": "blacksouls2_skill_mastery_power_power",
+      "AssetName": "mods/blacksouls2/skill_mastery_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SkillMasteryPower",
+      "Title": "Skill Mastery",
+      "Aliases": [
+        "すきるの極み"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SKILL_MASTERY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101114,
+      "Name": "blacksouls2_smoke_frenzy_power_power",
+      "AssetName": "mods/blacksouls2/smoke_frenzy_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SmokeFrenzyPower",
+      "Title": "Smoke Frenzy",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SMOKE_FRENZY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101115,
+      "Name": "blacksouls2_snow_maiden_gerda_power_power",
+      "AssetName": "mods/blacksouls2/snow_maiden_gerda_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SnowMaidenGerdaPower",
+      "Title": "Snow Maiden Gerda",
+      "Aliases": [
+        "雪の乙女げるだ"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SNOW_MAIDEN_GERDA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101116,
+      "Name": "blacksouls2_snowman_power_power",
+      "AssetName": "mods/blacksouls2/snowman_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SnowmanPower",
+      "Title": "Snowman",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SNOWMAN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101117,
+      "Name": "blacksouls2_softness_power_power",
+      "AssetName": "mods/blacksouls2/softness_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SoftnessPower",
+      "Title": "Softness",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SOFTNESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101118,
+      "Name": "blacksouls2_soul_form_power_power",
+      "AssetName": "mods/blacksouls2/soul_form_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SoulFormPower",
+      "Title": "Soul Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SOUL_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101119,
+      "Name": "blacksouls2_soul_resonance_power_power",
+      "AssetName": "mods/blacksouls2/soul_resonance_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SoulResonancePower",
+      "Title": "Soul Resonance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SOUL_RESONANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101120,
+      "Name": "blacksouls2_soul_shield_power_power",
+      "AssetName": "mods/blacksouls2/soul_shield_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SoulShieldPower",
+      "Title": "Soul Shield",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SOUL_SHIELD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101121,
+      "Name": "blacksouls2_stagger_power_power",
+      "AssetName": "mods/blacksouls2/stagger_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.StaggerPower",
+      "Title": "Stagger",
+      "Aliases": [
+        "すたっがー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-STAGGER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101122,
+      "Name": "blacksouls2_stone_power_power",
+      "AssetName": "mods/blacksouls2/stone_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.StonePower",
+      "Title": "Stone",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-STONE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101123,
+      "Name": "blacksouls2_storm_law_power_power",
+      "AssetName": "mods/blacksouls2/storm_law_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.StormLawPower",
+      "Title": "Storm Law",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-STORM_LAW_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101124,
+      "Name": "blacksouls2_strange_sound_power_power",
+      "AssetName": "mods/blacksouls2/strange_sound_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.StrangeSoundPower",
+      "Title": "Strange Sound",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-STRANGE_SOUND_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101125,
+      "Name": "blacksouls2_swelling_power_power",
+      "AssetName": "mods/blacksouls2/swelling_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.SwellingPower",
+      "Title": "Swelling",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-SWELLING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101126,
+      "Name": "blacksouls2_thousand_faces_power_power",
+      "AssetName": "mods/blacksouls2/thousand_faces_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ThousandFacesPower",
+      "Title": "Thousand Faces",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-THOUSAND_FACES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101127,
+      "Name": "blacksouls2_threat_tracker_power_power",
+      "AssetName": "mods/blacksouls2/threat_tracker_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.ThreatTrackerPower",
+      "Title": "Threat Marker",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-THREAT_TRACKER_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101128,
+      "Name": "blacksouls2_torch_power_power",
+      "AssetName": "mods/blacksouls2/torch_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.TorchPower",
+      "Title": "Torch",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-TORCH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101129,
+      "Name": "blacksouls2_vigilance_power_power",
+      "AssetName": "mods/blacksouls2/vigilance_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.VigilancePower",
+      "Title": "Vigilance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-VIGILANCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101130,
+      "Name": "blacksouls2_wax_doll_curse_power_power",
+      "AssetName": "mods/blacksouls2/wax_doll_curse_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.WaxDollCursePower",
+      "Title": "Wax Doll Curse",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-WAX_DOLL_CURSE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101131,
+      "Name": "blacksouls2_windless_domain_power_power",
+      "AssetName": "mods/blacksouls2/windless_domain_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.WindlessDomainPower",
+      "Title": "Windless Domain",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-WINDLESS_DOMAIN_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 101132,
+      "Name": "blacksouls2_wings_power_power",
+      "AssetName": "mods/blacksouls2/wings_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.WingsPower",
+      "Title": "Wings",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-WINGS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 101133,
+      "Name": "blacksouls2_worburs_sword_power_power",
+      "AssetName": "mods/blacksouls2/worburs_sword_power",
+      "Category": "Power",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Powers.WorbursSwordPower",
+      "Title": "Brave Sword Worbur",
+      "Aliases": [
+        "勇剣うぉーばー"
+      ],
+      "LocTable": "powers",
+      "LocKey": "ST2BS-WORBURS_SWORD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 104000,
+      "Name": "blacksouls2_chest_potion_potion",
+      "AssetName": "mods/blacksouls2/chest_potion",
+      "Category": "Potion",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Potions.ChestPotion",
+      "Title": "Chest",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "ST2BS-CHEST_POTION.title"
+    },
+    {
+      "Id": 104001,
+      "Name": "blacksouls2_dung_block_potion_potion",
+      "AssetName": "mods/blacksouls2/dung_block_potion",
+      "Category": "Potion",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Potions.DungBlockPotion",
+      "Title": "Dung Block",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "ST2BS-DUNG_BLOCK_POTION.title"
+    },
+    {
+      "Id": 104002,
+      "Name": "blacksouls2_fish_potion_potion",
+      "AssetName": "mods/blacksouls2/fish_potion",
+      "Category": "Potion",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Potions.FishPotion",
+      "Title": "Fish",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "ST2BS-FISH_POTION.title"
+    },
+    {
+      "Id": 104003,
+      "Name": "blacksouls2_gold_trimmed_chest_potion_potion",
+      "AssetName": "mods/blacksouls2/gold_trimmed_chest_potion",
+      "Category": "Potion",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Potions.GoldTrimmedChestPotion",
+      "Title": "Gold-Trimmed Chest",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "ST2BS-GOLD_TRIMMED_CHEST_POTION.title"
+    },
+    {
+      "Id": 104004,
+      "Name": "blacksouls2_herb_bottle_potion_potion",
+      "AssetName": "mods/blacksouls2/herb_bottle_potion",
+      "Category": "Potion",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Potions.HerbBottlePotion",
+      "Title": "Herb Bottle",
+      "Aliases": [
+        "薬草ぽーしょんG"
+      ],
+      "LocTable": "potions",
+      "LocKey": "ST2BS-HERB_BOTTLE_POTION.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Potions.HerbPotionG"
+      ],
+      "Tags": []
+    },
+    {
+      "Id": 104005,
+      "Name": "blacksouls2_turtle_soup_potion",
+      "AssetName": "mods/blacksouls2/turtle_soup",
+      "Category": "Potion",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Potions.TurtleSoup",
+      "Title": "Turtle Soup",
+      "Aliases": [
+        "海亀のすーぷ"
+      ],
+      "LocTable": "potions",
+      "LocKey": "ST2BS-TURTLE_SOUP.title"
+    },
+    {
+      "Id": 107000,
+      "Name": "blacksouls2_cheshire_cat_ancient_ancient",
+      "AssetName": "mods/blacksouls2/cheshire_cat_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.CheshireCatAncient",
+      "Title": "The Cheshire Cat",
+      "Aliases": [
+        "ちぇしゃ猫"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-CHESHIRE_CAT_ANCIENT.title"
+    },
+    {
+      "Id": 107001,
+      "Name": "blacksouls2_dam_and_ti_ancient_ancient",
+      "AssetName": "mods/blacksouls2/dam_and_ti_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.DamAndTiAncient",
+      "Title": "Dam and Ti",
+      "Aliases": [
+        "だむとてぃ"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-DAM_AND_TI_ANCIENT.title"
+    },
+    {
+      "Id": 107002,
+      "Name": "blacksouls2_griffin_ancient_ancient",
+      "AssetName": "mods/blacksouls2/griffin_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.GriffinAncient",
+      "Title": "Griffin",
+      "Aliases": [
+        "ぐりふぃん"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-GRIFFIN_ANCIENT.title"
+    },
+    {
+      "Id": 107003,
+      "Name": "blacksouls2_jabberwock_ancient_ancient",
+      "AssetName": "mods/blacksouls2/jabberwock_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.JabberwockAncient",
+      "Title": "Jabberwock",
+      "Aliases": [
+        "じゃばうぉっく"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-JABBERWOCK_ANCIENT.title"
+    },
+    {
+      "Id": 107004,
+      "Name": "blacksouls2_kajia_lanna_ancient_ancient",
+      "AssetName": "mods/blacksouls2/kajia_lanna_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.KajiaLannaAncient",
+      "Title": "LanJieLiNa",
+      "Aliases": [
+        "らんじぇりな"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-KAJIA_LANNA_ANCIENT.title"
+    },
+    {
+      "Id": 107005,
+      "Name": "blacksouls2_ke_ti_ancient_ancient",
+      "AssetName": "mods/blacksouls2/ke_ti_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.KeTiAncient",
+      "Title": "Keti, the Deep Sea Princess",
+      "Aliases": [
+        "深海の王女けてぃ"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-KE_TI_ANCIENT.title"
+    },
+    {
+      "Id": 107006,
+      "Name": "blacksouls2_mabel_ancient_ancient",
+      "AssetName": "mods/blacksouls2/mabel_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.MabelAncient",
+      "Title": "Mabel, the Void Maiden",
+      "Aliases": [
+        "虚無の少女めいべる"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-MABEL_ANCIENT.title"
+    },
+    {
+      "Id": 107007,
+      "Name": "blacksouls2_margareta_ancient_ancient",
+      "AssetName": "mods/blacksouls2/margareta_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.MargaretaAncient",
+      "Title": "Margareta von Tirol",
+      "Aliases": [
+        "まるがれーた・ふぉん・てぃろる"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-MARGARETA_ANCIENT.title"
+    },
+    {
+      "Id": 107008,
+      "Name": "blacksouls2_neverending_tea_party_ancient_ancient",
+      "AssetName": "mods/blacksouls2/neverending_tea_party_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.NeverendingTeaPartyAncient",
+      "Title": "Neverending Tea Party",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-NEVERENDING_TEA_PARTY_ANCIENT.title"
+    },
+    {
+      "Id": 107009,
+      "Name": "blacksouls2_norden_ancient_ancient",
+      "AssetName": "mods/blacksouls2/norden_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.NordenAncient",
+      "Title": "White Rabbit Norden",
+      "Aliases": [
+        "白うさぎのるでん"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-NORDEN_ANCIENT.title",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Ancients.WhiteBearAncient"
+      ]
+    },
+    {
+      "Id": 107010,
+      "Name": "blacksouls2_red_idol_plikate_ancient_ancient",
+      "AssetName": "mods/blacksouls2/red_idol_plikate_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.RedIdolPlikateAncient",
+      "Title": "Red Idol Plikate",
+      "Aliases": [
+        "赤い偶像ぷりけいと"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-RED_IDOL_PLIKATE_ANCIENT.title"
+    },
+    {
+      "Id": 107011,
+      "Name": "blacksouls2_rorina_ancient_ancient",
+      "AssetName": "mods/blacksouls2/rorina_ancient",
+      "Category": "Ancient",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Ancients.RorinaAncient",
+      "Title": "Rorina",
+      "Aliases": [
+        "ろりーな"
+      ],
+      "LocTable": "ancients",
+      "LocKey": "ST2BS-RORINA_ANCIENT.title"
+    },
+    {
+      "Id": 106000,
+      "Name": "blacksouls2_bandasnaichi_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/bandasnaichi_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.BandasnaichiEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.BandasnaichiPhase1Monster"
+      ],
+      "Title": "Bandasnaichi",
+      "Aliases": [
+        "ばんだすないち"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-BANDASNAICHI_ENCOUNTER.title"
+    },
+    {
+      "Id": 106001,
+      "Name": "blacksouls2_carroll_river_boss_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/carroll_river_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.CarrollRiverBossEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Encounters.MaryAnnEncounter",
+        "St2bs.St2bsCode.Monsters.MaryAnn"
+      ],
+      "Title": "Mary Ann",
+      "Aliases": [
+        "めりー・あん"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-CARROLL_RIVER_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106002,
+      "Name": "blacksouls2_clock_tower_boss_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/clock_tower_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.ClockTowerBossEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.MadBirdJabgabMonster",
+        "St2bs.St2bsCode.Monsters.MadBirdJabgabPhase2Monster"
+      ],
+      "Title": "Mad Bird Jabgab",
+      "Aliases": [
+        "狂鳥じゃぶがぶ"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-CLOCK_TOWER_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106003,
+      "Name": "blacksouls2_deep_sea_knight_master_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/deep_sea_knight_master_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.DeepSeaKnightMasterEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.DeepSeaKnightMaster",
+        "St2bs.St2bsCode.Monsters.DeepSeaKnightMasterPhase2"
+      ],
+      "Title": "Deepsea Knight Master",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-DEEP_SEA_KNIGHT_MASTER_ENCOUNTER.title"
+    },
+    {
+      "Id": 106004,
+      "Name": "blacksouls2_edith_the_great_eagle_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/edith_the_great_eagle_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.EdithTheGreatEagleEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Encounters.PsychiatricWardBossEncounter",
+        "St2bs.St2bsCode.Monsters.EdithTheGreatEagle"
+      ],
+      "Title": "Edith the Dull-colored Great Eagle",
+      "Aliases": [
+        "鈍色の大鷲えでぃす"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-EDITH_THE_GREAT_EAGLE_ENCOUNTER.title"
+    },
+    {
+      "Id": 106005,
+      "Name": "blacksouls2_florence_boss_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/florence_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.FlorenceBossEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.Florence",
+        "St2bs.St2bsCode.Monsters.FlorencePhase2"
+      ],
+      "Title": "Founding Director Florence",
+      "Aliases": [
+        "初代院長ふろーれんす"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-FLORENCE_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106006,
+      "Name": "blacksouls2_girls_nightmare_alice_boss_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/girls_nightmare_alice_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.GirlsNightmareAliceBossEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.GirlsNightmareAlicePhase1Monster",
+        "St2bs.St2bsCode.Monsters.GirlsNightmareAlicePhase2Monster",
+        "St2bs.St2bsCode.Monsters.GirlsNightmareAlicePhase3Monster"
+      ],
+      "Title": "??? ALICE ???",
+      "Aliases": [
+        "？？？ありす？？？"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-GIRLS_NIGHTMARE_ALICE_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106007,
+      "Name": "blacksouls2_god_strange_fish_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/god_strange_fish_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.GodStrangeFishEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.GodStrangeFish"
+      ],
+      "Title": "God's Strange Fish",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-GOD_STRANGE_FISH_ENCOUNTER.title"
+    },
+    {
+      "Id": 106008,
+      "Name": "blacksouls2_guran_ginnel_phase1_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/guran_ginnel_phase1_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.GuranGinnelPhase1Encounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Encounters.GuranGinnelPhase2Encounter",
+        "St2bs.St2bsCode.Monsters.AliceLookingGlass",
+        "St2bs.St2bsCode.Monsters.AliceUnderground",
+        "St2bs.St2bsCode.Monsters.AliceWonderland",
+        "St2bs.Sts2Code.Monsters.WaxDoll"
+      ],
+      "Title": "GuranGinnel",
+      "Aliases": [
+        "ぐらん・ぎねる"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-GURAN_GINNEL_PHASE1_ENCOUNTER.title"
+    },
+    {
+      "Id": 106009,
+      "Name": "blacksouls2_hiel_kaiser_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/hiel_kaiser_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.HielKaiserEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.HielKaiserPhase2",
+        "St2bs.St2bsCode.Monsters.HielKaiserPhase3",
+        "St2bs.St2bsCode.Monsters.HielKaiserPhase4"
+      ],
+      "Title": "Hiel Kaiser",
+      "Aliases": [
+        "ひーるかいざー",
+        "れぷりか・ひーるかいざー"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-HIEL_KAISER_ENCOUNTER.title"
+    },
+    {
+      "Id": 106010,
+      "Name": "blacksouls2_jabberwock_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/jabberwock_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.JabberwockEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Encounters.SpecialJabberwockEncounter",
+        "St2bs.St2bsCode.Monsters.SpecialJabberwock"
+      ],
+      "Title": "Jabberwock the Corpse Dragon",
+      "Aliases": [
+        "屍竜じゃばうぉっく",
+        "屍竜じゃばうぉっく（顕現）"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-JABBERWOCK_ENCOUNTER.title"
+    },
+    {
+      "Id": 106011,
+      "Name": "blacksouls2_jack_the_ripper_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/jack_the_ripper_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.JackTheRipperEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.JackTheRipper"
+      ],
+      "Title": "Jack the Ripper of Mist",
+      "Aliases": [
+        "霧の開膛手じゃっく"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-JACK_THE_RIPPER_ENCOUNTER.title"
+    },
+    {
+      "Id": 106012,
+      "Name": "blacksouls2_oxford_boss_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/oxford_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.OxfordBossEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.DormPrefectMonster"
+      ],
+      "Title": "Dorm Prefect",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-OXFORD_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106013,
+      "Name": "blacksouls2_red_city_boss_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/red_city_boss_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.RedCityBossEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.ClubKnightMonster",
+        "St2bs.St2bsCode.Monsters.HeartKnightMonster",
+        "St2bs.St2bsCode.Monsters.SpadeKnightMonster"
+      ],
+      "Title": "Red City Boss - Heart Knights",
+      "Aliases": [
+        "赤き街のぼす・はーとの騎士団"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-RED_CITY_BOSS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106014,
+      "Name": "blacksouls2_shiya_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/shiya_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.ShiyaEncounter",
+      "TypeAliases": [],
+      "Title": "Caterpillar Shiya",
+      "Aliases": [
+        "芋虫しーや",
+        "溶解王しーや",
+        "れぷりか・溶解王しーや"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-CATERPILLAR_SHIYA_ENCOUNTER.title"
+    },
+    {
+      "Id": 106015,
+      "Name": "blacksouls2_skull_hunting_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/skull_hunting_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.SkullHuntingEncounter",
+      "TypeAliases": [
+        "St2bs.St2bsCode.Monsters.BeastOfSkullHunting",
+        "St2bs.St2bsCode.Monsters.BossRabbit",
+        "St2bs.St2bsCode.Monsters.WorburTheDragonHunter"
+      ],
+      "Title": "Skull Hunting",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-SKULL_HUNTING_ENCOUNTER.title"
+    },
+    {
+      "Id": 106016,
+      "Name": "blacksouls2_thorn_princess_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/thorn_princess_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.ThornPrincessEncounter",
+      "TypeAliases": [],
+      "Title": "Thorn Princess",
+      "Aliases": [
+        "れぷりか・棘の魔姫"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-THORN_PRINCESS_ENCOUNTER.title"
+    },
+    {
+      "Id": 106017,
+      "Name": "blacksouls2_white_lion_leyten_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/white_lion_leyten_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.WhiteLionLeytenEncounter",
+      "TypeAliases": [],
+      "Title": "White Lion Leyten",
+      "Aliases": [
+        "白獅子れいてん",
+        "れぷりか・白獅子れいてん"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-WHITE_LION_LEYTEN_ENCOUNTER.title"
+    },
+    {
+      "Id": 106018,
+      "Name": "blacksouls2_white_unicorn_eunice_encounter_creature",
+      "AssetName": "mods/blacksouls2/bosses/white_unicorn_eunice_encounter",
+      "Category": "Creature",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Encounters.WhiteUnicornEuniceEncounter",
+      "TypeAliases": [],
+      "Title": "White Unicorn Eunice",
+      "Aliases": [
+        "白いゆにこーん・ゆーにす",
+        "れぷりか・白いゆにこーん・ゆーにす"
+      ],
+      "LocTable": "encounters",
+      "LocKey": "ST2BS-WHITE_UNICORN_EUNICE_ENCOUNTER.title"
+    },
+    {
+      "Id": 105000,
+      "Name": "blacksouls2_leike_character",
+      "AssetName": "mods/blacksouls2/leike",
+      "Category": "Character",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Character.Leike",
+      "Title": "Leike",
+      "Aliases": [
+        "らいけ"
+      ],
+      "LocTable": "characters",
+      "LocKey": "ST2BS-LEIKE.title",
+      "CookieEmoteId": 2319
+    },
+    {
+      "Id": 105001,
+      "Name": "blacksouls2_st2bs_character",
+      "AssetName": "mods/blacksouls2/st2bs",
+      "Category": "Character",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Character.St2bs",
+      "Title": "Grimm",
+      "Aliases": [
+        "ぐりむ"
+      ],
+      "LocTable": "characters",
+      "LocKey": "ST2BS-ST2BS.title",
+      "CookieEmoteId": 2319
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "TargetId": 2011,
+      "Category": "Relic",
+      "Assembly": "St2bs",
+      "TypeName": "St2bs.St2bsCode.Relics.BeatingRemnantRelic"
+    }
+  ]
+}

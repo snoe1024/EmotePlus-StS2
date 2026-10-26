@@ -1,0 +1,880 @@
+{
+  "Key": "the_sorceress",
+  "ModIds": [
+    "TheSorceressMod"
+  ],
+  "Name": "The Sorceress",
+  "WorkshopId": "3747506732",
+  "Aliases": [
+    "TheSorceressMod"
+  ],
+  "Entries": [
+    {
+      "Id": 212000,
+      "Name": "the_sorceress_cunning_spark_relic",
+      "AssetName": "mods/the_sorceress/cunning_spark",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.CunningSpark",
+      "Title": "Cunning Spark",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-CUNNING_SPARK.title"
+    },
+    {
+      "Id": 212001,
+      "Name": "the_sorceress_dancing_sash_relic",
+      "AssetName": "mods/the_sorceress/dancing_sash",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.DancingSash",
+      "Title": "Dancing Sash",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-DANCING_SASH.title"
+    },
+    {
+      "Id": 212002,
+      "Name": "the_sorceress_dueling_sword_relic",
+      "AssetName": "mods/the_sorceress/dueling_sword",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.DuelingSword",
+      "Title": "Dueling Sword",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-DUELING_SWORD.title"
+    },
+    {
+      "Id": 212003,
+      "Name": "the_sorceress_fetching_hat_relic",
+      "AssetName": "mods/the_sorceress/fetching_hat",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.FetchingHat",
+      "Title": "Fetching Hat",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-FETCHING_HAT.title"
+    },
+    {
+      "Id": 212004,
+      "Name": "the_sorceress_primal_flame_relic",
+      "AssetName": "mods/the_sorceress/primal_flame",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.PrimalFlame",
+      "Title": "Primal Flame",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-PRIMAL_FLAME.title"
+    },
+    {
+      "Id": 212005,
+      "Name": "the_sorceress_silvery_swordbreaker_relic",
+      "AssetName": "mods/the_sorceress/silvery_swordbreaker",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.SilverySwordbreaker",
+      "Title": "Silvery Swordbreaker",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-SILVERY_SWORDBREAKER.title"
+    },
+    {
+      "Id": 212006,
+      "Name": "the_sorceress_sorcerous_spark_relic",
+      "AssetName": "mods/the_sorceress/sorcerous_spark",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.SorcerousSpark",
+      "Title": "Sorcerous Spark",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-SORCEROUS_SPARK.title"
+    },
+    {
+      "Id": 212007,
+      "Name": "the_sorceress_throwing_knives_relic",
+      "AssetName": "mods/the_sorceress/throwing_knives",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.ThrowingKnives",
+      "Title": "Throwing Knives",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-THROWING_KNIVES.title"
+    },
+    {
+      "Id": 212008,
+      "Name": "the_sorceress_wicked_dagger_relic",
+      "AssetName": "mods/the_sorceress/wicked_dagger",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Relics.WickedDagger",
+      "Title": "Wicked Dagger",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-WICKED_DAGGER.title"
+    },
+    {
+      "Id": 211000,
+      "Name": "the_sorceress_backstabber_power_power",
+      "AssetName": "mods/the_sorceress/backstabber_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.BackstabberPower",
+      "Title": "Backstabber",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-BACKSTABBER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211001,
+      "Name": "the_sorceress_bon_mot_power_power",
+      "AssetName": "mods/the_sorceress/bon_mot_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.BonMotPower",
+      "Title": "Bon Mot",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THESORCERESSMOD-BON_MOT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211002,
+      "Name": "the_sorceress_burn_out_power_power",
+      "AssetName": "mods/the_sorceress/burn_out_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.BurnOutPower",
+      "Title": "Burn Out",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-BURN_OUT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211003,
+      "Name": "the_sorceress_chaos_sanctuary_power_power",
+      "AssetName": "mods/the_sorceress/chaos_sanctuary_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.ChaosSanctuaryPower",
+      "Title": "Chaos Sanctuary",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-CHAOS_SANCTUARY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211004,
+      "Name": "the_sorceress_charisma_power_power",
+      "AssetName": "mods/the_sorceress/charisma_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.CharismaPower",
+      "Title": "Charisma",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-CHARISMA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211005,
+      "Name": "the_sorceress_combat_advantage_power_power",
+      "AssetName": "mods/the_sorceress/combat_advantage_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.CombatAdvantagePower",
+      "Title": "Combat Advantage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-COMBAT_ADVANTAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211006,
+      "Name": "the_sorceress_counter_step_power_power",
+      "AssetName": "mods/the_sorceress/counter_step_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.CounterStepPower",
+      "Title": "Counter-Step",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-COUNTER_STEP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211007,
+      "Name": "the_sorceress_cunning_momentum_power_power",
+      "AssetName": "mods/the_sorceress/cunning_momentum_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.CunningMomentumPower",
+      "Title": "Cunning Momentum",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-CUNNING_MOMENTUM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211008,
+      "Name": "the_sorceress_dancing_sash_power_power",
+      "AssetName": "mods/the_sorceress/dancing_sash_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DancingSashPower",
+      "Title": "Dancing Sash",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "THESORCERESSMOD-DANCING_SASH.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211009,
+      "Name": "the_sorceress_defensive_advantage_debuff_power",
+      "AssetName": "mods/the_sorceress/defensive_advantage_debuff",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DefensiveAdvantageDebuff",
+      "Title": "Skillful Feint",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THESORCERESSMOD-SKILLFUL_FEINT.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211010,
+      "Name": "the_sorceress_defensive_advantage_power_power",
+      "AssetName": "mods/the_sorceress/defensive_advantage_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DefensiveAdvantagePower",
+      "Title": "Defensive Advantage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DEFENSIVE_ADVANTAGE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211011,
+      "Name": "the_sorceress_defensive_advantage_upgrade_power_power",
+      "AssetName": "mods/the_sorceress/defensive_advantage_upgrade_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DefensiveAdvantageUpgradePower",
+      "Title": "Defensive Advantage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DEFENSIVE_ADVANTAGE_UPGRADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211012,
+      "Name": "the_sorceress_defensive_roll_power_power",
+      "AssetName": "mods/the_sorceress/defensive_roll_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DefensiveRollPower",
+      "Title": "Daring Roll",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DEFENSIVE_ROLL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211013,
+      "Name": "the_sorceress_dervish_bleed_power_power",
+      "AssetName": "mods/the_sorceress/dervish_bleed_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DervishBleedPower",
+      "Title": "Shadowmark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DERVISH_BLEED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211014,
+      "Name": "the_sorceress_detonator_power_power",
+      "AssetName": "mods/the_sorceress/detonator_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DetonatorPower",
+      "Title": "Prime and Detonate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DETONATOR_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211015,
+      "Name": "the_sorceress_dexterity_advantage_power_power",
+      "AssetName": "mods/the_sorceress/dexterity_advantage_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DexterityAdvantagePower",
+      "Title": "Defensive Advantage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DEFENSIVE_ADVANTAGE_POWER.title"
+    },
+    {
+      "Id": 211016,
+      "Name": "the_sorceress_duelists_prowess_power_power",
+      "AssetName": "mods/the_sorceress/duelists_prowess_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.DuelistsProwessPower",
+      "Title": "Duelist's Prowess",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-DUELISTS_PROWESS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211017,
+      "Name": "the_sorceress_explosive_pyre_power_power",
+      "AssetName": "mods/the_sorceress/explosive_pyre_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.ExplosivePyrePower",
+      "Title": "Explosive Pyre",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-EXPLOSIVE_PYRE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211018,
+      "Name": "the_sorceress_firestarter_power_power",
+      "AssetName": "mods/the_sorceress/firestarter_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.FirestarterPower",
+      "Title": "Firestarter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-FIRESTARTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211019,
+      "Name": "the_sorceress_fireswarm_power_power",
+      "AssetName": "mods/the_sorceress/fireswarm_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.FireswarmPower",
+      "Title": "Fireswarm",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-FIRESWARM_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211020,
+      "Name": "the_sorceress_flaming_rune_power_power",
+      "AssetName": "mods/the_sorceress/flaming_rune_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.FlamingRunePower",
+      "Title": "Flaming Rune",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-FLAMING_RUNE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211021,
+      "Name": "the_sorceress_flock_tactics_power_power",
+      "AssetName": "mods/the_sorceress/flock_tactics_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.FlockTacticsPower",
+      "Title": "Flock Tactics",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-FLOCK_TACTICS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211022,
+      "Name": "the_sorceress_free_sorcery_power_power",
+      "AssetName": "mods/the_sorceress/free_sorcery_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.FreeSorceryPower",
+      "Title": "Free Sorcery",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-FREE_SORCERY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211023,
+      "Name": "the_sorceress_gloaming_cut_power_power",
+      "AssetName": "mods/the_sorceress/gloaming_cut_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.GloamingCutPower",
+      "Title": "Nimble Roll",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THESORCERESSMOD-NIMBLE_ROLL.title"
+    },
+    {
+      "Id": 211024,
+      "Name": "the_sorceress_invented_vulnerability_debuff_power",
+      "AssetName": "mods/the_sorceress/invented_vulnerability_debuff",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.InventedVulnerabilityDebuff",
+      "Title": "Invented Vulnerability",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THESORCERESSMOD-INVENTED_VULNERABILITY.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211025,
+      "Name": "the_sorceress_legendary_sneak_power_power",
+      "AssetName": "mods/the_sorceress/legendary_sneak_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.LegendarySneakPower",
+      "Title": "Legendary Sneak",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-LEGENDARY_SNEAK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211026,
+      "Name": "the_sorceress_lingering_shadows_power_power",
+      "AssetName": "mods/the_sorceress/lingering_shadows_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.LingeringShadowsPower",
+      "Title": "Lingering Shadows",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-LINGERING_SHADOWS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211027,
+      "Name": "the_sorceress_nimble_fingers_power_power",
+      "AssetName": "mods/the_sorceress/nimble_fingers_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.NimbleFingersPower",
+      "Title": "Nimble Fingers",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-NIMBLE_FINGERS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211028,
+      "Name": "the_sorceress_persistent_prime_power_power",
+      "AssetName": "mods/the_sorceress/persistent_prime_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.PersistentPrimePower",
+      "Title": "Relentless Prime",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-PERSISTENT_PRIME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211029,
+      "Name": "the_sorceress_preen_power_power",
+      "AssetName": "mods/the_sorceress/preen_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.PreenPower",
+      "Title": "Preen",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-PREEN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211030,
+      "Name": "the_sorceress_primed_power_power",
+      "AssetName": "mods/the_sorceress/primed_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.PrimedPower",
+      "Title": "Prime",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-PRIMED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211031,
+      "Name": "the_sorceress_prime_the_fire_power_power",
+      "AssetName": "mods/the_sorceress/prime_the_fire_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.PrimeTheFirePower",
+      "Title": "Prime the Fire",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-PRIME_THE_FIRE_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211032,
+      "Name": "the_sorceress_shadow_on_the_wall_power_power",
+      "AssetName": "mods/the_sorceress/shadow_on_the_wall_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.ShadowOnTheWallPower",
+      "Title": "Shadow on the Wall",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-SHADOW_ON_THE_WALL_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211033,
+      "Name": "the_sorceress_shadowy_tendrils_power_power",
+      "AssetName": "mods/the_sorceress/shadowy_tendrils_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.ShadowyTendrilsPower",
+      "Title": "Shadowy Tendrils",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THESORCERESSMOD-SHADOWY_TENDRILS.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 211034,
+      "Name": "the_sorceress_sorcerers_gambit_power_power",
+      "AssetName": "mods/the_sorceress/sorcerers_gambit_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.SorcerersGambitPower",
+      "Title": "Sorcerer's Gambit",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-SORCERERS_GAMBIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211035,
+      "Name": "the_sorceress_sorcerous_momentum_power_power",
+      "AssetName": "mods/the_sorceress/sorcerous_momentum_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.SorcerousMomentumPower",
+      "Title": "Sorcerous Momentum",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-SORCEROUS_MOMENTUM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211036,
+      "Name": "the_sorceress_spellblade_power_power",
+      "AssetName": "mods/the_sorceress/spellblade_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.SpellbladePower",
+      "Title": "Spellblade",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-SPELLBLADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211037,
+      "Name": "the_sorceress_storytellers_form_power_power",
+      "AssetName": "mods/the_sorceress/storytellers_form_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.StorytellersFormPower",
+      "Title": "Storyteller's Form",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-STORYTELLERS_FORM_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211038,
+      "Name": "the_sorceress_sudden_scales_power_power",
+      "AssetName": "mods/the_sorceress/sudden_scales_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.SuddenScalesPower",
+      "Title": "Sudden Scales",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-SUDDEN_SCALES_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211039,
+      "Name": "the_sorceress_two_weapon_defense_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_defense_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponDefensePower",
+      "Title": "Dual-Wield Defense",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_DEFENSE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211040,
+      "Name": "the_sorceress_two_weapon_defense_upgrade_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_defense_upgrade_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponDefenseUpgradePower",
+      "Title": "Dual-Wield Defense",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_DEFENSE_UPGRADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211041,
+      "Name": "the_sorceress_two_weapon_flurry_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_flurry_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponFlurryPower",
+      "Title": "Dual-Wield Flurry",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_FLURRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211042,
+      "Name": "the_sorceress_two_weapon_flurry_upgrade_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_flurry_upgrade_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponFlurryUpgradePower",
+      "Title": "Dual-Wield Flurry",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_FLURRY_UPGRADE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211043,
+      "Name": "the_sorceress_two_weapon_mastery_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_mastery_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponMasteryPower",
+      "Title": "Dual-Wield Mastery",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_MASTERY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211044,
+      "Name": "the_sorceress_two_weapon_sorcery_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_sorcery_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponSorceryPower",
+      "Title": "Sorcerous Burst",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_SORCERY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 211045,
+      "Name": "the_sorceress_two_weapon_twist_power_power",
+      "AssetName": "mods/the_sorceress/two_weapon_twist_power",
+      "Category": "Power",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Powers.TwoWeaponTwistPower",
+      "Title": "Off-Hand Twist",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "THESORCERESSMOD-TWO_WEAPON_TWIST.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 214000,
+      "Name": "the_sorceress_charisma_potion_potion",
+      "AssetName": "mods/the_sorceress/charisma_potion",
+      "Category": "Potion",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Potions.CharismaPotion",
+      "Title": "Elixir of Gender Transformation",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THESORCERESSMOD-CHARISMA_POTION.title"
+    },
+    {
+      "Id": 214001,
+      "Name": "the_sorceress_invisibility_potion_potion",
+      "AssetName": "mods/the_sorceress/invisibility_potion",
+      "Category": "Potion",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Potions.InvisibilityPotion",
+      "Title": "Potion of Invisibility",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THESORCERESSMOD-INVISIBILITY_POTION.title"
+    },
+    {
+      "Id": 214002,
+      "Name": "the_sorceress_shadow_potion_potion",
+      "AssetName": "mods/the_sorceress/shadow_potion",
+      "Category": "Potion",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Potions.ShadowPotion",
+      "Title": "Serum of Shifting Shadows",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "THESORCERESSMOD-SHADOW_POTION.title"
+    },
+    {
+      "Id": 215000,
+      "Name": "the_sorceress_the_sorceress_mod_character",
+      "AssetName": "mods/the_sorceress/the_sorceress_mod",
+      "Category": "Character",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Character.TheSorceressMod",
+      "Title": "The Sorceress",
+      "Aliases": [],
+      "LocTable": "characters",
+      "LocKey": "THESORCERESSMOD-THE_SORCERESS_MOD.title"
+    },
+    {
+      "Id": 213000,
+      "Name": "the_sorceress_stealthy_enchantment_enchantment",
+      "AssetName": "mods/the_sorceress/stealthy_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Cards.CrossMod.HeroExpansion.StealthyEnchantment",
+      "Title": "Stealthy",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "THESORCERESSMOD-STEALTHY_ENCHANTMENT.title"
+    },
+    {
+      "Id": 212009,
+      "Name": "the_sorceress_the_sorceress_mod_yummy_cookie_relic",
+      "AssetName": "mods/the_sorceress/the_sorceress_mod/yummy_cookie",
+      "Category": "Relic",
+      "Assembly": "TheSorceressMod",
+      "TypeName": "TheSorceressMod.TheSorceressModCode.Character.TheSorceressMod",
+      "CharacterCookie": true,
+      "Title": "Yummy Cookie",
+      "Aliases": [
+        "おいしいくっきー"
+      ],
+      "LocTable": "relics",
+      "LocKey": "YUMMY_COOKIE.title"
+    }
+  ]
+}

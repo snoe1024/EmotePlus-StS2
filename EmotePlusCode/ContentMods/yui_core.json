@@ -1,0 +1,225 @@
+{
+  "Key": "yui_core",
+  "ModIds": [
+    "YUICore"
+  ],
+  "Name": "YUICore",
+  "WorkshopId": "3747562679",
+  "Aliases": [
+    "YUICore"
+  ],
+  "Entries": [
+    {
+      "Id": 331000,
+      "Name": "yui_core_crayon_box_power_power",
+      "AssetName": "mods/yui_core/crayon_box_power",
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Powers.CrayonBoxPower",
+      "Title": "Drawing It Bigger!",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "YUI_CORE_POWER_CRAYON_BOX_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 331001,
+      "Name": "yui_core_metallic_power_power",
+      "AssetName": "mods/yui_core/metallic_power",
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Powers.MetallicPower",
+      "Title": "Metallicize",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "YUI_CORE_POWER_METALLIC_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 331002,
+      "Name": "yui_core_worm_scarf_power_power",
+      "AssetName": "mods/yui_core/worm_scarf_power",
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Powers.WormScarfPower",
+      "Title": "Worm Scarf",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "YUI_CORE_POWER_WORM_SCARF_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 331003,
+      "Name": "yui_core_yui_temporary_strength_power_power",
+      "AssetName": "mods/yui_core/yui_temporary_strength_power",
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Powers.YuiTemporaryStrengthPower",
+      "Title": "Temporary Strength",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "YUI_CORE_POWER_YUI_TEMPORARY_STRENGTH_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 331004,
+      "Name": "yui_core_yui_temporary_dexterity_power_power",
+      "AssetName": "mods/yui_core/yui_temporary_dexterity_power",
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Powers.YuiTemporaryDexterityPower",
+      "Title": "Temporary Dexterity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "YUI_CORE_POWER_YUI_TEMPORARY_DEXTERITY_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 333000,
+      "Name": "yui_core_adaptation_enchantment",
+      "AssetName": "mods/yui_core/adaptation",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.Adaptation",
+      "Title": "Adaptation",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_ADAPTATION.title"
+    },
+    {
+      "Id": 333001,
+      "Name": "yui_core_neutralize_enchantment",
+      "AssetName": "mods/yui_core/neutralize",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.Neutralize",
+      "Title": "Neutralize",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_NEUTRALIZE.title"
+    },
+    {
+      "Id": 333002,
+      "Name": "yui_core_bash_enchantment",
+      "AssetName": "mods/yui_core/bash",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.Bash",
+      "Title": "Bash",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_BASH.title"
+    },
+    {
+      "Id": 333003,
+      "Name": "yui_core_unawakened_enchantment",
+      "AssetName": "mods/yui_core/unawakened",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.Unawakened",
+      "Title": "Unawakened",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_UNAWAKENED.title"
+    },
+    {
+      "Id": 333004,
+      "Name": "yui_core_awakened_enchantment",
+      "AssetName": "mods/yui_core/awakened",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.Awakened",
+      "Title": "Awakened",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_AWAKENED.title"
+    },
+    {
+      "Id": 333005,
+      "Name": "yui_core_strike_enchantment",
+      "AssetName": "mods/yui_core/strike",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.Strike",
+      "Title": "Strike",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_STRIKE.title"
+    },
+    {
+      "Id": 333006,
+      "Name": "yui_core_electric_shock_enchantment",
+      "AssetName": "mods/yui_core/electric_shock",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.ElectricShock",
+      "Title": "Electric Shock",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_ELECTRIC_SHOCK.title"
+    },
+    {
+      "Id": 333007,
+      "Name": "yui_core_ignite_enchantment_enchantment",
+      "AssetName": "mods/yui_core/ignite_enchantment",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.IgniteEnchantment",
+      "Title": "Ignite",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_IGNITE_ENCHANTMENT.title"
+    },
+    {
+      "Id": 333008,
+      "Name": "yui_core_kings_proof_enchantment",
+      "AssetName": "mods/yui_core/kings_proof",
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.KingsProof",
+      "Title": "King's Proof",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "YUI_CORE_ENCHANTMENT_KINGS_PROOF.title"
+    },
+    {
+      "Id": 331005,
+      "Name": "yui_core_virulent_poison_power_power",
+      "AssetName": "mods/yui_core/virulent_poison_power",
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.BuffExtra.VirulentPoisonPower",
+      "Title": "Virulent Poison",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "YUI_CORE_POWER_VIRULENT_POISON_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "TargetId": 1242,
+      "Category": "Power",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Powers.CannonBombPower"
+    },
+    {
+      "TargetId": 3016,
+      "Category": "Enchantment",
+      "Assembly": "YUICore",
+      "TypeName": "YuiExtra.Enhancement.TemporarySown"
+    }
+  ]
+}
