@@ -85,6 +85,14 @@ public static class ReactionWheelInputPatch
     // The emotes on the wheel (the options may hide some): read again each time the wheel opens.
     private static IReadOnlyList<EmoteType> _layout = EmoteImages.WheelSlots;
 
+    private static int _normalPages;
+    private static int _activityPage = -1;
+    private static int _randomPage = -1;
+    private static int _favoriteStart;
+    private static EmoteType[] _randomSlots = [];
+    private static HashSet<string> Favorites => EmotePlusConfig.FavoriteEmotes.Split(',', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
+    private static bool CanFavorite => EmotePlusConfig.ShowFavoriteWheel;
+
     private static int PageCount => (_layout.Count + SlotCount - 1) / SlotCount;
 
     [HarmonyPrefix]
@@ -133,6 +141,21 @@ public static class ReactionWheelInputPatch
             // A wheel notch can produce both press and release. Paging twice wraps back on a two-page wheel.
             if (wheelEvent.Pressed)
                 TurnPage(__instance, next: (wheelEvent.ButtonIndex == MouseButton.WheelDown) != EmotePlusConfig.ReverseScrollPaging);
+            __instance.GetViewport().SetInputAsHandled();
+        }
+        else if (inputEvent is InputEventMouseButton { ButtonIndex: MouseButton.Right } favoriteClick && open && CanFavorite)
+        {
+            if (favoriteClick.Pressed && SelectedRef(__instance) is { } selected && SlotOf(selected) is { } type)
+            {
+                var favorites = Favorites;
+                var name = EmoteImages.NameOf(type);
+                if (!favorites.Remove(name)) favorites.Add(name);
+                EmotePlusConfig.FavoriteEmotes = string.Join(",", favorites);
+                MainFile.Config.SaveWheelFavorites();
+                LoadLayout();
+                ShowPage();
+                MoveMarker(__instance, Vector2.Zero);
+            }
             __instance.GetViewport().SetInputAsHandled();
         }
         else if (inputEvent.IsActionPressed(ReactWheel) && !typing)
@@ -216,10 +239,15 @@ public static class ReactionWheelInputPatch
         wheel.AddChild(_emptyActivityLabel);
         var emptyLabel = _emptyActivityLabel;
         var pageLabel = _pageLabel;
-        void CenterEmptyLabel() => emptyLabel.Position = new Vector2((wheel.Size.X - emptyLabel.Size.X) / 2f,
-            pageLabel.Position.Y + pageLabel.Size.Y);
+        void CenterEmptyLabel()
+        {
+            pageLabel.Position = (wheel.Size - pageLabel.Size) / 2f;
+            emptyLabel.Position = new Vector2((wheel.Size.X - emptyLabel.Size.X) / 2f,
+                pageLabel.Position.Y + pageLabel.Size.Y);
+        }
         // Translated text can enlarge the minimum width after setup; center the actual final rect on every resize.
         emptyLabel.Resized += CenterEmptyLabel;
+        pageLabel.Resized += CenterEmptyLabel;
         wheel.Resized += CenterEmptyLabel;
         CenterEmptyLabel();
 
@@ -244,6 +272,9 @@ public static class ReactionWheelInputPatch
         // A deselection tween from the previous page must not brighten an empty wedge again.
         if (_wheel != null) SelectedRef(_wheel) = null;
         var color = EmoteTracker.NeutralOutline;
+        var favorites = Favorites;
+        const string starPath = "res://EmotePlus/ui/settings/favorite.png";
+        var starTexture = ResourceLoader.Exists(starPath) ? ResourceLoader.Load<Texture2D>(starPath) : null;
         // The artist may add this optional asset later; do not emit load errors while it is absent.
         var warningTexture = ResourceLoader.Exists(DeliveryWarningPath)
             ? ResourceLoader.Load<Texture2D>(DeliveryWarningPath) : null;
@@ -292,6 +323,19 @@ public static class ReactionWheelInputPatch
                 icon.SelfModulate = Colors.White;
             }
 
+            if (EmotePlusConfig.ShowFavoriteWheel && favorites.Contains(EmoteImages.NameOf(type)) && starTexture != null)
+            {
+                var star = new TextureRect { Texture = starTexture, ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
+                    StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered };
+                star.MouseFilter = Control.MouseFilterEnum.Ignore;
+                icon.AddChild(star);
+                star.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.BottomRight);
+                star.OffsetLeft = -18f;
+                star.OffsetTop = -18f;
+                star.OffsetRight = 8f;
+                star.OffsetBottom = 8f;
+            }
+
             if ((int)type > 8 && warningTexture != null)
             {
                 var warning = new TextureRect
@@ -303,10 +347,10 @@ public static class ReactionWheelInputPatch
                 PrepareIcon(warning);
                 icon.AddChild(warning);
                 warning.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.TopRight);
-                warning.OffsetLeft = -20f;
-                warning.OffsetTop = -6f;
+                warning.OffsetLeft = -18f;
+                warning.OffsetTop = -8f;
                 warning.OffsetRight = 8f;
-                warning.OffsetBottom = 22f;
+                warning.OffsetBottom = 18f;
                 DeliveryWarnings[i] = warning;
             }
         }
@@ -315,12 +359,20 @@ public static class ReactionWheelInputPatch
 
         if (_pageLabel != null)
         {
-            _pageLabel.Visible = PageCount >= 2;
-            _pageLabel.Text = $"{_page + 1}/{PageCount}";
+            var special = _page >= _normalPages;
+            _pageLabel.Visible = special || _normalPages >= 2;
+            var key = _page == _activityPage ? "ACTIVITY" : _page == _randomPage ? "RANDOM" : "FAVORITES";
+            _pageLabel.Text = special
+                ? new LocString("settings_ui", "EMOTEPLUS-WHEEL_" + key).GetFormattedText()
+                : $"{_page + 1}/{_normalPages}";
+            if (special && _page >= _favoriteStart && PageCount - _favoriteStart > 1)
+                _pageLabel.Text += $"\n{_page - _favoriteStart + 1}/{PageCount - _favoriteStart}";
+            _pageLabel.AddThemeFontSizeOverride("font_size", special ? 22 : 36);
+            _pageLabel.Size = _pageLabel.GetCombinedMinimumSize();
         }
         if (_emptyActivityLabel != null)
         {
-            _emptyActivityLabel.Visible = EmotePlusConfig.ShowRecentActivity && _page == PageCount - 1 && Slots.All(s => s == null);
+            _emptyActivityLabel.Visible = _page == _activityPage && Slots.All(s => s == null);
             _emptyActivityLabel.Text = new LocString("settings_ui", "EMOTEPLUS-NO_RECENT_ACTIVITY").GetFormattedText();
         }
     }
@@ -349,6 +401,7 @@ public static class ReactionWheelInputPatch
 
         LoadLayout();
         _page = Math.Min(_page, Math.Max(0, PageCount - 1));
+        SampleRandomPage();
         ShowPage();
         CenterRef(wheel) = wheel.GetViewport().GetMousePosition();
         _preserveCursorPosition = EmotePlusConfig.PreserveCursorPosition;
@@ -400,13 +453,28 @@ public static class ReactionWheelInputPatch
     private static void LoadLayout()
     {
         var layout = EmoteImages.VisibleSlots().ToList();
+        while (layout.Count % SlotCount != 0) layout.Add(EmoteType.None);
+        _normalPages = layout.Count / SlotCount;
+        _activityPage = -1;
+        _randomPage = -1;
         if (EmotePlusConfig.ShowRecentActivity)
         {
-            // A dedicated final page must not share the last partly-filled regular page.
-            while (layout.Count % SlotCount != 0) layout.Add(EmoteType.None);
+            _activityPage = layout.Count / SlotCount;
             layout.AddRange(RecentActivityEmotes.Snapshot());
         }
+        if (EmotePlusConfig.ShowRandomWheel)
+        {
+            _randomPage = layout.Count / SlotCount;
+            layout.AddRange(Enumerable.Range(0, SlotCount).Select(i => i < _randomSlots.Length ? _randomSlots[i] : EmoteType.None));
+        }
+        _favoriteStart = layout.Count / SlotCount;
+        if (EmotePlusConfig.ShowFavoriteWheel)
+        {
+            var favorites = Favorites;
+            layout.AddRange(EmoteImages.AllEmotes.Where(e => favorites.Contains(e.Name) && EmoteImages.IsHidden(e.Name)).Select(e => e.Type));
+        }
         _layout = layout;
+        _page = Math.Min(_page, Math.Max(0, PageCount - 1));
         _recentRevision = RecentActivityEmotes.Revision;
     }
 
@@ -418,8 +486,24 @@ public static class ReactionWheelInputPatch
         }
 
         _page = (_page + (next ? 1 : PageCount - 1)) % PageCount;
+        SampleRandomPage();
         ShowPage();
         MoveMarker(wheel, Vector2.Zero); // the selection may now be on an empty slot, or another emote
+    }
+
+    private static void SampleRandomPage()
+    {
+        if (_page != _randomPage) return;
+        // Partial Fisher-Yates avoids loading any textures or sorting the whole catalogue.
+        var pool = EmoteImages.AllEmotes.Select(e => e.Type).Distinct().ToArray();
+        var count = Math.Min(SlotCount, pool.Length);
+        for (var i = 0; i < count; i++)
+        {
+            var j = Random.Shared.Next(i, pool.Length);
+            (pool[i], pool[j]) = (pool[j], pool[i]);
+        }
+        _randomSlots = pool.Take(count).ToArray();
+        LoadLayout();
     }
 
     private static EmoteType? SlotOf(NReactionWheelWedge wedge)

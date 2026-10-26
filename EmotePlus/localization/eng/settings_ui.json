@@ -111,5 +111,16 @@
   "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Content mod",
   "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Filter by source in addition to search and tags. Only mods with available supported emotes are listed. Vanilla content also includes emotes that require no specific mod.",
   "EMOTEPLUS-ALL_CONTENT.title": "All content",
-  "EMOTEPLUS-VANILLA_CONTENT.title": "Vanilla content"
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Vanilla content",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.title": "Honkai: Star Rail Characters",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.aliases": "Honkai Star Rail characters Kafka Acheron Evanescia",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.title": "ARAM: Mayhem",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.aliases": "ARAM Mayhem Hextech Runes",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.title": "Add a random wheel",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.hover.desc": "Each time this page opens, sample up to eight distinct emotes from all available content.",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.title": "Add favorite wheels",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Right-click a selected emote on any wheel to add or remove it as a favorite. Favorites not enabled on the regular wheel appear on the final pages.",
+  "EMOTEPLUS-WHEEL_ACTIVITY": "Activity",
+  "EMOTEPLUS-WHEEL_RANDOM": "Random",
+  "EMOTEPLUS-WHEEL_FAVORITES": "Favorites"
 }

@@ -111,5 +111,16 @@
   "EMOTEPLUS-CONTENT_MOD_FILTER.title": "內容模組",
   "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "在搜尋和標籤條件之外，依表情來源篩選。僅列出有可用支援表情的模組。原版內容也包含不依賴特定模組的表情。",
   "EMOTEPLUS-ALL_CONTENT.title": "全部內容",
-  "EMOTEPLUS-VANILLA_CONTENT.title": "原版內容"
+  "EMOTEPLUS-VANILLA_CONTENT.title": "原版內容",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.title": "崩壞：星穹鐵道角色",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.aliases": "崩壞 星穹鐵道 角色 卡芙卡 黃泉 Kafka Acheron Evanescia",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.title": "ARAM: Mayhem",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.aliases": "ARAM 大亂鬥 海克斯 符文",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.title": "新增隨機輪盤",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.hover.desc": "每次開啟此頁時，從所有可用表情中隨機選擇最多八種不同表情。",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.title": "新增收藏輪盤",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "在任意輪盤中右鍵點擊目前選取的表情，即可收藏或取消收藏。未啟用於普通輪盤中的收藏表情將顯示在最後幾頁。",
+  "EMOTEPLUS-WHEEL_ACTIVITY": "近期活動",
+  "EMOTEPLUS-WHEEL_RANDOM": "隨機",
+  "EMOTEPLUS-WHEEL_FAVORITES": "收藏"
 }

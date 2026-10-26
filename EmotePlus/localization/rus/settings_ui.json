@@ -111,5 +111,16 @@
   "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Контентный мод",
   "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Фильтр по источнику дополняет поиск и теги. В списке только моды с доступными поддерживаемыми эмоциями. Базовый контент включает эмоции, не требующие отдельного мода.",
   "EMOTEPLUS-ALL_CONTENT.title": "Весь контент",
-  "EMOTEPLUS-VANILLA_CONTENT.title": "Базовый контент"
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Базовый контент",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.title": "Персонажи Honkai: Star Rail",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.aliases": "Honkai Star Rail персонажи Кафка Ахерон Эванесция",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.title": "ARAM: Mayhem",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.aliases": "ARAM Mayhem хекстек руны",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.title": "Добавить случайное колесо",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.hover.desc": "При открытии этой страницы случайно выбираются до восьми разных доступных эмоций.",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.title": "Добавить колёса избранного",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Щёлкните правой кнопкой по выбранной эмоции в любом колесе, чтобы добавить её в избранное или удалить оттуда. Избранные эмоции, не включённые в обычное колесо, появятся на последних страницах.",
+  "EMOTEPLUS-WHEEL_ACTIVITY": "Активность",
+  "EMOTEPLUS-WHEEL_RANDOM": "Случайные",
+  "EMOTEPLUS-WHEEL_FAVORITES": "Избранное"
 }

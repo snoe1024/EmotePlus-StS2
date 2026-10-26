@@ -49,6 +49,23 @@ public sealed class EmotePlusConfig : SimpleModConfig
     /// <summary>Add a final wheel page containing the latest eight distinct activity emotes. The saved key is retained.</summary>
     public static bool ShowRecentActivity { get; set; } = true;
 
+    /// <summary>Append a page sampled again whenever it is opened.</summary>
+    public static bool ShowRandomWheel { get; set; } = false;
+
+    /// <summary>Allow right-click favorites and append their dedicated pages.</summary>
+    public static bool ShowFavoriteWheel { get; set; } = true;
+
+    /// <summary>Favorite stable catalogue names, including temporarily unavailable content.</summary>
+    [ConfigHideInUI]
+    public static string FavoriteEmotes { get; set; } = "";
+
+    /// <summary>Persist wheel edits through the same path as settings edits.</summary>
+    public void SaveWheelFavorites()
+    {
+        SaveDebounced();
+        Changed();
+    }
+
     /// <summary>Persistent migration marker for the old exclusion-list setting.</summary>
     [ConfigHideInUI]
     public static int EmoteVisibilityVersion { get; set; }

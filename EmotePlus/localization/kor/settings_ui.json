@@ -111,5 +111,16 @@
   "EMOTEPLUS-CONTENT_MOD_FILTER.title": "콘텐츠 모드",
   "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "검색 및 태그 조건과 함께 출처로 필터링합니다. 지원되는 이모트를 사용할 수 있는 모드만 표시합니다. 바닐라 콘텐츠에는 특정 모드가 필요 없는 이모트도 포함됩니다.",
   "EMOTEPLUS-ALL_CONTENT.title": "모든 콘텐츠",
-  "EMOTEPLUS-VANILLA_CONTENT.title": "바닐라 콘텐츠"
+  "EMOTEPLUS-VANILLA_CONTENT.title": "바닐라 콘텐츠",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.title": "붕괴: 스타레일 캐릭터",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.aliases": "붕괴 스타레일 캐릭터 카프카 아케론 에바네시아",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.title": "ARAM: Mayhem",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.aliases": "ARAM 메이헴 마공학 룬",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.title": "무작위 휠 추가",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.hover.desc": "이 페이지를 열 때마다 사용 가능한 모든 감정 표현 중 최대 8개를 무작위로 선택합니다.",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.title": "즐겨찾기 휠 추가",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "어느 휠에서든 선택한 감정 표현을 우클릭하면 즐겨찾기 등록과 해제를 전환합니다. 일반 휠에 등록하지 않은 즐겨찾기는 마지막 페이지에 표시합니다.",
+  "EMOTEPLUS-WHEEL_ACTIVITY": "활동",
+  "EMOTEPLUS-WHEEL_RANDOM": "무작위",
+  "EMOTEPLUS-WHEEL_FAVORITES": "즐겨찾기"
 }

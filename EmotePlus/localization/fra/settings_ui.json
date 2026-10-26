@@ -111,5 +111,16 @@
   "EMOTEPLUS-CONTENT_MOD_FILTER.title": "Mod de contenu",
   "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "Filtre par origine en plus de la recherche et des tags. Seuls les mods avec des emotes compatibles disponibles sont proposés. Le contenu de base inclut aussi les emotes sans mod requis.",
   "EMOTEPLUS-ALL_CONTENT.title": "Tout le contenu",
-  "EMOTEPLUS-VANILLA_CONTENT.title": "Contenu de base"
+  "EMOTEPLUS-VANILLA_CONTENT.title": "Contenu de base",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.title": "Personnages de Honkai: Star Rail",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.aliases": "Honkai Star Rail personnages Kafka Acheron Evanescia",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.title": "ARAM: Mayhem",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.aliases": "ARAM Mayhem runes Hextech",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.title": "Ajouter une roue aléatoire",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.hover.desc": "À chaque ouverture de cette page, jusqu’à huit émotes différentes sont tirées parmi toutes celles disponibles.",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.title": "Ajouter des roues de favoris",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Un clic droit sur une émote sélectionnée dans une roue l’ajoute aux favoris ou l’en retire. Les favoris absents de la roue normale apparaissent sur les dernières pages.",
+  "EMOTEPLUS-WHEEL_ACTIVITY": "Activité",
+  "EMOTEPLUS-WHEEL_RANDOM": "Aléatoire",
+  "EMOTEPLUS-WHEEL_FAVORITES": "Favoris"
 }

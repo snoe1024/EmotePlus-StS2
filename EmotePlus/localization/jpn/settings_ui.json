@@ -23,8 +23,18 @@
   "EMOTEPLUS-PRESERVE_CURSOR_POSITION.hover.desc": "エモートを選択している間も非表示のカーソルが裏で通常どおり移動し、エモート送信後にカーソルはその位置に出現します。\nオフの場合はバニラと同じように動作し、エモートの送信後もカーソルはホイールを開いた位置のままになります。",
 
   "EMOTEPLUS-SHOW_RECENT_ACTIVITY.title": "最近のアクティビティのページを追加",
-  "EMOTEPLUS-SHOW_RECENT_ACTIVITY.hover.desc": "直近の行動やマウス・コントローラーで注目した要素に対応するエモートを、ホイール末尾の専用ページに常に更新して表示します。",
+  "EMOTEPLUS-SHOW_RECENT_ACTIVITY.hover.desc": "直近の行動やマウス・コントローラーで注目した要素に対応するエモートを、専用ページに常に更新して表示します。",
 
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.title": "ランダムなエモートを表示するページを追加",
+  "EMOTEPLUS-SHOW_RANDOM_WHEEL.hover.desc": "見るたびに、利用可能なすべてのエモートから最大8種類をランダムに選びます。",
+  
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.title": "お気に入りのエモートを表示するページを追加",
+  "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "選択中のエモートを右クリックすると、お気に入りへの登録・解除を切り替えます。通常の表示設定にないお気に入りエモートを末尾に表示します。",
+  
+  "EMOTEPLUS-WHEEL_ACTIVITY": "アクティビティ",
+  "EMOTEPLUS-WHEEL_RANDOM": "ランダム",
+  "EMOTEPLUS-WHEEL_FAVORITES": "お気に入り",
+  
   "EMOTEPLUS-EMOTE_VISIBILITY.title": "ホイールに表示するエモート",
   "EMOTEPLUS-EMOTE_VISIBILITY_HINT.title": "エモートをクリックすると、自分のホイールでの表示と非表示が切り替わります(隙間は詰められます)。すべて非表示にした場合は、すべて表示されます。\n他のプレイヤーが使用するエモートには影響しません。",
 
@@ -136,5 +146,10 @@
 
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.title": "StS1のバフアイコン",
   "EMOTEPLUS-EMOTE_BUFF_STS1_MEME.aliases": "強化 バフ buff stronger sts1",
-  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "考える 思考 悩む thonking thinking think hmm"
+  "EMOTEPLUS-EMOTE_THONKING_MEME.aliases": "考える 思考 悩む thonking thinking think hmm",
+  
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.title": "崩壊：スターレイル キャラクター",
+  "EMOTEPLUS-CONTENT_MOD_HONKAI_STAR_RAIL_CHARACTERS.aliases": "崩壊 スターレイル カフカ 黄泉 Kafka Acheron Evanescia",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.title": "ARAM: Mayhem",
+  "EMOTEPLUS-CONTENT_MOD_ARAM_MAYHEM.aliases": "ARAM ランダムミッド メイヘム ヘクステック ルーン"
 }
