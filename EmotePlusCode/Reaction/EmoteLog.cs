@@ -1,8 +1,11 @@
+using System.Diagnostics;
+
 namespace EmotePlus.EmotePlusCode.Reaction;
 
-// Diagnostics for tracing where an emote ends up. Everything goes to godot.log with the "[EmotePlus] [emote]" tag.
+// Opt-in build diagnostics: omitted calls also avoid formatting per-emote strings in ordinary builds.
 public static class EmoteLog
 {
+    [Conditional("EMOTEPLUS_DIAGNOSTICS")]
     public static void Info(string message)
     {
         MainFile.Logger.Info($"[emote] {message}");

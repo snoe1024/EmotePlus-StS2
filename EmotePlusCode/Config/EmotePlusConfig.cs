@@ -193,7 +193,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
         AttachTip(search, "EmoteSearch");
         filters.AddChild(new Label { Text = GetLabelText("EmoteSearch") });
         filters.AddChild(search);
-        var activeTags = new HashSet<string>();
+        var activeTags = EmoteTag.None;
         var tagButtons = new List<CheckButton>();
         var tagFlow = new HFlowContainer { SizeFlagsHorizontal = Control.SizeFlags.ExpandFill };
         var count = new Label();
@@ -257,7 +257,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
             // Keep UI-only textures out of the gameplay's persistent texture cache.
             button.TextureNormal = ResourceLoader.Load<Texture2D>(type.GetEmotePath());
             button.TooltipText = entry.Title + "\n" + name + "\n" + string.Join(", ",
-                EmoteSearch.Tags.Where(entry.Tags.Contains).Select(t => GetLabelText("Tag" + t)));
+                EmoteSearch.Tags.Where(entry.HasTag).Select(t => GetLabelText("Tag" + t)));
             button.GetNode<Control>("HiddenMark").Visible = hidden;
             button.SelfModulate = hidden ? new Color(1f, 1f, 1f, 0.45f) : Colors.White;
             button.Modulate = selected == index ? new Color(1.5f, 1.4f, 0.5f) : Colors.White;
@@ -268,8 +268,9 @@ public sealed class EmotePlusConfig : SimpleModConfig
         {
             var order = EmoteImages.WheelSlots;
             var selection = contentFilter.Selected;
+            var query = EmoteSearch.PrepareQuery(search.Text, activeTags);
             var matches = Enumerable.Range(0, order.Count)
-                .Where(i => metadata[order[i]].Matches(search.Text, activeTags) &&
+                .Where(i => metadata[order[i]].Matches(query) &&
                     (selection == 0 || (selection == 1 ? EmoteCatalog.Get(order[i]).IsVanillaContent
                         : contentGroups[order[i]] == contentMods[selection - 2].Key))).ToArray();
             matchingEmotes = matches.Select(i => order[i]).ToArray();
@@ -288,7 +289,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
             AttachTip(toggle, "Tag" + tag);
             toggle.Toggled += on =>
             {
-                if (on) activeTags.Add(tag); else activeTags.Remove(tag);
+                if (on) activeTags |= tag; else activeTags &= ~tag;
                 selected = null;
                 Refresh();
             };
@@ -298,7 +299,7 @@ public sealed class EmotePlusConfig : SimpleModConfig
         filters.AddChild(CreateButtonWithTip("ClearFilters", () =>
         {
             search.Text = "";
-            activeTags.Clear();
+            activeTags = EmoteTag.None;
             foreach (var toggle in tagButtons) toggle.SetPressedNoSignal(false);
             contentFilter.Select(0);
             selected = null;

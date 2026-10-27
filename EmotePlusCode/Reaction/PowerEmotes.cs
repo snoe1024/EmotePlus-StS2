@@ -129,7 +129,6 @@ public static class PowerEmotes
         new("HibernatePower", EmoteType.PowerHibernate, "hibernate"),
         new("HighVoltagePower", EmoteType.PowerHighVoltage, "high_voltage"),
         new("HotfixPower", EmoteType.PowerHotfix, "hotfix"),
-        new("HyperbeamFocusDownPower", EmoteType.PowerHyperbeamFocusDown, "hyperbeam_focus_down"),
         new("IllusionPower", EmoteType.PowerIllusion, "illusion"),
         new("ImbalancedPower", EmoteType.PowerImbalanced, "imbalanced"),
         new("ImitationLearningPower", EmoteType.PowerImitationLearning, "imitation_learning"),

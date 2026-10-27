@@ -5,16 +5,52 @@ using MegaCrit.Sts2.Core.Localization;
 
 namespace EmotePlus.EmotePlusCode.Reaction;
 
+[Flags]
+internal enum EmoteTag : ushort
+{
+    None = 0,
+    Power = 1 << 0,
+    Buff = 1 << 1,
+    Debuff = 1 << 2,
+    Relic = 1 << 3,
+    Enchantment = 1 << 4,
+    Potion = 1 << 5,
+    Unused = 1 << 6,
+    Ancient = 1 << 7,
+    Character = 1 << 8,
+    Creature = 1 << 9,
+    Communicate = 1 << 10,
+    Meme = 1 << 11,
+}
+
 /// <summary>Search metadata independent of wheel order, visibility and texture loading.</summary>
 internal static class EmoteSearch
 {
-    internal static readonly string[] Tags = ["Power", "Buff", "Debuff", "Relic", "Enchantment", "Potion", "Unused", "Ancient", "Character", "Creature", "Communicate", "Meme"];
+    internal static readonly EmoteTag[] Tags = Enum.GetValues<EmoteTag>()
+        .Where(t => t != EmoteTag.None && t != EmoteTag.Meme && t != EmoteTag.Unused)
+        .Concat([EmoteTag.Meme, EmoteTag.Unused]).ToArray();
+    private static readonly IReadOnlyDictionary<string, EmoteTag> TagsByName =
+        Tags.ToDictionary(t => t.ToString(), StringComparer.Ordinal);
 
-    internal sealed record Entry(string Title, string Text, HashSet<string> Tags)
+    // JSON and the hand-edited tag table retain their stable string names; only cached search data uses bits.
+    internal static EmoteTag TagOf(string name) => TagsByName.GetValueOrDefault(name);
+
+    internal readonly record struct Query(string[] Words, EmoteTag RequiredTags);
+
+    internal static Query PrepareQuery(string text, EmoteTag tags) =>
+        new(Normalize(text).Split(' ', StringSplitOptions.RemoveEmptyEntries), tags);
+
+    internal sealed record Entry(string Title, string Text, EmoteTag Tags)
     {
-        internal bool Matches(string query, IReadOnlySet<string> tags) =>
-            tags.All(Tags.Contains) &&
-            Normalize(query).Split(' ', StringSplitOptions.RemoveEmptyEntries).All(Text.Contains);
+        internal bool HasTag(EmoteTag tag) => (Tags & tag) == tag;
+
+        internal bool Matches(in Query query)
+        {
+            if (!HasTag(query.RequiredTags)) return false;
+            foreach (var word in query.Words)
+                if (!Text.Contains(word, StringComparison.Ordinal)) return false;
+            return true;
+        }
     }
 
     internal static Entry Describe(EmoteType type)
@@ -27,13 +63,14 @@ internal static class EmoteSearch
         var title = Localized(key + ".title", name);
         var words = new StringBuilder(name.Replace('_', ' ') + " " + name + " " + title);
         words.Append(' ').Append(Localized(key + ".aliases", ""));
-        var tags = new HashSet<string>(EmoteTags.ByEmote.GetValueOrDefault(type) ?? []);
-        if (EmoteCatalog.Get(type).Category == EmoteCategory.Meme) tags.Add("Meme");
+        var tags = EmoteTag.None;
+        foreach (var tag in EmoteTags.ByEmote.GetValueOrDefault(type) ?? []) tags |= TagOf(tag);
+        if (EmoteCatalog.Get(type).Category == EmoteCategory.Meme) tags |= EmoteTag.Meme;
         foreach (var power in PowerEmotes.All.Where(p => p.Emote == type))
         {
-            tags.Add("Power");
-            if (PowerEmoteTags.Buffs.Contains(power.TypeName)) tags.Add("Buff");
-            if (PowerEmoteTags.Debuffs.Contains(power.TypeName)) tags.Add("Debuff");
+            tags |= EmoteTag.Power;
+            if (PowerEmoteTags.Buffs.Contains(power.TypeName)) tags |= EmoteTag.Buff;
+            if (PowerEmoteTags.Debuffs.Contains(power.TypeName)) tags |= EmoteTag.Debuff;
             var powerKey = StringHelper.Slugify(power.TypeName) + ".title";
             var powerTitle = LocString.Exists("powers", powerKey)
                 ? new LocString("powers", powerKey).GetFormattedText() : power.TypeName;
@@ -42,18 +79,18 @@ internal static class EmoteSearch
         }
         foreach (var relic in RelicEmotes.All.Where(r => r.Emote == type))
         {
-            tags.Add("Relic");
-            if (relic.Unused) tags.Add("Unused");
+            tags |= EmoteTag.Relic;
+            if (relic.Unused) tags |= EmoteTag.Unused;
             var relicKey = relic.TypeName == null ? null : StringHelper.Slugify(relic.TypeName) + ".title";
             var relicTitle = relicKey != null && LocString.Exists("relics", relicKey)
                 ? new LocString("relics", relicKey).GetFormattedText() : relic.AssetName;
             if (!hasLocalTitle) title = relicTitle;
             words.Append(' ').Append(relic.AssetName).Append(' ').Append(relic.TypeName).Append(' ').Append(relicTitle);
         }
-        void AddModel(string tag, string table, string? typeName, string assetName, bool unused)
+        void AddModel(EmoteTag tag, string table, string? typeName, string assetName, bool unused)
         {
-            tags.Add(tag);
-            if (unused) tags.Add("Unused");
+            tags |= tag;
+            if (unused) tags |= EmoteTag.Unused;
             var modelKey = typeName == null ? null : StringHelper.Slugify(typeName) + ".title";
             var modelTitle = modelKey != null && LocString.Exists(table, modelKey)
                 ? new LocString(table, modelKey).GetFormattedText() : assetName;
@@ -61,16 +98,16 @@ internal static class EmoteSearch
             words.Append(' ').Append(assetName).Append(' ').Append(typeName).Append(' ').Append(modelTitle);
         }
         foreach (var enchantment in EnchantmentEmotes.All.Where(e => e.Emote == type))
-            AddModel("Enchantment", "enchantments", enchantment.TypeName, enchantment.AssetName, enchantment.Unused);
+            AddModel(EmoteTag.Enchantment, "enchantments", enchantment.TypeName, enchantment.AssetName, enchantment.Unused);
         foreach (var potion in PotionEmotes.All.Where(p => p.Emote == type))
-            AddModel("Potion", "potions", potion.TypeName, potion.AssetName, potion.Unused);
+            AddModel(EmoteTag.Potion, "potions", potion.TypeName, potion.AssetName, potion.Unused);
         foreach (var ancient in AncientEmotes.All.Where(a => a.Emote == type))
-            AddModel("Ancient", "ancients", ancient.TypeName, name, false);
+            AddModel(EmoteTag.Ancient, "ancients", ancient.TypeName, name, false);
         foreach (var character in CharacterEmotes.All.Where(c => c.Emote == type))
-            AddModel("Character", "characters", character.TypeName, character.AssetName, false);
+            AddModel(EmoteTag.Character, "characters", character.TypeName, character.AssetName, false);
         foreach (var creature in CreatureEmotes.All.Where(c => c.Emote == type))
         {
-            AddModel("Creature", "encounters", creature.EncounterTypeName, creature.AssetName, creature.Unused);
+            AddModel(EmoteTag.Creature, "encounters", creature.EncounterTypeName, creature.AssetName, creature.Unused);
             foreach (var modelName in creature.TypeNames)
             {
                 var monsterKey = StringHelper.Slugify(modelName) + ".name";
@@ -80,9 +117,9 @@ internal static class EmoteSearch
         }
         if (ModdedEmotes.TryDescribe(type, out var group, out var content))
         {
-            if (content.Category != EmoteCategory.None) tags.Add(content.Category.ToString());
-            if (content.CharacterCookie) tags.Add("Character");
-            foreach (var tag in content.Tags ?? []) tags.Add(tag);
+            if (content.Category != EmoteCategory.None) tags |= TagOf(content.Category.ToString());
+            if (content.CharacterCookie) tags |= EmoteTag.Character;
+            foreach (var tag in content.Tags ?? []) tags |= TagOf(tag);
             var modelTitle = content.LocTable != null && content.LocKey != null && LocString.Exists(content.LocTable, content.LocKey)
                 ? new LocString(content.LocTable, content.LocKey).GetFormattedText() : content.Title;
             if (!hasLocalTitle) title = modelTitle;

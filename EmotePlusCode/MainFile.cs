@@ -37,12 +37,12 @@ public partial class MainFile : Node
         EmotePlus.EmotePlusCode.Reaction.EmoteNetworking.Initialize();
         MegaCrit.Sts2.Core.Runs.RunManager.Instance.RunStarted += Reaction.RecentActivityEmotes.StartRun;
 
-        // Log what actually got patched, so a silently-unapplied patch shows up in godot.log right away.
+        // Keep the startup summary visible; per-method diagnostics require an opt-in build.
         var patchedMethods = harmony.GetPatchedMethods().ToList();
-        Logger.Info($"{ModId}: Harmony patched {patchedMethods.Count} method(s) on startup:");
+        Logger.Info($"{ModId}: Harmony patched {patchedMethods.Count} method(s).");
         foreach (var method in patchedMethods)
         {
-            Logger.Info($"{ModId}:   - {method.DeclaringType?.FullName}.{method.Name}");
+            Reaction.EmoteLog.Info($"patched {method.DeclaringType?.FullName}.{method.Name}");
         }
     }
 }
