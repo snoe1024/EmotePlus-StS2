@@ -21,7 +21,7 @@ public enum ExternalEmoteEnd { Released, Expired, Replaced, ContainerRemoved, Se
 public static class ExternalEmotes
 {
     /// <summary>Version of this local API; unrelated to the network protocol.</summary>
-    public const int ApiVersion = 3;
+    public const int ApiVersion = 4;
     /// <summary>
     /// Raised synchronously before drawing, once per eligible source revision. Call TryClaim during the callback.
     /// A late Sidecar replacement cancels the old claim before offering the corrected source with the same Id.
@@ -179,10 +179,20 @@ public sealed class ExternalEmoteClaim : IDisposable
 {
     private readonly Action<ExternalEmoteEnd> _cancelled;
     private NReaction? _visual;
+    private readonly EmoteDefinition? _artwork;
     internal ExternalEmoteClaim(ExternalEmoteOffer source, Action<ExternalEmoteEnd> cancelled, bool manageLifetime)
-    { Source = source; _cancelled = cancelled; ManagesLifetime = manageLifetime; }
+    {
+        Source = source; _cancelled = cancelled; ManagesLifetime = manageLifetime;
+        if (!source.IsVanilla) _artwork = EmoteArtworkOverrides.Resolve(EmoteCatalog.Get(source.Type), source.SenderNetId);
+    }
     /// <summary>Stable source and lifetime information.</summary>
     public ExternalEmoteOffer Source { get; }
+    /// <summary>
+    /// The immutable artwork snapshot used by CreateVisual, including any sender-specific replacement.
+    /// Null for vanilla presentation, which uses the game's original ReactionType texture instead.
+    /// Read Category and AssetName directly; resolving Type again can select a different skin.
+    /// </summary>
+    public EmoteDefinition? Artwork => _artwork;
     /// <summary>True when the consumer is responsible for expiration and must eventually Dispose this claim.</summary>
     public bool ManagesLifetime { get; }
     /// <summary>False after expiry, replacement, session end, or disposal.</summary>
@@ -197,7 +207,7 @@ public sealed class ExternalEmoteClaim : IDisposable
         if (GodotObject.IsInstanceValid(_visual)) return _visual!;
         _visual = Source.IsVanilla
             ? NReaction.Create((MegaCrit.Sts2.Core.Entities.Multiplayer.ReactionType)(int)Source.Type)
-            : EmoteTracker.CreateEmote(Source.Type, EmoteTracker.OutlineColorOf(Source.Space == ExternalEmoteSpace.Lobby
+            : EmoteTracker.CreateEmote(_artwork!, EmoteTracker.OutlineColorOf(Source.Space == ExternalEmoteSpace.Lobby
                 ? UiTree.LobbyCharacter(Source.SenderNetId)
                 : RunManager.Instance.DebugOnlyGetState()?.GetPlayer(Source.SenderNetId)?.Character));
         _visual.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.TopLeft);

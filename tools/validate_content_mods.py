@@ -8,9 +8,9 @@ import re
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_CATEGORIES = {"Character", "Creature", "Relic", "Power", "Potion", "Enchantment", "Ancient"}
+MODEL_CATEGORIES = {"Character", "Creature", "Relic", "Power", "Potion", "Enchantment", "Ancient", "Modifier"}
 CATEGORIES = MODEL_CATEGORIES | {"None"}
-CATEGORY_BLOCKS = {"None": 0, "Power": 1, "Relic": 2, "Enchantment": 3, "Potion": 4, "Character": 5, "Creature": 6, "Ancient": 7}
+CATEGORY_BLOCKS = {"None": 0, "Power": 1, "Relic": 2, "Enchantment": 3, "Potion": 4, "Character": 5, "Creature": 6, "Ancient": 7, "Modifier": 8}
 
 
 def workshop_ids(group):
@@ -112,6 +112,34 @@ def validate_fixed_routes(group, enum_ids, models):
     return routes
 
 
+def validate_image_overrides(group, registered_ids, assets, guards):
+    """Image-only skin rules never allocate a new identity or require a model assembly."""
+    rules = group.get("ImageOverrides", [])
+    assert isinstance(rules, list), "ImageOverrides must be an array"
+    for rule in rules:
+        target, category = rule.get("TargetId"), rule.get("Category")
+        label = f'{group["Key"]}/image-override/{target}'
+        assert type(target) is int and target in registered_ids, f"Override target is not registered: {label}"
+        assert category in CATEGORY_BLOCKS or category == "Meme", f"Invalid override category: {label}"
+        block = 9 if category == "Meme" else CATEGORY_BLOCKS[category]
+        assert target % 10000 // 1000 == block, f"Override category mismatch: {label}"
+        asset, source, fingerprint = rule.get("AssetName"), rule.get("SourceResource"), rule.get("SourceSha256")
+        assert isinstance(asset, str) and asset.startswith(f'mods/{group["Key"]}/') and ".." not in asset and "\\" not in asset and ":" not in asset, f"Invalid override asset: {label}"
+        assert isinstance(source, str) and source.startswith("res://") and ".." not in source and "\\" not in source, f"Invalid override probe: {label}"
+        assert isinstance(fingerprint, str) and re.fullmatch(r"[0-9a-fA-F]{64}", fingerprint), f"Invalid override fingerprint: {label}"
+        match = rule.get("Match", "ResourceFile")
+        assert match in ("ResourceFile", "CharacterIcon"), f"Invalid override match: {label}"
+        if match == "CharacterIcon":
+            assert category == "Character" and type(rule.get("Width")) is int and rule["Width"] > 0 and type(rule.get("Height")) is int and rule["Height"] > 0, f"Invalid icon dimensions: {label}"
+        guard = (target, source, fingerprint.lower())
+        assert guard not in guards, f"Duplicate override guard: {label}"
+        guards.add(guard)
+        identity = (category, asset)
+        assert identity not in assets, f"Duplicate override artwork: {label}"
+        assets.add(identity)
+    return rules
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workshop-root", type=Path, help="Optional STS2 Workshop content directory; verify declared type names with ilspycmd.")
@@ -127,11 +155,25 @@ def main():
     assert len(ids) == len(set(ids)), "Duplicate enum values"
     seen_ids, names, assets, models = set(), set(), set(), set()
     type_cache = {}
-    folders = dict(Character="characters", Creature="creatures", Relic="relics", Power="powers", Potion="potions", Enchantment="enchantments", Ancient="ancients")
+    folders = dict(Character="characters", Creature="creatures", Relic="relics", Power="powers", Potion="potions", Enchantment="enchantments", Ancient="ancients", Modifier="modifiers")
     folders["None"] = ""
     missing = []
-    for file in sorted((ROOT / "EmotePlusCode/ContentMods").glob("*.json")):
-        group = json.loads(file.read_text(encoding="utf-8-sig"))
+    files = sorted((ROOT / "EmotePlusCode/ContentMods").glob("*.json"))
+    groups = [json.loads(file.read_text(encoding="utf-8-sig")) for file in files]
+    for group in groups:
+        by_id = {e["Id"]: e for e in group["Entries"]}
+        for entry in group["Entries"]:
+            if entry.get("ArtworkEmoteId") is None: continue
+            source = by_id.get(entry["ArtworkEmoteId"])
+            assert source is not None and source is not entry and source.get("ArtworkEmoteId") is None and source["AssetName"] == entry["AssetName"] and not entry.get("CharacterCookie") and entry["Category"] != "Character", f'Invalid artwork reference: {entry["Name"]}'
+    enum_ids = {name: int(value) for name, value in enums}
+    official = set()
+    for name in ("NoneEmotes", "PowerEmotes", "RelicEmotes", "EnchantmentEmotes", "PotionEmotes", "CharacterEmotes", "CreatureEmotes", "AncientEmotes", "ModifierEmotes", "MemeEmotes"):
+        text = (ROOT / "EmotePlusCode/Reaction" / (name + ".cs")).read_text(encoding="utf-8-sig")
+        official.update(enum_ids[n] for n in re.findall(r"EmoteType\.(\w+)", text) if n in enum_ids and n != "None")
+    registered = official | {e["Id"] for g in groups for e in g["Entries"]}
+    override_guards = set()
+    for file, group in zip(files, groups):
         assert file.stem == group["Key"] and group["ModIds"], file
         workshop_ids(group)
         for character in (e for e in group["Entries"] if e["Category"] == "Character"):
@@ -146,14 +188,15 @@ def main():
             assert entry["Category"] in CATEGORIES, label
             binding = entry["Category"] if entry.get("BindingCategory") is None else entry["BindingCategory"]
             assert binding in MODEL_CATEGORIES, f"Missing/invalid model binding category: {label}"
-            assert entry["Category"] == "None" or binding == entry["Category"], f"Binding override requires None artwork: {label}"
+            assert entry["Category"] == "None" or binding == entry["Category"] or (entry["Category"] == "Modifier" and binding == "Relic"), f"Invalid artwork/model binding: {label}"
             assert binding != "Character" or entry["Category"] == "Character", f"Character binding requires Character artwork: {label}"
             assert entry["Id"] % 10000 // 1000 == CATEGORY_BLOCKS[entry["Category"]], f"ID outside category range: {label}"
             asset = entry["AssetName"]
             assert asset.startswith(f'mods/{group["Key"]}/') and ".." not in asset and "\\" not in asset, label
             identity = (entry["Category"], asset)
-            assert identity not in assets, f"Duplicate artwork: {label}"
-            assets.add(identity)
+            if entry.get("ArtworkEmoteId") is None:
+                assert identity not in assets, f"Duplicate artwork: {label}"
+                assets.add(identity)
             assert not entry.get("CharacterCookie") or entry["Category"] == "Relic", label
             if entry.get("CookieEmoteId") is not None:
                 assert entry["Category"] == "Character" and type(entry["CookieEmoteId"]) is int and entry["CookieEmoteId"] in cookie_ids, f"Invalid cookie reuse target: {label}"
@@ -163,7 +206,8 @@ def main():
                 assert model not in models, f"Duplicate model: {label}/{exact['TypeName']}"
                 models.add(model)
             for side in ("icons", "outlines"):
-                path = ROOT / "EmotePlus/ui/emote" / side / folders[entry["Category"]] / (asset + ".png")
+                source = next((e for e in group["Entries"] if e["Id"] == entry.get("ArtworkEmoteId")), entry)
+                path = ROOT / "EmotePlus/ui/emote" / side / folders[source["Category"]] / (source["AssetName"] + ".png")
                 if not path.is_file(): missing.append(str(path.relative_to(ROOT)))
             if args.workshop_root:
                 for exact in bindings:
@@ -172,7 +216,12 @@ def main():
             if args.workshop_root:
                 source = entry_workshop_id(group, dict(route, Name=route["TypeName"]))
                 verify_model(args.workshop_root, source, route, args.ilspy, type_cache, selections)
-    print(f"PASS: {len(seen_ids)} optional emotes; unique IDs, names, models and asset routes")
+        for rule in validate_image_overrides(group, registered, assets, override_guards):
+            for side in ("icons", "outlines"):
+                folder = "memes" if rule["Category"] == "Meme" else folders[rule["Category"]]
+                path = ROOT / "EmotePlus/ui/emote" / side / folder / (rule["AssetName"] + ".png")
+                if not path.is_file(): missing.append(str(path.relative_to(ROOT)))
+    print(f"PASS: {len(seen_ids)} optional emotes; {len(override_guards)} image overrides; unique IDs, names, models and asset routes")
     if missing:
         print("Pending artwork:\n" + "\n".join(missing))
         assert not args.require_assets, "Supply both images before releasing"

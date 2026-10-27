@@ -1,0 +1,22 @@
+{
+  "Key": "czn_mei_lin",
+  "ModIds": [
+    "MeirinWatcherSkin"
+  ],
+  "Name": "Chaos Zero Nightmare - Mei Lin",
+  "WorkshopId": "3789216478",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 45000,
+      "Category": "Character",
+      "AssetName": "mods/czn_mei_lin/character_icon_watcher",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://MeirinWatcherSkin/images/ui/character_icon_meirin.png",
+      "SourceSha256": "93f2042d0f67da48f4b908a6a6f4eeac782a2638d5a77815ab2b0e7d14e2c922",
+      "Width": 72,
+      "Height": 72
+    }
+  ]
+}

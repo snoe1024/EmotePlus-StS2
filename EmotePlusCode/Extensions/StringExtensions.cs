@@ -51,6 +51,12 @@ public static class StringExtensions
         $"{MainFile.ResPath}/ui/emote/{(outline ? "outlines" : "icons")}/{FallbackEmote}.png";
 
     private static string ImagePath(EmoteDefinition definition, bool outline)
+        => ArtworkPath(EmoteArtworkOverrides.Resolve(definition), outline);
+
+    internal static string ResolvedArtworkPath(EmoteDefinition definition, bool outline) =>
+        Existing(ArtworkPath(definition, outline), FallbackPath(outline));
+
+    internal static string ArtworkPath(EmoteDefinition definition, bool outline)
     {
         var folder = definition.Category switch
         {
@@ -63,6 +69,7 @@ public static class StringExtensions
             EmoteCategory.Character => "characters/",
             EmoteCategory.Creature => "creatures/",
             EmoteCategory.Meme => "memes/",
+            EmoteCategory.Modifier => "modifiers/",
             _ => throw new ArgumentOutOfRangeException(nameof(definition), definition.Category, "Unknown artwork category"),
         };
         return $"{MainFile.ResPath}/ui/emote/{(outline ? "outlines" : "icons")}/{folder}{definition.AssetName}.png";

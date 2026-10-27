@@ -1,0 +1,22 @@
+{
+  "Key": "msgk_regent",
+  "ModIds": [
+    "Mesugaki"
+  ],
+  "Name": "Mesugaki Regent",
+  "WorkshopId": "3748603697",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5003,
+      "Category": "Character",
+      "AssetName": "mods/msgk_regent/character_icon_regent",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_regent.png",
+      "SourceSha256": "171b5d603ae399ff8a2fe269ef0b1e79ce25b6eca4653bdc09f33ae668c44ec0",
+      "Width": 88,
+      "Height": 88
+    }
+  ]
+}

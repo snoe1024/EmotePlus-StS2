@@ -92,7 +92,9 @@
   "EMOTEPLUS-TAG_POTION.hover.desc": "アクティビティページを有効にしていると、そのポーションを使用した際、ポーションにカーソルで注目した際に追加されます。",
   "EMOTEPLUS-TAG_CREATURE.title": "クリーチャー",
   "EMOTEPLUS-TAG_CREATURE.hover.desc": "アクティビティページを有効にしていると、そのクリーチャーに遭遇した際、カーソルで注目した際に追加されます。",
-
+  "EMOTEPLUS-TAG_MODIFIER.title": "モディファイア",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "アクティビティページを有効にしていると、対応するアイコンにカーソルで注目した際に追加されます。",
+  
   "EMOTEPLUS-CONTENT_MOD_FILTER.title": "コンテンツmod",
   "EMOTEPLUS-CONTENT_MOD_FILTER.hover.desc": "エモートの出典となった導入済みのmodで絞り込みます。エモートに対応しているmodがある場合にのみ、選択できます。",
 

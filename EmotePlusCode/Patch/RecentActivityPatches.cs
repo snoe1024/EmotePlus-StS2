@@ -4,6 +4,8 @@ using Godot;
 using HarmonyLib;
 using EmotePlus.EmotePlusCode.Reaction;
 using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Context;
+using MegaCrit.sts2.Core.Nodes.TopBar;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Merchant;
@@ -127,6 +129,8 @@ internal static class RecentActivityHover
         AccessTools.FieldRefAccess<NLabPotionHolder, PotionModel>("_model");
     private static readonly AccessTools.FieldRef<NMapPoint, IRunState> MapRunState =
         AccessTools.FieldRefAccess<NMapPoint, IRunState>("_runState");
+    private static readonly AccessTools.FieldRef<NTopBarModifier, ModifierModel> TopModifier =
+        AccessTools.FieldRefAccess<NTopBarModifier, ModifierModel>("_modifier");
 
     internal static readonly Type[] FocusTypes =
     [
@@ -137,6 +141,7 @@ internal static class RecentActivityHover
         typeof(NCreature), typeof(NMultiplayerPlayerState),
         typeof(NMerchantButton),
         typeof(NAncientMapPoint), typeof(NBossMapPoint),
+        typeof(NTopBarPortraitTip), typeof(NTopBarModifier),
     ];
 
     internal static IEnumerable<MethodBase> Methods(bool enter)
@@ -179,6 +184,8 @@ internal static class RecentActivityHover
             NRewardButton { Reward: PotionReward reward } => reward.Potion,
             NCreature creature when creature.IsFocused => (AbstractModel?)creature.Entity.Player?.Character ?? creature.Entity.Monster,
             NMultiplayerPlayerState player => player.Player.Character,
+            NTopBarPortraitTip => RunManager.Instance.DebugOnlyGetState() is { } run ? LocalContext.GetMe(run)?.Character : null,
+            NTopBarModifier modifier => TopModifier(modifier),
             _ => null,
         };
         if (model == null) return;

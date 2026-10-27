@@ -19,6 +19,8 @@ public sealed record ModdedEmoteDefinition(int Id, string Name, string AssetName
     string Assembly, string TypeName, string Title, string[] Aliases, string? LocTable, string? LocKey,
     string[]? Tags = null, bool CharacterCookie = false)
 {
+    /// <summary>Optional same-group artwork source. Identity, model mapping and title remain independent.</summary>
+    public int? ArtworkEmoteId { get; init; }
     /// <summary>Source Workshop item; required when the group spans multiple Workshop items.</summary>
     public string? WorkshopId { get; init; }
 
@@ -67,6 +69,9 @@ public sealed record FixedEmoteRoute(int TargetId, EmoteCategory Category, strin
 public sealed record ContentModDefinition(string Key, string[] ModIds, string Name, string? WorkshopId,
     string[] Aliases, ModdedEmoteDefinition[] Entries)
 {
+    /// <summary>Local artwork alternatives for existing IDs; skin-only groups may leave Entries empty.</summary>
+    public EmoteImageOverride[] ImageOverrides { get; init; } = [];
+
     /// <summary>Exact optional-model routes to existing official IDs; no duplicate artwork is registered.</summary>
     public FixedEmoteRoute[] FixedRoutes { get; init; } = [];
 
@@ -99,13 +104,14 @@ public sealed record ContentModDefinition(string Key, string[] ModIds, string Na
 public static class ModdedEmotes
 {
     /// <summary>Public content lookup API version.</summary>
-    public const int ApiVersion = 7;
+    public const int ApiVersion = 9;
     private static readonly IReadOnlyDictionary<EmoteCategory, Type> BaseTypes = new Dictionary<EmoteCategory, Type>
     {
         [EmoteCategory.Character] = typeof(CharacterModel), [EmoteCategory.Creature] = typeof(MonsterModel),
         [EmoteCategory.Relic] = typeof(RelicModel), [EmoteCategory.Power] = typeof(PowerModel),
         [EmoteCategory.Potion] = typeof(PotionModel), [EmoteCategory.Enchantment] = typeof(EnchantmentModel),
         [EmoteCategory.Ancient] = typeof(AncientEventModel),
+        [EmoteCategory.Modifier] = typeof(ModifierModel),
     };
 
     /// <summary>All declared groups, including ones not installed locally.</summary>
@@ -131,6 +137,14 @@ public static class ModdedEmotes
             }).ToArray();
         var modelMappings = new HashSet<(string, string, EmoteCategory, bool)>();
         foreach (var group in groups)
+            foreach (var entry in group.Entries.Where(e => e.ArtworkEmoteId.HasValue))
+            {
+                var source = group.Entries.FirstOrDefault(e => e.Id == entry.ArtworkEmoteId);
+                if (source == null || source.Id == entry.Id || source.ArtworkEmoteId.HasValue || source.AssetName != entry.AssetName ||
+                    entry.CharacterCookie || entry.Category == EmoteCategory.Character)
+                    throw new InvalidDataException($"Invalid artwork reference: {group.Key}/{entry.Name}");
+            }
+        foreach (var group in groups)
         {
             if (group.ModIds.Length == 0 || string.IsNullOrWhiteSpace(group.Key))
                 throw new InvalidDataException("Content groups require a key and manifest IDs.");
@@ -145,7 +159,8 @@ public static class ModdedEmotes
                     entry.AssetName.Contains("..") || entry.AssetName.Contains('\\') ||
                     (entry.Category != EmoteCategory.None && !BaseTypes.ContainsKey(entry.Category)) ||
                     !BaseTypes.ContainsKey(entry.ResolvedBindingCategory) ||
-                    (entry.Category != EmoteCategory.None && entry.ResolvedBindingCategory != entry.Category) ||
+                    (entry.Category != EmoteCategory.None && entry.ResolvedBindingCategory != entry.Category &&
+                     !(entry.Category == EmoteCategory.Modifier && entry.ResolvedBindingCategory == EmoteCategory.Relic)) ||
                     (entry.ResolvedBindingCategory == EmoteCategory.Character && entry.Category != EmoteCategory.Character) ||
                     entry.CharacterCookie && entry.Category != EmoteCategory.Relic ||
                     (entry.WorkshopId != null && !workshopIds.Contains(entry.WorkshopId, StringComparer.Ordinal)) ||
@@ -178,6 +193,7 @@ public static class ModdedEmotes
                     throw new InvalidDataException($"Character requires exactly one cookie definition or reuse route: {group.Key}/{character.Name}");
             }
         }
+        EmoteArtworkOverrides.Validate(groups);
         return groups;
     }
 
@@ -275,6 +291,7 @@ public static class ModdedEmotes
             EmoteCategory.Enchantment => EnchantmentEmotes.All.Any(e => e.Emote == target),
             EmoteCategory.Creature => CreatureEmotes.All.Any(e => e.Emote == target),
             EmoteCategory.Ancient => AncientEmotes.All.Any(e => e.Emote == target),
+            EmoteCategory.Modifier => ModifierEmotes.All.Any(e => e.Emote == target),
             _ => false,
         };
     }

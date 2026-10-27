@@ -1,0 +1,22 @@
+{
+  "Key": "kaguya_silent_raven",
+  "ModIds": [
+    "KaguyaSilentRavenSkin"
+  ],
+  "Name": "Kaguya Silent Raven",
+  "WorkshopId": "3786286239",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5004,
+      "Category": "Character",
+      "AssetName": "mods/kaguya_silent_raven/character_icon_silent",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_silent.png",
+      "SourceSha256": "dd48011608cc187fbc4e35a61b161ccd4d877264adedd261d58f39970e41c257",
+      "Width": 88,
+      "Height": 88
+    }
+  ]
+}

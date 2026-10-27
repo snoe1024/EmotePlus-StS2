@@ -1,0 +1,22 @@
+{
+  "Key": "czn_narja",
+  "ModIds": [
+    "NarjaNecrobinderSkin"
+  ],
+  "Name": "Chaos Zero Nightmare - Narja",
+  "WorkshopId": "3771061301",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5002,
+      "Category": "Character",
+      "AssetName": "mods/czn_narja/character_icon_necrobinder",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_necrobinder.png",
+      "SourceSha256": "db066e3489dc65d7408647fae78d8c868f4fd6c424a6e97100c1043dd5bb6bd3",
+      "Width": 72,
+      "Height": 72
+    }
+  ]
+}

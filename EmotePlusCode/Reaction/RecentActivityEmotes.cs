@@ -36,6 +36,7 @@ public static class RecentActivityEmotes
         // Launch has assigned the local NetId and both new/saved players already contain their relics.
         var player = LocalContext.GetMe(state);
         if (player == null) return;
+        foreach (var modifier in state.Modifiers) Record(modifier);
         foreach (var relic in player.Relics) Record(relic);
     }
 
@@ -77,6 +78,7 @@ public static class RecentActivityEmotes
             CharacterModel character => CharacterEmotes.TryGetEmote(character, out type),
             MonsterModel monster => CreatureEmotes.TryGetEmote(monster, out type),
             EncounterModel encounter => CreatureEmotes.TryGetEmote(encounter, out type),
+            ModifierModel modifier => ModifierEmotes.TryGetEmote(modifier, out type),
             _ => NoMatch(out type),
         };
         if (found) Record(type);

@@ -34,6 +34,8 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
 
         harmony.PatchAll(assembly);
+        Patch.RecentActivityHextech.Install();
+        MegaCrit.Sts2.Core.Runs.RunManager.Instance.RunStarted += _ => Patch.RecentActivityHextech.Install();
         EmotePlus.EmotePlusCode.Reaction.EmoteNetworking.Initialize();
         MegaCrit.Sts2.Core.Runs.RunManager.Instance.RunStarted += Reaction.RecentActivityEmotes.StartRun;
 

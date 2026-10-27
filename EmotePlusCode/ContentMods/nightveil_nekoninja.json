@@ -1,0 +1,22 @@
+{
+  "Key": "nightveil_nekoninja",
+  "ModIds": [
+    "ATA_Silent"
+  ],
+  "Name": "Nightveil Nekoninja",
+  "WorkshopId": "3759576970",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5004,
+      "Category": "Character",
+      "AssetName": "mods/nightveil_nekoninja/character_icon_silent",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://ATA_Silent/images/ui/top_panel/character_icon_silent.png",
+      "SourceSha256": "5a085ca9f9df24d5687d697d6a59abf30d4d540273305440c478c5167b045049",
+      "Width": 88,
+      "Height": 92
+    }
+  ]
+}

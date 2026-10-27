@@ -21,6 +21,7 @@ internal enum EmoteTag : ushort
     Creature = 1 << 9,
     Communicate = 1 << 10,
     Meme = 1 << 11,
+    Modifier = 1 << 12,
 }
 
 /// <summary>Search metadata independent of wheel order, visibility and texture loading.</summary>
@@ -105,6 +106,8 @@ internal static class EmoteSearch
             AddModel(EmoteTag.Ancient, "ancients", ancient.TypeName, name, false);
         foreach (var character in CharacterEmotes.All.Where(c => c.Emote == type))
             AddModel(EmoteTag.Character, "characters", character.TypeName, character.AssetName, false);
+        foreach (var modifier in ModifierEmotes.All.Where(m => m.Emote == type))
+            AddModel(EmoteTag.Modifier, "modifiers", modifier.TypeName ?? modifier.AssetName, modifier.AssetName, modifier.Unused);
         foreach (var creature in CreatureEmotes.All.Where(c => c.Emote == type))
         {
             AddModel(EmoteTag.Creature, "encounters", creature.EncounterTypeName, creature.AssetName, creature.Unused);

@@ -1,0 +1,22 @@
+{
+  "Key": "necrobinder_fourform",
+  "ModIds": [
+    "necrobinderHpWear"
+  ],
+  "Name": "骨妹美化",
+  "WorkshopId": "3825716317",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5002,
+      "Category": "Character",
+      "AssetName": "mods/necrobinder_fourform/character_icon_necrobinder",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_necrobinder.png",
+      "SourceSha256": "6f357e117a8cee9710b279c497865f092451679ca5450ec4c7022953c37c8585",
+      "Width": 88,
+      "Height": 88
+    }
+  ]
+}

@@ -76,7 +76,8 @@ public static class LobbyEmote
                 NetCursorHelper.GetNormalizedPosition(position, container), false, false, elapsedMs, presentationId) != null)
             return;
         var character = UiTree.LobbyCharacter(senderId);
-        var emote = EmoteTracker.CreateEmote(type, EmoteTracker.OutlineColorOf(character));
+        var artwork = EmoteArtworkOverrides.Resolve(EmoteCatalog.Get(type), senderId);
+        var emote = EmoteTracker.CreateEmote(artwork, EmoteTracker.OutlineColorOf(character));
         emote.SetMeta(ReactionAnimPatch.DriftMeta, drift.Offset);
         emote.SetMeta(ReactionAnimPatch.ElapsedMeta, elapsedMs / 1000.0);
         container.AddChildSafely(emote);

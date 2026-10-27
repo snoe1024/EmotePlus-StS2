@@ -26,6 +26,18 @@ public static class EmoteCatalog
     /// <summary>Whether the ID has a real definition rather than only an enum reservation.</summary>
     public static bool IsRegistered(EmoteType type) => ByType.ContainsKey(type);
 
+    /// <summary>
+    /// Resolves fixed artwork references without Godot or skin selection. Type and Name keep the requested
+    /// identity; Category and AssetName identify the physical pair. Suitable for offline catalogue consumers.
+    /// </summary>
+    public static EmoteDefinition ResolveArtwork(EmoteType type)
+    {
+        var definition = Get(type);
+        if (definition.ArtworkEmoteId is not { } sourceId) return definition;
+        var source = Get((EmoteType)sourceId);
+        return definition with { Category = source.Category, AssetName = source.AssetName, ArtworkEmoteId = null };
+    }
+
     /// <summary>Looks up a saved key or an unambiguous short asset name in a single index.</summary>
     public static bool TryGet(string name, out EmoteDefinition definition) => ByName.TryGetValue(name, out definition!);
 
@@ -49,6 +61,8 @@ public static class EmoteCatalog
             definitions.Add(character.Emote, new(character.Emote, character.AssetName + "_character", character.AssetName, EmoteCategory.Character));
         foreach (var creature in CreatureEmotes.All)
             definitions.Add(creature.Emote, new(creature.Emote, creature.AssetName + "_creature", creature.AssetName, EmoteCategory.Creature));
+        foreach (var modifier in ModifierEmotes.All)
+            definitions.Add(modifier.Emote, new(modifier.Emote, modifier.AssetName + "_modifier", modifier.AssetName, EmoteCategory.Modifier));
         // Classify provenance before adding custom artwork and optional-mod definitions.
         foreach (var type in definitions.Keys.ToArray())
             definitions[type] = definitions[type] with { IsVanillaContent = true };
@@ -56,8 +70,9 @@ public static class EmoteCatalog
             definitions.Add(meme.Type, meme);
         foreach (var group in ModdedEmotes.Groups)
             foreach (var entry in group.Entries)
-                definitions.Add((EmoteType)entry.Id, new((EmoteType)entry.Id, entry.Name, entry.AssetName, entry.Category));
-        if (definitions.Values.GroupBy(d => (d.Category, d.AssetName)).Any(g => g.Count() > 1))
+                definitions.Add((EmoteType)entry.Id, new((EmoteType)entry.Id, entry.Name, entry.AssetName, entry.Category)
+                    { ArtworkEmoteId = entry.ArtworkEmoteId });
+        if (definitions.Values.Where(d => !d.ArtworkEmoteId.HasValue).GroupBy(d => (d.Category, d.AssetName)).Any(g => g.Count() > 1))
             throw new InvalidOperationException("Duplicate emote artwork: map model variants to a single emote ID.");
         foreach (var definition in definitions.Values)
             if (!EmoteIdLayout.MatchesCategory((int)definition.Type, definition.Category))

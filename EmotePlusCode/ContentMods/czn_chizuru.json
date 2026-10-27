@@ -1,0 +1,22 @@
+{
+  "Key": "czn_chizuru",
+  "ModIds": [
+    "ChizuruIroncladSkin"
+  ],
+  "Name": "Chaos Zero Nightmare - Chizuru",
+  "WorkshopId": "3826011833",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5001,
+      "Category": "Character",
+      "AssetName": "mods/czn_chizuru/character_icon_ironclad",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_ironclad.png",
+      "SourceSha256": "65d4f8f032e006d8f4ce0ff7f03754a944fa7eec738e7b45f8e86d566cc6cd1e",
+      "Width": 72,
+      "Height": 72
+    }
+  ]
+}

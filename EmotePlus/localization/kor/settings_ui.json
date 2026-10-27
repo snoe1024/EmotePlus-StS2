@@ -122,5 +122,7 @@
   "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "어느 휠에서든 선택한 감정 표현을 우클릭하면 즐겨찾기 등록과 해제를 전환합니다. 일반 휠에 등록하지 않은 즐겨찾기는 마지막 페이지에 표시합니다.",
   "EMOTEPLUS-WHEEL_ACTIVITY": "활동",
   "EMOTEPLUS-WHEEL_RANDOM": "무작위",
-  "EMOTEPLUS-WHEEL_FAVORITES": "즐겨찾기"
+  "EMOTEPLUS-WHEEL_FAVORITES": "즐겨찾기",
+  "EMOTEPLUS-TAG_MODIFIER.title": "변경 요소",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "런의 규칙이나 적의 난이도를 변경하는 효과입니다. 지원되는 아이콘에 포커스를 맞추면 최근 활동에 추가됩니다."
 }

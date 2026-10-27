@@ -1,0 +1,29 @@
+{
+  "Key": "lieren_tv",
+  "ModIds": [
+    "LieRenTVmod"
+  ],
+  "Name": "劣人TV之尖塔mod",
+  "WorkshopId": "3787753911",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 2322,
+      "Category": "Relic",
+      "AssetName": "mods/lieren_tv/yummy_cookie_silent",
+      "SourceResource": "res://images/atlases/relic_atlas.sprites/yummy_cookie_silent.tres.remap",
+      "SourceSha256": "9bb6317647fcdc912224e7880f722fa80dc4999f88f697d3ff2e83dca249c312"
+    },
+    {
+      "TargetId": 5004,
+      "Category": "Character",
+      "AssetName": "mods/lieren_tv/character_icon_silent",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_silent.png",
+      "SourceSha256": "402848c6b92ead18eb974aeced63791d8cbeebf425f56d8bace3e41c54996c4f",
+      "Width": 88,
+      "Height": 88
+    }
+  ]
+}

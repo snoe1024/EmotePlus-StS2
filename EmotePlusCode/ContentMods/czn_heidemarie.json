@@ -1,0 +1,22 @@
+{
+  "Key": "czn_heidemarie",
+  "ModIds": [
+    "HeidemarieRegentSkin"
+  ],
+  "Name": "Chaos Zero Nightmare - Heidemarie",
+  "WorkshopId": "3826012249",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5003,
+      "Category": "Character",
+      "AssetName": "mods/czn_heidemarie/character_icon_regent",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_regent.png",
+      "SourceSha256": "c846cfdff75eb331c1a5c66f2cf24b2f404360863fe4183ad380784bf63cd0c9",
+      "Width": 72,
+      "Height": 72
+    }
+  ]
+}

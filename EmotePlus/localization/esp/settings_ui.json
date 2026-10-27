@@ -122,5 +122,7 @@
   "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Haz clic derecho en un emoticono seleccionado en cualquier rueda para añadirlo o quitarlo de favoritos. Los favoritos no activados en la rueda normal aparecen al final.",
   "EMOTEPLUS-WHEEL_ACTIVITY": "Actividad",
   "EMOTEPLUS-WHEEL_RANDOM": "Aleatorio",
-  "EMOTEPLUS-WHEEL_FAVORITES": "Favoritos"
+  "EMOTEPLUS-WHEEL_FAVORITES": "Favoritos",
+  "EMOTEPLUS-TAG_MODIFIER.title": "Modificador",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "Efectos que cambian las reglas de la partida o la dificultad de los enemigos. Enfoca un icono compatible para añadirlo a la actividad reciente."
 }

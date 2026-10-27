@@ -1,0 +1,22 @@
+{
+  "Key": "booba_necrobinder",
+  "ModIds": [
+    "Booba-Necrobinder-Mod"
+  ],
+  "Name": "Booba Necrobinder",
+  "WorkshopId": "3748931996",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5002,
+      "Category": "Character",
+      "AssetName": "mods/booba_necrobinder/character_icon_necrobinder",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_necrobinder.png",
+      "SourceSha256": "0aca27307b2993ac83b8e8b8731c710e86382266e1f553195ebcb547ae13351c",
+      "Width": 88,
+      "Height": 88
+    }
+  ]
+}

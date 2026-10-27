@@ -122,6 +122,7 @@ public static class EmoteTracker
     {
         public required NReactionContainer Container;
         public required EmoteType Type;
+        public required EmoteDefinition Artwork;
         public required Color OutlineColor;
         public required UiNodeId[] SenderPath;
         public required Vector2 Position;
@@ -155,6 +156,7 @@ public static class EmoteTracker
         {
             Container = container,
             Type = type,
+            Artwork = externalClaim?.Artwork ?? EmoteArtworkOverrides.Resolve(EmoteCatalog.Get(type), senderNetId),
             OutlineColor = OutlineColorOf(senderNetId),
             SenderPath = senderPath,
             Position = position,
@@ -413,7 +415,7 @@ public static class EmoteTracker
         }
 
         var holder = new Control { MouseFilter = Control.MouseFilterEnum.Ignore, Size = entry.Container.Size };
-        var emote = CreateEmote(entry.Type, entry.OutlineColor);
+        var emote = CreateEmote(entry.Artwork, entry.OutlineColor);
         parent.AddChildSafely(holder);
         if (placeAfter != null && placeAfter.GetParent() == parent)
         {
@@ -462,12 +464,20 @@ public static class EmoteTracker
     /// through its own modulate, which also applies to children, so both fade together.
     /// </summary>
     public static NReaction CreateEmote(EmoteType type, Color outlineColor)
+        => CreateEmote(EmoteArtworkOverrides.Resolve(EmoteCatalog.Get(type)), outlineColor);
+
+    /// <summary>
+    /// Creates a detached, unanimated visual from an already resolved artwork snapshot, without skin resolution.
+    /// Missing resource paths use the usual question-image fallback. Call on the Godot main thread.
+    /// </summary>
+    public static NReaction CreateEmote(EmoteDefinition artwork, Color outlineColor)
     {
-        var emote = NReaction.Create(EmoteImages.Outline(type));
+        ArgumentNullException.ThrowIfNull(artwork);
+        var emote = NReaction.Create(EmoteImages.Load(Extensions.StringExtensions.ResolvedArtworkPath(artwork, true)));
         emote.SelfModulate = outlineColor;
         var icon = new TextureRect
         {
-            Texture = EmoteImages.Icon(type),
+            Texture = EmoteImages.Load(Extensions.StringExtensions.ResolvedArtworkPath(artwork, false)),
             ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
             StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered,
             MouseFilter = Control.MouseFilterEnum.Ignore,

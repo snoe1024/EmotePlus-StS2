@@ -122,5 +122,7 @@
   "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Right-click a selected emote on any wheel to add or remove it as a favorite. Favorites not enabled on the regular wheel appear on the final pages.",
   "EMOTEPLUS-WHEEL_ACTIVITY": "Activity",
   "EMOTEPLUS-WHEEL_RANDOM": "Random",
-  "EMOTEPLUS-WHEEL_FAVORITES": "Favorites"
+  "EMOTEPLUS-WHEEL_FAVORITES": "Favorites",
+  "EMOTEPLUS-TAG_MODIFIER.title": "Modifier",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "Effects that change run rules or enemy difficulty. Focus a supported icon to add it to recent activity."
 }

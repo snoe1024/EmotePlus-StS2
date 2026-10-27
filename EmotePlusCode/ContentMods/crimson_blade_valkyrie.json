@@ -1,0 +1,22 @@
+{
+  "Key": "crimson_blade_valkyrie",
+  "ModIds": [
+    "ATA_IronClad"
+  ],
+  "Name": "Crimson Blade Valkyrie",
+  "WorkshopId": "3747952763",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5001,
+      "Category": "Character",
+      "AssetName": "mods/crimson_blade_valkyrie/character_icon_ironclad",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://ATA_IronClad/images/ui/top_panel/character_icon_ironclad.png",
+      "SourceSha256": "f045a8c8f35488c29326b3e11b16b998a8ea2a933e425a45e1bbdad620b764fe",
+      "Width": 88,
+      "Height": 88
+    }
+  ]
+}

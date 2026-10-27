@@ -1,0 +1,22 @@
+{
+  "Key": "czn_sereniel",
+  "ModIds": [
+    "SerenielDefectSkin"
+  ],
+  "Name": "Chaos Zero Nightmare - Sereniel",
+  "WorkshopId": "3761681399",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5000,
+      "Category": "Character",
+      "AssetName": "mods/czn_sereniel/character_icon_defect",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_defect.png",
+      "SourceSha256": "db6472a68c699a9b3e67c7953069cbcdddfcfba205cb76a19d6adebc7a14e1e8",
+      "Width": 72,
+      "Height": 72
+    }
+  ]
+}

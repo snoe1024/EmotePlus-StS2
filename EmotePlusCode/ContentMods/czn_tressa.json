@@ -1,0 +1,22 @@
+{
+  "Key": "czn_tressa",
+  "ModIds": [
+    "TressaSilentSkin"
+  ],
+  "Name": "Chaos Zero Nightmare - Tressa",
+  "WorkshopId": "3826012071",
+  "Aliases": [],
+  "Entries": [],
+  "ImageOverrides": [
+    {
+      "TargetId": 5004,
+      "Category": "Character",
+      "AssetName": "mods/czn_tressa/character_icon_silent",
+      "Match": "CharacterIcon",
+      "SourceResource": "res://images/ui/top_panel/character_icon_silent.png",
+      "SourceSha256": "f9d536bb9d1e60de909ba7eb86272e1e06c65f0181753dd03e397fa3988e1b2f",
+      "Width": 72,
+      "Height": 72
+    }
+  ]
+}

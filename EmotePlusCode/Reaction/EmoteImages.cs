@@ -245,7 +245,7 @@ public static class EmoteImages
     /// <summary>Loads the outline through its explicit artwork category.</summary>
     public static Texture2D Outline(EmoteType type) => Load(type.GetEmoteOutlinePath());
 
-    private static Texture2D Load(string path)
+    internal static Texture2D Load(string path)
     {
         if (!Cache.TryGetValue(path, out var texture))
         {

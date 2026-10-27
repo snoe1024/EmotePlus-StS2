@@ -12,11 +12,14 @@ public enum EmoteCategory
     Character = 6,
     Creature = 7,
     Meme = 8,
+    Modifier = 9,
 }
 
 /// <summary>A stable emote identity, persistent settings key and its separately classified artwork.</summary>
 public sealed record EmoteDefinition(EmoteType Type, string Name, string AssetName, EmoteCategory Category)
 {
+    /// <summary>Independent identity sharing another registered emote's artwork; null for a physical pair.</summary>
+    public int? ArtworkEmoteId { get; init; }
     /// <summary>Whether the artwork represents base-game content, independently of its tags or directory.</summary>
     public bool IsVanillaContent { get; init; }
 }

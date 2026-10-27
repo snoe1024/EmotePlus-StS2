@@ -122,5 +122,7 @@
   "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Rechtsklick auf ein ausgewähltes Emote in einem beliebigen Rad fügt es den Favoriten hinzu oder entfernt es. Nicht im normalen Rad aktivierte Favoriten stehen auf den letzten Seiten.",
   "EMOTEPLUS-WHEEL_ACTIVITY": "Aktivität",
   "EMOTEPLUS-WHEEL_RANDOM": "Zufall",
-  "EMOTEPLUS-WHEEL_FAVORITES": "Favoriten"
+  "EMOTEPLUS-WHEEL_FAVORITES": "Favoriten",
+  "EMOTEPLUS-TAG_MODIFIER.title": "Modifikator",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "Effekte, die die Regeln eines Durchlaufs oder die Gegnerstärke ändern. Fokussiere ein unterstütztes Symbol, um es zur letzten Aktivität hinzuzufügen."
 }

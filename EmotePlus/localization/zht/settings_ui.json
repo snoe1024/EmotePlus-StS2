@@ -122,5 +122,7 @@
   "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "在任意輪盤中右鍵點擊目前選取的表情，即可收藏或取消收藏。未啟用於普通輪盤中的收藏表情將顯示在最後幾頁。",
   "EMOTEPLUS-WHEEL_ACTIVITY": "近期活動",
   "EMOTEPLUS-WHEEL_RANDOM": "隨機",
-  "EMOTEPLUS-WHEEL_FAVORITES": "收藏"
+  "EMOTEPLUS-WHEEL_FAVORITES": "收藏",
+  "EMOTEPLUS-TAG_MODIFIER.title": "規則調整",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "改變整局規則或敵人難度的效果。聚焦支援的圖示即可將其加入近期活動。"
 }

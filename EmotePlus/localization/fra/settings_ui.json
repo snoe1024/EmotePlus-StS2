@@ -122,5 +122,7 @@
   "EMOTEPLUS-SHOW_FAVORITE_WHEEL.hover.desc": "Un clic droit sur une émote sélectionnée dans une roue l’ajoute aux favoris ou l’en retire. Les favoris absents de la roue normale apparaissent sur les dernières pages.",
   "EMOTEPLUS-WHEEL_ACTIVITY": "Activité",
   "EMOTEPLUS-WHEEL_RANDOM": "Aléatoire",
-  "EMOTEPLUS-WHEEL_FAVORITES": "Favoris"
+  "EMOTEPLUS-WHEEL_FAVORITES": "Favoris",
+  "EMOTEPLUS-TAG_MODIFIER.title": "Modificateur",
+  "EMOTEPLUS-TAG_MODIFIER.hover.desc": "Effets qui modifient les règles de la partie ou la difficulté des ennemis. Survolez une icône compatible pour l’ajouter à l’activité récente."
 }
