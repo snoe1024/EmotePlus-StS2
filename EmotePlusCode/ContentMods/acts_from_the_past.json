@@ -1,0 +1,761 @@
+{
+  "Key": "acts_from_the_past",
+  "ModIds": [
+    "ActsFromThePast"
+  ],
+  "Name": "Acts from the Past",
+  "WorkshopId": "3746969593",
+  "Aliases": [],
+  "Entries": [
+    {
+      "Id": 366000,
+      "Name": "acts_from_the_past_awakened_one_boss_creature",
+      "AssetName": "mods/acts_from_the_past/awakened_one_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Acts.TheBeyond.Encounters.AwakenedOneBoss",
+      "Title": "Awakened One",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-AWAKENED_ONE_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Acts.TheBeyond.Enemies.AwakenedOne"
+      ]
+    },
+    {
+      "Id": 366001,
+      "Name": "acts_from_the_past_donu_and_deca_boss_creature",
+      "AssetName": "mods/acts_from_the_past/donu_and_deca_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Acts.TheBeyond.Encounters.DonuAndDecaBoss",
+      "Title": "Donu & Deca",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-DONU_AND_DECA_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Acts.TheBeyond.Enemies.Donu",
+        "ActsFromThePast.Acts.TheBeyond.Enemies.Deca"
+      ]
+    },
+    {
+      "Id": 366002,
+      "Name": "acts_from_the_past_time_eater_boss_creature",
+      "AssetName": "mods/acts_from_the_past/time_eater_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Acts.TheBeyond.Encounters.TimeEaterBoss",
+      "Title": "Time Eater",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-TIME_EATER_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Acts.TheBeyond.Enemies.TimeEater"
+      ]
+    },
+    {
+      "Id": 366003,
+      "Name": "acts_from_the_past_bronze_automaton_boss_creature",
+      "AssetName": "mods/acts_from_the_past/bronze_automaton_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.BronzeAutomatonBoss",
+      "Title": "Bronze Automaton",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-BRONZE_AUTOMATON_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.BronzeAutomaton"
+      ]
+    },
+    {
+      "Id": 366004,
+      "Name": "acts_from_the_past_champ_boss_creature",
+      "AssetName": "mods/acts_from_the_past/champ_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.ChampBoss",
+      "Title": "The Champ",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-CHAMP_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Champ"
+      ]
+    },
+    {
+      "Id": 366005,
+      "Name": "acts_from_the_past_collector_boss_creature",
+      "AssetName": "mods/acts_from_the_past/collector_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.CollectorBoss",
+      "Title": "The Collector",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-COLLECTOR_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Collector"
+      ]
+    },
+    {
+      "Id": 366006,
+      "Name": "acts_from_the_past_guardian_boss_creature",
+      "AssetName": "mods/acts_from_the_past/guardian_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.GuardianBoss",
+      "Title": "The Guardian",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-GUARDIAN_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Guardian"
+      ]
+    },
+    {
+      "Id": 366007,
+      "Name": "acts_from_the_past_hexaghost_boss_creature",
+      "AssetName": "mods/acts_from_the_past/hexaghost_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.HexaghostBoss",
+      "Title": "Hexaghost",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-HEXAGHOST_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.Hexaghost"
+      ]
+    },
+    {
+      "Id": 361000,
+      "Name": "acts_from_the_past_angry_power_power",
+      "AssetName": "mods/acts_from_the_past/angry_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.AngryPower",
+      "Title": "Angry",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-ANGRY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361002,
+      "Name": "acts_from_the_past_constricted_power_power",
+      "AssetName": "mods/acts_from_the_past/constricted_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.ConstrictedPower",
+      "Title": "Constricted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-CONSTRICTED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 361003,
+      "Name": "acts_from_the_past_curiosity_power_power",
+      "AssetName": "mods/acts_from_the_past/curiosity_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.CuriosityPower",
+      "Title": "Curiousity",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-CURIOSITY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361004,
+      "Name": "acts_from_the_past_draw_reduction_power_power",
+      "AssetName": "mods/acts_from_the_past/draw_reduction_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.DrawReductionPower",
+      "Title": "Draw Reduction",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-DRAW_REDUCTION_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 361005,
+      "Name": "acts_from_the_past_entangled_power_power",
+      "AssetName": "mods/acts_from_the_past/entangled_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.EntangledPower",
+      "Title": "Entangled",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-ENTANGLED_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 361006,
+      "Name": "acts_from_the_past_explosive_power_power",
+      "AssetName": "mods/acts_from_the_past/explosive_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.ExplosivePower",
+      "Title": "Explosive",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-EXPLOSIVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361007,
+      "Name": "acts_from_the_past_fading_power_power",
+      "AssetName": "mods/acts_from_the_past/fading_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.FadingPower",
+      "Title": "Fading",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-FADING_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 361008,
+      "Name": "acts_from_the_past_flight_power_power",
+      "AssetName": "mods/acts_from_the_past/flight_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.FlightPower",
+      "Title": "Flight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-FLIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361009,
+      "Name": "acts_from_the_past_hex_original_power_power",
+      "AssetName": "mods/acts_from_the_past/hex_original_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.HexOriginalPower",
+      "Title": "Hex",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-HEX_ORIGINAL_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 361010,
+      "Name": "acts_from_the_past_life_link_power_power",
+      "AssetName": "mods/acts_from_the_past/life_link_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.LifeLinkPower",
+      "Title": "Life Link",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-LIFE_LINK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361011,
+      "Name": "acts_from_the_past_malleable_power_power",
+      "AssetName": "mods/acts_from_the_past/malleable_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.MalleablePower",
+      "Title": "Malleable",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-MALLEABLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361012,
+      "Name": "acts_from_the_past_metallicize_power_power",
+      "AssetName": "mods/acts_from_the_past/metallicize_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.MetallicizePower",
+      "Title": "Metallicize",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-METALLICIZE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361013,
+      "Name": "acts_from_the_past_mode_shift_power_power",
+      "AssetName": "mods/acts_from_the_past/mode_shift_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.ModeShiftPower",
+      "Title": "Mode Shift",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-MODE_SHIFT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361014,
+      "Name": "acts_from_the_past_plated_armor_power_power",
+      "AssetName": "mods/acts_from_the_past/plated_armor_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.PlatedArmorPower",
+      "Title": "Plated Armor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-PLATED_ARMOR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361015,
+      "Name": "acts_from_the_past_reactive_power_power",
+      "AssetName": "mods/acts_from_the_past/reactive_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.ReactivePower",
+      "Title": "Reactive",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-REACTIVE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361016,
+      "Name": "acts_from_the_past_regen_enemy_power_power",
+      "AssetName": "mods/acts_from_the_past/regen_enemy_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.RegenEnemyPower",
+      "Title": "Regen",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-REGEN_ENEMY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361017,
+      "Name": "acts_from_the_past_sharp_hide_power_power",
+      "AssetName": "mods/acts_from_the_past/sharp_hide_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.SharpHidePower",
+      "Title": "Sharp Hide",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-SHARP_HIDE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361018,
+      "Name": "acts_from_the_past_shifting_power_power",
+      "AssetName": "mods/acts_from_the_past/shifting_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.ShiftingPower",
+      "Title": "Shifting",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-SHIFTING_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361019,
+      "Name": "acts_from_the_past_split_power_power",
+      "AssetName": "mods/acts_from_the_past/split_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.SplitPower",
+      "Title": "Split",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-SPLIT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361020,
+      "Name": "acts_from_the_past_spore_cloud_power_power",
+      "AssetName": "mods/acts_from_the_past/spore_cloud_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.SporeCloudPower",
+      "Title": "Spore Cloud",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-SPORE_CLOUD_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361021,
+      "Name": "acts_from_the_past_stasis_power_power",
+      "AssetName": "mods/acts_from_the_past/stasis_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.StasisPower",
+      "Title": "Stasis",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-STASIS_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361022,
+      "Name": "acts_from_the_past_strength_up_power_power",
+      "AssetName": "mods/acts_from_the_past/stasis_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.StrengthUpPower",
+      "Title": "Strength Up",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-STRENGTH_UP_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 361021
+    },
+    {
+      "Id": 361023,
+      "Name": "acts_from_the_past_time_warp_power_power",
+      "AssetName": "mods/acts_from_the_past/time_warp_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.TimeWarpPower",
+      "Title": "Time Warp",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-TIME_WARP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 361024,
+      "Name": "acts_from_the_past_unawakened_power_power",
+      "AssetName": "mods/acts_from_the_past/unawakened_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.UnawakenedPower",
+      "Title": "Unawakened",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "ACTSFROMTHEPAST-UNAWAKENED_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 362000,
+      "Name": "acts_from_the_past_blood_bank_relic",
+      "AssetName": "mods/acts_from_the_past/blood_bank",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.BloodBank",
+      "Title": "Blood Bank",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-BLOOD_BANK.title",
+      "Tags": []
+    },
+    {
+      "Id": 362001,
+      "Name": "acts_from_the_past_bloody_idol_relic",
+      "AssetName": "mods/acts_from_the_past/bloody_idol",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.BloodyIdol",
+      "Title": "Bloody Idol",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-BLOODY_IDOL.title",
+      "Tags": []
+    },
+    {
+      "Id": 362002,
+      "Name": "acts_from_the_past_cultist_headpiece_relic",
+      "AssetName": "mods/acts_from_the_past/cultist_headpiece",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.CultistHeadpiece",
+      "Title": "Cultist Headpiece",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-CULTIST_HEADPIECE.title",
+      "Tags": []
+    },
+    {
+      "Id": 362003,
+      "Name": "acts_from_the_past_enchiridion_relic",
+      "AssetName": "mods/acts_from_the_past/enchiridion",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.Enchiridion",
+      "Title": "Enchiridion",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-ENCHIRIDION.title",
+      "Tags": []
+    },
+    {
+      "Id": 362004,
+      "Name": "acts_from_the_past_face_of_cleric_relic",
+      "AssetName": "mods/acts_from_the_past/face_of_cleric",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.FaceOfCleric",
+      "Title": "Face of Cleric",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-FACE_OF_CLERIC.title",
+      "Tags": []
+    },
+    {
+      "Id": 362005,
+      "Name": "acts_from_the_past_golden_idol_relic",
+      "AssetName": "mods/acts_from_the_past/golden_idol",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.GoldenIdol",
+      "Title": "Golden Idol",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-GOLDEN_IDOL.title",
+      "Tags": []
+    },
+    {
+      "Id": 362006,
+      "Name": "acts_from_the_past_gremlin_visage_relic",
+      "AssetName": "mods/acts_from_the_past/gremlin_visage",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.GremlinVisage",
+      "Title": "Gremlin Visage",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-GREMLIN_VISAGE.title",
+      "Tags": []
+    },
+    {
+      "Id": 362007,
+      "Name": "acts_from_the_past_mark_of_the_bloom_relic",
+      "AssetName": "mods/acts_from_the_past/mark_of_the_bloom",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.MarkOfTheBloom",
+      "Title": "Mark of the Bloom",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-MARK_OF_THE_BLOOM.title",
+      "Tags": []
+    },
+    {
+      "Id": 362008,
+      "Name": "acts_from_the_past_mutagenic_strength_relic",
+      "AssetName": "mods/acts_from_the_past/mutagenic_strength",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.MutagenicStrength",
+      "Title": "Mutagenic Strength",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-MUTAGENIC_STRENGTH.title",
+      "Tags": []
+    },
+    {
+      "Id": 362009,
+      "Name": "acts_from_the_past_necronomicon_relic",
+      "AssetName": "mods/acts_from_the_past/necronomicon",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.Necronomicon",
+      "Title": "Necronomicon",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-NECRONOMICON.title",
+      "Tags": []
+    },
+    {
+      "Id": 362010,
+      "Name": "acts_from_the_past_nilrys_codex_relic",
+      "AssetName": "mods/acts_from_the_past/nilrys_codex",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.NilrysCodex",
+      "Title": "Nilry's Codex",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-NILRYS_CODEX.title",
+      "Tags": []
+    },
+    {
+      "Id": 362011,
+      "Name": "acts_from_the_past_nloths_gift_relic",
+      "AssetName": "mods/acts_from_the_past/nloths_gift",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.NlothsGift",
+      "Title": "N'loth's Gift",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-NLOTHS_GIFT.title",
+      "Tags": []
+    },
+    {
+      "Id": 362012,
+      "Name": "acts_from_the_past_nloths_hungry_face_relic",
+      "AssetName": "mods/acts_from_the_past/nloths_hungry_face",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.NlothsHungryFace",
+      "Title": "N'loth's Hungry Face",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-NLOTHS_HUNGRY_FACE.title",
+      "Tags": []
+    },
+    {
+      "Id": 362013,
+      "Name": "acts_from_the_past_odd_mushroom_relic",
+      "AssetName": "mods/acts_from_the_past/odd_mushroom",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.OddMushroom",
+      "Title": "Odd Mushroom",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-ODD_MUSHROOM.title",
+      "Tags": []
+    },
+    {
+      "Id": 362014,
+      "Name": "acts_from_the_past_spirit_poop_relic",
+      "AssetName": "mods/acts_from_the_past/spirit_poop",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.SpiritPoop",
+      "Title": "Spirit Poop",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-SPIRIT_POOP.title",
+      "Tags": []
+    },
+    {
+      "Id": 362015,
+      "Name": "acts_from_the_past_ssserpent_head_relic",
+      "AssetName": "mods/acts_from_the_past/ssserpent_head",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.SsserpentHead",
+      "Title": "Ssserpent Head",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-SSSERPENT_HEAD.title",
+      "Tags": []
+    },
+    {
+      "Id": 362016,
+      "Name": "acts_from_the_past_warped_tongs_relic",
+      "AssetName": "mods/acts_from_the_past/warped_tongs",
+      "Category": "Relic",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Relics.WarpedTongs",
+      "Title": "Warped Tongs",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-WARPED_TONGS.title",
+      "Tags": []
+    },
+    {
+      "Id": 366008,
+      "Name": "acts_from_the_past_slime_boss_boss_creature",
+      "AssetName": "mods/acts_from_the_past/slime_boss_boss",
+      "Category": "Creature",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.SlimeBossBoss",
+      "Title": "Slime Boss",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "ACTSFROMTHEPAST-SLIME_BOSS_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "ActsFromThePast.SlimeBoss"
+      ]
+    },
+    {
+      "Id": 361025,
+      "Name": "acts_from_the_past_mutagenic_strength_power_power",
+      "AssetName": "mods/acts_from_the_past/mutagenic_strength_power",
+      "Category": "Power",
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.MutagenicStrengthPower",
+      "Title": "Mutagenic Strength",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "ACTSFROMTHEPAST-MUTAGENIC_STRENGTH.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "Assembly": "ActsFromThePast",
+      "TypeName": "ActsFromThePast.Powers.AsleepLagavulinPower",
+      "Category": "Power",
+      "TargetId": 1009
+    }
+  ]
+}

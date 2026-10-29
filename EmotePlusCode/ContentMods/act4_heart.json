@@ -1,0 +1,126 @@
+{
+  "Key": "act4_heart",
+  "ModIds": [
+    "Act4Heart"
+  ],
+  "Name": "Act 4 Heart",
+  "WorkshopId": "3747537811",
+  "Aliases": [],
+  "Entries": [
+    {
+      "Id": 376000,
+      "Name": "act4_heart_corrupt_heart_boss_creature",
+      "AssetName": "mods/act4_heart/corrupt_heart_boss",
+      "Category": "Creature",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.CorruptHeartBoss",
+      "Title": "Corrupt Heart",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "CORRUPT_HEART_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Act4Heart.CorruptHeart"
+      ]
+    },
+    {
+      "Id": 372000,
+      "Name": "act4_heart_emerald_key_relic",
+      "AssetName": "mods/act4_heart/emerald_key",
+      "Category": "Relic",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Keys.EmeraldKey",
+      "Title": "Emerald Key",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "EMERALD_KEY.title",
+      "Tags": []
+    },
+    {
+      "Id": 372001,
+      "Name": "act4_heart_ruby_key_relic",
+      "AssetName": "mods/act4_heart/ruby_key",
+      "Category": "Relic",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Keys.RubyKey",
+      "Title": "Ruby Key",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUBY_KEY.title",
+      "Tags": []
+    },
+    {
+      "Id": 372002,
+      "Name": "act4_heart_sapphire_key_relic",
+      "AssetName": "mods/act4_heart/sapphire_key",
+      "Category": "Relic",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Keys.SapphireKey",
+      "Title": "Sappire Key",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "SAPPHIRE_KEY.title",
+      "Tags": []
+    },
+    {
+      "Id": 371000,
+      "Name": "act4_heart_beat_of_death_power_power",
+      "AssetName": "mods/act4_heart/beat_of_death_power",
+      "Category": "Power",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Powers.BeatOfDeathPower",
+      "Title": "Beat of Death",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "BEAT_OF_DEATH_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 371001,
+      "Name": "act4_heart_invincible_power_power",
+      "AssetName": "mods/act4_heart/invincible_power",
+      "Category": "Power",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Powers.InvinciblePower",
+      "Title": "Invincible",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "INVINCIBLE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 371002,
+      "Name": "act4_heart_metallicize_power_a4h_power",
+      "AssetName": "mods/act4_heart/metallicize_power_a4h",
+      "Category": "Power",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Powers.MetallicizePowerA4h",
+      "Title": "Metallicize",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "METALLICIZE_POWER_A4H.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 371003,
+      "Name": "act4_heart_regenerate_power_a4h_power",
+      "AssetName": "mods/act4_heart/regenerate_power_a4h",
+      "Category": "Power",
+      "Assembly": "Act4Heart",
+      "TypeName": "Act4Heart.Powers.RegeneratePowerA4h",
+      "Title": "Regenerate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "REGENERATE_POWER_A4H.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ]
+}

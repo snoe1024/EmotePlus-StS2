@@ -1,0 +1,234 @@
+{
+  "Key": "singleplayer_card",
+  "ModIds": [
+    "SingleplayerCard"
+  ],
+  "Name": "Singleplayer Card",
+  "WorkshopId": "3803542276",
+  "Aliases": [],
+  "Entries": [
+    {
+      "Id": 383000,
+      "Name": "singleplayer_card_train_enchantment_solo_enchantment",
+      "AssetName": "mods/singleplayer_card/train_enchantment_solo",
+      "Category": "Enchantment",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Enchantments.TrainEnchantmentSolo",
+      "Title": "Training",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "SINGLEPLAYERCARD-TRAIN_ENCHANTMENT_SOLO.title",
+      "Tags": []
+    },
+    {
+      "Id": 383001,
+      "Name": "singleplayer_card_venomous_enchantment_solo_enchantment",
+      "AssetName": "mods/singleplayer_card/venomous_enchantment_solo",
+      "Category": "Enchantment",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Enchantments.VenomousEnchantmentSolo",
+      "Title": "Venomous",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "SINGLEPLAYERCARD-VENOMOUS_ENCHANTMENT_SOLO.title",
+      "Tags": []
+    },
+    {
+      "Id": 381001,
+      "Name": "singleplayer_card_hand_over_power_solo_power",
+      "AssetName": "mods/singleplayer_card/hand_over_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.HandOverPowerSolo",
+      "Title": "Hand Overed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-HAND_OVER_POWER_SOLO.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 381002,
+      "Name": "singleplayer_card_helping_hand_power_solo_power",
+      "AssetName": "mods/singleplayer_card/helping_hand_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.HelpingHandPowerSolo",
+      "Title": "Helping Hand",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-HELPING_HAND_POWER_SOLO.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 381003,
+      "Name": "singleplayer_card_knockdown_pending_power_solo_power",
+      "AssetName": "mods/singleplayer_card/knockdown_pending_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.KnockdownPendingPowerSolo",
+      "Title": "Knockdown (Next Turn)",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-KNOCKDOWN_PENDING_POWER_SOLO.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 381012,
+      "Name": "singleplayer_card_glimpse_beyond_power_solo_power",
+      "AssetName": "mods/singleplayer_card/glimpse_beyond_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Necrobinder.GlimpseBeyondPowerSolo",
+      "Title": "Glimpse Beyond",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-GLIMPSE_BEYOND_POWER_SOLO.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 381016,
+      "Name": "singleplayer_card_next_turn_card_generation_plus_power_solo_power",
+      "AssetName": "mods/singleplayer_card/next_turn_card_generation_plus_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Regent.NextTurnCardGenerationPlusPowerSolo",
+      "Title": "Next Turn Card Generation+",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-NEXT_TURN_CARD_GENERATION_PLUS_POWER_SOLO.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 381017,
+      "Name": "singleplayer_card_next_turn_card_generation_power_solo_power",
+      "AssetName": "mods/singleplayer_card/next_turn_card_generation_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Regent.NextTurnCardGenerationPowerSolo",
+      "Title": "Next Turn Card Generation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-NEXT_TURN_CARD_GENERATION_POWER_SOLO.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 381018,
+      "Name": "singleplayer_card_blade_symphony_power_solo_power",
+      "AssetName": "mods/singleplayer_card/blade_symphony_power_solo",
+      "Category": "Power",
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Silent.BladeSymphonyPowerSolo",
+      "Title": "ブレイド・シンフォニー",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "SINGLEPLAYERCARD-BLADE_SYMPHONY_POWER_SOLO.title",
+      "Tags": [
+        "Buff"
+      ]
+    }
+  ],
+  "FixedRoutes": [
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.BeaconOfHopePowerSolo",
+      "Category": "Power",
+      "TargetId": 1015
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.KnockdownPowerSolo",
+      "Category": "Power",
+      "TargetId": 1128
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.NoDrawPowerSolo",
+      "Category": "Power",
+      "TargetId": 1148
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.NoEnergyGainPowerSolo",
+      "Category": "Power",
+      "TargetId": 1149
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Colorless.TagTeamPowerSolo",
+      "Category": "Power",
+      "TargetId": 1236
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Defect.HibernatePowerSolo",
+      "Category": "Power",
+      "TargetId": 1112
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Defect.ImitationLearningPowerSolo",
+      "Category": "Power",
+      "TargetId": 1118
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Ironclad.TankPowerSolo",
+      "Category": "Power",
+      "TargetId": 1239
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Necrobinder.CacophonyPowerSolo",
+      "Category": "Power",
+      "TargetId": 1024
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Necrobinder.SoulboundPowerSolo",
+      "Category": "Power",
+      "TargetId": 1214
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Necrobinder.UnderworldPowerSolo",
+      "Category": "Power",
+      "TargetId": 1254
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Regent.HammerTimePowerSolo",
+      "Category": "Power",
+      "TargetId": 1101
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Silent.PincerAttackPowerSolo",
+      "Category": "Power",
+      "TargetId": 1082
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Silent.ShadowVanishPowerSolo",
+      "Category": "Power",
+      "TargetId": 1075
+    },
+    {
+      "Assembly": "SingleplayerCard",
+      "TypeName": "SingleplayerCard.SingleplayerCardCode.Powers.Silent.StealthPowerSolo",
+      "Category": "Power",
+      "TargetId": 1212
+    }
+  ]
+}

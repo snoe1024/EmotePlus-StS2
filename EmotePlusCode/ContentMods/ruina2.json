@@ -1,0 +1,2495 @@
+{
+  "Key": "ruina2",
+  "ModIds": [
+    "Ruina2"
+  ],
+  "Name": "Ruina 2",
+  "WorkshopId": "3787624064",
+  "Aliases": [],
+  "Entries": [
+    {
+      "Id": 393000,
+      "Name": "ruina2_obsession_enchantment",
+      "AssetName": "mods/ruina2/obsession",
+      "Category": "Enchantment",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Enchantments.Obsession",
+      "Title": "Obsession",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "RUINA2-OBSESSION.title",
+      "Tags": []
+    },
+    {
+      "Id": 393001,
+      "Name": "ruina2_pillar_enchantment",
+      "AssetName": "mods/ruina2/pillar",
+      "Category": "Enchantment",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Enchantments.Pillar",
+      "Title": "Pillar",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "RUINA2-PILLAR.title",
+      "Tags": []
+    },
+    {
+      "Id": 393002,
+      "Name": "ruina2_steady_heart_enchantment",
+      "AssetName": "mods/ruina2/steady_heart",
+      "Category": "Enchantment",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Enchantments.SteadyHeart",
+      "Title": "Steady Heart",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "RUINA2-STEADY_HEART.title",
+      "Tags": []
+    },
+    {
+      "Id": 393003,
+      "Name": "ruina2_vanishing_enchantment",
+      "AssetName": "mods/ruina2/vanishing",
+      "Category": "Enchantment",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Enchantments.Vanishing",
+      "Title": "Vanishing",
+      "Aliases": [],
+      "LocTable": "enchantments",
+      "LocKey": "RUINA2-VANISHING.title",
+      "Tags": []
+    },
+    {
+      "Id": 396000,
+      "Name": "ruina2_black_swan_boss_creature",
+      "AssetName": "mods/ruina2/black_swan_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act1.BlackSwanBoss",
+      "Title": "Dream of a Black Swan",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-BLACK_SWAN_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act1.BlackSwan.BlackSwan"
+      ]
+    },
+    {
+      "Id": 396001,
+      "Name": "ruina2_fairy_boss_creature",
+      "AssetName": "mods/ruina2/fairy_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act1.FairyBoss",
+      "Title": "Fairy Festival",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-FAIRY_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act1.FairyFestival.FairyQueen"
+      ]
+    },
+    {
+      "Id": 396002,
+      "Name": "ruina2_nothing_der_boss_creature",
+      "AssetName": "mods/ruina2/nothing_der_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act1.NothingDerBoss",
+      "Title": "The Most Dangerous Prey",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-NOTHING_DER_BOSS.title",
+      "Tags": []
+    },
+    {
+      "Id": 396003,
+      "Name": "ruina2_orchestra_boss_creature",
+      "AssetName": "mods/ruina2/orchestra_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act1.OrchestraBoss",
+      "Title": "Silent Orchestra",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-ORCHESTRA_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act1.Orchestra"
+      ]
+    },
+    {
+      "Id": 396004,
+      "Name": "ruina2_jester_boss_creature",
+      "AssetName": "mods/ruina2/jester_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act2.JesterBoss",
+      "Title": "Jester of Nihil",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-JESTER_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act2.Jester.JesterOfNihil"
+      ]
+    },
+    {
+      "Id": 396005,
+      "Name": "ruina2_oz_boss_creature",
+      "AssetName": "mods/ruina2/oz_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act2.OzBoss",
+      "Title": "Adult Who Tells Lies",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-OZ_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act2.Oz.Oz"
+      ]
+    },
+    {
+      "Id": 396006,
+      "Name": "ruina2_red_wolf_boss_creature",
+      "AssetName": "mods/ruina2/red_wolf_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act2.RedWolfBoss",
+      "Title": "The Mercenary's Nightmare",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-RED_WOLF_BOSS.title",
+      "Tags": []
+    },
+    {
+      "Id": 396007,
+      "Name": "ruina2_silent_girl_boss_creature",
+      "AssetName": "mods/ruina2/silent_girl_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act3.SilentGirlBoss",
+      "Title": "Silent Girl",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-SILENT_GIRL_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act3.SilentGirl.SilentGirl"
+      ]
+    },
+    {
+      "Id": 396008,
+      "Name": "ruina2_twilight_boss_creature",
+      "AssetName": "mods/ruina2/twilight_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act3.TwilightBoss",
+      "Title": "Apocalypse Bird",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-TWILIGHT_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act3.Twilight.Twilight"
+      ]
+    },
+    {
+      "Id": 396009,
+      "Name": "ruina2_white_night_boss_creature",
+      "AssetName": "mods/ruina2/white_night_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.Act3.WhiteNightBoss",
+      "Title": "White Night",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-WHITE_NIGHT_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.Act3.WhiteNight"
+      ]
+    },
+    {
+      "Id": 396010,
+      "Name": "ruina2_argalia_boss_creature",
+      "AssetName": "mods/ruina2/argalia_boss",
+      "Category": "Creature",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Encounters.UninvitedGuests.ArgaliaBoss",
+      "Title": "The Blue Reverberation",
+      "Aliases": [],
+      "LocTable": "encounters",
+      "LocKey": "RUINA2-ARGALIA_BOSS.title",
+      "Tags": [],
+      "TypeAliases": [
+        "Ruina2.Ruina2Code.Monsters.UninvitedGuests.Argalia.Argalia"
+      ]
+    },
+    {
+      "Id": 397000,
+      "Name": "ruina2_neow_angela_ancient",
+      "AssetName": "mods/ruina2/neow_angela",
+      "Category": "Ancient",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Events.NeowAngela",
+      "Title": "Angela",
+      "Aliases": [],
+      "LocTable": "ancients",
+      "LocKey": "RUINA2-NEOW_ANGELA.title",
+      "Tags": []
+    },
+    {
+      "Id": 394000,
+      "Name": "ruina2_ego_potion_potion",
+      "AssetName": "mods/ruina2/ego_potion",
+      "Category": "Potion",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Potions.EgoPotion",
+      "Title": "Ego Potion",
+      "Aliases": [],
+      "LocTable": "potions",
+      "LocKey": "RUINA2-EGO_POTION.title",
+      "Tags": []
+    },
+    {
+      "Id": 391000,
+      "Name": "ruina2_affection_power",
+      "AssetName": "mods/ruina2/affection",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Affection",
+      "Title": "Affection",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-AFFECTION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391001,
+      "Name": "ruina2_dont_leave_power",
+      "AssetName": "mods/ruina2/dont_leave",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.DontLeave",
+      "Title": "Don't Leave Me",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DONT_LEAVE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391002,
+      "Name": "ruina2_dream_power",
+      "AssetName": "mods/ruina2/dream",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Dream",
+      "Title": "Broken Dreams",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DREAM.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391003,
+      "Name": "ruina2_endless_performance_power",
+      "AssetName": "mods/ruina2/endless_performance",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.EndlessPerformance",
+      "Title": "Endless Performance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ENDLESS_PERFORMANCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391004,
+      "Name": "ruina2_expression_power",
+      "AssetName": "mods/ruina2/expression",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Expression",
+      "Title": "Today's Expression",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-EXPRESSION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391005,
+      "Name": "ruina2_fear_power",
+      "AssetName": "mods/ruina2/fear",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Fear",
+      "Title": "Fear",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FEAR.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391006,
+      "Name": "ruina2_fervent_adoration_power",
+      "AssetName": "mods/ruina2/fervent_adoration",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.FerventAdoration",
+      "Title": "Fervent Adoration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FERVENT_ADORATION.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391007,
+      "Name": "ruina2_hunt_power",
+      "AssetName": "mods/ruina2/hunt",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Hunt",
+      "Title": "Hunt",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-HUNT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391008,
+      "Name": "ruina2_lamentation_power",
+      "AssetName": "mods/ruina2/lamentation",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Lamentation",
+      "Title": "Lamentation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LAMENTATION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391009,
+      "Name": "ruina2_lonely_power",
+      "AssetName": "mods/ruina2/lonely",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Lonely",
+      "Title": "Being Lonely is Sad",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LONELY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391010,
+      "Name": "ruina2_meal_power",
+      "AssetName": "mods/ruina2/meal",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Meal",
+      "Title": "Prepared Meal",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MEAL.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391011,
+      "Name": "ruina2_mimicry_power",
+      "AssetName": "mods/ruina2/mimicry",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Mimicry",
+      "Title": "Mimicry",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MIMICRY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391012,
+      "Name": "ruina2_pattern_power",
+      "AssetName": "mods/ruina2/pattern",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Pattern",
+      "Title": "Pattern Recognition",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PATTERN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391013,
+      "Name": "ruina2_pleasure_power",
+      "AssetName": "mods/ruina2/pleasure",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Pleasure",
+      "Title": "Pleasure",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PLEASURE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391014,
+      "Name": "ruina2_satiation_power",
+      "AssetName": "mods/ruina2/satiation",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Satiation",
+      "Title": "Momentary Satiation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SATIATION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391015,
+      "Name": "ruina2_song_power",
+      "AssetName": "mods/ruina2/song",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Song",
+      "Title": "Pine for the Song",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SONG.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391016,
+      "Name": "ruina2_surprise_present_power",
+      "AssetName": "mods/ruina2/surprise_present",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.SurprisePresent",
+      "Title": "Surprise Present",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SURPRISE_PRESENT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391017,
+      "Name": "ruina2_webbed_power",
+      "AssetName": "mods/ruina2/webbed",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.Webbed",
+      "Title": "Webbed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-WEBBED.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391018,
+      "Name": "ruina2_winters_inception_power",
+      "AssetName": "mods/ruina2/winters_inception",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.WintersInception",
+      "Title": "Winter's Inception",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-WINTERS_INCEPTION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391019,
+      "Name": "ruina2_absorption_power",
+      "AssetName": "mods/ruina2/absorption",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Absorption",
+      "Title": "Absorption",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ABSORPTION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391020,
+      "Name": "ruina2_blind_fury_power",
+      "AssetName": "mods/ruina2/blind_fury",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.BlindFury",
+      "Title": "Blind Fury",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLIND_FURY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391021,
+      "Name": "ruina2_bliss_power",
+      "AssetName": "mods/ruina2/bliss",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Bliss",
+      "Title": "Moment of Bliss",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLISS.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391022,
+      "Name": "ruina2_bodies_power",
+      "AssetName": "mods/ruina2/bodies",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Bodies",
+      "Title": "Mountain of Bodies",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BODIES.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391023,
+      "Name": "ruina2_corpses_power",
+      "AssetName": "mods/ruina2/corpses",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Corpses",
+      "Title": "Corpses",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CORPSES.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391024,
+      "Name": "ruina2_courage_power",
+      "AssetName": "mods/ruina2/courage",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Courage",
+      "Title": "Courage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-COURAGE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391025,
+      "Name": "ruina2_despair_power",
+      "AssetName": "mods/ruina2/despair",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Despair",
+      "Title": "Despair",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DESPAIR.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391026,
+      "Name": "ruina2_draw_reduction_power",
+      "AssetName": "mods/ruina2/draw_reduction",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.DrawReduction",
+      "Title": "Draw Reduction",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DRAW_REDUCTION.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391027,
+      "Name": "ruina2_easily_distracted_power",
+      "AssetName": "mods/ruina2/easily_distracted",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.EasilyDistracted",
+      "Title": "Easily Distracted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-EASILY_DISTRACTED.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391028,
+      "Name": "ruina2_false_gift2_power_power",
+      "AssetName": "mods/ruina2/false_gift2_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.FalseGift2Power",
+      "Title": "False Gift",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FALSE_GIFT2_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391029,
+      "Name": "ruina2_false_gift3_power_power",
+      "AssetName": "mods/ruina2/false_gift2_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.FalseGift3Power",
+      "Title": "False Gift",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FALSE_GIFT3_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391028
+    },
+    {
+      "Id": 391030,
+      "Name": "ruina2_fury_power",
+      "AssetName": "mods/ruina2/fury",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Fury",
+      "Title": "Fury With No Outlet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FURY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391031,
+      "Name": "ruina2_hunter_power",
+      "AssetName": "mods/ruina2/hunter",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Hunter",
+      "Title": "Hunter in the Dark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-HUNTER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391032,
+      "Name": "ruina2_hysteria_power",
+      "AssetName": "mods/ruina2/hysteria",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Hysteria",
+      "Title": "Hysteria",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-HYSTERIA.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391033,
+      "Name": "ruina2_justice_power",
+      "AssetName": "mods/ruina2/justice",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Justice",
+      "Title": "In the Name of Justice",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-JUSTICE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391034,
+      "Name": "ruina2_oblivion_power",
+      "AssetName": "mods/ruina2/oblivion",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Oblivion",
+      "Title": "Oblivion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-OBLIVION.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391035,
+      "Name": "ruina2_pointless_hate_power",
+      "AssetName": "mods/ruina2/pointless_hate",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.PointlessHate",
+      "Title": "Pointless Hate",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-POINTLESS_HATE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391036,
+      "Name": "ruina2_road_power",
+      "AssetName": "mods/ruina2/road",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Road",
+      "Title": "Road of the King",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ROAD.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391037,
+      "Name": "ruina2_search_power",
+      "AssetName": "mods/ruina2/search",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Search",
+      "Title": "Searching for Wisdom",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SEARCH.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391038,
+      "Name": "ruina2_senseless_wrath_power",
+      "AssetName": "mods/ruina2/senseless_wrath",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.SenselessWrath",
+      "Title": "Senseless Wrath",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SENSELESS_WRATH.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391039,
+      "Name": "ruina2_steal_power",
+      "AssetName": "mods/ruina2/steal",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Steal",
+      "Title": "Steal or be Stolen",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-STEAL.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391040,
+      "Name": "ruina2_warm_heart_power",
+      "AssetName": "mods/ruina2/warm_heart",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.WarmHeart",
+      "Title": "Warm Heart",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-WARM_HEART.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391041,
+      "Name": "ruina2_way_home_power",
+      "AssetName": "mods/ruina2/way_home",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.WayHome",
+      "Title": "On the Way Home",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-WAY_HOME.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391042,
+      "Name": "ruina2_worthless_power",
+      "AssetName": "mods/ruina2/worthless",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.Worthless",
+      "Title": "Worthless",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-WORTHLESS.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391043,
+      "Name": "ruina2_advent_power",
+      "AssetName": "mods/ruina2/advent",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Advent",
+      "Title": "God's Traitor",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ADVENT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391044,
+      "Name": "ruina2_big_eyes_power",
+      "AssetName": "mods/ruina2/big_eyes",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.BigEyes",
+      "Title": "Big Eyes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BIG_EYES.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391045,
+      "Name": "ruina2_enchanted_power",
+      "AssetName": "mods/ruina2/enchanted",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Enchanted",
+      "Title": "Enchanted",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ENCHANTED.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391046,
+      "Name": "ruina2_fading_twilight_power",
+      "AssetName": "mods/ruina2/fading_twilight",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.FadingTwilight",
+      "Title": "Fading Twilight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FADING_TWILIGHT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391047,
+      "Name": "ruina2_kai_and_gerda_power",
+      "AssetName": "mods/ruina2/kai_and_gerda",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.KaiAndGerda",
+      "Title": "Kai and Gerda",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-KAI_AND_GERDA.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391048,
+      "Name": "ruina2_learn_power",
+      "AssetName": "mods/ruina2/learn",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Learn",
+      "Title": "Learn",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LEARN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391049,
+      "Name": "ruina2_lock_power",
+      "AssetName": "mods/ruina2/lock",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Lock",
+      "Title": "Forest Keeper's Lock",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LOCK.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391050,
+      "Name": "ruina2_long_arms_power",
+      "AssetName": "mods/ruina2/long_arms",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.LongArms",
+      "Title": "Long Arms",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LONG_ARMS.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391051,
+      "Name": "ruina2_martyr_power",
+      "AssetName": "mods/ruina2/martyr",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Martyr",
+      "Title": "Martyr",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MARTYR.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391052,
+      "Name": "ruina2_meet_again_power",
+      "AssetName": "mods/ruina2/meet_again",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.MeetAgain",
+      "Title": "Meet Again as Stars",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MEET_AGAIN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391053,
+      "Name": "ruina2_nail_power",
+      "AssetName": "mods/ruina2/nail",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Nail",
+      "Title": "Nail",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-NAIL.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391054,
+      "Name": "ruina2_promise_of_winter_power",
+      "AssetName": "mods/ruina2/promise_of_winter",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.PromiseOfWinter",
+      "Title": "Promise of Winter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PROMISE_OF_WINTER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391055,
+      "Name": "ruina2_punishment_power",
+      "AssetName": "mods/ruina2/punishment",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Punishment",
+      "Title": "Punishment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PUNISHMENT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391056,
+      "Name": "ruina2_salvation_power",
+      "AssetName": "mods/ruina2/salvation",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Salvation",
+      "Title": "Salvation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SALVATION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391057,
+      "Name": "ruina2_silence_power",
+      "AssetName": "mods/ruina2/silence",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Silence",
+      "Title": "Only Silence Remains",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SILENCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391058,
+      "Name": "ruina2_sin_power",
+      "AssetName": "mods/ruina2/sin",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Sin",
+      "Title": "Weight Sin",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SIN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391059,
+      "Name": "ruina2_small_beak_power",
+      "AssetName": "mods/ruina2/small_beak",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.SmallBeak",
+      "Title": "Small Beak",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SMALL_BEAK.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391060,
+      "Name": "ruina2_ticking_time_power",
+      "AssetName": "mods/ruina2/ticking_time",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.TickingTime",
+      "Title": "Ticking Time",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-TICKING_TIME.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391061,
+      "Name": "ruina2_unnerving_power",
+      "AssetName": "mods/ruina2/unnerving",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.Unnerving",
+      "Title": "Unnerving",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-UNNERVING.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391062,
+      "Name": "ruina2_bleed_power",
+      "AssetName": "mods/ruina2/bleed",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Bleed",
+      "Title": "Bleed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLEED.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391063,
+      "Name": "ruina2_bleed_enemy_power",
+      "AssetName": "mods/ruina2/bleed",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.BleedEnemy",
+      "Title": "Bleed",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLEED_ENEMY.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391062
+    },
+    {
+      "Id": 391064,
+      "Name": "ruina2_center_of_attention_power",
+      "AssetName": "mods/ruina2/center_of_attention",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.CenterOfAttention",
+      "Title": "Center of Attention",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CENTER_OF_ATTENTION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391065,
+      "Name": "ruina2_aspiration_power_power",
+      "AssetName": "mods/ruina2/aspiration_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.AspirationPower",
+      "Title": "Aspiration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ASPIRATION_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391066,
+      "Name": "ruina2_beak_power_power",
+      "AssetName": "mods/ruina2/beak_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.BeakPower",
+      "Title": "Beak",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BEAK_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391067,
+      "Name": "ruina2_cobalt_scar_power_power",
+      "AssetName": "mods/ruina2/cobalt_scar_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.CobaltScarPower",
+      "Title": "Cobalt Scar",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-COBALT_SCAR_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391068,
+      "Name": "ruina2_dead_silence_power_power",
+      "AssetName": "mods/ruina2/ticking_time",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.DeadSilencePower",
+      "Title": "Dead Silence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DEAD_SILENCE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391060
+    },
+    {
+      "Id": 391069,
+      "Name": "ruina2_faint_aroma_power_power",
+      "AssetName": "mods/ruina2/faint_aroma_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.FaintAromaPower",
+      "Title": "Faint Aroma",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FAINT_AROMA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391070,
+      "Name": "ruina2_fourth_match_flame_power_power",
+      "AssetName": "mods/ruina2/fourth_match_flame_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.FourthMatchFlamePower",
+      "Title": "Fourth Match Flame",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FOURTH_MATCH_FLAME_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391071,
+      "Name": "ruina2_frost_splinter_power_power",
+      "AssetName": "mods/ruina2/frost_splinter_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.FrostSplinterPower",
+      "Title": "Frost Splinter",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FROST_SPLINTER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391072,
+      "Name": "ruina2_grinder_power_power",
+      "AssetName": "mods/ruina2/grinder_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.GrinderPower",
+      "Title": "Grinder Mk. 5-2",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-GRINDER_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391073,
+      "Name": "ruina2_heaven_power_power",
+      "AssetName": "mods/ruina2/heaven_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.HeavenPower",
+      "Title": "Heaven",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-HEAVEN_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391074,
+      "Name": "ruina2_homing_instinct_power_power",
+      "AssetName": "mods/ruina2/homing_instinct_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.HomingInstinctPower",
+      "Title": "Homing Instinct",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-HOMING_INSTINCT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391075,
+      "Name": "ruina2_hornet_power_power",
+      "AssetName": "mods/ruina2/hornet_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.HornetPower",
+      "Title": "Hornet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-HORNET_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391076,
+      "Name": "ruina2_laetitia_power_power",
+      "AssetName": "mods/ruina2/laetitia_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.LaetitiaPower",
+      "Title": "Laetitia",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LAETITIA_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391077,
+      "Name": "ruina2_lamp_power_power",
+      "AssetName": "mods/ruina2/lamp_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.LampPower",
+      "Title": "Lamp",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-LAMP_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391078,
+      "Name": "ruina2_magic_bullet_power_power",
+      "AssetName": "mods/ruina2/magic_bullet_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.MagicBulletPower",
+      "Title": "Magic Bullet",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MAGIC_BULLET_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391079,
+      "Name": "ruina2_paradise_lost_power_power",
+      "AssetName": "mods/ruina2/paradise_lost_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.ParadiseLostPower",
+      "Title": "Paradise Lost",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PARADISE_LOST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391080,
+      "Name": "ruina2_red_eyes_power_power",
+      "AssetName": "mods/ruina2/red_eyes_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.RedEyesPower",
+      "Title": "Red Eyes",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-RED_EYES_POWER.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391081,
+      "Name": "ruina2_starbound_power",
+      "AssetName": "mods/ruina2/starbound",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.Starbound",
+      "Title": "Starbound",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-STARBOUND.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391082,
+      "Name": "ruina2_sword_sharpened_power_power",
+      "AssetName": "mods/ruina2/sword_sharpened_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.SwordSharpenedPower",
+      "Title": "Sword Sharpened by Tears",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SWORD_SHARPENED_POWER.title",
+      "Tags": []
+    },
+    {
+      "Id": 391083,
+      "Name": "ruina2_thirst_power_power",
+      "AssetName": "mods/ruina2/thirst_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.ThirstPower",
+      "Title": "Thirst",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-THIRST_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391084,
+      "Name": "ruina2_yellow_brick_road_power",
+      "AssetName": "mods/ruina2/yellow_brick_road",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.YellowBrickRoad",
+      "Title": "Yellow Brick Road",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-YELLOW_BRICK_ROAD.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391085,
+      "Name": "ruina2_erosion_power",
+      "AssetName": "mods/ruina2/erosion",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Erosion",
+      "Title": "Erosion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-EROSION.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391086,
+      "Name": "ruina2_fragile_power",
+      "AssetName": "mods/ruina2/fragile",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Fragile",
+      "Title": "Fragile",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FRAGILE.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391087,
+      "Name": "ruina2_goodbye_power_power",
+      "AssetName": "mods/ruina2/goodbye_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.GoodbyePower",
+      "Title": "Goodbye",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-GOODBYE_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391088,
+      "Name": "ruina2_monster_regen_power",
+      "AssetName": "mods/ruina2/monster_regen",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.MonsterRegen",
+      "Title": "Regeneration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MONSTER_REGEN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391089,
+      "Name": "ruina2_multiplayer_ally_power",
+      "AssetName": "mods/ruina2/multiplayer_ally",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.MultiplayerAlly",
+      "Title": "Multiplayer Adjustment",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MULTIPLAYER_ALLY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391090,
+      "Name": "ruina2_paralysis_power",
+      "AssetName": "mods/ruina2/paralysis",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Paralysis",
+      "Title": "Paralysis",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PARALYSIS.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391091,
+      "Name": "ruina2_prescripts_grace_attack_power",
+      "AssetName": "mods/ruina2/prescripts_grace_attack",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.PrescriptsGraceAttack",
+      "Title": "Prescript's Grace - Attack",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PRESCRIPTS_GRACE_ATTACK.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391092,
+      "Name": "ruina2_prescripts_grace_power_power",
+      "AssetName": "mods/ruina2/prescripts_grace_attack",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.PrescriptsGracePower",
+      "Title": "Prescript's Grace - Power",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PRESCRIPTS_GRACE_POWER.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391091
+    },
+    {
+      "Id": 391093,
+      "Name": "ruina2_prescripts_grace_skill_power",
+      "AssetName": "mods/ruina2/prescripts_grace_attack",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.PrescriptsGraceSkill",
+      "Title": "Prescript's Grace - Skill",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PRESCRIPTS_GRACE_SKILL.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391091
+    },
+    {
+      "Id": 391094,
+      "Name": "ruina2_temp_fragile_power",
+      "AssetName": "mods/ruina2/fragile",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.TempFragile",
+      "Title": "Temporary Fragile",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-TEMP_FRAGILE.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391086
+    },
+    {
+      "Id": 391095,
+      "Name": "ruina2_arbiters_judgement_power",
+      "AssetName": "mods/ruina2/arbiters_judgement",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.ArbitersJudgement",
+      "Title": "Arbiter's Judgement",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-ARBITERS_JUDGEMENT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391096,
+      "Name": "ruina2_black_silence_power",
+      "AssetName": "mods/ruina2/black_silence",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.BlackSilence",
+      "Title": "The Black Silence",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLACK_SILENCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391097,
+      "Name": "ruina2_blood_red_power",
+      "AssetName": "mods/ruina2/blood_red",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.BloodRed",
+      "Title": "Blood Red Night",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLOOD_RED.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391098,
+      "Name": "ruina2_blue_reverb_power",
+      "AssetName": "mods/ruina2/blue_reverb",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.BlueReverb",
+      "Title": "The Blue Reverberation",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-BLUE_REVERB.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391099,
+      "Name": "ruina2_captive_audience_power",
+      "AssetName": "mods/ruina2/captive_audience",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.CaptiveAudience",
+      "Title": "Captive Audience",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CAPTIVE_AUDIENCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391100,
+      "Name": "ruina2_church_power",
+      "AssetName": "mods/ruina2/church",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Church",
+      "Title": "Church of Gears",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CHURCH.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391101,
+      "Name": "ruina2_contract_liberty_power_power",
+      "AssetName": "mods/ruina2/contract_liberty_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.ContractLibertyPower",
+      "Title": "Contract of Liberty",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CONTRACT_LIBERTY_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391102,
+      "Name": "ruina2_contract_light_power_power",
+      "AssetName": "mods/ruina2/contract_light_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.ContractLightPower",
+      "Title": "Contract of Light",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CONTRACT_LIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391103,
+      "Name": "ruina2_contract_might_power_power",
+      "AssetName": "mods/ruina2/contract_might_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.ContractMightPower",
+      "Title": "Contract of Might",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-CONTRACT_MIGHT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391104,
+      "Name": "ruina2_dark_bargain_power",
+      "AssetName": "mods/ruina2/dark_bargain",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.DarkBargain",
+      "Title": "Dark Bargain",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DARK_BARGAIN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391105,
+      "Name": "ruina2_dragon_power",
+      "AssetName": "mods/ruina2/dragon",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Dragon",
+      "Title": "Children of the Dragon",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-DRAGON.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391106,
+      "Name": "ruina2_emotion_power",
+      "AssetName": "mods/ruina2/emotion",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Emotion",
+      "Title": "Rising Emotion",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-EMOTION.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391107,
+      "Name": "ruina2_finishing_touch_power",
+      "AssetName": "mods/ruina2/finishing_touch",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.FinishingTouch",
+      "Title": "Finishing Touch",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FINISHING_TOUCH.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391108,
+      "Name": "ruina2_flame_shield_power",
+      "AssetName": "mods/ruina2/flame_shield",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.FlameShield",
+      "Title": "Flame Shield",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FLAME_SHIELD.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391109,
+      "Name": "ruina2_fresh_meat_power_power",
+      "AssetName": "mods/ruina2/fresh_meat_power",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.FreshMeatPower",
+      "Title": "Fresh Meat",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FRESH_MEAT_POWER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391110,
+      "Name": "ruina2_gam_power",
+      "AssetName": "mods/ruina2/gam",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Gam",
+      "Title": "Gam of Four Trigrams",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-GAM.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391111,
+      "Name": "ruina2_geon_power",
+      "AssetName": "mods/ruina2/geon",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Geon",
+      "Title": "Geon of Four Trigrams",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-GEON.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391112,
+      "Name": "ruina2_gon_power",
+      "AssetName": "mods/ruina2/gon",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Gon",
+      "Title": "Gon of Four Trigrams",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-GON.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391113,
+      "Name": "ruina2_guard_stance_power",
+      "AssetName": "mods/ruina2/guard_stance",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.GuardStance",
+      "Title": "Guard Stance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-GUARD_STANCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391114,
+      "Name": "ruina2_mark_power",
+      "AssetName": "mods/ruina2/mark",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Mark",
+      "Title": "Mark",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MARK.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391115,
+      "Name": "ruina2_mastermind_power",
+      "AssetName": "mods/ruina2/mastermind",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Mastermind",
+      "Title": "Mastermind",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MASTERMIND.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391116,
+      "Name": "ruina2_melody_power",
+      "AssetName": "mods/ruina2/melody",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Melody",
+      "Title": "Melody",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MELODY.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391117,
+      "Name": "ruina2_messenger_power",
+      "AssetName": "mods/ruina2/messenger",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Messenger",
+      "Title": "Messenger",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-MESSENGER.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391118,
+      "Name": "ruina2_pierce_stance_power",
+      "AssetName": "mods/ruina2/pierce_stance",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.PierceStance",
+      "Title": "Pierce Stance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PIERCE_STANCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391119,
+      "Name": "ruina2_price_of_time_power",
+      "AssetName": "mods/ruina2/ticking_time",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.PriceOfTime",
+      "Title": "Price of Time",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PRICE_OF_TIME.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391060
+    },
+    {
+      "Id": 391120,
+      "Name": "ruina2_puppet_strings_power",
+      "AssetName": "mods/ruina2/puppet_strings",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.PuppetStrings",
+      "Title": "Puppet Strings",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-PUPPET_STRINGS.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391121,
+      "Name": "ruina2_red_mist_power",
+      "AssetName": "mods/ruina2/red_mist",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.RedMist",
+      "Title": "The Red Mist",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-RED_MIST.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391122,
+      "Name": "ruina2_resonance_power",
+      "AssetName": "mods/ruina2/resonance",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Resonance",
+      "Title": "Resonance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-RESONANCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391123,
+      "Name": "ruina2_ri_power",
+      "AssetName": "mods/ruina2/ri",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Ri",
+      "Title": "Ri of Four Trigrams",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-RI.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391124,
+      "Name": "ruina2_sharkskin_power",
+      "AssetName": "mods/ruina2/sharkskin",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Sharkskin",
+      "Title": "Sharkskin",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SHARKSKIN.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391125,
+      "Name": "ruina2_slash_stance_power",
+      "AssetName": "mods/ruina2/slash_stance",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.SlashStance",
+      "Title": "Slash Stance",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SLASH_STANCE.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391126,
+      "Name": "ruina2_spotlight_power",
+      "AssetName": "mods/ruina2/spotlight",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Spotlight",
+      "Title": "Spotlight",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SPOTLIGHT.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391127,
+      "Name": "ruina2_sword_of_embers_power",
+      "AssetName": "mods/ruina2/sword_of_embers",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.SwordOfEmbers",
+      "Title": "Sword of Embers",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-SWORD_OF_EMBERS.title",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391128,
+      "Name": "ruina2_vibration_power",
+      "AssetName": "mods/ruina2/blue_reverb",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.Vibration",
+      "Title": "Vibration",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-VIBRATION.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391098
+    },
+    {
+      "Id": 392000,
+      "Name": "ruina2_blue_scarf_relic",
+      "AssetName": "mods/ruina2/blue_scarf",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.BlueScarf",
+      "Title": "Blue Scarf",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-BLUE_SCARF.title",
+      "Tags": []
+    },
+    {
+      "Id": 392001,
+      "Name": "ruina2_book_of_ego_relic",
+      "AssetName": "mods/ruina2/book_of_ego",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.BookOfEgo",
+      "Title": "Book of EGO",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-BOOK_OF_EGO.title",
+      "Tags": []
+    },
+    {
+      "Id": 392002,
+      "Name": "ruina2_book_of_someone_relic",
+      "AssetName": "mods/ruina2/book_of_someone",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.BookOfSomeone",
+      "Title": "Book of Someone",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-BOOK_OF_SOMEONE.title",
+      "Tags": []
+    },
+    {
+      "Id": 392003,
+      "Name": "ruina2_false_present_relic",
+      "AssetName": "mods/ruina2/false_present",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.FalsePresent",
+      "Title": "False Present",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-FALSE_PRESENT.title",
+      "Tags": []
+    },
+    {
+      "Id": 392004,
+      "Name": "ruina2_four_trigrams_relic",
+      "AssetName": "mods/ruina2/four_trigrams",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.FourTrigrams",
+      "Title": "Four Trigrams",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-FOUR_TRIGRAMS.title",
+      "Tags": []
+    },
+    {
+      "Id": 392005,
+      "Name": "ruina2_glimpse_of_ego_relic",
+      "AssetName": "mods/ruina2/glimpse_of_ego",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.GlimpseOfEgo",
+      "Title": "Glimpse of EGO",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-GLIMPSE_OF_EGO.title",
+      "Tags": []
+    },
+    {
+      "Id": 392006,
+      "Name": "ruina2_goodbye_relic",
+      "AssetName": "mods/ruina2/goodbye",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.Goodbye",
+      "Title": "Goodbye",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-GOODBYE.title",
+      "Tags": []
+    },
+    {
+      "Id": 392007,
+      "Name": "ruina2_life_fibers_relic",
+      "AssetName": "mods/ruina2/life_fibers",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.LifeFibers",
+      "Title": "Life Fibers",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-LIFE_FIBERS.title",
+      "Tags": []
+    },
+    {
+      "Id": 392008,
+      "Name": "ruina2_lowells_gift_relic",
+      "AssetName": "mods/ruina2/lowells_gift",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.LowellsGift",
+      "Title": "Lowell's Gift",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-LOWELLS_GIFT.title",
+      "Tags": []
+    },
+    {
+      "Id": 392009,
+      "Name": "ruina2_malice_relic",
+      "AssetName": "mods/ruina2/malice",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.Malice",
+      "Title": "Malice",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-MALICE.title",
+      "Tags": []
+    },
+    {
+      "Id": 392010,
+      "Name": "ruina2_overexertion_relic",
+      "AssetName": "mods/ruina2/overexertion",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.Overexertion",
+      "Title": "Overexertion",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-OVEREXERTION.title",
+      "Tags": []
+    },
+    {
+      "Id": 392011,
+      "Name": "ruina2_prescripts_grace_relic",
+      "AssetName": "mods/ruina2/prescripts_grace",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.PrescriptsGrace",
+      "Title": "Prescript's Grace",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-PRESCRIPTS_GRACE.title",
+      "Tags": []
+    },
+    {
+      "Id": 392012,
+      "Name": "ruina2_seventh_bullet_relic",
+      "AssetName": "mods/ruina2/seventh_bullet",
+      "Category": "Relic",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Relics.SeventhBullet",
+      "Title": "The Seventh Bullet",
+      "Aliases": [],
+      "LocTable": "relics",
+      "LocKey": "RUINA2-SEVENTH_BULLET.title",
+      "Tags": []
+    },
+    {
+      "Id": 391129,
+      "Name": "ruina2_fear_temp_str_loss_power",
+      "AssetName": "mods/ruina2/fear_temp_str_loss",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.FearTempStrLoss",
+      "Title": "Fear",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-FEAR.title",
+      "Tags": [
+        "Debuff"
+      ]
+    },
+    {
+      "Id": 391130,
+      "Name": "ruina2_helper_temp_str_power",
+      "AssetName": "mods/ruina2/helper_temp_str",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act1.HelperTempStr",
+      "Title": "All-Around Helper",
+      "Aliases": [],
+      "LocTable": "monsters",
+      "LocKey": "RUINA2-ALL_AROUND_HELPER.name",
+      "Tags": [
+        "Buff"
+      ]
+    },
+    {
+      "Id": 391131,
+      "Name": "ruina2_courage_temp_str_power",
+      "AssetName": "mods/ruina2/helper_temp_str",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act2.CourageTempStr",
+      "Title": "Courage",
+      "Aliases": [],
+      "LocTable": "powers",
+      "LocKey": "RUINA2-COURAGE.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391130
+    },
+    {
+      "Id": 391132,
+      "Name": "ruina2_lock_temp_str_power",
+      "AssetName": "mods/ruina2/fear_temp_str_loss",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.Act3.LockTempStr",
+      "Title": "Forest Keeper's Lock",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "RUINA2-FOREST_KEEPER_LOCK.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391129
+    },
+    {
+      "Id": 391133,
+      "Name": "ruina2_lamp_temp_str_loss_power",
+      "AssetName": "mods/ruina2/fear_temp_str_loss",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.LampTempStrLoss",
+      "Title": "Lamp",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "RUINA2-LAMP.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391129
+    },
+    {
+      "Id": 391134,
+      "Name": "ruina2_magic_bullet_temp_str_power",
+      "AssetName": "mods/ruina2/helper_temp_str",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.EGO.MagicBulletTempStr",
+      "Title": "Magic Bullet",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "RUINA2-MAGIC_BULLET.title",
+      "Tags": [
+        "Buff"
+      ],
+      "ArtworkEmoteId": 391130
+    },
+    {
+      "Id": 391135,
+      "Name": "ruina2_gsh_temp_str_loss_power",
+      "AssetName": "mods/ruina2/fear_temp_str_loss",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.GshTempStrLoss",
+      "Title": "Greater Split: Horizontal",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "RUINA2-GREATER_SPLIT_HORIZONTAL.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391129
+    },
+    {
+      "Id": 391136,
+      "Name": "ruina2_gsv_temp_str_loss_power",
+      "AssetName": "mods/ruina2/fear_temp_str_loss",
+      "Category": "Power",
+      "Assembly": "Ruina2",
+      "TypeName": "Ruina2.Ruina2Code.Powers.UninvitedGuests.GsvTempStrLoss",
+      "Title": "Greater Split: Vertical",
+      "Aliases": [],
+      "LocTable": "cards",
+      "LocKey": "RUINA2-GREATER_SPLIT_VERTICAL.title",
+      "Tags": [
+        "Debuff"
+      ],
+      "ArtworkEmoteId": 391129
+    }
+  ]
+}
